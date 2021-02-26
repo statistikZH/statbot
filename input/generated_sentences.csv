@@ -1,0 +1,511 @@
+0,1
+Wie viel Eigenkapital  hat  in Hedingen  ?,{'entities': []}
+Welches ist das Eigenkapital   Hagenbuch und Region Zimmerberg ?,{'entities': []}
+Was ist der Anteil an Bruttoverschuldungsanteil   in Hittnau ?,{'entities': []}
+Wie viel Steuerbares Vermögen natürliche Pers.  hat  Freienstein-Teufen und Hochfelden  ?,{'entities': []}
+Welches ist das Steuerbares Vermögen natürliche Pers.   für alle Bezirke ?,"{'entities': [(64, 73, 'GRAN')]}"
+Wie viel Sterbefälle  hat  Winkel  ?,{'entities': []}
+Welches ist das Sterbefälle   Regensdorf ?,{'entities': []}
+Was ist der Anteil an Jugendquotient   pro Bezirk ?,"{'entities': [(42, 50, 'GRAN')]}"
+Was ist der Anteil an Geb.Vol. Dienstleistungen: Zunahme   Wangen-Brüttisellen und Kloten ?,{'entities': []}
+Wie viel Bevölkerungszunahme 5 Jahre  hat  in Region Zimmerberg  ?,{'entities': []}
+Welches ist das Bevölkerungszunahme 5 Jahre   pro Bezirk ?,"{'entities': [(49, 57, 'GRAN')]}"
+Was ist der Anteil an ÖV-Anteil (Modal Split)   Illnau-Effretikon und Dättlikon ?,{'entities': []}
+"Wie viel Hotels  hat  Region Zürich, Bezirk Dielsdorf und Pfäffikon  ?","{'entities': [(36, 44, 'GRAN')]}"
+Welches ist das Hotels   in Stammheim ?,{'entities': []}
+Was ist der Anteil an KRW Wähleranteil CVP   Wallisellen ?,{'entities': []}
+Was ist der Anteil an NRW Wähleranteil SP   Dättlikon und Fehraltorf ?,{'entities': []}
+Was ist der Anteil an Wahlbeteiligung Kantonsrat   Kappel a.A. ?,{'entities': []}
+Wie viel Steuerkraft berichtigt pro Kopf  hat  in Horgen (bis 2017)  ?,{'entities': []}
+Welches ist das Steuerkraft berichtigt pro Kopf   Wildberg ?,{'entities': []}
+"Wie viel Total Arbeitsstätten  hat  Russikon, Regensdorf und Wetzikon  ?",{'entities': []}
+Welches ist das Total Arbeitsstätten   in Dänikon ?,{'entities': []}
+Wie viel Total VZÄ  hat  in Boppelsen  ?,{'entities': []}
+Welches ist das Total VZÄ   für alle Gemeinden ?,"{'entities': [(36, 47, 'GRAN')]}"
+"Wie viel Bauinv. ÖV, Kommunik. 5 Jahre  hat  Altikon und Bonstetten  ?",{'entities': []}
+"Welches ist das Bauinv. ÖV, Kommunik. 5 Jahre   Maur ?",{'entities': []}
+Wie viel Schül. Primarschule  hat  in Rickenbach  ?,{'entities': []}
+Welches ist das Schül. Primarschule   in Kappel a.A. ?,{'entities': []}
+"Wie viel Neuerstellte Wohnungen  hat  Oberweningen, Bezirk Affoltern und Neftenbach  ?","{'entities': [(51, 59, 'GRAN')]}"
+Welches ist das Neuerstellte Wohnungen   in Hüttikon ?,{'entities': []}
+Wie viel Steuerb. Vermögen natürl. Pers. 75%-Quantil  hat  in Schlatt  ?,{'entities': []}
+Welches ist das Steuerb. Vermögen natürl. Pers. 75%-Quantil   für alle Gemeinden ?,"{'entities': [(70, 81, 'GRAN')]}"
+Wie viel Steuerb. Einkommen natürl. Pers. Durchschn.  hat  in Bezirk Hinwil  ?,"{'entities': [(61, 69, 'GRAN')]}"
+Welches ist das Steuerb. Einkommen natürl. Pers. Durchschn.   in Hinwil ?,{'entities': []}
+Wie viel Steuerb. Vermögen natürl. Pers. Durchschn.  hat  Regensberg und Eglisau  ?,{'entities': []}
+Welches ist das Steuerb. Vermögen natürl. Pers. Durchschn.   in Bachenbülach ?,{'entities': []}
+Was ist der Anteil an Anteil Gewässerfläche   im Kanton Zürich ?,"{'entities': [(48, 56, 'GRAN')]}"
+Wie viel Bauinv. MFH 5 Jahre  hat  pro Gemeinde  ?,"{'entities': [(39, 48, 'GRAN')]}"
+Welches ist das Bauinv. MFH 5 Jahre   pro Gemeinde ?,"{'entities': [(42, 51, 'GRAN')]}"
+Wie viel Erwerb des Schweizer Bürgerrechts  hat  pro Gemeinde  ?,"{'entities': [(53, 62, 'GRAN')]}"
+Welches ist das Erwerb des Schweizer Bürgerrechts   Maschwanden ?,{'entities': []}
+Wie viel Verpackungsglasmengen  hat  Zell  ?,{'entities': []}
+"Welches ist das Verpackungsglasmengen   Zollikon, Dachsen und Herrliberg ?",{'entities': []}
+Wie viel Apotheken  hat  Kappel a.A.  ?,{'entities': []}
+Welches ist das Apotheken   Zell und Lufingen ?,{'entities': []}
+Wie viel 2-Personenhaushalte  hat  in Bezirk Zürich  ?,"{'entities': [(37, 45, 'GRAN')]}"
+Welches ist das 2-Personenhaushalte   im Kanton Zürich ?,"{'entities': [(40, 48, 'GRAN')]}"
+Was ist der Anteil an Anteil 5-Personenhaushalte   im Kanton Zürich ?,"{'entities': [(53, 61, 'GRAN')]}"
+Was ist der Anteil an Anteil 6 und mehr Personenhaushalte   Thalheim a.d.Th. und Hinwil ?,{'entities': []}
+"Wie viel Nettoaufwand Kultur, Sport und Freizeit  hat  in Bauma (bis 2014)  ?",{'entities': []}
+"Welches ist das Nettoaufwand Kultur, Sport und Freizeit   in Elgg (bis 2017) ?",{'entities': []}
+Wie viel Bevölkerung: Frauen  hat  Truttikon  ?,{'entities': []}
+"Welches ist das Bevölkerung: Frauen   Adlikon, Region Weinland und Unterengstringen ?",{'entities': []}
+Wie viel Steuerertrag allgemeine Gemeindesteuern  hat  in Region Winterthur u. Umg.  ?,{'entities': []}
+Welches ist das Steuerertrag allgemeine Gemeindesteuern   pro Gemeinde ?,"{'entities': [(62, 71, 'GRAN')]}"
+Wie viel Ertrags- (+) / Aufwandüberschuss (-)  hat  in Oberweningen  ?,{'entities': []}
+Welches ist das Ertrags- (+) / Aufwandüberschuss (-)   in Adlikon ?,{'entities': []}
+Wie viel Reformierte Kirchensteuerpflichtige  hat  im Kanton Zürich  ?,"{'entities': [(53, 61, 'GRAN')]}"
+Welches ist das Reformierte Kirchensteuerpflichtige   Oberrieden und Horgen (bis 2017) ?,{'entities': []}
+Was ist der Anteil an Gesamtsteuerfuss (ohne Kirchen)   in Weiningen ?,{'entities': []}
+Was ist der Anteil an Neuzulassungen  Hybridantrieb   in Weiningen ?,{'entities': []}
+Was ist der Anteil an Neuzulassungen  Dieselmotor   für alle Bezirke ?,"{'entities': [(60, 69, 'GRAN')]}"
+Wie viel Weg zur nächsten Haltestelle  hat  in Bezirk Pfäffikon  ?,"{'entities': [(46, 54, 'GRAN')]}"
+Welches ist das Weg zur nächsten Haltestelle   pro Gemeinde ?,"{'entities': [(51, 60, 'GRAN')]}"
+Wie viel Steuerertrag von juristischen Personen  hat  in Bezirk Dietikon  ?,"{'entities': [(56, 64, 'GRAN')]}"
+"Welches ist das Steuerertrag von juristischen Personen   Wasterkingen, Birmensdorf und Opfikon ?",{'entities': []}
+Wie viel Gebäudevolumen  hat  für alle Gemeinden  ?,"{'entities': [(38, 49, 'GRAN')]}"
+Welches ist das Gebäudevolumen   für den gesamten Kanton ?,"{'entities': [(49, 57, 'GRAN')]}"
+Wie viel Rinderviehbestand  hat  pro Gemeinde  ?,"{'entities': [(37, 46, 'GRAN')]}"
+Welches ist das Rinderviehbestand   für den gesamten Kanton ?,"{'entities': [(52, 60, 'GRAN')]}"
+Was ist der Anteil an Geb.Vol. Nebengebäude: Zunahme   in Bezirk Pfäffikon ?,"{'entities': [(57, 65, 'GRAN')]}"
+Wie viel Zahnärzte  hat  pro Bezirk  ?,"{'entities': [(28, 36, 'GRAN')]}"
+Welches ist das Zahnärzte   pro Gemeinde ?,"{'entities': [(32, 41, 'GRAN')]}"
+Wie viel Selbstfinanzierung  hat  für den gesamten Kanton  ?,"{'entities': [(50, 58, 'GRAN')]}"
+Welches ist das Selbstfinanzierung   in Niederglatt ?,{'entities': []}
+Wie viel Schül. Mittelschule  hat  auf Bezirksebene  ?,"{'entities': [(38, 52, 'GRAN')]}"
+Welches ist das Schül. Mittelschule   Wasterkingen und Hinwil ?,{'entities': []}
+Wie viel Schül. Oberstufe  hat  in Boppelsen  ?,{'entities': []}
+Welches ist das Schül. Oberstufe   Dielsdorf und Region Weinland ?,{'entities': []}
+"Was ist der Anteil an 15-Jahresverbrauch    Hettlingen, Hütten (bis 2018) und Schöfflisdorf ?",{'entities': []}
+Was ist der Anteil an Bauzonen nicht überbaut    in Trüllikon ?,{'entities': []}
+"Wie viel Bauinv. Dienstl. 5 Jahre  hat  Dinhard, Küsnacht und Uetikon a.S.  ?",{'entities': []}
+Welches ist das Bauinv. Dienstl. 5 Jahre   in Mettmenstetten ?,{'entities': []}
+"Wie viel Bauinv. Strassen, PP 5 Jahre  hat  in Schöfflisdorf  ?",{'entities': []}
+"Welches ist das Bauinv. Strassen, PP 5 Jahre   auf Bezirksebene ?","{'entities': [(50, 64, 'GRAN')]}"
+"Wie viel Schül. Oberstufe  hat  Bäretswil, Schlatt und Schwerzenbach  ?",{'entities': []}
+Welches ist das Schül. Oberstufe   auf Gemeindeebene ?,"{'entities': [(38, 53, 'GRAN')]}"
+Was ist der Anteil an Anteil jur. Pers. an allg. Gemeindesteuern   pro Bezirk ?,"{'entities': [(70, 78, 'GRAN')]}"
+Wie viel Geburten  hat  pro Gemeinde  ?,"{'entities': [(28, 37, 'GRAN')]}"
+Welches ist das Geburten   Langnau a.A. ?,{'entities': []}
+Wie viel Höhe  hat  Dorf  INDIKATOR_VALUE?,{'entities': []}
+"Welches ist das Höhe   Turbenthal, Dürnten und Dachsen ?",{'entities': []}
+Was ist der Anteil an KRW Wähleranteil SVP   für alle Bezirke ?,"{'entities': [(53, 62, 'GRAN')]}"
+Wie viel Kühe  hat  auf Bezirksebene  ?,"{'entities': [(23, 37, 'GRAN')]}"
+Welches ist das Kühe   Egg und Affoltern a.A. ?,{'entities': []}
+Wie viel Bevölkerung: Heimat Ausland  hat  pro Gemeinde  ?,"{'entities': [(47, 56, 'GRAN')]}"
+Welches ist das Bevölkerung: Heimat Ausland   in Volken ?,{'entities': []}
+Wie viel Steuerbares Einkommen natürliche Pers.  hat  in Opfikon  ?,{'entities': []}
+Welches ist das Steuerbares Einkommen natürliche Pers.   Marthalen ?,{'entities': []}
+"Wie viel Schül. Primarschule  hat  Nürensdorf, Volken und Bezirk Pfäffikon  ?","{'entities': [(57, 65, 'GRAN')]}"
+Welches ist das Schül. Primarschule   in Volketswil ?,{'entities': []}
+Was ist der Anteil an KRW Wähleranteil AL   in Laufen-Uhwiesen ?,{'entities': []}
+"Wie viel Bevölkerung: Heimat Schweiz  hat  Elsau, Region Zimmerberg und Winterthur  ?",{'entities': []}
+Welches ist das Bevölkerung: Heimat Schweiz   Freienstein-Teufen und Buch a.I. ?,{'entities': []}
+Wie viel Bevölkerung: Durchschnittsalter  hat  in Trüllikon  ?,{'entities': []}
+"Welches ist das Bevölkerung: Durchschnittsalter   Volketswil, Winkel und Urdorf ?",{'entities': []}
+Wie viel Baulandpreis (Median)  hat  Rüti  ?,{'entities': []}
+Welches ist das Baulandpreis (Median)   für alle Gemeinden ?,"{'entities': [(48, 59, 'GRAN')]}"
+Was ist der Anteil an Arbeitslosenanteil an Bevölkerung 15-64 Jahre   pro Bezirk ?,"{'entities': [(73, 81, 'GRAN')]}"
+Was ist der Anteil an Anteil 1-Personenhaushalte   Region Unterland ?,{'entities': []}
+Wie viel Schül. Kindergarten  hat  Trüllikon und Bezirk Dielsdorf  ?,"{'entities': [(48, 56, 'GRAN')]}"
+Welches ist das Schül. Kindergarten   auf Bezirksebene ?,"{'entities': [(41, 55, 'GRAN')]}"
+Wie viel 5-Personenhaushalte  hat  Elsau und Dorf  ?,{'entities': []}
+Welches ist das 5-Personenhaushalte   im Kanton Zürich ?,"{'entities': [(40, 48, 'GRAN')]}"
+"Wie viel 6 und mehr Personenhaushalte  hat  Obfelden, Schönenberg (bis 2018) und Sternenberg (bis 2014)  ?",{'entities': []}
+Welches ist das 6 und mehr Personenhaushalte   in Höri ?,{'entities': []}
+Wie viel Durchschnittliche Haushaltsgrösse  hat  für alle Bezirke  ?,"{'entities': [(57, 66, 'GRAN')]}"
+Welches ist das Durchschnittliche Haushaltsgrösse   in Region Unterland ?,{'entities': []}
+Was ist der Anteil an Anteil 4-Personenhaushalte   in Dorf ?,{'entities': []}
+Wie viel Bauzonen überbaut  hat  in Rümlang  ?,{'entities': []}
+Welches ist das Bauzonen überbaut   für alle Bezirke ?,"{'entities': [(44, 53, 'GRAN')]}"
+Wie viel Steuerb. Vermögen natürl. Pers. 25%-Quantil  hat  in Hagenbuch  ?,{'entities': []}
+Welches ist das Steuerb. Vermögen natürl. Pers. 25%-Quantil   in Region Glattal ?,{'entities': []}
+"Wie viel MIV-Wege Quell-, Ziel- und Binnenverkehr  hat  in Hedingen  ?",{'entities': []}
+"Welches ist das MIV-Wege Quell-, Ziel- und Binnenverkehr   im Kanton Zürich ?","{'entities': [(61, 69, 'GRAN')]}"
+Was ist der Anteil an Anteil GK C   in Hausen a.A. ?,{'entities': []}
+"Wie viel Bauinvestitionen  hat  Rüti, Obfelden und Region Pfannenstiel  ?",{'entities': []}
+Welches ist das Bauinvestitionen   pro Bezirk ?,"{'entities': [(38, 46, 'GRAN')]}"
+"Wie viel Bauinv. Landwirtschaft 5 Jahre  hat  Wallisellen, Pfäffikon und Bassersdorf  ?",{'entities': []}
+Welches ist das Bauinv. Landwirtschaft 5 Jahre   Bezirk Uster und Hofstetten (bis 2017) ?,"{'entities': [(48, 56, 'GRAN')]}"
+Was ist der Anteil an Anteil natürl. Pers. an allg. Gemeindesteuern   Trüllikon ?,{'entities': []}
+Wie viel VZÄ im Primärsektor  hat  in Kappel a.A.  ?,{'entities': []}
+Welches ist das VZÄ im Primärsektor   in Region Winterthur u. Umg. ?,{'entities': []}
+Was ist der Anteil an Anteil 6+ Zi.-Wohnungen   in Winkel ?,{'entities': []}
+Wie viel Motorrad-Neuzulasssungen pro 1000 Einw.  hat  pro Bezirk  ?,"{'entities': [(58, 66, 'GRAN')]}"
+Welches ist das Motorrad-Neuzulasssungen pro 1000 Einw.   in Region Oberland ?,{'entities': []}
+Was ist der Anteil an Neuzulassungen anderer Antrieb   in Region Knonaueramt ?,{'entities': []}
+Was ist der Anteil an Bestand Benzinmotor   in Weiningen ?,{'entities': []}
+Was ist der Anteil an Bestand anderer Antrieb   Hedingen und Bäretswil ?,{'entities': []}
+Wie viel Nettoaufwand Finanzen und Steuern  hat  Andelfingen und Bezirk Dietikon  ?,"{'entities': [(64, 72, 'GRAN')]}"
+Welches ist das Nettoaufwand Finanzen und Steuern   in Adliswil ?,{'entities': []}
+Wie viel Steuerertrag Grundsteuern  hat  auf Gemeindeebene  ?,"{'entities': [(44, 59, 'GRAN')]}"
+Welches ist das Steuerertrag Grundsteuern   in Bezirk Hinwil ?,"{'entities': [(46, 54, 'GRAN')]}"
+Wie viel Steuerertrag Kirchgemeinden  hat  Uetikon a.S.  ?,{'entities': []}
+Welches ist das Steuerertrag Kirchgemeinden   Kleinandelfingen ?,{'entities': []}
+Wie viel Steuerertrag Politische/Schulgemeinde  hat  in Hüntwangen  ?,{'entities': []}
+"Welches ist das Steuerertrag Politische/Schulgemeinde   Bonstetten, Unterstammheim (bis 2018) und Wädenswil (bis 2018) ?",{'entities': []}
+Wie viel Wanderungsbilanz  hat  pro Gemeinde  ?,"{'entities': [(36, 45, 'GRAN')]}"
+Welches ist das Wanderungsbilanz   pro Gemeinde ?,"{'entities': [(39, 48, 'GRAN')]}"
+Wie viel Ø Eigenkapital steuerpfl. jur. Pers.  hat  in Berg a.I.  ?,{'entities': []}
+"Welches ist das Ø Eigenkapital steuerpfl. jur. Pers.   Stammheim, Bezirk Hinwil und Zumikon ?","{'entities': [(65, 73, 'GRAN')]}"
+Was ist der Anteil an Geb.Vol. Dienstleistungen: Anteil   in Rickenbach ?,{'entities': []}
+Was ist der Anteil an Bevölkerung: Anteil 40-64-Jährige   in Hagenbuch ?,{'entities': []}
+Was ist der Anteil an Leerwohnungsquote   in Dällikon ?,{'entities': []}
+"Wie viel Geburtenrate (5-J.-mittel)  hat  Hüntwangen, Dänikon und Region Winterthur u. Umg.  ?",{'entities': []}
+"Welches ist das Geburtenrate (5-J.-mittel)   Bezirk Affoltern, Thalwil und Elgg (bis 2017) ?","{'entities': [(44, 52, 'GRAN')]}"
+Wie viel Geburtenüberschuss 5-J.-mittel  hat  auf Bezirksebene  ?,"{'entities': [(49, 63, 'GRAN')]}"
+Welches ist das Geburtenüberschuss 5-J.-mittel   in Marthalen ?,{'entities': []}
+Wie viel Geburtenrate  hat  pro Gemeinde  ?,"{'entities': [(32, 41, 'GRAN')]}"
+Welches ist das Geburtenrate   in Kloten ?,{'entities': []}
+Wie viel Wanderungsbilanz  hat  in Trüllikon  ?,{'entities': []}
+Welches ist das Wanderungsbilanz   für den gesamten Kanton ?,"{'entities': [(51, 59, 'GRAN')]}"
+Wie viel Schafe  hat  Region Oberland  ?,{'entities': []}
+Welches ist das Schafe   Bubikon ?,{'entities': []}
+Wie viel Motorräder  hat  auf Bezirksebene  ?,"{'entities': [(29, 43, 'GRAN')]}"
+Welches ist das Motorräder   in Unterengstringen ?,{'entities': []}
+"Wie viel Personenwagen pro 1000 Einwohner  hat  Oetwil a.d.L., Herrliberg und Illnau-Effretikon  ?",{'entities': []}
+Welches ist das Personenwagen pro 1000 Einwohner   Turbenthal und Bezirk Dielsdorf ?,"{'entities': [(65, 73, 'GRAN')]}"
+Wie viel Schül. Berufsschule  hat  Dürnten und Birmensdorf  ?,{'entities': []}
+Welches ist das Schül. Berufsschule   in Unterstammheim (bis 2018) ?,{'entities': []}
+Wie viel Schül. Tertiärstufe  hat  in Region Zürich  ?,{'entities': []}
+Welches ist das Schül. Tertiärstufe   für alle Gemeinden ?,"{'entities': [(46, 57, 'GRAN')]}"
+Wie viel Steuerb. Einkommen natürl. Pers. 75%-Quantil  hat  Region Unterland und Brütten  ?,{'entities': []}
+Welches ist das Steuerb. Einkommen natürl. Pers. 75%-Quantil   Boppelsen und Kilchberg ?,{'entities': []}
+Wie viel Steuerb. Einkommen natürl. Pers. 25%-Quantil  hat  in Eglisau  ?,{'entities': []}
+Welches ist das Steuerb. Einkommen natürl. Pers. 25%-Quantil   in Wädenswil ?,{'entities': []}
+Was ist der Anteil an NRW Wähleranteil BDP   für den gesamten Kanton ?,"{'entities': [(61, 69, 'GRAN')]}"
+Was ist der Anteil an NRW Wähleranteil FDP   für den gesamten Kanton ?,"{'entities': [(61, 69, 'GRAN')]}"
+Was ist der Anteil an NRW Wähleranteil GP   in Egg ?,{'entities': []}
+Wie viel Beschäftigte Landwirtschaft  hat  pro Bezirk  ?,"{'entities': [(46, 54, 'GRAN')]}"
+Welches ist das Beschäftigte Landwirtschaft   in Greifensee ?,{'entities': []}
+Was ist der Anteil an KRW Wähleranteil SD   in Rorbas ?,{'entities': []}
+Was ist der Anteil an Anteil 2 Zi.-Wohnungen   für den gesamten Kanton ?,"{'entities': [(63, 71, 'GRAN')]}"
+"Wie viel Scheidungen  hat  Dinhard, Region Winterthur u. Umg. und Illnau-Effretikon  ?",{'entities': []}
+Welches ist das Scheidungen   in Regensberg ?,{'entities': []}
+Was ist der Anteil an Anteil 2-Personenhaushalte   auf Gemeindeebene ?,"{'entities': [(54, 69, 'GRAN')]}"
+Wie viel Kehrichtmengen  hat  auf Bezirksebene  ?,"{'entities': [(33, 47, 'GRAN')]}"
+Welches ist das Kehrichtmengen   auf Gemeindeebene ?,"{'entities': [(36, 51, 'GRAN')]}"
+"Was ist der Anteil an Anteil GK F   Oberembrach, Region Winterthur u. Umg. und Dinhard ?",{'entities': []}
+"Wie viel Verkäufe EFH  hat  Dachsen, Dielsdorf und Uster  ?",{'entities': []}
+Welches ist das Verkäufe EFH   im Kanton Zürich ?,"{'entities': [(33, 41, 'GRAN')]}"
+Wie viel Landwirtschaftsbetriebe  hat  in Dachsen  ?,{'entities': []}
+Welches ist das Landwirtschaftsbetriebe   in Bachenbülach ?,{'entities': []}
+Wie viel Nettoaufwand Umweltschutz und Raumordnung  hat  in Greifensee  ?,{'entities': []}
+Welches ist das Nettoaufwand Umweltschutz und Raumordnung   auf Bezirksebene ?,"{'entities': [(63, 77, 'GRAN')]}"
+Was ist der Anteil an Anteil EFH am Wohnungsbestand   auf Gemeindeebene ?,"{'entities': [(57, 72, 'GRAN')]}"
+Was ist der Anteil an Anteil GK A   auf Bezirksebene ?,"{'entities': [(39, 53, 'GRAN')]}"
+Wie viel Bevölkerung: katholisch  hat  in Boppelsen  ?,{'entities': []}
+Welches ist das Bevölkerung: katholisch   in Region Winterthur u. Umg. ?,{'entities': []}
+Wie viel Finanzvermögen  hat  für alle Bezirke  ?,"{'entities': [(38, 47, 'GRAN')]}"
+"Welches ist das Finanzvermögen   Flaach, Region Weinland und Bezirk Meilen ?","{'entities': [(60, 68, 'GRAN')]}"
+Wie viel Katholische Kirchensteuerpflichtige  hat  auf Gemeindeebene  ?,"{'entities': [(54, 69, 'GRAN')]}"
+"Welches ist das Katholische Kirchensteuerpflichtige   Laufen-Uhwiesen, Schlieren und Pfungen ?",{'entities': []}
+"Wie viel Hotelbetten  hat  Bubikon, Regensdorf und Bäretswil  ?",{'entities': []}
+Welches ist das Hotelbetten   Nürensdorf und Winkel ?,{'entities': []}
+Wie viel Fremdkapital  hat  Dinhard  ?,{'entities': []}
+Welches ist das Fremdkapital   in Waltalingen (bis 2018) ?,{'entities': []}
+Wie viel Ø steuerbares Vermögen natürliche Pers.  hat  in Dägerlen  ?,{'entities': []}
+Welches ist das Ø steuerbares Vermögen natürliche Pers.   in Regensdorf ?,{'entities': []}
+Was ist der Anteil an Neuzulassungen Benzinmotor   in Neerach ?,{'entities': []}
+Wie viel Bevölkerung: reformiert  hat  in Turbenthal  ?,{'entities': []}
+Welches ist das Bevölkerung: reformiert   für alle Gemeinden ?,"{'entities': [(50, 61, 'GRAN')]}"
+"Wie viel Landwirtschaftliche Nutzfläche  hat  Obfelden, Herrliberg und Hinwil  ?",{'entities': []}
+Welches ist das Landwirtschaftliche Nutzfläche   auf Bezirksebene ?,"{'entities': [(52, 66, 'GRAN')]}"
+Wie viel Wegzüge  hat  für den gesamten Kanton  ?,"{'entities': [(39, 47, 'GRAN')]}"
+Welches ist das Wegzüge   Lufingen ?,{'entities': []}
+Was ist der Anteil an Bevölkerung: Anteil 0-14-Jährige   Weiningen und Glattfelden ?,{'entities': []}
+Was ist der Anteil an Bevölkerung: Anteil 20-39-Jährige   für alle Gemeinden ?,"{'entities': [(66, 77, 'GRAN')]}"
+Wie viel Bevölkerung  hat  für alle Gemeinden  ?,"{'entities': [(35, 46, 'GRAN')]}"
+Welches ist das Bevölkerung   im Kanton Zürich ?,"{'entities': [(32, 40, 'GRAN')]}"
+Wie viel Gemeindebeitrag an ZVV  hat  Bauma  ?,{'entities': []}
+Welches ist das Gemeindebeitrag an ZVV   Region Winterthur u. Umg. und Oberweningen ?,{'entities': []}
+Wie viel Beschäftigte im Primärsektor  hat  für alle Bezirke  ?,"{'entities': [(52, 61, 'GRAN')]}"
+Welches ist das Beschäftigte im Primärsektor   Region Weinland und Oberstammheim (bis 2018) ?,{'entities': []}
+"Wie viel Total Beschäftigte  hat  Oberembrach, Adlikon und Dachsen  ?",{'entities': []}
+"Welches ist das Total Beschäftigte   Eglisau, Wasterkingen und Volketswil ?",{'entities': []}
+Wie viel Nettoaufwand soziale Sicherheit  hat  Bezirk Pfäffikon  ?,"{'entities': [(46, 54, 'GRAN')]}"
+Welches ist das Nettoaufwand soziale Sicherheit   auf Bezirksebene ?,"{'entities': [(53, 67, 'GRAN')]}"
+"Was ist der Anteil an Selbstfinanzierungsanteil   Hütten (bis 2018), Aesch ZH und Wetzikon ?",{'entities': []}
+Wie viel 15-Jahresverbrauch  hat  Zollikon  ?,{'entities': []}
+Welches ist das 15-Jahresverbrauch   in Turbenthal ?,{'entities': []}
+Wie viel Bauinv. EFH 5 Jahre  hat  auf Bezirksebene  ?,"{'entities': [(38, 52, 'GRAN')]}"
+Welches ist das Bauinv. EFH 5 Jahre   für alle Bezirke ?,"{'entities': [(46, 55, 'GRAN')]}"
+Wie viel Arbeitsstätten im Primärsektor  hat  in Seegräben  ?,{'entities': []}
+Welches ist das Arbeitsstätten im Primärsektor   für alle Gemeinden ?,"{'entities': [(57, 68, 'GRAN')]}"
+Wie viel VZÄ im Tertiärsektor  hat  pro Bezirk  ?,"{'entities': [(39, 47, 'GRAN')]}"
+Welches ist das VZÄ im Tertiärsektor   für den gesamten Kanton ?,"{'entities': [(55, 63, 'GRAN')]}"
+Wie viel Privathaushalte Total  hat  Geroldswil  ?,{'entities': []}
+Welches ist das Privathaushalte Total   Maschwanden ?,{'entities': []}
+Wie viel Steuerb. Vermögen natürl. Pers. Median  hat  in Hüttikon  ?,{'entities': []}
+Welches ist das Steuerb. Vermögen natürl. Pers. Median   pro Gemeinde ?,"{'entities': [(61, 70, 'GRAN')]}"
+"Was ist der Anteil an Anteil Waldfläche   Rifferswil, Schlatt und Niederweningen ?",{'entities': []}
+Was ist der Anteil an Anteil unproduktive Fläche   in Region Zimmerberg ?,{'entities': []}
+"Was ist der Anteil an NRW Wähleranteil SVP   Lindau, Dietikon und Winterthur ?",{'entities': []}
+Was ist der Anteil an KRW Wähleranteil GP   Bauma (bis 2014) ?,{'entities': []}
+Was ist der Anteil an Geb.Vol. Industrie/Lager: Anteil   im Kanton Zürich ?,"{'entities': [(59, 67, 'GRAN')]}"
+Was ist der Anteil an KRW Wähleranteil BDP   in Bezirk Winterthur ?,"{'entities': [(47, 55, 'GRAN')]}"
+Wie viel Nettoaufwand Bildung  hat  in Feuerthalen  ?,{'entities': []}
+Welches ist das Nettoaufwand Bildung   für alle Gemeinden ?,"{'entities': [(47, 58, 'GRAN')]}"
+Wie viel Bevölkerung: Männer  hat  Bäretswil  ?,{'entities': []}
+"Welches ist das Bevölkerung: Männer   Neftenbach, Schönenberg (bis 2018) und Wil ?",{'entities': []}
+Was ist der Anteil an Anteil 3-Personenhaushalte   auf Bezirksebene ?,"{'entities': [(54, 68, 'GRAN')]}"
+Was ist der Anteil an Anteil Vollzeitbeschäftigte Landwirtschaft   für alle Bezirke ?,"{'entities': [(75, 84, 'GRAN')]}"
+"Was ist der Anteil an KRW Wähleranteil EDU   Truttikon, Dietikon und Illnau-Effretikon (bis 2015) ?",{'entities': []}
+Wie viel Unfälle  hat  Thalheim a.d.Th.  ?,{'entities': []}
+Welches ist das Unfälle   Niederweningen und Männedorf ?,{'entities': []}
+Was ist der Anteil an Wohnungen: Anteil Eigentumsobjekte   pro Gemeinde ?,"{'entities': [(63, 72, 'GRAN')]}"
+Was ist der Anteil an Anteil 3 Zi.-Wohnungen   in Illnau-Effretikon ?,{'entities': []}
+"Wie viel Total geschaffene Stellen, Beschäftigte  hat  Niederhasli und Stadel  ?",{'entities': []}
+"Welches ist das Total geschaffene Stellen, Beschäftigte   Henggart, Embrach und Oberengstringen ?",{'entities': []}
+Was ist der Anteil an Anteil GK B   in Seegräben ?,{'entities': []}
+Was ist der Anteil an Anteil GK D   im Kanton Zürich ?,"{'entities': [(38, 46, 'GRAN')]}"
+Wie viel Nettoaufwand Volkswirtschaft  hat  in Rheinau  ?,{'entities': []}
+Welches ist das Nettoaufwand Volkswirtschaft   in Bauma (bis 2014) ?,{'entities': []}
+Wie viel Arbeitsstätten im Sekundärsektor  hat  in Zell  ?,{'entities': []}
+Welches ist das Arbeitsstätten im Sekundärsektor   in Bezirk Affoltern ?,"{'entities': [(53, 61, 'GRAN')]}"
+Wie viel Steuerb. Einkommen natürl. Pers. Median  hat  pro Bezirk  ?,"{'entities': [(58, 66, 'GRAN')]}"
+Welches ist das Steuerb. Einkommen natürl. Pers. Median   für den gesamten Kanton ?,"{'entities': [(74, 82, 'GRAN')]}"
+"Was ist der Anteil an Steuerfuss (ohne Kirchen)   Embrach, Adlikon und Oberglatt ?",{'entities': []}
+Wie viel PW-Neuzulassungen pro 1000 Einw.  hat  in Wädenswil (bis 2018)  ?,{'entities': []}
+Welches ist das PW-Neuzulassungen pro 1000 Einw.   für alle Bezirke ?,"{'entities': [(59, 68, 'GRAN')]}"
+Wie viel Steuerkraft ber. (arith. Mittel 3 Jahre)  hat  auf Bezirksebene  ?,"{'entities': [(59, 73, 'GRAN')]}"
+Welches ist das Steuerkraft ber. (arith. Mittel 3 Jahre)   in Horgen ?,{'entities': []}
+Was ist der Anteil an Anteil Pol./Schulgem. an allg. Gemeindesteuern   in Regensdorf ?,{'entities': []}
+Was ist der Anteil an Geb.Vol. Wohnen: Zunahme   in Oetwil a.S. ?,{'entities': []}
+Wie viel Schweine  hat  für den gesamten Kanton  ?,"{'entities': [(40, 48, 'GRAN')]}"
+Welches ist das Schweine   in Schwerzenbach ?,{'entities': []}
+Wie viel Bevölkerungsdichte  hat  für alle Bezirke  ?,"{'entities': [(42, 51, 'GRAN')]}"
+"Welches ist das Bevölkerungsdichte   Bezirk Hinwil, Boppelsen und Region Pfannenstiel ?","{'entities': [(36, 44, 'GRAN')]}"
+Was ist der Anteil an Wegzüge   Bezirk Affoltern ?,"{'entities': [(31, 39, 'GRAN')]}"
+Was ist der Anteil an Geb.Vol. Landwirtschaft: Anteil   Wil und Bezirk Andelfingen ?,"{'entities': [(63, 71, 'GRAN')]}"
+Was ist der Anteil an Bevölkerung: Anteil 15-19-Jährige   in Bassersdorf ?,{'entities': []}
+Was ist der Anteil an Geb.Vol. Landwirtschaft: Zunahme   auf Gemeindeebene ?,"{'entities': [(60, 75, 'GRAN')]}"
+Wie viel Erwerb des Schweizer Bürgerrechts  hat  in Kloten  ?,{'entities': []}
+Welches ist das Erwerb des Schweizer Bürgerrechts   im Kanton Zürich ?,"{'entities': [(54, 62, 'GRAN')]}"
+Was ist der Anteil an NRW Wähleranteil EVP   in Hettlingen ?,{'entities': []}
+Wie viel Verkäufe von unbebautem Land  hat  Niederweningen und Bachs  ?,{'entities': []}
+Welches ist das Verkäufe von unbebautem Land   Bezirk Meilen ?,"{'entities': [(46, 54, 'GRAN')]}"
+"Wie viel Motorräder pro 1000 Einwohner  hat  Berg a.I., Meilen und Oetwil a.S.  ?",{'entities': []}
+Welches ist das Motorräder pro 1000 Einwohner   auf Bezirksebene ?,"{'entities': [(51, 65, 'GRAN')]}"
+Wie viel Beschäftigte im Tertiärsektor  hat  Bezirk Andelfingen  ?,"{'entities': [(44, 52, 'GRAN')]}"
+Welches ist das Beschäftigte im Tertiärsektor   für den gesamten Kanton ?,"{'entities': [(64, 72, 'GRAN')]}"
+Wie viel Schül. Kindergarten  hat  in Flurlingen  ?,{'entities': []}
+"Welches ist das Schül. Kindergarten   Illnau-Effretikon (bis 2015), Bachenbülach und Rüti ?",{'entities': []}
+Wie viel Bauinv. Industr./Lager 5 Jahre  hat  Adliswil und Pfungen  ?,{'entities': []}
+Welches ist das Bauinv. Industr./Lager 5 Jahre   Seegräben ?,{'entities': []}
+"Wie viel Bauinv. Spital, Kultur usw. 5 J.  hat  Bezirk Dielsdorf, Bäretswil und Rickenbach  ?","{'entities': [(47, 55, 'GRAN')]}"
+"Welches ist das Bauinv. Spital, Kultur usw. 5 J.   Benken ?",{'entities': []}
+"Wie viel Bauinvestitionen   hat  Bezirk Uster, Unterengstringen und Bezirk Pfäffikon  ?","{'entities': [(32, 40, 'GRAN')]}"
+Welches ist das Bauinvestitionen    in Bonstetten ?,{'entities': []}
+Wie viel Bauzonen überbaut pro Kopf  hat  Schöfflisdorf  ?,{'entities': []}
+Welches ist das Bauzonen überbaut pro Kopf   Lufingen ?,{'entities': []}
+Wie viel Schül. Sekundarstufe I  hat  in Elsau  ?,{'entities': []}
+Welches ist das Schül. Sekundarstufe I   auf Bezirksebene ?,"{'entities': [(44, 58, 'GRAN')]}"
+Wie viel Schül. Berufsschule  hat  in Dägerlen  ?,{'entities': []}
+Welches ist das Schül. Berufsschule   in Oberrieden ?,{'entities': []}
+Wie viel Kleine Betriebe (10-49 VZÄ)  hat  in Kyburg (bis 2015)  ?,{'entities': []}
+Welches ist das Kleine Betriebe (10-49 VZÄ)   in Sternenberg (bis 2014) ?,{'entities': []}
+"Was ist der Anteil an NRW Wähleranteil CVP   Region Limmattal, Region Weinland und Buch a.I. ?",{'entities': []}
+"Wie viel Verkäufe Stockwerkeigentum  hat  Humlikon, Maur und Dinhard  ?",{'entities': []}
+Welches ist das Verkäufe Stockwerkeigentum   in Otelfingen ?,{'entities': []}
+Was ist der Anteil an NRW Wähleranteil EDU   im Kanton Zürich ?,"{'entities': [(47, 55, 'GRAN')]}"
+Was ist der Anteil an NRW Wähleranteil AL   in Oetwil a.d.L. ?,{'entities': []}
+"Wie viel Wohnungsbestand  hat  Wil, Volken und Kleinandelfingen  ?",{'entities': []}
+Welches ist das Wohnungsbestand   in Bubikon ?,{'entities': []}
+Wie viel Apotheken  hat  pro Bezirk  ?,"{'entities': [(28, 36, 'GRAN')]}"
+"Welches ist das Apotheken   Hedingen, Bezirk Zürich und Wettswil a.A. ?","{'entities': [(37, 45, 'GRAN')]}"
+Was ist der Anteil an Sozialhilfequote   für alle Gemeinden ?,"{'entities': [(49, 60, 'GRAN')]}"
+Wie viel Scheidungen  hat  Wildberg  ?,{'entities': []}
+Welches ist das Scheidungen   Wila ?,{'entities': []}
+Wie viel 1-Personenhaushalte  hat  Ottenbach  ?,{'entities': []}
+Welches ist das 1-Personenhaushalte   im Kanton Zürich ?,"{'entities': [(40, 48, 'GRAN')]}"
+Was ist der Anteil an Anteil ohne GK   in Wallisellen ?,{'entities': []}
+Wie viel Nettovermögen  hat  auf Gemeindeebene  ?,"{'entities': [(32, 47, 'GRAN')]}"
+Welches ist das Nettovermögen   in Hedingen ?,{'entities': []}
+Wie viel Steuerertrag Total  hat  Unterengstringen und Niederweningen  ?,{'entities': []}
+"Welches ist das Steuerertrag Total   Bezirk Pfäffikon, Bachs und Hofstetten (bis 2017) ?","{'entities': [(36, 44, 'GRAN')]}"
+Was ist der Anteil an Geb.Vol. Nebengebäude: Anteil   Pfäffikon ?,{'entities': []}
+Was ist der Anteil an Anteil Grundsteuern am Steuerertrag   in Dägerlen ?,{'entities': []}
+Wie viel Total ordentlich Besteuerte  hat  Bezirk Uster und Region Limmattal  ?,"{'entities': [(42, 50, 'GRAN')]}"
+Welches ist das Total ordentlich Besteuerte   in Pfäffikon ?,{'entities': []}
+"Wie viel Nur an der Quelle besteuerte Quellensteuerpfl.  hat  Region Limmattal, Oberembrach und Männedorf  ?",{'entities': []}
+Welches ist das Nur an der Quelle besteuerte Quellensteuerpfl.   in Region Oberland ?,{'entities': []}
+Wie viel Christkatholische Kirchensteuerpflichtige  hat  in Truttikon  ?,{'entities': []}
+Welches ist das Christkatholische Kirchensteuerpflichtige   für alle Gemeinden ?,"{'entities': [(68, 79, 'GRAN')]}"
+Was ist der Anteil an Wahlbeteiligung Nationalrat   Dachsen und Aeugst a.A. ?,{'entities': []}
+Wie viel Bauzonen  hat  Rorbas und Grüningen  ?,{'entities': []}
+Welches ist das Bauzonen   Humlikon ?,{'entities': []}
+Was ist der Anteil an Bestand Dieselmotor   auf Bezirksebene ?,"{'entities': [(47, 61, 'GRAN')]}"
+Wie viel Nettoinvestitionen  hat  pro Gemeinde  ?,"{'entities': [(38, 47, 'GRAN')]}"
+Welches ist das Nettoinvestitionen   Stäfa und Hinwil ?,{'entities': []}
+Wie viel Steuerkraft  hat  in Opfikon  ?,{'entities': []}
+Welches ist das Steuerkraft   in Hochfelden ?,{'entities': []}
+Wie viel Reingewinn juristische Personen  hat  für den gesamten Kanton  ?,"{'entities': [(63, 71, 'GRAN')]}"
+Welches ist das Reingewinn juristische Personen   in Birmensdorf ?,{'entities': []}
+Wie viel Bevölkerungszunahme 1 Jahr  hat  in Zumikon  ?,{'entities': []}
+Welches ist das Bevölkerungszunahme 1 Jahr   in Henggart ?,{'entities': []}
+Wie viel Gemeindebeitrag an ZVV  hat  in Zumikon  ?,{'entities': []}
+Welches ist das Gemeindebeitrag an ZVV   Hüttikon und Wangen-Brüttisellen ?,{'entities': []}
+Wie viel Verkäufe MFH  hat  pro Bezirk  ?,"{'entities': [(31, 39, 'GRAN')]}"
+Welches ist das Verkäufe MFH   in Egg ?,{'entities': []}
+Wie viel Arbeitslose  hat  auf Bezirksebene  ?,"{'entities': [(30, 44, 'GRAN')]}"
+Welches ist das Arbeitslose   pro Gemeinde ?,"{'entities': [(34, 43, 'GRAN')]}"
+Was ist der Anteil an Ausländeranteil   für alle Bezirke ?,"{'entities': [(48, 57, 'GRAN')]}"
+Was ist der Anteil an Bevölkerung: Frauenanteil   im Kanton Zürich ?,"{'entities': [(52, 60, 'GRAN')]}"
+"Wie viel ÖV-Wege Quell-, Ziel- und Binnenverkehr  hat  auf Bezirksebene  ?","{'entities': [(58, 72, 'GRAN')]}"
+"Welches ist das ÖV-Wege Quell-, Ziel- und Binnenverkehr   für alle Gemeinden ?","{'entities': [(66, 77, 'GRAN')]}"
+Was ist der Anteil an KRW Wähleranteil EVP   auf Bezirksebene ?,"{'entities': [(48, 62, 'GRAN')]}"
+Wie viel Aerzte  hat  Unterengstringen und Mönchaltorf  ?,{'entities': []}
+Welches ist das Aerzte   Volken ?,{'entities': []}
+Wie viel Steuerkraft pro Kopf  hat  in Wangen-Brüttisellen  ?,{'entities': []}
+Welches ist das Steuerkraft pro Kopf   in Niederweningen ?,{'entities': []}
+"Wie viel Ø Reingewinn steuerpfl. jur. Pers.  hat  Bezirk Winterthur, Boppelsen und Humlikon  ?","{'entities': [(49, 57, 'GRAN')]}"
+Welches ist das Ø Reingewinn steuerpfl. jur. Pers.   in Dübendorf ?,{'entities': []}
+"Wie viel Beschäftigte im Sekundärsektor  hat  Bezirk Dietikon, Adlikon und Adliswil  ?","{'entities': [(45, 53, 'GRAN')]}"
+Welches ist das Beschäftigte im Sekundärsektor   auf Gemeindeebene ?,"{'entities': [(52, 67, 'GRAN')]}"
+Wie viel Nettoaufwand Gesundheit  hat  auf Bezirksebene  ?,"{'entities': [(42, 56, 'GRAN')]}"
+Welches ist das Nettoaufwand Gesundheit   für alle Bezirke ?,"{'entities': [(50, 59, 'GRAN')]}"
+Was ist der Anteil an Beschäftigte im Gastgewerbe: Anteil   im Kanton Zürich ?,"{'entities': [(62, 70, 'GRAN')]}"
+Wie viel Schül. Mittelschule  hat  auf Bezirksebene  ?,"{'entities': [(38, 52, 'GRAN')]}"
+Welches ist das Schül. Mittelschule   Bezirk Dielsdorf und Bezirk Hinwil ?,"{'entities': [(37, 45, 'GRAN')]}"
+Wie viel Mittlere Betriebe (50-249 VZÄ)  hat  für den gesamten Kanton  ?,"{'entities': [(62, 70, 'GRAN')]}"
+Welches ist das Mittlere Betriebe (50-249 VZÄ)   in Regensberg ?,{'entities': []}
+Was ist der Anteil an Anteil Verkehrsfläche   Niederglatt und Region Limmattal ?,{'entities': []}
+Was ist der Anteil an Anteil Siedlungsfläche   Uitikon und Benken ?,{'entities': []}
+Was ist der Anteil an KRW Wähleranteil FDP   für den gesamten Kanton ?,"{'entities': [(61, 69, 'GRAN')]}"
+Wie viel Hotelbetten pro 1000 Einwohner  hat  Wangen-Brüttisellen  ?,{'entities': []}
+Welches ist das Hotelbetten pro 1000 Einwohner   in Wangen-Brüttisellen ?,{'entities': []}
+"Was ist der Anteil an Bevölkerung: Männeranteil   Fehraltorf, Dättlikon und Wädenswil (bis 2018) ?",{'entities': []}
+Was ist der Anteil an KRW Wähleranteil SP   in Oberweningen ?,{'entities': []}
+Wie viel Arbeitsstätten im Tertiärsektor  hat  pro Bezirk  ?,"{'entities': [(50, 58, 'GRAN')]}"
+Welches ist das Arbeitsstätten im Tertiärsektor   pro Gemeinde ?,"{'entities': [(54, 63, 'GRAN')]}"
+Wie viel Steuerkraft (arith. Mittel 3 Jahre)  hat  in Bezirk Affoltern  ?,"{'entities': [(53, 61, 'GRAN')]}"
+"Welches ist das Steuerkraft (arith. Mittel 3 Jahre)   Bezirk Winterthur, Oberembrach und Rorbas ?","{'entities': [(53, 61, 'GRAN')]}"
+Wie viel Steuerertrag von natürlichen Personen  hat  in Russikon  ?,{'entities': []}
+Welches ist das Steuerertrag von natürlichen Personen   in Urdorf ?,{'entities': []}
+"Wie viel Bevölkerung: übrige/andere/ohne Konfession  hat  Fehraltorf, Rümlang und Turbenthal  ?",{'entities': []}
+Welches ist das Bevölkerung: übrige/andere/ohne Konfession   für den gesamten Kanton ?,"{'entities': [(77, 85, 'GRAN')]}"
+"Was ist der Anteil an Bevölkerungszunahme 5 Jahre   Buch a.I., Oberrieden und Wil ?",{'entities': []}
+Wie viel Aerzte  hat  auf Gemeindeebene  ?,"{'entities': [(25, 40, 'GRAN')]}"
+Welches ist das Aerzte   für alle Bezirke ?,"{'entities': [(33, 42, 'GRAN')]}"
+Wie viel Neu gegründete Unternehmen Total  hat  auf Bezirksebene  ?,"{'entities': [(51, 65, 'GRAN')]}"
+Welches ist das Neu gegründete Unternehmen Total   in Dättlikon ?,{'entities': []}
+Wie viel Nettoaufwand Verkehr und Nachrichtenübermittlung  hat  in Wasterkingen  ?,{'entities': []}
+Welches ist das Nettoaufwand Verkehr und Nachrichtenübermittlung   in Hirzel (bis 2017) ?,{'entities': []}
+"Wie viel Personalsteuerpflichtige  hat  Niederglatt, Zollikon und Ottenbach  ?",{'entities': []}
+Welches ist das Personalsteuerpflichtige   pro Gemeinde ?,"{'entities': [(47, 56, 'GRAN')]}"
+Wie viel Total Quellensteuerpflichtige  hat  für alle Gemeinden  ?,"{'entities': [(53, 64, 'GRAN')]}"
+Welches ist das Total Quellensteuerpflichtige   Altikon ?,{'entities': []}
+Wie viel Hotelbetten pro Hotel  hat  für den gesamten Kanton  ?,"{'entities': [(53, 61, 'GRAN')]}"
+Welches ist das Hotelbetten pro Hotel   pro Bezirk ?,"{'entities': [(43, 51, 'GRAN')]}"
+Was ist der Anteil an Neuzulassungen  Elektromotor   in Uster ?,{'entities': []}
+Wie viel Motorrad-Neuzulassungen  hat  in Oberembrach  ?,{'entities': []}
+Welches ist das Motorrad-Neuzulassungen   in Urdorf ?,{'entities': []}
+Was ist der Anteil an Investitionsanteil   in Neerach ?,{'entities': []}
+Wie viel Eigenkapital steuerpfl. jur. Pers.  hat  auf Gemeindeebene  ?,"{'entities': [(53, 68, 'GRAN')]}"
+Welches ist das Eigenkapital steuerpfl. jur. Pers.   in Pfungen ?,{'entities': []}
+"Wie viel Steuerkraft berichtigt  hat  Altikon, Birmensdorf und Wetzikon  ?",{'entities': []}
+Welches ist das Steuerkraft berichtigt   in Adliswil ?,{'entities': []}
+Was ist der Anteil an Zinsbelastungsanteil   Hüttikon und Egg ?,{'entities': []}
+"Wie viel Baulandpreis Modell (Median)  hat  Trüllikon, Marthalen und Eglisau  ?",{'entities': []}
+Welches ist das Baulandpreis Modell (Median)   in Stadel ?,{'entities': []}
+Wie viel 4-Personenhaushalte  hat  Wildberg und Region Furttal  ?,{'entities': []}
+Welches ist das 4-Personenhaushalte   für den gesamten Kanton ?,"{'entities': [(54, 62, 'GRAN')]}"
+Was ist der Anteil an Bevölkerungszunahme 1 Jahr   auf Bezirksebene ?,"{'entities': [(54, 68, 'GRAN')]}"
+Was ist der Anteil an Geb.Vol. Industrie/Lager: Zunahme   in Bauma ?,{'entities': []}
+Was ist der Anteil an Geb.Vol. Infrastruktur: Zunahme   für den gesamten Kanton ?,"{'entities': [(72, 80, 'GRAN')]}"
+Wie viel Sterberate  hat  pro Gemeinde  ?,"{'entities': [(30, 39, 'GRAN')]}"
+Welches ist das Sterberate   Region Glattal ?,{'entities': []}
+Wie viel Altpapiermengen  hat  auf Gemeindeebene  ?,"{'entities': [(34, 49, 'GRAN')]}"
+Welches ist das Altpapiermengen   in Wettswil a.A. ?,{'entities': []}
+Wie viel Nettoaufwand allgemeine Verwaltung  hat  Bezirk Meilen und Niederhasli  ?,"{'entities': [(49, 57, 'GRAN')]}"
+Welches ist das Nettoaufwand allgemeine Verwaltung   auf Gemeindeebene ?,"{'entities': [(56, 71, 'GRAN')]}"
+"Wie viel Personenwagen  hat  Bezirk Meilen, Weisslingen und Rüschlikon  ?","{'entities': [(28, 36, 'GRAN')]}"
+Welches ist das Personenwagen   Hüttikon ?,{'entities': []}
+"Wie viel Grosse Betriebe (250+ VZÄ)  hat  Bezirk Zürich, Regensdorf und Regensberg  ?","{'entities': [(41, 49, 'GRAN')]}"
+Welches ist das Grosse Betriebe (250+ VZÄ)   Oberstammheim (bis 2018) ?,{'entities': []}
+"Wie viel VZÄ im Sekundärsektor  hat  Volketswil, Schönenberg (bis 2018) und Bäretswil  ?",{'entities': []}
+Welches ist das VZÄ im Sekundärsektor   pro Bezirk ?,"{'entities': [(43, 51, 'GRAN')]}"
+Was ist der Anteil an Bauzonen überbaut    in Hedingen ?,{'entities': []}
+Wie viel Bauinv. Ver-/Entsorg. 5 Jahre  hat  für alle Gemeinden  ?,"{'entities': [(53, 64, 'GRAN')]}"
+"Welches ist das Bauinv. Ver-/Entsorg. 5 Jahre   Regensberg, Volken und Oberengstringen ?",{'entities': []}
+Wie viel Bauinv. Wohnen   hat  für alle Gemeinden  ?,"{'entities': [(39, 50, 'GRAN')]}"
+Welches ist das Bauinv. Wohnen    in Lindau ?,{'entities': []}
+Wie viel Neuerstellte EFH  hat  Pfungen  ?,{'entities': []}
+Welches ist das Neuerstellte EFH   in Hedingen ?,{'entities': []}
+Wie viel Restaurants pro 1000 Einwohner  hat  Region Winterthur u. Umg.  ?,{'entities': []}
+"Welches ist das Restaurants pro 1000 Einwohner   Regensdorf, Buchs und Wallisellen ?",{'entities': []}
+"Wie viel Mikrobetriebe (0-9 VZÄ)  hat  Illnau-Effretikon (bis 2015), Aesch ZH und Nürensdorf  ?",{'entities': []}
+Welches ist das Mikrobetriebe (0-9 VZÄ)   auf Gemeindeebene ?,"{'entities': [(45, 60, 'GRAN')]}"
+Wie viel Steuerpflichtige juristische Personen  hat  auf Bezirksebene  ?,"{'entities': [(56, 70, 'GRAN')]}"
+Welches ist das Steuerpflichtige juristische Personen   in Bezirk Pfäffikon ?,"{'entities': [(58, 66, 'GRAN')]}"
+Wie viel Wasserverbrauch pro Tag und Kopf  hat  Dägerlen und Turbenthal  ?,{'entities': []}
+Welches ist das Wasserverbrauch pro Tag und Kopf   Neerach und Stallikon ?,{'entities': []}
+Was ist der Anteil an Anteil Landwirtschaftsfläche   in Schöfflisdorf ?,{'entities': []}
+"Was ist der Anteil an NRW Wähleranteil GLP   Wiesendangen, Adlikon und Bezirk Pfäffikon ?","{'entities': [(70, 78, 'GRAN')]}"
+Wie viel Ø steuerbares Einkommen natürliche Pers.  hat  Weisslingen und Region Knonaueramt  ?,{'entities': []}
+Welches ist das Ø steuerbares Einkommen natürliche Pers.   Bezirk Horgen und Männedorf ?,"{'entities': [(58, 66, 'GRAN')]}"
+Was ist der Anteil an KRW Wähleranteil GLP   Dübendorf und Hüttikon ?,{'entities': []}
+Was ist der Anteil an NRW Wähleranteil SD   in Weiningen ?,{'entities': []}
+Was ist der Anteil an Bevölkerung: Anteil 80 u.m.-Jährige   in Herrliberg ?,{'entities': []}
+Wie viel Heiraten  hat  Maur  ?,{'entities': []}
+Welches ist das Heiraten   für den gesamten Kanton ?,"{'entities': [(43, 51, 'GRAN')]}"
+Was ist der Anteil an Bezügerquote der bedarfsabh. Sozialleistungen   Zürich - ganzer Kanton und Bülach ?,"{'entities': [(85, 93, 'GRAN')]}"
+Was ist der Anteil an Steuerfuss juristische Personen   pro Gemeinde ?,"{'entities': [(60, 69, 'GRAN')]}"
+Was ist der Anteil an Anteil Teilzeitbeschäftigte Landwirtschaft   auf Gemeindeebene ?,"{'entities': [(70, 85, 'GRAN')]}"
+Wie viel Nettoaufwand öffentliche Ordnung und Sicherheit  hat  in Schleinikon  ?,{'entities': []}
+Welches ist das Nettoaufwand öffentliche Ordnung und Sicherheit   in Horgen ?,{'entities': []}
+Wie viel EFH-Bestand  hat  im Kanton Zürich  ?,"{'entities': [(29, 37, 'GRAN')]}"
+Welches ist das EFH-Bestand   in Wil ?,{'entities': []}
+Was ist der Anteil an Anteil 5 Zi.-Wohnungen   Region Zürich ?,{'entities': []}
+Was ist der Anteil an Anteil GK E   für alle Gemeinden ?,"{'entities': [(44, 55, 'GRAN')]}"
+Wie viel Zuzüge  hat  pro Bezirk  ?,"{'entities': [(25, 33, 'GRAN')]}"
+Welches ist das Zuzüge   für alle Gemeinden ?,"{'entities': [(33, 44, 'GRAN')]}"
+Wie viel Bruttoinvestitionen  hat  im Kanton Zürich  ?,"{'entities': [(37, 45, 'GRAN')]}"
+Welches ist das Bruttoinvestitionen   im Kanton Zürich ?,"{'entities': [(40, 48, 'GRAN')]}"
+"Was ist der Anteil an Geb.Vol. Wohnen: Anteil   Bezirk Pfäffikon, Bezirk Dielsdorf und Region Zürich ?","{'entities': [(47, 55, 'GRAN')]}"
+Was ist der Anteil an ZL-Bezügerquote der Personen ab 65 Jahren   auf Bezirksebene ?,"{'entities': [(69, 83, 'GRAN')]}"
+Was ist der Anteil an Geb.Vol. Infrastruktur: Anteil   in Affoltern a.A. ?,{'entities': []}
+Was ist der Anteil an Bestand Elektromotor   pro Gemeinde ?,"{'entities': [(49, 58, 'GRAN')]}"
+Was ist der Anteil an Zuzüge   in Rümlang ?,{'entities': []}
+Was ist der Anteil an Selbstfinanzierungsgrad   auf Bezirksebene ?,"{'entities': [(51, 65, 'GRAN')]}"
+Was ist der Anteil an Anteil Kirchgemeinden an allg. Gemeindesteuern   Henggart und Wangen-Brüttisellen ?,{'entities': []}
+Wie viel Hauptberufliche Landwirtschaftsbetriebe  hat  in Wil  ?,{'entities': []}
+Welches ist das Hauptberufliche Landwirtschaftsbetriebe   in Hüntwangen ?,{'entities': []}
+Was ist der Anteil an Gebäudevolumen: Zunahme   pro Bezirk ?,"{'entities': [(51, 59, 'GRAN')]}"
+Was ist der Anteil an MIV-Anteil (Modal Split)   auf Gemeindeebene ?,"{'entities': [(52, 67, 'GRAN')]}"
+Was ist der Anteil an Kapitaldienstanteil   in Dübendorf ?,{'entities': []}
+Wie viel Bauzonen nicht überbaut  hat  auf Bezirksebene  ?,"{'entities': [(42, 56, 'GRAN')]}"
+Welches ist das Bauzonen nicht überbaut   Buch a.I. ?,{'entities': []}
+Wie viel Schül. Sekundarstufe II  hat  in Steinmaur  ?,{'entities': []}
+Welches ist das Schül. Sekundarstufe II   für den gesamten Kanton ?,"{'entities': [(58, 66, 'GRAN')]}"
+Wie viel Neuerstellte MFH-Wohnungen  hat  in Niederglatt  ?,{'entities': []}
+Welches ist das Neuerstellte MFH-Wohnungen   Maschwanden ?,{'entities': []}
+Wie viel Fläche  hat  auf Bezirksebene  ?,"{'entities': [(25, 39, 'GRAN')]}"
+Welches ist das Fläche   Niederglatt ?,{'entities': []}
+"Was ist der Anteil an Altersquotient   Wiesendangen, Rüti und Nürensdorf ?",{'entities': []}
+Wie viel Sterberate (5-J.-mittel)  hat  Meilen  ?,{'entities': []}
+Welches ist das Sterberate (5-J.-mittel)   in Rifferswil ?,{'entities': []}
+Was ist der Anteil an Anteil 1 Zi.-Wohnungen   Maur ?,{'entities': []}
+Was ist der Anteil an Anteil 4 Zi.-Wohnungen   auf Gemeindeebene ?,"{'entities': [(50, 65, 'GRAN')]}"
+Wie viel Heiraten  hat  für alle Gemeinden  ?,"{'entities': [(32, 43, 'GRAN')]}"
+Welches ist das Heiraten   in Freienstein-Teufen ?,{'entities': []}
+Wie viel 3-Personenhaushalte  hat  Freienstein-Teufen  ?,{'entities': []}
+Welches ist das 3-Personenhaushalte   in Küsnacht ?,{'entities': []}
+Wie viel Leerwohnungen Total  hat  auf Gemeindeebene  ?,"{'entities': [(38, 53, 'GRAN')]}"
+Welches ist das Leerwohnungen Total   Schwerzenbach ?,{'entities': []}
+Wie viel Zahnärzte  hat  in Schlatt  ?,{'entities': []}
+Welches ist das Zahnärzte   in Bezirk Uster ?,"{'entities': [(30, 38, 'GRAN')]}"
+"Was ist der Anteil an Bevölkerung: Anteil 65-79-Jährige   Stallikon, Maschwanden und Henggart ?",{'entities': []}
+Wie viel Restaurants  hat  im Kanton Zürich  ?,"{'entities': [(29, 37, 'GRAN')]}"
+Welches ist das Restaurants   Lufingen und Glattfelden ?,{'entities': []}
+Wie viel Ausserhalb des Kt. wohnhaft Besteuerte  hat  pro Bezirk  ?,"{'entities': [(57, 65, 'GRAN')]}"
+Welches ist das Ausserhalb des Kt. wohnhaft Besteuerte   auf Gemeindeebene ?,"{'entities': [(60, 75, 'GRAN')]}"
+Wie viel Ordentlich und an der Quelle Besteuerte  hat  Elgg  ?,{'entities': []}
+Welches ist das Ordentlich und an der Quelle Besteuerte   Bauma und Altikon ?,{'entities': []}
+Wie viel Total Kirchensteuerpflichtige  hat  in Region Zürich  ?,{'entities': []}
+Welches ist das Total Kirchensteuerpflichtige   Erlenbach ?,{'entities': []}
+Wie viel PW-Neuzulassungen  hat  in Dachsen  ?,{'entities': []}
+Welches ist das PW-Neuzulassungen   in Rifferswil ?,{'entities': []}
+Was ist der Anteil an Bestand Hybridantrieb   auf Bezirksebene ?,"{'entities': [(49, 63, 'GRAN')]}"
