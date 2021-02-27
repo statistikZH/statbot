@@ -3,3 +3,6 @@ Wie viel {main} hat {localitylevel} {locality} {yeartime} {filter}?,cardinal
 Was ist der Anteil [von|an] {main} {localitylevel} {locality} {yeartime}?,percent
 [Was|Welches] ist das {main} {localitylevel} {locality} {yeartime}?,cardinal
 Welche {main} gab es im {yeartime}?,enumerate
+Ich brauche {main} {yeartime},cardinal
+Daten für {main} {yeartime},cardinal
+Ich brauche {main} in Prozent {localitylevel} {locality} {yeartime},percent

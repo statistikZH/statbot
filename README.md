@@ -8,14 +8,14 @@ Version 0.0.1 - 21.02.2021 - 26.02.2021 - Pre-liminary trials
 pip install spacy
 python -m spacy download de_core_news_lg
 
-In order to replicate the code you need also to download deu_news_2015_3M into a folder called external.
+In order to replicate the code you need also to download deu_news_2015_3M into a subfolder called external:
+https://www.kaggle.com/rtatman/3-million-german-sentences
 
 ### Drawing of Logic
 01: Get Datasets
-02: Generate Sentences
-03: Tag Sentences
-04: Train and Evaluation
-05: Flask app using model
+02: Generate and tag Sentences
+03: Train and Evaluation
+04: Flask app using model
 
 ### Weitere aktuelle Überlegungen
 - Momentan nur datasets von Gemeindeporträt
