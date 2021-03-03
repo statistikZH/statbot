@@ -58,7 +58,7 @@ https://github.com/tiwarikajal/Seq2SQL--Natural-Language-sentences-to-SQL-Querie
 
 They use reinforcement learning (RL) to train a model. However, the execution accuracy of 59.4% and the logical form accuracy of 48.3% are still quite low even though they achieved a very large jump to previous efforts (35.9% and 23.4% respectively). The following two figures are taken out of Zhong et al.'s paper on p.2:
 
-![Zhong et al. 2017 figures 1 and 2](figures/zhong_2017_fig2and2.png)
+![Zhong et al. 2017 figures 1 and 2](https://github.com/statistikZH/statbot/blob/main/documentation/figures/zhong_2017_fig1and2.png)
 
 Zhong et al. argue that a SQL query csists of three components. An aggregation operator such as COUNT or SUM. The second component is SELECT to identify the columns that are to be given out. And the thirs component is the WHERE clause to filter. Seq2SQL also consits of three parts that correpond to these three components. 
 
