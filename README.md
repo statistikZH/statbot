@@ -15,14 +15,12 @@ https://www.kaggle.com/rtatman/3-million-german-sentences
 ### Drawing of Logic
 1. Get Datasets
 2. Generate and tag Sentences
-3. Train and Evaluation
-4. Flask app using model
+3. Train and Evaluation of Model
+4. Interpret Question and retrieve DB
+5. Flask app using model
 
 ### Weitere aktuelle Überlegungen
 - Momentan nur datasets von Gemeindeporträt
 - Es gibt datensets ohne main variable (Temperatur und Luftfeuchte). Metadaten sollten den Typ und die main variables und die Filtervariablen enthalten.
 - Datasets sollten Beschreibungen für jede Variable enthalten
 - Datasets sollen alle Levels enthalten
-
-### Thoughts about train
-- Train with Q&A Zeroshot multilingual RoBERTa works very bad after first attempt.
