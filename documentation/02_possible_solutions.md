@@ -45,6 +45,11 @@ Schritt 3) Wenn user das system testen oder verwenden, dann werden die Fragen ge
 Folgende Artikel beschreibt gut, wie man zusätzliche entities generieren kann: https://deepnote.com/publish/2cc2d19c-c3ac-4321-8853-0bcf2ef565b3
 
 
+ ihr den Code zu einigen unserer ersten Versuche , die ihr gerne als Inspiration verwenden dürft. Unter finden sich dort:
+1)	Eine Liste aller offenen Datensätze (Open Government Data – OGD) des Kantons Zürichs im JSON Format. Es mit Metadaten (u.a. Titel, Beschrieb, Ressourcenlinks, Stichwörter, Thema)
+2)	Das zweite Script generiert aus den Angaben zu den Datensätzenheraus einen Trainingsdatensatz mit möglichen Fragen. Dabei kennzeichnet das Script auch gleich einige erste interessante Elemente, wie Granularitäten und Datensätzen im Spacy-Format (siehe auch Bild mit ersten Resultaten).
+3)	Das Training wird mit einem pre-trained BERT Modell als Transfer Learning durchgeführt. 
+
 
 # 2) Seq2SQL
 Based on this paper by Zhong et al. 2017:
