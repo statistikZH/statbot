@@ -1,0 +1,41 @@
+JAHR;Jahr der Wahl
+WK_CODE;Code des Wahlkreises
+WK_LISTEKANDID;Eindeutige KandidierendenID
+EINHEIT_NAME;Wahlkreis
+EINHEIT_BFS;BFS-Nummer des Wahlkreises
+EINHEIT_BFSSUB;SortBFS des Wahlkreises
+KAND_NACHNAME;Nachname des Kandidierenden
+KAND_VORNAME;Nachname des Kandidierenden
+KAND_ORT;Wohnort des Kandidierenden
+KAND_ID;ID/Platznummer auf der Liste des Kandidierenden
+LISTE_KANDID;ListeID+KandidierendenID mit führendem Null, wenn ID kleiner 10
+LISTE_ID;ID der Liste
+LISTE_CODE;Code der Liste
+LISTE_BEZ;Bezeichnung der Liste
+LISTE_WZUNVERAENDERT;Unveränderte Wahlzettel der Liste
+LISTE_WZVERAENDERT;Veränderte Wahlzettel der Liste
+KAND_STIMMENPANASCHIERT;Panaschierstimmen des Kandidierenden
+KAND_STIMMENUNVERAENDERT;Stimmen des Kandidierenden aus unveränderten Wahlzetteln
+KAND_STIMMENVERAENDERT;Stimmen des Kandidierenden aus veränderten Wahlzetteln
+KAND_STIMMENTOTAL;Stimmen des Kandidierenden aus unveränderten + veränderten Wahlzetteln
+LISTE_ZUSATZSTIMMEN;Zusatzstimmen der Liste
+LISTE_PARTEISTIMMENTOTAL;Total Parteistimmen
+L01_SVP;Stimmen des Kandidierenden von veränderten Wahlzetteln der Liste 01
+L02_SP;Stimmen des Kandidierenden von veränderten Wahlzetteln der Liste 02
+L03_FDP;Stimmen des Kandidierenden von veränderten Wahlzetteln der Liste 03
+L04_GLP;Stimmen des Kandidierenden von veränderten Wahlzetteln der Liste 04
+L05_GRUENE;Stimmen des Kandidierenden von veränderten Wahlzetteln der Liste 05
+L06_CVP;Stimmen des Kandidierenden von veränderten Wahlzetteln der Liste 06
+L07_EVP;Stimmen des Kandidierenden von veränderten Wahlzetteln der Liste 07
+L08_AL;Stimmen des Kandidierenden von veränderten Wahlzetteln der Liste 08
+L09_BDP;Stimmen des Kandidierenden von veränderten Wahlzetteln der Liste 09
+L10_EDU;Stimmen des Kandidierenden von veränderten Wahlzetteln der Liste 10
+L11_HELVIDA;Stimmen des Kandidierenden von veränderten Wahlzetteln der Liste 11
+L12_DIE_GUTEN;Stimmen des Kandidierenden von veränderten Wahlzetteln der Liste 12
+L13_PDA;Stimmen des Kandidierenden von veränderten Wahlzetteln der Liste 13
+TOTALWZVERAENDERT;Total veränderte Wahlzettel der ganzen Wahl
+TOTALWZVERAENDERTAMTLLEER;Total Wahlzettel ohne Parteibezeichnung der ganzen Wahl
+TOT_ZETTEL_LISTE;Total Wahlzettel der Liste pro Wahlkreis
+TOT_ZETTEL;Total Wahlzettel pro Wahlkreis
+ANDLISTEN;Total listenfremde Wahlzettel pro Wahlkreis
+PAN_PRO_100;Panaschierstimmen pro 100 listenfremde Wahlzettel im Wahlkreis
