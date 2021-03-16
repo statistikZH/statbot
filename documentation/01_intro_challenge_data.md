@@ -31,13 +31,10 @@ Our data follows the so-called Data Catalog Vocabulay (DCAT). It enables produce
 ## Participants by the Statistical Office of the Canton of Zurich
 During the hackathon we will try to stand at your side for all the possible help that we can provide. 
 
-Christian Ruiz
-christian.ruiz@statistik.ji.zh.ch
-076 / 448 75 00
-
-Corinna Grobe
-Manuela Paganini
-Michelle Donzallaz
-Thomas Lo Russo
+- Christian Ruiz (christian.ruiz@statistik.ji.zh.ch 076/4487500)
+- Corinna Grobe
+- Manuela Paganini
+- Michelle Donzallaz
+- Thomas Lo Russo
 
 
