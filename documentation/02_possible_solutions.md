@@ -45,11 +45,16 @@ To build named entity recognition models in R we recommend having a look at two 
 For an OpenCalais adaptation by Liip (Stefan Oderbolz) see also: https://github.com/metaodi/wikidata-highlight
 
 
+## Small caveat on approaches B and C
+
+Before discussing the approaches B and C, we would like to highlight that we were initially understanding these approaches as entirely independent from approach A. However, after some reflection we think that this might not be true. The reason is that approaches B and C are based on models that were trained on pairs of tables and texts. However, this also means that in case of a statistical bot, the right table has to be found first. So it would be a two-step approach, where first the table (the dataset) is identified, and then knowledge extraction from the question and database query could be performed in practically one step. Finding the right table, might also mean that something like NER and POS are necessary to make the right attribution.
+
+However, having read some of the papers in approaches B and C, we think that the final solution might very likely be based on one of these.
 
 
 ## Possible approach B: Seq2SQL
 
-Another promising approach is Seq2SQL. Here, the procedure is not split into knowledge extraction and database query, but is performed in one step. The SQL command needed to retrieve the required data from the database is trained directly. Probably the most important paper (Zhong et al. 2017) on this can be found here:
+A promising approach is Seq2SQL. Here, the procedure is not split into knowledge extraction and database query, but is performed in one step. The SQL command needed to retrieve the required data from the database is trained directly. Probably the most important paper (Zhong et al. 2017) on this can be found here:
 https://github.com/salesforce/WikiSQL
 https://arxiv.org/pdf/1709.00103.pdf
 
