@@ -34,8 +34,8 @@ https://deepnote.com/publish/2cc2d19c-c3ac-4321-8853-0bcf2ef565b3
 The description of our scripts in this github repo can be [found here](https://github.com/statistikZH/statbot/blob/main/documentation/05_Explanation_Scripts.md).
  
 You might also find some interesting information and some sources with pre-trained NERs in German here: 
-https://huggingface.co/transformers/v2.2.0/examples.html#named-entity-recognition
-https://sites.google.com/site/germeval2014ner/data
+- https://huggingface.co/transformers/v2.2.0/examples.html#named-entity-recognition
+- https://sites.google.com/site/germeval2014ner/data
 
 To build named entity recognition models in R we recommend having a look at two packages from the [udpipe](https://cran.r-project.org/web/packages/udpipe/vignettes/udpipe-universe.html)-familiy. 
 
