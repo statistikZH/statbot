@@ -18,7 +18,7 @@ Part of Speech (POS) is very similar to NER in that unstructured text is convert
 
 In German Language, there is a nicely advanced POS called the Stuttgart-Tübingen-Tagset (STTS). The python-package SPACY contains it for the German language by default. 
 
-## Possible solution approach 1: Train NER 
+## Possible solution approach A: Train NER 
 
 Our first solution approach would be to train NERs with own entities. Custom entities such as for example dataset names, variable names, granularity (e.g. population at federal, cantonal, district or municipality level?), or even important information in the text such as "greater than", "per month", "for all municipalities in the canton of Zurich", or "from 2005 to 2008" (if they cannot be extracted partly with POS). 
 
@@ -47,7 +47,7 @@ For an OpenCalais adaptation by Liip (Stefan Oderbolz) see also: https://github.
 
 
 
-## Possible approach 2: Seq2SQL
+## Possible approach B: Seq2SQL
 
 Another promising approach is Seq2SQL. Here, the procedure is not split into knowledge extraction and database query, but is performed in one step. The SQL command needed to retrieve the required data from the database is trained directly. Probably the most important paper (Zhong et al. 2017) on this can be found here:
 https://github.com/salesforce/WikiSQL
@@ -75,7 +75,7 @@ Interestingly in the paper of Li et al., T5 permits to make everything without a
 
 Thus maybe it is a key to start there and not at the original code by seq2SQL.
 
-## Possible approach 3: TaPas
+## Possible approach C: TaPas
 
 A very cool approach is TaPas (Weakly Supervised Table Parsing via Pre-training) by Google: 
 https://arxiv.org/abs/2004.02349
