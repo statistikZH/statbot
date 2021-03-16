@@ -30,6 +30,8 @@ It is quite a challenge. Imagine the following German sentence "Anteil der Perso
 
 Our code to train own NERs has been taken for the large part from the following link, which contains an excellent explanation on NERs and on the different steps that were required to train own NERs:
 https://deepnote.com/publish/2cc2d19c-c3ac-4321-8853-0bcf2ef565b3
+
+The description of our scripts in this github repo can be [found here](https://github.com/statistikZH/statbot/blob/main/documentation/05_Explanation_Scripts.md).
  
 You might also find some interesting information and some sources with pre-trained NERs in German here: 
 https://huggingface.co/transformers/v2.2.0/examples.html#named-entity-recognition
@@ -43,29 +45,7 @@ To build named entity recognition models in R we recommend having a look at two 
 For an OpenCalais adaptation by Liip (Stefan Oderbolz) see also: https://github.com/metaodi/wikidata-highlight
 
 
-In our code you will find the following:
 
-### Script A01 
-
-All publicly available data (Open Government Data – OGD) of the Statistical Office of the Canton of Zurich are extracted from the central JSON-file. By downloading and opening up every file, additional data can be extracted such as variable names that are not described in the metadata. Extracted is thus a combination between metadata and some information in the dataset. 
-
-This could later be improved to save the data in a mysql-db.
-
-### Script A02
-
-The second script generates the training dataset with questions and adds the desired new tags (such as granularity and datasets) in the Spacy-format so that it can be used for the training. 
-
-It loads a csv-file with pre-written questions that contain brackets to insert elements such as {dataset} or {year} or {granularity} etc. The csv-file can be added with additional questions. For every dataset that we have, several questions are being generated randomly. 
-
-A lot can be improved in this script. Maybe the script could be combined with the generation of training-data for the second approach that is described further below (seq2SQL).
-
-At the moment, the script only generates data for the so-called "Gemeindeportraet" of the Statistics Office of the Canton of Zurich. The reason is that the data-variables are all in the same format with the same variable names. We want of course to get away from that structure to be able to use all kind of statistical OGD.
-
-### Script A03
-
-Training is being done based on a pre-trained bert-base-multilingual-cased by using transfer learning. At the end of the script, there is also some sort of evaluation showing the previously four included NER tags (because transfer learning can change their accuracy), and the new NER tags.
-
-Right now there is now link yet with POS (Position of Speech)
 
 ## Possible approach 2: Seq2SQL
 
