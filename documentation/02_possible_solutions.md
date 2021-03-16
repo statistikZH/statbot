@@ -1,22 +1,37 @@
 # Solution approaches
-The participants are free to choose their solution approach. In the following, we present three possible solutions that we have researched and are currently considering. Howev-er, you are completely free to do so. We are looking forward to your feedback and ide-as!
+The participants are free to choose their solution approach. In the following, we present our current state of thoughts on possible solutions and on some concepts that we found that might be important. However, we would really like to emphasize that you are completely free to chose your own approach. Furthermore, we are looking forward to your feedback and ideas and to find out whether our thoughts and assumptions are going in to the right direction at all!
 
 
-## Possible approach 1: Train NER 
+## Central concept: Named Entity Recognition (NER)
+As a reminder, we are interested in two large components: On the one hand to understand the intent of a question, and then on the other hand to make a data query. As far as we see in the research, there is no approach that can make both components in one go. This is why we are focusing in this hackathon-challenge on the understanding of a question.
 
-Named Entity Recognition (NER) allows identifying relevant entities in texts. For the English language exist very advanced NER with many relevant entities that would be relevant for us (cardinal, ordinal, time, money etc.). See for example www.wit.ai for an example of entities such as order_by and limit.
+One central element that we identified for that is so-called Named Entity Recognition (NER). It is the identification of pre-defined categories such as person names, locations, organization names, time expressions, or monetary values in unstructured text. NER converts a normal text into a annotated text like in the following example:
 
-However, for the German language there is only NER with four entities so far. The recognition of localities such as Zurich, Will etc. has a benefit for us. Whereby some of the localities relevant for us (like certain municipalities in the canton of Zurich) are only inadequately identified. The remaining three entities Organizations, Persons and "Misc" are not relevant to us. Perhaps the Part of Speech (POS) elements could also be useful - a first look at the Stuttgart-Tübingen-Tagset (STTS) showed us some interesting ele-ments, but we have not looked at this in detail yet.
-Custom entities such as dataset names, variable names, granularity (e.g. population at federal, cantonal, district or municipality level?), and even important information in the text such as "greater than", "per month", "for all municipalities in the canton of Zurich", or "from 2005 to 2008" (as can also be seen in the wit.ai figure above, for example) are more interesting. On Github you find the data bases and the code for our first experi-ments, which may be used as inspiration (see picture). 
+Identifying such named entities enables us (according to our assumptions) to know, whether someone is talking about a specific data category (e.g. population), certain variables (only female population over 40 years old), in certain locations (in the city of Berne), for a certain time (the year 2019).
+
+For the English language there are already very advanced NER with many pre-trained entities that would be relevant for us (including also categories such as cardinal numbers, ordinal numbers, time, money etc.). See for example one of the advertisements on www.wit.ai for an interesting example of advanced pre-trained entities such as order_by and limit (for copyright reasons we are not sharing the picture here).
+
+However, for the German language the available pre-trained NER models contains no more than four entities so far. The recognition of localities such as Zurich, Wil etc. has a benefit for us (although not all of the municipalities in the Canton of Zurich are recognized). However, the remaining three entities (Organizations, Persons and "Misc") are not relevant to us.
+
+## Central concept: Part of Speech (POS)
+Part of Speech (POS) is very similar to NER in that unstructured text is converted into annotated elements. Instead of having certain pre-trained categories, POS attributes to every word a linguistic attribute like noun, adjective and verb. But POS goes further than that and provides very specific lexical items that help us understand e.g. cardinality, conjunctions, prepositions, and others. In other words, this might help us in combination with NER to extract all the relevant parts of a question, so that we can subsequently work on it. 
+
+In German Language, there is a nicely advanced POS called the Stuttgart-Tübingen-Tagset (STTS). The python-package SPACY contains it for the German language by default. 
+
+## Possible solution approach 1: Train NER 
+
+Our first solution approach would be to train NERs with own entities. Custom entities such as for example dataset names, variable names, granularity (e.g. population at federal, cantonal, district or municipality level?), or even important information in the text such as "greater than", "per month", "for all municipalities in the canton of Zurich", or "from 2005 to 2008" (if they cannot be extracted partly with POS). 
+
+We already were experimenting a little bit on this approach, and you can find here on github the code for our first experiments, which may be used as inspiration (see picture below, where we tried to train own NERs). 
 
 ![Example of two additionally trained NER for granularity and datasets](https://github.com/statistikZH/statbot/blob/main/documentation/figures/ner_third_attempt.png)
 
-Imagine the following sentence "Anteil der Personen mit Einkommen über 5000CHF pro Monat" or in English "share of people with income over 5000 Swiss Francs per month"." Entities are share (a relativity commonly understood in percent),  persons (as opposed to companies, economic sectors or others that also have some sort of income), the main variable income, over 5000CHF, per month. 
+It is quite a challenge. Imagine the following German sentence "Anteil der Personen mit Einkommen über 5000CHF pro Monat" or in English "share of people with income over 5000 Swiss Francs per month"." Entities are share (a relativity commonly understood in percent),  persons (as opposed to companies, economic sectors or others that also have some sort of income), the main variable income, over 5000CHF, per month. 
 
-Our code to train own NERs has been taken for the large part from here:
+Our code to train own NERs has been taken for the large part from the following link, which contains an excellent explanation on NERs and on the different steps that were required to train own NERs:
 https://deepnote.com/publish/2cc2d19c-c3ac-4321-8853-0bcf2ef565b3
  
-Other sources with pre-trained NERs in German can be found here: 
+You might also find some interesting information and some sources with pre-trained NERs in German here: 
 https://huggingface.co/transformers/v2.2.0/examples.html#named-entity-recognition
 https://sites.google.com/site/germeval2014ner/data
 
@@ -26,6 +41,7 @@ To build named entity recognition models in R we recommend having a look at two 
 - [nametagger](https://cran.r-project.org/web/packages/nametagger/index.html)
 
 For an OpenCalais adaptation by Liip (Stefan Oderbolz) see also: https://github.com/metaodi/wikidata-highlight
+
 
 In our code you will find the following:
 
