@@ -20,6 +20,11 @@ Other sources with pre-trained NERs in German can be found here:
 https://huggingface.co/transformers/v2.2.0/examples.html#named-entity-recognition
 https://sites.google.com/site/germeval2014ner/data
 
+To build named entity recognition models in R we recommend having a look at two packages from the [udpipe](https://cran.r-project.org/web/packages/udpipe/vignettes/udpipe-universe.html)-familiy. 
+
+- [crfsuite](https://cran.r-project.org/web/packages/crfsuite/vignettes/crfsuite-nlp.html) 
+- [nametagger](https://cran.r-project.org/web/packages/nametagger/index.html)
+
 For an OpenCalais adaptation by Liip (Stefan Oderbolz) see also: https://github.com/metaodi/wikidata-highlight
 
 In our code you will find the following:
