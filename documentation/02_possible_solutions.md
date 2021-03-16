@@ -1,4 +1,4 @@
-# Solution approaches
+# Possible Solution Approaches and Important Concepts
 The participants are free to choose their solution approach. In the following, we present our current state of thoughts on possible solutions and on some concepts that we found that might be important. However, we would really like to emphasize that you are completely free to chose your own approach. Furthermore, we are looking forward to your feedback and ideas and to find out whether our thoughts and assumptions are going in to the right direction at all!
 
 
