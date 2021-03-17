@@ -1,4 +1,4 @@
-# Possible Solution Approaches and Important Concepts
+# A Possible Solution Approach based on Named Entity Recognition (NER)
 In the following, we present our current state of thoughts on possible solutions and on some concepts that we found that might be important. However, we would really like to emphasize that you are completely free to chose your own approach. Furthermore, we are looking forward to your feedback and ideas and to find out whether our thoughts and assumptions are going in to the right direction at all!
 
 Last week we were still thinking that there might be three different solution approaches. But we think now, that two things that we called approaches require the first approach anyway in the first step. This is why we would recommend for this challenge to focus on a possible approach based mainly on Named Entity Recognition (NER).
