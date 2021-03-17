@@ -22,7 +22,7 @@ However, for the German language the available pre-trained NER models contains n
 
 Here are some NER-tutorials around. Why not start with one that shows how you can extract the names out of a game of thrones episode for data analytical purposes?
 
-<p><a href="https://imgflip.com/i/5211ry"><img src="https://i.imgflip.com/5211ry.jpg" title="made at imgflip.com"/></a><div><a href="https://imgflip.com/memegenerator">from Imgflip Meme Generator</a></div></p>
+<p><a href="https://imgflip.com/i/5211ry"><img src="https://i.imgflip.com/5211ry.jpg" title="made at imgflip.com"/></a><div><a Source: imgflip.com</a></div></p>
 
 
 ## Central concept: Part of Speech (POS)
