@@ -21,7 +21,8 @@ For the English language there are already very advanced NER with many pre-train
 However, for the German language the available pre-trained NER models contains no more than four entities so far. The recognition of localities such as Zurich, Wil etc. has a benefit for us (although not all of the municipalities in the Canton of Zurich are recognized). However, the remaining three entities (Organizations, Persons and "Misc") are not relevant to us.
 
 Here are some NER-tutorials around. Why not start with one that shows how you can extract the names out of a game of thrones episode for data analytical purposes?
-<a href="https://imgflip.com/i/5211ry"><img src="https://i.imgflip.com/5211ry.jpg" title="made at imgflip.com"/></a><div><a href="https://imgflip.com/memegenerator">from Imgflip Meme Generator</a></div>
+
+<p><a href="https://imgflip.com/i/5211ry"><img src="https://i.imgflip.com/5211ry.jpg" title="made at imgflip.com"/></a><div><a href="https://imgflip.com/memegenerator">from Imgflip Meme Generator</a></div></p>
 
 
 ## Central concept: Part of Speech (POS)
