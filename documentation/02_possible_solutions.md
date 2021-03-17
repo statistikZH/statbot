@@ -35,8 +35,15 @@ Part of Speech (POS) is very similar to NER in that unstructured text is convert
 In German Language, there is a nicely advanced POS called the Stuttgart-Tübingen-Tagset (STTS). The python-package SPACY contains it for the German language by default. The following figure shows a German sentence splitted in POS (however, not STTS is used in the figure):
 
 <p align="center">
-<img src="https://github.com/statistikZH/statbot/blob/main/documentation/figures/pos_example.png" width="400"   />
+<img src="https://github.com/statistikZH/statbot/blob/main/documentation/figures/pos_example.png" width="800"   />
  </p>
+ 
+ The figure above shows additional information that is generated from POS such as the semantic interconnections/logic between the words. It is also possible to cut the sentence into so-called "noun chunks" such as for the example above: 
+ - Welche Gemeinde
+ - die grösste Bevölkerung
+ - welche
+ - 2019
+ - den höchsten Ausländeranteil  
 
 
 ## Possible solution approach A: Train NER 
