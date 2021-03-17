@@ -20,6 +20,10 @@ For the English language there are already very advanced NER with many pre-train
 
 However, for the German language the available pre-trained NER models contains no more than four entities so far. The recognition of localities such as Zurich, Wil etc. has a benefit for us (although not all of the municipalities in the Canton of Zurich are recognized). However, the remaining three entities (Organizations, Persons and "Misc") are not relevant to us.
 
+Here are some NER-tutorials around. Why not start with one that shows how you can extract the names out of a game of thrones episode for data analytical purposes?
+<a href="https://imgflip.com/i/5211ry"><img src="https://i.imgflip.com/5211ry.jpg" title="made at imgflip.com"/></a><div><a href="https://imgflip.com/memegenerator">from Imgflip Meme Generator</a></div>
+
+
 ## Central concept: Part of Speech (POS)
 Part of Speech (POS) is very similar to NER in that unstructured text is converted into annotated elements. Instead of having certain pre-trained categories, POS attributes to every word a linguistic attribute like noun, adjective and verb. But POS goes further than that and provides very specific lexical items that help us understand e.g. cardinality, conjunctions, prepositions, and others. In other words, this might help us in combination with NER to extract all the relevant parts of a question, so that we can subsequently work on it. 
 
