@@ -14,9 +14,6 @@ One central element that we identified for that is so-called Named Entity Recogn
  </p><p align="center">
 Source: Wikicommons distributed under a CC-BY 2.0 license.</p>
 
-
-
-
 Identifying such named entities enables us (according to our assumptions) to know, whether someone is talking about a specific data category (e.g. population), certain variables (only female population over 40 years old), in certain locations (in the city of Berne), for a certain time (the year 2019).
 
 For the English language there are already very advanced NER with many pre-trained entities that would be relevant for us (including also categories such as cardinal numbers, ordinal numbers, time, money etc.). See for example one of the advertisements on www.wit.ai for an interesting example of advanced pre-trained entities such as order_by and limit (for copyright reasons we are not sharing the picture here).
@@ -50,6 +47,7 @@ In German Language, there is a nicely advanced POS called the Stuttgart-Tübinge
 
 The combination of NER and POS could thus provide a substantial amount of information to understand a question in a bot setting.
 
+
 ## Possible solution approach A: Train NER 
 
 Our first solution approach would be to train NERs with own entities. Custom entities such as for example dataset names, variable names, granularity (e.g. population at federal, cantonal, district or municipality level?), or even important information in the text such as "greater than", "per month", "for all municipalities in the canton of Zurich", or "from 2005 to 2008" (if they cannot be extracted partly with POS). 
@@ -77,6 +75,13 @@ To build named entity recognition models in R we recommend having a look at two 
 For an OpenCalais adaptation by Liip (Stefan Oderbolz) see also: https://github.com/metaodi/wikidata-highlight
 
 
+## Central concept: Bidirectional Encoder Representations from Transformers (BERT)
+As we might use a pre-trained BERT model, it could be useful to familiarize yourself with what BERT is in case you do not know it yet. 
 
+A good point to start, that we warmly recommend, is to check [this article explaining what transformers are](https://medium.com/inside-machine-learning/what-is-a-transformer-d07dd1fbec04). Important concepts connected to it, and which are explained in that article very well, are encoders, decoders,masking and attentions (transformers are attentions based). 
 
+We are not going to describe it here in detail but you will find the [original paper end 2018 by Google here](https://arxiv.org/abs/1810.04805) and will find tons of tutorials such as:
+- https://towardsdatascience.com/bert-for-dummies-step-by-step-tutorial-fb90890ffe03
 
+## Further reading
+For further concepts such as knowledge graphs and the two other possible approaches you can keep on reading [here if you are interested](https://github.com/statistikZH/statbot/blob/main/documentation/04_Research.md).
