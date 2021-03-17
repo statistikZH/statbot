@@ -7,10 +7,11 @@ As a reminder, we are interested in two large components: On the one hand to und
 
 One central element that we identified for that is so-called Named Entity Recognition (NER). It is the identification of pre-defined categories such as person names, locations, organization names, time expressions, or monetary values in unstructured text. NER converts a normal text into a annotated text like in the following example:
 <p align="center">
-<img src="https://github.com/statistikZH/statbot/blob/main/documentation/figures/ner_example.png" width="400"   /></p>
+<img src="https://github.com/statistikZH/statbot/blob/main/documentation/figures/ner_example.png" width="400"   />
+Source: Wikicommons distributed under a CC-BY 2.0 license.</p>
 
 
-Source: Wikicommons distributed under a CC-BY 2.0 license.
+
 
 Identifying such named entities enables us (according to our assumptions) to know, whether someone is talking about a specific data category (e.g. population), certain variables (only female population over 40 years old), in certain locations (in the city of Berne), for a certain time (the year 2019).
 
