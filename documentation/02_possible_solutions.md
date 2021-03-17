@@ -32,7 +32,12 @@ But there are also many other NER-tutorials out there:
 ## Central concept: Part of Speech (POS)
 Part of Speech (POS) is very similar to NER in that unstructured text is converted into annotated elements. Instead of having certain pre-trained categories, POS attributes to every word a linguistic attribute like noun, adjective and verb. But POS goes further than that and provides very specific lexical items that help us understand e.g. cardinality, conjunctions, prepositions, and others. In other words, this might help us in combination with NER to extract all the relevant parts of a question, so that we can subsequently work on it. 
 
-In German Language, there is a nicely advanced POS called the Stuttgart-Tübingen-Tagset (STTS). The python-package SPACY contains it for the German language by default. 
+In German Language, there is a nicely advanced POS called the Stuttgart-Tübingen-Tagset (STTS). The python-package SPACY contains it for the German language by default. The following figure shows a German sentence splitted in POS (however, not STTS is used in the figure):
+
+<p align="center">
+<img src="https://github.com/statistikZH/statbot/blob/main/documentation/figures/pos_example.png" width="400"   />
+ </p>
+
 
 ## Possible solution approach A: Train NER 
 
