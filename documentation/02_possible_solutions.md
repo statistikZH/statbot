@@ -20,9 +20,9 @@ For the English language there are already very advanced NER with many pre-train
 
 However, for the German language the available pre-trained NER models contains no more than four entities so far. The recognition of localities such as Zurich, Wil etc. has a benefit for us (although not all of the municipalities in the Canton of Zurich are recognized). However, the remaining three entities (Organizations, Persons and "Misc") are not relevant to us.
 
-Here are some NER-tutorials around. Why not start with one that shows how you can extract the names out of a game of thrones episode for data analytical purposes?
+Here are some NER-tutorials that you can find. Why not start with one that shows you [which Game of Thrones characters are the ones that are mentioned in the text-script the most](https://towardsdatascience.com/a-really-gentle-introduction-to-named-entity-recognition-and-how-to-use-it-for-data-analysis-ab25a1f39020)?
 
-<p><a href="https://imgflip.com/i/5211ry"><img src="https://i.imgflip.com/5211ry.jpg" title="made at imgflip.com"/></a><div><a Source: imgflip.com</a></div></p>
+<p align="center"><a href="https://imgflip.com/i/5211ry"><img src="https://i.imgflip.com/5211ry.jpg" title="made at imgflip.com"/></a><div><a Source: imgflip.com</a></div></p>
 
 
 ## Central concept: Part of Speech (POS)
