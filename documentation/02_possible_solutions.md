@@ -24,6 +24,10 @@ Here are some NER-tutorials that you can find. Why not start with one that shows
 
 <p align="center"><a href="https://imgflip.com/i/5211ry"><img src="https://i.imgflip.com/5211ry.jpg" title="made at imgflip.com"/></a><div><a Source: imgflip.com</a></div></p>
 
+But there are also many other NER-tutorials out there:
+- https://towardsdatascience.com/named-entity-recognition-with-nltk-and-spacy-8c4a7d88e7da
+- https://www.aitimejournal.com/@akshay.chavan/complete-tutorial-on-named-entity-recognition-ner-using-python-and-keras
+
 
 ## Central concept: Part of Speech (POS)
 Part of Speech (POS) is very similar to NER in that unstructured text is converted into annotated elements. Instead of having certain pre-trained categories, POS attributes to every word a linguistic attribute like noun, adjective and verb. But POS goes further than that and provides very specific lexical items that help us understand e.g. cardinality, conjunctions, prepositions, and others. In other words, this might help us in combination with NER to extract all the relevant parts of a question, so that we can subsequently work on it. 
