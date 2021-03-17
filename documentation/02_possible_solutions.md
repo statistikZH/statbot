@@ -6,8 +6,8 @@ The participants are free to choose their solution approach. In the following, w
 As a reminder, we are interested in two large components: On the one hand to understand the intent of a question, and then on the other hand to make a data query. As far as we see in the research, there is no approach that can make both components in one go. This is why we are focusing in this hackathon-challenge on the understanding of a question.
 
 One central element that we identified for that is so-called Named Entity Recognition (NER). It is the identification of pre-defined categories such as person names, locations, organization names, time expressions, or monetary values in unstructured text. NER converts a normal text into a annotated text like in the following example:
-
-<img src="https://github.com/statistikZH/statbot/blob/main/documentation/figures/ner_example.png" width="400" align="center"  />
+<p align="center">
+<img src="https://github.com/statistikZH/statbot/blob/main/documentation/figures/ner_example.png" width="400"   /></p>
 
 
 Source: Wikicommons distributed under a CC-BY 2.0 license.
