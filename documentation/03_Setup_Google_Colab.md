@@ -1,6 +1,6 @@
-# Setup Google Collab
+# Setup Google Colab
 
-Here we are going to describe how to set up a work environment for you. 
+There are two ways for you to work on this project
 
 ### a) Work with Google Colab
 
