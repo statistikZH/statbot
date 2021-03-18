@@ -1,6 +1,6 @@
 # Setup Google Colab
 
-There are two ways for you to work on this project
+There are two ways for you to work on this project:
 
 ### a) Work with Google Colab
 
