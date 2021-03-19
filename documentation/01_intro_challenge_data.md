@@ -12,7 +12,7 @@ The way we see it, we do not need to be able to chat with the bot (as can be see
 
 For example:  
 Question: *"Wie viele Leute lebten per 31.12.2020 im Kanton Zürch?"*  
-Anwer: *"Der Kanton Zürich hatte per 31.12.2020 1'551'342 Einwohner/innen (zivilirechtliche Bevölkerung)."*  
+Asnwer: *"Der Kanton Zürich hatte per 31.12.2020 1'551'342 Einwohner/innen (zivilirechtliche Bevölkerung)."*  
 
 While this seems like a fairly straightforward process, it requires a couple of rather complicated operations behind the scenes. For example, statistical information is commonly structured in tables. However, the information people need is often not readily available in the tables but requires statistical aggregations across cells such as computing averages by different groups, sums, or counts. 
 
