@@ -12,11 +12,11 @@ The way we see it, we do not need to be able to chat with the bot (as can be see
 
 For example:  
 Question: *"Wie viele Leute lebten per 31.12.2020 im Kanton Zürch?"*  
-Asnwer: *"Der Kanton Zürich hatte per 31.12.2020 1'551'342 Einwohner/innen (zivilirechtliche Bevölkerung)."*  
+Answer: *"Der Kanton Zürich hatte per 31.12.2020 1'551'342 Einwohner/innen (zivilirechtliche Bevölkerung)."*  
 
-While this seems like a fairly straightforward process, it requires a couple of rather complicated operations behind the scenes. For example, statistical information is commonly structured in tables. However, the information people need is often not readily available in the tables but requires statistical aggregations across cells such as computing averages by different groups, sums, or counts. 
+While this seems like a fairly straightforward process, it requires a couple of more or less complicated operations behind the scenes. For example, statistical information is commonly structured in tables. However, the information people need is often not readily available in tables but requires statistical aggregations across cells such as computing averages by different groups, sums, or counts. 
 
-In a classical chatbot approach, textbased questions and answers are commonly fed into a pre-trained model and used in a Q&A-Scheme. We think that such an appraoch is not suitable for our purposes, mainly because of the vast number of possible Q&A-pairs. The number increases exponentially with growing sizes and soures of tables (imagine all possible combinations in a table with "only" 500 rows times 20 columns -- and then multiply this by at least 200 different data sources).
+In a classical chatbot approach, textbased questions and answers are commonly fed into a pre-trained model and used in a Q&A-scheme. We think that such an approach is not suitable for our purposes, mainly because of the vast number of possible Q&A-pairs. The number increases exponentially with growing sizes and soures of tables (imagine all possible combinations in a table with "only" 500 rows times 20 columns -- and then multiply this by at least 200 different data sources).
 
 We believe there are two large components to the development of the bot. First, the bot needs to be able to "understand" the questions. Second, the bot needs to provide an answer to the data query. In this challenge, we would like to focus on the first component.
 - The primary aim of this challenge is to find a way to extract the most important pieces of information from a given question such that the bot is able to work with them further down the pipeline.  
@@ -24,15 +24,15 @@ We believe there are two large components to the development of the bot. First, 
 
 
 ## Possible solutions
-You are completely free to choose any approach that you consider suitable. In order to support you as much as possible, we have collected our thoughts, resources, and research we deem relevant in the file ['possible solutions.md'](02_possible_solutions.md). However, bear in mind that we are no NLP-experts and might be totally wrong in our assumptions -- we are very curious to hear your thoughts and ideas.
+You are completely free to choose any approach that you consider suitable. In order to support you as much as possible, we have collected all our thoughts, resources, and research we deem relevant in the file ['possible solutions.md'](02_possible_solutions.md). However, bear in mind that we are no NLP-experts and might be completely wrong in our assumptions -- we are very curious to hear your thoughts and ideas.
 
 ## Data
-The data that the statbot will be based on is publicly and openly available as so called Open Government Data (OGD). The philosophy behind OGD is that government data should be openly and freely accessible for all whenever possible. The publication of high-quality official statistics in the form of OGD promotes the reuse of high quality information bases and therefore increases their reach. You can find a JSON-file of the Statistical Office of the Canton Zurich containing meta information and links to all of our openly available OGD sources: https://www.web.statistik.zh.ch/data/zhweb.json
+The data that the statbot will be based on is publicly and openly available as so called Open Government Data (OGD). The philosophy behind OGD is that government data should be openly and freely accessible for all whenever possible. The publication of high-quality official data in the form of OGD promotes the reuse of high quality information bases and therefore increases their reach. You can find a JSON-file of the Statistical Office of the Canton Zurich containing meta information and links to all of our openly available OGD sources: https://www.web.statistik.zh.ch/data/zhweb.json
 
-The data follows the so called Data Catalogue Vocabulary (DCAT), a common standard of meta information. It enables producers of data to share them more easily. Since other statistical offices or data sharing authorities use the same DCAT standard, they may eventually also make use of the statbot -- at least that is part of our vision. Therefore, we think it makes sense to use a modular approach with which data from other regions or even countries could be easily added. Therefore, you can also use other data sources for training purposes, for example data from opendata.swiss, the Swiss open data repository.
+The data follows the so called Data Catalogue Vocabulary (DCAT), a common standard of meta information. It enables producers of data to share them more easily. Since other statistical offices or data sharing authorities use the same DCAT standard, they may eventually also make use of the statbot -- at least that is part of our vision. Therefore, we think it makes sense to use a modular approach with which data from other regions or even countries could be easily added. You can also use other data sources for training purposes, for example, data from opendata.swiss, the Swiss open data repository.
 
 ## Participants by the Statistical Office of the Canton of Zurich
-During the hackathon we will try to stand by your side and help as much as possible. 
+During the hackathon we will try to stand by your side and help you as much as possible. 
 
 - Christian Ruiz (christian.ruiz@statistik.ji.zh.ch 076/4487500)
 - Corinna Grobe
