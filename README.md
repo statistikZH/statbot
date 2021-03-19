@@ -15,7 +15,7 @@ There are some folders included in the .gitignore. By running the first script, 
 In order to run the code, you will also need to download deu_news_2015_3M into a subfolder called 'external':
 https://www.kaggle.com/rtatman/3-million-german-sentences
 
-We use version 3.0 of Spacy
+We use version 3.0 of Spacy  
 pip install spacy
 
 You will also need the following German model (large):
