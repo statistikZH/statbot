@@ -1,7 +1,7 @@
 # Creative Challenge, NLP-Hackathon, Uni Berne 24th/25th March
 
 ## Problem description
-Publically available data, for example, about the inhabitants of the Canton of Zurich, is not always easy to find. In Switzerland, data and information provided by the government are not only spread vertically over different federal levels. They are also horizontally spread within these federal levels over different offices and sometimes even there over different sites/channels with different formats. Looking for the needle in the haystack seems comparatively easy. 
+Publically available data, for example, about the inhabitants of the Canton of Zurich, are not always easy to find. In Switzerland, data and information provided by the government are not only spread vertically over different federal levels. They are also horizontally spread within these federal levels over different offices and sometimes even there over different sites/channels with different formats. Looking for the needle in the haystack seems comparatively easy. 
 Further, even search engines are only of limited help as they follow an indexing logic that excludes information stored in databases or files.
 A complicated search process for data and information can also pose a risk for democratic processes: the harder it is for citizens to access information, the easier it is to spread fake news. 
 Therefore, the Statistical Office of the Canton of Zurich, in collaboration with other organizations, plans to develop a Swiss Statistical Bot (STATBOT.CH) which provides citizens with data and statistical information as quickly and easily as possible.
