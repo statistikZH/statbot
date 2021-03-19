@@ -20,7 +20,7 @@ After reading the documentation, just open the following file, follow the instru
 https://colab.research.google.com/drive/1jyA0aZxjIBL9_gOgswHIIJBj7ZU-RxkE?usp=sharing
 
 
-### b) Work locally
+#### b) Work locally
 
 To work locally on your computer:
 - Clone the repository from https://github.com/statistikZH/statbot
@@ -39,4 +39,4 @@ python -m spacy download de_core_news_lg
 
 Also install the packages in requirements.txt (might be outdated - let us know if that's the case).  
 
-Happy coding!
+**Happy coding!**
