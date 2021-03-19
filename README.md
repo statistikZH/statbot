@@ -5,8 +5,7 @@ Version 0.0.1b - 27.02.2021 - Preliminary trials
 Version 0.0.1 - 21.02.2021 - 27.02.2021 - Preliminary trials
 
 ### Intro
-The entire documentation of this project can be found in the folder 'documentation'. There are also descriptions of the scripts in there.
-See [here](documentation/01_intro_challenge_data.md).  
+An introduction, background information, and descriptions of the scripts can be found in the ['documentation'](documentation/01_intro_challenge_data.md) folder.
 
 ### How to work on this project
 
