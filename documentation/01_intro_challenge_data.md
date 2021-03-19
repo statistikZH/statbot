@@ -1,10 +1,10 @@
 # Creative Challenge, NLP-Hackathon, Uni Berne 24th/25th March
 
 ## Problem description
-If you are searching for some form of statistical information, it is not always easy to find it in the shortest time possible. Particularly in Switzerland, the data and information are not only spread vertically over different federal levels. They are also spread within these federal levels horizontally over different offices and even there sometimes over different sites/channels with different formats. Looking for the needle in the haystack looks comparably easy next to that. 
-Further, even search engines are only of limited help, as they follow an indexing logic that excludes information stored in databases or files.
-The background of a more difficult search for facts, is also a risk for democratic processes: The harder it is for the average citizen to find truthful information, the easier it is to spread fake news. 
-Therefore, the Statistical Office of the Canton of Zurich, together with other organizations, would like to develop a Swiss Statistical Bot (STATBOT.CH), which would provide data and statistical information directly and quickly across all organizations. 
+If you are searching for some form of statistical information, it is not always easy to find it in the shortest time possible. Particularly in Switzerland, publically available data and information are not only spread vertically over different federal levels. They are also horizontally spread within these federal levels over different offices and sometimes even there over different sites/channels with different formats. Looking for the needle in the haystack seems comparatively easy. 
+Further, even search engines are only of limited help as they follow an indexing logic that excludes information stored in databases or files.
+A complicated search process for data and information can also pose a risk for democratic processes: the harder it is for citizens to access information, the easier it is to spread fake news. 
+Therefore, the Statistical Office of the Canton of Zurich, in collaboration with other organizations, plans to develop a Swiss Statistical Bot (STATBOT.CH) which provides citizens with data and statistical information as quickly and easily as possible.
 
 ## The aim of the Challenge with «creative character»
 In our understanding, we are not looking for a "chatty" classical bot, as it can be seen on many commercial websites. We do not want to start a conversation, but we want to get very specific answers in form of data.
