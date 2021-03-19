@@ -1,0 +1,22 @@
+abkuerzung,definition,erlaeuterung
+"UPI,Unique Person Identification,""Gesamtinformatiksystem zur Vergabe, Verwaltung und Verbindung des Identifikators AHVN13"""
+ZEMIS,Zentrales Migrationsinformationssystem,
+InfoStar,Schweizerisches Personenstandsregister,
+PISA,Personalinformationssystem der Armee,
+MOFIS,Motorfahrzeuginformationssystem,
+MILVA,Kantonale Datendrehscheibe für die Militärverwaltung,
+AKS_GB,Auskunftssystem Grundbuch,
+KEP,Kantonale Einwohnerdatenplattform,
+VK,Automatisierte Verfahrenskontrolle des kantonalen Migrationsamts,
+ELAR,Elektronisches Archiv des kantonalen Migrationsamts,
+PuM,Prozessunterstuetzungs- und Monitoring-System des kantonalen Migrationsamts,
+EWR_und_SR,Einwohner- und Stimmregister,
+SK,Staatskanzlei ,
+JI,Direktion der Justiz und des Inneren,
+DS,Sicherheitsdirektion,
+FD,Finanzdirektion,
+VD,Volkswirtschaftsdirektion,
+GD,Gesundheitsdirektion,
+BI,Bildungsdirektion,
+BD,Baudirektion,
+"CRUD,""Create, Read, Updated, Delete"",Die vier Operationen geben die Art der Datenverwendung durch das entsprechende System resp. die enstrpechende Einheit der zentralen Verwaltung an."
