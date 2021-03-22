@@ -1,18 +1,18 @@
-# A Possible Solution Approach based on Named Entity Recognition (NER)
-In the following, we present our current state of thoughts on possible solutions and on some concepts that we thought might be important. However, we would really like to emphasize that you are completely free to choose your own, different approach. We are looking forward to your ideas and to hearing whether our thoughts and assumptions are going in the right direction.
+# A Possible Solution: Approach based on Named Entity Recognition (NER)
+In the following, we present our current approach and some concepts that we thought might be relevant. However, we would really like to emphasize that you are completely free to choose your own, different approach. We are looking forward to your ideas and to hearing whether our thoughts and assumptions are going in the right direction.
 
-We believe that the most suitable approach to tackle the challenge is the Named-Entity Recognition (NER) approach **because ....** We therefore suggest that in this challenge, we focus on this approach. Below is a brief introduction into the concept. However, there are also other approaches that might be well-suited to tackle the challenge, for example a seq2SQL and a TaPas approach. If you would like to dig deeper and learn more about our thoughts on these two approaches, please see [here](https://github.com/statistikZH/statbot/blob/main/documentation/04_Research.md).  We think that we will require seq2SQL later in the project -- if you are interested, you are of course very welcome to try it!
+We believe that the most suitable approach to tackle the challenge is the Named-Entity Recognition (NER) approach **because ....** We therefore suggest that in this challenge, we focus on this approach. Below is a brief introduction into the main concepts. However, there are also other approaches that might be well-suited to tackle the challenge, for example a seq2SQL and a TaPas approach. If you would like to dig deeper and learn more about our thoughts on these two approaches, please see [here](https://github.com/statistikZH/statbot/blob/main/documentation/04_Research.md).  We think that we will require seq2SQL later in the project -- so if you are interested, you are of course very welcome to try it!
 
 ## Central concept: Named Entity Recognition (NER)
 As a reminder, in this challenge, we would like to focus on the problem that the statbot should be able to "understand" the question and "decide" which dataset to use to answer a given question (see introduction).
 
-One central method that we think is suitable to adress this problem is Named Entity Recognition (NER). NER refers to the identification of pre-defined categories such as names, locations, time expressions, or monetary values in unstructured text. NER converts a normal text into an annotated text just like in the following example:
+One central method that we think might be suitable to solve this problem is Named Entity Recognition (NER). NER refers to the identification of pre-defined categories such as names, locations, time expressions, or monetary values in unstructured text. NER converts a normal text into annotated elements just like in the following example:
 <p align="center">
 <img src="https://github.com/statistikZH/statbot/blob/main/documentation/figures/ner_example.png" width="400"   />
  </p><p align="center">
 Source: Wikicommons distributed under a CC-BY 2.0 license.</p>
 
-We think that identifying such named entities enables us to extract whether a posed question speaks to a specific data category (e.g., population), certain variables (e.g., only female population over 40 years old), in certain locations (e.g., in the city of Berne), for a certain period of time (e.g., the year 2019).
+We think that identifying useful named entities should help us extract whether a posed question speaks to a specific data category (e.g., population), certain variables (e.g., only female population over 40 years old), certain locations (e.g., in the city of Berne), or certain period of time (e.g., the year 2019).
 
 For the English language, there are already very advanced NER models with many pre-trained entities that would be relevant for us (including also categories such as cardinal numbers, ordinal numbers, time, money etc.). See for example one of the advertisements on www.wit.ai for an interesting example of advanced pre-trained entities such as order_by and limit (for copyright reasons, we do not share the picture here). However, for the German language, the available pre-trained NER models generally contain only very few entities. They only recognize certain places locations such as Zurich but not all municipalities of the Canton of Zurich. We will therefore need to train our own entities.
 
@@ -28,28 +28,25 @@ Other NER tutorials:
 
 
 ## Central concept: Part of Speech (POS)
-Another concept that might help us (in combination with NER) to extract all the relevant parts of a given question is the method "Part of Speech" (POS). POS is very similar to NER in that unstructured text is split up and annotated elements are added. POS adds a linguistic attribute such as "noun", "adjective" or "verb" to each word. Furthermore, POS also indicates whether a word is a conjunction, preposition, etc.  
+Another concept that might help us (in combination with NER) to extract all the relevant parts of a given question is the method "Part of Speech" (POS). POS is very similar to NER in that unstructured text is split up and annotated elements are added. POS adds a linguistic attribute such as "noun", "adjective" or "verb" to each word. Furthermore, POS can also indicate whether a word is a conjunction, preposition, etc.  
 
 For the German language, there is a pretty advanced POS called the Stuttgart-Tübingen-Tagset (STTS). It is the default for the German language in the python library spaCy.  
-The following figure shows a German sentence that has been split using POS (however, here not STTS is used):
+The following figure shows a German sentence that has been split using POS (however, here STTS was not used):
 
 <p align="center">
 <img src="https://github.com/statistikZH/statbot/blob/main/documentation/figures/pos_example.png" width="800"   />
  </p>
  
- The figure above shows additional information that is generated using POS such as the semantic interconnections/logic between the words. There are also other implemented functionalities such as the automatic conversion of a sentence into so-called "noun chunks". An example for such a noun chunk is the following:
+ The figure above shows additional information that is generated using POS such as the semantic interconnections/logic between the words. There are also other implemented functionalities such as the automatic conversion of a sentence into so-called "noun chunks". An example for such noun chunks is the following split-up sentence:
  - Welche Gemeinde
  - die grösste Bevölkerung
  - welche
  - 2019
  - den höchsten Ausländeranteil  
 
-All in all, we think that the combination of NER and POS could provide the bot with a substantial amount of information.
-
-
 ## Possible approach: Train NER 
 
-To implement an NER approach, we need to create our own entities. Useful, customised entities could be, for example, dataset names, variable names, granularity (e.g. population at federal, cantonal, district or municipality level?), or textual information such as "greater than", "per month", "for all municipalities in the canton of Zurich", or "from 2005 to 2008" (if they cannot already be extracted with POS). 
+To implement an NER approach, we need to create our own entities. Potentially useful, customised entities could be, for example, dataset names, variable names, granularity (e.g., population at federal, cantonal, district or municipality level?), or textual information such as "greater than", "per month", "for all municipalities in the canton of Zurich", or "from 2005 to 2008" (if they cannot already be extracted with POS). 
 
 We have already experimented a bit with this approach. Our code is on github, and you can use it as a starting point or inspiration (see the picture below, where we tried to train own NERs). 
 
