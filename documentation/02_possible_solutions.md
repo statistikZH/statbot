@@ -1,5 +1,5 @@
-# A Possible Solution: Approach based on Named Entity Recognition (NER)
-In the following, we present our current approach and some concepts that we thought might be relevant. However, we would really like to emphasize that you are completely free to choose your own, different approach. We are looking forward to your ideas and to hearing whether our thoughts and assumptions are going in the right direction.
+# A Potential Solution: Approach based on Named Entity Recognition (NER)
+In the following, we present our current approach and some concepts that we thought could be relevant. However, we would really like to emphasize that you are completely free to choose your own, different approach. We are looking forward to your ideas and to hearing whether our thoughts and assumptions are going in the right direction.
 
 We believe that the most suitable approach to tackle the challenge is the Named-Entity Recognition (NER) approach **because ....** We therefore suggest that in this challenge, we focus on this approach. Below is a brief introduction into the main concepts. However, there are also other approaches that might be well-suited to tackle the challenge, for example a seq2SQL and a TaPas approach. If you would like to dig deeper and learn more about our thoughts on these two approaches, please see [here](https://github.com/statistikZH/statbot/blob/main/documentation/04_Research.md).  We think that we will require seq2SQL later in the project -- so if you are interested, you are of course very welcome to try it!
 
