@@ -81,3 +81,6 @@ We are not going to describe those concepts here but you can find the [original 
 
 ## Further reading
 For further concepts such as knowledge graphs and two other possible approaches we have considered you can have a look [here if you are interested](https://github.com/statistikZH/statbot/blob/main/documentation/04_Research.md).
+
+## Caveat
+What if the NER-step is unnecessary? What if the question could directly be linked with identifying the right dataset and that the rest is not necessary? We would be glad to hear your expert feedback on that.
