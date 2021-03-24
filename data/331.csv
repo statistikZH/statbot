@@ -1,0 +1,617 @@
+from,until,context_bool,context_cat,n_conf,perc_conf,sort
+2020-10-08,2020-10-21,Nicht eindeutig,,2168,81.2,0
+2020-10-08,2020-10-21,Eindeutig,Eigener Haushalt,183, 6.9,1
+2020-10-08,2020-10-21,Eindeutig,Im Haushalt von Freunden / Familie,67, 2.5,2
+2020-10-08,2020-10-21,Eindeutig,Arbeitsplatz,55, 2.1,3
+2020-10-08,2020-10-21,Eindeutig,Sekundarstufe II / Hochschule / Weiterbildungsstätte,7,< 0.5,4
+2020-10-08,2020-10-21,Eindeutig,Obligatorische Schule,1,< 0.5,5
+2020-10-08,2020-10-21,Eindeutig,Krippe,1,< 0.5,6
+2020-10-08,2020-10-21,Eindeutig,Armee / Zivilschutz,0,0,7
+2020-10-08,2020-10-21,Eindeutig,Reise Ausland,6,< 0.5,8
+2020-10-08,2020-10-21,Eindeutig,Reise Schweiz,6,< 0.5,9
+2020-10-08,2020-10-21,Eindeutig,Hotel oder andere Unterkunft,1,< 0.5,10
+2020-10-08,2020-10-21,Eindeutig,Schul- oder Ferienlager,2,< 0.5,11
+2020-10-08,2020-10-21,Eindeutig,Club / Bar,19, 0.7,12
+2020-10-08,2020-10-21,Eindeutig,Restaurant,31, 1.2,13
+2020-10-08,2020-10-21,Eindeutig,Kino / Theater / Konzert,0,0,14
+2020-10-08,2020-10-21,Eindeutig,Veranstaltung / Feier < 300 Pers.,5,< 0.5,15
+2020-10-08,2020-10-21,Eindeutig,Religiöses / Beerdigungen,1,< 0.5,17
+2020-10-08,2020-10-21,Eindeutig,Verein,6,< 0.5,18
+2020-10-08,2020-10-21,Eindeutig,Pflege- / Altersheim,3,< 0.5,19
+2020-10-08,2020-10-21,Eindeutig,Medizin. Einrichtung,9,< 0.5,20
+2020-10-08,2020-10-21,Eindeutig,"Friseur, Massage o.ä.",1,< 0.5,21
+2020-10-08,2020-10-21,Eindeutig,Sport in der Halle,11,< 0.5,22
+2020-10-08,2020-10-21,Eindeutig,Sport im Freien,3,< 0.5,23
+2020-10-08,2020-10-21,Eindeutig,Sonstige Freizeitaktivität drinnen,12,< 0.5,24
+2020-10-08,2020-10-21,Eindeutig,Sonstige Freizeitaktivität draussen,1,< 0.5,25
+2020-10-08,2020-10-21,Eindeutig,Einkaufen (Läden/Markt),0,0,26
+2020-10-08,2020-10-21,Eindeutig,Sonstige,0,0,27
+2020-10-08,2020-10-21,Eindeutig,Ohne Angabe,70, 2.6,28
+2020-10-01,2020-10-14,Nicht eindeutig,,1896,80.5,0
+2020-10-01,2020-10-14,Eindeutig,Eigener Haushalt,159, 6.8,1
+2020-10-01,2020-10-14,Eindeutig,Im Haushalt von Freunden / Familie,66, 2.8,2
+2020-10-01,2020-10-14,Eindeutig,Arbeitsplatz,47, 2.0,3
+2020-10-01,2020-10-14,Eindeutig,Sekundarstufe II / Hochschule / Weiterbildungsstätte,14, 0.6,4
+2020-10-01,2020-10-14,Eindeutig,Obligatorische Schule,3,< 0.5,5
+2020-10-01,2020-10-14,Eindeutig,Krippe,2,< 0.5,6
+2020-10-01,2020-10-14,Eindeutig,Armee / Zivilschutz,1,< 0.5,7
+2020-10-01,2020-10-14,Eindeutig,Reise Ausland,6,< 0.5,8
+2020-10-01,2020-10-14,Eindeutig,Reise Schweiz,4,< 0.5,9
+2020-10-01,2020-10-14,Eindeutig,Hotel oder andere Unterkunft,1,< 0.5,10
+2020-10-01,2020-10-14,Eindeutig,Schul- oder Ferienlager,3,< 0.5,11
+2020-10-01,2020-10-14,Eindeutig,Club / Bar,28, 1.2,12
+2020-10-01,2020-10-14,Eindeutig,Restaurant,31, 1.3,13
+2020-10-01,2020-10-14,Eindeutig,Kino / Theater / Konzert,0,0,14
+2020-10-01,2020-10-14,Eindeutig,Veranstaltung / Feier < 300 Pers.,4,< 0.5,15
+2020-10-01,2020-10-14,Eindeutig,Religiöses / Beerdigungen,1,< 0.5,17
+2020-10-01,2020-10-14,Eindeutig,Verein,4,< 0.5,18
+2020-10-01,2020-10-14,Eindeutig,Pflege- / Altersheim,0,0,19
+2020-10-01,2020-10-14,Eindeutig,Medizin. Einrichtung,6,< 0.5,20
+2020-10-01,2020-10-14,Eindeutig,"Friseur, Massage o.ä.",0,0,21
+2020-10-01,2020-10-14,Eindeutig,Sport in der Halle,8,< 0.5,22
+2020-10-01,2020-10-14,Eindeutig,Sport im Freien,4,< 0.5,23
+2020-10-01,2020-10-14,Eindeutig,Sonstige Freizeitaktivität drinnen,9,< 0.5,24
+2020-10-01,2020-10-14,Eindeutig,Sonstige Freizeitaktivität draussen,3,< 0.5,25
+2020-10-01,2020-10-14,Eindeutig,Einkaufen (Läden/Markt),0,0,26
+2020-10-01,2020-10-14,Eindeutig,Sonstige,0,0,27
+2020-10-01,2020-10-14,Eindeutig,Ohne Angabe,54, 2.3,28
+2020-09-24,2020-10-07,Nicht eindeutig,,1030,75.5,0
+2020-09-24,2020-10-07,Eindeutig,Eigener Haushalt,134, 9.8,1
+2020-09-24,2020-10-07,Eindeutig,Im Haushalt von Freunden / Familie,45, 3.3,2
+2020-09-24,2020-10-07,Eindeutig,Arbeitsplatz,26, 1.9,3
+2020-09-24,2020-10-07,Eindeutig,Sekundarstufe II / Hochschule / Weiterbildungsstätte,11, 0.8,4
+2020-09-24,2020-10-07,Eindeutig,Obligatorische Schule,4,< 0.5,5
+2020-09-24,2020-10-07,Eindeutig,Krippe,1,< 0.5,6
+2020-09-24,2020-10-07,Eindeutig,Armee / Zivilschutz,1,< 0.5,7
+2020-09-24,2020-10-07,Eindeutig,Reise Ausland,8, 0.6,8
+2020-09-24,2020-10-07,Eindeutig,Reise Schweiz,3,< 0.5,9
+2020-09-24,2020-10-07,Eindeutig,Hotel oder andere Unterkunft,1,< 0.5,10
+2020-09-24,2020-10-07,Eindeutig,Schul- oder Ferienlager,1,< 0.5,11
+2020-09-24,2020-10-07,Eindeutig,Club / Bar,26, 1.9,12
+2020-09-24,2020-10-07,Eindeutig,Restaurant,15, 1.1,13
+2020-09-24,2020-10-07,Eindeutig,Kino / Theater / Konzert,0,0,14
+2020-09-24,2020-10-07,Eindeutig,Veranstaltung / Feier < 300 Pers.,9, 0.7,15
+2020-09-24,2020-10-07,Eindeutig,Religiöses / Beerdigungen,3,< 0.5,17
+2020-09-24,2020-10-07,Eindeutig,Verein,2,< 0.5,18
+2020-09-24,2020-10-07,Eindeutig,Pflege- / Altersheim,0,0,19
+2020-09-24,2020-10-07,Eindeutig,Medizin. Einrichtung,5,< 0.5,20
+2020-09-24,2020-10-07,Eindeutig,"Friseur, Massage o.ä.",0,0,21
+2020-09-24,2020-10-07,Eindeutig,Sport in der Halle,6,< 0.5,22
+2020-09-24,2020-10-07,Eindeutig,Sport im Freien,5,< 0.5,23
+2020-09-24,2020-10-07,Eindeutig,Sonstige Freizeitaktivität drinnen,5,< 0.5,24
+2020-09-24,2020-10-07,Eindeutig,Sonstige Freizeitaktivität draussen,2,< 0.5,25
+2020-09-24,2020-10-07,Eindeutig,Einkaufen (Läden/Markt),0,0,26
+2020-09-24,2020-10-07,Eindeutig,Sonstige,0,0,27
+2020-09-24,2020-10-07,Eindeutig,Ohne Angabe,21, 1.5,28
+2020-09-17,2020-09-30,Nicht eindeutig,,573,65.9,0
+2020-09-17,2020-09-30,Eindeutig,Eigener Haushalt,132,15.2,1
+2020-09-17,2020-09-30,Eindeutig,Im Haushalt von Freunden / Familie,24, 2.8,2
+2020-09-17,2020-09-30,Eindeutig,Arbeitsplatz,27, 3.1,3
+2020-09-17,2020-09-30,Eindeutig,Sekundarstufe II / Hochschule / Weiterbildungsstätte,7, 0.8,4
+2020-09-17,2020-09-30,Eindeutig,Obligatorische Schule,3,< 0.5,5
+2020-09-17,2020-09-30,Eindeutig,Krippe,0,0,6
+2020-09-17,2020-09-30,Eindeutig,Armee / Zivilschutz,0,0,7
+2020-09-17,2020-09-30,Eindeutig,Reise Ausland,13, 1.5,8
+2020-09-17,2020-09-30,Eindeutig,Reise Schweiz,2,< 0.5,9
+2020-09-17,2020-09-30,Eindeutig,Hotel oder andere Unterkunft,0,0,10
+2020-09-17,2020-09-30,Eindeutig,Schul- oder Ferienlager,0,0,11
+2020-09-17,2020-09-30,Eindeutig,Club / Bar,12, 1.4,12
+2020-09-17,2020-09-30,Eindeutig,Restaurant,11, 1.3,13
+2020-09-17,2020-09-30,Eindeutig,Kino / Theater / Konzert,0,0,14
+2020-09-17,2020-09-30,Eindeutig,Veranstaltung / Feier < 300 Pers.,20, 2.3,15
+2020-09-17,2020-09-30,Eindeutig,Religiöses / Beerdigungen,2,< 0.5,17
+2020-09-17,2020-09-30,Eindeutig,Verein,2,< 0.5,18
+2020-09-17,2020-09-30,Eindeutig,Pflege- / Altersheim,1,< 0.5,19
+2020-09-17,2020-09-30,Eindeutig,Medizin. Einrichtung,12, 1.4,20
+2020-09-17,2020-09-30,Eindeutig,"Friseur, Massage o.ä.",0,0,21
+2020-09-17,2020-09-30,Eindeutig,Sport in der Halle,2,< 0.5,22
+2020-09-17,2020-09-30,Eindeutig,Sport im Freien,6, 0.7,23
+2020-09-17,2020-09-30,Eindeutig,Sonstige Freizeitaktivität drinnen,4,< 0.5,24
+2020-09-17,2020-09-30,Eindeutig,Sonstige Freizeitaktivität draussen,1,< 0.5,25
+2020-09-17,2020-09-30,Eindeutig,Einkaufen (Läden/Markt),0,0,26
+2020-09-17,2020-09-30,Eindeutig,Sonstige,1,< 0.5,27
+2020-09-17,2020-09-30,Eindeutig,Ohne Angabe,15, 1.7,28
+2020-09-10,2020-09-23,Nicht eindeutig,,515,60.6,0
+2020-09-10,2020-09-23,Eindeutig,Eigener Haushalt,144,16.9,1
+2020-09-10,2020-09-23,Eindeutig,Im Haushalt von Freunden / Familie,34, 4.0,2
+2020-09-10,2020-09-23,Eindeutig,Arbeitsplatz,37, 4.4,3
+2020-09-10,2020-09-23,Eindeutig,Sekundarstufe II / Hochschule / Weiterbildungsstätte,9, 1.1,4
+2020-09-10,2020-09-23,Eindeutig,Obligatorische Schule,5, 0.6,5
+2020-09-10,2020-09-23,Eindeutig,Krippe,2,< 0.5,6
+2020-09-10,2020-09-23,Eindeutig,Armee / Zivilschutz,0,0,7
+2020-09-10,2020-09-23,Eindeutig,Reise Ausland,14, 1.6,8
+2020-09-10,2020-09-23,Eindeutig,Reise Schweiz,2,< 0.5,9
+2020-09-10,2020-09-23,Eindeutig,Hotel oder andere Unterkunft,1,< 0.5,10
+2020-09-10,2020-09-23,Eindeutig,Schul- oder Ferienlager,0,0,11
+2020-09-10,2020-09-23,Eindeutig,Club / Bar,2,< 0.5,12
+2020-09-10,2020-09-23,Eindeutig,Restaurant,10, 1.2,13
+2020-09-10,2020-09-23,Eindeutig,Kino / Theater / Konzert,0,0,14
+2020-09-10,2020-09-23,Eindeutig,Veranstaltung / Feier < 300 Pers.,21, 2.5,15
+2020-09-10,2020-09-23,Eindeutig,Religiöses / Beerdigungen,1,< 0.5,17
+2020-09-10,2020-09-23,Eindeutig,Verein,2,< 0.5,18
+2020-09-10,2020-09-23,Eindeutig,Pflege- / Altersheim,2,< 0.5,19
+2020-09-10,2020-09-23,Eindeutig,Medizin. Einrichtung,13, 1.5,20
+2020-09-10,2020-09-23,Eindeutig,"Friseur, Massage o.ä.",0,0,21
+2020-09-10,2020-09-23,Eindeutig,Sport in der Halle,0,0,22
+2020-09-10,2020-09-23,Eindeutig,Sport im Freien,6, 0.7,23
+2020-09-10,2020-09-23,Eindeutig,Sonstige Freizeitaktivität drinnen,4,< 0.5,24
+2020-09-10,2020-09-23,Eindeutig,Sonstige Freizeitaktivität draussen,3,< 0.5,25
+2020-09-10,2020-09-23,Eindeutig,Einkaufen (Läden/Markt),1,< 0.5,26
+2020-09-10,2020-09-23,Eindeutig,Sonstige,1,< 0.5,27
+2020-09-10,2020-09-23,Eindeutig,Ohne Angabe,21, 2.5,28
+2020-09-03,2020-09-16,Nicht eindeutig,,523,61.6,0
+2020-09-03,2020-09-16,Eindeutig,Eigener Haushalt,133,15.7,1
+2020-09-03,2020-09-16,Eindeutig,Im Haushalt von Freunden / Familie,48, 5.7,2
+2020-09-03,2020-09-16,Eindeutig,Arbeitsplatz,33, 3.9,3
+2020-09-03,2020-09-16,Eindeutig,Sekundarstufe II / Hochschule / Weiterbildungsstätte,5, 0.6,4
+2020-09-03,2020-09-16,Eindeutig,Obligatorische Schule,6, 0.7,5
+2020-09-03,2020-09-16,Eindeutig,Krippe,2,< 0.5,6
+2020-09-03,2020-09-16,Eindeutig,Armee / Zivilschutz,0,0,7
+2020-09-03,2020-09-16,Eindeutig,Reise Ausland,21, 2.5,8
+2020-09-03,2020-09-16,Eindeutig,Reise Schweiz,2,< 0.5,9
+2020-09-03,2020-09-16,Eindeutig,Hotel oder andere Unterkunft,2,< 0.5,10
+2020-09-03,2020-09-16,Eindeutig,Schul- oder Ferienlager,1,< 0.5,11
+2020-09-03,2020-09-16,Eindeutig,Club / Bar,6, 0.7,12
+2020-09-03,2020-09-16,Eindeutig,Restaurant,9, 1.1,13
+2020-09-03,2020-09-16,Eindeutig,Kino / Theater / Konzert,0,0,14
+2020-09-03,2020-09-16,Eindeutig,Veranstaltung / Feier < 300 Pers.,10, 1.2,15
+2020-09-03,2020-09-16,Eindeutig,Religiöses / Beerdigungen,2,< 0.5,17
+2020-09-03,2020-09-16,Eindeutig,Verein,1,< 0.5,18
+2020-09-03,2020-09-16,Eindeutig,Pflege- / Altersheim,5, 0.6,19
+2020-09-03,2020-09-16,Eindeutig,Medizin. Einrichtung,4,< 0.5,20
+2020-09-03,2020-09-16,Eindeutig,"Friseur, Massage o.ä.",0,0,21
+2020-09-03,2020-09-16,Eindeutig,Sport in der Halle,1,< 0.5,22
+2020-09-03,2020-09-16,Eindeutig,Sport im Freien,4,< 0.5,23
+2020-09-03,2020-09-16,Eindeutig,Sonstige Freizeitaktivität drinnen,4,< 0.5,24
+2020-09-03,2020-09-16,Eindeutig,Sonstige Freizeitaktivität draussen,4,< 0.5,25
+2020-09-03,2020-09-16,Eindeutig,Einkaufen (Läden/Markt),1,< 0.5,26
+2020-09-03,2020-09-16,Eindeutig,Sonstige,1,< 0.5,27
+2020-09-03,2020-09-16,Eindeutig,Ohne Angabe,21, 2.5,28
+2020-08-27,2020-09-09,Nicht eindeutig,,548,61.2,0
+2020-08-27,2020-09-09,Eindeutig,Eigener Haushalt,136,15.2,1
+2020-08-27,2020-09-09,Eindeutig,Im Haushalt von Freunden / Familie,43, 4.8,2
+2020-08-27,2020-09-09,Eindeutig,Arbeitsplatz,40, 4.5,3
+2020-08-27,2020-09-09,Eindeutig,Sekundarstufe II / Hochschule / Weiterbildungsstätte,4,< 0.5,4
+2020-08-27,2020-09-09,Eindeutig,Obligatorische Schule,7, 0.8,5
+2020-08-27,2020-09-09,Eindeutig,Krippe,1,< 0.5,6
+2020-08-27,2020-09-09,Eindeutig,Armee / Zivilschutz,0,0,7
+2020-08-27,2020-09-09,Eindeutig,Reise Ausland,28, 3.1,8
+2020-08-27,2020-09-09,Eindeutig,Reise Schweiz,3,< 0.5,9
+2020-08-27,2020-09-09,Eindeutig,Hotel oder andere Unterkunft,2,< 0.5,10
+2020-08-27,2020-09-09,Eindeutig,Schul- oder Ferienlager,4,< 0.5,11
+2020-08-27,2020-09-09,Eindeutig,Club / Bar,8, 0.9,12
+2020-08-27,2020-09-09,Eindeutig,Restaurant,9, 1.0,13
+2020-08-27,2020-09-09,Eindeutig,Kino / Theater / Konzert,1,< 0.5,14
+2020-08-27,2020-09-09,Eindeutig,Veranstaltung / Feier < 300 Pers.,6, 0.7,15
+2020-08-27,2020-09-09,Eindeutig,Religiöses / Beerdigungen,2,< 0.5,17
+2020-08-27,2020-09-09,Eindeutig,Verein,1,< 0.5,18
+2020-08-27,2020-09-09,Eindeutig,Pflege- / Altersheim,4,< 0.5,19
+2020-08-27,2020-09-09,Eindeutig,Medizin. Einrichtung,2,< 0.5,20
+2020-08-27,2020-09-09,Eindeutig,"Friseur, Massage o.ä.",1,< 0.5,21
+2020-08-27,2020-09-09,Eindeutig,Sport in der Halle,1,< 0.5,22
+2020-08-27,2020-09-09,Eindeutig,Sport im Freien,8, 0.9,23
+2020-08-27,2020-09-09,Eindeutig,Sonstige Freizeitaktivität drinnen,6, 0.7,24
+2020-08-27,2020-09-09,Eindeutig,Sonstige Freizeitaktivität draussen,5, 0.6,25
+2020-08-27,2020-09-09,Eindeutig,Einkaufen (Läden/Markt),0,0,26
+2020-08-27,2020-09-09,Eindeutig,Sonstige,1,< 0.5,27
+2020-08-27,2020-09-09,Eindeutig,Ohne Angabe,24, 2.7,28
+2020-08-20,2020-09-02,Nicht eindeutig,,541,59.8,0
+2020-08-20,2020-09-02,Eindeutig,Eigener Haushalt,128,14.2,1
+2020-08-20,2020-09-02,Eindeutig,Im Haushalt von Freunden / Familie,34, 3.8,2
+2020-08-20,2020-09-02,Eindeutig,Arbeitsplatz,41, 4.5,3
+2020-08-20,2020-09-02,Eindeutig,Sekundarstufe II / Hochschule / Weiterbildungsstätte,5, 0.6,4
+2020-08-20,2020-09-02,Eindeutig,Obligatorische Schule,8, 0.9,5
+2020-08-20,2020-09-02,Eindeutig,Krippe,1,< 0.5,6
+2020-08-20,2020-09-02,Eindeutig,Armee / Zivilschutz,0,0,7
+2020-08-20,2020-09-02,Eindeutig,Reise Ausland,59, 6.5,8
+2020-08-20,2020-09-02,Eindeutig,Reise Schweiz,3,< 0.5,9
+2020-08-20,2020-09-02,Eindeutig,Hotel oder andere Unterkunft,1,< 0.5,10
+2020-08-20,2020-09-02,Eindeutig,Schul- oder Ferienlager,3,< 0.5,11
+2020-08-20,2020-09-02,Eindeutig,Club / Bar,11, 1.2,12
+2020-08-20,2020-09-02,Eindeutig,Restaurant,7, 0.8,13
+2020-08-20,2020-09-02,Eindeutig,Kino / Theater / Konzert,1,< 0.5,14
+2020-08-20,2020-09-02,Eindeutig,Veranstaltung / Feier < 300 Pers.,9, 1.0,15
+2020-08-20,2020-09-02,Eindeutig,Religiöses / Beerdigungen,2,< 0.5,17
+2020-08-20,2020-09-02,Eindeutig,Verein,0,0,18
+2020-08-20,2020-09-02,Eindeutig,Pflege- / Altersheim,2,< 0.5,19
+2020-08-20,2020-09-02,Eindeutig,Medizin. Einrichtung,4,< 0.5,20
+2020-08-20,2020-09-02,Eindeutig,"Friseur, Massage o.ä.",1,< 0.5,21
+2020-08-20,2020-09-02,Eindeutig,Sport in der Halle,3,< 0.5,22
+2020-08-20,2020-09-02,Eindeutig,Sport im Freien,6, 0.7,23
+2020-08-20,2020-09-02,Eindeutig,Sonstige Freizeitaktivität drinnen,7, 0.8,24
+2020-08-20,2020-09-02,Eindeutig,Sonstige Freizeitaktivität draussen,8, 0.9,25
+2020-08-20,2020-09-02,Eindeutig,Einkaufen (Läden/Markt),0,0,26
+2020-08-20,2020-09-02,Eindeutig,Sonstige,1,< 0.5,27
+2020-08-20,2020-09-02,Eindeutig,Ohne Angabe,18, 2.0,28
+2020-08-13,2020-08-26,Nicht eindeutig,,511,61.9,0
+2020-08-13,2020-08-26,Eindeutig,Eigener Haushalt,86,10.4,1
+2020-08-13,2020-08-26,Eindeutig,Im Haushalt von Freunden / Familie,28, 3.4,2
+2020-08-13,2020-08-26,Eindeutig,Arbeitsplatz,21, 2.5,3
+2020-08-13,2020-08-26,Eindeutig,Sekundarstufe II / Hochschule / Weiterbildungsstätte,1,< 0.5,4
+2020-08-13,2020-08-26,Eindeutig,Obligatorische Schule,3,< 0.5,5
+2020-08-13,2020-08-26,Eindeutig,Krippe,3,< 0.5,6
+2020-08-13,2020-08-26,Eindeutig,Armee / Zivilschutz,0,0,7
+2020-08-13,2020-08-26,Eindeutig,Reise Ausland,103,12.5,8
+2020-08-13,2020-08-26,Eindeutig,Reise Schweiz,3,< 0.5,9
+2020-08-13,2020-08-26,Eindeutig,Hotel oder andere Unterkunft,1,< 0.5,10
+2020-08-13,2020-08-26,Eindeutig,Schul- oder Ferienlager,0,0,11
+2020-08-13,2020-08-26,Eindeutig,Club / Bar,22, 2.7,12
+2020-08-13,2020-08-26,Eindeutig,Restaurant,2,< 0.5,13
+2020-08-13,2020-08-26,Eindeutig,Kino / Theater / Konzert,0,0,14
+2020-08-13,2020-08-26,Eindeutig,Veranstaltung / Feier < 300 Pers.,8, 1.0,15
+2020-08-13,2020-08-26,Eindeutig,Religiöses / Beerdigungen,1,< 0.5,17
+2020-08-13,2020-08-26,Eindeutig,Verein,0,0,18
+2020-08-13,2020-08-26,Eindeutig,Pflege- / Altersheim,2,< 0.5,19
+2020-08-13,2020-08-26,Eindeutig,Medizin. Einrichtung,4,< 0.5,20
+2020-08-13,2020-08-26,Eindeutig,"Friseur, Massage o.ä.",0,0,21
+2020-08-13,2020-08-26,Eindeutig,Sport in der Halle,3,< 0.5,22
+2020-08-13,2020-08-26,Eindeutig,Sport im Freien,1,< 0.5,23
+2020-08-13,2020-08-26,Eindeutig,Sonstige Freizeitaktivität drinnen,6, 0.7,24
+2020-08-13,2020-08-26,Eindeutig,Sonstige Freizeitaktivität draussen,8, 1.0,25
+2020-08-13,2020-08-26,Eindeutig,Einkaufen (Läden/Markt),0,0,26
+2020-08-13,2020-08-26,Eindeutig,Sonstige,2,< 0.5,27
+2020-08-13,2020-08-26,Eindeutig,Ohne Angabe,6, 0.7,28
+2020-08-06,2020-08-19,Nicht eindeutig,,423,62.9,0
+2020-08-06,2020-08-19,Eindeutig,Eigener Haushalt,83,12.3,1
+2020-08-06,2020-08-19,Eindeutig,Im Haushalt von Freunden / Familie,26, 3.9,2
+2020-08-06,2020-08-19,Eindeutig,Arbeitsplatz,7, 1.0,3
+2020-08-06,2020-08-19,Eindeutig,Sekundarstufe II / Hochschule / Weiterbildungsstätte,0,0,4
+2020-08-06,2020-08-19,Eindeutig,Obligatorische Schule,0,0,5
+2020-08-06,2020-08-19,Eindeutig,Krippe,3,< 0.5,6
+2020-08-06,2020-08-19,Eindeutig,Armee / Zivilschutz,0,0,7
+2020-08-06,2020-08-19,Eindeutig,Reise Ausland,89,13.2,8
+2020-08-06,2020-08-19,Eindeutig,Reise Schweiz,3,< 0.5,9
+2020-08-06,2020-08-19,Eindeutig,Hotel oder andere Unterkunft,4, 0.6,10
+2020-08-06,2020-08-19,Eindeutig,Schul- oder Ferienlager,0,0,11
+2020-08-06,2020-08-19,Eindeutig,Club / Bar,15, 2.2,12
+2020-08-06,2020-08-19,Eindeutig,Restaurant,2,< 0.5,13
+2020-08-06,2020-08-19,Eindeutig,Kino / Theater / Konzert,0,0,14
+2020-08-06,2020-08-19,Eindeutig,Veranstaltung / Feier < 300 Pers.,3,< 0.5,15
+2020-08-06,2020-08-19,Eindeutig,Religiöses / Beerdigungen,0,0,17
+2020-08-06,2020-08-19,Eindeutig,Verein,0,0,18
+2020-08-06,2020-08-19,Eindeutig,Pflege- / Altersheim,0,0,19
+2020-08-06,2020-08-19,Eindeutig,Medizin. Einrichtung,1,< 0.5,20
+2020-08-06,2020-08-19,Eindeutig,"Friseur, Massage o.ä.",0,0,21
+2020-08-06,2020-08-19,Eindeutig,Sport in der Halle,2,< 0.5,22
+2020-08-06,2020-08-19,Eindeutig,Sport im Freien,1,< 0.5,23
+2020-08-06,2020-08-19,Eindeutig,Sonstige Freizeitaktivität drinnen,4, 0.6,24
+2020-08-06,2020-08-19,Eindeutig,Sonstige Freizeitaktivität draussen,5, 0.7,25
+2020-08-06,2020-08-19,Eindeutig,Einkaufen (Läden/Markt),0,0,26
+2020-08-06,2020-08-19,Eindeutig,Sonstige,1,< 0.5,27
+2020-08-06,2020-08-19,Eindeutig,Ohne Angabe,1,< 0.5,28
+2020-07-30,2020-08-12,Nicht eindeutig,,283,61.1,0
+2020-07-30,2020-08-12,Eindeutig,Eigener Haushalt,81,17.5,1
+2020-07-30,2020-08-12,Eindeutig,Im Haushalt von Freunden / Familie,18, 3.9,2
+2020-07-30,2020-08-12,Eindeutig,Arbeitsplatz,12, 2.6,3
+2020-07-30,2020-08-12,Eindeutig,Sekundarstufe II / Hochschule / Weiterbildungsstätte,0,0,4
+2020-07-30,2020-08-12,Eindeutig,Obligatorische Schule,0,0,5
+2020-07-30,2020-08-12,Eindeutig,Krippe,0,0,6
+2020-07-30,2020-08-12,Eindeutig,Armee / Zivilschutz,0,0,7
+2020-07-30,2020-08-12,Eindeutig,Reise Ausland,51,11.0,8
+2020-07-30,2020-08-12,Eindeutig,Reise Schweiz,2,< 0.5,9
+2020-07-30,2020-08-12,Eindeutig,Hotel oder andere Unterkunft,3, 0.6,10
+2020-07-30,2020-08-12,Eindeutig,Schul- oder Ferienlager,0,0,11
+2020-07-30,2020-08-12,Eindeutig,Club / Bar,1,< 0.5,12
+2020-07-30,2020-08-12,Eindeutig,Restaurant,2,< 0.5,13
+2020-07-30,2020-08-12,Eindeutig,Kino / Theater / Konzert,0,0,14
+2020-07-30,2020-08-12,Eindeutig,Veranstaltung / Feier < 300 Pers.,2,< 0.5,15
+2020-07-30,2020-08-12,Eindeutig,Religiöses / Beerdigungen,1,< 0.5,17
+2020-07-30,2020-08-12,Eindeutig,Verein,0,0,18
+2020-07-30,2020-08-12,Eindeutig,Pflege- / Altersheim,0,0,19
+2020-07-30,2020-08-12,Eindeutig,Medizin. Einrichtung,0,0,20
+2020-07-30,2020-08-12,Eindeutig,"Friseur, Massage o.ä.",0,0,21
+2020-07-30,2020-08-12,Eindeutig,Sport in der Halle,2,< 0.5,22
+2020-07-30,2020-08-12,Eindeutig,Sport im Freien,2,< 0.5,23
+2020-07-30,2020-08-12,Eindeutig,Sonstige Freizeitaktivität drinnen,1,< 0.5,24
+2020-07-30,2020-08-12,Eindeutig,Sonstige Freizeitaktivität draussen,2,< 0.5,25
+2020-07-30,2020-08-12,Eindeutig,Einkaufen (Läden/Markt),0,0,26
+2020-07-30,2020-08-12,Eindeutig,Sonstige,0,0,27
+2020-07-30,2020-08-12,Eindeutig,Ohne Angabe,0,0,28
+2020-07-23,2020-08-05,Nicht eindeutig,,212,62.7,0
+2020-07-23,2020-08-05,Eindeutig,Eigener Haushalt,54,16.0,1
+2020-07-23,2020-08-05,Eindeutig,Im Haushalt von Freunden / Familie,9, 2.7,2
+2020-07-23,2020-08-05,Eindeutig,Arbeitsplatz,17, 5.0,3
+2020-07-23,2020-08-05,Eindeutig,Sekundarstufe II / Hochschule / Weiterbildungsstätte,0,0,4
+2020-07-23,2020-08-05,Eindeutig,Obligatorische Schule,0,0,5
+2020-07-23,2020-08-05,Eindeutig,Krippe,0,0,6
+2020-07-23,2020-08-05,Eindeutig,Armee / Zivilschutz,0,0,7
+2020-07-23,2020-08-05,Eindeutig,Reise Ausland,32, 9.5,8
+2020-07-23,2020-08-05,Eindeutig,Reise Schweiz,0,0,9
+2020-07-23,2020-08-05,Eindeutig,Hotel oder andere Unterkunft,0,0,10
+2020-07-23,2020-08-05,Eindeutig,Schul- oder Ferienlager,0,0,11
+2020-07-23,2020-08-05,Eindeutig,Club / Bar,0,0,12
+2020-07-23,2020-08-05,Eindeutig,Restaurant,4, 1.2,13
+2020-07-23,2020-08-05,Eindeutig,Kino / Theater / Konzert,0,0,14
+2020-07-23,2020-08-05,Eindeutig,Veranstaltung / Feier < 300 Pers.,1,< 0.5,15
+2020-07-23,2020-08-05,Eindeutig,Religiöses / Beerdigungen,1,< 0.5,17
+2020-07-23,2020-08-05,Eindeutig,Verein,0,0,18
+2020-07-23,2020-08-05,Eindeutig,Pflege- / Altersheim,4, 1.2,19
+2020-07-23,2020-08-05,Eindeutig,Medizin. Einrichtung,0,0,20
+2020-07-23,2020-08-05,Eindeutig,"Friseur, Massage o.ä.",0,0,21
+2020-07-23,2020-08-05,Eindeutig,Sport in der Halle,1,< 0.5,22
+2020-07-23,2020-08-05,Eindeutig,Sport im Freien,2, 0.6,23
+2020-07-23,2020-08-05,Eindeutig,Sonstige Freizeitaktivität drinnen,1,< 0.5,24
+2020-07-23,2020-08-05,Eindeutig,Sonstige Freizeitaktivität draussen,0,0,25
+2020-07-23,2020-08-05,Eindeutig,Einkaufen (Läden/Markt),0,0,26
+2020-07-23,2020-08-05,Eindeutig,Sonstige,0,0,27
+2020-07-23,2020-08-05,Eindeutig,Ohne Angabe,0,0,28
+2020-07-16,2020-07-29,Nicht eindeutig,,203,65.7,0
+2020-07-16,2020-07-29,Eindeutig,Eigener Haushalt,39,12.6,1
+2020-07-16,2020-07-29,Eindeutig,Im Haushalt von Freunden / Familie,12, 3.9,2
+2020-07-16,2020-07-29,Eindeutig,Arbeitsplatz,12, 3.9,3
+2020-07-16,2020-07-29,Eindeutig,Sekundarstufe II / Hochschule / Weiterbildungsstätte,0,0,4
+2020-07-16,2020-07-29,Eindeutig,Obligatorische Schule,0,0,5
+2020-07-16,2020-07-29,Eindeutig,Krippe,4, 1.3,6
+2020-07-16,2020-07-29,Eindeutig,Armee / Zivilschutz,0,0,7
+2020-07-16,2020-07-29,Eindeutig,Reise Ausland,25, 8.1,8
+2020-07-16,2020-07-29,Eindeutig,Reise Schweiz,0,0,9
+2020-07-16,2020-07-29,Eindeutig,Hotel oder andere Unterkunft,0,0,10
+2020-07-16,2020-07-29,Eindeutig,Schul- oder Ferienlager,0,0,11
+2020-07-16,2020-07-29,Eindeutig,Club / Bar,1,< 0.5,12
+2020-07-16,2020-07-29,Eindeutig,Restaurant,4, 1.3,13
+2020-07-16,2020-07-29,Eindeutig,Kino / Theater / Konzert,0,0,14
+2020-07-16,2020-07-29,Eindeutig,Veranstaltung / Feier < 300 Pers.,0,0,15
+2020-07-16,2020-07-29,Eindeutig,Religiöses / Beerdigungen,0,0,17
+2020-07-16,2020-07-29,Eindeutig,Verein,2, 0.6,18
+2020-07-16,2020-07-29,Eindeutig,Pflege- / Altersheim,4, 1.3,19
+2020-07-16,2020-07-29,Eindeutig,Medizin. Einrichtung,0,0,20
+2020-07-16,2020-07-29,Eindeutig,"Friseur, Massage o.ä.",0,0,21
+2020-07-16,2020-07-29,Eindeutig,Sport in der Halle,1,< 0.5,22
+2020-07-16,2020-07-29,Eindeutig,Sport im Freien,1,< 0.5,23
+2020-07-16,2020-07-29,Eindeutig,Sonstige Freizeitaktivität drinnen,1,< 0.5,24
+2020-07-16,2020-07-29,Eindeutig,Sonstige Freizeitaktivität draussen,0,0,25
+2020-07-16,2020-07-29,Eindeutig,Einkaufen (Läden/Markt),0,0,26
+2020-07-16,2020-07-29,Eindeutig,Sonstige,0,0,27
+2020-07-16,2020-07-29,Eindeutig,Ohne Angabe,0,0,28
+2020-07-09,2020-07-22,Nicht eindeutig,,194,65.1,0
+2020-07-09,2020-07-22,Eindeutig,Eigener Haushalt,29, 9.7,1
+2020-07-09,2020-07-22,Eindeutig,Im Haushalt von Freunden / Familie,11, 3.7,2
+2020-07-09,2020-07-22,Eindeutig,Arbeitsplatz,16, 5.4,3
+2020-07-09,2020-07-22,Eindeutig,Sekundarstufe II / Hochschule / Weiterbildungsstätte,1,< 0.5,4
+2020-07-09,2020-07-22,Eindeutig,Obligatorische Schule,1,< 0.5,5
+2020-07-09,2020-07-22,Eindeutig,Krippe,5, 1.7,6
+2020-07-09,2020-07-22,Eindeutig,Armee / Zivilschutz,0,0,7
+2020-07-09,2020-07-22,Eindeutig,Reise Ausland,33,11.1,8
+2020-07-09,2020-07-22,Eindeutig,Reise Schweiz,0,0,9
+2020-07-09,2020-07-22,Eindeutig,Hotel oder andere Unterkunft,1,< 0.5,10
+2020-07-09,2020-07-22,Eindeutig,Schul- oder Ferienlager,0,0,11
+2020-07-09,2020-07-22,Eindeutig,Club / Bar,1,< 0.5,12
+2020-07-09,2020-07-22,Eindeutig,Restaurant,1,< 0.5,13
+2020-07-09,2020-07-22,Eindeutig,Kino / Theater / Konzert,0,0,14
+2020-07-09,2020-07-22,Eindeutig,Veranstaltung / Feier < 300 Pers.,0,0,15
+2020-07-09,2020-07-22,Eindeutig,Religiöses / Beerdigungen,0,0,17
+2020-07-09,2020-07-22,Eindeutig,Verein,2, 0.7,18
+2020-07-09,2020-07-22,Eindeutig,Pflege- / Altersheim,1,< 0.5,19
+2020-07-09,2020-07-22,Eindeutig,Medizin. Einrichtung,0,0,20
+2020-07-09,2020-07-22,Eindeutig,"Friseur, Massage o.ä.",0,0,21
+2020-07-09,2020-07-22,Eindeutig,Sport in der Halle,0,0,22
+2020-07-09,2020-07-22,Eindeutig,Sport im Freien,1,< 0.5,23
+2020-07-09,2020-07-22,Eindeutig,Sonstige Freizeitaktivität drinnen,1,< 0.5,24
+2020-07-09,2020-07-22,Eindeutig,Sonstige Freizeitaktivität draussen,0,0,25
+2020-07-09,2020-07-22,Eindeutig,Einkaufen (Läden/Markt),0,0,26
+2020-07-09,2020-07-22,Eindeutig,Sonstige,0,0,27
+2020-07-09,2020-07-22,Eindeutig,Ohne Angabe,0,0,28
+2020-07-02,2020-07-15,Nicht eindeutig,,208,70.5,0
+2020-07-02,2020-07-15,Eindeutig,Eigener Haushalt,11, 3.7,1
+2020-07-02,2020-07-15,Eindeutig,Im Haushalt von Freunden / Familie,4, 1.4,2
+2020-07-02,2020-07-15,Eindeutig,Arbeitsplatz,11, 3.7,3
+2020-07-02,2020-07-15,Eindeutig,Sekundarstufe II / Hochschule / Weiterbildungsstätte,1,< 0.5,4
+2020-07-02,2020-07-15,Eindeutig,Obligatorische Schule,1,< 0.5,5
+2020-07-02,2020-07-15,Eindeutig,Krippe,1,< 0.5,6
+2020-07-02,2020-07-15,Eindeutig,Armee / Zivilschutz,0,0,7
+2020-07-02,2020-07-15,Eindeutig,Reise Ausland,54,18.3,8
+2020-07-02,2020-07-15,Eindeutig,Reise Schweiz,0,0,9
+2020-07-02,2020-07-15,Eindeutig,Hotel oder andere Unterkunft,1,< 0.5,10
+2020-07-02,2020-07-15,Eindeutig,Schul- oder Ferienlager,0,0,11
+2020-07-02,2020-07-15,Eindeutig,Club / Bar,0,0,12
+2020-07-02,2020-07-15,Eindeutig,Restaurant,0,0,13
+2020-07-02,2020-07-15,Eindeutig,Kino / Theater / Konzert,0,0,14
+2020-07-02,2020-07-15,Eindeutig,Veranstaltung / Feier < 300 Pers.,0,0,15
+2020-07-02,2020-07-15,Eindeutig,Religiöses / Beerdigungen,0,0,17
+2020-07-02,2020-07-15,Eindeutig,Verein,0,0,18
+2020-07-02,2020-07-15,Eindeutig,Pflege- / Altersheim,1,< 0.5,19
+2020-07-02,2020-07-15,Eindeutig,Medizin. Einrichtung,0,0,20
+2020-07-02,2020-07-15,Eindeutig,"Friseur, Massage o.ä.",0,0,21
+2020-07-02,2020-07-15,Eindeutig,Sport in der Halle,0,0,22
+2020-07-02,2020-07-15,Eindeutig,Sport im Freien,1,< 0.5,23
+2020-07-02,2020-07-15,Eindeutig,Sonstige Freizeitaktivität drinnen,1,< 0.5,24
+2020-07-02,2020-07-15,Eindeutig,Sonstige Freizeitaktivität draussen,0,0,25
+2020-07-02,2020-07-15,Eindeutig,Einkaufen (Läden/Markt),0,0,26
+2020-07-02,2020-07-15,Eindeutig,Sonstige,0,0,27
+2020-07-02,2020-07-15,Eindeutig,Ohne Angabe,0,0,28
+2020-06-25,2020-07-08,Nicht eindeutig,,221,73.7,0
+2020-06-25,2020-07-08,Eindeutig,Eigener Haushalt,0,0,1
+2020-06-25,2020-07-08,Eindeutig,Im Haushalt von Freunden / Familie,0,0,2
+2020-06-25,2020-07-08,Eindeutig,Arbeitsplatz,0,0,3
+2020-06-25,2020-07-08,Eindeutig,Sekundarstufe II / Hochschule / Weiterbildungsstätte,0,0,4
+2020-06-25,2020-07-08,Eindeutig,Obligatorische Schule,0,0,5
+2020-06-25,2020-07-08,Eindeutig,Krippe,0,0,6
+2020-06-25,2020-07-08,Eindeutig,Armee / Zivilschutz,0,0,7
+2020-06-25,2020-07-08,Eindeutig,Reise Ausland,79,26.3,8
+2020-06-25,2020-07-08,Eindeutig,Reise Schweiz,0,0,9
+2020-06-25,2020-07-08,Eindeutig,Hotel oder andere Unterkunft,0,0,10
+2020-06-25,2020-07-08,Eindeutig,Schul- oder Ferienlager,0,0,11
+2020-06-25,2020-07-08,Eindeutig,Club / Bar,0,0,12
+2020-06-25,2020-07-08,Eindeutig,Restaurant,0,0,13
+2020-06-25,2020-07-08,Eindeutig,Kino / Theater / Konzert,0,0,14
+2020-06-25,2020-07-08,Eindeutig,Veranstaltung / Feier < 300 Pers.,0,0,15
+2020-06-25,2020-07-08,Eindeutig,Religiöses / Beerdigungen,0,0,17
+2020-06-25,2020-07-08,Eindeutig,Verein,0,0,18
+2020-06-25,2020-07-08,Eindeutig,Pflege- / Altersheim,0,0,19
+2020-06-25,2020-07-08,Eindeutig,Medizin. Einrichtung,0,0,20
+2020-06-25,2020-07-08,Eindeutig,"Friseur, Massage o.ä.",0,0,21
+2020-06-25,2020-07-08,Eindeutig,Sport in der Halle,0,0,22
+2020-06-25,2020-07-08,Eindeutig,Sport im Freien,0,0,23
+2020-06-25,2020-07-08,Eindeutig,Sonstige Freizeitaktivität drinnen,0,0,24
+2020-06-25,2020-07-08,Eindeutig,Sonstige Freizeitaktivität draussen,0,0,25
+2020-06-25,2020-07-08,Eindeutig,Einkaufen (Läden/Markt),0,0,26
+2020-06-25,2020-07-08,Eindeutig,Sonstige,0,0,27
+2020-06-25,2020-07-08,Eindeutig,Ohne Angabe,0,0,28
+2020-06-18,2020-07-01,Nicht eindeutig,,136,70.1,0
+2020-06-18,2020-07-01,Eindeutig,Eigener Haushalt,0,0,1
+2020-06-18,2020-07-01,Eindeutig,Im Haushalt von Freunden / Familie,0,0,2
+2020-06-18,2020-07-01,Eindeutig,Arbeitsplatz,0,0,3
+2020-06-18,2020-07-01,Eindeutig,Sekundarstufe II / Hochschule / Weiterbildungsstätte,0,0,4
+2020-06-18,2020-07-01,Eindeutig,Obligatorische Schule,0,0,5
+2020-06-18,2020-07-01,Eindeutig,Krippe,0,0,6
+2020-06-18,2020-07-01,Eindeutig,Armee / Zivilschutz,0,0,7
+2020-06-18,2020-07-01,Eindeutig,Reise Ausland,58,29.9,8
+2020-06-18,2020-07-01,Eindeutig,Reise Schweiz,0,0,9
+2020-06-18,2020-07-01,Eindeutig,Hotel oder andere Unterkunft,0,0,10
+2020-06-18,2020-07-01,Eindeutig,Schul- oder Ferienlager,0,0,11
+2020-06-18,2020-07-01,Eindeutig,Club / Bar,0,0,12
+2020-06-18,2020-07-01,Eindeutig,Restaurant,0,0,13
+2020-06-18,2020-07-01,Eindeutig,Kino / Theater / Konzert,0,0,14
+2020-06-18,2020-07-01,Eindeutig,Veranstaltung / Feier < 300 Pers.,0,0,15
+2020-06-18,2020-07-01,Eindeutig,Religiöses / Beerdigungen,0,0,17
+2020-06-18,2020-07-01,Eindeutig,Verein,0,0,18
+2020-06-18,2020-07-01,Eindeutig,Pflege- / Altersheim,0,0,19
+2020-06-18,2020-07-01,Eindeutig,Medizin. Einrichtung,0,0,20
+2020-06-18,2020-07-01,Eindeutig,"Friseur, Massage o.ä.",0,0,21
+2020-06-18,2020-07-01,Eindeutig,Sport in der Halle,0,0,22
+2020-06-18,2020-07-01,Eindeutig,Sport im Freien,0,0,23
+2020-06-18,2020-07-01,Eindeutig,Sonstige Freizeitaktivität drinnen,0,0,24
+2020-06-18,2020-07-01,Eindeutig,Sonstige Freizeitaktivität draussen,0,0,25
+2020-06-18,2020-07-01,Eindeutig,Einkaufen (Läden/Markt),0,0,26
+2020-06-18,2020-07-01,Eindeutig,Sonstige,0,0,27
+2020-06-18,2020-07-01,Eindeutig,Ohne Angabe,0,0,28
+2020-06-11,2020-06-24,Nicht eindeutig,,49,64.5,0
+2020-06-11,2020-06-24,Eindeutig,Eigener Haushalt,0,0,1
+2020-06-11,2020-06-24,Eindeutig,Im Haushalt von Freunden / Familie,0,0,2
+2020-06-11,2020-06-24,Eindeutig,Arbeitsplatz,0,0,3
+2020-06-11,2020-06-24,Eindeutig,Sekundarstufe II / Hochschule / Weiterbildungsstätte,0,0,4
+2020-06-11,2020-06-24,Eindeutig,Obligatorische Schule,0,0,5
+2020-06-11,2020-06-24,Eindeutig,Krippe,0,0,6
+2020-06-11,2020-06-24,Eindeutig,Armee / Zivilschutz,0,0,7
+2020-06-11,2020-06-24,Eindeutig,Reise Ausland,27,35.5,8
+2020-06-11,2020-06-24,Eindeutig,Reise Schweiz,0,0,9
+2020-06-11,2020-06-24,Eindeutig,Hotel oder andere Unterkunft,0,0,10
+2020-06-11,2020-06-24,Eindeutig,Schul- oder Ferienlager,0,0,11
+2020-06-11,2020-06-24,Eindeutig,Club / Bar,0,0,12
+2020-06-11,2020-06-24,Eindeutig,Restaurant,0,0,13
+2020-06-11,2020-06-24,Eindeutig,Kino / Theater / Konzert,0,0,14
+2020-06-11,2020-06-24,Eindeutig,Veranstaltung / Feier < 300 Pers.,0,0,15
+2020-06-11,2020-06-24,Eindeutig,Religiöses / Beerdigungen,0,0,17
+2020-06-11,2020-06-24,Eindeutig,Verein,0,0,18
+2020-06-11,2020-06-24,Eindeutig,Pflege- / Altersheim,0,0,19
+2020-06-11,2020-06-24,Eindeutig,Medizin. Einrichtung,0,0,20
+2020-06-11,2020-06-24,Eindeutig,"Friseur, Massage o.ä.",0,0,21
+2020-06-11,2020-06-24,Eindeutig,Sport in der Halle,0,0,22
+2020-06-11,2020-06-24,Eindeutig,Sport im Freien,0,0,23
+2020-06-11,2020-06-24,Eindeutig,Sonstige Freizeitaktivität drinnen,0,0,24
+2020-06-11,2020-06-24,Eindeutig,Sonstige Freizeitaktivität draussen,0,0,25
+2020-06-11,2020-06-24,Eindeutig,Einkaufen (Läden/Markt),0,0,26
+2020-06-11,2020-06-24,Eindeutig,Sonstige,0,0,27
+2020-06-11,2020-06-24,Eindeutig,Ohne Angabe,0,0,28
+2020-06-04,2020-06-17,Nicht eindeutig,,34,66.7,0
+2020-06-04,2020-06-17,Eindeutig,Eigener Haushalt,0,0,1
+2020-06-04,2020-06-17,Eindeutig,Im Haushalt von Freunden / Familie,0,0,2
+2020-06-04,2020-06-17,Eindeutig,Arbeitsplatz,0,0,3
+2020-06-04,2020-06-17,Eindeutig,Sekundarstufe II / Hochschule / Weiterbildungsstätte,0,0,4
+2020-06-04,2020-06-17,Eindeutig,Obligatorische Schule,0,0,5
+2020-06-04,2020-06-17,Eindeutig,Krippe,0,0,6
+2020-06-04,2020-06-17,Eindeutig,Armee / Zivilschutz,0,0,7
+2020-06-04,2020-06-17,Eindeutig,Reise Ausland,17,33.3,8
+2020-06-04,2020-06-17,Eindeutig,Reise Schweiz,0,0,9
+2020-06-04,2020-06-17,Eindeutig,Hotel oder andere Unterkunft,0,0,10
+2020-06-04,2020-06-17,Eindeutig,Schul- oder Ferienlager,0,0,11
+2020-06-04,2020-06-17,Eindeutig,Club / Bar,0,0,12
+2020-06-04,2020-06-17,Eindeutig,Restaurant,0,0,13
+2020-06-04,2020-06-17,Eindeutig,Kino / Theater / Konzert,0,0,14
+2020-06-04,2020-06-17,Eindeutig,Veranstaltung / Feier < 300 Pers.,0,0,15
+2020-06-04,2020-06-17,Eindeutig,Religiöses / Beerdigungen,0,0,17
+2020-06-04,2020-06-17,Eindeutig,Verein,0,0,18
+2020-06-04,2020-06-17,Eindeutig,Pflege- / Altersheim,0,0,19
+2020-06-04,2020-06-17,Eindeutig,Medizin. Einrichtung,0,0,20
+2020-06-04,2020-06-17,Eindeutig,"Friseur, Massage o.ä.",0,0,21
+2020-06-04,2020-06-17,Eindeutig,Sport in der Halle,0,0,22
+2020-06-04,2020-06-17,Eindeutig,Sport im Freien,0,0,23
+2020-06-04,2020-06-17,Eindeutig,Sonstige Freizeitaktivität drinnen,0,0,24
+2020-06-04,2020-06-17,Eindeutig,Sonstige Freizeitaktivität draussen,0,0,25
+2020-06-04,2020-06-17,Eindeutig,Einkaufen (Läden/Markt),0,0,26
+2020-06-04,2020-06-17,Eindeutig,Sonstige,0,0,27
+2020-06-04,2020-06-17,Eindeutig,Ohne Angabe,0,0,28
+2020-05-28,2020-06-10,Nicht eindeutig,,29,72.5,0
+2020-05-28,2020-06-10,Eindeutig,Eigener Haushalt,0,0,1
+2020-05-28,2020-06-10,Eindeutig,Im Haushalt von Freunden / Familie,0,0,2
+2020-05-28,2020-06-10,Eindeutig,Arbeitsplatz,0,0,3
+2020-05-28,2020-06-10,Eindeutig,Sekundarstufe II / Hochschule / Weiterbildungsstätte,0,0,4
+2020-05-28,2020-06-10,Eindeutig,Obligatorische Schule,0,0,5
+2020-05-28,2020-06-10,Eindeutig,Krippe,0,0,6
+2020-05-28,2020-06-10,Eindeutig,Armee / Zivilschutz,0,0,7
+2020-05-28,2020-06-10,Eindeutig,Reise Ausland,11,27.5,8
+2020-05-28,2020-06-10,Eindeutig,Reise Schweiz,0,0,9
+2020-05-28,2020-06-10,Eindeutig,Hotel oder andere Unterkunft,0,0,10
+2020-05-28,2020-06-10,Eindeutig,Schul- oder Ferienlager,0,0,11
+2020-05-28,2020-06-10,Eindeutig,Club / Bar,0,0,12
+2020-05-28,2020-06-10,Eindeutig,Restaurant,0,0,13
+2020-05-28,2020-06-10,Eindeutig,Kino / Theater / Konzert,0,0,14
+2020-05-28,2020-06-10,Eindeutig,Veranstaltung / Feier < 300 Pers.,0,0,15
+2020-05-28,2020-06-10,Eindeutig,Religiöses / Beerdigungen,0,0,17
+2020-05-28,2020-06-10,Eindeutig,Verein,0,0,18
+2020-05-28,2020-06-10,Eindeutig,Pflege- / Altersheim,0,0,19
+2020-05-28,2020-06-10,Eindeutig,Medizin. Einrichtung,0,0,20
+2020-05-28,2020-06-10,Eindeutig,"Friseur, Massage o.ä.",0,0,21
+2020-05-28,2020-06-10,Eindeutig,Sport in der Halle,0,0,22
+2020-05-28,2020-06-10,Eindeutig,Sport im Freien,0,0,23
+2020-05-28,2020-06-10,Eindeutig,Sonstige Freizeitaktivität drinnen,0,0,24
+2020-05-28,2020-06-10,Eindeutig,Sonstige Freizeitaktivität draussen,0,0,25
+2020-05-28,2020-06-10,Eindeutig,Einkaufen (Läden/Markt),0,0,26
+2020-05-28,2020-06-10,Eindeutig,Sonstige,0,0,27
+2020-05-28,2020-06-10,Eindeutig,Ohne Angabe,0,0,28
+2020-05-21,2020-06-03,Nicht eindeutig,,25,62.5,0
+2020-05-21,2020-06-03,Eindeutig,Eigener Haushalt,0,0,1
+2020-05-21,2020-06-03,Eindeutig,Im Haushalt von Freunden / Familie,0,0,2
+2020-05-21,2020-06-03,Eindeutig,Arbeitsplatz,0,0,3
+2020-05-21,2020-06-03,Eindeutig,Sekundarstufe II / Hochschule / Weiterbildungsstätte,0,0,4
+2020-05-21,2020-06-03,Eindeutig,Obligatorische Schule,0,0,5
+2020-05-21,2020-06-03,Eindeutig,Krippe,0,0,6
+2020-05-21,2020-06-03,Eindeutig,Armee / Zivilschutz,0,0,7
+2020-05-21,2020-06-03,Eindeutig,Reise Ausland,15,37.5,8
+2020-05-21,2020-06-03,Eindeutig,Reise Schweiz,0,0,9
+2020-05-21,2020-06-03,Eindeutig,Hotel oder andere Unterkunft,0,0,10
+2020-05-21,2020-06-03,Eindeutig,Schul- oder Ferienlager,0,0,11
+2020-05-21,2020-06-03,Eindeutig,Club / Bar,0,0,12
+2020-05-21,2020-06-03,Eindeutig,Restaurant,0,0,13
+2020-05-21,2020-06-03,Eindeutig,Kino / Theater / Konzert,0,0,14
+2020-05-21,2020-06-03,Eindeutig,Veranstaltung / Feier < 300 Pers.,0,0,15
+2020-05-21,2020-06-03,Eindeutig,Religiöses / Beerdigungen,0,0,17
+2020-05-21,2020-06-03,Eindeutig,Verein,0,0,18
+2020-05-21,2020-06-03,Eindeutig,Pflege- / Altersheim,0,0,19
+2020-05-21,2020-06-03,Eindeutig,Medizin. Einrichtung,0,0,20
+2020-05-21,2020-06-03,Eindeutig,"Friseur, Massage o.ä.",0,0,21
+2020-05-21,2020-06-03,Eindeutig,Sport in der Halle,0,0,22
+2020-05-21,2020-06-03,Eindeutig,Sport im Freien,0,0,23
+2020-05-21,2020-06-03,Eindeutig,Sonstige Freizeitaktivität drinnen,0,0,24
+2020-05-21,2020-06-03,Eindeutig,Sonstige Freizeitaktivität draussen,0,0,25
+2020-05-21,2020-06-03,Eindeutig,Einkaufen (Läden/Markt),0,0,26
+2020-05-21,2020-06-03,Eindeutig,Sonstige,0,0,27
+2020-05-21,2020-06-03,Eindeutig,Ohne Angabe,0,0,28
+2020-05-14,2020-05-27,Nicht eindeutig,,23,59.0,0
+2020-05-14,2020-05-27,Eindeutig,Eigener Haushalt,0,0,1
+2020-05-14,2020-05-27,Eindeutig,Im Haushalt von Freunden / Familie,0,0,2
+2020-05-14,2020-05-27,Eindeutig,Arbeitsplatz,0,0,3
+2020-05-14,2020-05-27,Eindeutig,Sekundarstufe II / Hochschule / Weiterbildungsstätte,0,0,4
+2020-05-14,2020-05-27,Eindeutig,Obligatorische Schule,0,0,5
+2020-05-14,2020-05-27,Eindeutig,Krippe,0,0,6
+2020-05-14,2020-05-27,Eindeutig,Armee / Zivilschutz,0,0,7
+2020-05-14,2020-05-27,Eindeutig,Reise Ausland,16,41.0,8
+2020-05-14,2020-05-27,Eindeutig,Reise Schweiz,0,0,9
+2020-05-14,2020-05-27,Eindeutig,Hotel oder andere Unterkunft,0,0,10
+2020-05-14,2020-05-27,Eindeutig,Schul- oder Ferienlager,0,0,11
+2020-05-14,2020-05-27,Eindeutig,Club / Bar,0,0,12
+2020-05-14,2020-05-27,Eindeutig,Restaurant,0,0,13
+2020-05-14,2020-05-27,Eindeutig,Kino / Theater / Konzert,0,0,14
+2020-05-14,2020-05-27,Eindeutig,Veranstaltung / Feier < 300 Pers.,0,0,15
+2020-05-14,2020-05-27,Eindeutig,Religiöses / Beerdigungen,0,0,17
+2020-05-14,2020-05-27,Eindeutig,Verein,0,0,18
+2020-05-14,2020-05-27,Eindeutig,Pflege- / Altersheim,0,0,19
+2020-05-14,2020-05-27,Eindeutig,Medizin. Einrichtung,0,0,20
+2020-05-14,2020-05-27,Eindeutig,"Friseur, Massage o.ä.",0,0,21
+2020-05-14,2020-05-27,Eindeutig,Sport in der Halle,0,0,22
+2020-05-14,2020-05-27,Eindeutig,Sport im Freien,0,0,23
+2020-05-14,2020-05-27,Eindeutig,Sonstige Freizeitaktivität drinnen,0,0,24
+2020-05-14,2020-05-27,Eindeutig,Sonstige Freizeitaktivität draussen,0,0,25
+2020-05-14,2020-05-27,Eindeutig,Einkaufen (Läden/Markt),0,0,26
+2020-05-14,2020-05-27,Eindeutig,Sonstige,0,0,27
+2020-05-14,2020-05-27,Eindeutig,Ohne Angabe,0,0,28

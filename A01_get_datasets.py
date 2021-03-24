@@ -48,13 +48,13 @@ for i,entry in enumerate(data['dataset']):
                 file_in=pd.read_csv(filename,dialect.delimiter)
                 for (columnName, columnData) in file_in.iteritems():
                     if columnData.nunique()>1:
-                        list_data.append([i, entry['title'], entry['description'],columnName,columnData.nunique(),columnData.dtype.name])
+                        list_data.append([i, entry['identifier'],entry['title'], entry['description'],columnName,columnData.nunique(),columnData.dtype.name])
             except:
                 print(i,"file could not be loaded")
 
     print(i)
 
 #and the file with all the relevant metadata is saved here
-df = pd.DataFrame(list_data, columns=['index', 'dataset_title', 'description','var','nunique','dtype'])
+df = pd.DataFrame(list_data, columns=['index', 'identifier','dataset_title', 'description','var','nunique','dtype'])
 df.to_csv('data/datasets_overview.csv',index=False)
 print("FINISHED")
