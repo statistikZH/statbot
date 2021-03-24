@@ -1,3 +1,4 @@
 external/*
 models/*
 .statbot/*
+data/tables.jsonl
