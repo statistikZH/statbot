@@ -2,3 +2,8 @@ external/*
 models/*
 .statbot/*
 data/tables.jsonl
+data/
+data2/
+data_ttl/
+.ipynb_checkpoints
+*.csv
