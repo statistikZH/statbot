@@ -8,3 +8,4 @@ data_ttl/
 .ipynb_checkpoints
 *.csv
 data_matching/
+data/*
