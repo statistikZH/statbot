@@ -10,12 +10,15 @@
 
     <form action="" method="POST">
       <input type="text" class="username" placeholder="User Name"/>
-      <input type="text" class="message" placeholder="Messages"/>
+      <input type="text" class="message" id="tags" placeholder="Messages"/>
       <input type="submit"/>
     </form>
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/jquery-ui.js">  </script>  
+    <link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/themes/ui-lightness/jquery-ui.css"
+        rel="stylesheet" type="text/css" /> 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/3.0.5/socket.io.min.js"></script>
     <script type="text/javascript">
       var socket = io.connect('http://' + document.domain + ':' + location.port);
@@ -43,6 +46,18 @@
         }
       })
     </script>
+       <script>
+  $( function() {
+    var availableTags = [
+        {% for language in languages %}
+            "{{language}}",
+        {% endfor %}
+    ];
+    $( "#tags" ).autocomplete({
+      source: availableTags
+    });
+  } );
+  </script>
 
   </body>
   </html>
