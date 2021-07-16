@@ -151,7 +151,7 @@ for(i in 1:nrow(indikator)){
                     "<http://schema.org/name> '",indikator$NAME[i],"' ;\n",
                     "<http://schema.org/identifier> 'DS",str_pad(indikator$INDIKATOR_ID[i],4,pad="0"),"' ;\n",
              "<https://cube.link/observationSet> <",ts,"DS",str_pad(indikator$INDIKATOR_ID[i],4,pad="0"),"/observation/> ;\n",
-             "<https://cube.link/observationConstraint> <",ts,"DS",str_pad(indikator$INDIKATOR_ID[i],4,pad="0"),"/shape/ .\n\n"),filecon)
+             "<https://cube.link/observationConstraint> <",ts,"DS",str_pad(indikator$INDIKATOR_ID[i],4,pad="0"),"/shape/> .\n\n"),filecon)
   
 }
 
@@ -173,7 +173,7 @@ TODO:
 indikatorvalue$label<-paste0("DS",str_pad(indikatorvalue$INDIKATOR_ID,4,pad="0"),"-R",str_pad(indikatorvalue$RAUMEINHEIT_ID,5,pad="0"),"-Z3112",indikatorvalue$JAHR)
 
 
-#for(i in 419:419){
+
 for(i in indikator$INDIKATOR_ID){
   filecon<-file(paste0("data_ttl/observationset_",str_pad(i,4,pad="0"),".ttl"),open="w")
 
@@ -221,6 +221,7 @@ for(i in indikator$INDIKATOR_ID){
 ```
 
 Next steps: 
+- The Umlaut have to be deleted everywhere, or they have to be activated on the server
 - Define the measures
 - Define missing properties
 - Use Subset, set and thema as a logical hierarchy
