@@ -9,3 +9,4 @@ data_ttl/
 *.csv
 data_matching/
 data/*
+.Rproj.user
