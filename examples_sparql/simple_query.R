@@ -1,7 +1,7 @@
 library(SPARQL) # SPARQL querying package
 library(ggplot2)
 # Step 1 - Set up preliminaries and define query
-# Define the data.gov endpoint
+#actually it doesnt matter which one of the two followings:
 #endpoint <- "http://datashop.westeurope.cloudapp.azure.com/statistics/sparql"
 endpoint <- "http://datashop.westeurope.cloudapp.azure.com/statistics/query"
 # create query statement
@@ -18,7 +18,7 @@ WHERE {
   <http://datashop.westeurope.cloudapp.azure.com/statistics/DS0048> a cube:Cube;
              cube:observationSet/cube:observation ?obs.
     ?obs schema:identifier ?id .
-  OPTIONAL{         ?obs property:RAUM ?place .}
+  OPTIONAL{         ?obs property:RAUM/schema:name ?place .}
   ?obs property:TIME  ?time .
   ?obs property:ZEIT  ?zeit .
   OPTIONAL{ ?obs <http://datashop.westeurope.cloudapp.azure.com/statistics/measure/M0048> ?count .}
