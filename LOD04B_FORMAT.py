@@ -1,12 +1,7 @@
 ### Description of script
-#All publicly available data (Open Government Data – OGD) of the Statistical Office of the Canton of Zurich
-#are extracted from the central JSON-file. By downloading and opening up every file, additional data can be
-#extracted such as variable names that are not described in the metadata. Extracted is thus a combination
-#between metadata and some information in the dataset.
-
-# thoughts for improvement
-# - much more metadata could be extracted
-# - This could later be improved to save the data in a mysql-db.
+#Gives back the formats used on opendata.swiss
+#for example CSV, JSON, etc.
+#useful to have an overview over different file types
 
 
 

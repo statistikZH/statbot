@@ -4,9 +4,7 @@
 #extracted such as variable names that are not described in the metadata. Extracted is thus a combination
 #between metadata and some information in the dataset.
 
-# thoughts for improvement
-# - much more metadata could be extracted
-# - This could later be improved to save the data in a mysql-db.
+#This is an alteration of the initial script to have a better overview over all datasets
 
 
 
