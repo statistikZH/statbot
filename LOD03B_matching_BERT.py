@@ -101,6 +101,7 @@ print(tokenized_corpus[0])
 
 bm25 = BM25Okapi(tokenized_corpus)
 attribution=[]
+score=[]
 
 
 for i in range(len(file_one)):
@@ -125,12 +126,14 @@ for i in range(len(file_one)):
     
 
     
-    attribution.append(str(tokenized_corpus[which])+" ("+str(max_value)+")")
+    attribution.append(str(tokenized_corpus[which]))
+    score.append(max_value)
     #attribution.append(file_two.title_slug[which]+" ("+str(max_value)+")")
 
  
     
 file_one['destination']=attribution
+file_one['score']=score
 file_one=file_one.rename(columns={"destination": destination})
 
 file_one.to_csv('data_matching/output_'+source+'.csv',index=False)
