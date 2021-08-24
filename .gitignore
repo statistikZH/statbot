@@ -10,3 +10,4 @@ data_ttl/
 data_matching/
 data/*
 .Rproj.user
+!hackathon_hackzurich/*
