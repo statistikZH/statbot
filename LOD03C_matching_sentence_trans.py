@@ -17,8 +17,14 @@ vect = CountVectorizer(stop_words = german_stop_words)
 source="statistisches-amt-kanton-zuerich"
 destination="statistisches-amt-kanton-basel-stadt"
 
+
+
+
 file_one=pd.read_csv("data_matching/"+source+".csv")
 file_two=pd.read_csv("data_matching/"+destination+".csv")
+
+print(file_two.head(10))
+
 
 def stop_word_removal(token):
     token=token.translate(str.maketrans('', '', string.punctuation))
@@ -44,7 +50,7 @@ def get_fuzzy_ratio(listvalues):
 
 #bm25 = BM25Okapi(tokenized_corpus)
 attribution=[]
-
+score=[]
 
 for i in range(len(file_one)):
     print(i)
@@ -65,12 +71,14 @@ for i in range(len(file_one)):
     
 
     
-    attribution.append(str(file_two.title_slug[int(which)])+" ("+str(int(100*max_value))+")")
+    attribution.append(str(file_two.title_slug[int(which)]))
     #attribution.append(file_two.title_slug[which]+" ("+str(max_value)+")")
+    score.append(int(max_value*100))
 
  
     
 file_one['destination']=attribution
+file_one['score']=score
 file_one=file_one.rename(columns={"destination": destination})
 
 file_one.to_csv('data_matching/output_'+source+'.csv',index=False)
