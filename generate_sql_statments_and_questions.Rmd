@@ -59,23 +59,12 @@ municipality <- c(100)
 
 glue::glue(questions[1])
 
-purrr::map(questions_and_queries$questions, ~glue::glue(.x))
-
-purrr::map(questions_and_queries$queries, ~glue::glue(.x))
-
-
-
-
-
-questions_indicators_list <- purrr::cross2(questions, filtered_indicators$short_desc)
-
-questions_indicators_list  %>% map_chr(paste, collapse = " ")
-
-
-
-
-
-
+dataframe <- tibble(
+              questions=purrr::map(questions_and_queries$questions, ~glue::glue(.x)) %>% unlist(),
+              statements=purrr::map(questions_and_queries$queries, ~glue::glue(.x))%>% unlist()
+              )
+```
+```{r}
 
 filtered_indicators$INDICATOR_ID
 
@@ -95,25 +84,6 @@ SELECT VALUE FROM gp_data where INDICATOR_ID =  {ind_com_list[[.x]][1]} and UNIT
 
 
 
-
-
-
-
-
-
-# ,
-#          #columns according to WikiSQL logic
-#          column=VALUE,
-#          aggregation=NA,
-#          where_n=1,
-#          where_col=...,
-#          where_val=...) 
-
-statement= 
-         
-1. SELECT column2. AGGREGATION: None, COUNT, SUM, AVG, MIN, MAX3. Number of WHERE conditions: 0, 1, 2, 34. WHERE column5. WHERE OPERATORS: =, <, >6. WHERE VALUE: a textspan (the beginning and the end position of the span using probability) in the NL question. It depends on both selected where-column and where operators.   
-```
-```{r}
 #einbauen - filter auf indikator
 
 questions %>% 
