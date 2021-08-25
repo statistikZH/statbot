@@ -1,0 +1,142 @@
+---
+title: "Text to SQL - Questions generation for the Statbot-Challenge"
+output: html_notebook
+---
+https://towardsdatascience.com/text-to-sql-learning-to-query-tables-with-natural-language-7d714e60a70d
+
+```{r setup}
+library(tidyverse)
+```
+
+
+```{r}
+indicators <- 
+  read_csv("hackathon_makezurich/input_data/EN_INDICATORS.csv") %>% 
+  left_join(read_csv("hackathon_makezurich/input_data/indicators_desc.csv"), by=c("INDICATOR_ID"="indicator_id")) 
+```
+# Combine Datasets
+```{r}
+gp_data <- read_csv("hackathon_makezurich/input_data/EN_INDICATOR_VALUES.csv") %>% 
+  left_join(indicators, by=c("INDICATOR_ID"="INDICATOR_ID")) %>% 
+    rename(INDICATOR_NAME=NAME) %>% 
+  left_join(read_csv("hackathon_makezurich/input_data/EN_T_SPATIALUNIT.csv"), by=c("SPATIALUNIT_ID"="SPATIALUNIT_ID")) %>%
+  rename(UNIT_NAME=NAME)
+```
+
+## 1. Value for a given Municipality / Indicator
+```{r}
+
+filtered_indicators <- indicators %>%  filter(questiontype<=2)
+
+
+questions <- c("how high is the {indicator} in {municipality}", 
+               "which municipality has the highest {indicator}",
+"what are the highest, lowest and average {indicator},
+find the {indicator} of the municipality with the lowest {}")
+
+questions_and_queries <- tibble(
+                          questions = c("how high is the {indicator} in {municipality}", 
+                                       "which municipality has the highest {indicator}",
+                                        "what are the highest, lowest and average {indicator}"
+                                       # ,
+                                        # "find the {indicator} of the municipality with the lowest {}"
+                                       ),
+                         
+                           queries=c("SELECT VALUE FROM TABLE WHERE INDICATOR_ID = {indicator_id} and {municipality}=X", 
+                                       "SELECT UNIT_NAME WHERE INDICATOR_ID={indicator_id} and VALUE=MAX(VALUE)",
+                                        "SELECT MAX(VALUE), MIN(VALUE), AVG(VALUE) WHERE INDICATOR_ID={indicator_id}"
+                                      # ,
+                                      #   "find the {indicator} of the municipality with the lowest {}"
+                                      )
+
+)
+
+indicator <- filtered_indicators$short_desc
+
+indicator_id <- filtered_indicators$INDICATOR_ID
+
+municipality <- c(100)
+
+glue::glue(questions[1])
+
+purrr::map(questions_and_queries$questions, ~glue::glue(.x))
+
+purrr::map(questions_and_queries$queries, ~glue::glue(.x))
+
+
+
+
+
+questions_indicators_list <- purrr::cross2(questions, filtered_indicators$short_desc)
+
+questions_indicators_list  %>% map_chr(paste, collapse = " ")
+
+
+
+
+
+
+
+filtered_indicators$INDICATOR_ID
+
+# sentences
+string = purrr::map2_chr(1:length(filtered_indicators), question_list
+         ~glue::glue()
+
+# SQL
+questions=
+  tibble(sentence=purrr::map_chr(1:length(ind_com_list),
+         ~glue::glue("how high is the {ind_com_list[[.x]][1]} in {ind_com_list[[.x]][2]}")),
+         
+         
+          statement=purrr::map_chr(1:length(ind_com_list),~glue::glue("
+SELECT VALUE FROM gp_data where INDICATOR_ID =  {ind_com_list[[.x]][1]} and UNIT_NAME = {ind_com_list[[.x]][2]}")))
+
+
+
+
+
+
+
+
+
+
+# ,
+#          #columns according to WikiSQL logic
+#          column=VALUE,
+#          aggregation=NA,
+#          where_n=1,
+#          where_col=...,
+#          where_val=...) 
+
+statement= 
+         
+1. SELECT column2. AGGREGATION: None, COUNT, SUM, AVG, MIN, MAX3. Number of WHERE conditions: 0, 1, 2, 34. WHERE column5. WHERE OPERATORS: =, <, >6. WHERE VALUE: a textspan (the beginning and the end position of the span using probability) in the NL question. It depends on both selected where-column and where operators.   
+```
+```{r}
+#einbauen - filter auf indikator
+
+questions %>% 
+  mutate(sql=paste("SELECT", column , "from table", "where", where_column, where_operators, where_value))
+
+```
+
+
+question tokens
+```{r}
+how high is the 
+which municipality has the highest 
+what are the highest, lowest and average 
+
+
+
+which are the runif() comunes with the highest 
+What is the average , minimum , and maximum 
+Show municipalities with a ,  , over x and more than , , 
+Show names for all municipalities except for those having a x 
+Find the weight of the youngest dog
+
+```
+
+
+
