@@ -17,52 +17,64 @@ indicators <-
 # Combine Datasets
 ```{r}
 gp_data <- read_csv("hackathon_makezurich/input_data/EN_INDICATOR_VALUES.csv") %>% 
-  left_join(indicators, by=c("INDICATOR_ID"="INDICATOR_ID")) %>% 
-    rename(INDICATOR_NAME=NAME) %>% 
-  left_join(read_csv("hackathon_makezurich/input_data/EN_T_SPATIALUNIT.csv"), by=c("SPATIALUNIT_ID"="SPATIALUNIT_ID")) %>%
-  rename(UNIT_NAME=NAME)
+           left_join(indicators, by=c("INDICATOR_ID"="INDICATOR_ID")) %>% 
+           rename(INDICATOR_NAME=NAME) %>% 
+           left_join(read_csv("hackathon_makezurich/input_data/EN_T_SPATIALUNIT.csv"), by=c("SPATIALUNIT_ID"="SPATIALUNIT_ID")) %>%
+           rename(UNIT_NAME=NAME) 
 ```
 
 ## 1. Value for a given Municipality / Indicator
 ```{r}
 
-filtered_indicators <- indicators %>%  filter(questiontype<=2)
+filtered_indicators <- indicators %>%  
+                        filter(questiontype<=2)
 
-
-questions <- c("how high is the {indicator} in {municipality}", 
-               "which municipality has the highest {indicator}",
-"what are the highest, lowest and average {indicator},
-find the {indicator} of the municipality with the lowest {}")
-
-questions_and_queries <- tibble(
-                          questions = c("how high is the {indicator} in {municipality}", 
-                                       "which municipality has the highest {indicator}",
-                                        "what are the highest, lowest and average {indicator}"
-                                       # ,
-                                        # "find the {indicator} of the municipality with the lowest {}"
-                                       ),
-                         
-                           queries=c("SELECT VALUE FROM TABLE WHERE INDICATOR_ID = {indicator_id} and {municipality}=X", 
-                                       "SELECT UNIT_NAME WHERE INDICATOR_ID={indicator_id} and VALUE=MAX(VALUE)",
-                                        "SELECT MAX(VALUE), MIN(VALUE), AVG(VALUE) WHERE INDICATOR_ID={indicator_id}"
-                                      # ,
-                                      #   "find the {indicator} of the municipality with the lowest {}"
-                                      )
-
-)
 
 indicator <- filtered_indicators$short_desc
 
 indicator_id <- filtered_indicators$INDICATOR_ID
 
-municipality <- c(100)
+municipality_id <- c(100)
+
+municipality <- c("Zürich")
+
+
+# function which randomly selects a municpality
+gp_data %>% 
+  filter(short_desc==indicator) %>% 
+  pull(VALUE) %>% 
+  sample(1)
+
+questions_and_queries <- tibble(
+                          questions = c("how high is the {indicator} in {municipality}", 
+                                       "which municipality has the highest {indicator}",
+                                        "what are the highest, lowest and average {indicator}"
+  #                                      ,
+  #                                        "How many municipalities have a {indicator} higher than {gp_data %>% 
+  # filter(short_desc==indicator) %>% 
+  # pull(VALUE) %>% 
+  # sample(1)}"
+                                       ),
+                         
+                           queries=c("SELECT VALUE FROM TABLE WHERE INDICATOR_ID = {indicator_id} and BFS_NR={municipality_id}", 
+                                       "SELECT UNIT_NAME WHERE INDICATOR_ID={indicator_id} and VALUE=MAX(VALUE)",
+                                        "SELECT MAX(VALUE), MIN(VALUE), AVG(VALUE) WHERE INDICATOR_ID={indicator_id}"
+                                     # ,
+                                     # "find the {indicator} of the municipality with the lowest {}"
+                                      )
+
+)
+
 
 glue::glue(questions[1])
 
 dataframe <- tibble(
-              questions=purrr::map(questions_and_queries$questions, ~glue::glue(.x)) %>% unlist(),
-              statements=purrr::map(questions_and_queries$queries, ~glue::glue(.x))%>% unlist()
+              questions=purrr::map(questions_and_queries$questions, 
+                                   ~glue::glue(.x)) %>% unlist(),
+              statements=purrr::map(questions_and_queries$queries, 
+                                    ~glue::glue(.x))%>% unlist()
               )
+
 ```
 ```{r}
 
@@ -105,6 +117,13 @@ What is the average , minimum , and maximum
 Show municipalities with a ,  , over x and more than , , 
 Show names for all municipalities except for those having a x 
 Find the weight of the youngest dog
+
+
+
+questions <- c("how high is the {indicator} in {municipality}", 
+               "which municipality has the highest {indicator}",
+"what are the highest, lowest and average {indicator},
+find the {indicator} of the municipality with the lowest {}")
 
 ```
 
