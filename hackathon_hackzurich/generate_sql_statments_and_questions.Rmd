@@ -11,16 +11,16 @@ library(tidyverse)
 
 ```{r}
 indicators <- 
-  read_csv("hackathon_makezurich/input_data/EN_INDICATORS.csv") %>% 
-  left_join(read_csv("hackathon_makezurich/input_data/indicators_desc.csv"), by=c("INDICATOR_ID"="indicator_id")) 
+  read_csv("input_data/EN_INDICATORS.csv") %>% 
+  left_join(read_csv("input_data/indicators_desc.csv"), 
+            by=c("INDICATOR_ID"="indicator_id")) 
 ```
 # Combine Datasets
 ```{r}
-gp_data <- read_csv("hackathon_makezurich/input_data/EN_INDICATOR_VALUES.csv") %>% 
+gp_data <- read_csv("input_data/EN_INDICATOR_VALUES.csv") %>% 
            left_join(indicators, by=c("INDICATOR_ID"="INDICATOR_ID")) %>% 
            rename(INDICATOR_NAME=NAME) %>% 
-           left_join(read_csv("hackathon_makezurich/input_data/EN_T_SPATIALUNIT.csv"), by=c("SPATIALUNIT_ID"="SPATIALUNIT_ID")) %>%
-           rename(UNIT_NAME=NAME) 
+           left_join(read_csv("input_data/EN_T_SPATIALUNIT.csv"), by=c("SPATIALUNIT_ID"="SPATIALUNIT_ID")) %>%rename(UNIT_NAME=NAME) 
 ```
 
 ## 1. Value for a given Municipality / Indicator
@@ -29,7 +29,6 @@ gp_data <- read_csv("hackathon_makezurich/input_data/EN_INDICATOR_VALUES.csv") %
 filtered_indicators <- indicators %>%  
                         filter(questiontype<=2)
 
-
 indicator <- filtered_indicators$short_desc
 
 indicator_id <- filtered_indicators$INDICATOR_ID
@@ -37,7 +36,6 @@ indicator_id <- filtered_indicators$INDICATOR_ID
 municipality_id <- c(100)
 
 municipality <- c("Zürich")
-
 
 # function which randomly selects a municpality
 gp_data %>% 
@@ -75,7 +73,10 @@ dataframe <- tibble(
                                     ~glue::glue(.x))%>% unlist()
               )
 
+write.csv(dataframe,"questions_queries.csv")
+
 ```
+
 ```{r}
 
 filtered_indicators$INDICATOR_ID
@@ -92,9 +93,6 @@ questions=
          
           statement=purrr::map_chr(1:length(ind_com_list),~glue::glue("
 SELECT VALUE FROM gp_data where INDICATOR_ID =  {ind_com_list[[.x]][1]} and UNIT_NAME = {ind_com_list[[.x]][2]}")))
-
-
-
 
 #einbauen - filter auf indikator
 
