@@ -9,13 +9,20 @@ library(tidyverse)
 ```
 
 
+# 1. 
+
+Read in a dataset with indicator metadata and short descriptions which can be used to generate questions.
+
 ```{r}
-indicators <- 
-  read_csv("input_data/EN_INDICATORS.csv") %>% 
-  left_join(read_csv("input_data/indicators_desc.csv"), 
-            by=c("INDICATOR_ID"="indicator_id")) 
+# indicators <- 
+#   read_csv("input_data/EN_INDICATORS.csv") %>% 
+#   left_join(read_csv("input_data/indicators_desc.csv"), 
+#             by=c("INDICATOR_ID"="indicator_id")) 
 ```
 # Combine Datasets
+
+Combine the indicator dataset with the actual data.
+
 ```{r}
 gp_data <- read_csv("input_data/EN_INDICATOR_VALUES.csv") %>% 
            left_join(indicators, by=c("INDICATOR_ID"="INDICATOR_ID")) %>% 
@@ -24,52 +31,53 @@ gp_data <- read_csv("input_data/EN_INDICATOR_VALUES.csv") %>%
 ```
 
 ## 1. Value for a given Municipality / Indicator
+
+Questions : what to do with the year? integrate explicitly in the question or just take max as standard?
 ```{r}
 
-filtered_indicators <- indicators %>%  
+filtered_indicators <- gp_data %>% 
+  group_by(INDICATOR_ID, short_desc, questiontype) %>% 
+  summarize(rand_val=sample(VALUE,1), rand_year=sample(YEAR,1)) %>% 
                         filter(questiontype<=2)
 
 indicator <- filtered_indicators$short_desc
 
+random_value <- filtered_indicators$rand_val
+
 indicator_id <- filtered_indicators$INDICATOR_ID
+
+indicator_year <- filtered_indicators$rand_year
 
 municipality_id <- c(100)
 
 municipality <- c("Zürich")
 
-# function which randomly selects a municpality
-gp_data %>% 
-  filter(short_desc==indicator) %>% 
-  pull(VALUE) %>% 
-  sample(1)
-
 questions_and_queries <- tibble(
-                          questions = c("how high is the {indicator} in {municipality}", 
-                                       "which municipality has the highest {indicator}",
-                                        "what are the highest, lowest and average {indicator}"
-  #                                      ,
-  #                                        "How many municipalities have a {indicator} higher than {gp_data %>% 
-  # filter(short_desc==indicator) %>% 
-  # pull(VALUE) %>% 
-  # sample(1)}"
+                          questions = c("how high is the {indicator} in {municipality}?", 
+                                       "which municipality has the highest {indicator}?",
+                                       "Which municipality has the minimum {indicator}?",
+                                        "what are the highest, lowest and average {indicator}?",
+                                        "How many municipalities have a {indicator} higher than {random_value}?",
+                                        "How high is the total {indicator} in the Canton Zurich?"
                                        ),
                          
                            queries=c("SELECT VALUE FROM TABLE WHERE INDICATOR_ID = {indicator_id} and BFS_NR={municipality_id}", 
                                        "SELECT UNIT_NAME WHERE INDICATOR_ID={indicator_id} and VALUE=MAX(VALUE)",
-                                        "SELECT MAX(VALUE), MIN(VALUE), AVG(VALUE) WHERE INDICATOR_ID={indicator_id}"
-                                     # ,
-                                     # "find the {indicator} of the municipality with the lowest {}"
+                                        "SELECT UNIT_NAME WHERE INDICATOR_ID={indicator_id} and VALUE=MIN(VALUE)",
+                                        "SELECT MAX(VALUE), MIN(VALUE), AVG(VALUE) WHERE INDICATOR_ID={indicator_id}",
+                                        "SELECT count(*) where INDICATOR_ID={indicator_id} and VALUE> {random_value}",
+                                        "SELECT VALUE from TABLE WHERE INDICATOR_ID={indicator_id} and UNIT_TYPE=8"
+                                    }"
                                       )
 
 )
 
 
-glue::glue(questions[1])
 
 dataframe <- tibble(
-              questions=purrr::map(questions_and_queries$questions, 
+              question=purrr::map(questions_and_queries$questions, 
                                    ~glue::glue(.x)) %>% unlist(),
-              statements=purrr::map(questions_and_queries$queries, 
+              sql=purrr::map(questions_and_queries$queries, 
                                     ~glue::glue(.x))%>% unlist()
               )
 
@@ -78,6 +86,20 @@ write.csv(dataframe,"questions_queries.csv")
 ```
 
 ```{r}
+
+combinations <- tibble(
+  indicator_
+  indicator_id
+  municipality
+  year
+  municipality_id
+)
+
+
+
+
+
+
 
 filtered_indicators$INDICATOR_ID
 
