@@ -1,92 +1,261 @@
 "","question","sql"
-"1","how high is the share of people living in proximity of a busstop in Zürich?","SELECT VALUE FROM TABLE WHERE INDICATOR_ID = 385 and BFS_NR=100"
-"2","how high is the share of people living in proximity of a trainstation in Zürich?","SELECT VALUE FROM TABLE WHERE INDICATOR_ID = 386 and BFS_NR=100"
-"3","how high is the number of cars per capita in Zürich?","SELECT VALUE FROM TABLE WHERE INDICATOR_ID = 399 and BFS_NR=100"
-"4","how high is the share of people living in proximity of a trainstation or busstop in Zürich?","SELECT VALUE FROM TABLE WHERE INDICATOR_ID = 401 and BFS_NR=100"
-"5","how high is the share of public transport in traffic movements of people living in Zürich?","SELECT VALUE FROM TABLE WHERE INDICATOR_ID = 480 and BFS_NR=100"
-"6","how high is the share of motorised private transport in traffic movements of people living in Zürich?","SELECT VALUE FROM TABLE WHERE INDICATOR_ID = 481 and BFS_NR=100"
-"7","how high is the number of newly registered cars in Zürich?","SELECT VALUE FROM TABLE WHERE INDICATOR_ID = 601 and BFS_NR=100"
-"8","how high is the share of hybrid vehicles in Zürich?","SELECT VALUE FROM TABLE WHERE INDICATOR_ID = 606 and BFS_NR=100"
-"9","how high is the share of electric vehicles in Zürich?","SELECT VALUE FROM TABLE WHERE INDICATOR_ID = 607 and BFS_NR=100"
-"10","how high is the share of hybrid vehicles within the newly registered cars in Zürich?","SELECT VALUE FROM TABLE WHERE INDICATOR_ID = 611 and BFS_NR=100"
-"11","how high is the share of electric vehicles within the newly registered cars in Zürich?","SELECT VALUE FROM TABLE WHERE INDICATOR_ID = 612 and BFS_NR=100"
-"12","how high is the number of charging stations per 1000 inhabitants in Zürich?","SELECT VALUE FROM TABLE WHERE INDICATOR_ID = 998 and BFS_NR=100"
-"13","how high is the number of charging stations in Zürich?","SELECT VALUE FROM TABLE WHERE INDICATOR_ID = 999 and BFS_NR=100"
-"14","which municipality has the highest share of people living in proximity of a busstop?","SELECT UNIT_NAME WHERE INDICATOR_ID=385 and VALUE=MAX(VALUE)"
-"15","which municipality has the highest share of people living in proximity of a trainstation?","SELECT UNIT_NAME WHERE INDICATOR_ID=386 and VALUE=MAX(VALUE)"
-"16","which municipality has the highest number of cars per capita?","SELECT UNIT_NAME WHERE INDICATOR_ID=399 and VALUE=MAX(VALUE)"
-"17","which municipality has the highest share of people living in proximity of a trainstation or busstop?","SELECT UNIT_NAME WHERE INDICATOR_ID=401 and VALUE=MAX(VALUE)"
-"18","which municipality has the highest share of public transport in traffic movements of people living?","SELECT UNIT_NAME WHERE INDICATOR_ID=480 and VALUE=MAX(VALUE)"
-"19","which municipality has the highest share of motorised private transport in traffic movements of people living?","SELECT UNIT_NAME WHERE INDICATOR_ID=481 and VALUE=MAX(VALUE)"
-"20","which municipality has the highest number of newly registered cars?","SELECT UNIT_NAME WHERE INDICATOR_ID=601 and VALUE=MAX(VALUE)"
-"21","which municipality has the highest share of hybrid vehicles?","SELECT UNIT_NAME WHERE INDICATOR_ID=606 and VALUE=MAX(VALUE)"
-"22","which municipality has the highest share of electric vehicles?","SELECT UNIT_NAME WHERE INDICATOR_ID=607 and VALUE=MAX(VALUE)"
-"23","which municipality has the highest share of hybrid vehicles within the newly registered cars?","SELECT UNIT_NAME WHERE INDICATOR_ID=611 and VALUE=MAX(VALUE)"
-"24","which municipality has the highest share of electric vehicles within the newly registered cars?","SELECT UNIT_NAME WHERE INDICATOR_ID=612 and VALUE=MAX(VALUE)"
-"25","which municipality has the highest number of charging stations per 1000 inhabitants?","SELECT UNIT_NAME WHERE INDICATOR_ID=998 and VALUE=MAX(VALUE)"
-"26","which municipality has the highest number of charging stations?","SELECT UNIT_NAME WHERE INDICATOR_ID=999 and VALUE=MAX(VALUE)"
-"27","Which municipality has the minimum share of people living in proximity of a busstop?","SELECT UNIT_NAME WHERE INDICATOR_ID=385 and VALUE=MIN(VALUE)"
-"28","Which municipality has the minimum share of people living in proximity of a trainstation?","SELECT UNIT_NAME WHERE INDICATOR_ID=386 and VALUE=MIN(VALUE)"
-"29","Which municipality has the minimum number of cars per capita?","SELECT UNIT_NAME WHERE INDICATOR_ID=399 and VALUE=MIN(VALUE)"
-"30","Which municipality has the minimum share of people living in proximity of a trainstation or busstop?","SELECT UNIT_NAME WHERE INDICATOR_ID=401 and VALUE=MIN(VALUE)"
-"31","Which municipality has the minimum share of public transport in traffic movements of people living?","SELECT UNIT_NAME WHERE INDICATOR_ID=480 and VALUE=MIN(VALUE)"
-"32","Which municipality has the minimum share of motorised private transport in traffic movements of people living?","SELECT UNIT_NAME WHERE INDICATOR_ID=481 and VALUE=MIN(VALUE)"
-"33","Which municipality has the minimum number of newly registered cars?","SELECT UNIT_NAME WHERE INDICATOR_ID=601 and VALUE=MIN(VALUE)"
-"34","Which municipality has the minimum share of hybrid vehicles?","SELECT UNIT_NAME WHERE INDICATOR_ID=606 and VALUE=MIN(VALUE)"
-"35","Which municipality has the minimum share of electric vehicles?","SELECT UNIT_NAME WHERE INDICATOR_ID=607 and VALUE=MIN(VALUE)"
-"36","Which municipality has the minimum share of hybrid vehicles within the newly registered cars?","SELECT UNIT_NAME WHERE INDICATOR_ID=611 and VALUE=MIN(VALUE)"
-"37","Which municipality has the minimum share of electric vehicles within the newly registered cars?","SELECT UNIT_NAME WHERE INDICATOR_ID=612 and VALUE=MIN(VALUE)"
-"38","Which municipality has the minimum number of charging stations per 1000 inhabitants?","SELECT UNIT_NAME WHERE INDICATOR_ID=998 and VALUE=MIN(VALUE)"
-"39","Which municipality has the minimum number of charging stations?","SELECT UNIT_NAME WHERE INDICATOR_ID=999 and VALUE=MIN(VALUE)"
-"40","what are the highest, lowest and average share of people living in proximity of a busstop?","SELECT MAX(VALUE), MIN(VALUE), AVG(VALUE) WHERE INDICATOR_ID=385"
-"41","what are the highest, lowest and average share of people living in proximity of a trainstation?","SELECT MAX(VALUE), MIN(VALUE), AVG(VALUE) WHERE INDICATOR_ID=386"
-"42","what are the highest, lowest and average number of cars per capita?","SELECT MAX(VALUE), MIN(VALUE), AVG(VALUE) WHERE INDICATOR_ID=399"
-"43","what are the highest, lowest and average share of people living in proximity of a trainstation or busstop?","SELECT MAX(VALUE), MIN(VALUE), AVG(VALUE) WHERE INDICATOR_ID=401"
-"44","what are the highest, lowest and average share of public transport in traffic movements of people living?","SELECT MAX(VALUE), MIN(VALUE), AVG(VALUE) WHERE INDICATOR_ID=480"
-"45","what are the highest, lowest and average share of motorised private transport in traffic movements of people living?","SELECT MAX(VALUE), MIN(VALUE), AVG(VALUE) WHERE INDICATOR_ID=481"
-"46","what are the highest, lowest and average number of newly registered cars?","SELECT MAX(VALUE), MIN(VALUE), AVG(VALUE) WHERE INDICATOR_ID=601"
-"47","what are the highest, lowest and average share of hybrid vehicles?","SELECT MAX(VALUE), MIN(VALUE), AVG(VALUE) WHERE INDICATOR_ID=606"
-"48","what are the highest, lowest and average share of electric vehicles?","SELECT MAX(VALUE), MIN(VALUE), AVG(VALUE) WHERE INDICATOR_ID=607"
-"49","what are the highest, lowest and average share of hybrid vehicles within the newly registered cars?","SELECT MAX(VALUE), MIN(VALUE), AVG(VALUE) WHERE INDICATOR_ID=611"
-"50","what are the highest, lowest and average share of electric vehicles within the newly registered cars?","SELECT MAX(VALUE), MIN(VALUE), AVG(VALUE) WHERE INDICATOR_ID=612"
-"51","what are the highest, lowest and average number of charging stations per 1000 inhabitants?","SELECT MAX(VALUE), MIN(VALUE), AVG(VALUE) WHERE INDICATOR_ID=998"
-"52","what are the highest, lowest and average number of charging stations?","SELECT MAX(VALUE), MIN(VALUE), AVG(VALUE) WHERE INDICATOR_ID=999"
-"53","How many municipalities have a share of people living in proximity of a busstop higher than 91.8?","SELECT count(*) where INDICATOR_ID=385 and VALUE> 91.8"
-"54","How many municipalities have a share of people living in proximity of a trainstation higher than 0?","SELECT count(*) where INDICATOR_ID=386 and VALUE> 0"
-"55","How many municipalities have a number of cars per capita higher than 589.5?","SELECT count(*) where INDICATOR_ID=399 and VALUE> 589.5"
-"56","How many municipalities have a share of people living in proximity of a trainstation or busstop higher than 0?","SELECT count(*) where INDICATOR_ID=401 and VALUE> 0"
-"57","How many municipalities have a share of public transport in traffic movements of people living higher than 29?","SELECT count(*) where INDICATOR_ID=480 and VALUE> 29"
-"58","How many municipalities have a share of motorised private transport in traffic movements of people living higher than 89?","SELECT count(*) where INDICATOR_ID=481 and VALUE> 89"
-"59","How many municipalities have a number of newly registered cars higher than 43.5?","SELECT count(*) where INDICATOR_ID=601 and VALUE> 43.5"
-"60","How many municipalities have a share of hybrid vehicles higher than 0.2?","SELECT count(*) where INDICATOR_ID=606 and VALUE> 0.2"
-"61","How many municipalities have a share of electric vehicles higher than 0?","SELECT count(*) where INDICATOR_ID=607 and VALUE> 0"
-"62","How many municipalities have a share of hybrid vehicles within the newly registered cars higher than 6.4?","SELECT count(*) where INDICATOR_ID=611 and VALUE> 6.4"
-"63","How many municipalities have a share of electric vehicles within the newly registered cars higher than 0?","SELECT count(*) where INDICATOR_ID=612 and VALUE> 0"
-"64","How many municipalities have a number of charging stations per 1000 inhabitants higher than 1.14942528735632?","SELECT count(*) where INDICATOR_ID=998 and VALUE> 1.14942528735632"
-"65","How many municipalities have a number of charging stations higher than 7?","SELECT count(*) where INDICATOR_ID=999 and VALUE> 7"
-"66","How high is the total share of people living in proximity of a busstop in the Canton Zurich?","SELECT VALUE from TABLE WHERE INDICATOR_ID=385 and UNIT_TYPE=8"
-"67","How high is the total share of people living in proximity of a trainstation in the Canton Zurich?","SELECT VALUE from TABLE WHERE INDICATOR_ID=386 and UNIT_TYPE=8"
-"68","How high is the total number of cars per capita in the Canton Zurich?","SELECT VALUE from TABLE WHERE INDICATOR_ID=399 and UNIT_TYPE=8"
-"69","How high is the total share of people living in proximity of a trainstation or busstop in the Canton Zurich?","SELECT VALUE from TABLE WHERE INDICATOR_ID=401 and UNIT_TYPE=8"
-"70","How high is the total share of public transport in traffic movements of people living in the Canton Zurich?","SELECT VALUE from TABLE WHERE INDICATOR_ID=480 and UNIT_TYPE=8"
-"71","How high is the total share of motorised private transport in traffic movements of people living in the Canton Zurich?","SELECT VALUE from TABLE WHERE INDICATOR_ID=481 and UNIT_TYPE=8"
-"72","How high is the total number of newly registered cars in the Canton Zurich?","SELECT VALUE from TABLE WHERE INDICATOR_ID=601 and UNIT_TYPE=8"
-"73","How high is the total share of hybrid vehicles in the Canton Zurich?","SELECT VALUE from TABLE WHERE INDICATOR_ID=606 and UNIT_TYPE=8"
-"74","How high is the total share of electric vehicles in the Canton Zurich?","SELECT VALUE from TABLE WHERE INDICATOR_ID=607 and UNIT_TYPE=8"
-"75","How high is the total share of hybrid vehicles within the newly registered cars in the Canton Zurich?","SELECT VALUE from TABLE WHERE INDICATOR_ID=611 and UNIT_TYPE=8"
-"76","How high is the total share of electric vehicles within the newly registered cars in the Canton Zurich?","SELECT VALUE from TABLE WHERE INDICATOR_ID=612 and UNIT_TYPE=8"
-"77","How high is the total number of charging stations per 1000 inhabitants in the Canton Zurich?","SELECT VALUE from TABLE WHERE INDICATOR_ID=998 and UNIT_TYPE=8"
-"78","How high is the total number of charging stations in the Canton Zurich?","SELECT VALUE from TABLE WHERE INDICATOR_ID=999 and UNIT_TYPE=8"
-"79","Which Region had the lowest share of people living in proximity of a busstop in the year 2005?","SELECT UNIT_NAME where VALUE=MIN(VALUE) and UNIT_TYPE=4 and INDICATOR_ID=385 and YEAR=2005"
-"80","Which Region had the lowest share of people living in proximity of a trainstation in the year 2001?","SELECT UNIT_NAME where VALUE=MIN(VALUE) and UNIT_TYPE=4 and INDICATOR_ID=386 and YEAR=2001"
-"81","Which Region had the lowest number of cars per capita in the year 2006?","SELECT UNIT_NAME where VALUE=MIN(VALUE) and UNIT_TYPE=4 and INDICATOR_ID=399 and YEAR=2006"
-"82","Which Region had the lowest share of people living in proximity of a trainstation or busstop in the year 2005?","SELECT UNIT_NAME where VALUE=MIN(VALUE) and UNIT_TYPE=4 and INDICATOR_ID=401 and YEAR=2005"
-"83","Which Region had the lowest share of public transport in traffic movements of people living in the year 2013?","SELECT UNIT_NAME where VALUE=MIN(VALUE) and UNIT_TYPE=4 and INDICATOR_ID=480 and YEAR=2013"
-"84","Which Region had the lowest share of motorised private transport in traffic movements of people living in the year 2013?","SELECT UNIT_NAME where VALUE=MIN(VALUE) and UNIT_TYPE=4 and INDICATOR_ID=481 and YEAR=2013"
-"85","Which Region had the lowest number of newly registered cars in the year 2016?","SELECT UNIT_NAME where VALUE=MIN(VALUE) and UNIT_TYPE=4 and INDICATOR_ID=601 and YEAR=2016"
-"86","Which Region had the lowest share of hybrid vehicles in the year 2009?","SELECT UNIT_NAME where VALUE=MIN(VALUE) and UNIT_TYPE=4 and INDICATOR_ID=606 and YEAR=2009"
-"87","Which Region had the lowest share of electric vehicles in the year 2008?","SELECT UNIT_NAME where VALUE=MIN(VALUE) and UNIT_TYPE=4 and INDICATOR_ID=607 and YEAR=2008"
-"88","Which Region had the lowest share of hybrid vehicles within the newly registered cars in the year 2017?","SELECT UNIT_NAME where VALUE=MIN(VALUE) and UNIT_TYPE=4 and INDICATOR_ID=611 and YEAR=2017"
-"89","Which Region had the lowest share of electric vehicles within the newly registered cars in the year 2016?","SELECT UNIT_NAME where VALUE=MIN(VALUE) and UNIT_TYPE=4 and INDICATOR_ID=612 and YEAR=2016"
-"90","Which Region had the lowest number of charging stations per 1000 inhabitants in the year 2021?","SELECT UNIT_NAME where VALUE=MIN(VALUE) and UNIT_TYPE=4 and INDICATOR_ID=998 and YEAR=2021"
-"91","Which Region had the lowest number of charging stations in the year 2021?","SELECT UNIT_NAME where VALUE=MIN(VALUE) and UNIT_TYPE=4 and INDICATOR_ID=999 and YEAR=2021"
+"1","how high is the share of people living in proximity of a busstop in Dachsen?","select value from indicator_values2 
+where indicator_id = 385 and spatialunit_id=19 
+and year=max(year)"
+"2","how high is the share of people living in proximity of a trainstation in Weiach?","select value from indicator_values2 
+where indicator_id = 386 and spatialunit_id=82 
+and year=max(year)"
+"3","how high is the number of cars per capita in Pfungen?","select value from indicator_values2 
+where indicator_id = 399 and spatialunit_id=152 
+and year=max(year)"
+"4","how high is the share of people living in proximity of a trainstation or busstop in Hausen a.A.?","select value from indicator_values2 
+where indicator_id = 401 and spatialunit_id=4 
+and year=max(year)"
+"5","how high is the share of public transport in traffic movements of people living in Hittnau?","select value from indicator_values2 
+where indicator_id = 480 and spatialunit_id=119 
+and year=max(year)"
+"6","how high is the share of motorised private transport in traffic movements of people living in Rheinau?","select value from indicator_values2 
+where indicator_id = 481 and spatialunit_id=32 
+and year=max(year)"
+"7","how high is the number of newly registered cars in Weiach?","select value from indicator_values2 
+where indicator_id = 601 and spatialunit_id=82 
+and year=max(year)"
+"8","how high is the share of hybrid vehicles in Bauma?","select value from indicator_values2 
+where indicator_id = 606 and spatialunit_id=197 
+and year=max(year)"
+"9","how high is the share of electric vehicles in Zollikon?","select value from indicator_values2 
+where indicator_id = 607 and spatialunit_id=116 
+and year=max(year)"
+"10","how high is the share of hybrid vehicles within the newly registered cars in F�llanden?","select value from indicator_values2 
+where indicator_id = 611 and spatialunit_id=131 
+and year=max(year)"
+"11","how high is the share of electric vehicles within the newly registered cars in Hofstetten (bis 2017)?","select value from indicator_values2 
+where indicator_id = 612 and spatialunit_id=150 
+and year=max(year)"
+"12","how high is the number of charging stations per 1000 inhabitants in Bonstetten?","select value from indicator_values2 
+where indicator_id = 998 and spatialunit_id=3 
+and year=max(year)"
+"13","how high is the number of charging stations in Lufingen?","select value from indicator_values2 
+where indicator_id = 999 and spatialunit_id=51 
+and year=max(year)"
+"14","which municipality has the highest share of people living in proximity of a busstop?","select t2.name from indicator_values2 t1
+left join spatialunit t2 on t1.spatialunit_id = t2.spatialunit_id
+where t1.indicator_id=385 and t1.value=max(value) and t1.year=max(year)"
+"15","which municipality has the highest share of people living in proximity of a trainstation?","select t2.name from indicator_values2 t1
+left join spatialunit t2 on t1.spatialunit_id = t2.spatialunit_id
+where t1.indicator_id=386 and t1.value=max(value) and t1.year=max(year)"
+"16","which municipality has the highest number of cars per capita?","select t2.name from indicator_values2 t1
+left join spatialunit t2 on t1.spatialunit_id = t2.spatialunit_id
+where t1.indicator_id=399 and t1.value=max(value) and t1.year=max(year)"
+"17","which municipality has the highest share of people living in proximity of a trainstation or busstop?","select t2.name from indicator_values2 t1
+left join spatialunit t2 on t1.spatialunit_id = t2.spatialunit_id
+where t1.indicator_id=401 and t1.value=max(value) and t1.year=max(year)"
+"18","which municipality has the highest share of public transport in traffic movements of people living?","select t2.name from indicator_values2 t1
+left join spatialunit t2 on t1.spatialunit_id = t2.spatialunit_id
+where t1.indicator_id=480 and t1.value=max(value) and t1.year=max(year)"
+"19","which municipality has the highest share of motorised private transport in traffic movements of people living?","select t2.name from indicator_values2 t1
+left join spatialunit t2 on t1.spatialunit_id = t2.spatialunit_id
+where t1.indicator_id=481 and t1.value=max(value) and t1.year=max(year)"
+"20","which municipality has the highest number of newly registered cars?","select t2.name from indicator_values2 t1
+left join spatialunit t2 on t1.spatialunit_id = t2.spatialunit_id
+where t1.indicator_id=601 and t1.value=max(value) and t1.year=max(year)"
+"21","which municipality has the highest share of hybrid vehicles?","select t2.name from indicator_values2 t1
+left join spatialunit t2 on t1.spatialunit_id = t2.spatialunit_id
+where t1.indicator_id=606 and t1.value=max(value) and t1.year=max(year)"
+"22","which municipality has the highest share of electric vehicles?","select t2.name from indicator_values2 t1
+left join spatialunit t2 on t1.spatialunit_id = t2.spatialunit_id
+where t1.indicator_id=607 and t1.value=max(value) and t1.year=max(year)"
+"23","which municipality has the highest share of hybrid vehicles within the newly registered cars?","select t2.name from indicator_values2 t1
+left join spatialunit t2 on t1.spatialunit_id = t2.spatialunit_id
+where t1.indicator_id=611 and t1.value=max(value) and t1.year=max(year)"
+"24","which municipality has the highest share of electric vehicles within the newly registered cars?","select t2.name from indicator_values2 t1
+left join spatialunit t2 on t1.spatialunit_id = t2.spatialunit_id
+where t1.indicator_id=612 and t1.value=max(value) and t1.year=max(year)"
+"25","which municipality has the highest number of charging stations per 1000 inhabitants?","select t2.name from indicator_values2 t1
+left join spatialunit t2 on t1.spatialunit_id = t2.spatialunit_id
+where t1.indicator_id=998 and t1.value=max(value) and t1.year=max(year)"
+"26","which municipality has the highest number of charging stations?","select t2.name from indicator_values2 t1
+left join spatialunit t2 on t1.spatialunit_id = t2.spatialunit_id
+where t1.indicator_id=999 and t1.value=max(value) and t1.year=max(year)"
+"27","Which municipality has the minimum share of people living in proximity of a busstop?","select t2.name from indicator_values2 t1
+left join spatialunit t2 on t1.spatialunit_id = t2.spatialunit_id
+where t1.indicator_id=385 and t1.value=min(value) and t1.year=max(year)"
+"28","Which municipality has the minimum share of people living in proximity of a trainstation?","select t2.name from indicator_values2 t1
+left join spatialunit t2 on t1.spatialunit_id = t2.spatialunit_id
+where t1.indicator_id=386 and t1.value=min(value) and t1.year=max(year)"
+"29","Which municipality has the minimum number of cars per capita?","select t2.name from indicator_values2 t1
+left join spatialunit t2 on t1.spatialunit_id = t2.spatialunit_id
+where t1.indicator_id=399 and t1.value=min(value) and t1.year=max(year)"
+"30","Which municipality has the minimum share of people living in proximity of a trainstation or busstop?","select t2.name from indicator_values2 t1
+left join spatialunit t2 on t1.spatialunit_id = t2.spatialunit_id
+where t1.indicator_id=401 and t1.value=min(value) and t1.year=max(year)"
+"31","Which municipality has the minimum share of public transport in traffic movements of people living?","select t2.name from indicator_values2 t1
+left join spatialunit t2 on t1.spatialunit_id = t2.spatialunit_id
+where t1.indicator_id=480 and t1.value=min(value) and t1.year=max(year)"
+"32","Which municipality has the minimum share of motorised private transport in traffic movements of people living?","select t2.name from indicator_values2 t1
+left join spatialunit t2 on t1.spatialunit_id = t2.spatialunit_id
+where t1.indicator_id=481 and t1.value=min(value) and t1.year=max(year)"
+"33","Which municipality has the minimum number of newly registered cars?","select t2.name from indicator_values2 t1
+left join spatialunit t2 on t1.spatialunit_id = t2.spatialunit_id
+where t1.indicator_id=601 and t1.value=min(value) and t1.year=max(year)"
+"34","Which municipality has the minimum share of hybrid vehicles?","select t2.name from indicator_values2 t1
+left join spatialunit t2 on t1.spatialunit_id = t2.spatialunit_id
+where t1.indicator_id=606 and t1.value=min(value) and t1.year=max(year)"
+"35","Which municipality has the minimum share of electric vehicles?","select t2.name from indicator_values2 t1
+left join spatialunit t2 on t1.spatialunit_id = t2.spatialunit_id
+where t1.indicator_id=607 and t1.value=min(value) and t1.year=max(year)"
+"36","Which municipality has the minimum share of hybrid vehicles within the newly registered cars?","select t2.name from indicator_values2 t1
+left join spatialunit t2 on t1.spatialunit_id = t2.spatialunit_id
+where t1.indicator_id=611 and t1.value=min(value) and t1.year=max(year)"
+"37","Which municipality has the minimum share of electric vehicles within the newly registered cars?","select t2.name from indicator_values2 t1
+left join spatialunit t2 on t1.spatialunit_id = t2.spatialunit_id
+where t1.indicator_id=612 and t1.value=min(value) and t1.year=max(year)"
+"38","Which municipality has the minimum number of charging stations per 1000 inhabitants?","select t2.name from indicator_values2 t1
+left join spatialunit t2 on t1.spatialunit_id = t2.spatialunit_id
+where t1.indicator_id=998 and t1.value=min(value) and t1.year=max(year)"
+"39","Which municipality has the minimum number of charging stations?","select t2.name from indicator_values2 t1
+left join spatialunit t2 on t1.spatialunit_id = t2.spatialunit_id
+where t1.indicator_id=999 and t1.value=min(value) and t1.year=max(year)"
+"40","what are the highest, lowest and average share of people living in proximity of a busstop?","select max(value), min(value), avg(value) from indicator_values2 
+where indicator_id=385 and year=max(year)"
+"41","what are the highest, lowest and average share of people living in proximity of a trainstation?","select max(value), min(value), avg(value) from indicator_values2 
+where indicator_id=386 and year=max(year)"
+"42","what are the highest, lowest and average number of cars per capita?","select max(value), min(value), avg(value) from indicator_values2 
+where indicator_id=399 and year=max(year)"
+"43","what are the highest, lowest and average share of people living in proximity of a trainstation or busstop?","select max(value), min(value), avg(value) from indicator_values2 
+where indicator_id=401 and year=max(year)"
+"44","what are the highest, lowest and average share of public transport in traffic movements of people living?","select max(value), min(value), avg(value) from indicator_values2 
+where indicator_id=480 and year=max(year)"
+"45","what are the highest, lowest and average share of motorised private transport in traffic movements of people living?","select max(value), min(value), avg(value) from indicator_values2 
+where indicator_id=481 and year=max(year)"
+"46","what are the highest, lowest and average number of newly registered cars?","select max(value), min(value), avg(value) from indicator_values2 
+where indicator_id=601 and year=max(year)"
+"47","what are the highest, lowest and average share of hybrid vehicles?","select max(value), min(value), avg(value) from indicator_values2 
+where indicator_id=606 and year=max(year)"
+"48","what are the highest, lowest and average share of electric vehicles?","select max(value), min(value), avg(value) from indicator_values2 
+where indicator_id=607 and year=max(year)"
+"49","what are the highest, lowest and average share of hybrid vehicles within the newly registered cars?","select max(value), min(value), avg(value) from indicator_values2 
+where indicator_id=611 and year=max(year)"
+"50","what are the highest, lowest and average share of electric vehicles within the newly registered cars?","select max(value), min(value), avg(value) from indicator_values2 
+where indicator_id=612 and year=max(year)"
+"51","what are the highest, lowest and average number of charging stations per 1000 inhabitants?","select max(value), min(value), avg(value) from indicator_values2 
+where indicator_id=998 and year=max(year)"
+"52","what are the highest, lowest and average number of charging stations?","select max(value), min(value), avg(value) from indicator_values2 
+where indicator_id=999 and year=max(year)"
+"53","How many municipalities have a share of people living in proximity of a busstop higher than 88.8?","select count(*) from indicator_values2 t1
+left join spatialunit t2 on t1.spatialunit_id = t2.spatialunit_id
+where t1.indicator_id=385 and t1.VALUE> 88.8
+and t2.type_id = 1 and t1.year=max(year)"
+"54","How many municipalities have a share of people living in proximity of a trainstation higher than 0.5?","select count(*) from indicator_values2 t1
+left join spatialunit t2 on t1.spatialunit_id = t2.spatialunit_id
+where t1.indicator_id=386 and t1.VALUE> 0.5
+and t2.type_id = 1 and t1.year=max(year)"
+"55","How many municipalities have a number of cars per capita higher than 522.6?","select count(*) from indicator_values2 t1
+left join spatialunit t2 on t1.spatialunit_id = t2.spatialunit_id
+where t1.indicator_id=399 and t1.VALUE> 522.6
+and t2.type_id = 1 and t1.year=max(year)"
+"56","How many municipalities have a share of people living in proximity of a trainstation or busstop higher than 53.2?","select count(*) from indicator_values2 t1
+left join spatialunit t2 on t1.spatialunit_id = t2.spatialunit_id
+where t1.indicator_id=401 and t1.VALUE> 53.2
+and t2.type_id = 1 and t1.year=max(year)"
+"57","How many municipalities have a share of public transport in traffic movements of people living higher than 10?","select count(*) from indicator_values2 t1
+left join spatialunit t2 on t1.spatialunit_id = t2.spatialunit_id
+where t1.indicator_id=480 and t1.VALUE> 10
+and t2.type_id = 1 and t1.year=max(year)"
+"58","How many municipalities have a share of motorised private transport in traffic movements of people living higher than 85?","select count(*) from indicator_values2 t1
+left join spatialunit t2 on t1.spatialunit_id = t2.spatialunit_id
+where t1.indicator_id=481 and t1.VALUE> 85
+and t2.type_id = 1 and t1.year=max(year)"
+"59","How many municipalities have a number of newly registered cars higher than 31.6?","select count(*) from indicator_values2 t1
+left join spatialunit t2 on t1.spatialunit_id = t2.spatialunit_id
+where t1.indicator_id=601 and t1.VALUE> 31.6
+and t2.type_id = 1 and t1.year=max(year)"
+"60","How many municipalities have a share of hybrid vehicles higher than 0.2?","select count(*) from indicator_values2 t1
+left join spatialunit t2 on t1.spatialunit_id = t2.spatialunit_id
+where t1.indicator_id=606 and t1.VALUE> 0.2
+and t2.type_id = 1 and t1.year=max(year)"
+"61","How many municipalities have a share of electric vehicles higher than 0?","select count(*) from indicator_values2 t1
+left join spatialunit t2 on t1.spatialunit_id = t2.spatialunit_id
+where t1.indicator_id=607 and t1.VALUE> 0
+and t2.type_id = 1 and t1.year=max(year)"
+"62","How many municipalities have a share of hybrid vehicles within the newly registered cars higher than 1.7?","select count(*) from indicator_values2 t1
+left join spatialunit t2 on t1.spatialunit_id = t2.spatialunit_id
+where t1.indicator_id=611 and t1.VALUE> 1.7
+and t2.type_id = 1 and t1.year=max(year)"
+"63","How many municipalities have a share of electric vehicles within the newly registered cars higher than 12.5?","select count(*) from indicator_values2 t1
+left join spatialunit t2 on t1.spatialunit_id = t2.spatialunit_id
+where t1.indicator_id=612 and t1.VALUE> 12.5
+and t2.type_id = 1 and t1.year=max(year)"
+"64","How many municipalities have a number of charging stations per 1000 inhabitants higher than 0.104166666666667?","select count(*) from indicator_values2 t1
+left join spatialunit t2 on t1.spatialunit_id = t2.spatialunit_id
+where t1.indicator_id=998 and t1.VALUE> 0.104166666666667
+and t2.type_id = 1 and t1.year=max(year)"
+"65","How many municipalities have a number of charging stations higher than 18?","select count(*) from indicator_values2 t1
+left join spatialunit t2 on t1.spatialunit_id = t2.spatialunit_id
+where t1.indicator_id=999 and t1.VALUE> 18
+and t2.type_id = 1 and t1.year=max(year)"
+"66","How high is the total share of people living in proximity of a busstop in the Canton Zurich?","select value from indicator_values2 
+where indicator_id=385 and unit_type=8 and year=max(year)"
+"67","How high is the total share of people living in proximity of a trainstation in the Canton Zurich?","select value from indicator_values2 
+where indicator_id=386 and unit_type=8 and year=max(year)"
+"68","How high is the total number of cars per capita in the Canton Zurich?","select value from indicator_values2 
+where indicator_id=399 and unit_type=8 and year=max(year)"
+"69","How high is the total share of people living in proximity of a trainstation or busstop in the Canton Zurich?","select value from indicator_values2 
+where indicator_id=401 and unit_type=8 and year=max(year)"
+"70","How high is the total share of public transport in traffic movements of people living in the Canton Zurich?","select value from indicator_values2 
+where indicator_id=480 and unit_type=8 and year=max(year)"
+"71","How high is the total share of motorised private transport in traffic movements of people living in the Canton Zurich?","select value from indicator_values2 
+where indicator_id=481 and unit_type=8 and year=max(year)"
+"72","How high is the total number of newly registered cars in the Canton Zurich?","select value from indicator_values2 
+where indicator_id=601 and unit_type=8 and year=max(year)"
+"73","How high is the total share of hybrid vehicles in the Canton Zurich?","select value from indicator_values2 
+where indicator_id=606 and unit_type=8 and year=max(year)"
+"74","How high is the total share of electric vehicles in the Canton Zurich?","select value from indicator_values2 
+where indicator_id=607 and unit_type=8 and year=max(year)"
+"75","How high is the total share of hybrid vehicles within the newly registered cars in the Canton Zurich?","select value from indicator_values2 
+where indicator_id=611 and unit_type=8 and year=max(year)"
+"76","How high is the total share of electric vehicles within the newly registered cars in the Canton Zurich?","select value from indicator_values2 
+where indicator_id=612 and unit_type=8 and year=max(year)"
+"77","How high is the total number of charging stations per 1000 inhabitants in the Canton Zurich?","select value from indicator_values2 
+where indicator_id=998 and unit_type=8 and year=max(year)"
+"78","How high is the total number of charging stations in the Canton Zurich?","select value from indicator_values2 
+where indicator_id=999 and unit_type=8 and year=max(year)"
+"79","Which Region had the lowest share of people living in proximity of a busstop in the year 2012?","select t2.unit_name from indicator_values2 t1
+ left join spatialunit t2 on t1.spatialunit_id = t2.spatialunit_id
+where value=min(value) and t2.unit_type=4 and indicator_id=385 and t1.year=2012"
+"80","Which Region had the lowest share of people living in proximity of a trainstation in the year 2004?","select t2.unit_name from indicator_values2 t1
+ left join spatialunit t2 on t1.spatialunit_id = t2.spatialunit_id
+where value=min(value) and t2.unit_type=4 and indicator_id=386 and t1.year=2004"
+"81","Which Region had the lowest number of cars per capita in the year 2002?","select t2.unit_name from indicator_values2 t1
+ left join spatialunit t2 on t1.spatialunit_id = t2.spatialunit_id
+where value=min(value) and t2.unit_type=4 and indicator_id=399 and t1.year=2002"
+"82","Which Region had the lowest share of people living in proximity of a trainstation or busstop in the year 2011?","select t2.unit_name from indicator_values2 t1
+ left join spatialunit t2 on t1.spatialunit_id = t2.spatialunit_id
+where value=min(value) and t2.unit_type=4 and indicator_id=401 and t1.year=2011"
+"83","Which Region had the lowest share of public transport in traffic movements of people living in the year 2016?","select t2.unit_name from indicator_values2 t1
+ left join spatialunit t2 on t1.spatialunit_id = t2.spatialunit_id
+where value=min(value) and t2.unit_type=4 and indicator_id=480 and t1.year=2016"
+"84","Which Region had the lowest share of motorised private transport in traffic movements of people living in the year 2013?","select t2.unit_name from indicator_values2 t1
+ left join spatialunit t2 on t1.spatialunit_id = t2.spatialunit_id
+where value=min(value) and t2.unit_type=4 and indicator_id=481 and t1.year=2013"
+"85","Which Region had the lowest number of newly registered cars in the year 2019?","select t2.unit_name from indicator_values2 t1
+ left join spatialunit t2 on t1.spatialunit_id = t2.spatialunit_id
+where value=min(value) and t2.unit_type=4 and indicator_id=601 and t1.year=2019"
+"86","Which Region had the lowest share of hybrid vehicles in the year 2009?","select t2.unit_name from indicator_values2 t1
+ left join spatialunit t2 on t1.spatialunit_id = t2.spatialunit_id
+where value=min(value) and t2.unit_type=4 and indicator_id=606 and t1.year=2009"
+"87","Which Region had the lowest share of electric vehicles in the year 2013?","select t2.unit_name from indicator_values2 t1
+ left join spatialunit t2 on t1.spatialunit_id = t2.spatialunit_id
+where value=min(value) and t2.unit_type=4 and indicator_id=607 and t1.year=2013"
+"88","Which Region had the lowest share of hybrid vehicles within the newly registered cars in the year 2007?","select t2.unit_name from indicator_values2 t1
+ left join spatialunit t2 on t1.spatialunit_id = t2.spatialunit_id
+where value=min(value) and t2.unit_type=4 and indicator_id=611 and t1.year=2007"
+"89","Which Region had the lowest share of electric vehicles within the newly registered cars in the year 2005?","select t2.unit_name from indicator_values2 t1
+ left join spatialunit t2 on t1.spatialunit_id = t2.spatialunit_id
+where value=min(value) and t2.unit_type=4 and indicator_id=612 and t1.year=2005"
+"90","Which Region had the lowest number of charging stations per 1000 inhabitants in the year 2021?","select t2.unit_name from indicator_values2 t1
+ left join spatialunit t2 on t1.spatialunit_id = t2.spatialunit_id
+where value=min(value) and t2.unit_type=4 and indicator_id=998 and t1.year=2021"
+"91","Which Region had the lowest number of charging stations in the year 2021?","select t2.unit_name from indicator_values2 t1
+ left join spatialunit t2 on t1.spatialunit_id = t2.spatialunit_id
+where value=min(value) and t2.unit_type=4 and indicator_id=999 and t1.year=2021"
