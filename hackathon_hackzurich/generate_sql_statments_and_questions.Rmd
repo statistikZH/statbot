@@ -35,10 +35,17 @@ gp_data <- read_csv("input_data/EN_INDICATOR_VALUES.csv") %>%
 Questions : what to do with the year? integrate explicitly in the question or just take max as standard?
 ```{r}
 
+spatial_units <- read_csv("input_data/EN_T_SPATIALUNIT.csv") %>% 
+                  select(SPATIALUNIT_ID,rand_mun_name=NAME)
+
 filtered_indicators <- gp_data %>% 
+  filter(TYPE_ID==1) %>% 
   group_by(INDICATOR_ID, short_desc, questiontype) %>% 
-  summarize(rand_val=sample(VALUE,1), rand_year=sample(YEAR,1)) %>% 
-                        filter(questiontype<=2)
+  summarize(rand_val=sample(VALUE,1), 
+            rand_year=sample(YEAR,1),
+            rand_mun=sample(SPATIALUNIT_ID,1)) %>% 
+                        filter(questiontype<=2) %>% 
+  left_join(spatial_units, by=c("rand_mun"="SPATIALUNIT_ID"))
 
 indicator <- filtered_indicators$short_desc
 
@@ -48,26 +55,53 @@ indicator_id <- filtered_indicators$INDICATOR_ID
 
 indicator_year <- filtered_indicators$rand_year
 
-municipality_id <- c(100)
 
-municipality <- c("Zürich")
+municipality_id <- filtered_indicators$rand_mun
+
+municipality <- filtered_indicators$rand_mun_name
 
 questions_and_queries <- tibble(
                           questions = c("how high is the {indicator} in {municipality}?", 
+                                        
                                        "which municipality has the highest {indicator}?",
+                                       
                                        "Which municipality has the minimum {indicator}?",
+                                       
                                         "what are the highest, lowest and average {indicator}?",
+                                       
                                         "How many municipalities have a {indicator} higher than {random_value}?",
-                                        "How high is the total {indicator} in the Canton Zurich?"
+                                       
+                                        "How high is the total {indicator} in the Canton Zurich?",
+                                       
+                                        "Which Region had the lowest {indicator} in the year {indicator_year}?"
                                        ),
                          
-                           queries=c("SELECT VALUE FROM TABLE WHERE INDICATOR_ID = {indicator_id} and BFS_NR={municipality_id}", 
-                                       "SELECT UNIT_NAME WHERE INDICATOR_ID={indicator_id} and VALUE=MAX(VALUE)",
-                                        "SELECT UNIT_NAME WHERE INDICATOR_ID={indicator_id} and VALUE=MIN(VALUE)",
-                                        "SELECT MAX(VALUE), MIN(VALUE), AVG(VALUE) WHERE INDICATOR_ID={indicator_id}",
-                                        "SELECT count(*) where INDICATOR_ID={indicator_id} and VALUE> {random_value}",
-                                        "SELECT VALUE from TABLE WHERE INDICATOR_ID={indicator_id} and UNIT_TYPE=8"
-                                    }"
+                           queries=c("select value from indicator_values2 
+                                      where indicator_id = {indicator_id} and spatialunit_id={municipality_id} 
+                                      and year=max(year)", 
+                                     
+                                      "select t2.name from indicator_values2 t1
+                                      left join spatialunit t2 on t1.spatialunit_id = t2.spatialunit_id
+                                      where t1.indicator_id={indicator_id} and t1.value=max(value) and t1.year=max(year)",
+                                     
+                                      "select t2.name from indicator_values2 t1
+                                      left join spatialunit t2 on t1.spatialunit_id = t2.spatialunit_id
+                                      where t1.indicator_id={indicator_id} and t1.value=min(value) and t1.year=max(year)",
+                                     
+                                      "select max(value), min(value), avg(value) from indicator_values2 
+                                      where indicator_id={indicator_id} and year=max(year)",
+                                     
+                                      "select count(*) from indicator_values2 t1
+                                      left join spatialunit t2 on t1.spatialunit_id = t2.spatialunit_id
+                                      where t1.indicator_id={indicator_id} and t1.VALUE> {random_value}
+                                      and t2.type_id = 1 and t1.year=max(year)",
+                                     
+                                      "select value from indicator_values2 
+                                      where indicator_id={indicator_id} and unit_type=8 and year=max(year)",
+                                     
+                                      "select t2.unit_name from indicator_values2 t1
+                                      left join spatialunit t2 on t1.spatialunit_id = t2.spatialunit_id
+                                     where value=min(value) and t2.unit_type=4 and indicator_id={indicator_id} and t1.year={indicator_year}"
                                       )
 
 )
@@ -81,7 +115,11 @@ dataframe <- tibble(
                                     ~glue::glue(.x))%>% unlist()
               )
 
+# save questions and queries
 write.csv(dataframe,"questions_queries.csv")
+
+# save table
+write.csv(gp_data %>% head(10), "gp_data.csv")
 
 ```
 
