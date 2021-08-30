@@ -1,121 +1,134 @@
 "","question","sql"
-"1","how high is the share of people living in proximity of a busstop in Dachsen?","select value from indicator_values2 
-where indicator_id = 385 and spatialunit_id=19 
-and year=max(year)"
-"2","how high is the share of people living in proximity of a trainstation in Weiach?","select value from indicator_values2 
-where indicator_id = 386 and spatialunit_id=82 
-and year=max(year)"
-"3","how high is the number of cars per capita in Pfungen?","select value from indicator_values2 
-where indicator_id = 399 and spatialunit_id=152 
-and year=max(year)"
-"4","how high is the share of people living in proximity of a trainstation or busstop in Hausen a.A.?","select value from indicator_values2 
-where indicator_id = 401 and spatialunit_id=4 
-and year=max(year)"
-"5","how high is the share of public transport in traffic movements of people living in Hittnau?","select value from indicator_values2 
-where indicator_id = 480 and spatialunit_id=119 
-and year=max(year)"
-"6","how high is the share of motorised private transport in traffic movements of people living in Rheinau?","select value from indicator_values2 
-where indicator_id = 481 and spatialunit_id=32 
-and year=max(year)"
-"7","how high is the number of newly registered cars in Weiach?","select value from indicator_values2 
-where indicator_id = 601 and spatialunit_id=82 
-and year=max(year)"
-"8","how high is the share of hybrid vehicles in Bauma?","select value from indicator_values2 
-where indicator_id = 606 and spatialunit_id=197 
-and year=max(year)"
-"9","how high is the share of electric vehicles in Zollikon?","select value from indicator_values2 
-where indicator_id = 607 and spatialunit_id=116 
-and year=max(year)"
-"10","how high is the share of hybrid vehicles within the newly registered cars in Fällanden?","select value from indicator_values2 
-where indicator_id = 611 and spatialunit_id=131 
-and year=max(year)"
-"11","how high is the share of electric vehicles within the newly registered cars in Hofstetten (bis 2017)?","select value from indicator_values2 
-where indicator_id = 612 and spatialunit_id=150 
-and year=max(year)"
-"12","how high is the number of charging stations per 1000 inhabitants in Bonstetten?","select value from indicator_values2 
-where indicator_id = 998 and spatialunit_id=3 
-and year=max(year)"
-"13","how high is the number of charging stations in Lufingen?","select value from indicator_values2 
-where indicator_id = 999 and spatialunit_id=51 
-and year=max(year)"
-"14","which municipality has the highest share of people living in proximity of a busstop?","select t2.name from indicator_values2 t1
-left join spatialunit t2 on t1.spatialunit_id = t2.spatialunit_id
-where t1.indicator_id=385 and t1.value=max(value) and t1.year=max(year)"
-"15","which municipality has the highest share of people living in proximity of a trainstation?","select t2.name from indicator_values2 t1
-left join spatialunit t2 on t1.spatialunit_id = t2.spatialunit_id
-where t1.indicator_id=386 and t1.value=max(value) and t1.year=max(year)"
-"16","which municipality has the highest number of cars per capita?","select t2.name from indicator_values2 t1
-left join spatialunit t2 on t1.spatialunit_id = t2.spatialunit_id
-where t1.indicator_id=399 and t1.value=max(value) and t1.year=max(year)"
-"17","which municipality has the highest share of people living in proximity of a trainstation or busstop?","select t2.name from indicator_values2 t1
-left join spatialunit t2 on t1.spatialunit_id = t2.spatialunit_id
-where t1.indicator_id=401 and t1.value=max(value) and t1.year=max(year)"
-"18","which municipality has the highest share of public transport in traffic movements of people living?","select t2.name from indicator_values2 t1
-left join spatialunit t2 on t1.spatialunit_id = t2.spatialunit_id
-where t1.indicator_id=480 and t1.value=max(value) and t1.year=max(year)"
-"19","which municipality has the highest share of motorised private transport in traffic movements of people living?","select t2.name from indicator_values2 t1
-left join spatialunit t2 on t1.spatialunit_id = t2.spatialunit_id
-where t1.indicator_id=481 and t1.value=max(value) and t1.year=max(year)"
-"20","which municipality has the highest number of newly registered cars?","select t2.name from indicator_values2 t1
-left join spatialunit t2 on t1.spatialunit_id = t2.spatialunit_id
-where t1.indicator_id=601 and t1.value=max(value) and t1.year=max(year)"
-"21","which municipality has the highest share of hybrid vehicles?","select t2.name from indicator_values2 t1
-left join spatialunit t2 on t1.spatialunit_id = t2.spatialunit_id
-where t1.indicator_id=606 and t1.value=max(value) and t1.year=max(year)"
-"22","which municipality has the highest share of electric vehicles?","select t2.name from indicator_values2 t1
-left join spatialunit t2 on t1.spatialunit_id = t2.spatialunit_id
-where t1.indicator_id=607 and t1.value=max(value) and t1.year=max(year)"
-"23","which municipality has the highest share of hybrid vehicles within the newly registered cars?","select t2.name from indicator_values2 t1
-left join spatialunit t2 on t1.spatialunit_id = t2.spatialunit_id
-where t1.indicator_id=611 and t1.value=max(value) and t1.year=max(year)"
-"24","which municipality has the highest share of electric vehicles within the newly registered cars?","select t2.name from indicator_values2 t1
-left join spatialunit t2 on t1.spatialunit_id = t2.spatialunit_id
-where t1.indicator_id=612 and t1.value=max(value) and t1.year=max(year)"
-"25","which municipality has the highest number of charging stations per 1000 inhabitants?","select t2.name from indicator_values2 t1
-left join spatialunit t2 on t1.spatialunit_id = t2.spatialunit_id
-where t1.indicator_id=998 and t1.value=max(value) and t1.year=max(year)"
-"26","which municipality has the highest number of charging stations?","select t2.name from indicator_values2 t1
-left join spatialunit t2 on t1.spatialunit_id = t2.spatialunit_id
-where t1.indicator_id=999 and t1.value=max(value) and t1.year=max(year)"
-"27","Which municipality has the minimum share of people living in proximity of a busstop?","select t2.name from indicator_values2 t1
-left join spatialunit t2 on t1.spatialunit_id = t2.spatialunit_id
-where t1.indicator_id=385 and t1.value=min(value) and t1.year=max(year)"
-"28","Which municipality has the minimum share of people living in proximity of a trainstation?","select t2.name from indicator_values2 t1
-left join spatialunit t2 on t1.spatialunit_id = t2.spatialunit_id
-where t1.indicator_id=386 and t1.value=min(value) and t1.year=max(year)"
-"29","Which municipality has the minimum number of cars per capita?","select t2.name from indicator_values2 t1
-left join spatialunit t2 on t1.spatialunit_id = t2.spatialunit_id
-where t1.indicator_id=399 and t1.value=min(value) and t1.year=max(year)"
-"30","Which municipality has the minimum share of people living in proximity of a trainstation or busstop?","select t2.name from indicator_values2 t1
-left join spatialunit t2 on t1.spatialunit_id = t2.spatialunit_id
-where t1.indicator_id=401 and t1.value=min(value) and t1.year=max(year)"
-"31","Which municipality has the minimum share of public transport in traffic movements of people living?","select t2.name from indicator_values2 t1
-left join spatialunit t2 on t1.spatialunit_id = t2.spatialunit_id
-where t1.indicator_id=480 and t1.value=min(value) and t1.year=max(year)"
-"32","Which municipality has the minimum share of motorised private transport in traffic movements of people living?","select t2.name from indicator_values2 t1
-left join spatialunit t2 on t1.spatialunit_id = t2.spatialunit_id
-where t1.indicator_id=481 and t1.value=min(value) and t1.year=max(year)"
-"33","Which municipality has the minimum number of newly registered cars?","select t2.name from indicator_values2 t1
-left join spatialunit t2 on t1.spatialunit_id = t2.spatialunit_id
-where t1.indicator_id=601 and t1.value=min(value) and t1.year=max(year)"
-"34","Which municipality has the minimum share of hybrid vehicles?","select t2.name from indicator_values2 t1
-left join spatialunit t2 on t1.spatialunit_id = t2.spatialunit_id
-where t1.indicator_id=606 and t1.value=min(value) and t1.year=max(year)"
-"35","Which municipality has the minimum share of electric vehicles?","select t2.name from indicator_values2 t1
-left join spatialunit t2 on t1.spatialunit_id = t2.spatialunit_id
-where t1.indicator_id=607 and t1.value=min(value) and t1.year=max(year)"
-"36","Which municipality has the minimum share of hybrid vehicles within the newly registered cars?","select t2.name from indicator_values2 t1
-left join spatialunit t2 on t1.spatialunit_id = t2.spatialunit_id
-where t1.indicator_id=611 and t1.value=min(value) and t1.year=max(year)"
-"37","Which municipality has the minimum share of electric vehicles within the newly registered cars?","select t2.name from indicator_values2 t1
-left join spatialunit t2 on t1.spatialunit_id = t2.spatialunit_id
-where t1.indicator_id=612 and t1.value=min(value) and t1.year=max(year)"
-"38","Which municipality has the minimum number of charging stations per 1000 inhabitants?","select t2.name from indicator_values2 t1
-left join spatialunit t2 on t1.spatialunit_id = t2.spatialunit_id
-where t1.indicator_id=998 and t1.value=min(value) and t1.year=max(year)"
-"39","Which municipality has the minimum number of charging stations?","select t2.name from indicator_values2 t1
-left join spatialunit t2 on t1.spatialunit_id = t2.spatialunit_id
-where t1.indicator_id=999 and t1.value=min(value) and t1.year=max(year)"
+"1","how high is the share of people living in proximity of a busstop in Seuzach?","select value from indicator_values2 iv
+left join spatialunit s on iv.spatialunit_id = s.spatialunit_id
+where iv.indicator_id = 385 and s.spatialunit_id=155 
+and year=max(year) and i.name like 'Access by bus [% of inhabitants]' and s.unit_name like 'Seuzach'"
+"2","how high is the share of people living in proximity of a trainstation in Zürich?","select value from indicator_values2 iv
+left join spatialunit s on iv.spatialunit_id = s.spatialunit_id
+where iv.indicator_id = 386 and s.spatialunit_id=171 
+and year=max(year) and i.name like 'Access by suburban train [% of inhabitants]' and s.unit_name like 'Zürich'"
+"3","how high is the number of cars per capita in Boppelsen?","select value from indicator_values2 iv
+left join spatialunit s on iv.spatialunit_id = s.spatialunit_id
+where iv.indicator_id = 399 and s.spatialunit_id=62 
+and year=max(year) and i.name like 'Passenger cars per 1000 inhabitants [no.]' and s.unit_name like 'Boppelsen'"
+"4","how high is the share of people living in proximity of a trainstation or busstop in Elgg?","select value from indicator_values2 iv
+left join spatialunit s on iv.spatialunit_id = s.spatialunit_id
+where iv.indicator_id = 401 and s.spatialunit_id=200 
+and year=max(year) and i.name like 'Accessibility by suburban train+bus [% of inhabitants]' and s.unit_name like 'Elgg'"
+"5","how high is the share of public transport in traffic movements of people living in Buch a.I.?","select value from indicator_values2 iv
+left join spatialunit s on iv.spatialunit_id = s.spatialunit_id
+where iv.indicator_id = 480 and s.spatialunit_id=18 
+and year=max(year) and i.name like 'public transport share (modal split) [%]' and s.unit_name like 'Buch a.I.'"
+"6","how high is the share of motorised private transport in traffic movements of people living in Wetzikon?","select value from indicator_values2 iv
+left join spatialunit s on iv.spatialunit_id = s.spatialunit_id
+where iv.indicator_id = 481 and s.spatialunit_id=93 
+and year=max(year) and i.name like 'MIV share (modal split) [%]' and s.unit_name like 'Wetzikon'"
+"7","how high is the number of newly registered cars in Bachs?","select value from indicator_values2 iv
+left join spatialunit s on iv.spatialunit_id = s.spatialunit_id
+where iv.indicator_id = 601 and s.spatialunit_id=61 
+and year=max(year) and i.name like 'PW new registrations per 1000 inhabitants [amount]' and s.unit_name like 'Bachs'"
+"8","how high is the share of hybrid vehicles in Stallikon?","select value from indicator_values2 iv
+left join spatialunit s on iv.spatialunit_id = s.spatialunit_id
+where iv.indicator_id = 606 and s.spatialunit_id=13 
+and year=max(year) and i.name like 'Hybrid motor cars stock [%]' and s.unit_name like 'Stallikon'"
+"9","how high is the share of electric vehicles in Dänikon?","select value from indicator_values2 iv
+left join spatialunit s on iv.spatialunit_id = s.spatialunit_id
+where iv.indicator_id = 607 and s.spatialunit_id=65 
+and year=max(year) and i.name like 'Electric motor cars stock [%]' and s.unit_name like 'Dänikon'"
+"10","how high is the share of hybrid vehicles within the newly registered cars in Uetikon a.S.?","select value from indicator_values2 iv
+left join spatialunit s on iv.spatialunit_id = s.spatialunit_id
+where iv.indicator_id = 611 and s.spatialunit_id=114 
+and year=max(year) and i.name like 'New registrations of hybrid motor cars [%]' and s.unit_name like 'Uetikon a.S.'"
+"11","how high is the share of electric vehicles within the newly registered cars in Elgg (bis 2017)?","select value from indicator_values2 iv
+left join spatialunit s on iv.spatialunit_id = s.spatialunit_id
+where iv.indicator_id = 612 and s.spatialunit_id=145 
+and year=max(year) and i.name like 'New registrations electric motor cars [%]' and s.unit_name like 'Elgg (bis 2017)'"
+"12","how high is the number of charging stations per 1000 inhabitants in Horgen (bis 2017)?","select value from indicator_values2 iv
+left join spatialunit s on iv.spatialunit_id = s.spatialunit_id
+where iv.indicator_id = 998 and s.spatialunit_id=96 
+and year=max(year) and i.name like 'Charging stations of electronic cars per 1000 inhabitants [no.]' and s.unit_name like 'Horgen (bis 2017)'"
+"13","how high is the number of charging stations in Niederglatt?","select value from indicator_values2 iv
+left join spatialunit s on iv.spatialunit_id = s.spatialunit_id
+where iv.indicator_id = 999 and s.spatialunit_id=69 
+and year=max(year) and i.name like 'Charging stations of electronic cars [no.]' and s.unit_name like 'Niederglatt'"
+"14","which municipality has the highest share of people living in proximity of a busstop?","select s.name from indicator_values2 iv
+left join spatialunit s on iv.spatialunit_id = s.spatialunit_id
+where iv.indicator_id=385 and iv.value=max(value) and i.year=max(year)"
+"15","which municipality has the highest share of people living in proximity of a trainstation?","select s.name from indicator_values2 iv
+left join spatialunit s on iv.spatialunit_id = s.spatialunit_id
+where iv.indicator_id=386 and iv.value=max(value) and i.year=max(year)"
+"16","which municipality has the highest number of cars per capita?","select s.name from indicator_values2 iv
+left join spatialunit s on iv.spatialunit_id = s.spatialunit_id
+where iv.indicator_id=399 and iv.value=max(value) and i.year=max(year)"
+"17","which municipality has the highest share of people living in proximity of a trainstation or busstop?","select s.name from indicator_values2 iv
+left join spatialunit s on iv.spatialunit_id = s.spatialunit_id
+where iv.indicator_id=401 and iv.value=max(value) and i.year=max(year)"
+"18","which municipality has the highest share of public transport in traffic movements of people living?","select s.name from indicator_values2 iv
+left join spatialunit s on iv.spatialunit_id = s.spatialunit_id
+where iv.indicator_id=480 and iv.value=max(value) and i.year=max(year)"
+"19","which municipality has the highest share of motorised private transport in traffic movements of people living?","select s.name from indicator_values2 iv
+left join spatialunit s on iv.spatialunit_id = s.spatialunit_id
+where iv.indicator_id=481 and iv.value=max(value) and i.year=max(year)"
+"20","which municipality has the highest number of newly registered cars?","select s.name from indicator_values2 iv
+left join spatialunit s on iv.spatialunit_id = s.spatialunit_id
+where iv.indicator_id=601 and iv.value=max(value) and i.year=max(year)"
+"21","which municipality has the highest share of hybrid vehicles?","select s.name from indicator_values2 iv
+left join spatialunit s on iv.spatialunit_id = s.spatialunit_id
+where iv.indicator_id=606 and iv.value=max(value) and i.year=max(year)"
+"22","which municipality has the highest share of electric vehicles?","select s.name from indicator_values2 iv
+left join spatialunit s on iv.spatialunit_id = s.spatialunit_id
+where iv.indicator_id=607 and iv.value=max(value) and i.year=max(year)"
+"23","which municipality has the highest share of hybrid vehicles within the newly registered cars?","select s.name from indicator_values2 iv
+left join spatialunit s on iv.spatialunit_id = s.spatialunit_id
+where iv.indicator_id=611 and iv.value=max(value) and i.year=max(year)"
+"24","which municipality has the highest share of electric vehicles within the newly registered cars?","select s.name from indicator_values2 iv
+left join spatialunit s on iv.spatialunit_id = s.spatialunit_id
+where iv.indicator_id=612 and iv.value=max(value) and i.year=max(year)"
+"25","which municipality has the highest number of charging stations per 1000 inhabitants?","select s.name from indicator_values2 iv
+left join spatialunit s on iv.spatialunit_id = s.spatialunit_id
+where iv.indicator_id=998 and iv.value=max(value) and i.year=max(year)"
+"26","which municipality has the highest number of charging stations?","select s.name from indicator_values2 iv
+left join spatialunit s on iv.spatialunit_id = s.spatialunit_id
+where iv.indicator_id=999 and iv.value=max(value) and i.year=max(year)"
+"27","Which municipality has the minimum share of people living in proximity of a busstop?","select s.name from indicator_values2 iv
+left join spatialunit s on t1.spatialunit_id = s.spatialunit_id
+where iv.indicator_id=385 and iv.value=min(value) and t1.year=max(year)"
+"28","Which municipality has the minimum share of people living in proximity of a trainstation?","select s.name from indicator_values2 iv
+left join spatialunit s on t1.spatialunit_id = s.spatialunit_id
+where iv.indicator_id=386 and iv.value=min(value) and t1.year=max(year)"
+"29","Which municipality has the minimum number of cars per capita?","select s.name from indicator_values2 iv
+left join spatialunit s on t1.spatialunit_id = s.spatialunit_id
+where iv.indicator_id=399 and iv.value=min(value) and t1.year=max(year)"
+"30","Which municipality has the minimum share of people living in proximity of a trainstation or busstop?","select s.name from indicator_values2 iv
+left join spatialunit s on t1.spatialunit_id = s.spatialunit_id
+where iv.indicator_id=401 and iv.value=min(value) and t1.year=max(year)"
+"31","Which municipality has the minimum share of public transport in traffic movements of people living?","select s.name from indicator_values2 iv
+left join spatialunit s on t1.spatialunit_id = s.spatialunit_id
+where iv.indicator_id=480 and iv.value=min(value) and t1.year=max(year)"
+"32","Which municipality has the minimum share of motorised private transport in traffic movements of people living?","select s.name from indicator_values2 iv
+left join spatialunit s on t1.spatialunit_id = s.spatialunit_id
+where iv.indicator_id=481 and iv.value=min(value) and t1.year=max(year)"
+"33","Which municipality has the minimum number of newly registered cars?","select s.name from indicator_values2 iv
+left join spatialunit s on t1.spatialunit_id = s.spatialunit_id
+where iv.indicator_id=601 and iv.value=min(value) and t1.year=max(year)"
+"34","Which municipality has the minimum share of hybrid vehicles?","select s.name from indicator_values2 iv
+left join spatialunit s on t1.spatialunit_id = s.spatialunit_id
+where iv.indicator_id=606 and iv.value=min(value) and t1.year=max(year)"
+"35","Which municipality has the minimum share of electric vehicles?","select s.name from indicator_values2 iv
+left join spatialunit s on t1.spatialunit_id = s.spatialunit_id
+where iv.indicator_id=607 and iv.value=min(value) and t1.year=max(year)"
+"36","Which municipality has the minimum share of hybrid vehicles within the newly registered cars?","select s.name from indicator_values2 iv
+left join spatialunit s on t1.spatialunit_id = s.spatialunit_id
+where iv.indicator_id=611 and iv.value=min(value) and t1.year=max(year)"
+"37","Which municipality has the minimum share of electric vehicles within the newly registered cars?","select s.name from indicator_values2 iv
+left join spatialunit s on t1.spatialunit_id = s.spatialunit_id
+where iv.indicator_id=612 and iv.value=min(value) and t1.year=max(year)"
+"38","Which municipality has the minimum number of charging stations per 1000 inhabitants?","select s.name from indicator_values2 iv
+left join spatialunit s on t1.spatialunit_id = s.spatialunit_id
+where iv.indicator_id=998 and iv.value=min(value) and t1.year=max(year)"
+"39","Which municipality has the minimum number of charging stations?","select s.name from indicator_values2 iv
+left join spatialunit s on t1.spatialunit_id = s.spatialunit_id
+where iv.indicator_id=999 and iv.value=min(value) and t1.year=max(year)"
 "40","what are the highest, lowest and average share of people living in proximity of a busstop?","select max(value), min(value), avg(value) from indicator_values2 
 where indicator_id=385 and year=max(year)"
 "41","what are the highest, lowest and average share of people living in proximity of a trainstation?","select max(value), min(value), avg(value) from indicator_values2 
@@ -142,58 +155,58 @@ where indicator_id=612 and year=max(year)"
 where indicator_id=998 and year=max(year)"
 "52","what are the highest, lowest and average number of charging stations?","select max(value), min(value), avg(value) from indicator_values2 
 where indicator_id=999 and year=max(year)"
-"53","How many municipalities have a share of people living in proximity of a busstop higher than 88.8?","select count(*) from indicator_values2 t1
-left join spatialunit t2 on t1.spatialunit_id = t2.spatialunit_id
-where t1.indicator_id=385 and t1.VALUE> 88.8
-and t2.type_id = 1 and t1.year=max(year)"
-"54","How many municipalities have a share of people living in proximity of a trainstation higher than 0.5?","select count(*) from indicator_values2 t1
-left join spatialunit t2 on t1.spatialunit_id = t2.spatialunit_id
-where t1.indicator_id=386 and t1.VALUE> 0.5
-and t2.type_id = 1 and t1.year=max(year)"
-"55","How many municipalities have a number of cars per capita higher than 522.6?","select count(*) from indicator_values2 t1
-left join spatialunit t2 on t1.spatialunit_id = t2.spatialunit_id
-where t1.indicator_id=399 and t1.VALUE> 522.6
-and t2.type_id = 1 and t1.year=max(year)"
-"56","How many municipalities have a share of people living in proximity of a trainstation or busstop higher than 53.2?","select count(*) from indicator_values2 t1
-left join spatialunit t2 on t1.spatialunit_id = t2.spatialunit_id
-where t1.indicator_id=401 and t1.VALUE> 53.2
-and t2.type_id = 1 and t1.year=max(year)"
-"57","How many municipalities have a share of public transport in traffic movements of people living higher than 10?","select count(*) from indicator_values2 t1
-left join spatialunit t2 on t1.spatialunit_id = t2.spatialunit_id
-where t1.indicator_id=480 and t1.VALUE> 10
-and t2.type_id = 1 and t1.year=max(year)"
-"58","How many municipalities have a share of motorised private transport in traffic movements of people living higher than 85?","select count(*) from indicator_values2 t1
-left join spatialunit t2 on t1.spatialunit_id = t2.spatialunit_id
-where t1.indicator_id=481 and t1.VALUE> 85
-and t2.type_id = 1 and t1.year=max(year)"
-"59","How many municipalities have a number of newly registered cars higher than 31.6?","select count(*) from indicator_values2 t1
-left join spatialunit t2 on t1.spatialunit_id = t2.spatialunit_id
-where t1.indicator_id=601 and t1.VALUE> 31.6
-and t2.type_id = 1 and t1.year=max(year)"
-"60","How many municipalities have a share of hybrid vehicles higher than 0.2?","select count(*) from indicator_values2 t1
-left join spatialunit t2 on t1.spatialunit_id = t2.spatialunit_id
-where t1.indicator_id=606 and t1.VALUE> 0.2
-and t2.type_id = 1 and t1.year=max(year)"
-"61","How many municipalities have a share of electric vehicles higher than 0?","select count(*) from indicator_values2 t1
-left join spatialunit t2 on t1.spatialunit_id = t2.spatialunit_id
-where t1.indicator_id=607 and t1.VALUE> 0
-and t2.type_id = 1 and t1.year=max(year)"
-"62","How many municipalities have a share of hybrid vehicles within the newly registered cars higher than 1.7?","select count(*) from indicator_values2 t1
-left join spatialunit t2 on t1.spatialunit_id = t2.spatialunit_id
-where t1.indicator_id=611 and t1.VALUE> 1.7
-and t2.type_id = 1 and t1.year=max(year)"
-"63","How many municipalities have a share of electric vehicles within the newly registered cars higher than 12.5?","select count(*) from indicator_values2 t1
-left join spatialunit t2 on t1.spatialunit_id = t2.spatialunit_id
-where t1.indicator_id=612 and t1.VALUE> 12.5
-and t2.type_id = 1 and t1.year=max(year)"
-"64","How many municipalities have a number of charging stations per 1000 inhabitants higher than 0.104166666666667?","select count(*) from indicator_values2 t1
-left join spatialunit t2 on t1.spatialunit_id = t2.spatialunit_id
-where t1.indicator_id=998 and t1.VALUE> 0.104166666666667
-and t2.type_id = 1 and t1.year=max(year)"
-"65","How many municipalities have a number of charging stations higher than 18?","select count(*) from indicator_values2 t1
-left join spatialunit t2 on t1.spatialunit_id = t2.spatialunit_id
-where t1.indicator_id=999 and t1.VALUE> 18
-and t2.type_id = 1 and t1.year=max(year)"
+"53","How many municipalities have a share of people living in proximity of a busstop higher than 26.5?","select count(*) from indicator_values2 iv
+left join spatialunit s on iv.spatialunit_id = s.spatialunit_id
+where iv.indicator_id=385 and iv.VALUE> 26.5
+and s.type_id = 1 and iv.year=max(year)"
+"54","How many municipalities have a share of people living in proximity of a trainstation higher than 0?","select count(*) from indicator_values2 iv
+left join spatialunit s on iv.spatialunit_id = s.spatialunit_id
+where iv.indicator_id=386 and iv.VALUE> 0
+and s.type_id = 1 and iv.year=max(year)"
+"55","How many municipalities have a number of cars per capita higher than 506.1?","select count(*) from indicator_values2 iv
+left join spatialunit s on iv.spatialunit_id = s.spatialunit_id
+where iv.indicator_id=399 and iv.VALUE> 506.1
+and s.type_id = 1 and iv.year=max(year)"
+"56","How many municipalities have a share of people living in proximity of a trainstation or busstop higher than 0?","select count(*) from indicator_values2 iv
+left join spatialunit s on iv.spatialunit_id = s.spatialunit_id
+where iv.indicator_id=401 and iv.VALUE> 0
+and s.type_id = 1 and iv.year=max(year)"
+"57","How many municipalities have a share of public transport in traffic movements of people living higher than 9?","select count(*) from indicator_values2 iv
+left join spatialunit s on iv.spatialunit_id = s.spatialunit_id
+where iv.indicator_id=480 and iv.VALUE> 9
+and s.type_id = 1 and iv.year=max(year)"
+"58","How many municipalities have a share of motorised private transport in traffic movements of people living higher than 81?","select count(*) from indicator_values2 iv
+left join spatialunit s on iv.spatialunit_id = s.spatialunit_id
+where iv.indicator_id=481 and iv.VALUE> 81
+and s.type_id = 1 and iv.year=max(year)"
+"59","How many municipalities have a number of newly registered cars higher than 25.2?","select count(*) from indicator_values2 iv
+left join spatialunit s on iv.spatialunit_id = s.spatialunit_id
+where iv.indicator_id=601 and iv.VALUE> 25.2
+and s.type_id = 1 and iv.year=max(year)"
+"60","How many municipalities have a share of hybrid vehicles higher than 4.8?","select count(*) from indicator_values2 iv
+left join spatialunit s on iv.spatialunit_id = s.spatialunit_id
+where iv.indicator_id=606 and iv.VALUE> 4.8
+and s.type_id = 1 and iv.year=max(year)"
+"61","How many municipalities have a share of electric vehicles higher than 1?","select count(*) from indicator_values2 iv
+left join spatialunit s on iv.spatialunit_id = s.spatialunit_id
+where iv.indicator_id=607 and iv.VALUE> 1
+and s.type_id = 1 and iv.year=max(year)"
+"62","How many municipalities have a share of hybrid vehicles within the newly registered cars higher than 11.1?","select count(*) from indicator_values2 iv
+left join spatialunit s on iv.spatialunit_id = s.spatialunit_id
+where iv.indicator_id=611 and iv.VALUE> 11.1
+and s.type_id = 1 and iv.year=max(year)"
+"63","How many municipalities have a share of electric vehicles within the newly registered cars higher than 0?","select count(*) from indicator_values2 iv
+left join spatialunit s on iv.spatialunit_id = s.spatialunit_id
+where iv.indicator_id=612 and iv.VALUE> 0
+and s.type_id = 1 and iv.year=max(year)"
+"64","How many municipalities have a number of charging stations per 1000 inhabitants higher than 0?","select count(*) from indicator_values2 iv
+left join spatialunit s on iv.spatialunit_id = s.spatialunit_id
+where iv.indicator_id=998 and iv.VALUE> 0
+and s.type_id = 1 and iv.year=max(year)"
+"65","How many municipalities have a number of charging stations higher than 0?","select count(*) from indicator_values2 iv
+left join spatialunit s on iv.spatialunit_id = s.spatialunit_id
+where iv.indicator_id=999 and iv.VALUE> 0
+and s.type_id = 1 and iv.year=max(year)"
 "66","How high is the total share of people living in proximity of a busstop in the Canton Zurich?","select value from indicator_values2 
 where indicator_id=385 and unit_type=8 and year=max(year)"
 "67","How high is the total share of people living in proximity of a trainstation in the Canton Zurich?","select value from indicator_values2 
@@ -220,42 +233,42 @@ where indicator_id=612 and unit_type=8 and year=max(year)"
 where indicator_id=998 and unit_type=8 and year=max(year)"
 "78","How high is the total number of charging stations in the Canton Zurich?","select value from indicator_values2 
 where indicator_id=999 and unit_type=8 and year=max(year)"
-"79","Which Region had the lowest share of people living in proximity of a busstop in the year 2012?","select t2.unit_name from indicator_values2 t1
- left join spatialunit t2 on t1.spatialunit_id = t2.spatialunit_id
-where value=min(value) and t2.unit_type=4 and indicator_id=385 and t1.year=2012"
-"80","Which Region had the lowest share of people living in proximity of a trainstation in the year 2004?","select t2.unit_name from indicator_values2 t1
- left join spatialunit t2 on t1.spatialunit_id = t2.spatialunit_id
-where value=min(value) and t2.unit_type=4 and indicator_id=386 and t1.year=2004"
-"81","Which Region had the lowest number of cars per capita in the year 2002?","select t2.unit_name from indicator_values2 t1
- left join spatialunit t2 on t1.spatialunit_id = t2.spatialunit_id
-where value=min(value) and t2.unit_type=4 and indicator_id=399 and t1.year=2002"
-"82","Which Region had the lowest share of people living in proximity of a trainstation or busstop in the year 2011?","select t2.unit_name from indicator_values2 t1
- left join spatialunit t2 on t1.spatialunit_id = t2.spatialunit_id
-where value=min(value) and t2.unit_type=4 and indicator_id=401 and t1.year=2011"
-"83","Which Region had the lowest share of public transport in traffic movements of people living in the year 2016?","select t2.unit_name from indicator_values2 t1
- left join spatialunit t2 on t1.spatialunit_id = t2.spatialunit_id
-where value=min(value) and t2.unit_type=4 and indicator_id=480 and t1.year=2016"
-"84","Which Region had the lowest share of motorised private transport in traffic movements of people living in the year 2013?","select t2.unit_name from indicator_values2 t1
- left join spatialunit t2 on t1.spatialunit_id = t2.spatialunit_id
-where value=min(value) and t2.unit_type=4 and indicator_id=481 and t1.year=2013"
-"85","Which Region had the lowest number of newly registered cars in the year 2019?","select t2.unit_name from indicator_values2 t1
- left join spatialunit t2 on t1.spatialunit_id = t2.spatialunit_id
-where value=min(value) and t2.unit_type=4 and indicator_id=601 and t1.year=2019"
-"86","Which Region had the lowest share of hybrid vehicles in the year 2009?","select t2.unit_name from indicator_values2 t1
- left join spatialunit t2 on t1.spatialunit_id = t2.spatialunit_id
-where value=min(value) and t2.unit_type=4 and indicator_id=606 and t1.year=2009"
-"87","Which Region had the lowest share of electric vehicles in the year 2013?","select t2.unit_name from indicator_values2 t1
- left join spatialunit t2 on t1.spatialunit_id = t2.spatialunit_id
-where value=min(value) and t2.unit_type=4 and indicator_id=607 and t1.year=2013"
-"88","Which Region had the lowest share of hybrid vehicles within the newly registered cars in the year 2007?","select t2.unit_name from indicator_values2 t1
- left join spatialunit t2 on t1.spatialunit_id = t2.spatialunit_id
-where value=min(value) and t2.unit_type=4 and indicator_id=611 and t1.year=2007"
-"89","Which Region had the lowest share of electric vehicles within the newly registered cars in the year 2005?","select t2.unit_name from indicator_values2 t1
- left join spatialunit t2 on t1.spatialunit_id = t2.spatialunit_id
-where value=min(value) and t2.unit_type=4 and indicator_id=612 and t1.year=2005"
-"90","Which Region had the lowest number of charging stations per 1000 inhabitants in the year 2021?","select t2.unit_name from indicator_values2 t1
- left join spatialunit t2 on t1.spatialunit_id = t2.spatialunit_id
-where value=min(value) and t2.unit_type=4 and indicator_id=998 and t1.year=2021"
-"91","Which Region had the lowest number of charging stations in the year 2021?","select t2.unit_name from indicator_values2 t1
- left join spatialunit t2 on t1.spatialunit_id = t2.spatialunit_id
-where value=min(value) and t2.unit_type=4 and indicator_id=999 and t1.year=2021"
+"79","Which Region had the lowest share of people living in proximity of a busstop in the year 2000?","select s.unit_name from indicator_values2 iv
+ left join spatialunit s on iv.spatialunit_id = s.spatialunit_id
+where iv.value=min(value) and s.unit_type=4 and iv.indicator_id=385 and t1.year=2000"
+"80","Which Region had the lowest share of people living in proximity of a trainstation in the year 2015?","select s.unit_name from indicator_values2 iv
+ left join spatialunit s on iv.spatialunit_id = s.spatialunit_id
+where iv.value=min(value) and s.unit_type=4 and iv.indicator_id=386 and t1.year=2015"
+"81","Which Region had the lowest number of cars per capita in the year 2014?","select s.unit_name from indicator_values2 iv
+ left join spatialunit s on iv.spatialunit_id = s.spatialunit_id
+where iv.value=min(value) and s.unit_type=4 and iv.indicator_id=399 and t1.year=2014"
+"82","Which Region had the lowest share of people living in proximity of a trainstation or busstop in the year 2005?","select s.unit_name from indicator_values2 iv
+ left join spatialunit s on iv.spatialunit_id = s.spatialunit_id
+where iv.value=min(value) and s.unit_type=4 and iv.indicator_id=401 and t1.year=2005"
+"83","Which Region had the lowest share of public transport in traffic movements of people living in the year 2013?","select s.unit_name from indicator_values2 iv
+ left join spatialunit s on iv.spatialunit_id = s.spatialunit_id
+where iv.value=min(value) and s.unit_type=4 and iv.indicator_id=480 and t1.year=2013"
+"84","Which Region had the lowest share of motorised private transport in traffic movements of people living in the year 2016?","select s.unit_name from indicator_values2 iv
+ left join spatialunit s on iv.spatialunit_id = s.spatialunit_id
+where iv.value=min(value) and s.unit_type=4 and iv.indicator_id=481 and t1.year=2016"
+"85","Which Region had the lowest number of newly registered cars in the year 2004?","select s.unit_name from indicator_values2 iv
+ left join spatialunit s on iv.spatialunit_id = s.spatialunit_id
+where iv.value=min(value) and s.unit_type=4 and iv.indicator_id=601 and t1.year=2004"
+"86","Which Region had the lowest share of hybrid vehicles in the year 2006?","select s.unit_name from indicator_values2 iv
+ left join spatialunit s on iv.spatialunit_id = s.spatialunit_id
+where iv.value=min(value) and s.unit_type=4 and iv.indicator_id=606 and t1.year=2006"
+"87","Which Region had the lowest share of electric vehicles in the year 2016?","select s.unit_name from indicator_values2 iv
+ left join spatialunit s on iv.spatialunit_id = s.spatialunit_id
+where iv.value=min(value) and s.unit_type=4 and iv.indicator_id=607 and t1.year=2016"
+"88","Which Region had the lowest share of hybrid vehicles within the newly registered cars in the year 2010?","select s.unit_name from indicator_values2 iv
+ left join spatialunit s on iv.spatialunit_id = s.spatialunit_id
+where iv.value=min(value) and s.unit_type=4 and iv.indicator_id=611 and t1.year=2010"
+"89","Which Region had the lowest share of electric vehicles within the newly registered cars in the year 2009?","select s.unit_name from indicator_values2 iv
+ left join spatialunit s on iv.spatialunit_id = s.spatialunit_id
+where iv.value=min(value) and s.unit_type=4 and iv.indicator_id=612 and t1.year=2009"
+"90","Which Region had the lowest number of charging stations per 1000 inhabitants in the year 2021?","select s.unit_name from indicator_values2 iv
+ left join spatialunit s on iv.spatialunit_id = s.spatialunit_id
+where iv.value=min(value) and s.unit_type=4 and iv.indicator_id=998 and t1.year=2021"
+"91","Which Region had the lowest number of charging stations in the year 2021?","select s.unit_name from indicator_values2 iv
+ left join spatialunit s on iv.spatialunit_id = s.spatialunit_id
+where iv.value=min(value) and s.unit_type=4 and iv.indicator_id=999 and t1.year=2021"
