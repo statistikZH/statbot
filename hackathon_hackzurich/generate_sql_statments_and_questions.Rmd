@@ -14,10 +14,10 @@ library(tidyverse)
 Read in a dataset with indicator metadata and short descriptions which can be used to generate questions.
 
 ```{r}
-# indicators <- 
-#   read_csv("input_data/EN_INDICATORS.csv") %>% 
-#   left_join(read_csv("input_data/indicators_desc.csv"), 
-#             by=c("INDICATOR_ID"="indicator_id")) 
+indicators <-
+  read_csv("input_data/EN_INDICATORS.csv") %>%
+  left_join(read_csv("input_data/indicators_desc.csv"),
+            by=c("INDICATOR_ID"="indicator_id"))
 ```
 # Combine Datasets
 
@@ -40,7 +40,7 @@ spatial_units <- read_csv("input_data/EN_T_SPATIALUNIT.csv") %>%
 
 filtered_indicators <- gp_data %>% 
   filter(TYPE_ID==1) %>% 
-  group_by(INDICATOR_ID, short_desc, questiontype) %>% 
+  group_by(INDICATOR_ID, INDICATOR_NAME, short_desc, questiontype) %>% 
   summarize(rand_val=sample(VALUE,1), 
             rand_year=sample(YEAR,1),
             rand_mun=sample(SPATIALUNIT_ID,1)) %>% 
@@ -48,6 +48,8 @@ filtered_indicators <- gp_data %>%
   left_join(spatial_units, by=c("rand_mun"="SPATIALUNIT_ID"))
 
 indicator <- filtered_indicators$short_desc
+
+indicator_name <- filtered_indicators$INDICATOR_NAME
 
 random_value <- filtered_indicators$rand_val
 
@@ -76,32 +78,33 @@ questions_and_queries <- tibble(
                                         "Which Region had the lowest {indicator} in the year {indicator_year}?"
                                        ),
                          
-                           queries=c("select value from indicator_values2 
-                                      where indicator_id = {indicator_id} and spatialunit_id={municipality_id} 
-                                      and year=max(year)", 
+                           queries=c("select value from indicator_values2 iv
+                                      left join spatialunit s on iv.spatialunit_id = s.spatialunit_id
+                                      where iv.indicator_id = {indicator_id} and s.spatialunit_id={municipality_id} 
+                                      and year=max(year) and i.name like '{indicator_name}' and s.unit_name like '{municipality}'", 
                                      
-                                      "select t2.name from indicator_values2 t1
-                                      left join spatialunit t2 on t1.spatialunit_id = t2.spatialunit_id
-                                      where t1.indicator_id={indicator_id} and t1.value=max(value) and t1.year=max(year)",
+                                      "select s.name from indicator_values2 iv
+                                      left join spatialunit s on iv.spatialunit_id = s.spatialunit_id
+                                      where iv.indicator_id={indicator_id} and iv.value=max(value) and i.year=max(year)",
                                      
-                                      "select t2.name from indicator_values2 t1
-                                      left join spatialunit t2 on t1.spatialunit_id = t2.spatialunit_id
-                                      where t1.indicator_id={indicator_id} and t1.value=min(value) and t1.year=max(year)",
+                                      "select s.name from indicator_values2 iv
+                                      left join spatialunit s on t1.spatialunit_id = s.spatialunit_id
+                                      where iv.indicator_id={indicator_id} and iv.value=min(value) and t1.year=max(year)",
                                      
                                       "select max(value), min(value), avg(value) from indicator_values2 
                                       where indicator_id={indicator_id} and year=max(year)",
                                      
-                                      "select count(*) from indicator_values2 t1
-                                      left join spatialunit t2 on t1.spatialunit_id = t2.spatialunit_id
-                                      where t1.indicator_id={indicator_id} and t1.VALUE> {random_value}
-                                      and t2.type_id = 1 and t1.year=max(year)",
+                                      "select count(*) from indicator_values2 iv
+                                      left join spatialunit s on iv.spatialunit_id = s.spatialunit_id
+                                      where iv.indicator_id={indicator_id} and iv.VALUE> {random_value}
+                                      and s.type_id = 1 and iv.year=max(year)",
                                      
                                       "select value from indicator_values2 
                                       where indicator_id={indicator_id} and unit_type=8 and year=max(year)",
                                      
-                                      "select t2.unit_name from indicator_values2 t1
-                                      left join spatialunit t2 on t1.spatialunit_id = t2.spatialunit_id
-                                     where value=min(value) and t2.unit_type=4 and indicator_id={indicator_id} and t1.year={indicator_year}"
+                                      "select s.unit_name from indicator_values2 iv
+                                      left join spatialunit s on iv.spatialunit_id = s.spatialunit_id
+                                     where iv.value=min(value) and s.unit_type=4 and iv.indicator_id={indicator_id} and t1.year={indicator_year}"
                                       )
 
 )
