@@ -1,65 +1,65 @@
 "","question","sql"
-"1","how high is the share of people living in proximity of a busstop in Elsau?","select value from indicator_values2 iv
+"1","how high is the share of people living in proximity of a busstop in Elsau?","select iv.value from indicator_values2 iv
 join indicators i on iv.indicator_id = i.indicator_id
 join spatialunit s on iv.spatialunit_id = s.spatialunit_id
 where iv.indicator_id = 385 and s.spatialunit_id=147 
 and year=max(year) and i.name like 'Access by bus [% of inhabitants]' and s.unit_name like 'Elsau'"
-"2","how high is the share of people living in proximity of a trainstation in Stäfa?","select value from indicator_values2 iv
+"2","how high is the share of people living in proximity of a trainstation in Stäfa?","select iv.value from indicator_values2 iv
 join indicators i on iv.indicator_id = i.indicator_id
 join spatialunit s on iv.spatialunit_id = s.spatialunit_id
 where iv.indicator_id = 386 and s.spatialunit_id=113 
 and year=max(year) and i.name like 'Access by suburban train [% of inhabitants]' and s.unit_name like 'Stäfa'"
-"3","how high is the number of cars per capita in Adliswil?","select value from indicator_values2 iv
+"3","how high is the number of cars per capita in Adliswil?","select iv.value from indicator_values2 iv
 join indicators i on iv.indicator_id = i.indicator_id
 join spatialunit s on iv.spatialunit_id = s.spatialunit_id
 where iv.indicator_id = 399 and s.spatialunit_id=94 
 and year=max(year) and i.name like 'Passenger cars per 1000 inhabitants [no.]' and s.unit_name like 'Adliswil'"
-"4","how high is the share of people living in proximity of a trainstation or busstop in Rüti?","select value from indicator_values2 iv
+"4","how high is the share of people living in proximity of a trainstation or busstop in Rüti?","select iv.value from indicator_values2 iv
 join indicators i on iv.indicator_id = i.indicator_id
 join spatialunit s on iv.spatialunit_id = s.spatialunit_id
 where iv.indicator_id = 401 and s.spatialunit_id=90 
 and year=max(year) and i.name like 'Accessibility by suburban train+bus [% of inhabitants]' and s.unit_name like 'Rüti'"
-"5","how high is the share of public transport in traffic movements of people living in Lindau?","select value from indicator_values2 iv
+"5","how high is the share of public transport in traffic movements of people living in Lindau?","select iv.value from indicator_values2 iv
 join indicators i on iv.indicator_id = i.indicator_id
 join spatialunit s on iv.spatialunit_id = s.spatialunit_id
 where iv.indicator_id = 480 and s.spatialunit_id=122 
 and year=max(year) and i.name like 'public transport share (modal split) [%]' and s.unit_name like 'Lindau'"
-"6","how high is the share of motorised private transport in traffic movements of people living in Erlenbach?","select value from indicator_values2 iv
+"6","how high is the share of motorised private transport in traffic movements of people living in Erlenbach?","select iv.value from indicator_values2 iv
 join indicators i on iv.indicator_id = i.indicator_id
 join spatialunit s on iv.spatialunit_id = s.spatialunit_id
 where iv.indicator_id = 481 and s.spatialunit_id=106 
 and year=max(year) and i.name like 'MIV share (modal split) [%]' and s.unit_name like 'Erlenbach'"
-"7","how high is the number of newly registered cars in Richterswil?","select value from indicator_values2 iv
+"7","how high is the number of newly registered cars in Richterswil?","select iv.value from indicator_values2 iv
 join indicators i on iv.indicator_id = i.indicator_id
 join spatialunit s on iv.spatialunit_id = s.spatialunit_id
 where iv.indicator_id = 601 and s.spatialunit_id=101 
 and year=max(year) and i.name like 'PW new registrations per 1000 inhabitants [amount]' and s.unit_name like 'Richterswil'"
-"8","how high is the share of hybrid vehicles in Geroldswil?","select value from indicator_values2 iv
+"8","how high is the share of hybrid vehicles in Geroldswil?","select iv.value from indicator_values2 iv
 join indicators i on iv.indicator_id = i.indicator_id
 join spatialunit s on iv.spatialunit_id = s.spatialunit_id
 where iv.indicator_id = 606 and s.spatialunit_id=163 
 and year=max(year) and i.name like 'Hybrid motor cars stock [%]' and s.unit_name like 'Geroldswil'"
-"9","how high is the share of electric vehicles in Lufingen?","select value from indicator_values2 iv
+"9","how high is the share of electric vehicles in Lufingen?","select iv.value from indicator_values2 iv
 join indicators i on iv.indicator_id = i.indicator_id
 join spatialunit s on iv.spatialunit_id = s.spatialunit_id
 where iv.indicator_id = 607 and s.spatialunit_id=51 
 and year=max(year) and i.name like 'Electric motor cars stock [%]' and s.unit_name like 'Lufingen'"
-"10","how high is the share of hybrid vehicles within the newly registered cars in Wildberg?","select value from indicator_values2 iv
+"10","how high is the share of hybrid vehicles within the newly registered cars in Wildberg?","select iv.value from indicator_values2 iv
 join indicators i on iv.indicator_id = i.indicator_id
 join spatialunit s on iv.spatialunit_id = s.spatialunit_id
 where iv.indicator_id = 611 and s.spatialunit_id=128 
 and year=max(year) and i.name like 'New registrations of hybrid motor cars [%]' and s.unit_name like 'Wildberg'"
-"11","how high is the share of electric vehicles within the newly registered cars in Zell?","select value from indicator_values2 iv
+"11","how high is the share of electric vehicles within the newly registered cars in Zell?","select iv.value from indicator_values2 iv
 join indicators i on iv.indicator_id = i.indicator_id
 join spatialunit s on iv.spatialunit_id = s.spatialunit_id
 where iv.indicator_id = 612 and s.spatialunit_id=159 
 and year=max(year) and i.name like 'New registrations electric motor cars [%]' and s.unit_name like 'Zell'"
-"12","how high is the number of charging stations per 1000 inhabitants in Niederglatt?","select value from indicator_values2 iv
+"12","how high is the number of charging stations per 1000 inhabitants in Niederglatt?","select iv.value from indicator_values2 iv
 join indicators i on iv.indicator_id = i.indicator_id
 join spatialunit s on iv.spatialunit_id = s.spatialunit_id
 where iv.indicator_id = 998 and s.spatialunit_id=69 
 and year=max(year) and i.name like 'Charging stations of electronic cars per 1000 inhabitants [no.]' and s.unit_name like 'Niederglatt'"
-"13","how high is the number of charging stations in Oberembrach?","select value from indicator_values2 iv
+"13","how high is the number of charging stations in Oberembrach?","select iv.value from indicator_values2 iv
 join indicators i on iv.indicator_id = i.indicator_id
 join spatialunit s on iv.spatialunit_id = s.spatialunit_id
 where iv.indicator_id = 999 and s.spatialunit_id=53 
