@@ -78,7 +78,7 @@ questions_and_queries <- tibble(
                                         "Which Region had the lowest {indicator} in the year {indicator_year}?"
                                        ),
                          
-                           queries=c("select value from indicator_values2 iv
+                           queries=c("select iv.value from indicator_values2 iv
                                       join indicators i on iv.indicator_id = i.indicator_id
                                       join spatialunit s on iv.spatialunit_id = s.spatialunit_id
                                       where iv.indicator_id = {indicator_id} and s.spatialunit_id={municipality_id} 
@@ -94,7 +94,7 @@ questions_and_queries <- tibble(
                                       join spatialunit s on t1.spatialunit_id = s.spatialunit_id
                                       where iv.indicator_id={indicator_id} and iv.value=min(value) and t1.year=max(year) and i.name like '{indicator_name}'",
                                      
-                                      "select max(value), min(value), avg(value) from indicator_values2 
+                                      "select max(iv.value), min(iv.value), avg(iv.value) from indicator_values2 iv
                                       join indicators i on iv.indicator_id = i.indicator_id
                                       where indicator_id={indicator_id} and year=max(year) and i.name like '{indicator_name}'",
                                      
@@ -104,7 +104,7 @@ questions_and_queries <- tibble(
                                       where iv.indicator_id={indicator_id} and iv.VALUE> {random_value}
                                       and s.type_id = 1 and iv.year=max(year) and i.name like '{indicator_name}'",
                                      
-                                      "select value from indicator_values2 
+                                      "select iv.value from indicator_values2 iv
                                       join indicators i on iv.indicator_id = i.indicator_id
                                       where indicator_id={indicator_id} and unit_type=8 and year=max(year) and i.name like '{indicator_name}'",
                                      
