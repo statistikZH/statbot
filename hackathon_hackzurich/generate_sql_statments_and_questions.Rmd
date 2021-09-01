@@ -71,7 +71,7 @@ questions_and_queries <- tibble(
                                        
                                         "what are the highest, lowest and average {indicator}?",
                                        
-                                        "How many municipalities currently have a {indicator} higher than {random_value}?",
+                                        "How many municipalities have a {indicator} higher than {random_value}?",
                                        
                                         "How high is the total {indicator} in the Canton Zurich?",
                                        
@@ -97,13 +97,11 @@ questions_and_queries <- tibble(
                                       join indicators i on iv.indicator_id = i.indicator_id
                                       where i.name like '{indicator_name}'",
                                      
-                                      "select count(*) from
+                                      "select iv.year, count(*) from
                                       indicator_values2 iv
-                                      inner join (select indicator_id, value, MAX(year) 
-                                                  from indicator_values2) iv2 on iv2.indicator_id = iv.indicator_id
                                       join indicators i on iv.indicator_id = i.indicator_id
                                       join spatialunit s on iv.spatialunit_id = s.spatialunit_id
-                                      where iv.VALUE > {random_value} and s.type_id = 1 and i.name like '{indicator_name}'",
+                                      where iv.VALUE > {random_value} and s.type_id = 1 and i.name like '{indicator_name}' group by iv.year",
                                      
                                       "select iv.value from indicator_values2 iv
                                       join indicators i on iv.indicator_id = i.indicator_id
