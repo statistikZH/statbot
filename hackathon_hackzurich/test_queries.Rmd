@@ -32,7 +32,23 @@ dbWriteTable(conn, "spatialunit", spatialunit)
 queries <- read_csv("questions_queries.csv") 
 
 # run all the queries
-datalist <- purrr::map(queries$sql, ~dbGetQuery(conn, .x))
+purrr::map(queries$sql, ~dbGetQuery(conn, .x))
+
+dbGetQuery(conn, queries$sql[53])
+
+
+
 
 ```
+
+```{sql connection=conn}
+select iv.year, count(*) from
+indicator_values2 iv
+join indicators i on iv.indicator_id = i.indicator_id
+join spatialunit s on iv.spatialunit_id = s.spatialunit_id
+where iv.VALUE > 92.8 and s.type_id = 1 and i.name like 'Access by bus [% of inhabitants]'
+group by iv.year
+```
+
+
 
