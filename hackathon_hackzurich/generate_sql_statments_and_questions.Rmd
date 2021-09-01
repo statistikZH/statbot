@@ -81,7 +81,7 @@ questions_and_queries <- tibble(
                            queries=c("select iv.value from indicator_values2 iv
                                       join indicators i on iv.indicator_id = i.indicator_id
                                       join spatialunit s on iv.spatialunit_id = s.spatialunit_id
-                                      where i.name like '{indicator_name}' and s.unit_name like '{municipality}'", 
+                                      where i.name like '{indicator_name}' and s.name like '{municipality}'", 
                                      
                                       "select s.name from indicator_values2 iv
                                       join indicators i on iv.indicator_id = i.indicator_id
@@ -90,26 +90,30 @@ questions_and_queries <- tibble(
                                      
                                       "select s.name from indicator_values2 iv
                                       join indicators i on iv.indicator_id = i.indicator_id
-                                      join spatialunit s on t1.spatialunit_id = s.spatialunit_id
+                                      join spatialunit s on iv.spatialunit_id = s.spatialunit_id
                                       where i.name like '{indicator_name}'",
                                      
                                       "select max(iv.value), min(iv.value), avg(iv.value) from indicator_values2 iv
                                       join indicators i on iv.indicator_id = i.indicator_id
                                       where i.name like '{indicator_name}'",
                                      
-                                      "select count(*) from indicator_values2 iv
+                                      "select count(*) from
+                                      indicator_values2 iv
+                                      inner join (select indicator_id, value, MAX(year) 
+                                                  from indicator_values2) iv2 on iv2.indicator_id = iv.indicator_id
                                       join indicators i on iv.indicator_id = i.indicator_id
                                       join spatialunit s on iv.spatialunit_id = s.spatialunit_id
-                                      where iv.VALUE> {random_value} and s.type_id = 1 and iv.year=max(year) and i.name like '{indicator_name}'",
+                                      where iv.VALUE > {random_value} and s.type_id = 1 and i.name like '{indicator_name}'",
                                      
                                       "select iv.value from indicator_values2 iv
                                       join indicators i on iv.indicator_id = i.indicator_id
-                                      where unit_type=8 and year=max(year) and i.name like '{indicator_name}'",
+                                      join spatialunit s on iv.spatialunit_id = s.spatialunit_id
+                                      where s.type_id=8 and i.name like '{indicator_name}'",
                                      
-                                      "select s.unit_name from indicator_values2 iv
+                                      "select min(iv.value), s.name from indicator_values2 iv
                                       join indicators i on iv.indicator_id = i.indicator_id
                                       join spatialunit s on iv.spatialunit_id = s.spatialunit_id
-                                      where iv.value=min(value) and s.unit_type=4 and t1.year={indicator_year} and i.name like '{indicator_name}'"
+                                      where s.type_id=4 and iv.year={indicator_year} and i.name like '{indicator_name}'"
                                       )
 
 )
