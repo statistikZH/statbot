@@ -1,0 +1,38 @@
+---
+title: "Test SQL-Queries"
+output: html_notebook
+---
+
+```{r setup}
+library(RSQLite)
+library(readr)
+```
+
+
+# Create DB
+```{r}
+# read in csvs
+indicators<- read_csv("input_data/EN_INDICATORS.csv") 
+
+indicator_values2 <- read_csv("input_data/EN_INDICATOR_VALUES.csv") 
+
+spatialunit <- read_csv("input_data/EN_T_SPATIALUNIT.csv")
+
+#create DB
+conn <- dbConnect(RSQLite::SQLite(), "statbot.db")
+
+dbWriteTable(conn, "indicators", indicators)
+dbWriteTable(conn, "indicator_values2", indicatorvalues2)
+dbWriteTable(conn, "spatialunit", spatialunit)
+```
+
+# Test the queries
+```{r}
+# read in csv containing the queries
+queries <- read_csv("questions_queries.csv") 
+
+# run all the queries
+datalist <- purrr::map(queries$sql, ~dbGetQuery(conn, .x))
+
+```
+
