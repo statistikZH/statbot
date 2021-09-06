@@ -1,0 +1,54 @@
+---
+title: "Test SQL-Queries"
+output: html_notebook
+---
+
+```{r setup}
+library(RSQLite)
+library(readr)
+```
+
+
+# Create DB
+```{r}
+# read in csvs
+indicators<- read_csv("input_data/EN_INDICATORS.csv") 
+
+indicator_values2 <- read_csv("input_data/EN_INDICATOR_VALUES.csv") 
+
+spatialunit <- read_csv("input_data/EN_T_SPATIALUNIT.csv")
+
+#create DB
+conn <- dbConnect(RSQLite::SQLite(), "statbot.db")
+
+dbWriteTable(conn, "indicators", indicators)
+dbWriteTable(conn, "indicator_values2", indicatorvalues2)
+dbWriteTable(conn, "spatialunit", spatialunit)
+```
+
+# Test the queries
+```{r}
+# read in csv containing the queries
+queries <- read_csv("questions_queries.csv") 
+
+# run all the queries
+purrr::map(queries$sql, ~dbGetQuery(conn, .x))
+
+dbGetQuery(conn, queries$sql[53])
+
+
+
+
+```
+
+```{sql connection=conn}
+select iv.year, count(*) from
+indicator_values2 iv
+join indicators i on iv.indicator_id = i.indicator_id
+join spatialunit s on iv.spatialunit_id = s.spatialunit_id
+where iv.VALUE > 92.8 and s.type_id = 1 and i.name like 'Access by bus [% of inhabitants]'
+group by iv.year
+```
+
+
+
