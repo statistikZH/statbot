@@ -1,160 +1,199 @@
 "","question","sql"
-"1","how high is the share of people living in proximity of a busstop in Ottenbach?","select iv.value from indicator_values2 iv
+"1","how high is the share of people living in proximity of a busstop in Wangen-Brüttisellen?","select iv.value from indicator_values2 iv
 join indicators i on iv.indicator_id = i.indicator_id
 join spatialunit s on iv.spatialunit_id = s.spatialunit_id
-where i.name like 'Access by bus [% of inhabitants]' and s.name like 'Ottenbach'"
-"2","how high is the share of people living in proximity of a trainstation in Dällikon?","select iv.value from indicator_values2 iv
+where i.name like 'Access by bus [% of inhabitants]' and s.name like 'Wangen-Brüttisellen'"
+"2","how high is the share of people living in proximity of a trainstation in Wil?","select iv.value from indicator_values2 iv
 join indicators i on iv.indicator_id = i.indicator_id
 join spatialunit s on iv.spatialunit_id = s.spatialunit_id
-where i.name like 'Access by suburban train [% of inhabitants]' and s.name like 'Dällikon'"
-"3","how high is the number of cars per capita in Niederglatt?","select iv.value from indicator_values2 iv
+where i.name like 'Access by suburban train [% of inhabitants]' and s.name like 'Wil'"
+"3","how high is the number of cars per capita in Bauma?","select iv.value from indicator_values2 iv
 join indicators i on iv.indicator_id = i.indicator_id
 join spatialunit s on iv.spatialunit_id = s.spatialunit_id
-where i.name like 'Passenger cars per 1000 inhabitants [no.]' and s.name like 'Niederglatt'"
-"4","how high is the share of people living in proximity of a trainstation or busstop in Wetzikon?","select iv.value from indicator_values2 iv
+where i.name like 'Passenger cars per 1000 inhabitants [no.]' and s.name like 'Bauma'"
+"4","how high is the share of people living in proximity of a trainstation or busstop in Elgg?","select iv.value from indicator_values2 iv
 join indicators i on iv.indicator_id = i.indicator_id
 join spatialunit s on iv.spatialunit_id = s.spatialunit_id
-where i.name like 'Accessibility by suburban train+bus [% of inhabitants]' and s.name like 'Wetzikon'"
-"5","how high is the share of public transport in traffic movements of people living in Wädenswil?","select iv.value from indicator_values2 iv
+where i.name like 'Accessibility by suburban train+bus [% of inhabitants]' and s.name like 'Elgg'"
+"5","how high is the share of public transport in traffic movements of people living in Winkel?","select iv.value from indicator_values2 iv
 join indicators i on iv.indicator_id = i.indicator_id
 join spatialunit s on iv.spatialunit_id = s.spatialunit_id
-where i.name like 'public transport share (modal split) [%]' and s.name like 'Wädenswil'"
-"6","how high is the share of motorised private transport in traffic movements of people living in Kleinandelfingen?","select iv.value from indicator_values2 iv
+where i.name like 'public transport share (modal split) [%]' and s.name like 'Winkel'"
+"6","how high is the share of motorised private transport in traffic movements of people living in Bassersdorf?","select iv.value from indicator_values2 iv
 join indicators i on iv.indicator_id = i.indicator_id
 join spatialunit s on iv.spatialunit_id = s.spatialunit_id
-where i.name like 'MIV share (modal split) [%]' and s.name like 'Kleinandelfingen'"
-"7","how high is the number of newly registered cars in Steinmaur?","select iv.value from indicator_values2 iv
+where i.name like 'MIV share (modal split) [%]' and s.name like 'Bassersdorf'"
+"7","how high is the number of newly registered cars in Winterthur?","select iv.value from indicator_values2 iv
 join indicators i on iv.indicator_id = i.indicator_id
 join spatialunit s on iv.spatialunit_id = s.spatialunit_id
-where i.name like 'PW new registrations per 1000 inhabitants [amount]' and s.name like 'Steinmaur'"
-"8","how high is the share of hybrid vehicles in Neerach?","select iv.value from indicator_values2 iv
+where i.name like 'PW new registrations per 1000 inhabitants [amount]' and s.name like 'Winterthur'"
+"8","how high is the share of hybrid vehicles in Horgen?","select iv.value from indicator_values2 iv
 join indicators i on iv.indicator_id = i.indicator_id
 join spatialunit s on iv.spatialunit_id = s.spatialunit_id
-where i.name like 'Hybrid motor cars stock [%]' and s.name like 'Neerach'"
-"9","how high is the share of electric vehicles in Fällanden?","select iv.value from indicator_values2 iv
+where i.name like 'Hybrid motor cars stock [%]' and s.name like 'Horgen'"
+"9","how high is the share of electric vehicles in Mönchaltorf?","select iv.value from indicator_values2 iv
 join indicators i on iv.indicator_id = i.indicator_id
 join spatialunit s on iv.spatialunit_id = s.spatialunit_id
-where i.name like 'Electric motor cars stock [%]' and s.name like 'Fällanden'"
-"10","how high is the share of hybrid vehicles within the newly registered cars in Niederhasli?","select iv.value from indicator_values2 iv
+where i.name like 'Electric motor cars stock [%]' and s.name like 'Mönchaltorf'"
+"10","how high is the share of hybrid vehicles within the newly registered cars in Oberengstringen?","select iv.value from indicator_values2 iv
 join indicators i on iv.indicator_id = i.indicator_id
 join spatialunit s on iv.spatialunit_id = s.spatialunit_id
-where i.name like 'New registrations of hybrid motor cars [%]' and s.name like 'Niederhasli'"
-"11","how high is the share of electric vehicles within the newly registered cars in Fehraltorf?","select iv.value from indicator_values2 iv
+where i.name like 'New registrations of hybrid motor cars [%]' and s.name like 'Oberengstringen'"
+"11","how high is the share of electric vehicles within the newly registered cars in Kloten?","select iv.value from indicator_values2 iv
 join indicators i on iv.indicator_id = i.indicator_id
 join spatialunit s on iv.spatialunit_id = s.spatialunit_id
-where i.name like 'New registrations electric motor cars [%]' and s.name like 'Fehraltorf'"
-"12","how high is the number of charging stations per 1000 inhabitants in Schwerzenbach?","select iv.value from indicator_values2 iv
+where i.name like 'New registrations electric motor cars [%]' and s.name like 'Kloten'"
+"12","how high is the number of charging stations per 1000 inhabitants in Bassersdorf?","select iv.value from indicator_values2 iv
 join indicators i on iv.indicator_id = i.indicator_id
 join spatialunit s on iv.spatialunit_id = s.spatialunit_id
-where i.name like 'Charging stations of electronic cars per 1000 inhabitants [no.]' and s.name like 'Schwerzenbach'"
-"13","how high is the number of charging stations in Adliswil?","select iv.value from indicator_values2 iv
+where i.name like 'Charging stations of electronic cars per 1000 inhabitants [no.]' and s.name like 'Bassersdorf'"
+"13","how high is the number of charging stations in Nürensdorf?","select iv.value from indicator_values2 iv
 join indicators i on iv.indicator_id = i.indicator_id
 join spatialunit s on iv.spatialunit_id = s.spatialunit_id
-where i.name like 'Charging stations of electronic cars [no.]' and s.name like 'Adliswil'"
+where i.name like 'Charging stations of electronic cars [no.]' and s.name like 'Nürensdorf'"
 "14","which municipality has the highest share of people living in proximity of a busstop?","select s.name from indicator_values2 iv
-join indicators i on iv.indicator_id = i.indicator_id
-join spatialunit s on iv.spatialunit_id = s.spatialunit_id
-where i.name like 'Access by bus [% of inhabitants]'"
+                                      join indicators i on iv.indicator_id = i.indicator_id
+                                      join spatialunit s on iv.spatialunit_id = s.spatialunit_id
+                                      where i.name like 'Access by bus [% of inhabitants]'
+                                     order by iv.value desc
+limit 1"
 "15","which municipality has the highest share of people living in proximity of a trainstation?","select s.name from indicator_values2 iv
-join indicators i on iv.indicator_id = i.indicator_id
-join spatialunit s on iv.spatialunit_id = s.spatialunit_id
-where i.name like 'Access by suburban train [% of inhabitants]'"
+                                      join indicators i on iv.indicator_id = i.indicator_id
+                                      join spatialunit s on iv.spatialunit_id = s.spatialunit_id
+                                      where i.name like 'Access by suburban train [% of inhabitants]'
+                                     order by iv.value desc
+limit 1"
 "16","which municipality has the highest number of cars per capita?","select s.name from indicator_values2 iv
-join indicators i on iv.indicator_id = i.indicator_id
-join spatialunit s on iv.spatialunit_id = s.spatialunit_id
-where i.name like 'Passenger cars per 1000 inhabitants [no.]'"
+                                      join indicators i on iv.indicator_id = i.indicator_id
+                                      join spatialunit s on iv.spatialunit_id = s.spatialunit_id
+                                      where i.name like 'Passenger cars per 1000 inhabitants [no.]'
+                                     order by iv.value desc
+limit 1"
 "17","which municipality has the highest share of people living in proximity of a trainstation or busstop?","select s.name from indicator_values2 iv
-join indicators i on iv.indicator_id = i.indicator_id
-join spatialunit s on iv.spatialunit_id = s.spatialunit_id
-where i.name like 'Accessibility by suburban train+bus [% of inhabitants]'"
+                                      join indicators i on iv.indicator_id = i.indicator_id
+                                      join spatialunit s on iv.spatialunit_id = s.spatialunit_id
+                                      where i.name like 'Accessibility by suburban train+bus [% of inhabitants]'
+                                     order by iv.value desc
+limit 1"
 "18","which municipality has the highest share of public transport in traffic movements of people living?","select s.name from indicator_values2 iv
-join indicators i on iv.indicator_id = i.indicator_id
-join spatialunit s on iv.spatialunit_id = s.spatialunit_id
-where i.name like 'public transport share (modal split) [%]'"
+                                      join indicators i on iv.indicator_id = i.indicator_id
+                                      join spatialunit s on iv.spatialunit_id = s.spatialunit_id
+                                      where i.name like 'public transport share (modal split) [%]'
+                                     order by iv.value desc
+limit 1"
 "19","which municipality has the highest share of motorised private transport in traffic movements of people living?","select s.name from indicator_values2 iv
-join indicators i on iv.indicator_id = i.indicator_id
-join spatialunit s on iv.spatialunit_id = s.spatialunit_id
-where i.name like 'MIV share (modal split) [%]'"
+                                      join indicators i on iv.indicator_id = i.indicator_id
+                                      join spatialunit s on iv.spatialunit_id = s.spatialunit_id
+                                      where i.name like 'MIV share (modal split) [%]'
+                                     order by iv.value desc
+limit 1"
 "20","which municipality has the highest number of newly registered cars?","select s.name from indicator_values2 iv
-join indicators i on iv.indicator_id = i.indicator_id
-join spatialunit s on iv.spatialunit_id = s.spatialunit_id
-where i.name like 'PW new registrations per 1000 inhabitants [amount]'"
+                                      join indicators i on iv.indicator_id = i.indicator_id
+                                      join spatialunit s on iv.spatialunit_id = s.spatialunit_id
+                                      where i.name like 'PW new registrations per 1000 inhabitants [amount]'
+                                     order by iv.value desc
+limit 1"
 "21","which municipality has the highest share of hybrid vehicles?","select s.name from indicator_values2 iv
-join indicators i on iv.indicator_id = i.indicator_id
-join spatialunit s on iv.spatialunit_id = s.spatialunit_id
-where i.name like 'Hybrid motor cars stock [%]'"
+                                      join indicators i on iv.indicator_id = i.indicator_id
+                                      join spatialunit s on iv.spatialunit_id = s.spatialunit_id
+                                      where i.name like 'Hybrid motor cars stock [%]'
+                                     order by iv.value desc
+limit 1"
 "22","which municipality has the highest share of electric vehicles?","select s.name from indicator_values2 iv
-join indicators i on iv.indicator_id = i.indicator_id
-join spatialunit s on iv.spatialunit_id = s.spatialunit_id
-where i.name like 'Electric motor cars stock [%]'"
+                                      join indicators i on iv.indicator_id = i.indicator_id
+                                      join spatialunit s on iv.spatialunit_id = s.spatialunit_id
+                                      where i.name like 'Electric motor cars stock [%]'
+                                     order by iv.value desc
+limit 1"
 "23","which municipality has the highest share of hybrid vehicles within the newly registered cars?","select s.name from indicator_values2 iv
-join indicators i on iv.indicator_id = i.indicator_id
-join spatialunit s on iv.spatialunit_id = s.spatialunit_id
-where i.name like 'New registrations of hybrid motor cars [%]'"
+                                      join indicators i on iv.indicator_id = i.indicator_id
+                                      join spatialunit s on iv.spatialunit_id = s.spatialunit_id
+                                      where i.name like 'New registrations of hybrid motor cars [%]'
+                                     order by iv.value desc
+limit 1"
 "24","which municipality has the highest share of electric vehicles within the newly registered cars?","select s.name from indicator_values2 iv
-join indicators i on iv.indicator_id = i.indicator_id
-join spatialunit s on iv.spatialunit_id = s.spatialunit_id
-where i.name like 'New registrations electric motor cars [%]'"
+                                      join indicators i on iv.indicator_id = i.indicator_id
+                                      join spatialunit s on iv.spatialunit_id = s.spatialunit_id
+                                      where i.name like 'New registrations electric motor cars [%]'
+                                     order by iv.value desc
+limit 1"
 "25","which municipality has the highest number of charging stations per 1000 inhabitants?","select s.name from indicator_values2 iv
-join indicators i on iv.indicator_id = i.indicator_id
-join spatialunit s on iv.spatialunit_id = s.spatialunit_id
-where i.name like 'Charging stations of electronic cars per 1000 inhabitants [no.]'"
+                                      join indicators i on iv.indicator_id = i.indicator_id
+                                      join spatialunit s on iv.spatialunit_id = s.spatialunit_id
+                                      where i.name like 'Charging stations of electronic cars per 1000 inhabitants [no.]'
+                                     order by iv.value desc
+limit 1"
 "26","which municipality has the highest number of charging stations?","select s.name from indicator_values2 iv
-join indicators i on iv.indicator_id = i.indicator_id
-join spatialunit s on iv.spatialunit_id = s.spatialunit_id
-where i.name like 'Charging stations of electronic cars [no.]'"
+                                      join indicators i on iv.indicator_id = i.indicator_id
+                                      join spatialunit s on iv.spatialunit_id = s.spatialunit_id
+                                      where i.name like 'Charging stations of electronic cars [no.]'
+                                     order by iv.value desc
+limit 1"
 "27","Which municipality has the minimum share of people living in proximity of a busstop?","select s.name from indicator_values2 iv
-join indicators i on iv.indicator_id = i.indicator_id
-join spatialunit s on iv.spatialunit_id = s.spatialunit_id
-where i.name like 'Access by bus [% of inhabitants]'"
+                                      join indicators i on iv.indicator_id = i.indicator_id
+                                      join spatialunit s on iv.spatialunit_id = s.spatialunit_id
+                                      where i.name like 'Access by bus [% of inhabitants]' order by iv.value asc
+limit 1"
 "28","Which municipality has the minimum share of people living in proximity of a trainstation?","select s.name from indicator_values2 iv
-join indicators i on iv.indicator_id = i.indicator_id
-join spatialunit s on iv.spatialunit_id = s.spatialunit_id
-where i.name like 'Access by suburban train [% of inhabitants]'"
+                                      join indicators i on iv.indicator_id = i.indicator_id
+                                      join spatialunit s on iv.spatialunit_id = s.spatialunit_id
+                                      where i.name like 'Access by suburban train [% of inhabitants]' order by iv.value asc
+limit 1"
 "29","Which municipality has the minimum number of cars per capita?","select s.name from indicator_values2 iv
-join indicators i on iv.indicator_id = i.indicator_id
-join spatialunit s on iv.spatialunit_id = s.spatialunit_id
-where i.name like 'Passenger cars per 1000 inhabitants [no.]'"
+                                      join indicators i on iv.indicator_id = i.indicator_id
+                                      join spatialunit s on iv.spatialunit_id = s.spatialunit_id
+                                      where i.name like 'Passenger cars per 1000 inhabitants [no.]' order by iv.value asc
+limit 1"
 "30","Which municipality has the minimum share of people living in proximity of a trainstation or busstop?","select s.name from indicator_values2 iv
-join indicators i on iv.indicator_id = i.indicator_id
-join spatialunit s on iv.spatialunit_id = s.spatialunit_id
-where i.name like 'Accessibility by suburban train+bus [% of inhabitants]'"
+                                      join indicators i on iv.indicator_id = i.indicator_id
+                                      join spatialunit s on iv.spatialunit_id = s.spatialunit_id
+                                      where i.name like 'Accessibility by suburban train+bus [% of inhabitants]' order by iv.value asc
+limit 1"
 "31","Which municipality has the minimum share of public transport in traffic movements of people living?","select s.name from indicator_values2 iv
-join indicators i on iv.indicator_id = i.indicator_id
-join spatialunit s on iv.spatialunit_id = s.spatialunit_id
-where i.name like 'public transport share (modal split) [%]'"
+                                      join indicators i on iv.indicator_id = i.indicator_id
+                                      join spatialunit s on iv.spatialunit_id = s.spatialunit_id
+                                      where i.name like 'public transport share (modal split) [%]' order by iv.value asc
+limit 1"
 "32","Which municipality has the minimum share of motorised private transport in traffic movements of people living?","select s.name from indicator_values2 iv
-join indicators i on iv.indicator_id = i.indicator_id
-join spatialunit s on iv.spatialunit_id = s.spatialunit_id
-where i.name like 'MIV share (modal split) [%]'"
+                                      join indicators i on iv.indicator_id = i.indicator_id
+                                      join spatialunit s on iv.spatialunit_id = s.spatialunit_id
+                                      where i.name like 'MIV share (modal split) [%]' order by iv.value asc
+limit 1"
 "33","Which municipality has the minimum number of newly registered cars?","select s.name from indicator_values2 iv
-join indicators i on iv.indicator_id = i.indicator_id
-join spatialunit s on iv.spatialunit_id = s.spatialunit_id
-where i.name like 'PW new registrations per 1000 inhabitants [amount]'"
+                                      join indicators i on iv.indicator_id = i.indicator_id
+                                      join spatialunit s on iv.spatialunit_id = s.spatialunit_id
+                                      where i.name like 'PW new registrations per 1000 inhabitants [amount]' order by iv.value asc
+limit 1"
 "34","Which municipality has the minimum share of hybrid vehicles?","select s.name from indicator_values2 iv
-join indicators i on iv.indicator_id = i.indicator_id
-join spatialunit s on iv.spatialunit_id = s.spatialunit_id
-where i.name like 'Hybrid motor cars stock [%]'"
+                                      join indicators i on iv.indicator_id = i.indicator_id
+                                      join spatialunit s on iv.spatialunit_id = s.spatialunit_id
+                                      where i.name like 'Hybrid motor cars stock [%]' order by iv.value asc
+limit 1"
 "35","Which municipality has the minimum share of electric vehicles?","select s.name from indicator_values2 iv
-join indicators i on iv.indicator_id = i.indicator_id
-join spatialunit s on iv.spatialunit_id = s.spatialunit_id
-where i.name like 'Electric motor cars stock [%]'"
+                                      join indicators i on iv.indicator_id = i.indicator_id
+                                      join spatialunit s on iv.spatialunit_id = s.spatialunit_id
+                                      where i.name like 'Electric motor cars stock [%]' order by iv.value asc
+limit 1"
 "36","Which municipality has the minimum share of hybrid vehicles within the newly registered cars?","select s.name from indicator_values2 iv
-join indicators i on iv.indicator_id = i.indicator_id
-join spatialunit s on iv.spatialunit_id = s.spatialunit_id
-where i.name like 'New registrations of hybrid motor cars [%]'"
+                                      join indicators i on iv.indicator_id = i.indicator_id
+                                      join spatialunit s on iv.spatialunit_id = s.spatialunit_id
+                                      where i.name like 'New registrations of hybrid motor cars [%]' order by iv.value asc
+limit 1"
 "37","Which municipality has the minimum share of electric vehicles within the newly registered cars?","select s.name from indicator_values2 iv
-join indicators i on iv.indicator_id = i.indicator_id
-join spatialunit s on iv.spatialunit_id = s.spatialunit_id
-where i.name like 'New registrations electric motor cars [%]'"
+                                      join indicators i on iv.indicator_id = i.indicator_id
+                                      join spatialunit s on iv.spatialunit_id = s.spatialunit_id
+                                      where i.name like 'New registrations electric motor cars [%]' order by iv.value asc
+limit 1"
 "38","Which municipality has the minimum number of charging stations per 1000 inhabitants?","select s.name from indicator_values2 iv
-join indicators i on iv.indicator_id = i.indicator_id
-join spatialunit s on iv.spatialunit_id = s.spatialunit_id
-where i.name like 'Charging stations of electronic cars per 1000 inhabitants [no.]'"
+                                      join indicators i on iv.indicator_id = i.indicator_id
+                                      join spatialunit s on iv.spatialunit_id = s.spatialunit_id
+                                      where i.name like 'Charging stations of electronic cars per 1000 inhabitants [no.]' order by iv.value asc
+limit 1"
 "39","Which municipality has the minimum number of charging stations?","select s.name from indicator_values2 iv
-join indicators i on iv.indicator_id = i.indicator_id
-join spatialunit s on iv.spatialunit_id = s.spatialunit_id
-where i.name like 'Charging stations of electronic cars [no.]'"
+                                      join indicators i on iv.indicator_id = i.indicator_id
+                                      join spatialunit s on iv.spatialunit_id = s.spatialunit_id
+                                      where i.name like 'Charging stations of electronic cars [no.]' order by iv.value asc
+limit 1"
 "40","what are the highest, lowest and average share of people living in proximity of a busstop?","select max(iv.value), min(iv.value), avg(iv.value) from indicator_values2 iv
 join indicators i on iv.indicator_id = i.indicator_id
 where i.name like 'Access by bus [% of inhabitants]'"
@@ -194,71 +233,71 @@ where i.name like 'Charging stations of electronic cars per 1000 inhabitants [no
 "52","what are the highest, lowest and average number of charging stations?","select max(iv.value), min(iv.value), avg(iv.value) from indicator_values2 iv
 join indicators i on iv.indicator_id = i.indicator_id
 where i.name like 'Charging stations of electronic cars [no.]'"
-"53","How many municipalities have a share of people living in proximity of a busstop higher than 3.8?","select iv.year, count(*) from
+"53","How many municipalities have a share of people living in proximity of a busstop higher than 45?","select iv.year, count(*) from
 indicator_values2 iv
 join indicators i on iv.indicator_id = i.indicator_id
 join spatialunit s on iv.spatialunit_id = s.spatialunit_id
-where iv.VALUE > 3.8 and s.type_id = 1 and i.name like 'Access by bus [% of inhabitants]' group by iv.year"
-"54","How many municipalities have a share of people living in proximity of a trainstation higher than 0?","select iv.year, count(*) from
+where iv.VALUE > 45 and s.type_id = 1 and i.name like 'Access by bus [% of inhabitants]' group by iv.year"
+"54","How many municipalities have a share of people living in proximity of a trainstation higher than 7.1?","select iv.year, count(*) from
 indicator_values2 iv
 join indicators i on iv.indicator_id = i.indicator_id
 join spatialunit s on iv.spatialunit_id = s.spatialunit_id
-where iv.VALUE > 0 and s.type_id = 1 and i.name like 'Access by suburban train [% of inhabitants]' group by iv.year"
-"55","How many municipalities have a number of cars per capita higher than 543.2?","select iv.year, count(*) from
+where iv.VALUE > 7.1 and s.type_id = 1 and i.name like 'Access by suburban train [% of inhabitants]' group by iv.year"
+"55","How many municipalities have a number of cars per capita higher than 569.7?","select iv.year, count(*) from
 indicator_values2 iv
 join indicators i on iv.indicator_id = i.indicator_id
 join spatialunit s on iv.spatialunit_id = s.spatialunit_id
-where iv.VALUE > 543.2 and s.type_id = 1 and i.name like 'Passenger cars per 1000 inhabitants [no.]' group by iv.year"
-"56","How many municipalities have a share of people living in proximity of a trainstation or busstop higher than 0.1?","select iv.year, count(*) from
+where iv.VALUE > 569.7 and s.type_id = 1 and i.name like 'Passenger cars per 1000 inhabitants [no.]' group by iv.year"
+"56","How many municipalities have a share of people living in proximity of a trainstation or busstop higher than 34.1?","select iv.year, count(*) from
 indicator_values2 iv
 join indicators i on iv.indicator_id = i.indicator_id
 join spatialunit s on iv.spatialunit_id = s.spatialunit_id
-where iv.VALUE > 0.1 and s.type_id = 1 and i.name like 'Accessibility by suburban train+bus [% of inhabitants]' group by iv.year"
-"57","How many municipalities have a share of public transport in traffic movements of people living higher than 17?","select iv.year, count(*) from
+where iv.VALUE > 34.1 and s.type_id = 1 and i.name like 'Accessibility by suburban train+bus [% of inhabitants]' group by iv.year"
+"57","How many municipalities have a share of public transport in traffic movements of people living higher than 18?","select iv.year, count(*) from
 indicator_values2 iv
 join indicators i on iv.indicator_id = i.indicator_id
 join spatialunit s on iv.spatialunit_id = s.spatialunit_id
-where iv.VALUE > 17 and s.type_id = 1 and i.name like 'public transport share (modal split) [%]' group by iv.year"
-"58","How many municipalities have a share of motorised private transport in traffic movements of people living higher than 90?","select iv.year, count(*) from
+where iv.VALUE > 18 and s.type_id = 1 and i.name like 'public transport share (modal split) [%]' group by iv.year"
+"58","How many municipalities have a share of motorised private transport in traffic movements of people living higher than 86?","select iv.year, count(*) from
 indicator_values2 iv
 join indicators i on iv.indicator_id = i.indicator_id
 join spatialunit s on iv.spatialunit_id = s.spatialunit_id
-where iv.VALUE > 90 and s.type_id = 1 and i.name like 'MIV share (modal split) [%]' group by iv.year"
-"59","How many municipalities have a number of newly registered cars higher than 165.7?","select iv.year, count(*) from
+where iv.VALUE > 86 and s.type_id = 1 and i.name like 'MIV share (modal split) [%]' group by iv.year"
+"59","How many municipalities have a number of newly registered cars higher than 37.9?","select iv.year, count(*) from
 indicator_values2 iv
 join indicators i on iv.indicator_id = i.indicator_id
 join spatialunit s on iv.spatialunit_id = s.spatialunit_id
-where iv.VALUE > 165.7 and s.type_id = 1 and i.name like 'PW new registrations per 1000 inhabitants [amount]' group by iv.year"
-"60","How many municipalities have a share of hybrid vehicles higher than 0.4?","select iv.year, count(*) from
+where iv.VALUE > 37.9 and s.type_id = 1 and i.name like 'PW new registrations per 1000 inhabitants [amount]' group by iv.year"
+"60","How many municipalities have a share of hybrid vehicles higher than 0?","select iv.year, count(*) from
 indicator_values2 iv
 join indicators i on iv.indicator_id = i.indicator_id
 join spatialunit s on iv.spatialunit_id = s.spatialunit_id
-where iv.VALUE > 0.4 and s.type_id = 1 and i.name like 'Hybrid motor cars stock [%]' group by iv.year"
-"61","How many municipalities have a share of electric vehicles higher than 0?","select iv.year, count(*) from
+where iv.VALUE > 0 and s.type_id = 1 and i.name like 'Hybrid motor cars stock [%]' group by iv.year"
+"61","How many municipalities have a share of electric vehicles higher than 1?","select iv.year, count(*) from
 indicator_values2 iv
 join indicators i on iv.indicator_id = i.indicator_id
 join spatialunit s on iv.spatialunit_id = s.spatialunit_id
-where iv.VALUE > 0 and s.type_id = 1 and i.name like 'Electric motor cars stock [%]' group by iv.year"
-"62","How many municipalities have a share of hybrid vehicles within the newly registered cars higher than 0?","select iv.year, count(*) from
+where iv.VALUE > 1 and s.type_id = 1 and i.name like 'Electric motor cars stock [%]' group by iv.year"
+"62","How many municipalities have a share of hybrid vehicles within the newly registered cars higher than 4.6?","select iv.year, count(*) from
 indicator_values2 iv
 join indicators i on iv.indicator_id = i.indicator_id
 join spatialunit s on iv.spatialunit_id = s.spatialunit_id
-where iv.VALUE > 0 and s.type_id = 1 and i.name like 'New registrations of hybrid motor cars [%]' group by iv.year"
-"63","How many municipalities have a share of electric vehicles within the newly registered cars higher than 2.7?","select iv.year, count(*) from
+where iv.VALUE > 4.6 and s.type_id = 1 and i.name like 'New registrations of hybrid motor cars [%]' group by iv.year"
+"63","How many municipalities have a share of electric vehicles within the newly registered cars higher than 0?","select iv.year, count(*) from
 indicator_values2 iv
 join indicators i on iv.indicator_id = i.indicator_id
 join spatialunit s on iv.spatialunit_id = s.spatialunit_id
-where iv.VALUE > 2.7 and s.type_id = 1 and i.name like 'New registrations electric motor cars [%]' group by iv.year"
-"64","How many municipalities have a number of charging stations per 1000 inhabitants higher than 0.579374275782155?","select iv.year, count(*) from
+where iv.VALUE > 0 and s.type_id = 1 and i.name like 'New registrations electric motor cars [%]' group by iv.year"
+"64","How many municipalities have a number of charging stations per 1000 inhabitants higher than 0?","select iv.year, count(*) from
 indicator_values2 iv
 join indicators i on iv.indicator_id = i.indicator_id
 join spatialunit s on iv.spatialunit_id = s.spatialunit_id
-where iv.VALUE > 0.579374275782155 and s.type_id = 1 and i.name like 'Charging stations of electronic cars per 1000 inhabitants [no.]' group by iv.year"
-"65","How many municipalities have a number of charging stations higher than 1?","select iv.year, count(*) from
+where iv.VALUE > 0 and s.type_id = 1 and i.name like 'Charging stations of electronic cars per 1000 inhabitants [no.]' group by iv.year"
+"65","How many municipalities have a number of charging stations higher than 12?","select iv.year, count(*) from
 indicator_values2 iv
 join indicators i on iv.indicator_id = i.indicator_id
 join spatialunit s on iv.spatialunit_id = s.spatialunit_id
-where iv.VALUE > 1 and s.type_id = 1 and i.name like 'Charging stations of electronic cars [no.]' group by iv.year"
+where iv.VALUE > 12 and s.type_id = 1 and i.name like 'Charging stations of electronic cars [no.]' group by iv.year"
 "66","How high is the total share of people living in proximity of a busstop in the Canton Zurich?","select iv.value from indicator_values2 iv
 join indicators i on iv.indicator_id = i.indicator_id
 join spatialunit s on iv.spatialunit_id = s.spatialunit_id
@@ -311,50 +350,50 @@ where s.type_id=8 and i.name like 'Charging stations of electronic cars per 1000
 join indicators i on iv.indicator_id = i.indicator_id
 join spatialunit s on iv.spatialunit_id = s.spatialunit_id
 where s.type_id=8 and i.name like 'Charging stations of electronic cars [no.]'"
-"79","Which Region had the lowest share of people living in proximity of a busstop in the year 2007?","select min(iv.value), s.name from indicator_values2 iv
+"79","Which Region had the lowest share of people living in proximity of a busstop in the year 2012?","select min(iv.value), s.name from indicator_values2 iv
 join indicators i on iv.indicator_id = i.indicator_id
 join spatialunit s on iv.spatialunit_id = s.spatialunit_id
-where s.type_id=4 and iv.year=2007 and i.name like 'Access by bus [% of inhabitants]'"
-"80","Which Region had the lowest share of people living in proximity of a trainstation in the year 2010?","select min(iv.value), s.name from indicator_values2 iv
+where s.type_id=4 and iv.year=2012 and i.name like 'Access by bus [% of inhabitants]'"
+"80","Which Region had the lowest share of people living in proximity of a trainstation in the year 2014?","select min(iv.value), s.name from indicator_values2 iv
 join indicators i on iv.indicator_id = i.indicator_id
 join spatialunit s on iv.spatialunit_id = s.spatialunit_id
-where s.type_id=4 and iv.year=2010 and i.name like 'Access by suburban train [% of inhabitants]'"
-"81","Which Region had the lowest number of cars per capita in the year 2005?","select min(iv.value), s.name from indicator_values2 iv
+where s.type_id=4 and iv.year=2014 and i.name like 'Access by suburban train [% of inhabitants]'"
+"81","Which Region had the lowest number of cars per capita in the year 2009?","select min(iv.value), s.name from indicator_values2 iv
 join indicators i on iv.indicator_id = i.indicator_id
 join spatialunit s on iv.spatialunit_id = s.spatialunit_id
-where s.type_id=4 and iv.year=2005 and i.name like 'Passenger cars per 1000 inhabitants [no.]'"
-"82","Which Region had the lowest share of people living in proximity of a trainstation or busstop in the year 2010?","select min(iv.value), s.name from indicator_values2 iv
+where s.type_id=4 and iv.year=2009 and i.name like 'Passenger cars per 1000 inhabitants [no.]'"
+"82","Which Region had the lowest share of people living in proximity of a trainstation or busstop in the year 2011?","select min(iv.value), s.name from indicator_values2 iv
 join indicators i on iv.indicator_id = i.indicator_id
 join spatialunit s on iv.spatialunit_id = s.spatialunit_id
-where s.type_id=4 and iv.year=2010 and i.name like 'Accessibility by suburban train+bus [% of inhabitants]'"
-"83","Which Region had the lowest share of public transport in traffic movements of people living in the year 2013?","select min(iv.value), s.name from indicator_values2 iv
+where s.type_id=4 and iv.year=2011 and i.name like 'Accessibility by suburban train+bus [% of inhabitants]'"
+"83","Which Region had the lowest share of public transport in traffic movements of people living in the year 2018?","select min(iv.value), s.name from indicator_values2 iv
 join indicators i on iv.indicator_id = i.indicator_id
 join spatialunit s on iv.spatialunit_id = s.spatialunit_id
-where s.type_id=4 and iv.year=2013 and i.name like 'public transport share (modal split) [%]'"
-"84","Which Region had the lowest share of motorised private transport in traffic movements of people living in the year 2016?","select min(iv.value), s.name from indicator_values2 iv
+where s.type_id=4 and iv.year=2018 and i.name like 'public transport share (modal split) [%]'"
+"84","Which Region had the lowest share of motorised private transport in traffic movements of people living in the year 2018?","select min(iv.value), s.name from indicator_values2 iv
 join indicators i on iv.indicator_id = i.indicator_id
 join spatialunit s on iv.spatialunit_id = s.spatialunit_id
-where s.type_id=4 and iv.year=2016 and i.name like 'MIV share (modal split) [%]'"
-"85","Which Region had the lowest number of newly registered cars in the year 2012?","select min(iv.value), s.name from indicator_values2 iv
+where s.type_id=4 and iv.year=2018 and i.name like 'MIV share (modal split) [%]'"
+"85","Which Region had the lowest number of newly registered cars in the year 2015?","select min(iv.value), s.name from indicator_values2 iv
 join indicators i on iv.indicator_id = i.indicator_id
 join spatialunit s on iv.spatialunit_id = s.spatialunit_id
-where s.type_id=4 and iv.year=2012 and i.name like 'PW new registrations per 1000 inhabitants [amount]'"
-"86","Which Region had the lowest share of hybrid vehicles in the year 2020?","select min(iv.value), s.name from indicator_values2 iv
+where s.type_id=4 and iv.year=2015 and i.name like 'PW new registrations per 1000 inhabitants [amount]'"
+"86","Which Region had the lowest share of hybrid vehicles in the year 2012?","select min(iv.value), s.name from indicator_values2 iv
 join indicators i on iv.indicator_id = i.indicator_id
 join spatialunit s on iv.spatialunit_id = s.spatialunit_id
-where s.type_id=4 and iv.year=2020 and i.name like 'Hybrid motor cars stock [%]'"
-"87","Which Region had the lowest share of electric vehicles in the year 2015?","select min(iv.value), s.name from indicator_values2 iv
+where s.type_id=4 and iv.year=2012 and i.name like 'Hybrid motor cars stock [%]'"
+"87","Which Region had the lowest share of electric vehicles in the year 2004?","select min(iv.value), s.name from indicator_values2 iv
 join indicators i on iv.indicator_id = i.indicator_id
 join spatialunit s on iv.spatialunit_id = s.spatialunit_id
-where s.type_id=4 and iv.year=2015 and i.name like 'Electric motor cars stock [%]'"
-"88","Which Region had the lowest share of hybrid vehicles within the newly registered cars in the year 2019?","select min(iv.value), s.name from indicator_values2 iv
+where s.type_id=4 and iv.year=2004 and i.name like 'Electric motor cars stock [%]'"
+"88","Which Region had the lowest share of hybrid vehicles within the newly registered cars in the year 2006?","select min(iv.value), s.name from indicator_values2 iv
 join indicators i on iv.indicator_id = i.indicator_id
 join spatialunit s on iv.spatialunit_id = s.spatialunit_id
-where s.type_id=4 and iv.year=2019 and i.name like 'New registrations of hybrid motor cars [%]'"
-"89","Which Region had the lowest share of electric vehicles within the newly registered cars in the year 2002?","select min(iv.value), s.name from indicator_values2 iv
+where s.type_id=4 and iv.year=2006 and i.name like 'New registrations of hybrid motor cars [%]'"
+"89","Which Region had the lowest share of electric vehicles within the newly registered cars in the year 2015?","select min(iv.value), s.name from indicator_values2 iv
 join indicators i on iv.indicator_id = i.indicator_id
 join spatialunit s on iv.spatialunit_id = s.spatialunit_id
-where s.type_id=4 and iv.year=2002 and i.name like 'New registrations electric motor cars [%]'"
+where s.type_id=4 and iv.year=2015 and i.name like 'New registrations electric motor cars [%]'"
 "90","Which Region had the lowest number of charging stations per 1000 inhabitants in the year 2021?","select min(iv.value), s.name from indicator_values2 iv
 join indicators i on iv.indicator_id = i.indicator_id
 join spatialunit s on iv.spatialunit_id = s.spatialunit_id
