@@ -71,7 +71,7 @@ questions_and_queries <- tibble(
                                        
                                         "what are the highest, lowest and average {indicator}?",
                                        
-                                        "How many municipalities have a {indicator} higher than {random_value}?",
+                                        "How many municipalities have a {indicator} higher than {random_value} per year?",
                                        
                                         "How high is the total {indicator} in the Canton Zurich?",
                                        
@@ -86,12 +86,15 @@ questions_and_queries <- tibble(
                                       "select s.name from indicator_values2 iv
                                       join indicators i on iv.indicator_id = i.indicator_id
                                       join spatialunit s on iv.spatialunit_id = s.spatialunit_id
-                                      where i.name like '{indicator_name}'",
+                                      where i.name like '{indicator_name}'
+                                     order by iv.value desc
+limit 1",
                                      
                                       "select s.name from indicator_values2 iv
                                       join indicators i on iv.indicator_id = i.indicator_id
                                       join spatialunit s on iv.spatialunit_id = s.spatialunit_id
-                                      where i.name like '{indicator_name}'",
+                                      where i.name like '{indicator_name}' order by iv.value asc
+limit 1",
                                      
                                       "select max(iv.value), min(iv.value), avg(iv.value) from indicator_values2 iv
                                       join indicators i on iv.indicator_id = i.indicator_id
@@ -133,44 +136,6 @@ write.csv(gp_data %>% head(10), "gp_data.csv")
 
 ```
 
-```{r}
-
-combinations <- tibble(
-  indicator_
-  indicator_id
-  municipality
-  year
-  municipality_id
-)
-
-
-
-
-
-
-
-filtered_indicators$INDICATOR_ID
-
-# sentences
-string = purrr::map2_chr(1:length(filtered_indicators), question_list
-         ~glue::glue()
-
-# SQL
-questions=
-  tibble(sentence=purrr::map_chr(1:length(ind_com_list),
-         ~glue::glue("how high is the {ind_com_list[[.x]][1]} in {ind_com_list[[.x]][2]}")),
-         
-         
-          statement=purrr::map_chr(1:length(ind_com_list),~glue::glue("
-SELECT VALUE FROM gp_data where INDICATOR_ID =  {ind_com_list[[.x]][1]} and UNIT_NAME = {ind_com_list[[.x]][2]}")))
-
-#einbauen - filter auf indikator
-
-questions %>% 
-  mutate(sql=paste("SELECT", column , "from table", "where", where_column, where_operators, where_value))
-
-```
-
 
 question tokens
 ```{r}
@@ -179,21 +144,8 @@ which municipality has the highest
 what are the highest, lowest and average 
 
 
-
 which are the runif() comunes with the highest 
 What is the average , minimum , and maximum 
 Show municipalities with a ,  , over x and more than , , 
 Show names for all municipalities except for those having a x 
 Find the weight of the youngest dog
-
-
-
-questions <- c("how high is the {indicator} in {municipality}", 
-               "which municipality has the highest {indicator}",
-"what are the highest, lowest and average {indicator},
-find the {indicator} of the municipality with the lowest {}")
-
-```
-
-
-
