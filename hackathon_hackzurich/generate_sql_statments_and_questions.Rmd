@@ -8,7 +8,7 @@ https://towardsdatascience.com/text-to-sql-learning-to-query-tables-with-natural
 library(tidyverse)
 ```
 
-
+# Generation of natural language questions & SQL Statements
 # 1. 
 
 Read in a dataset with indicator metadata and short descriptions which can be used to generate questions.
@@ -120,7 +120,6 @@ limit 1",
 )
 
 
-
 dataframe <- tibble(
               question=purrr::map(questions_and_queries$questions, 
                                    ~glue::glue(.x)) %>% unlist(),
@@ -132,7 +131,7 @@ dataframe <- tibble(
 write.csv(dataframe,"questions_queries.csv")
 
 # save table
-write.csv(gp_data %>% head(10), "gp_data.csv")
+# write.csv(gp_data %>% head(10), "gp_data.csv")
 
 ```
 
@@ -149,3 +148,54 @@ What is the average , minimum , and maximum
 Show municipalities with a ,  , over x and more than , , 
 Show names for all municipalities except for those having a x 
 Find the weight of the youngest dog
+```
+
+# Test the SQL-Queries
+
+```{r}
+library(RSQLite)
+library(readr)
+```
+
+# Create DB
+```{r}
+# read in csvs
+indicators<- read_csv("input_data/EN_INDICATORS.csv") 
+
+indicator_values2 <- read_csv("input_data/EN_INDICATOR_VALUES.csv") 
+
+spatialunit <- read_csv("input_data/EN_T_SPATIALUNIT.csv")
+
+#create DB
+conn <- dbConnect(RSQLite::SQLite(), "statbot.db")
+
+dbWriteTable(conn, "indicators", indicators)
+dbWriteTable(conn, "indicator_values2", indicatorvalues2)
+dbWriteTable(conn, "spatialunit", spatialunit)
+
+RSQLite::dbListTables(conn)
+```
+
+# Test the queries
+```{r}
+# read in csv containing the queries
+queries <- read_csv("questions_queries.csv") 
+
+# run all the queries
+purrr::map(queries$sql, ~dbGetQuery(conn, .x))
+
+dbGetQuery(conn, queries$sql[33])
+
+```
+
+```{sql connection=conn}
+select s.name from indicator_values2 iv
+join indicators i on iv.indicator_id = i.indicator_id
+join spatialunit s on iv.spatialunit_id = s.spatialunit_id
+where i.name like 'PW new registrations per 1000 inhabitants [amount]' 
+order by iv.value asc
+limit 1
+```
+
+
+
