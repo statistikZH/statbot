@@ -9,9 +9,8 @@ library(tidyverse)
 ```
 
 # Generation of natural language questions & SQL Statements
-# 1. 
 
-Read in a dataset with indicator metadata and short descriptions which can be used to generate questions.
+1. Read in a dataset with indicator metadata and short descriptions which can be used to generate questions.
 
 ```{r}
 indicators <-
@@ -19,9 +18,9 @@ indicators <-
   left_join(read_csv("input_data/indicators_desc.csv"),
             by=c("INDICATOR_ID"="indicator_id"))
 ```
-# Combine Datasets
+## Create a single dataset with all information
 
-Combine the indicator dataset with the actual data.
+1. Create a combined dataset containing all the information (values, indicator labels, spatial unit labels)  to make the generation of the question / sql pairs easier 
 
 ```{r}
 gp_data <- read_csv("input_data/EN_INDICATOR_VALUES.csv") %>% 
@@ -29,16 +28,16 @@ gp_data <- read_csv("input_data/EN_INDICATOR_VALUES.csv") %>%
            rename(INDICATOR_NAME=NAME) %>% 
            left_join(read_csv("input_data/EN_T_SPATIALUNIT.csv"), by=c("SPATIALUNIT_ID"="SPATIALUNIT_ID")) %>%rename(UNIT_NAME=NAME) 
 ```
+## Create a dataset with random values, years and municipalities per indicator
 
-## 1. Value for a given Municipality / Indicator
+2. To fill in the questions and queries, random values, years and municipalities are drawn for each indicator. These are then integrated into the templates dynamically.
 
-Questions : what to do with the year? integrate explicitly in the question or just take max as standard?
 ```{r}
 
 spatial_units <- read_csv("input_data/EN_T_SPATIALUNIT.csv") %>% 
                   select(SPATIALUNIT_ID,rand_mun_name=NAME)
 
-filtered_indicators <- gp_data %>% 
+random_values <- gp_data %>% 
   filter(TYPE_ID==1) %>% 
   group_by(INDICATOR_ID, INDICATOR_NAME, short_desc, questiontype) %>% 
   summarize(rand_val=sample(VALUE,1), 
@@ -47,20 +46,23 @@ filtered_indicators <- gp_data %>%
                         filter(questiontype<=2) %>% 
   left_join(spatial_units, by=c("rand_mun"="SPATIALUNIT_ID"))
 
-indicator <- filtered_indicators$short_desc
+## create vectors that are integrated into the templates
 
-indicator_name <- filtered_indicators$INDICATOR_NAME
+indicator <- random_values$short_desc
 
-random_value <- filtered_indicators$rand_val
+indicator_name <- random_values$INDICATOR_NAME
 
-indicator_id <- filtered_indicators$INDICATOR_ID
+random_value <- random_values$rand_val
 
-indicator_year <- filtered_indicators$rand_year
+indicator_id <- random_values$INDICATOR_ID
 
+indicator_year <- random_values$rand_year
 
-municipality_id <- filtered_indicators$rand_mun
+municipality_id <- random_values$rand_mun
 
-municipality <- filtered_indicators$rand_mun_name
+municipality <- random_values$rand_mun_name
+
+# Use the vectors in glue templates
 
 questions_and_queries <- tibble(
                           questions = c("how high is the {indicator} in {municipality}?", 
@@ -119,6 +121,7 @@ limit 1",
 
 )
 
+# generate the questions
 
 dataframe <- tibble(
               question=purrr::map(questions_and_queries$questions, 
@@ -157,7 +160,7 @@ library(RSQLite)
 library(readr)
 ```
 
-# Create DB
+## Create DB
 ```{r}
 # read in csvs
 indicators<- read_csv("input_data/EN_INDICATORS.csv") 
@@ -176,7 +179,7 @@ dbWriteTable(conn, "spatialunit", spatialunit)
 RSQLite::dbListTables(conn)
 ```
 
-# Test the queries
+## Test the queries
 ```{r}
 # read in csv containing the queries
 queries <- read_csv("questions_queries.csv") 
