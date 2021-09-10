@@ -1,5 +1,4 @@
-"","question","sql"
-<<<<<<< HEAD
+"id","question","sql"
 "1","how high is the share of people living in proximity of a busstop in ZÃ¼rich","SELECT VALUE FROM TABLE WHERE INDICATOR_ID = 385 and BFS_NR=100"
 "2","how high is the share of people living in proximity of a trainstation in ZÃ¼rich","SELECT VALUE FROM TABLE WHERE INDICATOR_ID = 386 and BFS_NR=100"
 "3","how high is the number of cars per capita in ZÃ¼rich","SELECT VALUE FROM TABLE WHERE INDICATOR_ID = 399 and BFS_NR=100"
@@ -39,15 +38,14 @@
 "37","what are the highest, lowest and average share of electric vehicles within the newly registered cars","SELECT MAX(VALUE), MIN(VALUE), AVG(VALUE) WHERE INDICATOR_ID=612"
 "38","what are the highest, lowest and average number of charging stations","SELECT MAX(VALUE), MIN(VALUE), AVG(VALUE) WHERE INDICATOR_ID=999"
 "39","what are the highest, lowest and average number of charging stations per 1000 inhabitants","SELECT MAX(VALUE), MIN(VALUE), AVG(VALUE) WHERE INDICATOR_ID=998"
-=======
 "1","how high is the share of people living in proximity of a busstop in Ottenbach?","select iv.value from indicator_values2 iv
 join indicators i on iv.indicator_id = i.indicator_id
 join spatialunit s on iv.spatialunit_id = s.spatialunit_id
 where i.name like 'Access by bus [% of inhabitants]' and s.name like 'Ottenbach'"
-"2","how high is the share of people living in proximity of a trainstation in Dällikon?","select iv.value from indicator_values2 iv
+"2","how high is the share of people living in proximity of a trainstation in D?llikon?","select iv.value from indicator_values2 iv
 join indicators i on iv.indicator_id = i.indicator_id
 join spatialunit s on iv.spatialunit_id = s.spatialunit_id
-where i.name like 'Access by suburban train [% of inhabitants]' and s.name like 'Dällikon'"
+where i.name like 'Access by suburban train [% of inhabitants]' and s.name like 'D?llikon'"
 "3","how high is the number of cars per capita in Niederglatt?","select iv.value from indicator_values2 iv
 join indicators i on iv.indicator_id = i.indicator_id
 join spatialunit s on iv.spatialunit_id = s.spatialunit_id
@@ -56,10 +54,10 @@ where i.name like 'Passenger cars per 1000 inhabitants [no.]' and s.name like 'N
 join indicators i on iv.indicator_id = i.indicator_id
 join spatialunit s on iv.spatialunit_id = s.spatialunit_id
 where i.name like 'Accessibility by suburban train+bus [% of inhabitants]' and s.name like 'Wetzikon'"
-"5","how high is the share of public transport in traffic movements of people living in Wädenswil?","select iv.value from indicator_values2 iv
+"5","how high is the share of public transport in traffic movements of people living in W?denswil?","select iv.value from indicator_values2 iv
 join indicators i on iv.indicator_id = i.indicator_id
 join spatialunit s on iv.spatialunit_id = s.spatialunit_id
-where i.name like 'public transport share (modal split) [%]' and s.name like 'Wädenswil'"
+where i.name like 'public transport share (modal split) [%]' and s.name like 'W?denswil'"
 "6","how high is the share of motorised private transport in traffic movements of people living in Kleinandelfingen?","select iv.value from indicator_values2 iv
 join indicators i on iv.indicator_id = i.indicator_id
 join spatialunit s on iv.spatialunit_id = s.spatialunit_id
@@ -72,10 +70,10 @@ where i.name like 'PW new registrations per 1000 inhabitants [amount]' and s.nam
 join indicators i on iv.indicator_id = i.indicator_id
 join spatialunit s on iv.spatialunit_id = s.spatialunit_id
 where i.name like 'Hybrid motor cars stock [%]' and s.name like 'Neerach'"
-"9","how high is the share of electric vehicles in Fällanden?","select iv.value from indicator_values2 iv
+"9","how high is the share of electric vehicles in F?llanden?","select iv.value from indicator_values2 iv
 join indicators i on iv.indicator_id = i.indicator_id
 join spatialunit s on iv.spatialunit_id = s.spatialunit_id
-where i.name like 'Electric motor cars stock [%]' and s.name like 'Fällanden'"
+where i.name like 'Electric motor cars stock [%]' and s.name like 'F?llanden'"
 "10","how high is the share of hybrid vehicles within the newly registered cars in Niederhasli?","select iv.value from indicator_values2 iv
 join indicators i on iv.indicator_id = i.indicator_id
 join spatialunit s on iv.spatialunit_id = s.spatialunit_id
@@ -404,4 +402,3 @@ where s.type_id=4 and iv.year=2021 and i.name like 'Charging stations of electro
 join indicators i on iv.indicator_id = i.indicator_id
 join spatialunit s on iv.spatialunit_id = s.spatialunit_id
 where s.type_id=4 and iv.year=2021 and i.name like 'Charging stations of electronic cars [no.]'"
->>>>>>> 375927f318090f911cb8c29424e421de368dafda
