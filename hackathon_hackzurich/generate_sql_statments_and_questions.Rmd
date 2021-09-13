@@ -185,7 +185,8 @@ RSQLite::dbListTables(conn)
 queries <- read_csv("questions_queries.csv") 
 
 # run all the queries
-purrr::map(queries$sql, ~odbc::dbGetQuery(conn, .x))
+purrr::map(queries$sql, ~dbGetQuery(conn, .x))
+
 
 dbGetQuery(conn, queries$sql[33])
 
