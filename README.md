@@ -1,5 +1,5 @@
 # STATBOT.CH
-Version 0.0.1b - 27.02.2021 - Preliminary trials
+Version 0.0.1c - 27.02.2021 - Preliminary trials
 
 ### History
 Version 0.0.1 - 21.02.2021 - 27.02.2021 - Preliminary trials
