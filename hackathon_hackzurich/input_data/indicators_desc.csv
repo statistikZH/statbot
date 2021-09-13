@@ -1,0 +1,15 @@
+indicator_id,short_desc,questiontype
+385,share of people living in proximity of a busstop,1
+386,share of people living in proximity of a trainstation,1
+399,number of cars per capita,2
+400,average distance to the next stop,3
+401,share of people living in proximity of a trainstation or busstop,1
+480,share of public transport in traffic movements of people living,1
+481,share of motorised private transport in traffic movements of people living,1
+601,number of newly registered cars,2
+606,share of hybrid vehicles,1
+607,share of electric vehicles,1
+611,share of hybrid vehicles within the newly registered cars,1
+612,share of electric vehicles within the newly registered cars,1
+999,number of charging stations,2
+998,number of charging stations per 1000 inhabitants,2
