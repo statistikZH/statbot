@@ -8,6 +8,9 @@
 # Christian Ruiz - Statistisches Amt Kanton Zürich
 # CC0
 
+# History 
+# Version 0.1.2 -15.09.2021 - Umlaut-corrections for the SQL-queries
+# Version 0.1.1 -15.09.2021 - First version public
 
 
 from transformers import AutoTokenizer, AutoModelForSeq2SeqLM
@@ -42,7 +45,7 @@ for i in range(0,df.shape[0]):
         top_k=120,
         top_p=0.95,
         early_stopping=True,
-        num_return_sequences=7
+        num_return_sequences=8
     )
 
     for output in outputs:
@@ -53,5 +56,9 @@ output_df=output_df[['question','sql']]
 output_df['question']=output_df['question'].str.lower()
 output_df=output_df.drop_duplicates()
 
-        
+#replace the Umlaut in the SQL-queries for ValueNet
+output_df['sql']=output_df['sql'].str.replace("ü","ue")
+output_df['sql']=output_df['sql'].str.replace("ä","ae")
+output_df['sql']=output_df['sql'].str.replace("ö","oe")
+
 output_df.to_csv("../questions_queries_paraphrases.csv",index=False)
