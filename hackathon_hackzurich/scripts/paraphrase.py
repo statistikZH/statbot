@@ -1,10 +1,22 @@
+# Script for creating paraphrases and thus expanding the q&a pairs generated through the first script
+# At the time of writing it generates from 90 initial q&a pairs, around 
+
+# ML-Model taken from https://github.com/Vamsi995/Paraphrase-Generator
+# https://huggingface.co/Vamsi/T5_Paraphrase_Paws
+
+# Version 0.1.1 - 15.09.2021
+# Christian Ruiz - Statistisches Amt Kanton Zürich
+# CC0
+
+
+
 from transformers import AutoTokenizer, AutoModelForSeq2SeqLM
 import pandas as pd
+
 
 tokenizer = AutoTokenizer.from_pretrained("Vamsi/T5_Paraphrase_Paws")  
 model = AutoModelForSeq2SeqLM.from_pretrained("Vamsi/T5_Paraphrase_Paws")
 
-sentence = "This is something which i cannot understand at all"
 
 df=pd.read_csv("../questions_queries.csv",encoding='latin1')
 
@@ -30,13 +42,15 @@ for i in range(0,df.shape[0]):
         top_k=120,
         top_p=0.95,
         early_stopping=True,
-        num_return_sequences=5
+        num_return_sequences=10
     )
 
     for output in outputs:
         line = tokenizer.decode(output, skip_special_tokens=True,clean_up_tokenization_spaces=True)
         output_df=output_df.append({'question': line, 'sql': df['sql'].iloc[i]},ignore_index=True)
 
+output_df=output_df[['question','sql']]
+output_df=output_df.drop_duplicates()
+
         
-        
-output_df.to_csv("../questions_queries_paraphrases.csv")
+output_df.to_csv("../questions_queries_paraphrases.csv",index=False)
