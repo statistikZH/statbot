@@ -42,7 +42,7 @@ for i in range(0,df.shape[0]):
         top_k=120,
         top_p=0.95,
         early_stopping=True,
-        num_return_sequences=10
+        num_return_sequences=7
     )
 
     for output in outputs:
@@ -50,6 +50,7 @@ for i in range(0,df.shape[0]):
         output_df=output_df.append({'question': line, 'sql': df['sql'].iloc[i]},ignore_index=True)
 
 output_df=output_df[['question','sql']]
+output_df['question']=output_df['question'].str.lower()
 output_df=output_df.drop_duplicates()
 
         
