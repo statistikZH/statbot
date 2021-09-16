@@ -21,13 +21,13 @@ tokenizer = AutoTokenizer.from_pretrained("Vamsi/T5_Paraphrase_Paws")
 model = AutoModelForSeq2SeqLM.from_pretrained("Vamsi/T5_Paraphrase_Paws")
 
 
-df=pd.read_csv("../questions_queries.csv",encoding='latin1')
+df=pd.read_csv("../questions_queries_python.csv")#,encoding='latin1')
 
 
 output_df=df
 
 for i in range(0,df.shape[0]):
-    sentence=df['question'].iloc[i]
+    sentence=df['questions'].iloc[i]
     print(i," ",sentence)
 
 
@@ -50,15 +50,15 @@ for i in range(0,df.shape[0]):
 
     for output in outputs:
         line = tokenizer.decode(output, skip_special_tokens=True,clean_up_tokenization_spaces=True)
-        output_df=output_df.append({'question': line, 'sql': df['sql'].iloc[i]},ignore_index=True)
+        output_df=output_df.append({'questions': line, 'queries': df['queries'].iloc[i]},ignore_index=True)
 
-output_df=output_df[['question','sql']]
-output_df['question']=output_df['question'].str.lower()
+output_df=output_df[['questions','queries']]
+output_df['questions']=output_df['questions'].str.lower()
 output_df=output_df.drop_duplicates()
 
 #replace the Umlaut in the SQL-queries for ValueNet
-output_df['sql']=output_df['sql'].str.replace("ü","ue")
-output_df['sql']=output_df['sql'].str.replace("ä","ae")
-output_df['sql']=output_df['sql'].str.replace("ö","oe")
+output_df['queries']=output_df['queries'].str.replace("ü","ue")
+output_df['queries']=output_df['queries'].str.replace("ä","ae")
+output_df['queries']=output_df['queries'].str.replace("ö","oe")
 
 output_df.to_csv("../questions_queries_paraphrases.csv",index=False)
