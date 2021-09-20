@@ -1,204 +1,204 @@
 SPATIALUNIT_ID,TYPE_ID,NAME,BFS_NR,NAME_COMBINED,DISTRICT_ID,REGION_ID,COMMUNE_TYPE_ID,ZIP,TEL,FAX,HOMEPAGE,EMAIL,ADRESSE,HEIGHT,AREA
-159,1,Zell,231,Zell,10,9,4,8487,052 397 03 10,052 397 03 18,www.zell.ch,info@zell.ch,Gemeindeverwaltung,545,1298
-160,1,Aesch ZH,241,Aesch ZH,11,2,5,8904,043 344 10 10,043 344 10 11,www.aesch-zh.ch,gemeindeverwaltung@aesch-zh.ch,Gemeindeverwaltung,545,520
-161,1,Birmensdorf,242,Birmensdorf,11,2,3,8903,044 739 12 00,044 739 12 01,www.birmensdorf.ch,gemeinde@birmensdorf.ch,Gemeindeverwaltung,470,1143
-162,1,Dietikon,243,Dietikon,11,2,2,8953,044 744 35 35,044 741 50 16,www.dietikon.ch,stadt@dietikon.ch,Stadtverwaltung,388,928
-163,1,Geroldswil,244,Geroldswil,11,2,3,8954,044 749 32 00,044 749 32 90,www.geroldswil.ch,info@geroldswil.ch,Gemeindeverwaltung,403,190
-164,1,Oberengstringen,245,Oberengstringen,11,2,3,8102,043 455 17 00 ,043 455 17 01,www.oberengstringen.ch,gemeinde@oberengstringen.ch,Gemeindeverwaltung,410,214
-165,1,Oetwil a.d.L.,246,Oetwil a.d.L.,11,2,5,8955,044 749 33 66,044 749 33 78,www.oetwiladl.ch,gemeindeverwaltung@oetwil-limmat.ch,Gemeindeverwaltung,410,277
-166,1,Schlieren,247,Schlieren,11,2,2,8952,044 738 14 11 ,044 738 15 90 ,www.schlieren.ch,stadtbuero@schlieren.ch,Stadtverwaltung,393,654
-167,1,Uitikon,248,Uitikon,11,2,5,8142,044 200 15 00,044 200 15 01,www.uitikon.ch,info@uitikon.org,Gemeindeverwaltung,553,438
-168,1,Unterengstringen,249,Unterengstringen,11,2,5,8103,043 343 20 30,043 343 20 55,www.unterengstringen.ch,info@unterengstringen.ch,Gemeindeverwaltung,410,337
-169,1,Urdorf,250,Urdorf,11,2,2,8902,044 736 51 11,044 734 38 58,www.urdorf.ch,gemeinde@urdorf.ch,Gemeindeverwaltung,442,757
-170,1,Weiningen,251,Weiningen,11,2,3,8104,044 752 25 25 ,044 750 22 53 ,www.weiningen.ch,gemeindekanzlei@weiningen.ch,Gemeindeverwaltung,413,540
-171,1,Z�rich,261,Z�rich,12,1,1,8000,044 412 11 11,044 270 99 80,www.stadt-zuerich.ch,mediendienste@zuerich.ch,Stadtverwaltung,408,8790
-172,3,Bezirk Affoltern,,Bezirk Affoltern,1,,,,,,,,,,11308
-175,3,Bezirk Dielsdorf,,Bezirk Dielsdorf,4,,,,,,,,,,15286
-180,3,Bezirk Uster,,Bezirk Uster,9,,,,,,,,,,11239
-181,3,Bezirk Winterthur,,Bezirk Winterthur,10,,,,,,,,,,25185
-183,3,Bezirk Z�rich,,Bezirk Z�rich,12,,,,,,,,,,8790
-184,4,Region Furttal,,Region Furttal,,7,,,,,,,,,4052
-185,4,Region Glattal,,Region Glattal,,6,,,,,,,,,12652
-187,4,Region Limmattal,,Region Limmattal,,2,,,,,,,,,5998
-189,4,Region Pfannenstiel,,Region Pfannenstiel,,5,,,,,,,,,9910
-194,4,Region Z�rich,,Region Z�rich,,1,,,,,,,,,8790
-3,1,Bonstetten,3,Bonstetten,1,3,4,8906,044 701 95 00,044 701 95 01,www.bonstetten.ch,gemeinderatskanzlei@bonstetten.ch,Gemeindeverwaltung,528,745
-6,1,Kappel a.A.,6,Kappel a.A.,1,3,6,8926,044 764 12 55,044 764 22 65,www.kappel-am-albis.ch,gemeinde@kappel-am-albis.ch,Gemeindeverwaltung,576,783
-9,1,Mettmenstetten,9,Mettmenstetten,1,3,4,8932,044 767 90 10,044 767 90 20,www.mettmenstetten.ch,gemeinde@mettmenstetten.ch,Gemeindeverwaltung,460,1305
-13,1,Stallikon,13,Stallikon,1,3,5,8143,044 701 92 00,044 701 92 01,www.stallikon.ch,kanzlei@stallikon.ch,Gemeindeverwaltung,550,1201
-15,1,Adlikon,21,Adlikon,2,10,6,8452,052 317 24 18,052 317 38 75,www.adlikon.ch,kanzlei@adlikon.ch,Gemeindeverwaltung,450,664
-19,1,Dachsen,25,Dachsen,2,10,4,8447,052 647 60 60,052 647 60 65,www.dachsen.ch,info@dachsen.ch,Gemeindeverwaltung,393,269
-22,1,Flaach,28,Flaach,2,10,7,8416,052 304 15 15,052 304 15 10,www.flaach.ch,gemeinde@flaach.ch,Gemeindeverwaltung,360,1020
-26,1,Humlikon,32,Humlikon,2,10,7,8457,052 317 19 76,052 317 29 70,www.humlikon.ch,kanzlei@humlikon.ch,Gemeindeverwaltung,440,368
-29,1,Marthalen,35,Marthalen,2,10,6,8460,052 305 44 44,052 305 44 55,www.marthalen.ch,admin@marthalen.ch,Gemeindeverwaltung,412,1415
-32,1,Rheinau,38,Rheinau,2,10,6,8462,052 305 40 80,052 305 40 81,www.rheinau.ch,gemeinde@rheinau.ch,Gemeindeverwaltung,372,893
-34,1,Tr�llikon,40,Tr�llikon,2,10,6,8466,052 319 13 29,052 319 14 01,www.truellikon.ch,info@truellikon.ch,Gemeindeverwaltung,438,956
-37,1,Volken,43,Volken,2,10,6,8459,052 318 19 04,052 318 17 81,www.volken.ch,gemeinde@volken.ch,Gemeindeverwaltung,406,327
-40,1,Bassersdorf,52,Bassersdorf,3,6,3,8303,044 838 85 85,044 838 85 69,www.bassersdorf.ch,gemeinde@bassersdorf.ch ,Gemeindeverwaltung,460,899
-44,1,Embrach,56,Embrach,3,11,3,8424,044 866 36 36,044 866 36 00,www.embrach.ch,gemeindeverwaltung@embrach.ch,Gemeindeverwaltung,420,1274
-47,1,Hochfelden,59,Hochfelden,3,11,4,8182,043 411 30 10,043 411 30 14,www.hochfelden.ch,info@hochfelden.ch,Gemeindeverwaltung,402,615
-50,1,Kloten,62,Kloten,3,6,2,8302,044 815 11 11,044 815 12 44,www.kloten.ch,info@kloten.ch,Stadtverwaltung,447,1930
-57,1,Wallisellen,69,Wallisellen,3,6,2,8304,044 832 61 11,-,www.wallisellen.ch,praesidialabteilung@wallisellen.ch,Gemeindeverwaltung,431,646
-60,1,Winkel,72,Winkel,3,11,3,8185,044 864 81 11,,www.winkel.ch,info@winkel.ch,Gemeindeverwaltung,450,810
-63,1,Buchs,83,Buchs,4,7,3,8107,044 847 75 00,044 847 75 05,www.buchs-zh.ch ,kanzlei@buchs-zh.ch,Gemeindeverwaltung,424,588
-66,1,Dielsdorf,86,Dielsdorf,4,11,2,8157,044 854 71 71,044 854 71 75,www.dielsdorf.ch,gemeinde@dielsdorf.ch,Gemeindeverwaltung,429,587
-69,1,Niederglatt,89,Niederglatt,4,11,3,8172,044 852 20 40,044 850 05 08,www.niederglatt-zh.ch,einwohnerkontrolle@niederglatt-zh.ch,Gemeindeverwaltung,424,360
-72,1,Oberglatt,92,Oberglatt,4,11,3,8154,044 852 37 00,044 852 37 93,www.oberglatt.ch,gemeinde@oberglatt.ch,Gemeindeverwaltung,430,823
-75,1,Regensberg,95,Regensberg,4,11,4,8158,044 853 12 00,044 853 33 17,www.regensberg.ch,gemeindeverwaltung@regensberg.ch,Gemeindeverwaltung,600,238
-78,1,Schleinikon,98,Schleinikon,4,11,4,8165,043 422 60 90,043 422 60 99,www.schleinikon.ch,info@schleinikon.ch,Gemeindeverwaltung,470,565
-81,1,Steinmaur,101,Steinmaur,4,11,3,8162,044 855 40 40,044 855 40 30,www.steinmaur.ch,edith.lee@steinmaur.ch,Gemeindeverwaltung,451,947
-84,1,Bubikon,112,Bubikon,5,8,2,8608,055 253 33 33,055 253 33 00,www.bubikon.ch,gemeinde@bubikon.ch,Gemeindeverwaltung,529,1164
-87,1,Gossau,115,Gossau,5,8,4,8625,044 936 55 11,044 936 55 66,www.gossau-zh.ch,info@gossau-zh.ch,Gemeindeverwaltung,500,1828
-89,1,Hinwil,117,Hinwil,5,8,2,8340,044 938 55 11,044 938 55 10,www.hinwil.ch,gemeinde@hinwil.ch,Gemeindeverwaltung,565,2231
-92,1,Wald,120,Wald,5,8,6,8636,055 256 51 11,055 256 51 12,www.wald-zh.ch,gemeinde@wald-zh.ch,Gemeindeverwaltung,616,2524
-94,1,Adliswil,131,Adliswil,6,4,3,8134,044 711 77 11,044 711 77 14,www.adliswil.ch,adliswil@adliswil.ch,Stadtverwaltung,451,780
-97,1,H�tten (bis 2018),134,H�tten (bis 2018),6,4,6,8825,044 788 90 20,044 788 90 29,www.waedenswil.ch,info@waedenswil.ch,Gemeindeverwaltung,742,724
-100,1,Oberrieden,137,Oberrieden,6,4,5,8942,044 722 71 70,044 722 71 85,www.oberrieden.ch,gemeindekanzlei@oberrieden.ch,Gemeindeverwaltung,424,277
-103,1,Sch�nenberg (bis 2018),140,Sch�nenberg (bis 2018),6,4,6,8824,044 788 90 60,044 788 90 69,www.waedenswil.ch,info@waedenswil.ch,Gemeindeverwaltung,715,1102
-109,1,K�snacht,154,K�snacht,7,5,5,8700,044 913 11 11��,044 913 11 14,www.kuesnacht.ch,info@kuesnacht.ch,Gemeindeverwaltung,415,1233
-112,1,Oetwil a.S.,157,Oetwil a.S.,7,5,3,8618,044 929 60 11,044 929 60 10,www.oetwil.ch,praesidiales@oetwil.ch,Gemeindeverwaltung,538,607
-1,1,Aeugst a.A.,1,Aeugst a.A.,1,3,4,8914,044 763 50 60,044 763 50 69,www.aeugst-albis.ch,gemeinde@aeugst-albis.ch,Gemeindeverwaltung,700,787
-2,1,Affoltern a.A.,2,Affoltern a.A.,1,3,2,8910,044 762 56 56,044 762 56 90,www.stadtaffoltern.ch,info@stadtaffoltern.ch,Gemeindeverwaltung,494,1060
-4,1,Hausen a.A.,4,Hausen a.A.,1,3,6,8915,044 764 80 20,044 764 80 29,www.hausen.ch,gemeinde@hausen.ch,Gemeindeverwaltung,617,1368
-5,1,Hedingen,5,Hedingen,1,3,4,8908,044 762 25 25,044 760 05 73,www.hedingen.ch,info@hedingen.ch,Gemeindeverwaltung,497,653
-7,1,Knonau,7,Knonau,1,3,4,8934,044 768�50�50,044 768 50 55,www.knonau.ch,gemeinde@knonau.ch,Gemeindeverwaltung,436,651
-8,1,Maschwanden,8,Maschwanden,1,3,6,8933,044 767 05 55,044 767 06 36,www.maschwanden.ch,gemeinderatskanzlei@maschwanden.ch,Gemeindeverwaltung,409,468
-10,1,Obfelden,10,Obfelden,1,3,4,8912,044 763 53 53,044 763 53 59,www.obfelden.ch,gemeindeverwaltung@obfelden.ch,Gemeindeverwaltung,436,755
-11,1,Ottenbach,11,Ottenbach,1,3,4,8913,044 763 40 50,044 763 40 59,www.ottenbach.ch,info@ottenbach.ch,Gemeindeverwaltung,420,498
-12,1,Rifferswil,12,Rifferswil,1,3,6,8911,044 764 11 50,044 764 20 36,www.rifferswil.ch,gemeinde@rifferswil.ch,Gemeindeverwaltung,590,657
-14,1,Wettswil a.A.,14,Wettswil a.A.,1,3,4,8907,044 700 06 42,044 700 23 16,www.wettswil.ch,gemeindeverwaltung@wettswil.ch,Gemeindeverwaltung,562,377
-16,1,Benken,22,Benken,2,10,6,8463,052 319 11 80,052 319 20 23,www.benken-zh.ch,info@benken-zh.ch,Gemeindeverwaltung,421,567
-17,1,Berg a.I.,23,Berg a.I.,2,10,6,8415,052 318 11 89,052 318 22 15,www.berg-am-irchel.ch,gemeinde@berg-am-irchel.ch,Gemeindeverwaltung,410,706
-18,1,Buch a.I.,24,Buch a.I.,2,10,6,8414,052 318 16 01,052 318 21 10,www.buchamirchel.ch,gemeinde@buchamirchel.ch,Gemeindeverwaltung,530,1018
-20,1,Dorf,26,Dorf,2,10,6,8458,052 317 25 47,052 317 25 60,www.dorf.ch,gemeindekanzlei@dorf.ch,Gemeindeverwaltung,428,554
-21,1,Feuerthalen,27,Feuerthalen,2,10,3,8245,052 647 47 47 ,052 647 47 48,www.feuerthalen.ch,info@feuerthalen.ch,Gemeindeverwaltung,408,250
-23,1,Flurlingen,29,Flurlingen,2,10,4,8247,052 647 01 01 ,052 647 01 00,www.flurlingen.ch,gemeindeschreiber@flurlingen.ch,Gemeindeverwaltung,398,240
-24,1,Andelfingen,30,Andelfingen,2,10,6,8450,052 304 27 00,052 304 27 09,www.andelfingen.ch,kanzlei@andelfingen.ch,Gemeindeverwaltung,402,669
-25,1,Henggart,31,Henggart,2,10,4,8444,052 305 17 17,052 305 17 15,www.henggart.ch,gemeinde@henggart.ch,Gemeindeverwaltung,434,306
-27,1,Kleinandelfingen,33,Kleinandelfingen,2,10,6,8451,052 305 22 33,052 305 22 39,www.kleinandelfingen.ch,gemeindeverwaltung@kleinandelfingen.ch,Gemeindeverwaltung,365,1029
-28,1,Laufen-Uhwiesen,34,Laufen-Uhwiesen,2,10,4,8248,052 647 60 00,052 647 60 09,www.uhwiesen.ch,gemeinde@laufen-uhwiesen.ch,Gemeindeverwaltung,455,625
-30,1,Oberstammheim (bis 2018),36,Oberstammheim (bis 2018),2,10,7,8477,052 745 12 58,052 745 28 19,www.oberstammheim.ch,gemeindeverwaltung@oberstammheim.ch,Gemeindeverwaltung,448,938
-31,1,Ossingen,37,Ossingen,2,10,7,8475,052 317 14 63,052 317 15 60,www.ossingen.ch,gemeindeverwaltung@ossingen.ch,Gemeindeverwaltung,427,1311
-33,1,Thalheim a.d.Th.,39,Thalheim a.d.Th.,2,10,6,8478,052 320 82 82,052 320 82 83,www.thalheim.ch,gemeinde@thalheim.ch,Gemeindeverwaltung,385,644
-35,1,Truttikon,41,Truttikon,2,10,7,8467,052 317 24 26,052 317 11 80,www.truttikon.ch,gemeinde@truttikon.ch,Gemeindeverwaltung,470,443
-36,1,Unterstammheim (bis 2018),42,Unterstammheim (bis 2018),2,10,7,8476,052 745 12 77,052 745 23 98,www.unterstammheim.ch,gemeinde@unterstammheim.ch,Gemeindeverwaltung,442,727
-38,1,Waltalingen (bis 2018),44,Waltalingen (bis 2018),2,10,7,8468,052 744 03 20,052 744 03 21,www.waltalingen.ch,gemeinde@waltalingen.ch,Gemeindeverwaltung,440,728
-39,1,Bachenb�lach,51,Bachenb�lach,3,11,3,8184,044 864 34 80,044 860 75 68,www.bachenbuelach.ch,info@bachenbuelach.ch,Gemeindeverwaltung,428,429
-41,1,B�lach,53,B�lach,3,11,2,8180,044 863 11 11,044 863 11 33,www.buelach.ch,info@buelach.ch,Stadtverwaltung,428,1610
-42,1,Dietlikon,54,Dietlikon,3,6,2,8305,044 835 82 82,044 835 82 83,www.dietlikon.ch,gemeinde@dietlikon.ch,Gemeindeverwaltung,445,422
-43,1,Eglisau,55,Eglisau,3,11,4,8193,043 422 35 01,043 422 35 08,www.eglisau.ch,info@eglisau.ch,Gemeindeverwaltung,392,908
-45,1,Freienstein-Teufen,57,Freienstein-Teufen,3,11,4,8427,044 866 34 00,044 866 34 16,www.freienstein-teufen.ch,info@freienstein-teufen.ch,Gemeindeverwaltung,370,833
-46,1,Glattfelden,58,Glattfelden,3,11,4,8192,044 868 32 32,044 868 32 53,www.glattfelden.ch,gemeinde@glattfelden.ch,Gemeindeverwaltung,410,1231
-48,1,H�ri,60,H�ri,3,11,3,8181,044 872 77 11,044 872 77 29,www.hoeri.ch,info@hoeri.ch,Gemeindeverwaltung,418,477
-49,1,H�ntwangen,61,H�ntwangen,3,11,4,8194,044 869 08 70,044 869 33 08,www.huentwangen.ch,gemeinde@huentwangen.ch,Gemeindeverwaltung,393,493
-51,1,Lufingen,63,Lufingen,3,11,4,8426,043 204 20 40,043 204 20 41,www.lufingen.ch,gemeindeverwaltung@lufingen.ch,Gemeindeverwaltung,464,519
-52,1,N�rensdorf,64,N�rensdorf,3,6,4,8309,044 838 40 50,044 838 40 70,www.nuerensdorf.ch,gemeinde@nuerensdorf.ch,Gemeindeverwaltung,505,1009
-53,1,Oberembrach,65,Oberembrach,3,11,6,8425,044 866 26 00,044 866 26 16,www.oberembrach.ch,gemeinde@oberembrach.ch,Gemeindeverwaltung,459,1018
-54,1,Opfikon,66,Opfikon,3,6,2,8152,044 829 81 11,044 829 83 38 ,www.opfikon.ch,stadtkanzlei@opfikon.ch,Stadtverwaltung,455,561
-55,1,Rafz,67,Rafz,3,11,4,8197,044 879 14 44,044 879 14 64,www.rafz.ch,gemeindeverwaltung@rafz.ch,Gemeindeverwaltung,424,1072
-56,1,Rorbas,68,Rorbas,3,11,4,8427,044 866 70 60,044 866 70 61,www.rorbas.ch,gemeindeverwaltung@rorbas.ch,Gemeindeverwaltung,402,446
-58,1,Wasterkingen,70,Wasterkingen,3,11,4,8195,044 869 08 25,044 869 10 08,www.wasterkingen.ch,gemeinde@wasterkingen.ch,Gemeindeverwaltung,400,394
-59,1,Wil,71,Wil,3,11,4,8196,044 879 20 80,044 879 20 81,www.wil-zh.ch,gemeinde@wil-zh.ch,Gemeindeverwaltung,415,897
-61,1,Bachs,81,Bachs,4,11,7,8164,043 433 20 30,043 433 20 31,www.bachs.ch,gemeindeverwaltung@bachs.ch,Gemeindeverwaltung,470,915
-62,1,Boppelsen,82,Boppelsen,4,7,4,8113,044 849 70 00,044 849 70 01,www.boppelsen.ch,gemeinde@boppelsen.ch,Gemeindeverwaltung,525,392
-64,1,D�llikon,84,D�llikon,4,7,2,8108,044 847 19 19,044 847 19 11,www.daellikon.ch,info@daellikon.ch,Gemeindeverwaltung,440,448
-65,1,D�nikon,85,D�nikon,4,7,4,8114,044 846 50 80 ,044 846 50 89,www.daenikon.ch,info@daenikon.ch,Gemeindeverwaltung,440,280
-67,1,H�ttikon,87,H�ttikon,4,7,4,8115,044 847 25 00,044 847 25 09,www.huettikon.ch,gemeinde@huettikon.ch,Gemeindeverwaltung,438,160
-68,1,Neerach,88,Neerach,4,11,4,8173,044 859 16 16,044 859 16 17,www.neerach.ch,gemeindeverwaltung@neerach.ch,Gemeindeverwaltung,430,600
-70,1,Niederhasli,90,Niederhasli,4,11,3,8155,043 411 22 00,043 411 22 90,www.niederhasli.ch,gemeinde@niederhasli.ch,Gemeindeverwaltung,418,1131
-71,1,Niederweningen,91,Niederweningen,4,11,4,8166,044 857 12 26,044 856 06 32,www.niederweningen.ch,gemeindeverwaltung@niederweningen.ch,Gemeindeverwaltung,444,688
-73,1,Oberweningen,93,Oberweningen,4,11,4,8165,044 857 10 10,044 857 10 15,www.oberweningen.ch,gemeinde@oberweningen.ch,Gemeindeverwaltung,465,488
-74,1,Otelfingen,94,Otelfingen,4,7,2,8112,044 847 20 47,044 847 20 42,www.otelfingen.ch,info@otelfingen.ch,Gemeindeverwaltung,427,721
-76,1,Regensdorf,96,Regensdorf,4,7,2,8105,044 842 36 11,044 842 39 43,www.regensdorf.ch,info@regensdorf.ch,Gemeindeverwaltung,442,1463
-77,1,R�mlang,97,R�mlang,4,6,2,8153,044 817 75 00,044 818 01 18,www.ruemlang.ch,gemeinde@ruemlang.ch,Gemeindeverwaltung,430,1246
-79,1,Sch�fflisdorf,99,Sch�fflisdorf,4,11,4,8165,044 857 12 41,044 857 12 48,www.schoefflisdorf.ch,gemeinde@schoefflisdorf.ch,Gemeindeverwaltung,461,399
-80,1,Stadel,100,Stadel,4,11,4,8174,044 859 12 12,044 859 12 13,www.stadel.ch,valentino.vinzens@stadel.ch,Gemeindeverwaltung,438,1289
-82,1,Weiach,102,Weiach,4,11,4,8187,044 554 41 60,044 554 41 70,www.weiach.ch,info@weiach.ch,Gemeindeverwaltung,368,958
-83,1,B�retswil,111,B�retswil,5,8,4,8344,044 939 90 42,044 939 90 55,www.baeretswil.ch,kanzlei@baeretswil.ch,Gemeindeverwaltung,696,2219
-85,1,D�rnten,113,D�rnten,5,8,4,8635,055 251 57 00,055 251 57 01,www.duernten.ch,gemeindeverwaltung@duernten.ch,Gemeindeverwaltung,511,1021
-86,1,Fischenthal,114,Fischenthal,5,8,7,8497,055 265 60 00,055 265 60 01,www.fischenthal.ch,info@fischenthal.ch,Gemeindeverwaltung,734,3016
-88,1,Gr�ningen,116,Gr�ningen,5,8,4,8627,043 833 70 70,043 833 70 71,www.grueningen.ch,gemeinde@grueningen.ch,Gemeindeverwaltung,495,880
-90,1,R�ti,118,R�ti,5,8,2,8630,055 251 33 33,055 251 33 34,www.rueti.ch,info@rueti.ch,Gemeindeverwaltung,482,1008
-91,1,Seegr�ben,119,Seegr�ben,5,8,4,8607,043 477 40 90,043 477 40 99,www.seegraeben.ch,einwohnerkontrolle@seegraeben.ch,Gemeindeverwaltung,566,377
-93,1,Wetzikon,121,Wetzikon,5,8,1,8620,044 931 32 00,044 931 32 01,www.wetzikon.ch,info@wetzikon.ch,Gemeindeverwaltung,532,1671
-95,1,Hirzel (bis 2017),132,Hirzel (bis 2017),6,4,6,8816,044 729 70 70,044 729 70 77,www.hirzel.ch,gemeindeverwaltung@hirzel.ch,Gemeindeverwaltung,720,970
-96,1,Horgen (bis 2017),133,Horgen (bis 2017),6,4,2,8810,044 728 41 11,044 725 58 30,www.horgen.ch,gemeinde@horgen.ch,Gemeindeverwaltung,408,2113
-98,1,Kilchberg,135,Kilchberg,6,4,5,8802,044 716 31 11,044 716 31 19,www.kilchberg.ch,gemeinderatskanzlei@kilchberg.ch,Gemeindeverwaltung,424,260
-99,1,Langnau a.A.,136,Langnau a.A.,6,4,3,8135,044 713 55 11,044 713 25 21,www.langnauamalbis.ch,info@langnau.ch,Gemeindeverwaltung,468,865
-101,1,Richterswil,138,Richterswil,6,4,3,8805,044 787 11 11,044 787 12 04,www.richterswil.ch,gemeindeschreiber@richterswil.ch,Gemeindeverwaltung,408,755
-102,1,R�schlikon,139,R�schlikon,6,4,5,8803,044 724 72 11 ,044 724 72 27,www.rueschlikon.ch,gemeinde@rueschlikon.ch,Gemeindeverwaltung,432,292
-104,1,Thalwil,141,Thalwil,6,4,3,8800,044 723 21 11,044 723 23 60,www.thalwil.ch,info@thalwil.ch,Gemeindeverwaltung,435,551
-105,1,W�denswil (bis 2018),142,W�denswil (bis 2018),6,4,2,8820,044 789 72 11,044 789 72 14,www.waedenswil.ch,info@waedenswil.ch,Stadtverwaltung,408,1735
-106,1,Erlenbach,151,Erlenbach,7,5,5,8703,044 913 88 00,044 913 88 01,www.erlenbach.ch,kanzlei@erlenbach.ch,Gemeindeverwaltung,422,296
-107,1,Herrliberg,152,Herrliberg,7,5,5,8704,044 915 91 11,044 915 92 44,www.herrliberg.ch,gemeinde@herrliberg.ch,Gemeindeverwaltung,423,896
-108,1,Hombrechtikon,153,Hombrechtikon,7,5,3,8634,055 254 92 92,055 244 43 82,www.hombrechtikon.ch,gemeinde@hombrechtikon.ch,Gemeindeverwaltung,498,1216
-110,1,M�nnedorf,155,M�nnedorf,7,5,2,8708,044 921 66 11,044 921 66 09,www.maennedorf.ch,praesidiales@maennedorf.ch,Gemeindeverwaltung,406,475
-111,1,Meilen,156,Meilen,7,5,5,8706,044 925 92 54,044 925 94 50,www.meilen.ch,info@meilen.ch,Gemeindeverwaltung,420,1191
-113,1,St�fa,158,St�fa,7,5,2,8712,044 928 71 11,044 928 71 71,www.staefa.ch,gemeinde@staefa.ch,Gemeindeverwaltung,414,861
-114,1,Uetikon a.S.,159,Uetikon a.S.,7,5,3,8707,044 922 72 11,044 922 72 75,www.uetikonamsee.ch,gemeinde@uetikonamsee.ch,Gemeindeverwaltung,414,351
-116,1,Zollikon,161,Zollikon,7,5,5,8702,044 395 31 11,044 395 38 00,www.zollikon.ch,gemeinderatskanzlei@zollikon.ch,Gemeindeverwaltung,482,786
-118,1,Fehraltorf,172,Fehraltorf,8,8,2,8320,043 355 77 77,043 355 77 76,www.fehraltorf.ch,gemeindeverwaltung@fehraltorf.ch,Gemeindeverwaltung,531,950
-119,1,Hittnau,173,Hittnau,8,8,4,8335,043 288 66 66,043 288 66 67,www.hittnau.ch,kanzlei@hittnau.ch,Gemeindeverwaltung,641,1301
-121,1,Kyburg (bis 2015),175,Kyburg (bis 2015),8,9,4,8314,052 232 25 75,052 232 25 55,www.kyburg.ch,gemeinde@kyburg.ch,Gemeindeverwaltung,629,761
-122,1,Lindau,176,Lindau,8,9,2,8315,052 355 04 44,052 355 04 45,www.lindau.ch,info@lindau.ch,Gemeindeverwaltung,530,1193
-124,1,Russikon,178,Russikon,8,8,4,8332,043 355 61 61,043 355 61 62,www.russikon.ch,info@russikon.ch,Gemeindeverwaltung,610,1428
-126,1,Weisslingen,180,Weisslingen,8,9,6,8484,052 397 31 00 ,052 397 31 19,www.weisslingen.ch,silvano.castioni@weisslingen.ch,Gemeindeverwaltung,580,1275
-127,1,Wila,181,Wila,8,8,6,8492,052 397 27 27,052 397 27 28,www.wila.ch,info@wila.ch,Gemeindeverwaltung,569,923
-129,1,D�bendorf,191,D�bendorf,9,6,2,8600,044 801 67 11,044 801 67 67,www.duebendorf.ch,info@duebendorf.ch,Stadtverwaltung,440,1361
-130,1,Egg,192,Egg,9,5,3,8132,043 277 11 11,043 277 11 79,www.egg.ch,info@egg.ch,Gemeindeverwaltung,548,1450
-132,1,Greifensee,194,Greifensee,9,6,3,8606,043 399 21 21,043 399 21 11,www.greifensee.ch,info@greifensee.ch,Gemeindeverwaltung,443,233
-133,1,Maur,195,Maur,9,6,5,8124,043 366 13 66,043 366 13 77,www.maur.ch,info@maur.ch,Gemeindeverwaltung,454,1479
-135,1,Schwerzenbach,197,Schwerzenbach,9,6,2,8603,044 826 70 20,044 826 70 37,www.schwerzenbach.ch,gemeinde@schwerzenbach.ch,Gemeindeverwaltung,443,266
-136,1,Uster,198,Uster,9,8,2,8610,044 944 71 11,044 944 73 45,www.uster.ch,gesamtverwaltung@uster.ch,Stadtverwaltung,464,2854
-138,1,Wangen-Br�ttisellen,200,Wangen-Br�ttisellen,9,6,2,8306,044 805 91 11,044 805 91 19,www.wangen-bruettisellen.ch,gemeinderverwaltung@wangen-bruettisellen.ch,Gemeindeverwaltung,450,791
-139,1,Altikon,211,Altikon,10,9,7,8479,052 336 12 26,052 336 14 29,www.altikon.ch,gemeindeverwaltung@altikon.ch,Gemeindeverwaltung,400,768
-141,1,Br�tten,213,Br�tten,10,9,4,8311,052 355 03 55,052 355 03 50,www.bruetten.ch,verwaltung@bruetten.ch,Gemeindeverwaltung,640,665
-142,1,D�gerlen,214,D�gerlen,10,9,6,8471,052 305 12 20,052 305 12 21,www.daegerlen.ch,gemeindeverwaltung@daegerlen.ch,Gemeindeverwaltung,479,797
-144,1,Dinhard,216,Dinhard,10,9,4,8474,052 320 80 80,052 320 80 88,www.dinhard.ch,gemeindeverwaltung@dinhard.ch,Gemeindeverwaltung,438,708
-145,1,Elgg (bis 2017),217,Elgg (bis 2017),10,9,6,8353,052 368 55 55,052 368 55 99,www.elgg.ch,verwaltung@elgg.ch,Gemeindeverwaltung,507,1556
-147,1,Elsau,219,Elsau,10,9,4,8352,052 368 78 00,052 368 78 10,www.elsau.ch,gemeindeverwaltung@elsau.ch,Gemeindeverwaltung,515,804
-148,1,Hagenbuch,220,Hagenbuch,10,9,6,8523,052 368 69 69,052 368 69 79,www.hagenbuch-zh.ch,info@hagenbuch-zh.ch,Gemeindeverwaltung,538,816
-149,1,Hettlingen,221,Hettlingen,10,9,4,8442,052 305 05 05,052 305 05 06,www.hettlingen.ch,gemeinde@hettlingen.ch,Gemeindeverwaltung,425,579
-151,1,Neftenbach,223,Neftenbach,10,9,4,8413,052 305 06 66,052 305 06 67,www.neftenbach.ch,info@neftenbach.ch,Gemeindeverwaltung,415,1503
-152,1,Pfungen,224,Pfungen,10,9,4,8422,052 305 07 70,052 305 07 77,www.pfungen.ch,stephan.bruegel@pfungen.ch,Gemeindeverwaltung,412,496
-154,1,Schlatt,226,Schlatt,10,9,7,8418,052 363 14 88,052 363 16 01,www.schlatt-zh.ch,gemeinde@schlatt-zh.ch,Gemeindeverwaltung,663,906
-155,1,Seuzach,227,Seuzach,10,9,4,8472,052 320 47 47,052 320 47 90,www.seuzach.ch,gemeinde@seuzach.ch,Gemeindeverwaltung,455,760
-196,1,Wiesendangen,298,Wiesendangen,10,9,4,8542,052 320 92 22,052 320 92 20,www.wiesendangen.ch,gemeindeverwaltung@wiesendangen.ch,Gemeindeverwaltung,470,1912
-115,1,Zumikon,160,Zumikon,7,5,5,8126,044 918 78 78,044 918 78 00,www.zumikon.ch,gemeinde@zumikon.ch,Gemeindeverwaltung,659,548
-117,1,Bauma (bis 2014),171,Bauma (bis 2014),8,8,6,8494,052 397 70 20,052 397 70 21,www.bauma.ch,info@bauma.ch,Gemeindeverwaltung,639,2083
-120,1,Illnau-Effretikon (bis 2015),174,Illnau-Effretikon (bis 2015),8,9,3,8307,052 354 24 24,052 354 23 23,www.ilef.ch,info@ilef.ch,Stadtverwaltung,517,2530
-123,1,Pf�ffikon,177,Pf�ffikon,8,8,2,8330,044 952 52 52,044 952 52 00,www.pfaeffikon.ch,gemeinde@pfaeffikon.ch,Gemeindeverwaltung,540,1949
-125,1,Sternenberg (bis 2014),179,Sternenberg (bis 2014),8,8,7,8499,052 394 10 50,052 394 10 59,www.sternenberg.ch,gemeinde@sternenberg.ch,Gemeindeverwaltung,870,866
-128,1,Wildberg,182,Wildberg,8,8,6,8489,052 385 15 88,052 385 16 32,www.wildberg.ch,info@wildberg.ch,Gemeindeverwaltung,656,1056
-131,1,F�llanden,193,F�llanden,9,6,5,8117,043 355 35 35,043 355 35 36,www.faellanden.ch,gemeinde@faellanden.ch,Gemeindeverwaltung,459,641
-134,1,M�nchaltorf,196,M�nchaltorf,9,8,4,8617,044 949 40 10,044 949 40 29,www.moenchaltorf.ch,gemeinde@moenchaltorf.ch,Gemeindeverwaltung,442,763
-137,1,Volketswil,199,Volketswil,9,6,2,8604,044 910 20 30,044 910 20 31,www.volketswil.ch,gemeinderat@volketswil.ch,Gemeindeverwaltung,475,1401
-143,1,D�ttlikon,215,D�ttlikon,10,9,4,8421,052 304 44 88,052 304 44 80,www.daettlikon.ch,vorname.name@daettlikon.ch,Gemeindeverwaltung,431,290
-146,1,Ellikon a.d.Th.,218,Ellikon a.d.Th.,10,9,6,8548,052 375 10 40,052 375 28 59,www.ellikonanderthur.ch,gemeinde@ellikonanderthur.ch,Gemeindeverwaltung,390,500
-150,1,Hofstetten (bis 2017),222,Hofstetten (bis 2017),10,9,6,8354,052 364 37 17,052 364 22 17,www.elgg.ch,verwaltung@elgg.ch,Gemeindeverwaltung,636,885
-153,1,Rickenbach,225,Rickenbach,10,9,4,8545,052 320 95 00,052 320 95 10,www.rickenbach-zh.ch,gemeinde@rickenbach-zh.ch,Gemeindeverwaltung,425,606
-156,1,Turbenthal,228,Turbenthal,10,9,6,8488,052 397 26 26,052 397 26 16,www.turbenthal.ch,info@turbenthal.ch,Gemeindeverwaltung,554,2524
-158,1,Winterthur,230,Winterthur,10,9,1,8400,052 267 51 51,052 267 56 15,www.stadt.winterthur.ch,stadtkanzlei@win.ch,Stadtverwaltung,439,6812
-193,4,Region Zimmerberg,,Region Zimmerberg,,4,,,,,,,,,10424
-177,3,Bezirk Horgen,,Bezirk Horgen,6,,,,,,,,,,10424
-191,4,Region Weinland,,Region Weinland,,10,,,,,,,,,17435s
-174,3,Bezirk B�lach,,Bezirk B�lach,3,,,,,,,,,,18493
-173,3,Bezirk Andelfingen,,Bezirk Andelfingen,2,,,,,,,,,,16667
-176,3,Bezirk Hinwil,,Bezirk Hinwil,5,,,,,,,,,,17939
-178,3,Bezirk Meilen,,Bezirk Meilen,7,,,,,,,,,,8460
-179,3,Bezirk Pf�ffikon,,Bezirk Pf�ffikon,8,,,,,,,,,,16315
-182,3,Bezirk Dietikon,,Bezirk Dietikon,11,,,,,,,,,,5998
-195,8,Z�rich - ganzer Kanton,,Z�rich - ganzer Kanton,,,,,043 259 11 11,043 259 42 60,www.zh.ch,,,,172889
-186,4,Region Knonaueramt,,Region Knonaueramt,,3,,,,,,,,,11308
-188,4,Region Oberland,,Region Oberland,,8,,,,,,,,,32345
-190,4,Region Unterland,,Region Unterland,,11,,,,,,,,,23014
-192,4,Region Winterthur u. Umg.,,Region Winterthur u. Umg.,,9,,,,,,,,,30176
-198,1,Illnau-Effretikon,296,Illnau-Effretikon,8,9,3,8307,052 354 24 24,052 354 23 23,www.ilef.ch,info@ilef.ch,Stadtverwaltung,517,3291
-197,1,Bauma,297,Bauma,8,8,6,8494,052 397 70 20,052 397 70 21,www.bauma.ch,info@bauma.ch,Gemeindeverwaltung,639,2949
-140,9,Bertschikon (bis 2013),212,Bertschikon (bis 2013),10,9,6,8543,052 320 85 44,052 320 85 49,www.bertschikon.ch,gemeinde@bertschikon.ch,Gemeindeverwaltung,510,963
-157,9,Wiesendangen (bis 2013),229,Wiesendangen (bis 2013),10,9,4,8542,052 320 92 22,052 320 92 22,www.wiesendangen.ch,gemeindeverwaltung@wiesendangen.ch,Gemeindeverwaltung,470,949
-199,1,Horgen,295,Horgen,6,4,2,8810,044 728 41 11,044 725 58 30,www.horgen.ch,gemeinde@horgen.ch,Gemeindeverwaltung,408,3084
-200,1,Elgg,294,Elgg,10,9,6,8353,052 368 55 55,052 368 55 99 ,www.elgg.ch,verwaltung@elgg.ch,Gemeindeverwaltung,507,2441
-202,1,W�denswil,293,W�denswil,6,4,2,8820,044 789 72 11,044 789 72 14,www.waedenswil.ch,info@waedenswil.ch,Stadtverwaltung,408,3559
-201,1,Stammheim,292,Stammheim,2,10,7,8476,052 745 12 77,052 745 23 98,www.stammheim.ch,gemeinde@stammheim.ch,Gemeindeverwaltung,442,2396
+159,1,Zell,231.0,Zell,10.0,9.0,4.0,8487.0,052 397 03 10,052 397 03 18,www.zell.ch,info@zell.ch,Gemeindeverwaltung,545.0,1298
+160,1,Aesch ZH,241.0,Aesch ZH,11.0,2.0,5.0,8904.0,043 344 10 10,043 344 10 11,www.aesch-zh.ch,gemeindeverwaltung@aesch-zh.ch,Gemeindeverwaltung,545.0,520
+161,1,Birmensdorf,242.0,Birmensdorf,11.0,2.0,3.0,8903.0,044 739 12 00,044 739 12 01,www.birmensdorf.ch,gemeinde@birmensdorf.ch,Gemeindeverwaltung,470.0,1143
+162,1,Dietikon,243.0,Dietikon,11.0,2.0,2.0,8953.0,044 744 35 35,044 741 50 16,www.dietikon.ch,stadt@dietikon.ch,Stadtverwaltung,388.0,928
+163,1,Geroldswil,244.0,Geroldswil,11.0,2.0,3.0,8954.0,044 749 32 00,044 749 32 90,www.geroldswil.ch,info@geroldswil.ch,Gemeindeverwaltung,403.0,190
+164,1,Oberengstringen,245.0,Oberengstringen,11.0,2.0,3.0,8102.0,043 455 17 00 ,043 455 17 01,www.oberengstringen.ch,gemeinde@oberengstringen.ch,Gemeindeverwaltung,410.0,214
+165,1,Oetwil a.d.L.,246.0,Oetwil a.d.L.,11.0,2.0,5.0,8955.0,044 749 33 66,044 749 33 78,www.oetwiladl.ch,gemeindeverwaltung@oetwil-limmat.ch,Gemeindeverwaltung,410.0,277
+166,1,Schlieren,247.0,Schlieren,11.0,2.0,2.0,8952.0,044 738 14 11 ,044 738 15 90 ,www.schlieren.ch,stadtbuero@schlieren.ch,Stadtverwaltung,393.0,654
+167,1,Uitikon,248.0,Uitikon,11.0,2.0,5.0,8142.0,044 200 15 00,044 200 15 01,www.uitikon.ch,info@uitikon.org,Gemeindeverwaltung,553.0,438
+168,1,Unterengstringen,249.0,Unterengstringen,11.0,2.0,5.0,8103.0,043 343 20 30,043 343 20 55,www.unterengstringen.ch,info@unterengstringen.ch,Gemeindeverwaltung,410.0,337
+169,1,Urdorf,250.0,Urdorf,11.0,2.0,2.0,8902.0,044 736 51 11,044 734 38 58,www.urdorf.ch,gemeinde@urdorf.ch,Gemeindeverwaltung,442.0,757
+170,1,Weiningen,251.0,Weiningen,11.0,2.0,3.0,8104.0,044 752 25 25 ,044 750 22 53 ,www.weiningen.ch,gemeindekanzlei@weiningen.ch,Gemeindeverwaltung,413.0,540
+171,1,Zuerich,261.0,Zuerich,12.0,1.0,1.0,8000.0,044 412 11 11,044 270 99 80,www.stadt-zuerich.ch,mediendienste@zuerich.ch,Stadtverwaltung,408.0,8790
+172,3,Bezirk Affoltern,,Bezirk Affoltern,1.0,,,,,,,,,,11308
+175,3,Bezirk Dielsdorf,,Bezirk Dielsdorf,4.0,,,,,,,,,,15286
+180,3,Bezirk Uster,,Bezirk Uster,9.0,,,,,,,,,,11239
+181,3,Bezirk Winterthur,,Bezirk Winterthur,10.0,,,,,,,,,,25185
+183,3,Bezirk Zuerich,,Bezirk Zuerich,12.0,,,,,,,,,,8790
+184,4,Region Furttal,,Region Furttal,,7.0,,,,,,,,,4052
+185,4,Region Glattal,,Region Glattal,,6.0,,,,,,,,,12652
+187,4,Region Limmattal,,Region Limmattal,,2.0,,,,,,,,,5998
+189,4,Region Pfannenstiel,,Region Pfannenstiel,,5.0,,,,,,,,,9910
+194,4,Region Zuerich,,Region Zuerich,,1.0,,,,,,,,,8790
+3,1,Bonstetten,3.0,Bonstetten,1.0,3.0,4.0,8906.0,044 701 95 00,044 701 95 01,www.bonstetten.ch,gemeinderatskanzlei@bonstetten.ch,Gemeindeverwaltung,528.0,745
+6,1,Kappel a.A.,6.0,Kappel a.A.,1.0,3.0,6.0,8926.0,044 764 12 55,044 764 22 65,www.kappel-am-albis.ch,gemeinde@kappel-am-albis.ch,Gemeindeverwaltung,576.0,783
+9,1,Mettmenstetten,9.0,Mettmenstetten,1.0,3.0,4.0,8932.0,044 767 90 10,044 767 90 20,www.mettmenstetten.ch,gemeinde@mettmenstetten.ch,Gemeindeverwaltung,460.0,1305
+13,1,Stallikon,13.0,Stallikon,1.0,3.0,5.0,8143.0,044 701 92 00,044 701 92 01,www.stallikon.ch,kanzlei@stallikon.ch,Gemeindeverwaltung,550.0,1201
+15,1,Adlikon,21.0,Adlikon,2.0,10.0,6.0,8452.0,052 317 24 18,052 317 38 75,www.adlikon.ch,kanzlei@adlikon.ch,Gemeindeverwaltung,450.0,664
+19,1,Dachsen,25.0,Dachsen,2.0,10.0,4.0,8447.0,052 647 60 60,052 647 60 65,www.dachsen.ch,info@dachsen.ch,Gemeindeverwaltung,393.0,269
+22,1,Flaach,28.0,Flaach,2.0,10.0,7.0,8416.0,052 304 15 15,052 304 15 10,www.flaach.ch,gemeinde@flaach.ch,Gemeindeverwaltung,360.0,1020
+26,1,Humlikon,32.0,Humlikon,2.0,10.0,7.0,8457.0,052 317 19 76,052 317 29 70,www.humlikon.ch,kanzlei@humlikon.ch,Gemeindeverwaltung,440.0,368
+29,1,Marthalen,35.0,Marthalen,2.0,10.0,6.0,8460.0,052 305 44 44,052 305 44 55,www.marthalen.ch,admin@marthalen.ch,Gemeindeverwaltung,412.0,1415
+32,1,Rheinau,38.0,Rheinau,2.0,10.0,6.0,8462.0,052 305 40 80,052 305 40 81,www.rheinau.ch,gemeinde@rheinau.ch,Gemeindeverwaltung,372.0,893
+34,1,Truellikon,40.0,Truellikon,2.0,10.0,6.0,8466.0,052 319 13 29,052 319 14 01,www.truellikon.ch,info@truellikon.ch,Gemeindeverwaltung,438.0,956
+37,1,Volken,43.0,Volken,2.0,10.0,6.0,8459.0,052 318 19 04,052 318 17 81,www.volken.ch,gemeinde@volken.ch,Gemeindeverwaltung,406.0,327
+40,1,Bassersdorf,52.0,Bassersdorf,3.0,6.0,3.0,8303.0,044 838 85 85,044 838 85 69,www.bassersdorf.ch,gemeinde@bassersdorf.ch ,Gemeindeverwaltung,460.0,899
+44,1,Embrach,56.0,Embrach,3.0,11.0,3.0,8424.0,044 866 36 36,044 866 36 00,www.embrach.ch,gemeindeverwaltung@embrach.ch,Gemeindeverwaltung,420.0,1274
+47,1,Hochfelden,59.0,Hochfelden,3.0,11.0,4.0,8182.0,043 411 30 10,043 411 30 14,www.hochfelden.ch,info@hochfelden.ch,Gemeindeverwaltung,402.0,615
+50,1,Kloten,62.0,Kloten,3.0,6.0,2.0,8302.0,044 815 11 11,044 815 12 44,www.kloten.ch,info@kloten.ch,Stadtverwaltung,447.0,1930
+57,1,Wallisellen,69.0,Wallisellen,3.0,6.0,2.0,8304.0,044 832 61 11,-,www.wallisellen.ch,praesidialabteilung@wallisellen.ch,Gemeindeverwaltung,431.0,646
+60,1,Winkel,72.0,Winkel,3.0,11.0,3.0,8185.0,044 864 81 11,,www.winkel.ch,info@winkel.ch,Gemeindeverwaltung,450.0,810
+63,1,Buchs,83.0,Buchs,4.0,7.0,3.0,8107.0,044 847 75 00,044 847 75 05,www.buchs-zh.ch ,kanzlei@buchs-zh.ch,Gemeindeverwaltung,424.0,588
+66,1,Dielsdorf,86.0,Dielsdorf,4.0,11.0,2.0,8157.0,044 854 71 71,044 854 71 75,www.dielsdorf.ch,gemeinde@dielsdorf.ch,Gemeindeverwaltung,429.0,587
+69,1,Niederglatt,89.0,Niederglatt,4.0,11.0,3.0,8172.0,044 852 20 40,044 850 05 08,www.niederglatt-zh.ch,einwohnerkontrolle@niederglatt-zh.ch,Gemeindeverwaltung,424.0,360
+72,1,Oberglatt,92.0,Oberglatt,4.0,11.0,3.0,8154.0,044 852 37 00,044 852 37 93,www.oberglatt.ch,gemeinde@oberglatt.ch,Gemeindeverwaltung,430.0,823
+75,1,Regensberg,95.0,Regensberg,4.0,11.0,4.0,8158.0,044 853 12 00,044 853 33 17,www.regensberg.ch,gemeindeverwaltung@regensberg.ch,Gemeindeverwaltung,600.0,238
+78,1,Schleinikon,98.0,Schleinikon,4.0,11.0,4.0,8165.0,043 422 60 90,043 422 60 99,www.schleinikon.ch,info@schleinikon.ch,Gemeindeverwaltung,470.0,565
+81,1,Steinmaur,101.0,Steinmaur,4.0,11.0,3.0,8162.0,044 855 40 40,044 855 40 30,www.steinmaur.ch,edith.lee@steinmaur.ch,Gemeindeverwaltung,451.0,947
+84,1,Bubikon,112.0,Bubikon,5.0,8.0,2.0,8608.0,055 253 33 33,055 253 33 00,www.bubikon.ch,gemeinde@bubikon.ch,Gemeindeverwaltung,529.0,1164
+87,1,Gossau,115.0,Gossau,5.0,8.0,4.0,8625.0,044 936 55 11,044 936 55 66,www.gossau-zh.ch,info@gossau-zh.ch,Gemeindeverwaltung,500.0,1828
+89,1,Hinwil,117.0,Hinwil,5.0,8.0,2.0,8340.0,044 938 55 11,044 938 55 10,www.hinwil.ch,gemeinde@hinwil.ch,Gemeindeverwaltung,565.0,2231
+92,1,Wald,120.0,Wald,5.0,8.0,6.0,8636.0,055 256 51 11,055 256 51 12,www.wald-zh.ch,gemeinde@wald-zh.ch,Gemeindeverwaltung,616.0,2524
+94,1,Adliswil,131.0,Adliswil,6.0,4.0,3.0,8134.0,044 711 77 11,044 711 77 14,www.adliswil.ch,adliswil@adliswil.ch,Stadtverwaltung,451.0,780
+97,1,Huetten (bis 2018),134.0,Huetten (bis 2018),6.0,4.0,6.0,8825.0,044 788 90 20,044 788 90 29,www.waedenswil.ch,info@waedenswil.ch,Gemeindeverwaltung,742.0,724
+100,1,Oberrieden,137.0,Oberrieden,6.0,4.0,5.0,8942.0,044 722 71 70,044 722 71 85,www.oberrieden.ch,gemeindekanzlei@oberrieden.ch,Gemeindeverwaltung,424.0,277
+103,1,Schoenenberg (bis 2018),140.0,Schoenenberg (bis 2018),6.0,4.0,6.0,8824.0,044 788 90 60,044 788 90 69,www.waedenswil.ch,info@waedenswil.ch,Gemeindeverwaltung,715.0,1102
+109,1,Kuesnacht,154.0,Kuesnacht,7.0,5.0,5.0,8700.0,044 913 11 11,044 913 11 14,www.kuesnacht.ch,info@kuesnacht.ch,Gemeindeverwaltung,415.0,1233
+112,1,Oetwil a.S.,157.0,Oetwil a.S.,7.0,5.0,3.0,8618.0,044 929 60 11,044 929 60 10,www.oetwil.ch,praesidiales@oetwil.ch,Gemeindeverwaltung,538.0,607
+1,1,Aeugst a.A.,1.0,Aeugst a.A.,1.0,3.0,4.0,8914.0,044 763 50 60,044 763 50 69,www.aeugst-albis.ch,gemeinde@aeugst-albis.ch,Gemeindeverwaltung,700.0,787
+2,1,Affoltern a.A.,2.0,Affoltern a.A.,1.0,3.0,2.0,8910.0,044 762 56 56,044 762 56 90,www.stadtaffoltern.ch,info@stadtaffoltern.ch,Gemeindeverwaltung,494.0,1060
+4,1,Hausen a.A.,4.0,Hausen a.A.,1.0,3.0,6.0,8915.0,044 764 80 20,044 764 80 29,www.hausen.ch,gemeinde@hausen.ch,Gemeindeverwaltung,617.0,1368
+5,1,Hedingen,5.0,Hedingen,1.0,3.0,4.0,8908.0,044 762 25 25,044 760 05 73,www.hedingen.ch,info@hedingen.ch,Gemeindeverwaltung,497.0,653
+7,1,Knonau,7.0,Knonau,1.0,3.0,4.0,8934.0,044 768 50 50,044 768 50 55,www.knonau.ch,gemeinde@knonau.ch,Gemeindeverwaltung,436.0,651
+8,1,Maschwanden,8.0,Maschwanden,1.0,3.0,6.0,8933.0,044 767 05 55,044 767 06 36,www.maschwanden.ch,gemeinderatskanzlei@maschwanden.ch,Gemeindeverwaltung,409.0,468
+10,1,Obfelden,10.0,Obfelden,1.0,3.0,4.0,8912.0,044 763 53 53,044 763 53 59,www.obfelden.ch,gemeindeverwaltung@obfelden.ch,Gemeindeverwaltung,436.0,755
+11,1,Ottenbach,11.0,Ottenbach,1.0,3.0,4.0,8913.0,044 763 40 50,044 763 40 59,www.ottenbach.ch,info@ottenbach.ch,Gemeindeverwaltung,420.0,498
+12,1,Rifferswil,12.0,Rifferswil,1.0,3.0,6.0,8911.0,044 764 11 50,044 764 20 36,www.rifferswil.ch,gemeinde@rifferswil.ch,Gemeindeverwaltung,590.0,657
+14,1,Wettswil a.A.,14.0,Wettswil a.A.,1.0,3.0,4.0,8907.0,044 700 06 42,044 700 23 16,www.wettswil.ch,gemeindeverwaltung@wettswil.ch,Gemeindeverwaltung,562.0,377
+16,1,Benken,22.0,Benken,2.0,10.0,6.0,8463.0,052 319 11 80,052 319 20 23,www.benken-zh.ch,info@benken-zh.ch,Gemeindeverwaltung,421.0,567
+17,1,Berg a.I.,23.0,Berg a.I.,2.0,10.0,6.0,8415.0,052 318 11 89,052 318 22 15,www.berg-am-irchel.ch,gemeinde@berg-am-irchel.ch,Gemeindeverwaltung,410.0,706
+18,1,Buch a.I.,24.0,Buch a.I.,2.0,10.0,6.0,8414.0,052 318 16 01,052 318 21 10,www.buchamirchel.ch,gemeinde@buchamirchel.ch,Gemeindeverwaltung,530.0,1018
+20,1,Dorf,26.0,Dorf,2.0,10.0,6.0,8458.0,052 317 25 47,052 317 25 60,www.dorf.ch,gemeindekanzlei@dorf.ch,Gemeindeverwaltung,428.0,554
+21,1,Feuerthalen,27.0,Feuerthalen,2.0,10.0,3.0,8245.0,052 647 47 47 ,052 647 47 48,www.feuerthalen.ch,info@feuerthalen.ch,Gemeindeverwaltung,408.0,250
+23,1,Flurlingen,29.0,Flurlingen,2.0,10.0,4.0,8247.0,052 647 01 01 ,052 647 01 00,www.flurlingen.ch,gemeindeschreiber@flurlingen.ch,Gemeindeverwaltung,398.0,240
+24,1,Andelfingen,30.0,Andelfingen,2.0,10.0,6.0,8450.0,052 304 27 00,052 304 27 09,www.andelfingen.ch,kanzlei@andelfingen.ch,Gemeindeverwaltung,402.0,669
+25,1,Henggart,31.0,Henggart,2.0,10.0,4.0,8444.0,052 305 17 17,052 305 17 15,www.henggart.ch,gemeinde@henggart.ch,Gemeindeverwaltung,434.0,306
+27,1,Kleinandelfingen,33.0,Kleinandelfingen,2.0,10.0,6.0,8451.0,052 305 22 33,052 305 22 39,www.kleinandelfingen.ch,gemeindeverwaltung@kleinandelfingen.ch,Gemeindeverwaltung,365.0,1029
+28,1,Laufen-Uhwiesen,34.0,Laufen-Uhwiesen,2.0,10.0,4.0,8248.0,052 647 60 00,052 647 60 09,www.uhwiesen.ch,gemeinde@laufen-uhwiesen.ch,Gemeindeverwaltung,455.0,625
+30,1,Oberstammheim (bis 2018),36.0,Oberstammheim (bis 2018),2.0,10.0,7.0,8477.0,052 745 12 58,052 745 28 19,www.oberstammheim.ch,gemeindeverwaltung@oberstammheim.ch,Gemeindeverwaltung,448.0,938
+31,1,Ossingen,37.0,Ossingen,2.0,10.0,7.0,8475.0,052 317 14 63,052 317 15 60,www.ossingen.ch,gemeindeverwaltung@ossingen.ch,Gemeindeverwaltung,427.0,1311
+33,1,Thalheim a.d.Th.,39.0,Thalheim a.d.Th.,2.0,10.0,6.0,8478.0,052 320 82 82,052 320 82 83,www.thalheim.ch,gemeinde@thalheim.ch,Gemeindeverwaltung,385.0,644
+35,1,Truttikon,41.0,Truttikon,2.0,10.0,7.0,8467.0,052 317 24 26,052 317 11 80,www.truttikon.ch,gemeinde@truttikon.ch,Gemeindeverwaltung,470.0,443
+36,1,Unterstammheim (bis 2018),42.0,Unterstammheim (bis 2018),2.0,10.0,7.0,8476.0,052 745 12 77,052 745 23 98,www.unterstammheim.ch,gemeinde@unterstammheim.ch,Gemeindeverwaltung,442.0,727
+38,1,Waltalingen (bis 2018),44.0,Waltalingen (bis 2018),2.0,10.0,7.0,8468.0,052 744 03 20,052 744 03 21,www.waltalingen.ch,gemeinde@waltalingen.ch,Gemeindeverwaltung,440.0,728
+39,1,Bachenbuelach,51.0,Bachenbuelach,3.0,11.0,3.0,8184.0,044 864 34 80,044 860 75 68,www.bachenbuelach.ch,info@bachenbuelach.ch,Gemeindeverwaltung,428.0,429
+41,1,Buelach,53.0,Buelach,3.0,11.0,2.0,8180.0,044 863 11 11,044 863 11 33,www.buelach.ch,info@buelach.ch,Stadtverwaltung,428.0,1610
+42,1,Dietlikon,54.0,Dietlikon,3.0,6.0,2.0,8305.0,044 835 82 82,044 835 82 83,www.dietlikon.ch,gemeinde@dietlikon.ch,Gemeindeverwaltung,445.0,422
+43,1,Eglisau,55.0,Eglisau,3.0,11.0,4.0,8193.0,043 422 35 01,043 422 35 08,www.eglisau.ch,info@eglisau.ch,Gemeindeverwaltung,392.0,908
+45,1,Freienstein-Teufen,57.0,Freienstein-Teufen,3.0,11.0,4.0,8427.0,044 866 34 00,044 866 34 16,www.freienstein-teufen.ch,info@freienstein-teufen.ch,Gemeindeverwaltung,370.0,833
+46,1,Glattfelden,58.0,Glattfelden,3.0,11.0,4.0,8192.0,044 868 32 32,044 868 32 53,www.glattfelden.ch,gemeinde@glattfelden.ch,Gemeindeverwaltung,410.0,1231
+48,1,Hoeri,60.0,Hoeri,3.0,11.0,3.0,8181.0,044 872 77 11,044 872 77 29,www.hoeri.ch,info@hoeri.ch,Gemeindeverwaltung,418.0,477
+49,1,Huentwangen,61.0,Huentwangen,3.0,11.0,4.0,8194.0,044 869 08 70,044 869 33 08,www.huentwangen.ch,gemeinde@huentwangen.ch,Gemeindeverwaltung,393.0,493
+51,1,Lufingen,63.0,Lufingen,3.0,11.0,4.0,8426.0,043 204 20 40,043 204 20 41,www.lufingen.ch,gemeindeverwaltung@lufingen.ch,Gemeindeverwaltung,464.0,519
+52,1,Nuerensdorf,64.0,Nuerensdorf,3.0,6.0,4.0,8309.0,044 838 40 50,044 838 40 70,www.nuerensdorf.ch,gemeinde@nuerensdorf.ch,Gemeindeverwaltung,505.0,1009
+53,1,Oberembrach,65.0,Oberembrach,3.0,11.0,6.0,8425.0,044 866 26 00,044 866 26 16,www.oberembrach.ch,gemeinde@oberembrach.ch,Gemeindeverwaltung,459.0,1018
+54,1,Opfikon,66.0,Opfikon,3.0,6.0,2.0,8152.0,044 829 81 11,044 829 83 38 ,www.opfikon.ch,stadtkanzlei@opfikon.ch,Stadtverwaltung,455.0,561
+55,1,Rafz,67.0,Rafz,3.0,11.0,4.0,8197.0,044 879 14 44,044 879 14 64,www.rafz.ch,gemeindeverwaltung@rafz.ch,Gemeindeverwaltung,424.0,1072
+56,1,Rorbas,68.0,Rorbas,3.0,11.0,4.0,8427.0,044 866 70 60,044 866 70 61,www.rorbas.ch,gemeindeverwaltung@rorbas.ch,Gemeindeverwaltung,402.0,446
+58,1,Wasterkingen,70.0,Wasterkingen,3.0,11.0,4.0,8195.0,044 869 08 25,044 869 10 08,www.wasterkingen.ch,gemeinde@wasterkingen.ch,Gemeindeverwaltung,400.0,394
+59,1,Wil,71.0,Wil,3.0,11.0,4.0,8196.0,044 879 20 80,044 879 20 81,www.wil-zh.ch,gemeinde@wil-zh.ch,Gemeindeverwaltung,415.0,897
+61,1,Bachs,81.0,Bachs,4.0,11.0,7.0,8164.0,043 433 20 30,043 433 20 31,www.bachs.ch,gemeindeverwaltung@bachs.ch,Gemeindeverwaltung,470.0,915
+62,1,Boppelsen,82.0,Boppelsen,4.0,7.0,4.0,8113.0,044 849 70 00,044 849 70 01,www.boppelsen.ch,gemeinde@boppelsen.ch,Gemeindeverwaltung,525.0,392
+64,1,Daellikon,84.0,Daellikon,4.0,7.0,2.0,8108.0,044 847 19 19,044 847 19 11,www.daellikon.ch,info@daellikon.ch,Gemeindeverwaltung,440.0,448
+65,1,Daenikon,85.0,Daenikon,4.0,7.0,4.0,8114.0,044 846 50 80 ,044 846 50 89,www.daenikon.ch,info@daenikon.ch,Gemeindeverwaltung,440.0,280
+67,1,Huettikon,87.0,Huettikon,4.0,7.0,4.0,8115.0,044 847 25 00,044 847 25 09,www.huettikon.ch,gemeinde@huettikon.ch,Gemeindeverwaltung,438.0,160
+68,1,Neerach,88.0,Neerach,4.0,11.0,4.0,8173.0,044 859 16 16,044 859 16 17,www.neerach.ch,gemeindeverwaltung@neerach.ch,Gemeindeverwaltung,430.0,600
+70,1,Niederhasli,90.0,Niederhasli,4.0,11.0,3.0,8155.0,043 411 22 00,043 411 22 90,www.niederhasli.ch,gemeinde@niederhasli.ch,Gemeindeverwaltung,418.0,1131
+71,1,Niederweningen,91.0,Niederweningen,4.0,11.0,4.0,8166.0,044 857 12 26,044 856 06 32,www.niederweningen.ch,gemeindeverwaltung@niederweningen.ch,Gemeindeverwaltung,444.0,688
+73,1,Oberweningen,93.0,Oberweningen,4.0,11.0,4.0,8165.0,044 857 10 10,044 857 10 15,www.oberweningen.ch,gemeinde@oberweningen.ch,Gemeindeverwaltung,465.0,488
+74,1,Otelfingen,94.0,Otelfingen,4.0,7.0,2.0,8112.0,044 847 20 47,044 847 20 42,www.otelfingen.ch,info@otelfingen.ch,Gemeindeverwaltung,427.0,721
+76,1,Regensdorf,96.0,Regensdorf,4.0,7.0,2.0,8105.0,044 842 36 11,044 842 39 43,www.regensdorf.ch,info@regensdorf.ch,Gemeindeverwaltung,442.0,1463
+77,1,Ruemlang,97.0,Ruemlang,4.0,6.0,2.0,8153.0,044 817 75 00,044 818 01 18,www.ruemlang.ch,gemeinde@ruemlang.ch,Gemeindeverwaltung,430.0,1246
+79,1,Schoefflisdorf,99.0,Schoefflisdorf,4.0,11.0,4.0,8165.0,044 857 12 41,044 857 12 48,www.schoefflisdorf.ch,gemeinde@schoefflisdorf.ch,Gemeindeverwaltung,461.0,399
+80,1,Stadel,100.0,Stadel,4.0,11.0,4.0,8174.0,044 859 12 12,044 859 12 13,www.stadel.ch,valentino.vinzens@stadel.ch,Gemeindeverwaltung,438.0,1289
+82,1,Weiach,102.0,Weiach,4.0,11.0,4.0,8187.0,044 554 41 60,044 554 41 70,www.weiach.ch,info@weiach.ch,Gemeindeverwaltung,368.0,958
+83,1,Baeretswil,111.0,Baeretswil,5.0,8.0,4.0,8344.0,044 939 90 42,044 939 90 55,www.baeretswil.ch,kanzlei@baeretswil.ch,Gemeindeverwaltung,696.0,2219
+85,1,Duernten,113.0,Duernten,5.0,8.0,4.0,8635.0,055 251 57 00,055 251 57 01,www.duernten.ch,gemeindeverwaltung@duernten.ch,Gemeindeverwaltung,511.0,1021
+86,1,Fischenthal,114.0,Fischenthal,5.0,8.0,7.0,8497.0,055 265 60 00,055 265 60 01,www.fischenthal.ch,info@fischenthal.ch,Gemeindeverwaltung,734.0,3016
+88,1,Grueningen,116.0,Grueningen,5.0,8.0,4.0,8627.0,043 833 70 70,043 833 70 71,www.grueningen.ch,gemeinde@grueningen.ch,Gemeindeverwaltung,495.0,880
+90,1,Rueti,118.0,Rueti,5.0,8.0,2.0,8630.0,055 251 33 33,055 251 33 34,www.rueti.ch,info@rueti.ch,Gemeindeverwaltung,482.0,1008
+91,1,Seegraeben,119.0,Seegraeben,5.0,8.0,4.0,8607.0,043 477 40 90,043 477 40 99,www.seegraeben.ch,einwohnerkontrolle@seegraeben.ch,Gemeindeverwaltung,566.0,377
+93,1,Wetzikon,121.0,Wetzikon,5.0,8.0,1.0,8620.0,044 931 32 00,044 931 32 01,www.wetzikon.ch,info@wetzikon.ch,Gemeindeverwaltung,532.0,1671
+95,1,Hirzel (bis 2017),132.0,Hirzel (bis 2017),6.0,4.0,6.0,8816.0,044 729 70 70,044 729 70 77,www.hirzel.ch,gemeindeverwaltung@hirzel.ch,Gemeindeverwaltung,720.0,970
+96,1,Horgen (bis 2017),133.0,Horgen (bis 2017),6.0,4.0,2.0,8810.0,044 728 41 11,044 725 58 30,www.horgen.ch,gemeinde@horgen.ch,Gemeindeverwaltung,408.0,2113
+98,1,Kilchberg,135.0,Kilchberg,6.0,4.0,5.0,8802.0,044 716 31 11,044 716 31 19,www.kilchberg.ch,gemeinderatskanzlei@kilchberg.ch,Gemeindeverwaltung,424.0,260
+99,1,Langnau a.A.,136.0,Langnau a.A.,6.0,4.0,3.0,8135.0,044 713 55 11,044 713 25 21,www.langnauamalbis.ch,info@langnau.ch,Gemeindeverwaltung,468.0,865
+101,1,Richterswil,138.0,Richterswil,6.0,4.0,3.0,8805.0,044 787 11 11,044 787 12 04,www.richterswil.ch,gemeindeschreiber@richterswil.ch,Gemeindeverwaltung,408.0,755
+102,1,Rueschlikon,139.0,Rueschlikon,6.0,4.0,5.0,8803.0,044 724 72 11 ,044 724 72 27,www.rueschlikon.ch,gemeinde@rueschlikon.ch,Gemeindeverwaltung,432.0,292
+104,1,Thalwil,141.0,Thalwil,6.0,4.0,3.0,8800.0,044 723 21 11,044 723 23 60,www.thalwil.ch,info@thalwil.ch,Gemeindeverwaltung,435.0,551
+105,1,Waedenswil (bis 2018),142.0,Waedenswil (bis 2018),6.0,4.0,2.0,8820.0,044 789 72 11,044 789 72 14,www.waedenswil.ch,info@waedenswil.ch,Stadtverwaltung,408.0,1735
+106,1,Erlenbach,151.0,Erlenbach,7.0,5.0,5.0,8703.0,044 913 88 00,044 913 88 01,www.erlenbach.ch,kanzlei@erlenbach.ch,Gemeindeverwaltung,422.0,296
+107,1,Herrliberg,152.0,Herrliberg,7.0,5.0,5.0,8704.0,044 915 91 11,044 915 92 44,www.herrliberg.ch,gemeinde@herrliberg.ch,Gemeindeverwaltung,423.0,896
+108,1,Hombrechtikon,153.0,Hombrechtikon,7.0,5.0,3.0,8634.0,055 254 92 92,055 244 43 82,www.hombrechtikon.ch,gemeinde@hombrechtikon.ch,Gemeindeverwaltung,498.0,1216
+110,1,Maennedorf,155.0,Maennedorf,7.0,5.0,2.0,8708.0,044 921 66 11,044 921 66 09,www.maennedorf.ch,praesidiales@maennedorf.ch,Gemeindeverwaltung,406.0,475
+111,1,Meilen,156.0,Meilen,7.0,5.0,5.0,8706.0,044 925 92 54,044 925 94 50,www.meilen.ch,info@meilen.ch,Gemeindeverwaltung,420.0,1191
+113,1,Staefa,158.0,Staefa,7.0,5.0,2.0,8712.0,044 928 71 11,044 928 71 71,www.staefa.ch,gemeinde@staefa.ch,Gemeindeverwaltung,414.0,861
+114,1,Uetikon a.S.,159.0,Uetikon a.S.,7.0,5.0,3.0,8707.0,044 922 72 11,044 922 72 75,www.uetikonamsee.ch,gemeinde@uetikonamsee.ch,Gemeindeverwaltung,414.0,351
+116,1,Zollikon,161.0,Zollikon,7.0,5.0,5.0,8702.0,044 395 31 11,044 395 38 00,www.zollikon.ch,gemeinderatskanzlei@zollikon.ch,Gemeindeverwaltung,482.0,786
+118,1,Fehraltorf,172.0,Fehraltorf,8.0,8.0,2.0,8320.0,043 355 77 77,043 355 77 76,www.fehraltorf.ch,gemeindeverwaltung@fehraltorf.ch,Gemeindeverwaltung,531.0,950
+119,1,Hittnau,173.0,Hittnau,8.0,8.0,4.0,8335.0,043 288 66 66,043 288 66 67,www.hittnau.ch,kanzlei@hittnau.ch,Gemeindeverwaltung,641.0,1301
+121,1,Kyburg (bis 2015),175.0,Kyburg (bis 2015),8.0,9.0,4.0,8314.0,052 232 25 75,052 232 25 55,www.kyburg.ch,gemeinde@kyburg.ch,Gemeindeverwaltung,629.0,761
+122,1,Lindau,176.0,Lindau,8.0,9.0,2.0,8315.0,052 355 04 44,052 355 04 45,www.lindau.ch,info@lindau.ch,Gemeindeverwaltung,530.0,1193
+124,1,Russikon,178.0,Russikon,8.0,8.0,4.0,8332.0,043 355 61 61,043 355 61 62,www.russikon.ch,info@russikon.ch,Gemeindeverwaltung,610.0,1428
+126,1,Weisslingen,180.0,Weisslingen,8.0,9.0,6.0,8484.0,052 397 31 00 ,052 397 31 19,www.weisslingen.ch,silvano.castioni@weisslingen.ch,Gemeindeverwaltung,580.0,1275
+127,1,Wila,181.0,Wila,8.0,8.0,6.0,8492.0,052 397 27 27,052 397 27 28,www.wila.ch,info@wila.ch,Gemeindeverwaltung,569.0,923
+129,1,Duebendorf,191.0,Duebendorf,9.0,6.0,2.0,8600.0,044 801 67 11,044 801 67 67,www.duebendorf.ch,info@duebendorf.ch,Stadtverwaltung,440.0,1361
+130,1,Egg,192.0,Egg,9.0,5.0,3.0,8132.0,043 277 11 11,043 277 11 79,www.egg.ch,info@egg.ch,Gemeindeverwaltung,548.0,1450
+132,1,Greifensee,194.0,Greifensee,9.0,6.0,3.0,8606.0,043 399 21 21,043 399 21 11,www.greifensee.ch,info@greifensee.ch,Gemeindeverwaltung,443.0,233
+133,1,Maur,195.0,Maur,9.0,6.0,5.0,8124.0,043 366 13 66,043 366 13 77,www.maur.ch,info@maur.ch,Gemeindeverwaltung,454.0,1479
+135,1,Schwerzenbach,197.0,Schwerzenbach,9.0,6.0,2.0,8603.0,044 826 70 20,044 826 70 37,www.schwerzenbach.ch,gemeinde@schwerzenbach.ch,Gemeindeverwaltung,443.0,266
+136,1,Uster,198.0,Uster,9.0,8.0,2.0,8610.0,044 944 71 11,044 944 73 45,www.uster.ch,gesamtverwaltung@uster.ch,Stadtverwaltung,464.0,2854
+138,1,Wangen-Bruettisellen,200.0,Wangen-Bruettisellen,9.0,6.0,2.0,8306.0,044 805 91 11,044 805 91 19,www.wangen-bruettisellen.ch,gemeinderverwaltung@wangen-bruettisellen.ch,Gemeindeverwaltung,450.0,791
+139,1,Altikon,211.0,Altikon,10.0,9.0,7.0,8479.0,052 336 12 26,052 336 14 29,www.altikon.ch,gemeindeverwaltung@altikon.ch,Gemeindeverwaltung,400.0,768
+141,1,Bruetten,213.0,Bruetten,10.0,9.0,4.0,8311.0,052 355 03 55,052 355 03 50,www.bruetten.ch,verwaltung@bruetten.ch,Gemeindeverwaltung,640.0,665
+142,1,Daegerlen,214.0,Daegerlen,10.0,9.0,6.0,8471.0,052 305 12 20,052 305 12 21,www.daegerlen.ch,gemeindeverwaltung@daegerlen.ch,Gemeindeverwaltung,479.0,797
+144,1,Dinhard,216.0,Dinhard,10.0,9.0,4.0,8474.0,052 320 80 80,052 320 80 88,www.dinhard.ch,gemeindeverwaltung@dinhard.ch,Gemeindeverwaltung,438.0,708
+145,1,Elgg (bis 2017),217.0,Elgg (bis 2017),10.0,9.0,6.0,8353.0,052 368 55 55,052 368 55 99,www.elgg.ch,verwaltung@elgg.ch,Gemeindeverwaltung,507.0,1556
+147,1,Elsau,219.0,Elsau,10.0,9.0,4.0,8352.0,052 368 78 00,052 368 78 10,www.elsau.ch,gemeindeverwaltung@elsau.ch,Gemeindeverwaltung,515.0,804
+148,1,Hagenbuch,220.0,Hagenbuch,10.0,9.0,6.0,8523.0,052 368 69 69,052 368 69 79,www.hagenbuch-zh.ch,info@hagenbuch-zh.ch,Gemeindeverwaltung,538.0,816
+149,1,Hettlingen,221.0,Hettlingen,10.0,9.0,4.0,8442.0,052 305 05 05,052 305 05 06,www.hettlingen.ch,gemeinde@hettlingen.ch,Gemeindeverwaltung,425.0,579
+151,1,Neftenbach,223.0,Neftenbach,10.0,9.0,4.0,8413.0,052 305 06 66,052 305 06 67,www.neftenbach.ch,info@neftenbach.ch,Gemeindeverwaltung,415.0,1503
+152,1,Pfungen,224.0,Pfungen,10.0,9.0,4.0,8422.0,052 305 07 70,052 305 07 77,www.pfungen.ch,stephan.bruegel@pfungen.ch,Gemeindeverwaltung,412.0,496
+154,1,Schlatt,226.0,Schlatt,10.0,9.0,7.0,8418.0,052 363 14 88,052 363 16 01,www.schlatt-zh.ch,gemeinde@schlatt-zh.ch,Gemeindeverwaltung,663.0,906
+155,1,Seuzach,227.0,Seuzach,10.0,9.0,4.0,8472.0,052 320 47 47,052 320 47 90,www.seuzach.ch,gemeinde@seuzach.ch,Gemeindeverwaltung,455.0,760
+196,1,Wiesendangen,298.0,Wiesendangen,10.0,9.0,4.0,8542.0,052 320 92 22,052 320 92 20,www.wiesendangen.ch,gemeindeverwaltung@wiesendangen.ch,Gemeindeverwaltung,470.0,1912
+115,1,Zumikon,160.0,Zumikon,7.0,5.0,5.0,8126.0,044 918 78 78,044 918 78 00,www.zumikon.ch,gemeinde@zumikon.ch,Gemeindeverwaltung,659.0,548
+117,1,Bauma (bis 2014),171.0,Bauma (bis 2014),8.0,8.0,6.0,8494.0,052 397 70 20,052 397 70 21,www.bauma.ch,info@bauma.ch,Gemeindeverwaltung,639.0,2083
+120,1,Illnau-Effretikon (bis 2015),174.0,Illnau-Effretikon (bis 2015),8.0,9.0,3.0,8307.0,052 354 24 24,052 354 23 23,www.ilef.ch,info@ilef.ch,Stadtverwaltung,517.0,2530
+123,1,Pfaeffikon,177.0,Pfaeffikon,8.0,8.0,2.0,8330.0,044 952 52 52,044 952 52 00,www.pfaeffikon.ch,gemeinde@pfaeffikon.ch,Gemeindeverwaltung,540.0,1949
+125,1,Sternenberg (bis 2014),179.0,Sternenberg (bis 2014),8.0,8.0,7.0,8499.0,052 394 10 50,052 394 10 59,www.sternenberg.ch,gemeinde@sternenberg.ch,Gemeindeverwaltung,870.0,866
+128,1,Wildberg,182.0,Wildberg,8.0,8.0,6.0,8489.0,052 385 15 88,052 385 16 32,www.wildberg.ch,info@wildberg.ch,Gemeindeverwaltung,656.0,1056
+131,1,Faellanden,193.0,Faellanden,9.0,6.0,5.0,8117.0,043 355 35 35,043 355 35 36,www.faellanden.ch,gemeinde@faellanden.ch,Gemeindeverwaltung,459.0,641
+134,1,Moenchaltorf,196.0,Moenchaltorf,9.0,8.0,4.0,8617.0,044 949 40 10,044 949 40 29,www.moenchaltorf.ch,gemeinde@moenchaltorf.ch,Gemeindeverwaltung,442.0,763
+137,1,Volketswil,199.0,Volketswil,9.0,6.0,2.0,8604.0,044 910 20 30,044 910 20 31,www.volketswil.ch,gemeinderat@volketswil.ch,Gemeindeverwaltung,475.0,1401
+143,1,Daettlikon,215.0,Daettlikon,10.0,9.0,4.0,8421.0,052 304 44 88,052 304 44 80,www.daettlikon.ch,vorname.name@daettlikon.ch,Gemeindeverwaltung,431.0,290
+146,1,Ellikon a.d.Th.,218.0,Ellikon a.d.Th.,10.0,9.0,6.0,8548.0,052 375 10 40,052 375 28 59,www.ellikonanderthur.ch,gemeinde@ellikonanderthur.ch,Gemeindeverwaltung,390.0,500
+150,1,Hofstetten (bis 2017),222.0,Hofstetten (bis 2017),10.0,9.0,6.0,8354.0,052 364 37 17,052 364 22 17,www.elgg.ch,verwaltung@elgg.ch,Gemeindeverwaltung,636.0,885
+153,1,Rickenbach,225.0,Rickenbach,10.0,9.0,4.0,8545.0,052 320 95 00,052 320 95 10,www.rickenbach-zh.ch,gemeinde@rickenbach-zh.ch,Gemeindeverwaltung,425.0,606
+156,1,Turbenthal,228.0,Turbenthal,10.0,9.0,6.0,8488.0,052 397 26 26,052 397 26 16,www.turbenthal.ch,info@turbenthal.ch,Gemeindeverwaltung,554.0,2524
+158,1,Winterthur,230.0,Winterthur,10.0,9.0,1.0,8400.0,052 267 51 51,052 267 56 15,www.stadt.winterthur.ch,stadtkanzlei@win.ch,Stadtverwaltung,439.0,6812
+193,4,Region Zimmerberg,,Region Zimmerberg,,4.0,,,,,,,,,10424
+177,3,Bezirk Horgen,,Bezirk Horgen,6.0,,,,,,,,,,10424
+191,4,Region Weinland,,Region Weinland,,10.0,,,,,,,,,17435
+174,3,Bezirk Buelach,,Bezirk Buelach,3.0,,,,,,,,,,18493
+173,3,Bezirk Andelfingen,,Bezirk Andelfingen,2.0,,,,,,,,,,16667
+176,3,Bezirk Hinwil,,Bezirk Hinwil,5.0,,,,,,,,,,17939
+178,3,Bezirk Meilen,,Bezirk Meilen,7.0,,,,,,,,,,8460
+179,3,Bezirk Pfaeffikon,,Bezirk Pfaeffikon,8.0,,,,,,,,,,16315
+182,3,Bezirk Dietikon,,Bezirk Dietikon,11.0,,,,,,,,,,5998
+195,8,Zuerich - ganzer Kanton,,Zuerich - ganzer Kanton,,,,,043 259 11 11,043 259 42 60,www.zh.ch,,,,172889
+186,4,Region Knonaueramt,,Region Knonaueramt,,3.0,,,,,,,,,11308
+188,4,Region Oberland,,Region Oberland,,8.0,,,,,,,,,32345
+190,4,Region Unterland,,Region Unterland,,11.0,,,,,,,,,23014
+192,4,Region Winterthur u. Umg.,,Region Winterthur u. Umg.,,9.0,,,,,,,,,30176
+198,1,Illnau-Effretikon,296.0,Illnau-Effretikon,8.0,9.0,3.0,8307.0,052 354 24 24,052 354 23 23,www.ilef.ch,info@ilef.ch,Stadtverwaltung,517.0,3291
+197,1,Bauma,297.0,Bauma,8.0,8.0,6.0,8494.0,052 397 70 20,052 397 70 21,www.bauma.ch,info@bauma.ch,Gemeindeverwaltung,639.0,2949
+140,9,Bertschikon (bis 2013),212.0,Bertschikon (bis 2013),10.0,9.0,6.0,8543.0,052 320 85 44,052 320 85 49,www.bertschikon.ch,gemeinde@bertschikon.ch,Gemeindeverwaltung,510.0,963
+157,9,Wiesendangen (bis 2013),229.0,Wiesendangen (bis 2013),10.0,9.0,4.0,8542.0,052 320 92 22,052 320 92 22,www.wiesendangen.ch,gemeindeverwaltung@wiesendangen.ch,Gemeindeverwaltung,470.0,949
+199,1,Horgen,295.0,Horgen,6.0,4.0,2.0,8810.0,044 728 41 11,044 725 58 30,www.horgen.ch,gemeinde@horgen.ch,Gemeindeverwaltung,408.0,3084
+200,1,Elgg,294.0,Elgg,10.0,9.0,6.0,8353.0,052 368 55 55,052 368 55 99 ,www.elgg.ch,verwaltung@elgg.ch,Gemeindeverwaltung,507.0,2441
+202,1,Waedenswil,293.0,Waedenswil,6.0,4.0,2.0,8820.0,044 789 72 11,044 789 72 14,www.waedenswil.ch,info@waedenswil.ch,Stadtverwaltung,408.0,3559
+201,1,Stammheim,292.0,Stammheim,2.0,10.0,7.0,8476.0,052 745 12 77,052 745 23 98,www.stammheim.ch,gemeinde@stammheim.ch,Gemeindeverwaltung,442.0,2396
 1001,8,Kanton Basel-Stadt,,Kanton Basel-Stadt,,,,,061 267 81 81,,www.bs.ch,,,,3707
