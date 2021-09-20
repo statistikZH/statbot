@@ -1,9 +1,9 @@
 indicator_id,short_description,question_type,view_name,view_column_value
-385,share of people living in proximity of a busstop,1,accessability_bus,access_by_bus
-386,share of people living in proximity of a trainstation,1,accessability_train,access_by_suburban_train
+385,share of people living in proximity of a busstop,1,accessibility_bus,access_by_bus
+386,share of people living in proximity of a trainstation,1,accessibility_train,access_by_suburban_train
 399,number of cars per capita,2,number_of_passenger_cars,passenger_cars_per_1000_inhabitants
 400,average distance to the next stop,3,distance_next_stop,distance_to_next_stop
-401,share of people living in proximity of a trainstation or busstop,1,accessability_train_and_bus,access_by_suburban_train_and_bus
+401,share of people living in proximity of a trainstation or busstop,1,accessibility_train_and_bus,access_by_suburban_train_and_bus
 480,share of public transport in traffic movements of people living,1,public_transport_share,public_transport_share_modal_split
 481,share of motorised private transport in traffic movements of people living,1,miv_share,miv_share_modal_split
 601,number of newly registered cars,2,amount_new_pw_registrations,amount_new_pw_registrations_per_1000_inhabitants
