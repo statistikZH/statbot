@@ -12,8 +12,8 @@ df$Anzahl_Ladestationen_pro1000<-df$Anzahl_Ladestationen/df$INDIKATOR_VALUE*1000
 df_999<-data.frame(INDICATOR_ID=999,SPATIALUNIT_ID=df$bfs_num,YEAR=2021,VALUE=df$Anzahl_Ladestationen,VALUE_ADDITION="",CAT=format(Sys.time(), '%d.%m.%Y %H:%M'))
 df_998<-data.frame(INDICATOR_ID=998,SPATIALUNIT_ID=df$bfs_num,YEAR=2021,VALUE=df$Anzahl_Ladestationen_pro1000,VALUE_ADDITION="",CAT=format(Sys.time(), '%d.%m.%Y %H:%M'))
 
-values<-read.csv("hackathon_makezurich/input_data/EN_INDICATOR_VALUES.csv")
+values<-read.csv("hackathon_hackzurich/input_data/EN_INDICATOR_VALUES.csv")
 
 values<-rbind(values,df_999,df_998)
 
-write.csv(values,"hackathon_makezurich/input_data/EN_INDICATOR_VALUES.csv",row.names = F)
+write.csv(values,"hackathon_hackzurich/input_data/EN_INDICATOR_VALUES.csv",row.names = F)
