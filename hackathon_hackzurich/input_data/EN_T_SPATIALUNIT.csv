@@ -55,13 +55,13 @@ SPATIALUNIT_ID,TYPE_ID,NAME,BFS_NR,NAME_COMBINED,DISTRICT_ID,REGION_ID,COMMUNE_T
 97,1,Huetten (bis 2018),134,Huetten (bis 2018),6,4,6,8825,044 788 90 20,044 788 90 29,www.waedenswil.ch,info@waedenswil.ch,Gemeindeverwaltung,742,724
 100,1,Oberrieden,137,Oberrieden,6,4,5,8942,044 722 71 70,044 722 71 85,www.oberrieden.ch,gemeindekanzlei@oberrieden.ch,Gemeindeverwaltung,424,277
 103,1,Schoenenberg (bis 2018),140,Schoenenberg (bis 2018),6,4,6,8824,044 788 90 60,044 788 90 69,www.waedenswil.ch,info@waedenswil.ch,Gemeindeverwaltung,715,1102
-109,1,Kuesnacht,154,Kuesnacht,7,5,5,8700,044 913 11 11  ,044 913 11 14,www.kuesnacht.ch,info@kuesnacht.ch,Gemeindeverwaltung,415,1233
+109,1,Kuesnacht,154,Kuesnacht,7,5,5,8700,044 913 11 11,044 913 11 14,www.kuesnacht.ch,info@kuesnacht.ch,Gemeindeverwaltung,415,1233
 112,1,Oetwil a.S.,157,Oetwil a.S.,7,5,3,8618,044 929 60 11,044 929 60 10,www.oetwil.ch,praesidiales@oetwil.ch,Gemeindeverwaltung,538,607
 1,1,Aeugst a.A.,1,Aeugst a.A.,1,3,4,8914,044 763 50 60,044 763 50 69,www.aeugst-albis.ch,gemeinde@aeugst-albis.ch,Gemeindeverwaltung,700,787
 2,1,Affoltern a.A.,2,Affoltern a.A.,1,3,2,8910,044 762 56 56,044 762 56 90,www.stadtaffoltern.ch,info@stadtaffoltern.ch,Gemeindeverwaltung,494,1060
 4,1,Hausen a.A.,4,Hausen a.A.,1,3,6,8915,044 764 80 20,044 764 80 29,www.hausen.ch,gemeinde@hausen.ch,Gemeindeverwaltung,617,1368
 5,1,Hedingen,5,Hedingen,1,3,4,8908,044 762 25 25,044 760 05 73,www.hedingen.ch,info@hedingen.ch,Gemeindeverwaltung,497,653
-7,1,Knonau,7,Knonau,1,3,4,8934,044 768 50 50,044 768 50 55,www.knonau.ch,gemeinde@knonau.ch,Gemeindeverwaltung,436,651
+7,1,Knonau,7,Knonau,1,3,4,8934,044 768 50 50,044 768 50 55,www.knonau.ch,gemeinde@knonau.ch,Gemeindeverwaltung,436,651
 8,1,Maschwanden,8,Maschwanden,1,3,6,8933,044 767 05 55,044 767 06 36,www.maschwanden.ch,gemeinderatskanzlei@maschwanden.ch,Gemeindeverwaltung,409,468
 10,1,Obfelden,10,Obfelden,1,3,4,8912,044 763 53 53,044 763 53 59,www.obfelden.ch,gemeindeverwaltung@obfelden.ch,Gemeindeverwaltung,436,755
 11,1,Ottenbach,11,Ottenbach,1,3,4,8913,044 763 40 50,044 763 40 59,www.ottenbach.ch,info@ottenbach.ch,Gemeindeverwaltung,420,498
