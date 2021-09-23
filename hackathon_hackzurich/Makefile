@@ -18,6 +18,6 @@ clean:
 jumpin-postgres:
 	docker-compose exec postgres /bin/bash
 
-.PHONY: import-data
-import-data:
-	docker-compose exec postgres sh -c 'psql --dbname=hack_zurich --username=hack_zurich --password < /var/dumps/2021-09-20-hack_zurich.sql'
+.PHONY: create-database
+create-database:
+	docker-compose exec postgres sh -c 'psql --dbname=hack_zurich --username=hack_zurich --password < /var/dumps/hack_zurich.sql'

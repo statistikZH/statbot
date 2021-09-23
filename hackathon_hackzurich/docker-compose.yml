@@ -5,12 +5,10 @@ services:
       POSTGRES_DB: hack_zurich
       POSTGRES_USER: hack_zurich
       POSTGRES_PASSWORD: hack_zurich
-    stdin_open: true # docker run -i
-    tty: true        # docker run -t
     ports:
       - 5432:5432
-    # volumes:
-    #   - ./data/hack_zurich:/var/dumps
+    volumes:
+      - ./dumps:/var/dumps
 
   adminer:
     image: adminer:4.8.1
