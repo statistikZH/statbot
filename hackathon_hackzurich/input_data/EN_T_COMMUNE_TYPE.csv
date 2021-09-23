@@ -6,3 +6,5 @@ COMMUNE_TYPE_ID,DESCRIPTION
 5,High-income commune
 6,Mixed commune
 7,Rural commune
+8,Unknown
+9,Unknown
