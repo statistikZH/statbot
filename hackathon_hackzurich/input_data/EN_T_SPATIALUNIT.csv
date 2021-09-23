@@ -202,4 +202,8 @@ SPATIALUNIT_ID,TYPE_ID,NAME,BFS_NR,NAME_COMBINED,DISTRICT_ID,REGION_ID,COMMUNE_T
 202,1,Waedenswil,293,Waedenswil,6,4,2,8820,044 789 72 11,044 789 72 14,www.waedenswil.ch,info@waedenswil.ch,Stadtverwaltung,408,3559
 201,1,Stammheim,292,Stammheim,2,10,7,8476,052 745 12 77,052 745 23 98,www.stammheim.ch,gemeinde@stammheim.ch,Gemeindeverwaltung,442,2396
 1001,8,Kanton Basel-Stadt,,Kanton Basel-Stadt,,,,,061 267 81 81,,www.bs.ch,,,,3707
+1101,1,Basel,2701,Basel,,,,,,,,,,,,
+1102,1,Bettingen,2702,Bettingen,,,,,,,,,,,
+1103,1,Riehen,2703,Riehen,,,,,,,,,,
+
 
