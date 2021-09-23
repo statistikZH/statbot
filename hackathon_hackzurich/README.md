@@ -1,5 +1,7 @@
 # Run the database and the notebooks locally
 
+**Please note that the database is truncated before adding the new data to avoid SQL constraint violations. So backup your database if it contains data that is valuable to you and that you do not want to lose.**
+
 You can run the database and the notebooks locally using docker-compose by doing the following:
 
 1. Run `docker-compose up` to start the containers
