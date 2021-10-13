@@ -10,3 +10,8 @@ data_ttl/
 data_matching/
 data/*
 .Rproj.user
+!data_management/data
+!data_management/data/*
+!data_management/**/*.csv
+!data_management/data/*.csv
+
