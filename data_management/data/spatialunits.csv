@@ -1,4 +1,4 @@
-"SPATIALUNIT_ID","TYPE_ID","NAME_DE","BFS_NR","TYPE_NAME","NAME_FR","NAME_IT","NAME_EN"
+"spatialunit_id","type_id","name_de","bfs_nr","type_name","name_fr","name_it","name_en"
 231,1,"Zell",231,"Gemeinde","Zell","Zell","Zell"
 241,1,"Aesch ZH",241,"Gemeinde","Aesch ZH","Aesch ZH","Aesch ZH"
 242,1,"Birmensdorf",242,"Gemeinde","Birmensdorf","Birmensdorf","Birmensdorf"

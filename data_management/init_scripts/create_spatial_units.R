@@ -1,25 +1,31 @@
 df<-read.csv("data/spatialunits.csv")
 #selection of columns
 df<-df[,1:4]
+
+#convert to minor letters
+colnames(df)[colnames(df)=="TYPE_ID"]<-"type_id"
+colnames(df)[colnames(df)=="SPATIALUNIT_ID"]<-"spatialunit_id"
+colnames(df)[colnames(df)=="BFS_NR"]<-"bfs_nr"
+
 #create variable type_name out of type_ids (Does not need an own table)
-df$TYPE_NAME<-ifelse(df$TYPE_ID==1,"Gemeinde","")
-df$TYPE_NAME<-ifelse(df$TYPE_ID==8,"Kanton",df$TYPE_NAME)
-df$TYPE_NAME<-ifelse(df$TYPE_ID==4,"Region",df$TYPE_NAME)
-df$TYPE_NAME<-ifelse(df$TYPE_ID==3,"Bezirk",df$TYPE_NAME)
-df$TYPE_NAME<-ifelse(df$TYPE_ID==9,"Gemeinde alt",df$TYPE_NAME)
+df$type_name<-ifelse(df$type_id==1,"Gemeinde","")
+df$type_name<-ifelse(df$type_id==8,"Kanton",df$type_name)
+df$type_name<-ifelse(df$type_id==4,"Region",df$type_name)
+df$type_name<-ifelse(df$type_id==3,"Bezirk",df$type_name)
+df$type_name<-ifelse(df$type_id==9,"Gemeinde alt",df$type_name)
 
 #lets create a name_col for every language
-colnames(df)[colnames(df)=="NAME"]<-"NAME_DE"
-df$NAME_FR<-df$NAME_DE
-df$NAME_IT<-df$NAME_DE
-df$NAME_EN<-df$NAME_DE
+colnames(df)[colnames(df)=="NAME"]<-"name_de"
+df$name_fr<-df$name_de
+df$name_it<-df$name_de
+df$name_en<-df$name_de
 
 
 # new spatial units
-df$SPATIALUNIT_ID<-ifelse(df$TYPE_ID==1|df$TYPE_ID==9,df$BFS_NR,df$SPATIALUNIT_ID)
-df$SPATIALUNIT_ID<-ifelse(df$TYPE_ID==8&df$NAME_DE=="Zuerich - ganzer Kanton",010000,df$SPATIALUNIT_ID)
-df$SPATIALUNIT_ID<-ifelse(df$TYPE_ID==8&df$NAME_DE=="Kanton Basel-Stadt",120000,df$SPATIALUNIT_ID)
-df$SPATIALUNIT_ID<-ifelse(df$TYPE_ID==3|df$TYPE_ID==4,df$SPATIALUNIT_ID+010000,df$SPATIALUNIT_ID)
+df$spatialunit_id<-ifelse(df$type_id==1|df$type_id==9,df$bfs_nr,df$spatialunit_id)
+df$spatialunit_id<-ifelse(df$type_id==8&df$name_de=="Zuerich - ganzer Kanton",010000,df$spatialunit_id)
+df$spatialunit_id<-ifelse(df$type_id==8&df$name_de=="Kanton Basel-Stadt",120000,df$spatialunit_id)
+df$spatialunit_id<-ifelse(df$type_id==3|df$type_id==4,df$spatialunit_id+010000,df$spatialunit_id)
 
 
 #saving to the new spatialunits.csv

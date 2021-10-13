@@ -4,6 +4,7 @@ check_changes_in_input_file<-function(file_name){
   hash_file<-read.csv("data/hashes.csv")
   selected_hash<-hash_file$hash[hash_file$file_name==file_name]
   if(!is.character(selected_hash)) selected_hash<-"NO"
+  if(length(selected_hash)==0) selected_hash<-"NO"
   if(selected_hash==hash){
     #no change
     return(FALSE)
