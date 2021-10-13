@@ -44,6 +44,18 @@ statbot_dim_alter<-data.frame(  dim_id=3,
                        value_name_en=c("Alter Total",paste0(seq(1,99),"-jährig"),"100 Jahre und mehr")
 )
 
+statbot_dim_altersklasse_mutter<-data.frame(  dim_id=4,
+                                dim_name_de="Altersklasse der Mutter",
+                                dim_name_fr="Altersklasse der Mutter",
+                                dim_name_it="Altersklasse der Mutter",
+                                dim_name_en="Altersklasse der Mutter",
+                                value_id=seq(0,5),
+                                value_name_de=c("Total","Unter 25 Jahren","25-29 Jahre","30-34 Jahre","35-39 Jahre","40 Jahre und mehr"),
+                                value_name_fr=c("Total","Unter 25 Jahren","25-29 Jahre","30-34 Jahre","35-39 Jahre","40 Jahre und mehr"),
+                                value_name_it=c("Total","Unter 25 Jahren","25-29 Jahre","30-34 Jahre","35-39 Jahre","40 Jahre und mehr"),
+                                value_name_en=c("Total","Unter 25 Jahren","25-29 Jahre","30-34 Jahre","35-39 Jahre","40 Jahre und mehr")
+)
+
 # merge all the variables starting with statbot_dim_ together
 out<-NULL
 for(i in ls(pat="statbot_dim_")){
