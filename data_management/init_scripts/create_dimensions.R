@@ -3,7 +3,7 @@
 # Abweichung vom eCH: 0 als Total
 # 3 wäre unebstimmt laut eCH
 
-geschlecht<-data.frame(  dim_id=1,
+statbot_dim_geschlecht<-data.frame(  dim_id=1,
                  dim_name_de="Geschlecht",
                  dim_name_fr="Geschlecht",
                  dim_name_it="Geschlecht",
@@ -14,7 +14,10 @@ geschlecht<-data.frame(  dim_id=1,
                  value_name_it=c("Männer","Frauen","Total"),
                  value_name_en=c("Männer","Frauen","Total")
 )
-herkunft<-data.frame(  dim_id=2,
+
+# Herkunft wie intern verwendet. Keine eCH gefunden
+
+statbot_dim_herkunft<-data.frame(  dim_id=2,
                          dim_name_de="Herkunft",
                          dim_name_fr="Herkunft",
                          dim_name_it="Herkunft",
@@ -25,7 +28,11 @@ herkunft<-data.frame(  dim_id=2,
                          value_name_it=c("Schweiz","Ausland","Total"),
                          value_name_en=c("Schweiz","Ausland","Total")
 )
-alter<-data.frame(  dim_id=3,
+
+# Alter nach BFS Bevölkerungsschema
+# keine eCH gefunden
+
+statbot_dim_alter<-data.frame(  dim_id=3,
                        dim_name_de="Alter",
                        dim_name_fr="Alter",
                        dim_name_it="Alter",
@@ -36,5 +43,12 @@ alter<-data.frame(  dim_id=3,
                        value_name_it=c("Alter Total",paste0(seq(1,99),"-jährig"),"100 Jahre und mehr"),
                        value_name_en=c("Alter Total",paste0(seq(1,99),"-jährig"),"100 Jahre und mehr")
 )
-out<-rbind(geschlecht,herkunft,alter)
+
+# merge all the variables starting with statbot_dim_ together
+out<-NULL
+for(i in ls(pat="statbot_dim_")){
+  out<-rbind(out,eval(as.name(i)))
+}
+
+# output
 write.csv(out,"data/dimensions.csv",row.names = F)
