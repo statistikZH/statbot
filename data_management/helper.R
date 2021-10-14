@@ -16,3 +16,16 @@ check_changes_in_input_file<-function(file_name){
     return(TRUE)
   }
 }
+
+bring_indicator_values_to_order<-function(df, final_length=F){
+  total_list<-c("indicator_id","spatialunit_id","time_value","timeinfo_id",
+                "value","dim1_value_id","dim2_value_id","dim3_value_id","dim4_value_id")
+
+  if(sum(names(df) %in% total_list)<length(names(df))) stop("Error: invalid var-name(s)")
+
+  list_to_select<-total_list[total_list %in% names(df)]
+  if(final_length&length(list_to_select)!=length(total_list)) stop(paste0("Error: Amount of cols incorrect: ",length(list_to_select)," instead of ",length(total_list),"."))
+  if(length(list_to_select)<length(total_list)) print("Info: Subset selected")
+
+  return(df[,list_to_select])
+}

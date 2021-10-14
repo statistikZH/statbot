@@ -3,12 +3,18 @@ library("xlsx")
 library("janitor")
 library("tidyverse")
 
+#consists of communal (+swiss total) and of cantonal areas
+
 statbot_src_32001_CH <- function(flag_force_update=FALSE){
   destfile<-"temp/bfs_gp.xlsx"
   download.file("https://www.bfs.admin.ch/bfsstatic/dam/assets/15864450/master",destfile=destfile)
 
-  if(check_changes_in_input_file(destfile)|flag_force_update){
+  destfile2<-"temp/bfs_kantone.xlsx"
+  download.file("https://www.bfs.admin.ch/bfsstatic/dam/assets/15864476/master",destfile=destfile2)
+
+  if(check_changes_in_input_file(destfile)|check_changes_in_input_file(destfile2)|flag_force_update){
     if(flag_force_update) print("flag_force_update") else print("Changes found")
+    # 1. communal area data
     df<-read.xlsx(destfile,1,startRow=6,header=T) %>% janitor::clean_names()
     year_value<-df$gesamtflache_in_km_1[1]
     df<-df[3:nrow(df),]
@@ -18,13 +24,32 @@ statbot_src_32001_CH <- function(flag_force_update=FALSE){
 
     colnames(new_df)[colnames(new_df)=="gesamtflache_in_km_1"]<-"value"
     colnames(new_df)[colnames(new_df)=="gemeindecode"]<-"spatialunit_id"
-    new_df$indicator_id<-32001
     new_df$time_value<-year_value
+
+    # 2. cantonal area data
+    df2<-read.xlsx(destfile2,1,startRow=36,header=T) %>% janitor::clean_names()
+    df2<-df2[1,]
+    #check
+    if(substr(df2[1,1],1,12)!="Fläche in km") stop("Error: Excel-File seems not to be OK")
+    year_value<-as.numeric(df2[1,2])
+    df2<-df2[,4:29]
+    df2<-as.data.frame(t(df2))
+    colnames(df2)<-c("value")
+    df2$spatialunit_id<-seq(10000,260000,by=10000)
+    df2$time_value<-year_value
+
+    new_df<-bring_indicator_values_to_order(new_df)
+    df2<-bring_indicator_values_to_order(df2)
+    new_df<-rbind(new_df,df2)
+
+    new_df$indicator_id<-32001
     new_df$timeinfo_id<-1
     new_df$dim1_value_id<-NA
     new_df$dim2_value_id<-NA
     new_df$dim3_value_id<-NA
     new_df$dim4_value_id<-NA
+
+    new_df<-bring_indicator_values_to_order(new_df,final_length=T)
 
     write.csv(new_df,"data/values/32001_CH.csv",row.names = F)
 
