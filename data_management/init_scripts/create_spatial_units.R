@@ -1,4 +1,4 @@
-df<-read.csv("data/spatialunits.csv")
+df<-read.csv("data/old_spatialunits.csv")
 #selection of columns
 df<-df[,1:4]
 
@@ -26,6 +26,7 @@ df$spatialunit_id<-ifelse(df$type_id==1|df$type_id==9,df$bfs_nr,df$spatialunit_i
 df$spatialunit_id<-ifelse(df$type_id==8&df$name_de=="Zuerich - ganzer Kanton",010000,df$spatialunit_id)
 df$spatialunit_id<-ifelse(df$type_id==8&df$name_de=="Kanton Basel-Stadt",120000,df$spatialunit_id)
 df$spatialunit_id<-ifelse(df$type_id==3|df$type_id==4,df$spatialunit_id+010000,df$spatialunit_id)
+
 
 
 #saving to the new spatialunits.csv

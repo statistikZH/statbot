@@ -112,3 +112,7 @@
 2,"Herkunft","Herkunft","Herkunft","Herkunft",1,"Schweiz","Schweiz","Schweiz","Schweiz"
 2,"Herkunft","Herkunft","Herkunft","Herkunft",2,"Ausland","Ausland","Ausland","Ausland"
 2,"Herkunft","Herkunft","Herkunft","Herkunft",0,"Total","Total","Total","Total"
+5,"Wirtschaftssektor","Wirtschaftssektor","Wirtschaftssektor","Wirtschaftssektor",0,"Total","Total","Total","Total"
+5,"Wirtschaftssektor","Wirtschaftssektor","Wirtschaftssektor","Wirtschaftssektor",1,"Primärsektor","Primärsektor","Primärsektor","Primärsektor"
+5,"Wirtschaftssektor","Wirtschaftssektor","Wirtschaftssektor","Wirtschaftssektor",2,"Sekundärer Sektor","Sekundärer Sektor","Sekundärer Sektor","Sekundärer Sektor"
+5,"Wirtschaftssektor","Wirtschaftssektor","Wirtschaftssektor","Wirtschaftssektor",3,"Tertiärer Sektor","Tertiärer Sektor","Tertiärer Sektor","Tertiärer Sektor"

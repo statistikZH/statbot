@@ -56,6 +56,18 @@ statbot_dim_altersklasse_mutter<-data.frame(  dim_id=4,
                                 value_name_en=c("Total","Unter 25 Jahren","25-29 Jahre","30-34 Jahre","35-39 Jahre","40 Jahre und mehr")
 )
 
+statbot_dim_wirtschaftssektor<-data.frame(  dim_id=5,
+                                              dim_name_de="Wirtschaftssektor",
+                                              dim_name_fr="Wirtschaftssektor",
+                                              dim_name_it="Wirtschaftssektor",
+                                              dim_name_en="Wirtschaftssektor",
+                                              value_id=seq(0,3),
+                                              value_name_de=c("Total","Primärsektor","Sekundärer Sektor","Tertiärer Sektor"),
+                                              value_name_fr=c("Total","Primärsektor","Sekundärer Sektor","Tertiärer Sektor"),
+                                              value_name_it=c("Total","Primärsektor","Sekundärer Sektor","Tertiärer Sektor"),
+                                              value_name_en=c("Total","Primärsektor","Sekundärer Sektor","Tertiärer Sektor")
+)
+
 # merge all the variables starting with statbot_dim_ together
 out<-NULL
 for(i in ls(pat="statbot_dim_")){

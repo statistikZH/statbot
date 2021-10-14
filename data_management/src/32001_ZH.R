@@ -1,6 +1,5 @@
 source("helper.R")
-library("janitor")
-library("tidyverse")
+
 
 #consists of communal (+swiss total) and of cantonal areas
 
