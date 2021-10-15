@@ -36,6 +36,14 @@ statbot_ind_12001<-data.frame(indicator_id=12001,name_de="Beschäftigte",name_fr
                               unit_long_de="Personen",unit_long_fr="Personen",unit_long_it="Personen",unit_long_en="Personen",
                               source="BFS-STATENT",dim1_id=1,dim2_id=5,dim3_id=NA,dim4_id=NA,last_updated=NA,min_year=2011,max_year=2018)
 
+statbot_ind_12002<-data.frame(indicator_id=12002,name_de="Beschäftigte pro 1000 Einwohner",name_fr="Beschäftigte pro 1000 Einwohner",
+                              name_it="Beschäftigte pro 1000 Einwohner",name_en="Beschäftigte pro 1000 Einwohner",
+                              description_de="Beschäftigte pro 1000 Einwohner",description_fr="Beschäftigte pro 1000 Einwohner",
+                              description_it="Beschäftigte pro 1000 Einwohner",description_en="Beschäftigte pro 1000 Einwohner",
+                              unit_short_de="Pers./1000 Einw.",unit_short_fr="Pers./1000 Einw.",unit_short_it="Pers./1000 Einw.",unit_short_en="Pers./1000 Einw.",
+                              unit_long_de="Personen pro 1000 Einwohner",unit_long_fr="Personen pro 1000 Einwohner",unit_long_it="Personen pro 1000 Einwohner",unit_long_en="Personen pro 1000 Einwohner",
+                              source="BFS-STATENT",dim1_id=1,dim2_id=5,dim3_id=NA,dim4_id=NA,last_updated=NA,min_year=2011,max_year=2018)
+
 
 statbot_ind_12101<-data.frame(indicator_id=12101,name_de="Vollzeitäquivalente",name_fr="Vollzeitäquivalente",
                               name_it="Vollzeitäquivalente",name_en="Vollzeitäquivalente",
@@ -43,6 +51,14 @@ statbot_ind_12101<-data.frame(indicator_id=12101,name_de="Vollzeitäquivalente",
                               description_it="Vollzeitäquivalente",description_en="Vollzeitäquivalente",
                               unit_short_de="VZÄ",unit_short_fr="VZÄ",unit_short_it="VZÄ",unit_short_en="VZÄ",
                               unit_long_de="Vollzeitäquivalente",unit_long_fr="Vollzeitäquivalente",unit_long_it="Vollzeitäquivalente",unit_long_en="Vollzeitäquivalente",
+                              source="BFS-STATENT",dim1_id=1,dim2_id=5,dim3_id=NA,dim4_id=NA,last_updated=NA,min_year=2015,max_year=2018)
+
+statbot_ind_12102<-data.frame(indicator_id=12102,name_de="Vollzeitäquivalente pro 1000 Einwohner",name_fr="Vollzeitäquivalente pro 1000 Einwohner",
+                              name_it="Vollzeitäquivalente pro 1000 Einwohner",name_en="Vollzeitäquivalente pro 1000 Einwohner",
+                              description_de="Vollzeitäquivalente pro 1000 Einwohner",description_fr="Vollzeitäquivalente pro 1000 Einwohner",
+                              description_it="Vollzeitäquivalente pro 1000 Einwohner",description_en="Vollzeitäquivalente pro 1000 Einwohner",
+                              unit_short_de="VZÄ/1000 Einw.",unit_short_fr="VZÄ/1000 Einw.",unit_short_it="VZÄ/1000 Einw.",unit_short_en="VZÄ/1000 Einw.",
+                              unit_long_de="Vollzeitäquivalente pro 1000 Einwohner",unit_long_fr="Vollzeitäquivalente pro 1000 Einwohner",unit_long_it="Vollzeitäquivalente pro 1000 Einwohner",unit_long_en="Vollzeitäquivalente pro 1000 Einwohner",
                               source="BFS-STATENT",dim1_id=1,dim2_id=5,dim3_id=NA,dim4_id=NA,last_updated=NA,min_year=2015,max_year=2018)
 
 statbot_ind_23001<-data.frame(indicator_id=23001,name_de="Arbeitsstätten",name_fr="Arbeitsstätten",
@@ -53,6 +69,13 @@ statbot_ind_23001<-data.frame(indicator_id=23001,name_de="Arbeitsstätten",name_
                               unit_long_de="Arbeitsstätten",unit_long_fr="Arbeitsstätten",unit_long_it="Arbeitsstätten",unit_long_en="Arbeitsstätten",
                               source="BFS-STATENT",dim1_id=5,dim2_id=NA,dim3_id=NA,dim4_id=NA,last_updated=NA,min_year=2011,max_year=2018)
 
+statbot_ind_23002<-data.frame(indicator_id=23002,name_de="Arbeitsstätten pro 1000 Einwohner",name_fr="Arbeitsstätten pro 1000 Einwohner",
+                              name_it="Arbeitsstätten pro 1000 Einwohner",name_en="Arbeitsstätten pro 1000 Einwohner",
+                              description_de="Arbeitsstätten pro 1000 Einwohner",description_fr="Arbeitsstätten pro 1000 Einwohner",
+                              description_it="Arbeitsstätten pro 1000 Einwohner",description_en="Arbeitsstätten pro 1000 Einwohner",
+                              unit_short_de="Arbeitsstätten pro 1000 Einwohner",unit_short_fr="Arbeitsstätten pro 1000 Einwohner",unit_short_it="Arbeitsstätten pro 1000 Einwohner",unit_short_en="Arbeitsstätten pro 1000 Einwohner",
+                              unit_long_de="Arbeitsstätten pro 1000 Einwohner",unit_long_fr="Arbeitsstätten pro 1000 Einwohner",unit_long_it="Arbeitsstätten pro 1000 Einwohner",unit_long_en="Arbeitsstätten pro 1000 Einwohner",
+                              source="BFS-STATENT",dim1_id=5,dim2_id=NA,dim3_id=NA,dim4_id=NA,last_updated=NA,min_year=2011,max_year=2018)
 
 
 # merge all the variables starting with statbot_ind_ together

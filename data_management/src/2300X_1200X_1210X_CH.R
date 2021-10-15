@@ -50,10 +50,12 @@ statbot_src_2300X_1200X_1210X_CH <- function(flag_force_update=FALSE){
     sub_df$dim4_value_id<-NA
     colnames(sub_df)[colnames(sub_df)=="Jahr"]<-"time_value"
 
+    sub_df<-zh_add_regions_bezirke(sub_df)
     sub_df<-bring_indicator_values_to_order(sub_df[,global_total_list],final_length=T)
 
     write.csv(sub_df,"data/values/12001_CH.csv",row.names = F)
     update_last_updated(12001)
+    convert_and_write_per_unit(sub_df,12002,"12002_CH.csv",how_many=1000)
 
     # VZAE
 
@@ -76,10 +78,12 @@ statbot_src_2300X_1200X_1210X_CH <- function(flag_force_update=FALSE){
     sub_df$dim4_value_id<-NA
     colnames(sub_df)[colnames(sub_df)=="Jahr"]<-"time_value"
 
+    sub_df<-zh_add_regions_bezirke(sub_df)
     sub_df<-bring_indicator_values_to_order(sub_df[,global_total_list],final_length=T)
 
     write.csv(sub_df,"data/values/12101_CH.csv",row.names = F)
     update_last_updated(12101)
+    convert_and_write_per_unit(sub_df,12102,"12102_CH.csv",how_many=1000)
 
     # Arbeitsstaette
 
@@ -99,10 +103,12 @@ statbot_src_2300X_1200X_1210X_CH <- function(flag_force_update=FALSE){
     sub_df$dim4_value_id<-NA
     colnames(sub_df)[colnames(sub_df)=="Jahr"]<-"time_value"
 
+    sub_df<-zh_add_regions_bezirke(sub_df)
     sub_df<-bring_indicator_values_to_order(sub_df[,global_total_list],final_length=T)
 
     write.csv(sub_df,"data/values/23001_CH.csv",row.names = F)
     update_last_updated(23001)
+    convert_and_write_per_unit(sub_df,23002,"23002_CH.csv",how_many=1000)
 
 
     return("UPDATE OK")
