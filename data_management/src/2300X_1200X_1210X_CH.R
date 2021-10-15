@@ -24,7 +24,7 @@ statbot_src_2300X_1200X_1210X_CH <- function(flag_force_update=FALSE){
     #If you want to have a list of all Swiss communes, then do the following
     #ch<-unique(df[df$spatialunit_id!=0,c("spatialunit_id","Gemeinde","temp")])
     #ch$Gemeinde<-substr(ch$Gemeinde,ch$temp,length(ch$Gemeinde))
-    #write.csv(ch,"data/ch_gemeinden.csv",row.names = F)
+    #write.csv(ch[,c("spatialunit_id","Gemeinde")],"data/ch_gemeinden.csv",row.names = F)
 
 
 

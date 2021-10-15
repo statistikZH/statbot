@@ -1,6 +1,14 @@
 df<-read.csv("data/old_spatialunits.csv")
+ch<-read.csv("data/ch_gemeinden.csv",col.names = c("SPATIALUNIT_ID","NAME"))
 #selection of columns
 df<-df[,1:4]
+
+# 15.10.2021: Temporary workaround: Taking Gemeinde values from an outdated BFS file
+df<-df[df$TYPE_ID!=1,]
+ch$BFS_NR<-ch$SPATIALUNIT_ID
+ch$TYPE_ID<-1
+df<-rbind(df,ch)
+
 
 #convert to minor letters
 colnames(df)[colnames(df)=="TYPE_ID"]<-"type_id"
@@ -23,13 +31,18 @@ df$name_en<-df$name_de
 
 # new spatial units
 df$spatialunit_id<-ifelse(df$type_id==1|df$type_id==9,df$bfs_nr,df$spatialunit_id)
-df$spatialunit_id<-ifelse(df$type_id==8&df$name_de=="Zuerich - ganzer Kanton",010000,df$spatialunit_id)
+df$spatialunit_id<-ifelse(df$type_id==8&df$name_de=="Zürich - ganzer Kanton",010000,df$spatialunit_id)
 df$spatialunit_id<-ifelse(df$type_id==8&df$name_de=="Kanton Basel-Stadt",120000,df$spatialunit_id)
 df$spatialunit_id<-ifelse(df$type_id==3|df$type_id==4,df$spatialunit_id+010000,df$spatialunit_id)
 df$spatialunit_id<-ifelse(df$type_id==10,df$spatialunit_id+120000,df$spatialunit_id)
 
 df<-rbind(df,data.frame(spatialunit_id=0,type_id=0,name_de="Schweiz",bfs_nr=NA,type_name="Schweiz",
                         name_fr="Suisse",name_it="Svizzera",name_en="Switzerland"))
+
+
+
+
+
 
 
 
