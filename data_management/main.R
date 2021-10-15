@@ -1,11 +1,5 @@
 
-### Version 0.0.1 - 15.10.2021
-
-### History
-# Version 0.0.1 - 13.10.2021 - 15.10.2021 - First Version loading R and Python scripts
-
-### Authors Christian Ruiz
-# Because even federal IT-departments have to quote sometimes :-)
+# Main-Script - see also readme
 
 # preparation of some global constants
 

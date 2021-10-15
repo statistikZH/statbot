@@ -26,7 +26,7 @@ statbot_ind_32001<-data.frame(indicator_id=32001,name_de="Fläche",name_fr="Flä
                               description_it="Fläche",description_en="Fläche",
                               unit_short_de="km2",unit_short_fr="km2",unit_short_it="km2",unit_short_en="km2",
                               unit_long_de="km2",unit_long_fr="km2",unit_long_it="km2",unit_long_en="km2",
-                              source="BFS-Gemeindeporträt",dim1_id=NA,dim2_id=NA,dim3_id=NA,dim4_id=NA,last_updated=NA,min_year=2016,max_year=2016)
+                              source="BFS-Gemeindeporträt",dim1_id=NA,dim2_id=NA,dim3_id=NA,dim4_id=NA,last_updated=NA,min_year=2016,max_year=2018)
 
 statbot_ind_12001<-data.frame(indicator_id=12001,name_de="Beschäftigte",name_fr="Beschäftigte",
                               name_it="Beschäftigte",name_en="Beschäftigte",
