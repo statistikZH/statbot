@@ -16,12 +16,12 @@ SPATIALUNIT_ID,TYPE_ID,NAME,BFS_NR,NAME_COMBINED,DISTRICT_ID,REGION_ID,COMMUNE_T
 175,3,Bezirk Dielsdorf,,Bezirk Dielsdorf,4,,,,,,,,,,15286
 180,3,Bezirk Uster,,Bezirk Uster,9,,,,,,,,,,11239
 181,3,Bezirk Winterthur,,Bezirk Winterthur,10,,,,,,,,,,25185
-183,3,Bezirk Zuerich,,Bezirk Zuerich,12,,,,,,,,,,8790
+183,3,Bezirk Zürich,,Bezirk Zürich,12,,,,,,,,,,8790
 184,4,Region Furttal,,Region Furttal,,7,,,,,,,,,4052
 185,4,Region Glattal,,Region Glattal,,6,,,,,,,,,12652
 187,4,Region Limmattal,,Region Limmattal,,2,,,,,,,,,5998
 189,4,Region Pfannenstiel,,Region Pfannenstiel,,5,,,,,,,,,9910
-194,4,Region Zuerich,,Region Zuerich,,1,,,,,,,,,8790
+194,4,Region Zürich,,Region Zürich,,1,,,,,,,,,8790
 3,1,Bonstetten,3,Bonstetten,1,3,4,8906,044 701 95 00,044 701 95 01,www.bonstetten.ch,gemeinderatskanzlei@bonstetten.ch,Gemeindeverwaltung,528,745
 6,1,Kappel a.A.,6,Kappel a.A.,1,3,6,8926,044 764 12 55,044 764 22 65,www.kappel-am-albis.ch,gemeinde@kappel-am-albis.ch,Gemeindeverwaltung,576,783
 9,1,Mettmenstetten,9,Mettmenstetten,1,3,4,8932,044 767 90 10,044 767 90 20,www.mettmenstetten.ch,gemeinde@mettmenstetten.ch,Gemeindeverwaltung,460,1305
@@ -182,13 +182,13 @@ SPATIALUNIT_ID,TYPE_ID,NAME,BFS_NR,NAME_COMBINED,DISTRICT_ID,REGION_ID,COMMUNE_T
 193,4,Region Zimmerberg,,Region Zimmerberg,,4,,,,,,,,,10424
 177,3,Bezirk Horgen,,Bezirk Horgen,6,,,,,,,,,,10424
 191,4,Region Weinland,,Region Weinland,,10,,,,,,,,,17435
-174,3,Bezirk Buelach,,Bezirk Buelach,3,,,,,,,,,,18493
+174,3,Bezirk Bülach,,Bezirk Bülach,3,,,,,,,,,,18493
 173,3,Bezirk Andelfingen,,Bezirk Andelfingen,2,,,,,,,,,,16667
 176,3,Bezirk Hinwil,,Bezirk Hinwil,5,,,,,,,,,,17939
 178,3,Bezirk Meilen,,Bezirk Meilen,7,,,,,,,,,,8460
-179,3,Bezirk Pfaeffikon,,Bezirk Pfaeffikon,8,,,,,,,,,,16315
+179,3,Bezirk Pfäffikon,,Bezirk Pfäffikon,8,,,,,,,,,,16315
 182,3,Bezirk Dietikon,,Bezirk Dietikon,11,,,,,,,,,,5998
-195,8,Zuerich - ganzer Kanton,,Zuerich - ganzer Kanton,,,,,043 259 11 11,043 259 42 60,www.zh.ch,,,,172889
+195,8,Zürich - ganzer Kanton,,Zürich - ganzer Kanton,,,,,043 259 11 11,043 259 42 60,www.zh.ch,,,,172889
 186,4,Region Knonaueramt,,Region Knonaueramt,,3,,,,,,,,,11308
 188,4,Region Oberland,,Region Oberland,,8,,,,,,,,,32345
 190,4,Region Unterland,,Region Unterland,,11,,,,,,,,,23014
