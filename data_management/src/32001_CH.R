@@ -52,6 +52,7 @@ statbot_src_32001_CH <- function(flag_force_update=FALSE){
     new_df<-bring_indicator_values_to_order(new_df,final_length=T)
 
     write.csv(new_df,"data/values/32001_CH.csv",row.names = F)
+    update_last_updated(32001)
 
 
     return("UPDATE OK")

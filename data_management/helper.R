@@ -30,3 +30,12 @@ bring_indicator_values_to_order<-function(df, final_length=F){
 
   return(df[,list_to_select])
 }
+
+update_last_updated<-function(id){
+  df<-read.csv("data/indicators.csv")
+
+  if(length(df$last_updated[df$indicator_id==id])==0) stop("Error: indicator_id does not match or indicator description is missing.")
+
+  df$last_updated[df$indicator_id==id]<-Sys.Date()
+  write.csv(df,"data/indicators.csv",row.names = F)
+}

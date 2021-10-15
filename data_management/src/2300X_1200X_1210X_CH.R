@@ -16,6 +16,7 @@ statbot_src_2300X_1200X_1210X_CH <- function(flag_force_update=FALSE){
     if(flag_force_update) print("flag_force_update") else print("Changes found")
 
     df<-statbot_read.px(destfile)
+    df<-as.data.frame(df)
 
     df$temp<-stringr::str_locate(pattern =' ',df$Gemeinde)[,1]
     df$spatialunit_id<-ifelse(is.na(df$temp),0,as.numeric(substr(df$Gemeinde,0,df$temp)))
@@ -44,6 +45,7 @@ statbot_src_2300X_1200X_1210X_CH <- function(flag_force_update=FALSE){
     sub_df<-bring_indicator_values_to_order(sub_df[,global_total_list],final_length=T)
 
     write.csv(sub_df,"data/values/12001_CH.csv",row.names = F)
+    update_last_updated(12001)
 
     # VZAE
 
@@ -69,9 +71,7 @@ statbot_src_2300X_1200X_1210X_CH <- function(flag_force_update=FALSE){
     sub_df<-bring_indicator_values_to_order(sub_df[,global_total_list],final_length=T)
 
     write.csv(sub_df,"data/values/12101_CH.csv",row.names = F)
-
-
-    write.csv(sub_df,"data/values/12001_CH.csv",row.names = F)
+    update_last_updated(12101)
 
     # Arbeitsstaette
 
@@ -94,6 +94,7 @@ statbot_src_2300X_1200X_1210X_CH <- function(flag_force_update=FALSE){
     sub_df<-bring_indicator_values_to_order(sub_df[,global_total_list],final_length=T)
 
     write.csv(sub_df,"data/values/23001_CH.csv",row.names = F)
+    update_last_updated(23001)
 
 
     return("UPDATE OK")
