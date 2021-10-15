@@ -12,6 +12,7 @@ data/*
 .Rproj.user
 data_management/sql/
 data_management/sql/*
+data_management/log/*
 !data_management/data
 !data_management/data/*
 !data_management/**/*.csv

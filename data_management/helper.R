@@ -63,7 +63,7 @@ zh_add_regions_bezirke<-function(df){
                                                                         dim1_value_id=first(dim1_value_id),
                                                                         dim2_value_id=first(dim2_value_id),
                                                                         dim3_value_id=first(dim3_value_id),
-                                                                        dim4_value_id=first(dim4_value_id))
+                                                                        dim4_value_id=first(dim4_value_id),.groups="drop")
     temp$SPATIALUNIT_ID.y<-NULL
 
 
@@ -85,7 +85,7 @@ zh_add_regions_bezirke<-function(df){
                                                                               dim1_value_id=first(dim1_value_id),
                                                                               dim2_value_id=first(dim2_value_id),
                                                                               dim3_value_id=first(dim3_value_id),
-                                                                              dim4_value_id=first(dim4_value_id))
+                                                                              dim4_value_id=first(dim4_value_id),.groups="drop")
     temp$SPATIALUNIT_ID.y<-NULL
 
 

@@ -50,6 +50,8 @@ statbot_src_2300X_1200X_1210X_CH <- function(flag_force_update=FALSE){
     sub_df$dim4_value_id<-NA
     colnames(sub_df)[colnames(sub_df)=="Jahr"]<-"time_value"
 
+
+    sub_df<-bring_indicator_values_to_order(sub_df[,global_total_list],final_length=T)
     sub_df<-zh_add_regions_bezirke(sub_df)
     sub_df<-bring_indicator_values_to_order(sub_df[,global_total_list],final_length=T)
 
@@ -78,6 +80,8 @@ statbot_src_2300X_1200X_1210X_CH <- function(flag_force_update=FALSE){
     sub_df$dim4_value_id<-NA
     colnames(sub_df)[colnames(sub_df)=="Jahr"]<-"time_value"
 
+
+    sub_df<-bring_indicator_values_to_order(sub_df[,global_total_list],final_length=T)
     sub_df<-zh_add_regions_bezirke(sub_df)
     sub_df<-bring_indicator_values_to_order(sub_df[,global_total_list],final_length=T)
 
@@ -103,6 +107,8 @@ statbot_src_2300X_1200X_1210X_CH <- function(flag_force_update=FALSE){
     sub_df$dim4_value_id<-NA
     colnames(sub_df)[colnames(sub_df)=="Jahr"]<-"time_value"
 
+
+    sub_df<-bring_indicator_values_to_order(sub_df[,global_total_list],final_length=T)
     sub_df<-zh_add_regions_bezirke(sub_df)
     sub_df<-bring_indicator_values_to_order(sub_df[,global_total_list],final_length=T)
 
