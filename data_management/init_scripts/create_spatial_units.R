@@ -1,3 +1,5 @@
+options(scipen=500)
+
 df<-read.csv("data/old_spatialunits.csv")
 ch<-read.csv("data/ch_gemeinden.csv",col.names = c("SPATIALUNIT_ID","NAME"))
 #selection of columns
