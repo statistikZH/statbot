@@ -26,8 +26,12 @@ df$spatialunit_id<-ifelse(df$type_id==1|df$type_id==9,df$bfs_nr,df$spatialunit_i
 df$spatialunit_id<-ifelse(df$type_id==8&df$name_de=="Zuerich - ganzer Kanton",010000,df$spatialunit_id)
 df$spatialunit_id<-ifelse(df$type_id==8&df$name_de=="Kanton Basel-Stadt",120000,df$spatialunit_id)
 df$spatialunit_id<-ifelse(df$type_id==3|df$type_id==4,df$spatialunit_id+010000,df$spatialunit_id)
+df$spatialunit_id<-ifelse(df$type_id==10,df$spatialunit_id+120000,df$spatialunit_id)
+
+df<-rbind(df,data.frame(spatialunit_id=0,type_id=0,name_de="Schweiz",bfs_nr=NA,type_name="Schweiz",
+                        name_fr="Suisse",name_it="Svizzera",name_en="Switzerland"))
 
 
 
-#saving to the new spatialunits.csv
+                        #saving to the new spatialunits.csv
 write.csv(df,"data/spatialunits.csv",row.names = F)

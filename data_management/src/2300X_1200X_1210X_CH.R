@@ -21,6 +21,14 @@ statbot_src_2300X_1200X_1210X_CH <- function(flag_force_update=FALSE){
     df$temp<-stringr::str_locate(pattern =' ',df$Gemeinde)[,1]
     df$spatialunit_id<-ifelse(is.na(df$temp),0,as.numeric(substr(df$Gemeinde,0,df$temp)))
 
+    #If you want to have a list of all Swiss communes, then do the following
+    #ch<-unique(df[df$spatialunit_id!=0,c("spatialunit_id","Gemeinde","temp")])
+    #ch$Gemeinde<-substr(ch$Gemeinde,ch$temp,length(ch$Gemeinde))
+    #write.csv(ch,"data/ch_gemeinden.csv",row.names = F)
+
+
+
+
     # Beschäftigte
 
     df$temp<-stringr::str_locate(pattern ='Beschäftigte',df$Beobachtungseinheit)[,1]
