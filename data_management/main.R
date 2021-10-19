@@ -47,6 +47,14 @@ rm(list=ls(pat="statbot_src_"))
 # source all the R-files
 sapply(r.sources, source)
 
+
+source("data/create_spatial_units_v2.R")
+create_spatial_units()
+
+
+
+
+
 # R-loop: execute all sourced functions statbot_src_XXX
 logger("STARTING R-LOOP...")
 for(i in lsf.str()){
