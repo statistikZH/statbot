@@ -17,4 +17,4 @@ data_management/log/*
 !data_management/data/*
 !data_management/**/*.csv
 !data_management/data/*.csv
-
+data_management/data/values/11001_CH.csv
