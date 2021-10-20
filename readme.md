@@ -28,7 +28,7 @@ Temporary-Notice: The pxR-package has a bug. Use the script here in statbot_read
 - Jorin Steiger (Statistisches Amt Kanton Zürich)
 - Pauline Maury Laribière (Federal Statistical Office)
 
-Because even federal IT-departments have to cite sometimes :-)
+Because citing is an art :-)
 
 
 ## TODO
