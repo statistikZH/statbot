@@ -44,10 +44,7 @@ statbot_src_32001_CH <- function(flag_force_update=FALSE){
 
     new_df$indicator_id<-32001
     new_df$timeinfo_id<-1
-    new_df$dim1_value_id<-NA
-    new_df$dim2_value_id<-NA
-    new_df$dim3_value_id<-NA
-    new_df$dim4_value_id<-NA
+    new_df<-fill_dimensions_with_na(new_df,value_id=TRUE)
 
     new_df<-bring_indicator_values_to_order(new_df,final_length=T)
 

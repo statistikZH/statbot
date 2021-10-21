@@ -1,4 +1,6 @@
 
+source("helper.R")
+
 # Cleaning/Removing all the previous variables starting with statbot_ind_ in case that they are still in memory
 rm(list=ls(pat="statbot_ind_"))
 
@@ -79,10 +81,21 @@ statbot_ind_23002<-data.frame(indicator_id=23002,name_de="Arbeitsstätten pro 10
 
 
 # merge all the variables starting with statbot_ind_ together
+# and before that also fill all the empty dimensions with NAs if not defined before
+
 out<-NULL
 for(i in ls(pat="statbot_ind_")){
-  out<-rbind(out,eval(as.name(i)))
+  temp<-eval(as.name(i))
+  temp<-fill_dimensions_with_na(temp)
+  out<-rbind(out,temp)
 }
+
+# reorder
+out<- out[,c("indicator_id","name_de","name_fr","name_it","name_en",
+"description_de","description_fr","description_it","description_en","unit_short_de",
+"unit_short_fr","unit_short_it","unit_short_en","unit_long_de","unit_long_fr",
+"unit_long_it","unit_long_en","source","dim1_id","dim2_id","dim3_id","dim4_id",
+"dim5_id","dim6_id","min_year","max_year","last_updated")]
 
 # output
 write.csv(out,"data/indicators.csv",row.names = F)

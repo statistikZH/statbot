@@ -10,6 +10,8 @@ log_folder<-"log/"
 datetime<-format(Sys.time(), "%Y-%m-%d_%H-%M")
 flag_force_update<-TRUE
 
+# temporary work_around
+source("statbot_read_px.R")
 
 
 # function to quicker log some output
@@ -48,7 +50,7 @@ rm(list=ls(pat="statbot_src_"))
 sapply(r.sources, source)
 
 
-source("data/create_spatial_units_v2.R")
+source("init_scripts/create_spatial_units_v2.R")
 create_spatial_units()
 
 

@@ -1,3 +1,8 @@
+
+GLOBAL_MAX_DIM<-6
+
+
+
 check_changes_in_input_file<-function(file_name){
   hash<-tools::md5sum(file_name)
   if(is.na(hash)) stop("Error: Could not build a md5sum")
@@ -17,16 +22,17 @@ check_changes_in_input_file<-function(file_name){
   }
 }
 
-global_total_list<-c("indicator_id","spatialunit_id","time_value","timeinfo_id",
-                     "value","dim1_value_id","dim2_value_id","dim3_value_id","dim4_value_id")
+GLOBAL_TOTAL_LIST<-c("indicator_id","spatialunit_id","time_value","timeinfo_id",
+                     "value")
+for(i in 1:GLOBAL_MAX_DIM) GLOBAL_TOTAL_LIST<-c(GLOBAL_TOTAL_LIST,paste0("dim",i,"_value_id"))
 
 bring_indicator_values_to_order<-function(df, final_length=F){
 
-  if(sum(names(df) %in% global_total_list)<length(names(df))) stop("Error: invalid var-name(s)")
+  if(sum(names(df) %in% GLOBAL_TOTAL_LIST)<length(names(df))) stop("Error: invalid var-name(s)")
 
-  list_to_select<-global_total_list[global_total_list %in% names(df)]
-  if(final_length&length(list_to_select)!=length(global_total_list)) stop(paste0("Error: Amount of cols incorrect: ",length(list_to_select)," instead of ",length(global_total_list),"."))
-  if(length(list_to_select)<length(global_total_list)) print("Info: Subset selected")
+  list_to_select<-GLOBAL_TOTAL_LIST[GLOBAL_TOTAL_LIST %in% names(df)]
+  if(final_length&length(list_to_select)!=length(GLOBAL_TOTAL_LIST)) stop(paste0("Error: Amount of cols incorrect: ",length(list_to_select)," instead of ",length(GLOBAL_TOTAL_LIST),"."))
+  if(length(list_to_select)<length(GLOBAL_TOTAL_LIST)) print("Info: Subset selected")
 
   return(df[,list_to_select])
 }
@@ -45,6 +51,18 @@ convert_and_write_per_unit<-function(df,new_id,file_name,how_many=1000){
   df$indicator_id<-new_id
   write.csv(df,paste0("data/values/",file_name),row.names = F)
 
+}
+
+fill_dimensions_with_na<-function(df,value_id=FALSE){
+  for(j in 1:GLOBAL_MAX_DIM){
+    if(value_id){
+      var_name<-paste0("dim",j,"_value_id")
+    }else{
+      var_name<-paste0("dim",j,"_id")
+    }
+    if(!(var_name %in% colnames(df))) df[,var_name]<-NA
+  }
+  return(df)
 }
 
 zh_add_regions_bezirke<-function(df){

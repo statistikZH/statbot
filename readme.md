@@ -1,6 +1,6 @@
 # STATBOT
 
-### Version 1.0.1 - 20.10.2021
+### Version 1.0.2 - 21.10.2021
 
 In this folder are the main cronjob-like scripts that run all the different R and python scripts in order to generate the newest data for statbot. It is supposed to be built as some form of cronjob to be executed once a day. All the statistical offices can contribute here with scripts. Or they can contribute by adding additional data-values-files and we will find a way to grab those files and insert the values.
 
@@ -19,6 +19,7 @@ Temporary-Notice: The pxR-package has a bug. Use the script here in statbot_read
 
 ### History
 
+- Version 1.0.2 - 21.10.2021 - 21.10.2021 - Dimensions changed to 6, inserted code to fill dimensions with NAs
 - Version 1.0.1 - 13.10.2021 - 20.10.2021 - Complete new version with a new data management logic
 - Version 0.x.x - 02.2021-09.2021 - Old versions used in two different hackathons
 

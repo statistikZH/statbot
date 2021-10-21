@@ -44,16 +44,14 @@ statbot_src_2300X_1200X_1210X_CH <- function(flag_force_update=FALSE){
 
     sub_df$indicator_id<-12001
     sub_df$timeinfo_id<-1
-    sub_df$dim1_value_id<-1
-    sub_df$dim2_value_id<-5
-    sub_df$dim3_value_id<-NA
-    sub_df$dim4_value_id<-NA
+    sub_df<-fill_dimensions_with_na(sub_df,value_id=TRUE)
     colnames(sub_df)[colnames(sub_df)=="Jahr"]<-"time_value"
 
 
-    sub_df<-bring_indicator_values_to_order(sub_df[,global_total_list],final_length=T)
-    sub_df<-zh_add_regions_bezirke(sub_df)
-    sub_df<-bring_indicator_values_to_order(sub_df[,global_total_list],final_length=T)
+    sub_df<-bring_indicator_values_to_order(sub_df[,GLOBAL_TOTAL_LIST],final_length=T)
+    #TODO
+    #sub_df<-zh_add_regions_bezirke(sub_df)
+    sub_df<-bring_indicator_values_to_order(sub_df[,GLOBAL_TOTAL_LIST],final_length=T)
 
     write.csv(sub_df,"data/values/12001_CH.csv",row.names = F)
     update_last_updated(12001)
@@ -74,16 +72,14 @@ statbot_src_2300X_1200X_1210X_CH <- function(flag_force_update=FALSE){
 
     sub_df$indicator_id<-12101
     sub_df$timeinfo_id<-1
-    sub_df$dim1_value_id<-1
-    sub_df$dim2_value_id<-5
-    sub_df$dim3_value_id<-NA
-    sub_df$dim4_value_id<-NA
+    sub_df<-fill_dimensions_with_na(sub_df,value_id=TRUE)
     colnames(sub_df)[colnames(sub_df)=="Jahr"]<-"time_value"
 
 
-    sub_df<-bring_indicator_values_to_order(sub_df[,global_total_list],final_length=T)
-    sub_df<-zh_add_regions_bezirke(sub_df)
-    sub_df<-bring_indicator_values_to_order(sub_df[,global_total_list],final_length=T)
+    sub_df<-bring_indicator_values_to_order(sub_df[,GLOBAL_TOTAL_LIST],final_length=T)
+    #TODO
+    #sub_df<-zh_add_regions_bezirke(sub_df)
+    sub_df<-bring_indicator_values_to_order(sub_df[,GLOBAL_TOTAL_LIST],final_length=T)
 
     write.csv(sub_df,"data/values/12101_CH.csv",row.names = F)
     update_last_updated(12101)
@@ -101,16 +97,14 @@ statbot_src_2300X_1200X_1210X_CH <- function(flag_force_update=FALSE){
 
     sub_df$indicator_id<-23001
     sub_df$timeinfo_id<-1
-    sub_df$dim1_value_id<-5
-    sub_df$dim2_value_id<-NA
-    sub_df$dim3_value_id<-NA
-    sub_df$dim4_value_id<-NA
+    sub_df<-fill_dimensions_with_na(sub_df,value_id=TRUE)
     colnames(sub_df)[colnames(sub_df)=="Jahr"]<-"time_value"
 
 
-    sub_df<-bring_indicator_values_to_order(sub_df[,global_total_list],final_length=T)
-    sub_df<-zh_add_regions_bezirke(sub_df)
-    sub_df<-bring_indicator_values_to_order(sub_df[,global_total_list],final_length=T)
+    sub_df<-bring_indicator_values_to_order(sub_df[,GLOBAL_TOTAL_LIST],final_length=T)
+    #TODO: HAS TO BE MODIFIED
+    #sub_df<-zh_add_regions_bezirke(sub_df)
+    sub_df<-bring_indicator_values_to_order(sub_df[,GLOBAL_TOTAL_LIST],final_length=T)
 
     write.csv(sub_df,"data/values/23001_CH.csv",row.names = F)
     update_last_updated(23001)
