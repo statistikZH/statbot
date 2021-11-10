@@ -8,9 +8,9 @@ create_spatial_units<-function(){
   utils::unzip(destfile,exdir="temp/")
 
   files<-list.files("temp/01.1/")
-  gemeinde_file<-paste0("temp/01.1/",files[grep("GDE.txt",files)])
-  bezirks_file<-paste0("temp/01.1/",files[grep("BEZ.txt",files)])
-  kantons_file<-paste0("temp/01.1/",files[grep("KT.txt",files)])
+  gemeinde_file<-paste0("temp/01.1/",files[grep("GDE.txt",files)][1])
+  bezirks_file<-paste0("temp/01.1/",files[grep("BEZ.txt",files)][1])
+  kantons_file<-paste0("temp/01.1/",files[grep("KT.txt",files)][1])
 
   if(check_changes_in_input_file(gemeinde_file)|
      check_changes_in_input_file(bezirks_file)|
