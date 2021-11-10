@@ -6,11 +6,20 @@ library("tidyverse")
 #consists of communal (+swiss total) and of cantonal areas
 
 statbot_src_32001_CH <- function(flag_force_update=FALSE){
+
+  bfs_nr_gem <- "je-d-21.03.01"
+
+  asset_number_gem <- get_bfs_asset_nr(bfs_nr_gem)
+
   destfile<-"temp/bfs_gp.xlsx"
-  download.file("https://www.bfs.admin.ch/bfsstatic/dam/assets/15864450/master",destfile=destfile)
+  download.file(paste0("https://www.bfs.admin.ch/bfsstatic/dam/assets/",asset_number_gem,"/master"),destfile=destfile)
+
+  bfs_nr_kt <- "je-d-21.03.02"
+
+  asset_number_kt <- get_bfs_asset_nr(bfs_nr_kt)
 
   destfile2<-"temp/bfs_kantone.xlsx"
-  download.file("https://www.bfs.admin.ch/bfsstatic/dam/assets/15864476/master",destfile=destfile2)
+  download.file(paste0("https://www.bfs.admin.ch/bfsstatic/dam/assets/",asset_number_kt,"/master"),destfile=destfile2)
 
   if(check_changes_in_input_file(destfile)|check_changes_in_input_file(destfile2)|flag_force_update){
     if(flag_force_update) print("flag_force_update") else print("Changes found")
