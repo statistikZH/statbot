@@ -17,3 +17,4 @@ log/*
 !data/*
 !data/*.csv
 data/values/11001_CH.csv
+.Rhistory
