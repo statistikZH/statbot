@@ -1,5 +1,8 @@
 # V.2 - 17.11.2021
 
+library(dplyr)
+library(tidyr)
+
 #some helper elements first
 attr_value_id<-1
 #function to automatically fill up the attr_value_id
@@ -97,3 +100,48 @@ for(i in ls(pat="statbot_value_")){
 
 # output
 write.csv(out[order(out$attr_value_id),],"data/attr_values.csv",row.names = F)
+
+#jetzt muss noch die fact_attr_table erstellt werden
+far_id<-1
+
+generate_combinations<-function(list_attr){
+  vectors_list<-list()
+  j<-1
+  for(i in list_attr){
+    vectors_list[[j]]<-out$attr_value_id[out$attr_id==i]
+    j<-j+1
+  }
+
+  possible_combinations<-expand.grid(vectors_list)
+
+  possible_combinations$far_id<-seq(far_id,far_id+nrow(possible_combinations)-1)
+  far_id<<-far_id+nrow(possible_combinations)
+
+  possible_combinations<-pivot_longer(possible_combinations,starts_with("Var"),values_to="attr_value_id")
+
+  possible_combinations$name<-NULL
+
+  return(possible_combinations)
+
+}
+
+
+fact_attr_11001<-generate_combinations(c(1,2,3))
+
+fact_attr_11101<-generate_combinations(c(1,2,4))
+
+fact_attr_23001<-generate_combinations(c(5))
+
+fact_attr_12001_12101<-generate_combinations(c(1,5))
+
+#32001: no combinations
+
+# merge all the variables starting with fact_attr_ together
+out<-NULL
+for(i in ls(pat="fact_attr_")){
+  out<-rbind(out,eval(as.name(i)))
+}
+
+# output
+write.csv(out[order(out$far_id,out$attr_value_id),],"data/far_table.csv",row.names = F)
+
