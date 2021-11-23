@@ -15,8 +15,7 @@ check_changes_in_input_file<-function(file_name){
     return(FALSE)
   }else{
     #change occured
-    new_line<-data.frame(file_name=file_name,hash=hash)
-    hash_file<-rbind(hash_file,new_line)
+    hash_file$hash[hash_file$file_name==file_name] <- hash
     write.csv(hash_file,"data/hashes.csv",row.names = F)
     return(TRUE)
   }
