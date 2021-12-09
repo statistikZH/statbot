@@ -2,6 +2,7 @@
 
 export(alert_info_grey)
 export(alert_success_grey)
+export(download_dataset)
 export(download_dataset_init)
 export(get_bfs_asset_nr)
 export(logger)
