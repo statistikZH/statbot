@@ -1,9 +1,3 @@
-source("helper.R")
-library("xlsx")
-library("janitor")
-library("tidyverse")
-library("pxR")
-
 # includes arbeitsstaette, beschaeftigte and VZAE
 
 statbot_src_2300X_1200X_1210X_CH <- function(flag_force_update=FALSE){

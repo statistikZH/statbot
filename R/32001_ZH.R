@@ -1,5 +1,3 @@
-source("helper.R")
-
 
 #consists of communal (+swiss total) and of cantonal areas
 
