@@ -1,8 +1,3 @@
-source("helper.R")
-library("xlsx")
-library("janitor")
-library("tidyverse")
-
 #consists of communal (+swiss total) and of cantonal areas
 
 statbot_src_32001_CH <- function(flag_force_update=FALSE){

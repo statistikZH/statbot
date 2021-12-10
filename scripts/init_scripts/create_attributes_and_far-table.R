@@ -1,7 +1,5 @@
 # V.2 - 17.11.2021
 
-library(dplyr)
-library(tidyr)
 
 #some helper elements first
 attr_value_id<-1
@@ -24,10 +22,10 @@ statbot_attr_geschlecht<-data.frame(  attr_id=1,
                  attr_name_it="Geschlecht",
                  attr_name_en="Geschlecht")
 statbot_value_geschlecht<- data.frame(attr_value_id=fill_id(3),attr_id=rep(1,3),
-                 attr_value_name_de=c("Männer","Frauen","Total"),
-                 attr_value_name_fr=c("Männer","Frauen","Total"),
-                 attr_value_name_it=c("Männer","Frauen","Total"),
-                 attr_value_name_en=c("Männer","Frauen","Total")
+                 attr_value_name_de=c("Mann","Frau","Total"),
+                 attr_value_name_fr=c("Mann","Frau","Total"),
+                 attr_value_name_it=c("Mann","Frau","Total"),
+                 attr_value_name_en=c("Mann","Frau","Total")
 )
 
 # Herkunft wie intern verwendet. Keine eCH gefunden
@@ -52,11 +50,11 @@ statbot_attr_alter<-data.frame(  attr_id=3,
                        attr_name_fr="Alter",
                        attr_name_it="Alter",
                        attr_name_en="Alter")
-statbot_value_alter<- data.frame(attr_value_id=fill_id(101),attr_id=rep(3,101),
-                       attr_value_name_de=c("Alter Total",paste0(seq(1,99),"-jährig"),"100 Jahre und mehr"),
-                       attr_value_name_fr=c("Alter Total",paste0(seq(1,99),"-jährig"),"100 Jahre und mehr"),
-                       attr_value_name_it=c("Alter Total",paste0(seq(1,99),"-jährig"),"100 Jahre und mehr"),
-                       attr_value_name_en=c("Alter Total",paste0(seq(1,99),"-jährig"),"100 Jahre und mehr")
+statbot_value_alter<- data.frame(attr_value_id=fill_id(102),attr_id=rep(3,102),
+                       attr_value_name_de=c("Total","0 Jahre", "1 Jahr", paste0(seq(2,99)," Jahre"),"100 Jahre und mehr"),
+                       attr_value_name_fr=c("Total","0 Jahre", "1 Jahr", paste0(seq(2,99)," Jahre"),"100 Jahre und mehr"),
+                       attr_value_name_it=c("Total","0 Jahre", "1 Jahr", paste0(seq(2,99)," Jahre"),"100 Jahre und mehr"),
+                       attr_value_name_en=c("Total","0 Jahre", "1 Jahr", paste0(seq(2,99)," Jahre"),"100 Jahre und mehr")
 )
 
 statbot_attr_altersklasse_mutter<-data.frame(  attr_id=4,
