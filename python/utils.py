@@ -15,7 +15,11 @@ def read_data(dataset_name: str) -> pd.DataFrame:
     return data['DATA']
 
 
-def save_data(df, metadata, dataset_name) -> None:
+def save_data(
+    df: pd.DataFrame, 
+    metadata: dict, 
+    dataset_name: str
+) -> None:
     '''
     Saves the processed dataframe and its metadata
     '''

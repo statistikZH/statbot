@@ -6,7 +6,7 @@ from constants import BFS_HOME
 def get_bfs_asset_nr(bfs_number: str) -> str:
     '''
     Scrape the asset number of a specific bfs number
-    Inputs:
+    Parameters:
         - bfs_number: number of a bfs publication e.g: "ag-b-00.03-875-gg20"
        
     Returns
