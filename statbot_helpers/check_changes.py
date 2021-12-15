@@ -7,7 +7,16 @@ import pandas as pd
 
 
 def check_changes(fname):
-    '''check if changes occured'''
+    """Checks if change in input file occured. If a change occured in known file
+    the corresponding hash in data/hashes.csv will be updated and it will return True.
+    If file not known it will add name of file and corresponding hash to data/hashes.csv
+    
+    :param fname: Path of file to be checked
+    :type fname: string
+    
+    :return: ``True`` if change in file occured, ``False`` if no change occured or file unknown
+    :rtype: bool
+    """
     
     # make hash object
     hash_md5 = hashlib.md5()
