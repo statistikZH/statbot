@@ -1,3 +1,6 @@
+# Constants
+BFS_HOME = "https://www.bfs.admin.ch"
+
 # Data folders
 DATA_FOLDER = 'data'
 

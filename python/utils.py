@@ -10,7 +10,6 @@ from constants import DATA_FOLDER, URL_MAPPING
 def read_data(dataset_name: str) -> pd.DataFrame:
     '''
     Parse dataset from FSO website
-    
     '''
     data = pyaxis.parse(URL_MAPPING[dataset_name], encoding='ISO-8859-2') 
     return data['DATA']
