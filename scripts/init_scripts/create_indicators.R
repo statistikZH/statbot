@@ -1,5 +1,4 @@
 
-source("helper.R")
 
 # Cleaning/Removing all the previous variables starting with statbot_ind_ in case that they are still in memory
 rm(list=ls(pat="statbot_ind_"))

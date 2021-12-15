@@ -2,22 +2,19 @@
 # Main-Script - see also readme
 
 # preparation of some global constants
+devtools::load_all(".")
 
 
-
-src_folder<-"src/"
+src_folder<-"scripts/src"
 log_folder<-"log/"
 datetime<-format(Sys.time(), "%Y-%m-%d_%H-%M")
 flag_force_update<-TRUE
 
 # temporary work_around
-source("statbot_read_px.R")
+#source("statbot_read_px.R")
 
 
-# function to quicker log some output
-logger<-function(log_string){
-  cat(log_string,sep = "\n",file=paste0(log_folder,"main_",datetime,".log"),append=TRUE)
-}
+
 
 
 # get the name of all the files in the src-folder
@@ -47,10 +44,10 @@ rm(list=ls(pat="statbot_src_"))
 
 
 # source all the R-files
-sapply(r.sources, source)
+#sapply(r.sources, source)
 
 
-source("init_scripts/create_spatial_units_v2.R")
+source("scripts/init_scripts/create_spatial_units_v2.R")
 create_spatial_units()
 
 
@@ -58,24 +55,32 @@ create_spatial_units()
 
 
 # R-loop: execute all sourced functions statbot_src_XXX
-logger("STARTING R-LOOP...")
-for(i in lsf.str()){
-  start_time<-Sys.time()
-  if(substr(i,1,12)=="statbot_src_"){
-    print(paste0("Executing script... ",i))
-    return_value<-tryCatch(do.call(i,args=list(flag_force_update=flag_force_update)),
-                           error=function(c) paste0("error loading r-script: ",c),
-                           warning=function(c) paste0("warning loading r-script: ",c),
-                           message=function(c) paste0("message loading r-script: ",c))
-    end_time<-Sys.time()
-    logger(paste0(
-      substr(i,13,nchar(i)),
-      ": ",
-      return_value,
-      paste0(" FINISHED IN: ",round(as.numeric (end_time - start_time, units = "secs"),1), " SECONDS")
-    ))
-  }
-}
+dataset_ids_to_download <- get_dataset_ids()
+
+purrr::walk(dataset_ids_to_download, ~download_dataset(., flag_force_update = FALSE))
+
+
+# logger("STARTING R-LOOP...")
+# for(i in lsf.str()){
+#   start_time<-Sys.time()
+#   if(substr(i,1,12)=="statbot_src_"){
+#     print(paste0("Executing script... ",i))
+#     return_value<-tryCatch(do.call(i,args=list(flag_force_update=flag_force_update)),
+#                            error=function(c) paste0("error loading r-script: ",c),
+#                            warning=function(c) paste0("warning loading r-script: ",c),
+#                            message=function(c) paste0("message loading r-script: ",c))
+#     end_time<-Sys.time()
+#     logger(paste0(
+#       substr(i,13,nchar(i)),
+#       ": ",
+#       return_value,
+#       paste0(" FINISHED IN: ",round(as.numeric (end_time - start_time, units = "secs"),1), " SECONDS")
+#     ))
+#   }
+# }
+
+
+
 
 # python-loop: execute all sourced python files directly
 logger("STARTING PYTHON-LOOP...")
@@ -98,5 +103,6 @@ for(i in python.sources){
 }
 
 logger("FINISHED MAIN-SCRIPT.")
+
 
 
