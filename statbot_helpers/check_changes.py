@@ -55,3 +55,4 @@ def check_changes(fname):
         hash_file.to_csv('data/hashes.csv', index=False)
         return True
         
+    
