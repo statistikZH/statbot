@@ -1,3 +1,6 @@
+# Data folders
+DATA_FOLDER = 'data'
+
 # Spatial units ontology (geoname such as here http://www.geonames.org/ontology)
 SPATIAL_UNIT_ONTOLOGY = {
     'COUNTRY': 'CH',
@@ -8,18 +11,11 @@ SPATIAL_UNIT_ONTOLOGY = {
     'RESIDENTIAL_AREA': 'A.ADM4'
 }
 
-# Spatial unit id (bfs-id of the respective granularity. bfs-nr or communes, bfs-26 for cantons )
+# Spatial unit id 
 TIME_INFO_ID = {
-    'YEAR': 1,
-    'MONTH': 2,
-    'QUARTER': 3,
-    'WEEK_NUMBER': 4,
-    'DAY': 5,
-    'TIME': 6
+    'REFERENCE_DAY': 1, 
+    'DURATION': 2
 }
-
-# Time elements
-
 
 # Indicator ID
 INDICATOR_ID_MAPPING = {
@@ -67,7 +63,7 @@ INDICATOR_ID_MAPPING = {
     'apartment_building_per_1000_residents': '1_07_204',
     'household_size': '1_07_301',
     'area': '3_02_001',
-    'voting_results': '1_10_001'
+    'voting_results': '1_10_001',
     'national_council_elections': '1_10_101'
 }
 
@@ -89,5 +85,9 @@ URL_MAPPING = {
     'civil_union_per_1000_resident': 'TBD',
     'stillbirth': 'TBD',
     'stillbirth_per_1000_resident': 'TBD',
+    '': 'TBD',
+    '': 'TBD',
+    '': 'TBD',
+    # etc
     'national_council_elections': 'https://www.bfs.admin.ch/bfsstatic/dam/assets/12948000/master'
 }
