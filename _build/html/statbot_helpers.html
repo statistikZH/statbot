@@ -1,0 +1,144 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>statbot_helpers package &#8212; statbot  documentation</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="_static/agogo.css" />
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="statbot_helpers" href="modules.html" /> 
+  </head><body>
+    <div class="header-wrapper" role="banner">
+      <div class="header">
+        <div class="headertitle"><a
+          href="index.html">statbot  documentation</a></div>
+        <div class="rel" role="navigation" aria-label="related navigation">
+          <a href="modules.html" title="statbot_helpers"
+             accesskey="P">previous</a> |
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a>
+        </div>
+       </div>
+    </div>
+
+    <div class="content-wrapper">
+      <div class="content">
+        <div class="document">
+            
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <section id="statbot-helpers-package">
+<h1>statbot_helpers package<a class="headerlink" href="#statbot-helpers-package" title="Permalink to this headline">¶</a></h1>
+<section id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="module-statbot_helpers.check_changes">
+<span id="statbot-helpers-check-changes-module"></span><h2>statbot_helpers.check_changes module<a class="headerlink" href="#module-statbot_helpers.check_changes" title="Permalink to this headline">¶</a></h2>
+<dl class="py function">
+<dt class="sig sig-object py" id="statbot_helpers.check_changes.check_changes">
+<span class="sig-prename descclassname"><span class="pre">statbot_helpers.check_changes.</span></span><span class="sig-name descname"><span class="pre">check_changes</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">fname</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#statbot_helpers.check_changes.check_changes" title="Permalink to this definition">¶</a></dt>
+<dd><p>Checks if change in input file occured. If a change occured in known file
+the corresponding hash in data/hashes.csv will be updated and it will return True.
+If file not known it will add name of file and corresponding hash to data/hashes.csv</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>fname</strong> (<em>string</em>) – Path of file to be checked</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p><code class="docutils literal notranslate"><span class="pre">True</span></code> if change in file occured, <code class="docutils literal notranslate"><span class="pre">False</span></code> if no change occured or file unknown</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+<section id="module-statbot_helpers.get_bfs_asset_nr">
+<span id="statbot-helpers-get-bfs-asset-nr-module"></span><h2>statbot_helpers.get_bfs_asset_nr module<a class="headerlink" href="#module-statbot_helpers.get_bfs_asset_nr" title="Permalink to this headline">¶</a></h2>
+<dl class="py function">
+<dt class="sig sig-object py" id="statbot_helpers.get_bfs_asset_nr.get_bfs_asset_nr">
+<span class="sig-prename descclassname"><span class="pre">statbot_helpers.get_bfs_asset_nr.</span></span><span class="sig-name descname"><span class="pre">get_bfs_asset_nr</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">bfs_nr</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#statbot_helpers.get_bfs_asset_nr.get_bfs_asset_nr" title="Permalink to this definition">¶</a></dt>
+<dd><p>This function scrapes the asset page of a bfs-nr for the asset number</p>
+</dd></dl>
+
+</section>
+<section id="module-statbot_helpers">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-statbot_helpers" title="Permalink to this headline">¶</a></h2>
+</section>
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+        </div>
+        <div class="sidebar">
+          
+          <h3>Table of Contents</h3>
+          <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="modules.html">statbot_helpers</a><ul class="current">
+<li class="toctree-l2 current"><a class="current reference internal" href="#">statbot_helpers package</a></li>
+</ul>
+</li>
+</ul>
+
+          <div role="search">
+            <h3 style="margin-top: 1.5em;">Search</h3>
+            <form class="search" action="search.html" method="get">
+                <input type="text" name="q" />
+                <input type="submit" value="Go" />
+            </form>
+          </div>
+
+        </div>
+        <div class="clearer"></div>
+      </div>
+    </div>
+
+    <div class="footer-wrapper">
+      <div class="footer">
+        <div class="left">
+          <div role="navigation" aria-label="related navigaton">
+            <a href="modules.html" title="statbot_helpers"
+              >previous</a> |
+            <a href="py-modindex.html" title="Python Module Index"
+              >modules</a> |
+            <a href="genindex.html" title="General Index"
+              >index</a>
+          </div>
+          <div role="note" aria-label="source link">
+              <br/>
+              <a href="_sources/statbot_helpers.rst.txt"
+                rel="nofollow">Show Source</a>
+          </div>
+        </div>
+
+        <div class="right">
+          
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2021, J. Steiger.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 4.3.1.
+    </div>
+        </div>
+        <div class="clearer"></div>
+      </div>
+    </div>
+
+  </body>
+</html>
