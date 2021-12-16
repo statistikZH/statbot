@@ -1,14 +1,18 @@
 import os
 import json
-from constants import DATA_FOLDER, INDICATOR_ID_MAPPING, URL_MAPPING
+import pandas as pd
+from constants import INDICATOR_ID_MAPPING, INDICATOR_ID_MAPPING_PATH, URL_MAPPING, URL_MAPPING_PATH
 
-def save_json(data: dict, outpath: str):
+def save_mapping(data: dict, outpath: str):
     '''
-    Save dictionnary as json file
+    Save mapping as a csv file
     '''
-    with open(outpath, 'w') as outfile:
-        json.dump(data, outfile)
+    df = pd.DataFrame({
+        'indicators': list(data.keys()),
+        'value': list(data.values())
+    })
+    df.to_csv(outpath, header=True, index=False)
     
 if __name__ == "__main__":
-    save_json(INDICATOR_ID_MAPPING, os.path.join(DATA_FOLDER, 'indicator_id_mapping.json'))
-    save_json(URL_MAPPING, os.path.join(DATA_FOLDER, 'url_mapping.json'))
+    save_mapping(INDICATOR_ID_MAPPING, INDICATOR_ID_MAPPING_PATH)
+    save_mapping(URL_MAPPING, URL_MAPPING_PATH)
