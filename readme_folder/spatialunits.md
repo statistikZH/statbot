@@ -6,9 +6,12 @@ The script under scripts/init_scripts/create_spatial_units.R generates a csv-fil
 
 In the first part of the script, it gets the historicized communal data directly from FSO. The data from the FSO actually contains three files: communes, districts and cantons. The files are quite dense and contain many useful information. For example for every commune there are several entries if there were changes to the commune (mergers, disbanded, border-changes etc). 
 
-From these three files we are extracting the variables according to V3 of the database-scheme (see also below a discussion how we got to this V3 and what thoughts and issues we encountered). ![Spatial Units Table in DB-Scheme V3.0.2](/readme_folder/img/spatialunit.PNG).
+From these three files we are extracting the variables according to V3 of the database-scheme (see also below a discussion how we got to this V3 and what thoughts and issues we encountered). 
+
+![Spatial Units Table in DB-Scheme V3.0.2](/readme_folder/img/spatialunit.PNG).
 
 First of all we provide a spatialunit_ontology (or granularity) based on a logic that we derived from geonames. However, while several levels of the geoname-ontology were defined such as A.ADM3 for communes, we had to come up with some additional ones like A.ADM4 for Kreise&Wohnviertel or we used A.ADM2H for regions, which are a cantonal specificity that is an alternative on that level to the districts (Bezirke). We also improvized to define here Switzerland as "CH". We were told that this is formally a second variable - but we are keeping it like this for simplification to have one variable defining the granularity.
+
 ![Spatial Unit Ontology Adapted to our needs from geonames](/readme_folder/img/geonames.png)
 
 Then we provide a "hist" (historicized) and "current" id. This is based on the logic by the FSO. A truly unique ID is the "hist"" one. So every commune can have different hist-IDs that show the different moments of time for that commune. Say commune A merged with commune B and is still called A after the merger. Then A-small and A-large will both have a unique hist-ID. This hist-id is different for communal, district and cantontal level. That means that when taking several granularities together, we do not have a unique ID anymore. Therefore, we need the spatialunit_ontology plus the spatialunit_hist_id to have a unique match for a spatial unit (which is debatable - see below for the slash-issue).
