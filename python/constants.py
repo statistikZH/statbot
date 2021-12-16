@@ -1,8 +1,12 @@
+import os
+
 # Constants
 BFS_HOME = "https://www.bfs.admin.ch"
 
 # Data folders
-DATA_FOLDER = 'data'
+DATA_FOLDER = '../data'
+INDICATOR_ID_MAPPING_PATH = os.path.join(DATA_FOLDER, 'indicator_mapping.csv')
+URL_MAPPING_PATH = os.path.join(DATA_FOLDER, 'url_mapping.csv')
 
 # Spatial units ontology (geoname such as here http://www.geonames.org/ontology)
 SPATIAL_UNIT_ONTOLOGY = {
