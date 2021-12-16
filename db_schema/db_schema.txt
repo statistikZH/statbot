@@ -1,0 +1,89 @@
+// Version 3.0.1 - 16.12.2021
+
+
+Table fact_table as ft {
+  spatialunit_ontology varchar
+  spatialunit_hist_id int
+  //spatialunit_version int
+  spatialunit_name varchar
+  time_value timestamp
+  period_value timestampg
+  value float
+  placeholder_dims int
+}
+
+Table class_table {
+  class_id varchar [pk, increment] //primary key, auto-increment
+  class_name varchar
+  name_de varchar
+  name_fr varchar
+  name_it varchar
+  name_en varchar
+  description_de varchar
+  description_fr varchar
+  description_it varchar
+  description_en varchar
+  source varchar
+  unit_short_de varchar
+  unit_short_fr varchar
+  unit_short_it varchar
+  unit_short_en varchar
+  unit_long_de varchar
+  unit_long_fr varchar
+  unit_long_it varchar
+  unit_long_en varchar
+  last_updated timestamp
+  min_year int
+  max_year int
+  dim1_id int
+  dim2_id int
+  dim3_id int
+  dim4_id int
+  dim5_id int
+  dim6_id int
+ }
+
+
+
+Table spatialunits {
+  spatialunit_ontology varchar
+  spatialunit_hist_id int
+  spatialunit_current_id int
+  spatialunit_name varchar
+  valid_from timestamp
+  valid_until timestamp
+  canton_hist_id int
+  district_hist_id int
+
+}
+
+
+
+Table dimensions {
+  dim_id int [pk] // primary key
+  unique_name varchar
+  dim_name_de varchar
+  dim_name_fr varchar
+  dim_name_it varchar
+  dim_name_en varchar
+  value_id int
+  value_name_de varchar
+  value_name_fr varchar
+  value_name_it varchar
+  value_name_en varchar
+}
+
+
+
+
+Ref: "fact_table"."spatialunit_ontology" - "spatialunits"."spatialunit_ontology"
+
+Ref: "fact_table"."spatialunit_hist_id" - "spatialunits"."spatialunit_hist_id"
+
+Ref: "fact_table"."spatialunit_name" - "spatialunits"."spatialunit_name"
+
+Ref: "fact_table"."placeholder_dims" - "dimensions"."unique_name"
+
+Ref: "fact_table"."placeholder_dims" - "dimensions"."value_id"
+
+Ref: "class_table"."dim1_id" - "dimensions"."dim_id"
