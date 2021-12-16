@@ -1,6 +1,6 @@
 # STATBOT
 
-### Version 3.0.0 - 15.12.2021
+### Version 3.0.2 - 16.12.2021
 
 In this folder are the main data warehouse scripts that run all the different R and python scripts in order to generate the newest data for statbot. It is supposed to be built as some form of cronjob to be executed once a day. All the statistical offices can contribute here with scripts. Or they can contribute by adding additional data-values-files and we will find a way to grab those files and insert the values.
 
@@ -11,6 +11,8 @@ TODO: IF YOU WANT TO PARTICIPATE, DO THE FOLLOWING
 
 
 TODO: HOW DOES THE DB-SCHEME LOOK LIKE IN V3?
+
+['For a detailed explanation on the spatial units table click here'](readme_folder/spatialunits.md)
 
 
 TODO: THE FOLLOWING HAS TO BE REWRITTEN FOR V3 - ORIENTATION OF THE FILE STRUCTURE
