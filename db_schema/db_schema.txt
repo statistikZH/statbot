@@ -1,4 +1,4 @@
-// Version 3.0.1 - 16.12.2021
+// Version 3.0.2 - 16.12.2021
 
 
 Table fact_table as ft {
@@ -49,7 +49,10 @@ Table spatialunits {
   spatialunit_ontology varchar
   spatialunit_hist_id int
   spatialunit_current_id int
-  spatialunit_name varchar
+  spatialunit_name_de varchar
+  spatialunit_name_fr varchar
+  spatialunit_name_it varchar
+  spatialunit_name_en varchar
   valid_from timestamp
   valid_until timestamp
   canton_hist_id int
@@ -80,7 +83,7 @@ Ref: "fact_table"."spatialunit_ontology" - "spatialunits"."spatialunit_ontology"
 
 Ref: "fact_table"."spatialunit_hist_id" - "spatialunits"."spatialunit_hist_id"
 
-Ref: "fact_table"."spatialunit_name" - "spatialunits"."spatialunit_name"
+Ref: "fact_table"."spatialunit_name" - "spatialunits"."spatialunit_name_de"
 
 Ref: "fact_table"."placeholder_dims" - "dimensions"."unique_name"
 
