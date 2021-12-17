@@ -12,7 +12,7 @@ TODO: IF YOU WANT TO PARTICIPATE, DO THE FOLLOWING
 
 TODO: HOW DOES THE DB-SCHEME LOOK LIKE IN V3?
 
-![DB-Scheme V3.0.2](/readme_folder/img/db_scheme_v302.PNG).
+![DB-Scheme V3.0.2](/readme_folder/img/db_scheme_v302.png).
 
 
 
