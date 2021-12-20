@@ -19,6 +19,3 @@ log/*
 data/values/11001_CH.csv
 .Rhistory
 sqlnet.log
-statbot_helpers/__pycache__/
-statbot_env/lib/python3.9/site-packages/__pychache__/
-*.pyc
