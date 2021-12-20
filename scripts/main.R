@@ -1,7 +1,7 @@
 
 # Main-Script - see also readme
 
-# 20.12.2021
+# V3.0.2b - 20.12.2021 - adaptations to the V3 DB scheme
 
 # preparation of some global constants
 devtools::load_all(".")
@@ -12,7 +12,8 @@ log_folder<-"log/"
 datetime<-format(Sys.time(), "%Y-%m-%d_%H-%M")
 flag_force_update<-TRUE
 
-# temporary work_around
+# temporary work_around - PLEASE CHECK IF THEY FIXED THE FUNCTION AT SOME POINT
+# https://github.com/cjgb/pxR
 #source("statbot_read_px.R")
 
 # check if log-folder exists or create
@@ -24,71 +25,38 @@ if(!dir.exists(log_folder)) dir.create(log_folder)
 
 # get the name of all the files in the src-folder
 logger("STARTING STATBOT DATA MANAGEMENT...")
-logger("LOADING SRC FILES...")
-files.sources<-paste0(src_folder,list.files(src_folder))
-
-# separate R and python scripts
-logger("SEPARATING SRC FILES...")
-r.sources<-NULL
-python.sources<-NULL
-for(i in files.sources){
-  if(substr(i,nchar(i)-1,nchar(i))==".R"){
-    r.sources<-c(r.sources,i)
-  }else{
-    if(substr(i,nchar(i)-2,nchar(i))==".py"){
-    python.sources<-c(python.sources,i)}
-    else{
-      logger("Error: Some Files are neither .R nor .py")
-      stop("Stopping the execution")
-    }
-  }
-}
-
-# Cleaning/Removing all the previous R-functions starting with statbot_src_ in case that they are still in memory
-rm(list=ls(pat="statbot_src_"))
+logger("LOADING PYTHON SRC FILES...")
+python.sources<-paste0(src_folder,"/",list.files(src_folder)) #changed on 20.12.2021 - no sorting anymore
 
 
-# source all the R-files
-#sapply(r.sources, source)
 
-
+logger("INIT: CREATE SPATIAL UNITS...")
 source("scripts/init_scripts/create_spatial_units.R")
 create_spatial_units()
 
+logger("INIT: CREATE CLASSES...")
+source("scripts/init_scripts/create_classes.R")
+create_classes()
 
+logger("INIT: CREATE DIMENSIONS...")
+source("scripts/init_scripts/create_dimensions.R")
+create_dimensions()
 
+# 20.12.2021 waiting for Jorins modifications
+#logger("INIT: RUNNING BASE CLASSES SUCH AS POPULATION AND AREA...")
+#system("python scripts/init_scripts/population.py")
 
 
 # R-loop: execute all sourced functions statbot_src_XXX
+logger("RUNNING R-SCRIPTS...")
 dataset_ids_to_download <- get_dataset_ids()
 
 purrr::walk(dataset_ids_to_download, ~download_dataset(., flag_force_update = FALSE))
 
 
-# logger("STARTING R-LOOP...")
-# for(i in lsf.str()){
-#   start_time<-Sys.time()
-#   if(substr(i,1,12)=="statbot_src_"){
-#     print(paste0("Executing script... ",i))
-#     return_value<-tryCatch(do.call(i,args=list(flag_force_update=flag_force_update)),
-#                            error=function(c) paste0("error loading r-script: ",c),
-#                            warning=function(c) paste0("warning loading r-script: ",c),
-#                            message=function(c) paste0("message loading r-script: ",c))
-#     end_time<-Sys.time()
-#     logger(paste0(
-#       substr(i,13,nchar(i)),
-#       ": ",
-#       return_value,
-#       paste0(" FINISHED IN: ",round(as.numeric (end_time - start_time, units = "secs"),1), " SECONDS")
-#     ))
-#   }
-# }
-
-
-
 
 # python-loop: execute all sourced python files directly
-logger("STARTING PYTHON-LOOP...")
+logger("RUNNING PYTHON-SCRIPTS...")
 for(i in python.sources){
   start_time<-Sys.time()
   print(paste0("Executing script... ",i))
@@ -96,7 +64,7 @@ for(i in python.sources){
                          error=function(c) paste0("error loading python-script: ",c),
                          warning=function(c) paste0("warning loading python-script: ",c),
                          message=function(c) paste0("message loading python-script: ",c))
-  #TODO: THE PYTHON PART STILL NEEDS A UP-TO-DATE CODE AND HASH-TEST
+
   return_value<-ifelse(return_value==0,"UPDATE OK","ERROR")
   end_time<-Sys.time()
   logger(paste0(
