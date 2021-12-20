@@ -1,8 +1,17 @@
+# last update 20.12.2021 - according to V3
+
 # includes arbeitsstaette, beschaeftigte and VZAE
+
+# this file only contains swiss and communal data
+# thus no bezirks or cantonal data
+
+# it is one px-file that contains all these three kind of data
+
+# Stichtag is 31.12 of that year (actually FSO talks about reference period December)
 
 statbot_src_2_03_001.2_03_002.1_02_001.1_02_002.1_02_003.1_02_004_CH <- function(flag_force_update=FALSE){
   destfile<-"temp/bfs_2_03_001-2_03_002-1_02_001-1_02_002-1_02_003-1_02_004_CH.px"
-  download.file("https://www.bfs.admin.ch/bfsstatic/dam/assets/13787332/master",destfile=destfile)
+  download.file(paste0("https://www.bfs.admin.ch/bfsstatic/dam/assets/",get_bfs_asset_nr("px-x-0602010000_102"),"/master"),destfile=destfile)
 
 
 
@@ -12,13 +21,17 @@ statbot_src_2_03_001.2_03_002.1_02_001.1_02_002.1_02_003.1_02_004_CH <- function
     df<-statbot_read.px(destfile)
     df<-as.data.frame(df)
 
+    # if switzerland then ID=0 and ontology=CH otherwise ID=BFS-NR and ontology=A.ADM.3
     df$temp<-stringr::str_locate(pattern =' ',df$Gemeinde)[,1]
-    df$spatialunit_id<-ifelse(is.na(df$temp),0,as.numeric(substr(df$Gemeinde,0,df$temp)))
+    df$spatialunit_current_id<-ifelse(is.na(df$temp),0,as.numeric(substr(df$Gemeinde,0,df$temp)))
+    df$spatialunit_ontology<-ifelse(is.na(df$temp),"CH","A.ADM3")
 
-    #If you want to have a list of all Swiss communes, then do the following
-    #ch<-unique(df[df$spatialunit_id!=0,c("spatialunit_id","Gemeinde","temp")])
-    #ch$Gemeinde<-substr(ch$Gemeinde,ch$temp,length(ch$Gemeinde))
-    #write.csv(ch[,c("spatialunit_id","Gemeinde")],"data/ch_gemeinden.csv",row.names = F)
+    df$spatialunit_hist_id<-convert_current_to_hist_id(df,valid_until="TODO")
+
+    df$time_value<-paste0("31.12.",df$Jahr)
+    df$period_value<-NA
+
+
 
 
 

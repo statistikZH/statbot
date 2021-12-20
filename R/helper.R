@@ -21,6 +21,7 @@ check_changes_in_input_file<-function(file_name){
   }
 }
 
+#TODO WRONG WITH V3
 GLOBAL_TOTAL_LIST<-c("indicator_id","spatialunit_id","time_value","timeinfo_id",
                      "value")
 for(i in 1:GLOBAL_MAX_DIM) GLOBAL_TOTAL_LIST<-c(GLOBAL_TOTAL_LIST,paste0("dim",i,"_value_id"))
@@ -45,6 +46,7 @@ update_last_updated<-function(id){
   write.csv(df,"data/classes.csv",row.names = F)
 }
 
+# TODO VERY WRONG
 convert_and_write_per_unit<-function(df,new_id,file_name,how_many=1000){
   df$value<-df$value/how_many
   df$indicator_id<-new_id
@@ -64,6 +66,7 @@ fill_dimensions_with_na<-function(df,value_id=FALSE){
   return(df)
 }
 
+#TODO HAS TO BE CHECKED AND PUT IN SEPARATE FILE
 zh_add_regions_bezirke<-function(df){
   zh<-read.csv("data/old_spatialunits.csv")
   zh_com<-zh[zh$TYPE_ID %in% c(1,9),c("SPATIALUNIT_ID","REGION_ID")]
