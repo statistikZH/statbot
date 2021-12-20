@@ -26,7 +26,15 @@ statbot_src_2_03_001.2_03_002.1_02_001.1_02_002.1_02_003.1_02_004_CH <- function
     df$spatialunit_current_id<-ifelse(is.na(df$temp),0,as.numeric(substr(df$Gemeinde,0,df$temp)))
     df$spatialunit_ontology<-ifelse(is.na(df$temp),"CH","A.ADM3")
 
-    df$spatialunit_hist_id<-convert_current_to_hist_id(df,valid_until="TODO")
+    # at the moment the date for the gemeinde validity is: "1.1.2019"
+    # while the max year is 2019
+    # thus we could hope that this stays always the same
+    maximum_year<-max(as.integer(as.character(df$Jahr)))
+    stichtag<-paste0("1.1.",maximum_year)
+
+
+
+    df$spatialunit_hist_id<-convert_current_to_hist_id(df,valid_until=stichtag)
 
     df$time_value<-paste0("31.12.",df$Jahr)
     df$period_value<-NA
