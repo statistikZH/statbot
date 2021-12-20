@@ -1,6 +1,8 @@
 
 # Main-Script - see also readme
 
+# 20.12.2021
+
 # preparation of some global constants
 devtools::load_all(".")
 
