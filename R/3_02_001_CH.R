@@ -1,6 +1,6 @@
 #consists of communal (+swiss total) and of cantonal areas
 
-statbot_src_32001_CH <- function(flag_force_update=FALSE){
+statbot_src_3_02_001_CH <- function(flag_force_update=FALSE){
 
   bfs_nr_gem <- "je-d-21.03.01"
 
@@ -46,14 +46,14 @@ statbot_src_32001_CH <- function(flag_force_update=FALSE){
     df2<-bring_indicator_values_to_order(df2)
     new_df<-rbind(new_df,df2)
 
-    new_df$indicator_id<-32001
+    new_df$indicator_id<-"3_02_001"
     new_df$timeinfo_id<-1
     new_df<-fill_dimensions_with_na(new_df,value_id=TRUE)
 
     new_df<-bring_indicator_values_to_order(new_df,final_length=T)
 
-    write.csv(new_df,"data/values/32001_CH.csv",row.names = F)
-    update_last_updated(32001)
+    write.csv(new_df,"data/values/3_02_001_CH.csv",row.names = F)
+    update_last_updated("3_02_001")
 
 
     return("UPDATE OK")

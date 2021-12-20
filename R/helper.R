@@ -39,9 +39,9 @@ bring_indicator_values_to_order<-function(df, final_length=F){
 update_last_updated<-function(id){
   df<-read.csv("data/classes.csv")
 
-  if(length(df$last_updated[df$indicator_id==id])==0) stop("Error: indicator_id does not match or indicator description is missing.")
+  if(length(df$last_updated[df$class_id==id])==0) stop("Error: indicator_id does not match or indicator description is missing.")
 
-  df$last_updated[df$indicator_id==id]<-Sys.Date()
+  df$last_updated[df$class_id==id]<-Sys.Date()
   write.csv(df,"data/classes.csv",row.names = F)
 }
 

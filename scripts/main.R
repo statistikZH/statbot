@@ -53,7 +53,7 @@ create_dimensions()
 logger("RUNNING R-SCRIPTS...")
 dataset_ids_to_download <- get_dataset_ids()
 
-purrr::walk(dataset_ids_to_download, ~download_dataset(., flag_force_update = FALSE))
+purrr::walk(dataset_ids_to_download, ~download_dataset(., flag_force_update = TRUE))
 
 
 

@@ -1,7 +1,7 @@
 # includes arbeitsstaette, beschaeftigte and VZAE
 
-statbot_src_2300X_1200X_1210X_CH <- function(flag_force_update=FALSE){
-  destfile<-"temp/bfs_2300X_1200X_1210X.px"
+statbot_src_2_03_001.2_03_002.1_02_001.1_02_002.1_02_003.1_02_004_CH <- function(flag_force_update=FALSE){
+  destfile<-"temp/bfs_2_03_001-2_03_002-1_02_001-1_02_002-1_02_003-1_02_004_CH.px"
   download.file("https://www.bfs.admin.ch/bfsstatic/dam/assets/13787332/master",destfile=destfile)
 
 
@@ -36,7 +36,7 @@ statbot_src_2300X_1200X_1210X_CH <- function(flag_force_update=FALSE){
                                                         Wirtschaftssektor=="Tertiärer Sektor"~3))
 
 
-    sub_df$indicator_id<-12001
+    sub_df$indicator_id<-"1_02_001"
     sub_df$timeinfo_id<-1
     sub_df<-fill_dimensions_with_na(sub_df,value_id=TRUE)
     colnames(sub_df)[colnames(sub_df)=="Jahr"]<-"time_value"
@@ -47,9 +47,9 @@ statbot_src_2300X_1200X_1210X_CH <- function(flag_force_update=FALSE){
     #sub_df<-zh_add_regions_bezirke(sub_df)
     sub_df<-bring_indicator_values_to_order(sub_df[,GLOBAL_TOTAL_LIST],final_length=T)
 
-    write.csv(sub_df,"data/values/12001_CH.csv",row.names = F)
-    update_last_updated(12001)
-    convert_and_write_per_unit(sub_df,12002,"12002_CH.csv",how_many=1000)
+    write.csv(sub_df,"data/values/1_02_001_CH.csv",row.names = F)
+    update_last_updated("1_02_001")
+    convert_and_write_per_unit(sub_df,"1_02_002","1_02_002_CH.csv",how_many=1000)
 
     # VZAE
 
@@ -64,7 +64,7 @@ statbot_src_2300X_1200X_1210X_CH <- function(flag_force_update=FALSE){
                                                         Wirtschaftssektor=="Tertiärer Sektor"~3))
 
 
-    sub_df$indicator_id<-12101
+    sub_df$indicator_id<-"1_02_003"
     sub_df$timeinfo_id<-1
     sub_df<-fill_dimensions_with_na(sub_df,value_id=TRUE)
     colnames(sub_df)[colnames(sub_df)=="Jahr"]<-"time_value"
@@ -75,9 +75,9 @@ statbot_src_2300X_1200X_1210X_CH <- function(flag_force_update=FALSE){
     #sub_df<-zh_add_regions_bezirke(sub_df)
     sub_df<-bring_indicator_values_to_order(sub_df[,GLOBAL_TOTAL_LIST],final_length=T)
 
-    write.csv(sub_df,"data/values/12101_CH.csv",row.names = F)
-    update_last_updated(12101)
-    convert_and_write_per_unit(sub_df,12102,"12102_CH.csv",how_many=1000)
+    write.csv(sub_df,"data/values/1_02_003_CH.csv",row.names = F)
+    update_last_updated("1_02_003")
+    convert_and_write_per_unit(sub_df,"1_02_004","1_02_004_CH.csv",how_many=1000)
 
     # Arbeitsstaette
 
@@ -89,7 +89,7 @@ statbot_src_2300X_1200X_1210X_CH <- function(flag_force_update=FALSE){
                                                         Wirtschaftssektor=="Tertiärer Sektor"~3))
 
 
-    sub_df$indicator_id<-23001
+    sub_df$indicator_id<-"2_03_001"
     sub_df$timeinfo_id<-1
     sub_df<-fill_dimensions_with_na(sub_df,value_id=TRUE)
     colnames(sub_df)[colnames(sub_df)=="Jahr"]<-"time_value"
@@ -100,9 +100,9 @@ statbot_src_2300X_1200X_1210X_CH <- function(flag_force_update=FALSE){
     #sub_df<-zh_add_regions_bezirke(sub_df)
     sub_df<-bring_indicator_values_to_order(sub_df[,GLOBAL_TOTAL_LIST],final_length=T)
 
-    write.csv(sub_df,"data/values/23001_CH.csv",row.names = F)
-    update_last_updated(23001)
-    convert_and_write_per_unit(sub_df,23002,"23002_CH.csv",how_many=1000)
+    write.csv(sub_df,"data/values/2_03_001_CH.csv",row.names = F)
+    update_last_updated("2_03_001")
+    convert_and_write_per_unit(sub_df,"2_03_002","2_03_002_CH.csv",how_many=1000)
 
 
     return("UPDATE OK")
