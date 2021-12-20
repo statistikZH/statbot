@@ -37,12 +37,12 @@ bring_indicator_values_to_order<-function(df, final_length=F){
 }
 
 update_last_updated<-function(id){
-  df<-read.csv("data/indicators.csv")
+  df<-read.csv("data/classes.csv")
 
   if(length(df$last_updated[df$indicator_id==id])==0) stop("Error: indicator_id does not match or indicator description is missing.")
 
   df$last_updated[df$indicator_id==id]<-Sys.Date()
-  write.csv(df,"data/indicators.csv",row.names = F)
+  write.csv(df,"data/classes.csv",row.names = F)
 }
 
 convert_and_write_per_unit<-function(df,new_id,file_name,how_many=1000){
