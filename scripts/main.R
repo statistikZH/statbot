@@ -15,6 +15,9 @@ flag_force_update<-TRUE
 # temporary work_around
 #source("statbot_read_px.R")
 
+# check if log-folder exists or create
+if(!dir.exists(log_folder)) dir.create(log_folder)
+
 
 
 
@@ -49,7 +52,7 @@ rm(list=ls(pat="statbot_src_"))
 #sapply(r.sources, source)
 
 
-source("scripts/init_scripts/create_spatial_units_v2.R")
+source("scripts/init_scripts/create_spatial_units.R")
 create_spatial_units()
 
 
