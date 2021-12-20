@@ -1,7 +1,7 @@
 
 # Main-Script - see also readme
 
-# V3.0.2b - 20.12.2021 - adaptations to the V3 DB scheme
+# V3.0.2c - 20.12.2021 - adaptations to the V3 DB scheme
 
 # preparation of some global constants
 devtools::load_all(".")
@@ -28,6 +28,8 @@ logger("STARTING STATBOT DATA MANAGEMENT...")
 logger("LOADING PYTHON SRC FILES...")
 python.sources<-paste0(src_folder,"/",list.files(src_folder)) #changed on 20.12.2021 - no sorting anymore
 
+logger("INSTALL/UPDATE PYTHON PACKAGES...")
+system("pip install -r requirements.txt")
 
 
 logger("INIT: CREATE SPATIAL UNITS...")
