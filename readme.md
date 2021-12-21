@@ -1,23 +1,18 @@
 # STATBOT
 
-### Version 3.0.2b - 20.12.2021
+### Version 3.0.2c - 21.12.2021
 
 In this folder are the main data warehouse scripts that run all the different R and python scripts in order to generate the newest data for statbot. It is supposed to be built as some form of cronjob to be executed once a day. All the statistical offices can contribute here with scripts. Or they can contribute by adding additional data-values-files and we will find a way to grab those files and insert the values.
 
-TODO: IF YOU WANT TO PARTICIPATE, DO THE FOLLOWING
-- STEP A
-- STEP B: SEE THE [PROJECT BOARDS](https://github.com/statistikZH/statbot/projects) FOR THE TASKS
-- STEP C
+For those who would like to participate, we prepared ['under this link a documentation'](readme_folder/data_collection.md) that can be followed step by step.
 
-
-TODO: HOW DOES THE DB-SCHEME LOOK LIKE IN V3?
+Important for this project is a DB-schema, in which all the data are collected. Right now the following schema is used:
 
 ![DB-Scheme V3.0.2](/readme_folder/img/db_scheme_v302.png).
 
+There are several elements to it. The fact-table is the central element, where the actual data of the datasets are saved. Thus, every dataset is saved in this format and only differs according to certain dimensions (as of V3).
 
-
-
-['For a detailed explanation on the spatial units table click here'](readme_folder/spatialunits.md)
+Next to the fact-table, there is a class-table that contains all the datasets (called classes) and their meta-data. It contains a table, where all the spatial units are saved. ['For a detailed explanation on the spatial units table click here'](readme_folder/spatialunits.md). And it contains a dimensions-table where all the dimensions such as gender, age and origin and their corresponding values are saved. 
 
 
 TODO: THE FOLLOWING HAS TO BE REWRITTEN FOR V3 - ORIENTATION OF THE FILE STRUCTURE
