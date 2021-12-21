@@ -1,4 +1,6 @@
-# last update 21.12.2021 - according to V3
+# V3.1.0 - 21.12.2021 - Changing the totals to -1 instead of 0
+# History
+# V3.0.2 - 21.12.2021 - according to V3
 
 # includes arbeitsstaette, beschaeftigte and VZAE
 
@@ -50,10 +52,10 @@ statbot_src_2_03_001.2_03_002.1_02_001.1_02_002.1_02_003.1_02_004_CH <- function
 
     df$temp<-stringr::str_locate(pattern ='Beschäftigte',df$Variable)[,1]
     sub_df<-df[!is.na(df$temp),]
-    sub_df<-sub_df %>% mutate(gender = case_when(Variable=="Beschäftigte"~0,
+    sub_df<-sub_df %>% mutate(gender = case_when(Variable=="Beschäftigte"~-1,
                                              Variable=="Beschäftigte Männer"~1,
                                              Variable=="Beschäftigte Frauen"~2),
-                              economic_sector = case_when(Wirtschaftssektor=="Wirtschaftssektor - Total"~0,
+                              economic_sector = case_when(Wirtschaftssektor=="Wirtschaftssektor - Total"~-1,
                                                         Wirtschaftssektor=="Primärsektor"~1,
                                                         Wirtschaftssektor=="Sekundärer Sektor"~2,
                                                         Wirtschaftssektor=="Tertiärer Sektor"~3))
@@ -76,10 +78,10 @@ statbot_src_2_03_001.2_03_002.1_02_001.1_02_002.1_02_003.1_02_004_CH <- function
 
     df$temp<-stringr::str_locate(pattern ='Vollzeitäquivalente',df$Variable)[,1]
     sub_df<-df[!is.na(df$temp),]
-    sub_df<-sub_df %>% mutate(gender = case_when(Variable=="Vollzeitäquivalente"~0,
+    sub_df<-sub_df %>% mutate(gender = case_when(Variable=="Vollzeitäquivalente"~-1,
                                                         Variable=="Vollzeitäquivalente Männer"~1,
                                                         Variable=="Vollzeitäquivalente Frauen"~2),
-                              economic_sector = case_when(Wirtschaftssektor=="Wirtschaftssektor - Total"~0,
+                              economic_sector = case_when(Wirtschaftssektor=="Wirtschaftssektor - Total"~-1,
                                                         Wirtschaftssektor=="Primärsektor"~1,
                                                         Wirtschaftssektor=="Sekundärer Sektor"~2,
                                                         Wirtschaftssektor=="Tertiärer Sektor"~3))
@@ -101,7 +103,7 @@ statbot_src_2_03_001.2_03_002.1_02_001.1_02_002.1_02_003.1_02_004_CH <- function
 
     df$temp<-stringr::str_locate(pattern ='Arbeitsstätten',df$Variable)[,1]
     sub_df<-df[!is.na(df$temp),]
-    sub_df<-sub_df %>% mutate(economic_sector = case_when(Wirtschaftssektor=="Wirtschaftssektor - Total"~0,
+    sub_df<-sub_df %>% mutate(economic_sector = case_when(Wirtschaftssektor=="Wirtschaftssektor - Total"~-1,
                                                         Wirtschaftssektor=="Primärsektor"~1,
                                                         Wirtschaftssektor=="Sekundärer Sektor"~2,
                                                         Wirtschaftssektor=="Tertiärer Sektor"~3))

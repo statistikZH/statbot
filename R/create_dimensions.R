@@ -1,3 +1,5 @@
+# V3.1.0 - 21.12.2021 - totals set to -1 instead of 0
+# History
 # V3.0.2c - 20.12.2021 - change to V3
 
 # Comment on unique_name: It looks similar than dim_name_en but is meant to be for variable name
@@ -14,7 +16,7 @@ create_dimensions<-function(){
                                        dim_name_fr="Geschlecht",
                                        dim_name_it="Geschlecht",
                                        dim_name_en="Gender",
-                                       value_id=c(1,2,0),
+                                       value_id=c(1,2,-1),
                                        value_name_de=c("Männer","Frauen","Total"),
                                        value_name_fr=c("Männer","Frauen","Total"),
                                        value_name_it=c("Männer","Frauen","Total"),
@@ -29,7 +31,7 @@ create_dimensions<-function(){
                                      dim_name_fr="Herkunft",
                                      dim_name_it="Herkunft",
                                      dim_name_en="Origin",
-                                     value_id=c(1,2,0),
+                                     value_id=c(1,2,-1),
                                      value_name_de=c("Schweiz","Ausland","Total"),
                                      value_name_fr=c("Schweiz","Ausland","Total"),
                                      value_name_it=c("Schweiz","Ausland","Total"),
@@ -45,11 +47,11 @@ create_dimensions<-function(){
                                   dim_name_fr="Alter",
                                   dim_name_it="Alter",
                                   dim_name_en="Age",
-                                  value_id=seq(0,100),
-                                  value_name_de=c("Alter Total",paste0(seq(1,99),"-jährig"),"100 Jahre und mehr"),
-                                  value_name_fr=c("Alter Total",paste0(seq(1,99),"-jährig"),"100 Jahre und mehr"),
-                                  value_name_it=c("Alter Total",paste0(seq(1,99),"-jährig"),"100 Jahre und mehr"),
-                                  value_name_en=c("Age Total",paste0(seq(1,99),"-years old"),"100 Years and more")
+                                  value_id=seq(-1,100),
+                                  value_name_de=c("Alter Total",paste0(seq(0,99),"-jährig"),"100 Jahre und mehr"),
+                                  value_name_fr=c("Alter Total",paste0(seq(0,99),"-jährig"),"100 Jahre und mehr"),
+                                  value_name_it=c("Alter Total",paste0(seq(0,99),"-jährig"),"100 Jahre und mehr"),
+                                  value_name_en=c("Age Total",paste0(seq(0,99),"-years old"),"100 Years and more")
   )
 
   statbot_dim_altersklasse_mutter<-data.frame(  dim_id=4,
@@ -58,7 +60,7 @@ create_dimensions<-function(){
                                                 dim_name_fr="Altersklasse der Mutter",
                                                 dim_name_it="Altersklasse der Mutter",
                                                 dim_name_en="Age classes of mother",
-                                                value_id=seq(0,5),
+                                                value_id=c(-1,seq(1,5)),
                                                 value_name_de=c("Total","Unter 25 Jahren","25-29 Jahre","30-34 Jahre","35-39 Jahre","40 Jahre und mehr"),
                                                 value_name_fr=c("Total","Unter 25 Jahren","25-29 Jahre","30-34 Jahre","35-39 Jahre","40 Jahre und mehr"),
                                                 value_name_it=c("Total","Unter 25 Jahren","25-29 Jahre","30-34 Jahre","35-39 Jahre","40 Jahre und mehr"),
@@ -71,7 +73,7 @@ create_dimensions<-function(){
                                               dim_name_fr="Wirtschaftssektor",
                                               dim_name_it="Wirtschaftssektor",
                                               dim_name_en="Economic Sector",
-                                              value_id=seq(0,3),
+                                              value_id=c(-1,seq(1,3)),
                                               value_name_de=c("Total","Primärsektor","Sekundärer Sektor","Tertiärer Sektor"),
                                               value_name_fr=c("Total","Primärsektor","Sekundärer Sektor","Tertiärer Sektor"),
                                               value_name_it=c("Total","Primärsektor","Sekundärer Sektor","Tertiärer Sektor"),
