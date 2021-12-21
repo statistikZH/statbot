@@ -41,16 +41,18 @@ create_classes()
 logger("INIT: CREATE DIMENSIONS...")
 create_dimensions()
 
-# 20.12.2021 waiting for Jorins modifications
-#logger("INIT: RUNNING BASE CLASSES SUCH AS POPULATION AND AREA...")
+logger("INIT: RUNNING BASE CLASSES SUCH AS POPULATION AND AREA...")
+# TODO: 20.12.2021 waiting for Jorins modifications
 #system("python scripts/init_scripts/population.py")
+statbot_src_3_02_001_CH(flag_force_update)
 
 
 # R-loop: execute all sourced functions statbot_src_XXX
 logger("RUNNING R-SCRIPTS...")
 dataset_ids_to_download <- get_dataset_ids()
+dataset_ids_to_download <- dataset_ids_to_download[!dataset_ids_to_download=="3_02_001_CH"]
 
-purrr::walk(dataset_ids_to_download, ~download_dataset(., flag_force_update = TRUE))
+purrr::walk(dataset_ids_to_download, ~download_dataset(., flag_force_update = flag_force_update))
 
 
 
