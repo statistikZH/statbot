@@ -14,23 +14,32 @@ There are several elements to it. The fact-table is the central element, where t
 
 Next to the fact-table, there is a class-table that contains all the datasets (called classes) and their meta-data. It contains a table, where all the spatial units are saved. ['For a detailed explanation on the spatial units table click here'](readme_folder/spatialunits.md). And it contains a dimensions-table where all the dimensions such as gender, age and origin and their corresponding values are saved. 
 
+Important Temporary-Notice: The pxR-package to read px-files within R has a bug. Use the script here in statbot_read_px.R to read large px-files until the authors fix that package (PR is there pending for a while). It is included in this R-environment and is thus loaded automatically if you run the R-project.
 
-TODO: THE FOLLOWING HAS TO BE REWRITTEN FOR V3 - ORIENTATION OF THE FILE STRUCTURE
 
-- src: include here all the R- and python scripts of your office (see also templates)
+### Repo-structure
+
+- R/ and python/ folders: include here all the R- and python scripts of your office (see also the possibility to generate a template with R)
 - temp: files are downloaded here temporarily
 - data/hash.csv: contains all the MD5sum hashes of the files - so we can check whether files are up-to-date
-- data/: contains all the main DB-structural csv-files concerning temporal and spatial dimensions, the IDs and description of all the indicators and so on. 
-- init_scripts/: contains all the files to create the above DB-structural files. 
-- log/folder will be created if you run the main.R script.
+- data/: contains all the main DB-structural csv-files about classes, spatial units, dimensions.  
+- data/values: here the actual dataset data is stored (the so-called fact tables)
+- scripts/init_scripts/: contains some of the initialization scripts. However, some have been moved to R/ as they are run as functions
+- log/folder will be created if you run the main.R script and contains a log of the main-script and all of the elements.
+- constants/ contains a constants.json file with constants that can be shared in R and python environments
+- db_schema/ contains a txt-file with the current db_schema that can be visualized e.g. with https://dbdiagram.io/d
+- statbot_env/ is the virtual environment for python (you still need to pip install the requirements)
+- readme_folder/ contains some additional readmes that are linked in this file already
+- man/ R-environment specific manuals that are automatically built
+- renv/ R-specific R-environment
 
-- presentations: contain slides about project STATBOT
+- presentations: contain slides about project STATBOT (contact us for more)
 - old: contains all the files and folders from STATBOT V.0.x.x
 
 
-Important Temporary-Notice: The pxR-package to read px-files within R has a bug. Use the script here in statbot_read_px.R to read large px-files until the authors fix that package (PR is there pending for a while).
 
-### Authors contributing from Version 1.x.x upwards (alphabetically)
+### Authors contributing from Version 1 upwards (alphabetically)
+
 - Knecht, Thomas (Statistisches Amt Kanton Zürich)
 - Lo Russo, Thomas (Statistisches Amt Kanton Zürich)
 - Maury Laribière, Pauline (Federal Statistical Office)
@@ -43,7 +52,7 @@ Important Temporary-Notice: The pxR-package to read px-files within R has a bug.
 
 
 ### History
-- Version 3.1.0 - 21.12.2021 - Totals are all set to -1 instead of 0
+- Version 3.1.0 - 21.12.2021 - Totals are all set to -1 instead of 0, several new functions
 - Version 3.0.2 - 16.12.2021 - 21.12.2021 New spatial units elements implemented, many V3 updates
 - Version 3.0.0 - 12.2021 - back to "more simple" DB-scheme aiming for a first MVP next summer.  
 - Version 2.x.x - 11.2021 - "complex" DB-Scheme that was aiming to integrate all possibilities of linked data
