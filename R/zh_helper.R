@@ -10,19 +10,7 @@ update_last_updated<-function(id){
 }
 
 
-convert_and_write_per_unit<-function(df,file_name,how_many=1000,type="pop"){
-  pop<-fread("data/values/1_01_001.csv",select = c("spatialunit_ontology","spatialunit_hist_id","value","time_value"))
-  pop<-pop %>% rename(pop=value)
 
-  # needs to have exact time_value like 31.12.2020
-  df<-merge(df,pop,by=c("spatialunit_ontology","spatialunit_hist_id","time_value"),all.x=T,sort=F)
-
-  df$value<-df$value/df$pop*how_many
-  df$pop<-NULL
-
-  write.csv(df,paste0("data/values/",file_name),row.names = F)
-
-}
 
 
 #TODO HAS TO BE CHECKED AND PUT IN SEPARATE FILE
