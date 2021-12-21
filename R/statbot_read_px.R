@@ -40,9 +40,10 @@ statbot_read.px <- function(filename, encoding = NULL,
   }
 
   get.attributes <- function(x){
+
     x <- gsub( "([A-Z-]*)\\((.*)\\).*", "\\1;\\2", x ) ## separates label-attribute with ";"
-    x <- ldply(strsplit(x, ";"),
-               function(y) c(y, "value")[1:2])
+    x <- as.data.frame(do.call(rbind, lapply(strsplit(x, ";"),
+               function(y) c(y, "value")[1:2])))
   }
 
   break.clean <- function(x) {
