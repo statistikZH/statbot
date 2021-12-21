@@ -10,7 +10,7 @@
 convert_current_to_hist_id <- function(df,reference_point){
   spatial_unit_table<-read.csv("data/spatialunits.csv")[,c(
     "spatialunit_ontology","spatialunit_hist_id","spatialunit_current_id","valid_from","valid_until")]
-
+browser()
   # filter in spatial_unit_table all that would be valid to that parameter
   # remark added on 21.12.21 by TK: solution by data.table might be more elegant and faster see:
   # https://stackoverflow.com/questions/37289405/dplyr-left-join-by-less-than-greater-than-condition
@@ -19,9 +19,10 @@ convert_current_to_hist_id <- function(df,reference_point){
   reference_point<-as.Date(reference_point,format="%d.%m.%Y")
   spatial_unit_table<-spatial_unit_table[spatial_unit_table$valid_from<=reference_point&
                        spatial_unit_table$valid_until>=reference_point,]
-
   # now that the time-relevant are filtered, we can join among the two main variables
- df_temp<-merge(df,spatial_unit_table,by=c("spatialunit_ontology","spatialunit_current_id"),all.x=T,sort=F)
+ df<-merge(df,spatial_unit_table,by=c("spatialunit_ontology","spatialunit_current_id"),all.x=T,sort=F)
+ df$valid_from<-NULL
+ df$valid_until<-NULL
 
-  return(df_temp$spatialunit_hist_id)
+  return(df)
 }
