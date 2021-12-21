@@ -74,6 +74,13 @@ For this the function `convert_and_write_per_unit(df,file_name,how_many=1000,typ
 The function ends with returning "UPDATE OK" if everything went well. 
 
 
+## Translating ids into names
+If you have for example a dataset with only ids and need a name, then you can use the function  `translate_to_spatial_unit_name(df, language)` and give in hist_ids and a language ("de","fr","it","en") and it gives you the values that are specified in the spatial unit table. 
+
+## Adding values to higher granularity values
+
+The function `add_granularity_levels_up<-function(df,list_ontologies)` provides an easy mean to sum up values of A.ADM3 level to higher levels A.ADM2, A.ADM1 and CH. However, not to any other at the moment (e.g. regions in ZH, or to have as a base any A.ADM4).
+
 
 
 
