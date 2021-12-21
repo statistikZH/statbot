@@ -4,7 +4,8 @@ create_classes <-function(){
   # Cleaning/Removing all the previous variables starting with statbot_ind_ in case that they are still in memory
   rm(list=ls(pat="statbot_ind_"))
 
-  statbot_ind_1_01_001<-data.frame(class_id="1_01_001",class_name="resident_population",name_de="Ständige Wohnbevölkerung",name_fr="Ständige Wohnbevölkerung",
+  statbot_ind_1_01_001<-data.frame(class_id="1_01_001",class_name="resident_population",
+             name_de="Ständige Wohnbevölkerung",name_fr="Ständige Wohnbevölkerung",
              name_it="Ständige Wohnbevölkerung",name_en="Resident Population",
              description_de="Ständige Bevölkerung",description_fr="Ständige Bevölkerung",
              description_it="Ständige Bevölkerung",description_en="Ständige Bevölkerung",
