@@ -1,7 +1,7 @@
 
 # Main-Script - see also readme
 
-# V3.0.2c - 20.12.2021 - adaptations to the V3 DB scheme
+# V3.0.2c - 21.12.2021 - adaptations to the V3 DB scheme
 
 # preparation of some global constants
 devtools::load_all(".")

@@ -1,5 +1,6 @@
-# V3.0.2 - 15.12.2021 - 16.12.2021 - Adaptation to V3-scheme
-# CAREFUL - WORK IN PROGRESS!
+# V3.0.2 - 15.12.2021 - 21.12.2021 - Adaptation to V3-scheme
+# Thomas Knecht and Christian Ruiz
+
 
 library(dplyr)
 
