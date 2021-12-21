@@ -43,7 +43,7 @@ Important Temporary-Notice: The pxR-package to read px-files within R has a bug.
 
 
 ### History
-- Version 3.0.2 - 16.12.2021 - 20.12.2021 New spatial units elements implemented
+- Version 3.0.2 - 16.12.2021 - 21.12.2021 New spatial units elements implemented
 - Version 3.0.0 - 12.2021 - back to "more simple" DB-scheme aiming for a first MVP next summer.  
 - Version 2.x.x - 11.2021 - "complex" DB-Scheme that was aiming to integrate all possibilities of linked data
 - Version 1.0.2 - 21.10.2021 - 21.10.2021 - Dimensions changed to 6, inserted code to fill dimensions with NAs

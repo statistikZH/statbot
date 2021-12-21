@@ -33,15 +33,12 @@ system("pip install -r requirements.txt")
 
 
 logger("INIT: CREATE SPATIAL UNITS...")
-source("scripts/init_scripts/create_spatial_units.R")
 create_spatial_units()
 
 logger("INIT: CREATE CLASSES...")
-source("scripts/init_scripts/create_classes.R")
 create_classes()
 
 logger("INIT: CREATE DIMENSIONS...")
-source("scripts/init_scripts/create_dimensions.R")
 create_dimensions()
 
 # 20.12.2021 waiting for Jorins modifications

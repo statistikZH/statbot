@@ -45,7 +45,7 @@ You should not forget to include the metadata for your dataset! The following to
 
 ### Inserting a new class in the classes overview
 
-The following script programmatically generates the file data/classes.csv that contains all the metadata about the datasets: scripts/init_scripts/create_classes.R . In this script you will see blocks of code like the following:
+The following script programmatically generates the file data/classes.csv that contains all the metadata about the datasets: R/create_classes.R . In this script you will see blocks of code like the following:
 
 ![Create Classes](/readme_folder/img/create_classes.PNG).
 
@@ -53,7 +53,7 @@ Just copy one and change the data.frame-name and the class_id to your new id tha
  ` #'population_density': '1_01_002',`
 Here it shows the class_name as well, which is the second parameter. This class_name is configurated in english and is a variable value that is not human-readable. All the other Names and Descriptions are meant to be human-readable elements. If you have questions come to us.
 
-Then there is a file that generates the dimensions.csv file: scripts/init_scripts/create_dimensions.R
+Then there is a file that generates the dimensions.csv file: R/create_dimensions.R
 
 Every dimension like sex, age, origin has an own dim_id and contains some meta-data about the dimension itself as well as about the values that are used. Please check first whether the dimension you want to use is already there. The dimension_id is then necessary to fill in for the classes created in the script mentioned before. The unique_name is a variable_name in English to be used in your fact-table. We were advised to use human-readable column names this is why we do not use dim_ids anymore (since V3 of the DB-schema). 
 
