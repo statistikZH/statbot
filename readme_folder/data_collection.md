@@ -69,7 +69,7 @@ In order to run that function you need three elements (two parameters). You need
 After writing the file out in the data/values folder (in the same logic with your class-id as name) you can execute the function `update_last_updated(class_id)` so that the classes.csv has a value correctly set for the last update on that class. 
 
 ## Converting per capita, per area
-For this the function `convert_and_write_per_unit()` can be used. More to come on that. 
+For this the function `convert_and_write_per_unit(df,file_name,how_many=1000,type="pop",simplify_date=F)` can be used. A data_frame is given in that is then converted and written out (in file_name). If you say pop then it divides by the population, is you say area it divides by the area. How_many indicates if it is for example per 1000 inhabitants (how_many=1000) or if it is per habitants it has to be set to how_many=1. Simplify_date helps in case that the values do not match perfectly for example 31.12.2020 and 31.03.2020. It takes only the year value (in the case here 2020).
 
 The function ends with returning "UPDATE OK" if everything went well. 
 
