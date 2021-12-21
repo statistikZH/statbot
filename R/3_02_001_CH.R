@@ -1,3 +1,5 @@
+# V3.0.2c - 21.12.2021
+
 #consists of communal (+swiss total) and of cantonal areas
 
 statbot_src_3_02_001_CH <- function(flag_force_update=FALSE){
@@ -27,8 +29,11 @@ statbot_src_3_02_001_CH <- function(flag_force_update=FALSE){
     new_df<-df[,c("gesamtflache_in_km_1","gemeindecode")]
 
     colnames(new_df)[colnames(new_df)=="gesamtflache_in_km_1"]<-"value"
-    colnames(new_df)[colnames(new_df)=="gemeindecode"]<-"spatialunit_id"
+    colnames(new_df)[colnames(new_df)=="gemeindecode"]<-"spatialunit_current_id"
     new_df$time_value<-year_value
+    new_df$spatialunit_ontology="A.ADM3"
+    new_df$spatialunit_ontology[1]="CH"
+    new_df$period_value<-NA
 
     # 2. cantonal area data
     df2<-read.xlsx(destfile2,1,startRow=36,header=T) %>% janitor::clean_names()
@@ -39,18 +44,24 @@ statbot_src_3_02_001_CH <- function(flag_force_update=FALSE){
     df2<-df2[,4:29]
     df2<-as.data.frame(t(df2))
     colnames(df2)<-c("value")
-    df2$spatialunit_id<-seq(10000,260000,by=10000)
+    df2$spatialunit_current_id<-seq(1,26)
     df2$time_value<-year_value
+    df2$spatialunit_ontology<-"A.ADM1"
+    df2$period_value<-NA
 
-    new_df<-bring_indicator_values_to_order(new_df)
-    df2<-bring_indicator_values_to_order(df2)
+
     new_df<-rbind(new_df,df2)
 
-    new_df$indicator_id<-"3_02_001"
-    new_df$timeinfo_id<-1
-    new_df<-fill_dimensions_with_na(new_df,value_id=TRUE)
+    # there are some values that have to be cleaned
+    # the warnng of coercing NA's is correct - we want it to produce NAs so that the can be eliminated
+    new_df$spatialunit_current_id<-as.integer(new_df$spatialunit_current_id)
+    new_df<-new_df[!is.na(new_df$spatialunit_current_id),]
 
-    new_df<-bring_indicator_values_to_order(new_df,final_length=T)
+    new_df$spatialunit_hist_id<-convert_current_to_hist_id(new_df,reference_point = paste0("1.1.",year_value) )
+
+    new_df$time_value<-paste0("1.1.",new_df$time_value)
+
+
 
     write.csv(new_df,"data/values/3_02_001_CH.csv",row.names = F)
     update_last_updated("3_02_001")
