@@ -10,7 +10,7 @@
 convert_current_to_hist_id <- function(df,reference_point){
   spatial_unit_table<-read.csv("data/spatialunits.csv")[,c(
     "spatialunit_ontology","spatialunit_hist_id","spatialunit_current_id","valid_from","valid_until")]
-browser()
+
   # filter in spatial_unit_table all that would be valid to that parameter
   # remark added on 21.12.21 by TK: solution by data.table might be more elegant and faster see:
   # https://stackoverflow.com/questions/37289405/dplyr-left-join-by-less-than-greater-than-condition
