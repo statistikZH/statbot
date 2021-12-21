@@ -2,7 +2,7 @@
 
 ### Explanation based on V3.0.2 on 16.12.2021
 
-The script under scripts/init_scripts/create_spatial_units.R generates a csv-file under data called spatialunits.csv . This is a file that contains all the information about the spatial units (communes, cantons, districts and so on).
+The script under R/create_spatial_units.R generates a csv-file under data called spatialunits.csv . This is a file that contains all the information about the spatial units (communes, cantons, districts and so on).
 
 In the first part of the script, it gets the historicized communal data directly from FSO. The data from the FSO actually contains three files: communes, districts and cantons. The files are quite dense and contain many useful information. For example for every commune there are several entries if there were changes to the commune (mergers, disbanded, border-changes etc). 
 
