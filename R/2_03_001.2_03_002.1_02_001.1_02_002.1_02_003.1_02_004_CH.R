@@ -61,7 +61,6 @@ statbot_src_2_03_001.2_03_002.1_02_001.1_02_002.1_02_003.1_02_004_CH <- function
                                                         Wirtschaftssektor=="Tertiärer Sektor"~3))
 
 
-    sub_df$indicator_id<-"1_02_001"
 
     sub_df<-sub_df[,c(GLOBAL_TOTAL_LIST,"gender","economic_sector")]
 
@@ -87,7 +86,6 @@ statbot_src_2_03_001.2_03_002.1_02_001.1_02_002.1_02_003.1_02_004_CH <- function
                                                         Wirtschaftssektor=="Tertiärer Sektor"~3))
 
 
-    sub_df$indicator_id<-"1_02_003"
 
     sub_df<-sub_df[,c(GLOBAL_TOTAL_LIST,"gender","economic_sector")]
 
@@ -109,7 +107,6 @@ statbot_src_2_03_001.2_03_002.1_02_001.1_02_002.1_02_003.1_02_004_CH <- function
                                                         Wirtschaftssektor=="Tertiärer Sektor"~3))
 
 
-    sub_df$indicator_id<-"2_03_001"
 
     sub_df<-sub_df[,c(GLOBAL_TOTAL_LIST,"economic_sector")]
 
