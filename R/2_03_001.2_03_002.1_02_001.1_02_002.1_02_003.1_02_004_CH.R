@@ -38,10 +38,14 @@ statbot_src_2_03_001.2_03_002.1_02_001.1_02_002.1_02_003.1_02_004_CH <- function
 
     df<-convert_current_to_hist_id(df,reference_point=reference_point)
 
+    # this just cleans the ugly name that contains bfs-nr etc. Of course there are other ways to do it :-)
+    df<- df %>% rename(spatialunit_name=Gemeinde)
+    df$spatialunit_name<-translate_to_spatial_unit_name(df,"de")
+
     df$time_value<-paste0("31.12.",df$Jahr)
     df$period_value<-NA
 
-    df<- df %>% rename(spatialunit_name=Gemeinde)
+
 
 
 
