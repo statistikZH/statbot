@@ -1,4 +1,4 @@
-# V3.1.0 - 21.12.2021 - Changing the totals to -1 instead of 0
+# V3.1.0b - 21.12.2021 - Changing the totals to -1 instead of 0
 # History
 # V3.0.2 - 21.12.2021 - according to V3
 

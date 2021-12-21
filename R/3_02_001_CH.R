@@ -1,4 +1,4 @@
-# V3.1.0 - 21.12.2021
+# V3.1.0b - 21.12.2021 - redone version, plus aggregate to bezirke
 
 #consists of communal (+swiss total) and of cantonal areas
 
@@ -59,11 +59,19 @@ statbot_src_3_02_001_CH <- function(flag_force_update=FALSE){
 
 
 
-    new_df$spatialunit_hist_id<-convert_current_to_hist_id(new_df,reference_point = paste0("1.1.",year_value) )
+    new_df<-convert_current_to_hist_id(new_df,reference_point = paste0("1.1.",year_value) )
 
     new_df$time_value<-paste0("1.1.",new_df$time_value)
 
     new_df$spatialunit_name<-translate_to_spatial_unit_name(new_df,"de")
+
+    new_df$value<-as.integer(new_df$value)
+
+    new_df<-new_df[,c(GLOBAL_TOTAL_LIST)]
+
+    new_df<-add_granularity_levels_up(new_df,list_ontologies=c("A.ADM2"))
+
+    new_df<-new_df[,c(GLOBAL_TOTAL_LIST)]
 
 
 
