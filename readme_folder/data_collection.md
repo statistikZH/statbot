@@ -66,8 +66,6 @@ The current_id is on Swiss federal level the "BFS-NR" used for communes, distric
 
 In order to run that function you need three elements (two parameters). You need to have defined a dataframe already that consists a column spatialunit_current_id with the above mentioned id. And you need a colum with the spatialunit_ontology e.g. "A.ADM3" for communes (see please the documentation here for a list of ontologies used). These two elements are just given into the function as a dataframe. The last element needed is the day of validity for the spatial data in that dataset ("reference_point"). The parameter is given in the character-format like "1.12.2021" (day.month.year). The function that is going to filter all elements that were valid that day (imagine two communes merging: if they merges on 1.6.2021 then they are not the same anymore than on 1.12.2021...). The output of this function is a column with the hist_ids. You should check how many NAs were generated, in order to see if important bugfixging is necessary. Without a hist_id there would be an important unique_id missing for those elements. 
 
-When you are finished with the data cleaning, bring_indicator_values_to_order is a function that brings the columns in your table in order.
-
 After writing the file out in the data/values folder (in the same logic with your class-id as name) you can execute the function `update_last_updated(class_id)` so that the classes.csv has a value correctly set for the last update on that class. 
 
 ## Converting per capita, per area
