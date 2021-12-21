@@ -1,4 +1,4 @@
-# last update 20.12.2021 - according to V3
+# last update 21.12.2021 - according to V3
 
 # includes arbeitsstaette, beschaeftigte and VZAE
 
@@ -30,14 +30,16 @@ statbot_src_2_03_001.2_03_002.1_02_001.1_02_002.1_02_003.1_02_004_CH <- function
     # while the max year is 2019
     # thus we could hope that this stays always the same
     maximum_year<-max(as.integer(as.character(df$Jahr)))
-    stichtag<-paste0("1.1.",maximum_year)
+    reference_point<-paste0("1.1.",maximum_year)
 
 
 
-    df$spatialunit_hist_id<-convert_current_to_hist_id(df,reference_point=stichtag)
+    df$spatialunit_hist_id<-convert_current_to_hist_id(df,reference_point=reference_point)
 
     df$time_value<-paste0("31.12.",df$Jahr)
     df$period_value<-NA
+
+    df<- df %>% rename(spatialunit_name=Gemeinde)
 
 
 
@@ -46,81 +48,71 @@ statbot_src_2_03_001.2_03_002.1_02_001.1_02_002.1_02_003.1_02_004_CH <- function
 
     # Beschäftigte
 
-    df$temp<-stringr::str_locate(pattern ='Beschäftigte',df$Beobachtungseinheit)[,1]
+    df$temp<-stringr::str_locate(pattern ='Beschäftigte',df$Variable)[,1]
     sub_df<-df[!is.na(df$temp),]
-    sub_df<-sub_df %>% mutate(dim1_value_id = case_when(Beobachtungseinheit=="Beschäftigte"~0,
-                                             Beobachtungseinheit=="Beschäftigte Männer"~1,
-                                             Beobachtungseinheit=="Beschäftigte Frauen"~2),
-                              dim2_value_id = case_when(Wirtschaftssektor=="Wirtschaftssektor - Total"~0,
+    sub_df<-sub_df %>% mutate(gender = case_when(Variable=="Beschäftigte"~0,
+                                             Variable=="Beschäftigte Männer"~1,
+                                             Variable=="Beschäftigte Frauen"~2),
+                              economic_sector = case_when(Wirtschaftssektor=="Wirtschaftssektor - Total"~0,
                                                         Wirtschaftssektor=="Primärsektor"~1,
                                                         Wirtschaftssektor=="Sekundärer Sektor"~2,
                                                         Wirtschaftssektor=="Tertiärer Sektor"~3))
 
 
     sub_df$indicator_id<-"1_02_001"
-    sub_df$timeinfo_id<-1
-    #TODO fill_dimensions is not up-to-date
-    sub_df<-fill_dimensions_with_na(sub_df,value_id=TRUE)
-    colnames(sub_df)[colnames(sub_df)=="Jahr"]<-"time_value"
 
+    sub_df<-sub_df[,c(GLOBAL_TOTAL_LIST,"gender","economic_sector")]
 
-    sub_df<-bring_indicator_values_to_order(sub_df[,GLOBAL_TOTAL_LIST],final_length=T)
     #TODO
     #sub_df<-zh_add_regions_bezirke(sub_df)
-    sub_df<-bring_indicator_values_to_order(sub_df[,GLOBAL_TOTAL_LIST],final_length=T)
+
 
     write.csv(sub_df,"data/values/1_02_001_CH.csv",row.names = F)
     update_last_updated("1_02_001")
+
     convert_and_write_per_unit(sub_df,"1_02_002","1_02_002_CH.csv",how_many=1000)
 
     # VZAE
 
-    df$temp<-stringr::str_locate(pattern ='Vollzeitäquivalente',df$Beobachtungseinheit)[,1]
+    df$temp<-stringr::str_locate(pattern ='Vollzeitäquivalente',df$Variable)[,1]
     sub_df<-df[!is.na(df$temp),]
-    sub_df<-sub_df %>% mutate(dim1_value_id = case_when(Beobachtungseinheit=="Vollzeitäquivalente"~0,
-                                                        Beobachtungseinheit=="Vollzeitäquivalente Männer"~1,
-                                                        Beobachtungseinheit=="Vollzeitäquivalente Frauen"~2),
-                              dim2_value_id = case_when(Wirtschaftssektor=="Wirtschaftssektor - Total"~0,
+    sub_df<-sub_df %>% mutate(gender = case_when(Variable=="Vollzeitäquivalente"~0,
+                                                        Variable=="Vollzeitäquivalente Männer"~1,
+                                                        Variable=="Vollzeitäquivalente Frauen"~2),
+                              economic_sector = case_when(Wirtschaftssektor=="Wirtschaftssektor - Total"~0,
                                                         Wirtschaftssektor=="Primärsektor"~1,
                                                         Wirtschaftssektor=="Sekundärer Sektor"~2,
                                                         Wirtschaftssektor=="Tertiärer Sektor"~3))
 
 
     sub_df$indicator_id<-"1_02_003"
-    sub_df$timeinfo_id<-1
-    sub_df<-fill_dimensions_with_na(sub_df,value_id=TRUE)
-    colnames(sub_df)[colnames(sub_df)=="Jahr"]<-"time_value"
 
+    sub_df<-sub_df[,c(GLOBAL_TOTAL_LIST,"gender","economic_sector")]
 
-    sub_df<-bring_indicator_values_to_order(sub_df[,GLOBAL_TOTAL_LIST],final_length=T)
     #TODO
     #sub_df<-zh_add_regions_bezirke(sub_df)
-    sub_df<-bring_indicator_values_to_order(sub_df[,GLOBAL_TOTAL_LIST],final_length=T)
 
     write.csv(sub_df,"data/values/1_02_003_CH.csv",row.names = F)
     update_last_updated("1_02_003")
+
     convert_and_write_per_unit(sub_df,"1_02_004","1_02_004_CH.csv",how_many=1000)
 
     # Arbeitsstaette
 
-    df$temp<-stringr::str_locate(pattern ='Arbeitsstätten',df$Beobachtungseinheit)[,1]
+    df$temp<-stringr::str_locate(pattern ='Arbeitsstätten',df$Variable)[,1]
     sub_df<-df[!is.na(df$temp),]
-    sub_df<-sub_df %>% mutate(dim1_value_id = case_when(Wirtschaftssektor=="Wirtschaftssektor - Total"~0,
+    sub_df<-sub_df %>% mutate(economic_sector = case_when(Wirtschaftssektor=="Wirtschaftssektor - Total"~0,
                                                         Wirtschaftssektor=="Primärsektor"~1,
                                                         Wirtschaftssektor=="Sekundärer Sektor"~2,
                                                         Wirtschaftssektor=="Tertiärer Sektor"~3))
 
 
     sub_df$indicator_id<-"2_03_001"
-    sub_df$timeinfo_id<-1
-    sub_df<-fill_dimensions_with_na(sub_df,value_id=TRUE)
-    colnames(sub_df)[colnames(sub_df)=="Jahr"]<-"time_value"
 
+    sub_df<-sub_df[,c(GLOBAL_TOTAL_LIST,"economic_sector")]
 
-    sub_df<-bring_indicator_values_to_order(sub_df[,GLOBAL_TOTAL_LIST],final_length=T)
     #TODO: HAS TO BE MODIFIED
     #sub_df<-zh_add_regions_bezirke(sub_df)
-    sub_df<-bring_indicator_values_to_order(sub_df[,GLOBAL_TOTAL_LIST],final_length=T)
 
     write.csv(sub_df,"data/values/2_03_001_CH.csv",row.names = F)
     update_last_updated("2_03_001")

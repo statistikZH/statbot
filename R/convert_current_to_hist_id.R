@@ -11,12 +11,11 @@ convert_current_to_hist_id <- function(df,reference_point){
   spatial_unit_table<-read.csv("data/spatialunits.csv")[,c(
     "spatialunit_ontology","spatialunit_hist_id","spatialunit_current_id","valid_from","valid_until")]
 
-  #TODO WORKAROUND 20.12 BEFORE TK PUTS 31.12.2999
-  spatial_unit_table$valid_until<- ifelse(is.na(spatial_unit_table$valid_until)||spatial_unit_table$valid_until=="","31.12.2999",spatial_unit_table$valid_until)
-
   # filter in spatial_unit_table all that would be valid to that parameter
-  spatial_unit_table$valid_from<-as.Date(spatial_unit_table$valid_from,format="%d.%m.%Y")
-  spatial_unit_table$valid_until<-as.Date(spatial_unit_table$valid_until,format="%d.%m.%Y")
+  # remark added on 21.12.21 by TK: solution by data.table might be more elegant and faster see:
+  # https://stackoverflow.com/questions/37289405/dplyr-left-join-by-less-than-greater-than-condition
+  spatial_unit_table$valid_from<-as.Date(spatial_unit_table$valid_from)
+  spatial_unit_table$valid_until<-as.Date(spatial_unit_table$valid_until)
   reference_point<-as.Date(reference_point,format="%d.%m.%Y")
   spatial_unit_table<-spatial_unit_table[spatial_unit_table$valid_from<=reference_point&
                        spatial_unit_table$valid_until>=reference_point,]

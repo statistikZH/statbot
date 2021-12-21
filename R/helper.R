@@ -21,21 +21,10 @@ check_changes_in_input_file<-function(file_name){
   }
 }
 
-#TODO WRONG WITH V3
-GLOBAL_TOTAL_LIST<-c("indicator_id","spatialunit_id","time_value","timeinfo_id",
-                     "value")
-for(i in 1:GLOBAL_MAX_DIM) GLOBAL_TOTAL_LIST<-c(GLOBAL_TOTAL_LIST,paste0("dim",i,"_value_id"))
 
-bring_indicator_values_to_order<-function(df, final_length=F){
+GLOBAL_TOTAL_LIST<-c("spatialunit_ontology","spatialunit_hist_id","spatialunit_name",
+                  "time_value","period_value","value")
 
-  if(sum(names(df) %in% GLOBAL_TOTAL_LIST)<length(names(df))) stop("Error: invalid var-name(s)")
-
-  list_to_select<-GLOBAL_TOTAL_LIST[GLOBAL_TOTAL_LIST %in% names(df)]
-  if(final_length&length(list_to_select)!=length(GLOBAL_TOTAL_LIST)) stop(paste0("Error: Amount of cols incorrect: ",length(list_to_select)," instead of ",length(GLOBAL_TOTAL_LIST),"."))
-  if(length(list_to_select)<length(GLOBAL_TOTAL_LIST)) print("Info: Subset selected")
-
-  return(df[,list_to_select])
-}
 
 update_last_updated<-function(id){
   df<-read.csv("data/classes.csv")
@@ -54,17 +43,6 @@ convert_and_write_per_unit<-function(df,new_id,file_name,how_many=1000){
 
 }
 
-fill_dimensions_with_na<-function(df,value_id=FALSE){
-  for(j in 1:GLOBAL_MAX_DIM){
-    if(value_id){
-      var_name<-paste0("dim",j,"_value_id")
-    }else{
-      var_name<-paste0("dim",j,"_id")
-    }
-    if(!(var_name %in% colnames(df))) df[,var_name]<-NA
-  }
-  return(df)
-}
 
 #TODO HAS TO BE CHECKED AND PUT IN SEPARATE FILE
 zh_add_regions_bezirke<-function(df){

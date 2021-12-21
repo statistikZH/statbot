@@ -9,11 +9,11 @@ create_dimensions<-function(){
   # 3 wäre unebstimmt laut eCH
 
   statbot_dim_geschlecht<-data.frame(  dim_id=1,
-                                       unique_name="sex",
+                                       unique_name="gender",
                                        dim_name_de="Geschlecht",
                                        dim_name_fr="Geschlecht",
                                        dim_name_it="Geschlecht",
-                                       dim_name_en="Sex",
+                                       dim_name_en="Gender",
                                        value_id=c(1,2,0),
                                        value_name_de=c("Männer","Frauen","Total"),
                                        value_name_fr=c("Männer","Frauen","Total"),
