@@ -13,6 +13,7 @@ old/data/*
 sql/
 sql/*
 log/*
+temp/*
 !data
 !data/*
 !data/*.csv
