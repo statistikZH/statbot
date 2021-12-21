@@ -34,7 +34,7 @@ statbot_src_2_03_001.2_03_002.1_02_001.1_02_002.1_02_003.1_02_004_CH <- function
 
 
 
-    df$spatialunit_hist_id<-convert_current_to_hist_id(df,valid_until=stichtag)
+    df$spatialunit_hist_id<-convert_current_to_hist_id(df,reference_point=stichtag)
 
     df$time_value<-paste0("31.12.",df$Jahr)
     df$period_value<-NA
@@ -59,6 +59,7 @@ statbot_src_2_03_001.2_03_002.1_02_001.1_02_002.1_02_003.1_02_004_CH <- function
 
     sub_df$indicator_id<-"1_02_001"
     sub_df$timeinfo_id<-1
+    #TODO fill_dimensions is not up-to-date
     sub_df<-fill_dimensions_with_na(sub_df,value_id=TRUE)
     colnames(sub_df)[colnames(sub_df)=="Jahr"]<-"time_value"
 
