@@ -57,6 +57,8 @@ statbot_src_3_02_001_CH <- function(flag_force_update=FALSE){
     new_df$spatialunit_current_id<-as.integer(new_df$spatialunit_current_id)
     new_df<-new_df[!is.na(new_df$spatialunit_current_id),]
 
+    browser()
+
     new_df$spatialunit_hist_id<-convert_current_to_hist_id(new_df,reference_point = paste0("1.1.",year_value) )
 
     new_df$time_value<-paste0("1.1.",new_df$time_value)

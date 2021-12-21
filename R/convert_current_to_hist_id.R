@@ -22,7 +22,7 @@ convert_current_to_hist_id <- function(df,reference_point){
 
   # now that the time-relevant are filtered, we can join among the two main variables
 
-  df_temp<- df %>%  left_join(spatial_unit_table,by=c("spatialunit_ontology","spatialunit_current_id"))
+  df_temp<- df %>%  left_join(spatial_unit_table,by=c("spatialunit_ontology"="spatialunit_ontology","spatialunit_current_id"="spatialunit_current_id"))
   df_temp<-merge(df,spatial_unit_table,by=c("spatialunit_ontology","spatialunit_current_id"),all.x=T,sort=F)
 
   return(df_temp$spatialunit_hist_id)
