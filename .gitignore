@@ -19,4 +19,5 @@ log/*
 data/values/11001_CH.csv
 .Rhistory
 sqlnet.log
+*.txt
 __pycache__/
