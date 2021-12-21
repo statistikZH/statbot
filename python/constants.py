@@ -66,7 +66,7 @@ INDICATOR_ID_MAPPING = {
     'apartment_building_per_1000_residents': '1_07_012',
     'household_size': '1_07_013',
     'voting_results': '1_10_001',
-    'national_council_elections': '1_10_002'
+    'national_council_elections': '1_10_002',
     'workplace': '2_03_001',
     'workplace_per_1000_residents': '2_03_002',
     'number_of_enterprises': '2_03_003',
