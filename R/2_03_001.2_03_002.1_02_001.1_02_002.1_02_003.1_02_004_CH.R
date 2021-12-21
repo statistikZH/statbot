@@ -36,7 +36,7 @@ statbot_src_2_03_001.2_03_002.1_02_001.1_02_002.1_02_003.1_02_004_CH <- function
 
 
 
-    df$spatialunit_hist_id<-convert_current_to_hist_id(df,reference_point=reference_point)
+    df<-convert_current_to_hist_id(df,reference_point=reference_point)
 
     df$time_value<-paste0("31.12.",df$Jahr)
     df$period_value<-NA
@@ -64,8 +64,9 @@ statbot_src_2_03_001.2_03_002.1_02_001.1_02_002.1_02_003.1_02_004_CH <- function
 
     sub_df<-sub_df[,c(GLOBAL_TOTAL_LIST,"gender","economic_sector")]
 
-    #TODO
-    #sub_df<-zh_add_regions_bezirke(sub_df)
+    sub_df<-add_granularity_levels_up(sub_df,list_ontologies=c("A.ADM2","A.ADM1","CH"),list_dimensions=c("gender","economic_sector"))
+
+    sub_df<-sub_df[,c(GLOBAL_TOTAL_LIST,"gender","economic_sector")]
 
 
     write.csv(sub_df,"data/values/1_02_001_CH.csv",row.names = F)
@@ -89,8 +90,11 @@ statbot_src_2_03_001.2_03_002.1_02_001.1_02_002.1_02_003.1_02_004_CH <- function
 
     sub_df<-sub_df[,c(GLOBAL_TOTAL_LIST,"gender","economic_sector")]
 
-    #TODO
-    #sub_df<-zh_add_regions_bezirke(sub_df)
+    sub_df<-add_granularity_levels_up(sub_df,list_ontologies=c("A.ADM2","A.ADM1","CH"),list_dimensions=c("gender","economic_sector"))
+
+    sub_df<-sub_df[,c(GLOBAL_TOTAL_LIST,"gender","economic_sector")]
+
+
 
     write.csv(sub_df,"data/values/1_02_003_CH.csv",row.names = F)
     update_last_updated("1_02_003")
@@ -110,8 +114,9 @@ statbot_src_2_03_001.2_03_002.1_02_001.1_02_002.1_02_003.1_02_004_CH <- function
 
     sub_df<-sub_df[,c(GLOBAL_TOTAL_LIST,"economic_sector")]
 
-    #TODO: HAS TO BE MODIFIED
-    #sub_df<-zh_add_regions_bezirke(sub_df)
+    sub_df<-add_granularity_levels_up(sub_df,list_ontologies=c("A.ADM2","A.ADM1","CH"),list_dimensions=c("economic_sector"))
+
+    sub_df<-sub_df[,c(GLOBAL_TOTAL_LIST,"economic_sector")]
 
     write.csv(sub_df,"data/values/2_03_001_CH.csv",row.names = F)
     update_last_updated("2_03_001")
