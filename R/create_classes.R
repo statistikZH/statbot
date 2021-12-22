@@ -11,7 +11,7 @@ create_classes <-function(){
              description_it="Ständige Bevölkerung",description_en="Ständige Bevölkerung",
              unit_short_de="Pers.",unit_short_fr="Pers.",unit_short_it="Pers.",unit_short_en="Pers.",
              unit_long_de="Personen",unit_long_fr="Personen",unit_long_it="Personen",unit_long_en="Personen",
-             source="BFS-STATPOP",dim1_id=1,dim2_id=2,dim3_id=3,dim4_id=NA,last_updated=NA,min_year=2010,max_year=2020)
+             source="BFS-STATPOP",dim1_id=1,dim2_id=2,dim3_id=3,dim4_id=NA,dim5_id=NA,dim6_id=NA,last_updated=NA,min_year=2010,max_year=2020)
 
   #'population_density': '1_01_002',
   #'foreigner_proportion': '1_01_003',
@@ -23,7 +23,7 @@ create_classes <-function(){
                                 description_it="Geburten",description_en="Geburten",
                                 unit_short_de="Pers.",unit_short_fr="Pers.",unit_short_it="Pers.",unit_short_en="Pers.",
                                 unit_long_de="Personen",unit_long_fr="Personen",unit_long_it="Personen",unit_long_en="Personen",
-                                source="BFS-BEVNAT",dim1_id=1,dim2_id=2,dim3_id=4,dim4_id=NA,last_updated=NA,min_year=1969,max_year=2020)
+                                source="BFS-BEVNAT",dim1_id=1,dim2_id=2,dim3_id=4,dim4_id=NA,dim5_id=NA,dim6_id=NA,last_updated=NA,min_year=1969,max_year=2020)
 
 
   # 'nativity_per_1000_residents': '1_01_005',
@@ -53,7 +53,7 @@ create_classes <-function(){
                                 description_it="Beschäftigte",description_en="Beschäftigte",
                                 unit_short_de="Pers.",unit_short_fr="Pers.",unit_short_it="Pers.",unit_short_en="Pers.",
                                 unit_long_de="Personen",unit_long_fr="Personen",unit_long_it="Personen",unit_long_en="Personen",
-                                source="BFS-STATENT",dim1_id=1,dim2_id=5,dim3_id=NA,dim4_id=NA,last_updated=NA,min_year=2011,max_year=2018)
+                                source="BFS-STATENT",dim1_id=1,dim2_id=5,dim3_id=NA,dim4_id=NA,dim5_id=NA,dim6_id=NA,last_updated=NA,min_year=2011,max_year=2018)
 
   statbot_ind_1_02_002<-data.frame(class_id="1_02_002",class_name="employee_per_1000_residents",name_de="Beschäftigte pro 1000 Einwohner",name_fr="Beschäftigte pro 1000 Einwohner",
                                 name_it="Beschäftigte pro 1000 Einwohner",name_en="Employee per 1000 residents",
@@ -61,7 +61,7 @@ create_classes <-function(){
                                 description_it="Beschäftigte pro 1000 Einwohner",description_en="Beschäftigte pro 1000 Einwohner",
                                 unit_short_de="Pers./1000 Einw.",unit_short_fr="Pers./1000 Einw.",unit_short_it="Pers./1000 Einw.",unit_short_en="Pers./1000 Einw.",
                                 unit_long_de="Personen pro 1000 Einwohner",unit_long_fr="Personen pro 1000 Einwohner",unit_long_it="Personen pro 1000 Einwohner",unit_long_en="Personen pro 1000 Einwohner",
-                                source="BFS-STATENT",dim1_id=1,dim2_id=5,dim3_id=NA,dim4_id=NA,last_updated=NA,min_year=2011,max_year=2018)
+                                source="BFS-STATENT",dim1_id=1,dim2_id=5,dim3_id=NA,dim4_id=NA,dim5_id=NA,dim6_id=NA,last_updated=NA,min_year=2011,max_year=2018)
 
 
 
@@ -71,7 +71,7 @@ create_classes <-function(){
                                 description_it="Vollzeitäquivalente",description_en="Vollzeitäquivalente",
                                 unit_short_de="VZÄ",unit_short_fr="VZÄ",unit_short_it="VZÄ",unit_short_en="VZÄ",
                                 unit_long_de="Vollzeitäquivalente",unit_long_fr="Vollzeitäquivalente",unit_long_it="Vollzeitäquivalente",unit_long_en="Vollzeitäquivalente",
-                                source="BFS-STATENT",dim1_id=1,dim2_id=5,dim3_id=NA,dim4_id=NA,last_updated=NA,min_year=2015,max_year=2018)
+                                source="BFS-STATENT",dim1_id=1,dim2_id=5,dim3_id=NA,dim4_id=NA,dim5_id=NA,dim6_id=NA,last_updated=NA,min_year=2015,max_year=2018)
 
   statbot_ind_1_02_004<-data.frame(class_id="1_02_004",class_name="fulltime_equivalent_per_1000_residents",name_de="Vollzeitäquivalente pro 1000 Einwohner",name_fr="Vollzeitäquivalente pro 1000 Einwohner",
                                 name_it="Vollzeitäquivalente pro 1000 Einwohner",name_en="Fulltime equivalent per 1000 residents",
@@ -79,22 +79,101 @@ create_classes <-function(){
                                 description_it="Vollzeitäquivalente pro 1000 Einwohner",description_en="Vollzeitäquivalente pro 1000 Einwohner",
                                 unit_short_de="VZÄ/1000 Einw.",unit_short_fr="VZÄ/1000 Einw.",unit_short_it="VZÄ/1000 Einw.",unit_short_en="VZÄ/1000 Einw.",
                                 unit_long_de="Vollzeitäquivalente pro 1000 Einwohner",unit_long_fr="Vollzeitäquivalente pro 1000 Einwohner",unit_long_it="Vollzeitäquivalente pro 1000 Einwohner",unit_long_en="Vollzeitäquivalente pro 1000 Einwohner",
-                                source="BFS-STATENT",dim1_id=1,dim2_id=5,dim3_id=NA,dim4_id=NA,last_updated=NA,min_year=2015,max_year=2018)
+                                source="BFS-STATENT",dim1_id=1,dim2_id=5,dim3_id=NA,dim4_id=NA,dim5_id=NA,dim6_id=NA,last_updated=NA,min_year=2015,max_year=2018)
+
+  statbot_ind_1_07_001<-data.frame(class_id="1_07_001",class_name="one_family_houses",name_de="Einfamilienhäuser",name_fr="Einfamilienhäuser",
+                                   name_it="Einfamilienhäuser",name_en="One family houses",
+                                   description_de="Einfamilienhäuser",description_fr="Einfamilienhäuser",
+                                   description_it="Einfamilienhäuser",description_en="Einfamilienhäuser",
+                                   unit_short_de="Gebäude",unit_short_fr="Gebäude",unit_short_it="Gebäude",unit_short_en="Buildings",
+                                   unit_long_de="Gebäude",unit_long_fr="Gebäude",unit_long_it="Gebäude",unit_long_en="Buildings",
+                                   source="BFS-GWS",dim1_id=6,dim2_id=7,dim3_id=NA,dim4_id=NA,dim5_id=NA,dim6_id=NA,last_updated=NA,min_year=2009,max_year=2020)
+
+  statbot_ind_1_07_002<-data.frame(class_id="1_07_002",class_name="one_family_houses_per_1000_residents",name_de="Einfamilienhäuser pro 1000 Einwohner",name_fr="Einfamilienhäuser pro 1000 Einwohner",
+                                   name_it="Einfamilienhäuser pro 1000 Einwohner",name_en="One family houses per 1000 residents",
+                                   description_de="Einfamilienhäuser pro 1000 Einwohner",description_fr="Einfamilienhäuser pro 1000 Einwohner",
+                                   description_it="Einfamilienhäuser pro 1000 Einwohner",description_en="Einfamilienhäuser pro 1000 Einwohner",
+                                   unit_short_de="Gebäude",unit_short_fr="Gebäude",unit_short_it="Gebäude",unit_short_en="Buildings",
+                                   unit_long_de="Gebäude",unit_long_fr="Gebäude",unit_long_it="Gebäude",unit_long_en="Buildings",
+                                   source="BFS-GWS",dim1_id=6,dim2_id=7,dim3_id=NA,dim4_id=NA,dim5_id=NA,dim6_id=NA,last_updated=NA,min_year=2009,max_year=2020)
+
+  statbot_ind_1_07_003<-data.frame(class_id="1_07_003",class_name="apartment_buildings",name_de="Mehrfamilienhäuser",name_fr="Mehrfamilienhäuser",
+                                   name_it="Mehrfamilienhäuser",name_en="Apartment buildings",
+                                   description_de="Mehrfamilienhäuser",description_fr="Mehrfamilienhäuser",
+                                   description_it="Mehrfamilienhäuser",description_en="Mehrfamilienhäuser",
+                                   unit_short_de="Gebäude",unit_short_fr="Gebäude",unit_short_it="Gebäude",unit_short_en="Buildings",
+                                   unit_long_de="Gebäude",unit_long_fr="Gebäude",unit_long_it="Gebäude",unit_long_en="Buildings",
+                                   source="BFS-GWS",dim1_id=6,dim2_id=7,dim3_id=NA,dim4_id=NA,dim5_id=NA,dim6_id=NA,last_updated=NA,min_year=2009,max_year=2020)
+
+  statbot_ind_1_07_004<-data.frame(class_id="1_07_004",class_name="apartment_buildings_per_1000_residents",name_de="Mehrfamilienhäuser pro 1000 Einwohner",name_fr="Mehrfamilienhäuser pro 1000 Einwohner",
+                                   name_it="Mehrfamilienhäuser pro 1000 Einwohner",name_en="Apartment buildings per 1000 residents",
+                                   description_de="Mehrfamilienhäuser pro 1000 Einwohner",description_fr="Mehrfamilienhäuser pro 1000 Einwohner",
+                                   description_it="Mehrfamilienhäuser pro 1000 Einwohner",description_en="Mehrfamilienhäuser pro 1000 Einwohner",
+                                   unit_short_de="Gebäude",unit_short_fr="Gebäude",unit_short_it="Gebäude",unit_short_en="Buildings",
+                                   unit_long_de="Gebäude",unit_long_fr="Gebäude",unit_long_it="Gebäude",unit_long_en="Buildings",
+                                   source="BFS-GWS",dim1_id=6,dim2_id=7,dim3_id=NA,dim4_id=NA,dim5_id=NA,dim6_id=NA,last_updated=NA,min_year=2009,max_year=2020)
+
+  statbot_ind_1_07_005<-data.frame(class_id="1_07_005",class_name="residential_buildings_with_secondary_use",name_de="Wohngebäude mit Nebennutzung",name_fr="Wohngebäude mit Nebennutzung",
+                                   name_it="Wohngebäude mit Nebennutzung",name_en="Residential buildings with secondary use",
+                                   description_de="Wohngebäude mit Nebennutzung",description_fr="Wohngebäude mit Nebennutzung",
+                                   description_it="Wohngebäude mit Nebennutzung",description_en="Wohngebäude mit Nebennutzung",
+                                   unit_short_de="Gebäude",unit_short_fr="Gebäude",unit_short_it="Gebäude",unit_short_en="Buildings",
+                                   unit_long_de="Gebäude",unit_long_fr="Gebäude",unit_long_it="Gebäude",unit_long_en="Buildings",
+                                   source="BFS-GWS",dim1_id=6,dim2_id=7,dim3_id=NA,dim4_id=NA,dim5_id=NA,dim6_id=NA,last_updated=NA,min_year=2009,max_year=2020)
+
+  statbot_ind_1_07_006<-data.frame(class_id="1_07_006",class_name="residential_buildings_with_secondary_use_per_1000_residents",name_de="Wohngebäude mit Nebennutzung pro 1000 Einwohner",name_fr="Wohngebäude mit Nebennutzung pro 1000 Einwohner",
+                                   name_it="Wohngebäude mit Nebennutzung pro 1000 Einwohner",name_en="Residential buildings with secondary use per 1000 residents",
+                                   description_de="Wohngebäude mit Nebennutzung pro 1000 Einwohner",description_fr="Wohngebäude mit Nebennutzung pro 1000 Einwohner",
+                                   description_it="Wohngebäude mit Nebennutzung pro 1000 Einwohner",description_en="Wohngebäude mit Nebennutzung pro 1000 Einwohner",
+                                   unit_short_de="Gebäude",unit_short_fr="Gebäude",unit_short_it="Gebäude",unit_short_en="Buildings",
+                                   unit_long_de="Gebäude",unit_long_fr="Gebäude",unit_long_it="Gebäude",unit_long_en="Buildings",
+                                   source="BFS-GWS",dim1_id=6,dim2_id=7,dim3_id=NA,dim4_id=NA,dim5_id=NA,dim6_id=NA,last_updated=NA,min_year=2009,max_year=2020)
+
+  statbot_ind_1_07_007<-data.frame(class_id="1_07_007",class_name="buildings_with_partial_residential_use",name_de="Gebäude mit teilweiser Wohnnutzung",name_fr="Gebäude mit teilweiser Wohnnutzung",
+                                   name_it="Gebäude mit teilweiser Wohnnutzung",name_en="Buildings with partial residential use",
+                                   description_de="Gebäude mit teilweiser Wohnnutzung",description_fr="Gebäude mit teilweiser Wohnnutzung",
+                                   description_it="Gebäude mit teilweiser Wohnnutzung",description_en="Gebäude mit teilweiser Wohnnutzung",
+                                   unit_short_de="Gebäude",unit_short_fr="Gebäude",unit_short_it="Gebäude",unit_short_en="Buildings",
+                                   unit_long_de="Gebäude",unit_long_fr="Gebäude",unit_long_it="Gebäude",unit_long_en="Buildings",
+                                   source="BFS-GWS",dim1_id=6,dim2_id=7,dim3_id=NA,dim4_id=NA,dim5_id=NA,dim6_id=NA,last_updated=NA,min_year=2009,max_year=2020)
+
+  statbot_ind_1_07_008<-data.frame(class_id="1_07_008",class_name="buildings_with_partial_residential_use_per_1000_residents",name_de="Gebäude mit teilweiser Wohnnutzung pro 1000 Einwohner",name_fr="Gebäude mit teilweiser Wohnnutzung pro 1000 Einwohner",
+                                   name_it="Gebäude mit teilweiser Wohnnutzung pro 1000 Einwohner",name_en="Buildings with partial residential use per 1000 residents",
+                                   description_de="Gebäude mit teilweiser Wohnnutzung pro 1000 Einwohner",description_fr="Gebäude mit teilweiser Wohnnutzung pro 1000 Einwohner",
+                                   description_it="Gebäude mit teilweiser Wohnnutzung pro 1000 Einwohner",description_en="Gebäude mit teilweiser Wohnnutzung pro 1000 Einwohner",
+                                   unit_short_de="Gebäude",unit_short_fr="Gebäude",unit_short_it="Gebäude",unit_short_en="Buildings",
+                                   unit_long_de="Gebäude",unit_long_fr="Gebäude",unit_long_it="Gebäude",unit_long_en="Buildings",
+                                   source="BFS-GWS",dim1_id=6,dim2_id=7,dim3_id=NA,dim4_id=NA,dim5_id=NA,dim6_id=NA,last_updated=NA,min_year=2009,max_year=2020)
+
+  statbot_ind_1_07_009<-data.frame(class_id="1_07_009",class_name="all_residential_buildings",name_de="Alle Wohngebäude",name_fr="Alle Wohngebäude",
+                                   name_it="Alle Wohngebäude",name_en="All residential buildings",
+                                   description_de="Alle Wohngebäude",description_fr="Alle Wohngebäude",
+                                   description_it="Alle Wohngebäude",description_en="Alle Wohngebäude",
+                                   unit_short_de="Gebäude",unit_short_fr="Gebäude",unit_short_it="Gebäude",unit_short_en="Buildings",
+                                   unit_long_de="Gebäude",unit_long_fr="Gebäude",unit_long_it="Gebäude",unit_long_en="Buildings",
+                                   source="BFS-GWS",dim1_id=6,dim2_id=7,dim3_id=NA,dim4_id=NA,dim5_id=NA,dim6_id=NA,last_updated=NA,min_year=2009,max_year=2020)
+
+  statbot_ind_1_07_010<-data.frame(class_id="1_07_010",class_name="all_residential_buildings_per_1000_residents",name_de="Alle Wohngebäude pro 1000 Einwohner",name_fr="Alle Wohngebäude pro 1000 Einwohner",
+                                   name_it="Alle Wohngebäude pro 1000 Einwohner",name_en="All residential buildings per 1000 residents",
+                                   description_de="Alle Wohngebäude pro 1000 Einwohner",description_fr="Alle Wohngebäude pro 1000 Einwohner",
+                                   description_it="Alle Wohngebäude pro 1000 Einwohner",description_en="Alle Wohngebäude pro 1000 Einwohner",
+                                   unit_short_de="Gebäude",unit_short_fr="Gebäude",unit_short_it="Gebäude",unit_short_en="Buildings",
+                                   unit_long_de="Gebäude",unit_long_fr="Gebäude",unit_long_it="Gebäude",unit_long_en="Buildings",
+                                   source="BFS-GWS",dim1_id=6,dim2_id=7,dim3_id=NA,dim4_id=NA,dim5_id=NA,dim6_id=NA,last_updated=NA,min_year=2009,max_year=2020)
 
 
-  # 'housing': '1_07_001',
-  # 'housing_per_1000_residents': '1_07_002',
-  # 'rental_apartments': '1_07_003',
-  # 'rental_apartments_per_1000_residents': '1_07_004',
-  # 'condominium': '1_07_005',
-  # 'condominium_per_1000_residents': '1_07_006',
-  # 'building': '1_07_007',
-  # 'building_per_1000_residents': '1_07_008',
-  # 'one_family_house': '1_07_009',
-  # 'one_family_house_per_1000_residents': '1_07_010',
-  # 'apartment_building': '1_07_011',
-  # 'apartment_building_per_1000_residents': '1_07_012',
-  # 'household_size': '1_07_013',
+  # "housing": "1_07_011",
+  # "housing_per_1000_residents": "1_07_012",
+  # "rental_apartments": "1_07_013",
+  # "rental_apartments_per_1000_residents": "1_07_014",
+  # "condominium": "1_07_015",
+  # "condominium_per_1000_residents": "1_07_016",
+  # "building": "1_07_017",
+  # "building_per_1000_residents": "1_07_018",
+  # "household_size": "1_07_019",
+  # "empty_dwellings_amount":"1_07_020",
+  # "empty_dwellings_quote":"1_07_021",
+
   # 'voting_results': '1_10_001',
   # 'national_council_elections': '1_10_002'
 
@@ -105,7 +184,7 @@ create_classes <-function(){
                                 description_it="Arbeitsstätten",description_en="Arbeitsstätten",
                                 unit_short_de="Arbeitsstätten",unit_short_fr="Arbeitsstätten",unit_short_it="Arbeitsstätten",unit_short_en="Arbeitsstätten",
                                 unit_long_de="Arbeitsstätten",unit_long_fr="Arbeitsstätten",unit_long_it="Arbeitsstätten",unit_long_en="Arbeitsstätten",
-                                source="BFS-STATENT",dim1_id=5,dim2_id=NA,dim3_id=NA,dim4_id=NA,last_updated=NA,min_year=2011,max_year=2018)
+                                source="BFS-STATENT",dim1_id=5,dim2_id=NA,dim3_id=NA,dim4_id=NA,dim5_id=NA,dim6_id=NA,last_updated=NA,min_year=2011,max_year=2018)
 
   statbot_ind_2_03_002<-data.frame(class_id="2_03_002",class_name="workplace_per_1000_residents",name_de="Arbeitsstätten pro 1000 Einwohner",name_fr="Arbeitsstätten pro 1000 Einwohner",
                                 name_it="Arbeitsstätten pro 1000 Einwohner",name_en="Worklace per 1000 residents",
@@ -113,7 +192,7 @@ create_classes <-function(){
                                 description_it="Arbeitsstätten pro 1000 Einwohner",description_en="Arbeitsstätten pro 1000 Einwohner",
                                 unit_short_de="Arbeitsstätten pro 1000 Einwohner",unit_short_fr="Arbeitsstätten pro 1000 Einwohner",unit_short_it="Arbeitsstätten pro 1000 Einwohner",unit_short_en="Arbeitsstätten pro 1000 Einwohner",
                                 unit_long_de="Arbeitsstätten pro 1000 Einwohner",unit_long_fr="Arbeitsstätten pro 1000 Einwohner",unit_long_it="Arbeitsstätten pro 1000 Einwohner",unit_long_en="Arbeitsstätten pro 1000 Einwohner",
-                                source="BFS-STATENT",dim1_id=5,dim2_id=NA,dim3_id=NA,dim4_id=NA,last_updated=NA,min_year=2011,max_year=2018)
+                                source="BFS-STATENT",dim1_id=5,dim2_id=NA,dim3_id=NA,dim4_id=NA,dim5_id=NA,dim6_id=NA,last_updated=NA,min_year=2011,max_year=2018)
 
 
   # 'number_of_enterprises': '2_03_003',
@@ -125,7 +204,7 @@ create_classes <-function(){
                                 description_it="Fläche",description_en="Area",
                                 unit_short_de="km2",unit_short_fr="km2",unit_short_it="km2",unit_short_en="km2",
                                 unit_long_de="km2",unit_long_fr="km2",unit_long_it="km2",unit_long_en="km2",
-                                source="BFS-Gemeindeporträt",dim1_id=NA,dim2_id=NA,dim3_id=NA,dim4_id=NA,last_updated=NA,min_year=2016,max_year=2018)
+                                source="BFS-Gemeindeporträt",dim1_id=NA,dim2_id=NA,dim3_id=NA,dim4_id=NA,dim5_id=NA,dim6_id=NA,last_updated=NA,min_year=2016,max_year=2018)
 
 
   # merge all the variables starting with statbot_ind_ together
@@ -134,7 +213,7 @@ create_classes <-function(){
   out<-NULL
   for(i in ls(pat="statbot_ind_")){
     temp<-eval(as.name(i))
-    temp<-fill_dimensions_with_na(temp)
+    #temp<-fill_dimensions_with_na(temp)
     out<-rbind(out,temp)
   }
 

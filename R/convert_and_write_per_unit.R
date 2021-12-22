@@ -20,7 +20,7 @@ convert_and_write_per_unit<-function(df,file_name,how_many=1000,type="pop",simpl
     file_name<-"data/values/3_02_001.csv"}
   if(!(type %in% c("pop","area"))) stop("Invalid type given")
 
-  base<-fread(file_name,select = c("spatialunit_ontology","spatialunit_hist_id","value","time_value"))
+  base<-data.table::fread(file_name,select = c("spatialunit_ontology","spatialunit_hist_id","value","time_value"))
   base<-base %>% rename(base=value)
 
 

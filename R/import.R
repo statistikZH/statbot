@@ -6,6 +6,7 @@
 #' @import lubridate
 #' @import pxR
 #' @import purrr
+#' @import data.table
 #' @importFrom glue glue
 #'
 NULL

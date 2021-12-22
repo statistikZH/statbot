@@ -1,6 +1,6 @@
 # STATBOT
 
-### Version 3.1.0b - 21.12.2021
+### Version 3.1.0c - 21.12.2021
 
 In this folder are the main data warehouse scripts that run all the different R and python scripts in order to generate the newest data for statbot. It is supposed to be built as some form of cronjob to be executed once a day. All the statistical offices can contribute here with scripts. Or they can contribute by adding additional data-values-files and we will find a way to grab those files and insert the values.
 

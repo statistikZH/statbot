@@ -80,6 +80,36 @@ create_dimensions<-function(){
                                               value_name_en=c("Total","Primary Sector","Secondary Sector","Tertiary Sector")
   )
 
+  statbot_dim_rooms<-data.frame(  dim_id=6,
+                                              unique_name="rooms",
+                                              dim_name_de="Zimmer",
+                                              dim_name_fr="Zimmer",
+                                              dim_name_it="Zimmer",
+                                              dim_name_en="Rooms",
+                                              value_id=c(-1,seq(1,6)),
+                                              value_name_de=c("Total","1 Zimmer","2 Zimmer","3 Zimmer","4 Zimmer","5 Zimmer","6+ Zimmer"),
+                                              value_name_fr=c("Total","1 Zimmer","2 Zimmer","3 Zimmer","4 Zimmer","5 Zimmer","6+ Zimmer"),
+                                              value_name_it=c("Total","1 Zimmer","2 Zimmer","3 Zimmer","4 Zimmer","5 Zimmer","6+ Zimmer"),
+                                              value_name_en=c("Total","1 room","2 rooms","3 rooms","4 rooms","5 rooms","6+ rooms"),
+  )
+
+  statbot_dim_construction_period<-data.frame(  dim_id=7,
+                                  unique_name="construction_period",
+                                  dim_name_de="Bauperiode",
+                                  dim_name_fr="Bauperiode",
+                                  dim_name_it="Bauperiode",
+                                  dim_name_en="Construction period",
+                                  value_id=c(-1,seq(1,9)),
+                                  value_name_de=c("Total","Vor 1919","1919-1945","1946-1960","1961-1970",
+                                                  "1971-1980","1981-1990","1991-2000","2001-2005","2006-2020"),
+                                  value_name_fr=c("Total","Vor 1919","1919-1945","1946-1960","1961-1970",
+                                                  "1971-1980","1981-1990","1991-2000","2001-2005","2006-2020"),
+                                  value_name_it=c("Total","Vor 1919","1919-1945","1946-1960","1961-1970",
+                                                  "1971-1980","1981-1990","1991-2000","2001-2005","2006-2020"),
+                                  value_name_en=c("Total","Vor 1919","1919-1945","1946-1960","1961-1970",
+                                                  "1971-1980","1981-1990","1991-2000","2001-2005","2006-2020")
+  )
+
   # merge all the variables starting with statbot_dim_ together
   out<-NULL
   for(i in ls(pat="statbot_dim_")){
