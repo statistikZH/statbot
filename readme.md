@@ -52,6 +52,7 @@ Important Temporary-Notice: The pxR-package to read px-files within R has a bug.
 
 
 ### History
+- Version 3.1.1 - 04.01.2022 - New wrapper functions for integrating the FSO data; Adaptations to some scripts
 - Version 3.1.0 - 21.12.2021 - Totals are all set to -1 instead of 0, several new functions
 - Version 3.0.2 - 16.12.2021 - 21.12.2021 New spatial units elements implemented, many V3 updates
 - Version 3.0.0 - 12.2021 - back to "more simple" DB-scheme aiming for a first MVP next summer.  
