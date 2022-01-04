@@ -1,5 +1,6 @@
-# V3.1.0b - 21.12.2021 - Changing the totals to -1 instead of 0
+# V3.1.1 - 04.01.22 - Now with cantons
 # History
+# V3.1.0b - 21.12.2021 - Changing the totals to -1 instead of 0
 # V3.0.2 - 21.12.2021 - according to V3
 
 # includes arbeitsstaette, beschaeftigte and VZAE
@@ -13,20 +14,40 @@
 
 statbot_src_2_03_001.2_03_002.1_02_001.1_02_002.1_02_003.1_02_004_CH <- function(flag_force_update=FALSE){
   destfile<-"temp/bfs_2_03_001-2_03_002-1_02_001-1_02_002-1_02_003-1_02_004_CH.px"
+  destfile2<-"temp/bfs_2_03_001-2_03_002-1_02_001-1_02_002-1_02_003-1_02_004_KANTONE.px"
   download.file(paste0("https://www.bfs.admin.ch/bfsstatic/dam/assets/",get_bfs_asset_nr("px-x-0602010000_102"),"/master"),destfile=destfile)
+  download.file(paste0("https://www.bfs.admin.ch/bfsstatic/dam/assets/",get_bfs_asset_nr("px-x-0602010000_108"),"/master"),destfile=destfile2)
 
 
 
-  if(check_changes_in_input_file(destfile)|flag_force_update){
+  if(check_changes_in_input_file(destfile)|check_changes_in_input_file(destfile2)|flag_force_update){
     if(flag_force_update) print("flag_force_update") else print("Changes found")
 
     df<-statbot_read.px(destfile)
     df<-as.data.frame(df)
+    df_kantone<-statbot_read.px(destfile2)
+    df_kantone<-as.data.frame(df_kantone)
+
 
     # if switzerland then ID=0 and ontology=CH otherwise ID=BFS-NR and ontology=A.ADM.3
     df$temp<-stringr::str_locate(pattern =' ',df$Gemeinde)[,1]
     df$spatialunit_current_id<-ifelse(is.na(df$temp),0,as.numeric(substr(df$Gemeinde,0,df$temp)))
     df$spatialunit_ontology<-ifelse(is.na(df$temp),"CH","A.ADM3")
+    df$temp<-NULL
+
+    # eliminate switzerland from the file with the cantons and arrange levels
+    df_kantone<-df_kantone[df_kantone$Kanton!="Schweiz",]
+    df_kantone<-df_kantone %>% group_by(Beobachtungseinheit,Wirtschaftssektor,Kanton,Jahr) %>% summarize(value=sum(value,na.rm=T))
+    df_kantone$Kanton<-droplevels(df_kantone$Kanton)
+    df_kantone$spatialunit_current_id<-convert_cantonal_name_to_current_id(df_kantone$Kanton)
+    df_kantone$spatialunit_ontology<-"A.ADM1"
+
+    df_kantone<-rename(df_kantone,Variable=Beobachtungseinheit,Gemeinde=Kanton)
+    df$Variable<-ifelse(df$Variable=="Institutionelle Einheiten","Arbeitsstätten",df$Variable)
+
+
+    #merge kantone and other file
+    df<-rbind(df,df_kantone)
 
     # at the moment the date for the gemeinde validity is: "1.1.2019"
     # while the max year is 2019
@@ -68,7 +89,7 @@ statbot_src_2_03_001.2_03_002.1_02_001.1_02_002.1_02_003.1_02_004_CH <- function
 
     sub_df<-sub_df[,c(GLOBAL_TOTAL_LIST,"gender","economic_sector")]
 
-    sub_df<-add_granularity_levels_up(sub_df,list_ontologies=c("A.ADM2","A.ADM1","CH"),list_dimensions=c("gender","economic_sector"))
+    #sub_df<-add_granularity_levels_up(sub_df,list_ontologies=c("A.ADM2","A.ADM1","CH"),list_dimensions=c("gender","economic_sector"))
 
     sub_df<-sub_df[,c(GLOBAL_TOTAL_LIST,"gender","economic_sector")]
 
@@ -76,7 +97,7 @@ statbot_src_2_03_001.2_03_002.1_02_001.1_02_002.1_02_003.1_02_004_CH <- function
     write.csv(sub_df,"data/values/1_02_001_CH.csv",row.names = F)
     update_last_updated("1_02_001")
 
-    convert_and_write_per_unit(sub_df,"1_02_002_CH.csv",how_many=1000)
+    #convert_and_write_per_unit(sub_df,"1_02_002_CH.csv",how_many=1000)
 
     # VZAE
 
@@ -94,7 +115,7 @@ statbot_src_2_03_001.2_03_002.1_02_001.1_02_002.1_02_003.1_02_004_CH <- function
 
     sub_df<-sub_df[,c(GLOBAL_TOTAL_LIST,"gender","economic_sector")]
 
-    sub_df<-add_granularity_levels_up(sub_df,list_ontologies=c("A.ADM2","A.ADM1","CH"),list_dimensions=c("gender","economic_sector"))
+    #sub_df<-add_granularity_levels_up(sub_df,list_ontologies=c("A.ADM2","A.ADM1","CH"),list_dimensions=c("gender","economic_sector"))
 
     sub_df<-sub_df[,c(GLOBAL_TOTAL_LIST,"gender","economic_sector")]
 
@@ -103,7 +124,7 @@ statbot_src_2_03_001.2_03_002.1_02_001.1_02_002.1_02_003.1_02_004_CH <- function
     write.csv(sub_df,"data/values/1_02_003_CH.csv",row.names = F)
     update_last_updated("1_02_003")
 
-    convert_and_write_per_unit(sub_df,"1_02_004_CH.csv",how_many=1000)
+    #convert_and_write_per_unit(sub_df,"1_02_004_CH.csv",how_many=1000)
 
     # Arbeitsstaette
 
@@ -118,13 +139,13 @@ statbot_src_2_03_001.2_03_002.1_02_001.1_02_002.1_02_003.1_02_004_CH <- function
 
     sub_df<-sub_df[,c(GLOBAL_TOTAL_LIST,"economic_sector")]
 
-    sub_df<-add_granularity_levels_up(sub_df,list_ontologies=c("A.ADM2","A.ADM1","CH"),list_dimensions=c("economic_sector"))
+    #sub_df<-add_granularity_levels_up(sub_df,list_ontologies=c("A.ADM2","A.ADM1","CH"),list_dimensions=c("economic_sector"))
 
     sub_df<-sub_df[,c(GLOBAL_TOTAL_LIST,"economic_sector")]
 
     write.csv(sub_df,"data/values/2_03_001_CH.csv",row.names = F)
     update_last_updated("2_03_001")
-    convert_and_write_per_unit(sub_df,"2_03_002_CH.csv",how_many=1000)
+    #convert_and_write_per_unit(sub_df,"2_03_002_CH.csv",how_many=1000)
 
 
     return("UPDATE OK")
