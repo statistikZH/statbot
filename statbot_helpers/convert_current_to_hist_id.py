@@ -1,8 +1,7 @@
 import pandas as pd
 
-
-def convert_current_to_hist_id(df, reference_point):
-    spatial_unit_table = pd.read_csv("/home/b105p02@ji.ktzh.ch/gitrepos/statbot/data/spatialunits.csv", usecols=["spatialunit_ontology","spatialunit_hist_id","spatialunit_current_id","valid_from","valid_until"])
+def convert_current_to_hist_id(df, reference_point,path):
+    spatial_unit_table = pd.read_csv(path, usecols=["spatialunit_ontology","spatialunit_hist_id","spatialunit_current_id","valid_from","valid_until"])
   
     spatial_unit_table['valid_from'] = pd.to_datetime(spatial_unit_table['valid_from'], format = '%Y-%m-%d')
     
