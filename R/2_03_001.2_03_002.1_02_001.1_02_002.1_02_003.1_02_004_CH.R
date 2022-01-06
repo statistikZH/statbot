@@ -1,4 +1,4 @@
-# V3.1.1 - 04.01.22 - Now with cantons
+# V3.1.1b - 06.01.22 - Now with cantons, spatial reference
 # History
 # V3.1.0b - 21.12.2021 - Changing the totals to -1 instead of 0
 # V3.0.2 - 21.12.2021 - according to V3
@@ -24,6 +24,8 @@ statbot_src_2_03_001.2_03_002.1_02_001.1_02_002.1_02_003.1_02_004_CH <- function
     if(flag_force_update) print("flag_force_update") else print("Changes found")
 
     df<-statbot_read.px(destfile)
+    #extracting first some metadata - added on 06.01.2022
+    spatial_reference<-extract_spatial_reference(df$NOTE$value)
     df<-as.data.frame(df)
     df_kantone<-statbot_read.px(destfile2)
     df_kantone<-as.data.frame(df_kantone)
@@ -49,15 +51,11 @@ statbot_src_2_03_001.2_03_002.1_02_001.1_02_002.1_02_003.1_02_004_CH <- function
     #merge kantone and other file
     df<-rbind(df,df_kantone)
 
-    # at the moment the date for the gemeinde validity is: "1.1.2019"
-    # while the max year is 2019
-    # thus we could hope that this stays always the same
-    maximum_year<-max(as.integer(as.character(df$Jahr)))
-    reference_point<-paste0("1.1.",maximum_year)
 
 
 
-    df<-convert_current_to_hist_id(df,reference_point=reference_point)
+
+    df<-convert_current_to_hist_id(df,reference_point=spatial_reference)
 
     # this just cleans the ugly name that contains bfs-nr etc. Of course there are other ways to do it :-)
     df<- df %>% rename(spatialunit_name=Gemeinde)

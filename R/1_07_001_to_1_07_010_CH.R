@@ -1,4 +1,4 @@
-# V3.1.0b - 21.12.2021 - First version
+# V3.1.1b - 06.01.2022
 # History
 #
 
@@ -18,6 +18,10 @@ statbot_src_1_07_001_to_1_07_010_CH <- function(flag_force_update=FALSE){
     if(flag_force_update) print("flag_force_update") else print("Changes found")
 
     df<-statbot_read.px(destfile)
+
+    #extracting first some metadata - added on 06.01.2022
+    spatial_reference<-extract_spatial_reference(df$NOTE$value)
+
     df<-as.data.frame(df)
 
     new_names <- c("jahr", "bauperiode", "n_zimmer", "gebaeudekategorie", "spatialunit_name", "value")
@@ -33,15 +37,9 @@ statbot_src_1_07_001_to_1_07_010_CH <- function(flag_force_update=FALSE){
     df$spatialunit_current_id<-as.numeric(substr(df$spatialunit_name,7,df$temp))
     df$spatialunit_ontology<-"A.ADM3"
 
-    # at the moment the date for the gemeinde validity is: "18.10.2020"
-    # while the max year is 2020
-    # thus we could hope that this stays always the same
-    maximum_year<-max(as.integer(as.character(df$jahr)))
-    reference_point<-paste0("18.10.",maximum_year)
 
 
-
-    df<-convert_current_to_hist_id(df,reference_point=reference_point)
+    df<-convert_current_to_hist_id(df,reference_point=spatial_reference)
 
     # this just cleans the ugly name that contains bfs-nr etc. Of course there are other ways to do it :-)
     df$spatialunit_name<-translate_to_spatial_unit_name(df,"de")
