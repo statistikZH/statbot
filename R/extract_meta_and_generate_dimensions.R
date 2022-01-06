@@ -8,7 +8,7 @@
 #' @param ... dim_name_xx or value_name_xx with corresponding languages. Careful when giving in Labels
 #' they have to be as they would appear with appropriate capital letters e.g. "Economic Sector". The English
 #' one is particular and will be then be automatically converted to e.g. "economic_sector"
-#' @export
+#' @export translation_df so that it can be used to convert values later
 extract_meta_and_generate_dimensions<-function(input_df,label,dim_id,...){
   # TO THINK ABOUT:
   # - actually the dim_id could be attributed automatically?
@@ -16,6 +16,7 @@ extract_meta_and_generate_dimensions<-function(input_df,label,dim_id,...){
   # get the ellipsis arguments and their names
   arguments <- list(...)
   arg_names<-attr(arguments,which = "names")
+  if(!is.character(arg_names)) arg_names=""
 
   # just outputing available languages as info
   languages<-c()
@@ -46,6 +47,7 @@ extract_meta_and_generate_dimensions<-function(input_df,label,dim_id,...){
   #lets assume the codes as we want. Only 999 is our -1 for the totals
   codes<-df$CODES[[position]]
   value_id<-ifelse(codes=="999","-1",codes)
+  value_id<-ifelse(codes=="-99999","-1",codes)#in some cases
 
   #some of the px-meta is damaged. Cleaning seems to help to bring back clean char vectors
   cleaning<-function(input){
@@ -76,24 +78,24 @@ extract_meta_and_generate_dimensions<-function(input_df,label,dim_id,...){
     value_name_en<-cleaning(gsub(".*Total","Total",values,ignore.case = T))
   }
 
-  dim_name_de<-label # must be equal to label
+  dim_name_de<-str_replace_all(str_replace_all(label,"[.]"," "),"  "," ")
   if("dim_name_fr" %in% arg_names){
     dim_name_fr=arguments[['dim_name_fr']]
   }else{
-    dim_name_fr<-str_replace_all(names(df$VALUES.fr.)[position],"[.]"," ")
+    dim_name_fr<-str_replace_all(str_replace_all(names(df$VALUES.fr.)[position],"[.]"," "),"  "," ")
   }
   if("dim_name_it" %in% arg_names){
     dim_name_it=arguments[['dim_name_it']]
   }else{
-    dim_name_it<-str_replace_all(names(df$VALUES.it.)[position],"[.]"," ")
+    dim_name_it<-str_replace_all(str_replace_all(names(df$VALUES.it.)[position],"[.]"," "),"  "," ")
   }
   if("dim_name_en" %in% arg_names){
     dim_name_en=arguments[['dim_name_en']]
   }else{
-    dim_name_en<-str_replace_all(names(df$VALUES.en.)[position],"[.]"," ")
+    dim_name_en<-str_replace_all(str_replace_all(names(df$VALUES.en.)[position],"[.]"," "),"  "," ")
   }
 
-  unique_name<-tolower(unique_name)%>% janitor::make_clean_names() #lower and underscores
+  unique_name<-tolower(dim_name_en)%>% janitor::make_clean_names() #lower and underscores
 
   output_df<-data.frame(  dim_id=dim_id,
                                               unique_name=unique_name,
@@ -108,4 +110,8 @@ extract_meta_and_generate_dimensions<-function(input_df,label,dim_id,...){
                                               value_name_en=value_name_en)
   print(output_df)
   # TODO: Get dimensions CSV, glue it to the dimensions if not existing yet. What if conflicts?
-}
+
+  #output the df so that it can be used to convert values later
+  return(output_df)
+
+  }

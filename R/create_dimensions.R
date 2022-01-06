@@ -110,6 +110,10 @@ create_dimensions<-function(){
                                                   "1971-1980","1981-1990","1991-2000","2001-2005","2006-2020")
   )
 
+  # 8 is Staatsangehörigkeit Kategorie des Ehemannes
+  # 9 is Staatsangehörigkeit Kategorie der Ehefrau
+
+
   # merge all the variables starting with statbot_dim_ together
   out<-NULL
   for(i in ls(pat="statbot_dim_")){
