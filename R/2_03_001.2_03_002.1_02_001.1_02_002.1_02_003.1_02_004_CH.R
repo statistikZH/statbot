@@ -26,6 +26,8 @@ statbot_src_2_03_001.2_03_002.1_02_001.1_02_002.1_02_003.1_02_004_CH <- function
     df<-statbot_read.px(destfile)
     #extracting first some metadata - added on 06.01.2022
     spatial_reference<-extract_spatial_reference(df$NOTE$value)
+    extract_meta_and_generate_dimensions(df,"Wirtschaftssektor",5,dim_name_en="Economic Sector",
+                                         value_name_en=c("Total","Primary Sector","Secondary Sector","Tertiary Sector"))
     df<-as.data.frame(df)
     df_kantone<-statbot_read.px(destfile2)
     df_kantone<-as.data.frame(df_kantone)

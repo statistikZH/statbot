@@ -1,6 +1,6 @@
 # STATBOT
 
-### Version 3.1.1 - 04.01.2022
+### Version 3.1.2 - 06.01.2022
 
 In this folder are the main data warehouse scripts that run all the different R and python scripts in order to generate the newest data for statbot. It is supposed to be built as some form of cronjob to be executed once a day. All the statistical offices can contribute here with scripts. Or they can contribute by adding additional data-values-files and we will find a way to grab those files and insert the values.
 
@@ -52,6 +52,7 @@ Important Temporary-Notice: The pxR-package to read px-files within R has a bug.
 
 
 ### History
+- Version 3.1.2 - 06-01.2022 - Metadata extraction from px-files
 - Version 3.1.1 - 04.01.2022 - New wrapper functions for integrating the FSO data; Adaptations to some scripts
 - Version 3.1.0 - 21.12.2021 - Totals are all set to -1 instead of 0, several new functions
 - Version 3.0.2 - 16.12.2021 - 21.12.2021 New spatial units elements implemented, many V3 updates
