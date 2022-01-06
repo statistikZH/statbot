@@ -48,6 +48,10 @@ extract_meta_and_generate_dimensions<-function(input_df,label,dim_id,...){
   codes<-df$CODES[[position]]
   value_id<-ifelse(codes=="999","-1",codes)
   value_id<-ifelse(codes=="-99999","-1",codes)#in some cases
+  #exception:
+  if(label=="Staatsangehörigkeit..Kategorie..des.Ehemannes"||label=="Staatsangehörigkeit..Kategorie..der.Ehefrau"){
+    value_id<-ifelse(codes=="8100","-1",codes)
+  }
 
   #some of the px-meta is damaged. Cleaning seems to help to bring back clean char vectors
   cleaning<-function(input){

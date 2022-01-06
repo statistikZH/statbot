@@ -112,6 +112,7 @@ create_dimensions<-function(){
 
   # 8 is Staatsangehörigkeit Kategorie des Ehemannes
   # 9 is Staatsangehörigkeit Kategorie der Ehefrau
+  # 10 Ehedauer
 
 
   # merge all the variables starting with statbot_dim_ together
