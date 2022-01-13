@@ -233,6 +233,35 @@ create_new_dimension_file <- function(data, overwrite = F, allow_na_cols = F){
 
 }
 
+#' Function to list all existing dimensions
+#'
+#' @export
+get_existing_dimensions <- function(){
+  dimension_table <- create_full_dimension_table()
+
+  dimension_table %>%
+    distinct(dim_id, unique_name)
+}
+
+#' Function to check if a dimension already exists
+#'
+#' @param unique_dimension_name Dimension name to test for existance
+#'
+#' @export
+does_dimension_exist <- function(uniqe_dimension_name){
+  dimension_table <- create_full_dimension_table()
+
+  dimension_names <- unique(dimension_table$unique_name)
+
+  if(unique_dimension_name %in% dimension_names){
+    print("TRUE")
+  }else{
+    print("FALSE")
+  }
+}
+
+
+
 #' function containing all the columns in the right order
 #'
 #' @export
