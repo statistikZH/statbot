@@ -37,5 +37,33 @@ def add_granularity_levels_up(df,list_ontologies, path, list_dimensions = None):
         df_adm2.columns = allcols
     
         df_out =  df_out.append(df_adm2, ignore_index=True)
+        
+    if 'A.ADM3' in list_ontologies:
+        list_to_group = ["canton_hist_id","time_value"] + list_dimensions
+        df_adm3 = df.groupby(by=list_to_group).agg({'value': ['sum']}).reset_index()
+        df_adm3['spatialunit_ontology'] = 'A.ADM3'
+        df_adm3['spatialunit_hist_id'] = df_adm3['cantont_hist_id']
+        df_adm3['spatialunit_name'] = sbh.translate_to_spatial_unit_name(df_adm3, "de", os.path.join(path,"data/spatialunits.csv"))
+        df_adm3['period_value'] = np.NAN
+        df_adm3 = df_adm3[allcols]
+        #df_out = df_out[allcols]
+    
+        df_adm3.columns = allcols
+    
+        df_out =  df_out.append(df_adm3, ignore_index=True)
+        
+    if 'CH' in list_ontologies:
+        list_to_group = ["time_value"] + list_dimensions
+        df_ch = df.groupby(by=list_to_group).agg({'value': ['sum']}).reset_index()
+        df_ch['spatialunit_ontology'] = 'CH'
+        df_ch['spatialunit_hist_id'] = 0
+        df_ch['spatialunit_name'] = "Schweiz"
+        df_ch['period_value'] = np.NAN
+        df_ch = df_ch[allcols]
+        #df_out = df_out[allcols]
+    
+        df_ch.columns = allcols
+    
+        df_out =  df_out.append(df_ch, ignore_index=True)
     
     return df_out
