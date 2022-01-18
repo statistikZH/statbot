@@ -1,2 +1,5 @@
 from .get_bfs_asset_nr import get_bfs_asset_nr
 from .check_changes import check_changes
+from .convert_current_to_hist_id import convert_current_to_hist_id
+from .translate_to_spatial_unit_name import translate_to_spatial_unit_name
+from .add_granularity_levels_up import add_granularity_levels_up
