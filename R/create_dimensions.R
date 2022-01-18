@@ -121,6 +121,10 @@ create_dimensions<-function(){
   )
   write.csv(statbot_dim_construction_period,paste0(out_dir, "/dimension_construction_period.csv"),row.names = F)
 
+  # 8 is Staatsangehörigkeit Kategorie des Ehemannes
+  # 9 is Staatsangehörigkeit Kategorie der Ehefrau
+
+
   # merge all the variables starting with statbot_dim_ together
   # out<-NULL
   # for(i in ls(pat="statbot_dim_")){
