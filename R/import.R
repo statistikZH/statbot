@@ -6,7 +6,7 @@
 #' @import lubridate
 #' @import pxR
 #' @import purrr
-#' @import data.table
+#' @importFrom data.table fread fwrite
 #' @importFrom glue glue
 #'
 NULL

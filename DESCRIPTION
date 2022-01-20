@@ -1,15 +1,13 @@
 Package: statbot
-Title: What the Package Does (One Line, Title Case)
-Version: 0.0.0.9000
+Title: Package for statbot.swiss project
+Version: 3.1.2.10
 Authors@R: 
-    person(given = "First",
-           family = "Last",
+    person(given = "Christian",
+           family = "Ruiz",
            role = c("aut", "cre"),
-           email = "first.last@example.com",
-           comment = c(ORCID = "YOUR-ORCID-ID"))
-Description: What the package does (one paragraph).
-License: `use_mit_license()`, `use_gpl3_license()` or friends to pick a
-    license
+           email = "christian.ruiz@statistik.ji.zh.ch")
+Description: Package for hthe STATBOT project
+License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
 Roxygen: list(markdown = TRUE)

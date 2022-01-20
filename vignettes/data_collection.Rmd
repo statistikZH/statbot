@@ -1,3 +1,13 @@
+---
+title: "Data Collection"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Data-Collection}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+
 # How to contribute to the collection of data
 
 Hello, and thank you for joining the STATBOT-team! This documentation shows what steps have to be done to contribute to the collection of data. It also serves as a documentation for the different functions. This readme is work-in-progress: please help us by indicating which informations would be the most useful to you.  
@@ -21,7 +31,7 @@ For python there is a virtual environment under statbot_env that can be activate
 
 First of all, you can find a dataset that nobody is working on yet. You can find an [overview here](https://github.com/statistikZH/statbot/projects/2). There you can see on the kanban-board several columns. Just grab a dataset that is on the left side "to do" and move it to the second column "in progress". Open the tasks and put your initials in brackets like [CR] so that we know who is working on that dataset.
 
-![Github projects](/readme_folder/img/github_projects.PNG).
+![Github projects](img/github_projects.PNG).
 
 
 At the moment of writing, the [best overview of the datasets is still on google sheets]( https://docs.google.com/spreadsheets/d/1LtExe4Kj0OVE8aGsfqLJnWiGtW6nqN1etqBBzpEDLoA/edit#gid=1224865549). This is particularly important for the dataset-id ("class_id") that has to be used in the code. 
@@ -37,7 +47,7 @@ Every function has a parameter flag_force_update that if TRUE forces the functio
 
 Then you can start with the data cleaning of that dataset. The aim is to get a "fact table" that contains the following variables (according to version 3 of our DB-schema):
 
-![Fact Table](/readme_folder/img/fact_table.PNG)
+![Fact Table](img/fact_table.PNG)
 
 ## Metadata
 
@@ -47,7 +57,7 @@ You should not forget to include the metadata for your dataset! The following to
 
 The following script programmatically generates the file data/classes.csv that contains all the metadata about the datasets: R/create_classes.R . In this script you will see blocks of code like the following:
 
-![Create Classes](/readme_folder/img/create_classes.PNG).
+![Create Classes](img/create_classes.PNG).
 
 Just copy one and change the data.frame-name and the class_id to your new id that ouve'got from the spread sheet menioned previously. Adapt all the other information to your dataset. You might find your ID also in comments like here: 
  ` #'population_density': '1_01_002',`
@@ -57,7 +67,7 @@ Then there is a file that generates the dimensions.csv file: R/create_dimensions
 
 Every dimension like sex, age, origin has an own dim_id and contains some meta-data about the dimension itself as well as about the values that are used. Please check first whether the dimension you want to use is already there. The dimension_id is then necessary to fill in for the classes created in the script mentioned before. The unique_name is a variable_name in English to be used in your fact-table. We were advised to use human-readable column names this is why we do not use dim_ids anymore (since V3 of the DB-schema). 
 
-![Create Dimensions](/readme_folder/img/create_dimensions.PNG).
+![Create Dimensions](img/create_dimensions.PNG).
 
 
 ## Continuing with the data cleaning. 

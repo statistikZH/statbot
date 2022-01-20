@@ -8,7 +8,7 @@
 #' @param ... dim_name_xx or value_name_xx with corresponding languages. Careful when giving in Labels
 #' they have to be as they would appear with appropriate capital letters e.g. "Economic Sector". The English
 #' one is particular and will be then be automatically converted to e.g. "economic_sector"
-#' @export translation_df so that it can be used to convert values later
+#' @export
 extract_meta_and_generate_dimensions<-function(input_df,label,dim_id,...){
   # TO THINK ABOUT:
   # - actually the dim_id could be attributed automatically?
