@@ -1,0 +1,8 @@
+pandoc: 2.11.4
+pkgdown: 1.6.1
+pkgdown_sha: ~
+articles:
+  data_collection: data_collection.html
+  spatialunits: spatialunits.html
+last_built: 2022-01-20T12:09Z
+
