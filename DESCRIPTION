@@ -1,13 +1,34 @@
 Package: statbot
 Title: Package for statbot.swiss project
-Version: 3.1.2.10
-Authors@R: 
+Version: 3.1.2.20
+Authors@R: c(
+      person(given = "Thomas",
+           family = "Knecht",
+           role = c("aut", "cre"),
+           comment="Statistisches Amt Kanton Zürich"),
+      person(given = "Thomas",
+           family = "Lo Russo",
+           role = c("aut", "cre"),
+           comment="Statistisches Amt Kanton Zürich"),
+         person(given = "Pauline",
+           family = "Maury Laribière",
+           role = c("aut", "cre"),
+           comment="Federal Statistical Office"),
+                    person(given = "Hester",
+           family = "Pieters",
+           role = c("aut"),
+           comment="Statistisches Amt Kanton Basel-Stadt"),
     person(given = "Christian",
            family = "Ruiz",
            role = c("aut", "cre"),
-           email = "christian.ruiz@statistik.ji.zh.ch")
-Description: Package for hthe STATBOT project
-License: MIT + file LICENSE
+           comment="Statistisches Amt Kanton Zürich"),
+            person(given = "Jorin",
+           family = "Steiger",
+           role = c("aut"),
+           comment="Statistisches Amt Kanton Zürich")
+            )
+Description: Package for the statbot.swiss project
+License: MIT
 Encoding: UTF-8
 LazyData: true
 Roxygen: list(markdown = TRUE)
