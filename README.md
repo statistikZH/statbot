@@ -36,17 +36,6 @@ Important Temporary-Notice: The pxR-package to read px-files within R has a bug.
 
 
 
-### Authors contributing from Version 1 upwards (alphabetically)
-
-- Knecht, Thomas (Statistisches Amt Kanton Zürich)
-- Lo Russo, Thomas (Statistisches Amt Kanton Zürich)
-- Maury Laribière, Pauline (Federal Statistical Office)
-- Pieters, Hester (Statistisches Amt Kanton Basel-Stadt)
-- Ruiz, Christian (Statistisches Amt Kanton Zürich)
-- Steiger, Jorin (Statistisches Amt Kanton Zürich)
-
-![Team photo - picture seems to be CC](https://user-images.githubusercontent.com/12788884/146254759-60c53e6e-7378-45ca-9fcf-0b3944b9c92e.png)
-
 
 
 
