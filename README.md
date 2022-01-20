@@ -6,7 +6,7 @@ For those who would like to participate, we prepared ['under this link a documen
 
 Important for this project is a DB-schema, in which all the data are collected. Right now the following schema is used:
 
-![DB-Scheme V3.0.2](vignettes/img/db_scheme_v302.png).
+![DB-Scheme V3.0.2](https://user-images.githubusercontent.com/12788884/150325562-f36b60e2-6b70-43cc-aad3-a4d3cd41088a.png)
 
 There are several elements to it. The fact-table is the central element, where the actual data of the datasets are saved. Thus, every dataset is saved in this format and only differs according to certain dimensions (as of V3).
 
