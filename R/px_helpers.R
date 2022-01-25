@@ -1,4 +1,8 @@
-# Extract all existing dimension names
+#' Extract all existing dimension names
+#'
+#' @param df_px px-table
+#'
+#' @export
 extract_value_names <- function(df_px){
 
   list_names <- names(df_px)
@@ -8,7 +12,11 @@ extract_value_names <- function(df_px){
   return(value_list_names)
 }
 
-# extract all existing languages
+#' extract all existing languages
+#'
+#' @inheritParams extract_value_names
+#'
+#' @export
 extract_languages <- function(df_px){
 
   languages <- df_px$LANGUAGES$value
@@ -19,7 +27,15 @@ extract_languages <- function(df_px){
   return(languages_cleaned)
 }
 
-# check if all languages are present
+#' check if all languages are present
+#'
+#' @param languages existing languages in the file
+#'
+#' @param additional_languages languages added by the parameter additional_languages
+#'
+#' @param ignore wheter to ignore additional languages or not
+#'
+#' @export
 check_if_all_languages <- function(languages, additional_languages, ignore){
 
   all_languages <- c("de", "fr", "it", "en")
@@ -45,7 +61,11 @@ check_if_all_languages <- function(languages, additional_languages, ignore){
   return(missing_languages)
 }
 
-# extract main language
+#' extract main language
+#'
+#' @inheritParams extract_value_names
+#'
+#' @export
 extract_main_language <- function(df_px){
 
   main_language <- df_px$LANGUAGE$value
@@ -53,7 +73,9 @@ extract_main_language <- function(df_px){
   return(main_language)
 }
 
-# replace the total code by -1
+#' replace the total code by -1
+#'
+#' @param x character vecotr
 replace_total <- function(x){
 
   x <- replace(x, x==c("999", "-9999"), "-1")
@@ -61,18 +83,32 @@ replace_total <- function(x){
   return(x)
 }
 
-# extract the needed dimension names
+#' extract the needed dimension names
+#'
+#' @param x list with the dimensions
+#'
+#' @param ignore_dim dimenstions to be ignored
+#'
+#' @export
 extract_needed_names <- function(x, ignore_dim){
+  if(is.na(ignore_dim)){
+    ignore_dim <- NULL
+  }
 
-
-  not_needed_dimensions <- c("Jahr", "Anné", "Anno", "Year", "Gemeinde", "Commune", "Comune", "Municipality", "Kanton", "Canton", "District")
+  not_needed_dimensions <- c("Jahr", "Anné", "Anno", "Year", "Gemeinde", "Commune", "Comune", "Municipality", "Kanton", "Canton", "District", ignore_dim)
 
   x_needed <- x[!grepl(paste0(not_needed_dimensions, collapse = "|"), x)]
 
   return(x_needed)
 }
 
-# extract the list entries with a specific name
+#' extract the list entries with a specific name
+#'
+#' @param x_list list with the dimension information
+#'
+#' @param needed_names names of list entries that need to be extracted
+#'
+#' @export
 extract_needed_values <- function(x_list, needed_names){
 
   values_needed <- x_list[grep(paste0(needed_names, collapse = "|"), names(x_list))]
@@ -80,7 +116,13 @@ extract_needed_values <- function(x_list, needed_names){
   return(values_needed)
 }
 
-# create new codes for dimenstion values
+#' create new codes for dimenstion values
+#'
+#' @param name name of the dimension
+#'
+#' @param value_list list with the dimension values
+#'
+#' @export
 create_new_codes <- function(name, value_list){
 
   values <- unlist(value_list[grep(name, names(value_list))])
@@ -103,7 +145,13 @@ create_new_codes <- function(name, value_list){
   return(codes)
 }
 
-# extract the dimension names or the dimenstion values
+#' extract the dimension names or the dimenstion values
+#'
+#' @param input_list px file list
+#'
+#' @param typ what to extract. either "dim" or "value"
+#'
+#' @export
 extract_dim_value <- function(input_list, typ){
 
   if(typ == "dim"){
@@ -118,17 +166,29 @@ extract_dim_value <- function(input_list, typ){
   y_renamed <- lapply(y_df, function(x) rename_all(x, ~str_replace_all(., c("VALUES\\." = paste0(typ, "_name_"), "\\." = ""))))
 }
 
-# get needed values
-prep_needed_values <- function(input_list){
+#' get needed values
+#'
+#' @param input_list px file list
+#'
+#' @param ignore_dim dimenstions to be ignored
+#'
+#' @export
+prep_needed_values <- function(input_list, ignore_dim){
   existing_value_names <- names(input_list)
 
-  needed_value_names <- extract_needed_names(existing_value_names)
+  needed_value_names <- extract_needed_names(existing_value_names, ignore_dim)
 
   needed_values <- extract_needed_values(input_list, needed_value_names)
 }
 
 
-# create new dimenstions based on the fuzzy column
+#' create new dimenstions based on the fuzzy column
+#'
+#' @param needed_values list with the needed values
+#'
+#' @param fuzzy_column_pattern pattern containing the fuzzy column name in all existing lanugages
+#'
+#' @export
 split_vairable_dimension <- function(needed_values, fuzzy_column_pattern){
   variable_values <- needed_values[grep(fuzzy_column_pattern, names(needed_values))]
 
@@ -144,16 +204,22 @@ split_vairable_dimension <- function(needed_values, fuzzy_column_pattern){
 
 }
 
-# get the names of the fuzzy column in all existing languages
-get_all_fuzzy_column_languages <- function(df_px, fuzzy_column_name){
+#' get the names of the fuzzy column in all existing languages
+#'
+#' @param df_px list with the information
+#'
+#' @param column_name column name
+#'
+#' @export
+get_column_name_all_languages <- function(df_px, column_name){
 
   col_names <- lapply(df_px, function(x) names(x))
 
-  fuzzy_col_index <- unique(unlist(lapply(col_names, function(x) which(grepl(fuzzy_column_name,x)))))
+  col_index <- unique(unlist(lapply(col_names, function(x) which(grepl(column_name,x)))))
 
-  all_col_names <- unlist(lapply(df_px, function(x) names(x[fuzzy_col_index])))
+  all_col_names <- unlist(lapply(df_px, function(x) names(x[col_index])))
 
-  fuzzy_col_pattern <- paste0(all_col_names, collapse = "|")
+  col_pattern <- paste0(all_col_names, collapse = "|")
 
-  return(fuzzy_col_pattern)
+  return(col_pattern)
 }

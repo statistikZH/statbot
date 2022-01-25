@@ -12,11 +12,12 @@
 #'
 #' @param fuzzy_column_name name of the column with mixed dimensions
 #'
+#' @param ignore_dimensions whether to ignore dimensions or not
+#'
 #' @param overwrite if an existing dimenstion file should be overwritten or not
 #'
 #' @export
-extract_meta_and_generate_dimensions<-function(input_df, unique_names, ignore_language, additional_languages, fuzzy_column_name, overwrite){
-
+extract_meta_and_generate_dimensions<-function(input_df, unique_names, ignore_language, additional_languages, fuzzy_column_name, ignore_dimensions, overwrite){
 
   # extract existing languages
   languages_in_px<- extract_languages(input_df)
@@ -26,19 +27,6 @@ extract_meta_and_generate_dimensions<-function(input_df, unique_names, ignore_la
 
   # extract the main language
   main_language <- extract_main_language(input_df)
-
-  # for which variables do codes exist
-  existing_code_names <- names(input_df$CODES)
-
-  # for wehich variables do we actually need codes (year and location are neclected)
-  needed_code_names <- extract_needed_names(existing_code_names)
-
-  # extract all list entires with the needed code information
-  if(length(needed_code_names) == 0){
-    needed_codes <- NULL
-  }else{
-    needed_codes <- extract_needed_values(input_df$CODES, needed_code_names)
-  }
 
   # extract all Value informations
   all_language_values <- input_df[grep("VALUES", names(input_df))]
@@ -50,11 +38,35 @@ extract_meta_and_generate_dimensions<-function(input_df, unique_names, ignore_la
 
   # get the pattern of the fuzzy column name (containing all languages)
   if(!is.na(fuzzy_column_name)){
-    fuzzy_column_pattern <- get_all_fuzzy_column_languages(all_language_values, fuzzy_column_name)
+    fuzzy_column_pattern <- get_column_name_all_languages(all_language_values, fuzzy_column_name)
+  }else{
+    fuzzy_column_pattern <- "not existing"
   }
 
+  # get the column patterns of the columns to be ignored
+  if(!is.na(ignore_dimensions)){
+    ignore_dimensions_pattern <- lapply(ignore_dimensions, function(x) get_column_name_all_languages(all_language_values, x))
+
+    all_ignore_dimensions_pattern <- paste0(unlist(ignore_dimensions_pattern), collapse = "|")
+  }
+
+
   # extract the needed value informations
-  all_language_values_needed <- lapply(all_language_values, function(x) prep_needed_values(x))
+  all_language_values_needed <- lapply(all_language_values, function(x) prep_needed_values(x, ignore_dim = all_ignore_dimensions_pattern))
+
+
+  # for which variables do codes exist
+  existing_code_names <- names(input_df$CODES)
+
+  # for wehich variables do we actually need codes (year and location are neclected)
+  needed_code_names <- extract_needed_names(existing_code_names, ignore_dim = all_ignore_dimensions_pattern)
+
+  # extract all list entires with the needed code information
+  if(length(needed_code_names) == 0){
+    needed_codes <- NULL
+  }else{
+    needed_codes <- extract_needed_values(input_df$CODES, needed_code_names)
+  }
 
   # replace the code for total by -1
   if(length(needed_codes) != 0){
@@ -86,6 +98,8 @@ extract_meta_and_generate_dimensions<-function(input_df, unique_names, ignore_la
   if(length(not_existing_codes) != 0){
     additional_codes <- lapply(not_existing_codes_new, function(x) create_new_codes(x, all_language_values_needed_test[[1]]))
     names(additional_codes) <- not_existing_codes_new
+  }else{
+    additional_codes <- NULL
   }
 
   # combine the already existing codes with the new ones
