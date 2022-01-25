@@ -10,6 +10,7 @@ extract_meta_and_generate_dimensions(
   ignore_language,
   additional_languages,
   fuzzy_column_name,
+  ignore_dimensions,
   overwrite
 )
 }
@@ -23,6 +24,8 @@ extract_meta_and_generate_dimensions(
 \item{additional_languages}{additional language informations as list}
 
 \item{fuzzy_column_name}{name of the column with mixed dimensions}
+
+\item{ignore_dimensions}{whether to ignore dimensions or not}
 
 \item{overwrite}{if an existing dimenstion file should be overwritten or not}
 }
