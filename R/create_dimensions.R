@@ -143,15 +143,21 @@ create_full_dimension_table <- function(){
   dimension_files <- list.files("data/dimensions", full.names = T)
 
   # read in all dimension files
-  file_list <- purrr::map_df(dimension_files, read.csv)
+  if(length(dimension_files)!=0){
+    file_list <- purrr::map_df(dimension_files, read.csv)
 
-  # check if a dimension name is duplicated
-  if(any(duplicated(unique(file_list$unique_name)))){
-    warning("There are duplicated dimension names")
+    # check if a dimension name is duplicated
+    if(any(duplicated(unique(file_list$unique_name)))){
+      warning("There are duplicated dimension names")
+    }
+    # return the full dimension table
+    return(file_list)
+  }else{
+    return(NULL)
   }
 
-  # return the full dimension table
-  return(file_list)
+
+
 }
 
 #' Function that checks and creats a dimension file
@@ -164,6 +170,7 @@ create_full_dimension_table <- function(){
 #'
 #' @export
 create_new_dimension_file <- function(data, overwrite = F, allow_na_cols = F){
+
   # names of the columns containing NA
   na_cols <- names(data[apply(data, 2, function(x) any(is.na(x)))])
   # clumns that must have a value
@@ -196,6 +203,7 @@ create_new_dimension_file <- function(data, overwrite = F, allow_na_cols = F){
   # check if all the columns are present
   data_col_names <- names(data)
 
+
   dimension_col_names <- dimension_table_col_names()
 
   only_in_data <- setdiff(data_col_names, dimension_col_names)
@@ -211,15 +219,23 @@ create_new_dimension_file <- function(data, overwrite = F, allow_na_cols = F){
   # Get the dim_id
   # If a file should be overwritten, the dim_id of the existing file is taken
   # If it is a new dimension, the max(dim_id) + 1 is taken as new dim_id
+
   if(overwrite){
     new_dim_id <- read.csv(new_dimension_file_path) %>%
       pull(dim_id) %>%
       unique()
   }else{
-    max_dim_id <- create_full_dimension_table() %>%
-      filter(dim_id == max(dim_id)) %>%
-      pull(dim_id) %>%
-      unique()
+    full_dimension_table <- create_full_dimension_table()
+
+    if(is.null(full_dimension_table)){
+      max_dim_id <- 0
+    }else{
+      max_dim_id <- full_dimension_table %>%
+        filter(dim_id == max(dim_id)) %>%
+        pull(dim_id) %>%
+        unique()
+    }
+
 
     new_dim_id <- max_dim_id + 1
   }
