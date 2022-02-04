@@ -1,15 +1,34 @@
 Package: statbot
-Title: What the Package Does (One Line, Title Case)
-Version: 0.0.0.9000
-Authors@R: 
-    person(given = "First",
-           family = "Last",
+Title: Package for statbot.swiss project
+Version: 3.1.2.20
+Authors@R: c(
+      person(given = "Thomas",
+           family = "Knecht",
            role = c("aut", "cre"),
-           email = "first.last@example.com",
-           comment = c(ORCID = "YOUR-ORCID-ID"))
-Description: What the package does (one paragraph).
-License: `use_mit_license()`, `use_gpl3_license()` or friends to pick a
-    license
+           comment="Statistisches Amt Kanton Zürich"),
+      person(given = "Thomas",
+           family = "Lo Russo",
+           role = c("aut", "cre"),
+           comment="Statistisches Amt Kanton Zürich"),
+         person(given = "Pauline",
+           family = "Maury Laribière",
+           role = c("aut", "cre"),
+           comment="Federal Statistical Office"),
+                    person(given = "Hester",
+           family = "Pieters",
+           role = c("aut"),
+           comment="Statistisches Amt Kanton Basel-Stadt"),
+    person(given = "Christian",
+           family = "Ruiz",
+           role = c("aut", "cre"),
+           comment="Statistisches Amt Kanton Zürich"),
+            person(given = "Jorin",
+           family = "Steiger",
+           role = c("aut"),
+           comment="Statistisches Amt Kanton Zürich")
+            )
+Description: Package for the statbot.swiss project
+License: MIT
 Encoding: UTF-8
 LazyData: true
 Roxygen: list(markdown = TRUE)
