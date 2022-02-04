@@ -7,7 +7,7 @@
 #' @param var_name the name of the variable to be replaced
 #' @param dict a df with the value_ids to merge
 #'
-#' @export df is the same df but with the replaced variable
+#' @export
 merge_to_dict<-function(df,var_name,dict){
   df[,var_name]<-gsub(".*Total","Total",df[,var_name],ignore.case = T)
   df<-merge(df,dict[,c("value_id","value_name_de")],by.x=var_name,by.y="value_name_de")

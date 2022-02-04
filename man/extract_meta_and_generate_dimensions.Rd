@@ -4,18 +4,30 @@
 \alias{extract_meta_and_generate_dimensions}
 \title{Function to extract metadata and generate dimensions}
 \usage{
-extract_meta_and_generate_dimensions(input_df, label, dim_id, ...)
+extract_meta_and_generate_dimensions(
+  input_df,
+  unique_names,
+  ignore_language,
+  additional_languages,
+  fuzzy_column_name,
+  ignore_dimensions,
+  overwrite
+)
 }
 \arguments{
 \item{input_df}{a px-object before conversion into a proper df}
 
-\item{label}{German label for the variable with first letter capital e.g. "Wirtschaftssektor"}
+\item{unique_names}{names of the dimenstions to be exportet (in english)}
 
-\item{dim_id}{the unique id in the dimensions table}
+\item{ignore_language}{if missing languages should be ignored}
 
-\item{...}{dim_name_xx or value_name_xx with corresponding languages. Careful when giving in Labels
-they have to be as they would appear with appropriate capital letters e.g. "Economic Sector". The English
-one is particular and will be then be automatically converted to e.g. "economic_sector"}
+\item{additional_languages}{additional language informations as list}
+
+\item{fuzzy_column_name}{name of the column with mixed dimensions}
+
+\item{ignore_dimensions}{whether to ignore dimensions or not}
+
+\item{overwrite}{if an existing dimenstion file should be overwritten or not}
 }
 \description{
 This function extracts metadata from a px-file and populates the dimensions-file
