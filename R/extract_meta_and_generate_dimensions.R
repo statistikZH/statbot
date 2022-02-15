@@ -49,6 +49,8 @@ extract_meta_and_generate_dimensions<-function(input_df, unique_names, ignore_la
     ignore_dimensions_pattern <- lapply(ignore_dimensions, function(x) get_column_name_all_languages(all_language_values, x))
 
     all_ignore_dimensions_pattern <- paste0(unlist(ignore_dimensions_pattern), collapse = "|")
+  }else{
+    all_ignore_dimensions_pattern<-NA
   }
 
 

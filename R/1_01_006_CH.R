@@ -21,7 +21,7 @@ statbot_src_1_01_006_CH <- function(flag_force_update=FALSE){
     df<-statbot_read.px(destfile)
     #extracting first some metadata
     spatial_reference<-extract_spatial_reference(df$NOTE$value)
-    dict_gender<-extract_meta_and_generate_dimensions(df,"Geschlecht",1)
+    dict_gender<-extract_meta_and_generate_dimensions(df,unique_names="Geschlecht",ignore_language=F,additional_languages=NA,fuzzy_column_name=NA,ignore_dimensions=NA,overwrite=F)
     dict_staat<-extract_meta_and_generate_dimensions(df,"Staatsangehörigkeit..Kategorie.",11)
     dict_civil<-extract_meta_and_generate_dimensions(df,"Zivilstand",12)
     dict_alter<-extract_meta_and_generate_dimensions(df,"Altersklasse",13)
