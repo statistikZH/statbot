@@ -21,8 +21,16 @@
 #
 #
 # For adding additional languages, use the language abbreviations: de, fr, it, en
+devtools::load_all(".")
 
-df_px # <- px file
+destfile<-"temp/{{dataset_id}}.px"
+
+if(!file.exists(destfile)){
+  download.file(paste0("https://www.bfs.admin.ch/bfsstatic/dam/assets/",get_bfs_asset_nr("px-x-0102020206_102"),"/master"),destfile=destfile)
+}
+
+
+df_px <- statbot_read.px(destfile)
 
 existing_languages <- extract_languages(df_px)
 
@@ -33,7 +41,7 @@ dimensions <- extract_value_names(df_px)
 existing_dimensions <- get_existing_dimensions()
 
 # ignore the missing languages or not
-ignore_langugae <- T
+ignore_languages <- T
 
 
 # example for adding the english names, if you do not want to add additional languages, set
