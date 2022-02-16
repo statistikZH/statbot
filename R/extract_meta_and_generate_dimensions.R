@@ -49,6 +49,7 @@ extract_meta_and_generate_dimensions<-function(input_df, unique_names, ignore_la
     ignore_dimensions_pattern <- lapply(ignore_dimensions, function(x) get_column_name_all_languages(all_language_values, x))
 
     all_ignore_dimensions_pattern <- paste0(unlist(ignore_dimensions_pattern), collapse = "|")
+
   }else{
     all_ignore_dimensions_pattern<-NA
   }
@@ -56,6 +57,7 @@ extract_meta_and_generate_dimensions<-function(input_df, unique_names, ignore_la
 
   # extract the needed value informations
   all_language_values_needed <- lapply(all_language_values, function(x) prep_needed_values(x, ignore_dim = all_ignore_dimensions_pattern))
+
 
 
   # for which variables do codes exist
@@ -69,6 +71,7 @@ extract_meta_and_generate_dimensions<-function(input_df, unique_names, ignore_la
     needed_codes <- NULL
   }else{
     needed_codes <- extract_needed_values(input_df$CODES, needed_code_names)
+
   }
 
   # replace the code for total by -1
@@ -130,13 +133,19 @@ extract_meta_and_generate_dimensions<-function(input_df, unique_names, ignore_la
 
   # if an additional language is given, integrate it into the existing values and dimenstion. otherwise the missing languages are filled with NA
   if(is.na(additional_languages)){
+    if(length(missing_languages) != 0){
+      add_col<- function(df, col_name){
+        mutate(df, !!sym(col_name) := NA_character_)
+      }
 
-    add_col<- function(df, col_name){
-      mutate(df, !!sym(col_name) := NA_character_)
+      dim_names_df_all_languages <- map(dim_names_df, ~reduce(paste0("dim_name_", missing_languages), add_col, .init = .x))
+      value_names_df_all_languages <- map(value_names_df, ~reduce(paste0("value_name_", missing_languages), add_col, .init = .x))
+    }else{
+      dim_names_df_all_languages <- dim_names_df
+      value_names_df_all_languages <- value_names_df
     }
 
-    dim_names_df_all_languages <- map(dim_names_df, ~reduce(paste0("dim_name_", missing_languages), add_col, .init = .x))
-    value_names_df_all_languages <- map(value_names_df, ~reduce(paste0("value_name_", missing_languages), add_col, .init = .x))
+
   }else{
 
     additional_language_values_needed <- lapply(c(1:length(additional_languages[[1]][[1]])), function(x) split_by_dimension(x, additional_languages))
@@ -149,9 +158,24 @@ extract_meta_and_generate_dimensions<-function(input_df, unique_names, ignore_la
     value_names_df_all_languages <- map2(value_names_df, value_names_additional, ~cbind(.x, .y))
   }
 
+
+  clean_dimension_names <- function(x){
+
+    x <- x %>%
+      dplyr::mutate_all(~gsub("\\s+", " ", str_trim(gsub("\\.", " ", .))))
+
+    return(x)
+
+  }
+
+  dim_names_df_all_languages <- lapply(dim_names_df_all_languages, function(x) clean_dimension_names(x))
+
   # add a join column to the dimension names as well as to the values
   dim_values_df <- purrr::map2(value_names_df_all_languages, dim_new_names, ~ mutate(.x, join_column = .y))
   dim_names_df <- purrr::map2(dim_names_df_all_languages, dim_new_names, ~ mutate(.x, join_column = .y))
+
+
+
 
   # join all information together into one table
   dim_table <- purrr::pmap(list(dim_values_df, dim_names_df, needed_codes, unique_names), ~ left_join(..1, ..2, by = "join_column") %>% mutate(value_id = ..3, unique_name = ..4) %>% select(-join_column))
