@@ -5,11 +5,10 @@
 #' @export
 extract_value_names <- function(df_px){
 
-  list_names <- names(df_px)
+  list_names <- names(df_px$VALUES)
 
-  value_list_names <- list_names[grepl("VALUES", list_names)]
 
-  return(value_list_names)
+  return(list_names)
 }
 
 #' extract all existing languages
@@ -78,7 +77,7 @@ extract_main_language <- function(df_px){
 #' @param x character vecotr
 replace_total <- function(x){
 
-  x <- replace(x, x==c("999", "-9999"), "-1")
+  x <- replace(x, x %in% c("999","-9999","-99999"), "-1")
 
   return(x)
 }
