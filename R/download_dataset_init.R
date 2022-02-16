@@ -60,9 +60,9 @@ dimension_file_init <- function(dataset_id, author){
   dir.create(base_path, showWarnings = F)
 
   new_file_name <- paste0(dataset_id, ".R")
-  new_file_path <- paste0(base_path, new_file_name)
+  new_file_path <- paste0(base_path,"/", new_file_name)
 
-  existing_files <- list.files("R")
+  existing_files <- list.files(base_path)
 
   if(new_file_name %in% existing_files){
     stop(glue::glue("There is already a file named: {new_file_name}"))
