@@ -164,7 +164,11 @@ create_full_dimension_table <- function(){
 
 }
 
-
+#' Function to import specific dimensions
+#'
+#' @param unique_dimension_names dimension names to import (in english)
+#'
+#' @export
 get_dimensions <- function(unique_dimension_names){
 
   dimension_files <- list.files("data/dimensions", full.names = T)
