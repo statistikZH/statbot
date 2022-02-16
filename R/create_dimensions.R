@@ -164,6 +164,30 @@ create_full_dimension_table <- function(){
 
 }
 
+
+get_dimensions <- function(unique_dimension_names){
+
+  dimension_files <- list.files("data/dimensions", full.names = T)
+
+  needed_dimension_files <- dimension_files[grepl(paste0(unique_dimension_names, collapse = "|"), dimension_files)]
+
+  # read in all dimension files
+  if(length(needed_dimension_files)!=0){
+    file_list <- purrr::map_df(needed_dimension_files, read.csv)
+
+    # check if a dimension name is duplicated
+    if(any(duplicated(unique(file_list$unique_name)))){
+      warning("There are duplicated dimension names")
+    }
+    # return the full dimension table
+    return(file_list)
+  }else{
+    return(NULL)
+  }
+}
+
+
+
 #' Function that checks and creats a dimension file
 #'
 #' @param data dimension data
