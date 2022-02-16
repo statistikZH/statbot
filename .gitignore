@@ -14,8 +14,7 @@ sql/
 sql/*
 log/*
 temp/*
-!data
-!data/*
+!data/dimensions/*
 !data/*.csv
 data/values/11001_CH.csv
 .Rhistory
