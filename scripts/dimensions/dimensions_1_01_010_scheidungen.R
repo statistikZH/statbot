@@ -1,4 +1,4 @@
-# Script to create a dimension table for the dataset:  1_01_008_eheschliessungen
+# Script to create a dimension table for the dataset:  1_01_010_scheidungen
 #
 # Created by: J.Steiger
 # Created at: 2022-02-17
@@ -23,10 +23,10 @@
 # For adding additional languages, use the language abbreviations: de, fr, it, en
 devtools::load_all(".")
 
-destfile<-"temp/1_01_008_eheschliessungen.px"
+destfile<-"temp/1_01_010_scheidungen.px"
 
 if(!file.exists(destfile)){
-  download.file(paste0("https://www.bfs.admin.ch/bfsstatic/dam/assets/",get_bfs_asset_nr("px-x-0102020206_102"),"/master"),destfile=destfile)
+  download.file(paste0("https://www.bfs.admin.ch/bfsstatic/dam/assets/",get_bfs_asset_nr("px-x-0102020203_103"),"/master"),destfile=destfile)
 }
 
 
@@ -46,18 +46,10 @@ ignore_languages <- T
 
 # example for adding the english names, if you do not want to add additional languages, set
 # additional_languages to NA
-additional_languages <- list(
-
-  en = list(
-    first_dim_name = c("value1", "value2", "value3"),
-    second_dim_name = c("value1", "value2"),
-    third_dim_name = c("value1", "value2", "value3", "value4")
-  )
-
+additional_languages <- NA
   # add here additional languages with the same structure as the one before,
   # dont forget to add a comma on line 41 ;)
 
-)
 
 # is there a column that contains multiple dimensions?
 # if there is one, already think about the dimension names since you have to add them in the
@@ -65,7 +57,7 @@ additional_languages <- list(
 fuzzy_column_name <- NA
 
 # add all unique dimension names
-unique_dimension_names <- c("add", "all", "dimension", "names", "in", "english")
+unique_dimension_names <- c('duration_of_marriage')
 
 # should any dimension be ignored? the reason could be, that it already exists
 ignore_dimensions <- NA
