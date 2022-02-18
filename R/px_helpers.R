@@ -128,6 +128,8 @@ create_new_codes <- function(name, value_list){
 
   if(any(grepl("0-", values))){
     codes <- as.character(c(-1, seq(0, length(values)-2, 1)))
+  }else if(!any(grep("Total|totale|total", values))){
+    codes <- as.character(c(seq(1, length(values), 1)))
   }else{
     if(length(values)  == 1){
       codes <- "-1"
