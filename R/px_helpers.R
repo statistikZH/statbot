@@ -94,7 +94,7 @@ extract_needed_names <- function(x, ignore_dim){
     ignore_dim <- NULL
   }
 
-  not_needed_dimensions <- c("Jahr", "Anné", "Anno", "Year", "Gemeinde", "Commune", "Comune", "Municipality", "Kanton", "Canton", "District", ignore_dim)
+  not_needed_dimensions <- c("Jahr", "Anné", "Anno", "Year", "Gemeinde", "Commune", "Comune", "Municipality", "Kanton", "Canton", "Cantone", "District", "cantone", "canton", ignore_dim)
 
   x_needed <- x[!grepl(paste0(not_needed_dimensions, collapse = "|"), x)]
 
@@ -128,6 +128,8 @@ create_new_codes <- function(name, value_list){
 
   if(any(grepl("0-", values))){
     codes <- as.character(c(-1, seq(0, length(values)-2, 1)))
+  }else if(!any(grep("Total|totale|total", values))){
+    codes <- as.character(c(seq(1, length(values), 1)))
   }else{
     if(length(values)  == 1){
       codes <- "-1"
