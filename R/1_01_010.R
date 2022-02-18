@@ -2,10 +2,11 @@
 #'
 #' Created by: Christian Ruiz
 #' Created at: 2022-01-06
-#' Version 3.1.2 - 06.01.2022
+#' Version 3.2.0 - 18.02.2022
 #'
 #' History
 #'
+#' Version 3.2.0 - 18.02.2022 - new dimensions extraction
 #' Version 3.1.2 - 06.01.2022 - First Version
 #'
 #' @param flag_force_update To force an update of the Dataset. Default: FALSE
@@ -21,10 +22,6 @@ statbot_src_1_01_010_CH <- function(flag_force_update=FALSE){
     df<-statbot_read.px(destfile)
     #extracting first some metadata
     spatial_reference<-extract_spatial_reference(df$NOTE$value)
-    dict_husband<-extract_meta_and_generate_dimensions(df,"Staatsangehörigkeit..Kategorie..des.Ehemannes",8)
-    dict_wife<-extract_meta_and_generate_dimensions(df,"Staatsangehörigkeit..Kategorie..der.Ehefrau",9)
-    dict_duration<-extract_meta_and_generate_dimensions(df,"Ehedauer",10)
-
 
     df<-as.data.frame(df)
 
@@ -47,10 +44,12 @@ statbot_src_1_01_010_CH <- function(flag_force_update=FALSE){
     df$time_value<-paste0("31.12.",df$jahr)
     df$period_value<-NA
 
-    #theoretically, this could be converted to a function
-    df<-merge_to_dict(df,"citizenship_category_of_wife",dict_wife)
-    df<-merge_to_dict(df,"citizenship_category_of_husband",dict_husband)
-    df<-merge_to_dict(df,"duration_of_marriage",dict_duration)
+    dimension_table <- get_dimensions(unique_dimension_names)
+
+    df<-join_dimension_value(df,"citizenship_category_of_wife",dimension_table, main_language)
+    df<-join_dimension_value(df,"citizenship_category_of_husband",dimension_table, main_language)
+    df<-join_dimension_value(df,"duration_of_marriage",dimension_table, main_language)
+
     df<-df %>% select(all_of(GLOBAL_TOTAL_LIST), citizenship_category_of_wife, citizenship_category_of_husband,duration_of_marriage)
 
     df<-add_granularity_levels_up(df,list_ontologies=c("A.ADM2","A.ADM1","CH"),list_dimensions=c("citizenship_category_of_wife","citizenship_category_of_husband","duration_of_marriage"))
