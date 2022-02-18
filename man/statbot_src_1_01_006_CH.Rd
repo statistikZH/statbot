@@ -12,10 +12,11 @@ statbot_src_1_01_006_CH(flag_force_update = FALSE)
 \description{
 Created by: Christian Ruiz
 Created at: 2022-01-06
-Version 3.1.2 - 06.01.2022
+Version 3.2.0 - 17.02.2022
 }
 \details{
 History
 
+Version 3.2.0 - 17.02.2022 - Changes to new dimensions logic
 Version 3.1.2 - 06.01.2022 - First Version
 }
