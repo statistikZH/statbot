@@ -21,8 +21,6 @@ statbot_src_1_01_008_CH <- function(flag_force_update=FALSE){
       df<-statbot_read.px(destfile)
       #extracting first some metadata
       spatial_reference<-extract_spatial_reference(df$NOTE$value)
-      dict_husband<-extract_meta_and_generate_dimensions(df,"Staatsangehörigkeit..Kategorie..des.Ehemannes",8)
-      dict_wife<-extract_meta_and_generate_dimensions(df,"Staatsangehörigkeit..Kategorie..der.Ehefrau",9)
 
       df<-as.data.frame(df)
 

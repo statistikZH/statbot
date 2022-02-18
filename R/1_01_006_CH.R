@@ -2,10 +2,11 @@
 #'
 #' Created by: Christian Ruiz
 #' Created at: 2022-01-06
-#' Version 3.1.2 - 06.01.2022
+#' Version 3.2.0 - 17.02.2022
 #'
 #' History
 #'
+#' Version 3.2.0 - 17.02.2022 - Changes to new dimensions logic
 #' Version 3.1.2 - 06.01.2022 - First Version
 #'
 #' @param flag_force_update To force an update of the Dataset. Default: FALSE
@@ -57,11 +58,11 @@ statbot_src_1_01_006_CH <- function(flag_force_update=FALSE){
     df<-join_dimension_value(df,"age_group_10",dimension_table, main_language)
     df<-join_dimension_value(df,"marital_status",dimension_table, main_language)
     df<-join_dimension_value(df,"citizenship_category",dimension_table, main_language)
-    df<-df %>% select(all_of(GLOBAL_TOTAL_LIST), gender,age_class,marital_status,citizenship_category)
+    df<-df %>% select(all_of(GLOBAL_TOTAL_LIST), gender,age_group_10,marital_status,citizenship_category)
 
-    df<-add_granularity_levels_up(df,list_ontologies=c("A.ADM2","A.ADM1","CH"),list_dimensions=c("gender","age_class","marital_status","citizenship_category"))
+    df<-add_granularity_levels_up(df,list_ontologies=c("A.ADM2","A.ADM1","CH"),list_dimensions=c("gender","age_group_10","marital_status","citizenship_category"))
 
-    df<-df %>% select(all_of(GLOBAL_TOTAL_LIST), gender,age_class,marital_status,citizenship_category)
+    df<-df %>% select(all_of(GLOBAL_TOTAL_LIST), gender,age_group_10,marital_status,citizenship_category)
 
 
 
