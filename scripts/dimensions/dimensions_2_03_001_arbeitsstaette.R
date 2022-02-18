@@ -55,10 +55,10 @@ additional_languages <- NA
 # is there a column that contains multiple dimensions?
 # if there is one, already think about the dimension names since you have to add them in the
 # unique dimension names
-fuzzy_column_name <- NA
+fuzzy_column_name <- 'Beobachtungseinheit'
 
 # add all unique dimension names
-unique_dimension_names <- c("wirtschaftsabteilung", "beobachtungseinheit")
+unique_dimension_names <- c("economic_division", "place_of_work", "employees", "fulltime_equivalent")
 
 # should any dimension be ignored? the reason could be, that it already exists
 ignore_dimensions <- NA
