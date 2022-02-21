@@ -57,7 +57,7 @@ additional_languages <- NA
 fuzzy_column_name <- NA
 
 # add all unique dimension names
-unique_dimension_names <- c('duration_of_marriage')
+unique_dimension_names <- c(citizenship_category_husband", "citizenship_category_wife,'duration_of_marriage')
 
 # should any dimension be ignored? the reason could be, that it already exists
 ignore_dimensions <- NA
