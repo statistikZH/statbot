@@ -6,15 +6,37 @@
 #'
 #' @export
 get_bfs_asset_nr <- function(bfs_nr){
-
   bfs_home <- "https://www.bfs.admin.ch"
 
-  asset_page <- xml2::read_html(sprintf("%s/asset/de/%s", bfs_home, bfs_nr))
+  op <- options(RCurlOptions = list(noproxy = "*"))
+  on.exit(options(op))
 
-  asset_number <- asset_page %>%
+  webpage <- RCurl::getURLContent(sprintf("%s/asset/de/%s", bfs_home, bfs_nr)) %>%
+    rvest::read_html()
+
+  #asset_page <- xml2::read_html(sprintf("%s/asset/de/%s", bfs_home, bfs_nr))
+
+  asset_number <- webpage %>%
     rvest::html_text(bfs_nr) %>%
     stringr::str_extract("https://.*assets/.*/") %>%
     stringr::str_extract("[0-9]+")
 
   return(asset_number)
+}
+
+#' download file without proxy
+#'
+#' @param download_url url to download the file from
+#'
+#' @param destfile destination file path
+#'
+#' @export
+download_bfs_file <- function(download_url, destfile){
+
+
+  op <-options(download.file.method="curl", download.file.extra = paste0("--noproxy '*'"))
+  on.exit(options(op))
+
+  download.file(download_url,destfile=destfile)
+
 }
