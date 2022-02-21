@@ -60,7 +60,7 @@ dimension_file_init <- function(dataset_id, author){
   dir.create(base_path, showWarnings = F)
 
   new_file_name <- paste0(dataset_id, ".R")
-  new_file_path <- paste0(base_path,"/dimenstions_", new_file_name)
+  new_file_path <- paste0(base_path,"/dimensions_", new_file_name)
 
   existing_files <- list.files(base_path)
 
