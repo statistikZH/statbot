@@ -1,0 +1,7 @@
+"dim_id","unique_name","dim_name_de","dim_name_fr","dim_name_it","dim_name_en","value_id","value_name_de","value_name_fr","value_name_it","value_name_en"
+7,"duration_of_marriage","Ehedauer","Durée du mariage","Durata del matrimonio","Duration of marriage","-1","Ehedauer - Total","Durée du mariage - total","Durata del matrimonio - totale","Duration of marriage - total"
+7,"duration_of_marriage","Ehedauer","Durée du mariage","Durata del matrimonio","Duration of marriage","1","0-4 Jahre","0-4 ans","0-4 anni","0-4 years"
+7,"duration_of_marriage","Ehedauer","Durée du mariage","Durata del matrimonio","Duration of marriage","2","5-9 Jahre","5-9 ans","5-9 anni","5-9 years"
+7,"duration_of_marriage","Ehedauer","Durée du mariage","Durata del matrimonio","Duration of marriage","3","10-14 Jahre","10-14 ans","10-14 anni","10-14 years"
+7,"duration_of_marriage","Ehedauer","Durée du mariage","Durata del matrimonio","Duration of marriage","4","15-19 Jahre","15-19 ans","15-19 anni","15-19 years"
+7,"duration_of_marriage","Ehedauer","Durée du mariage","Durata del matrimonio","Duration of marriage","5","20 Jahre und mehr","20 ans ou plus","20 anni o più","20 years or more"

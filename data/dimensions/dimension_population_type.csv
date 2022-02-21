@@ -1,0 +1,3 @@
+"dim_id","unique_name","dim_name_de","dim_name_fr","dim_name_it","dim_name_en","value_id","value_name_de","value_name_fr","value_name_it","value_name_en"
+13,"population_type","Bevölkerungstyp","Type de population","Tipo di popolazione","Population type","1","Ständige Wohnbevölkerung","Population résidante permanente","Popolazione residente permanente","Permanent resident population"
+13,"population_type","Bevölkerungstyp","Type de population","Tipo di popolazione","Population type","2","Nichtständige Wohnbevölkerung","Population résidante non permanente","Popolazione residente non permanente","Non permanent resident population"
