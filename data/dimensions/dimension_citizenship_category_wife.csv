@@ -1,4 +1,0 @@
-"dim_id","unique_name","dim_name_de","dim_name_fr","dim_name_it","dim_name_en","value_id","value_name_de","value_name_fr","value_name_it","value_name_en"
-6,"citizenship_category_wife","Staatsangehörigkeit Kategorie der Ehefrau","Nationalité catégorie de l épouse","Nazionalità categoria della moglie","Citizenship category of wife","-1","Staatsangehörigkeit der Ehefrau - Total","Nationalité de l'épouse - total","Nazionalità della moglie - totale","Citizenship of wife - total"
-6,"citizenship_category_wife","Staatsangehörigkeit Kategorie der Ehefrau","Nationalité catégorie de l épouse","Nazionalità categoria della moglie","Citizenship category of wife","8100","Schweiz","Suisse","Svizzera","Switzerland"
-6,"citizenship_category_wife","Staatsangehörigkeit Kategorie der Ehefrau","Nationalité catégorie de l épouse","Nazionalità categoria della moglie","Citizenship category of wife","9000","Ausland","Etranger","Straniera","Foreign country"
