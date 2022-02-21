@@ -1,6 +1,6 @@
-# Script to create a dimension table for the dataset:  1_01_016_beliebteste_vornamen
+# Script to create a dimension table for the dataset:  1_01_016_CH
 #
-# Created by: J.Steiger
+# Created by: Christian Ruiz
 # Created at: 2022-02-18
 #
 # This script helps to create a dimension table for a px-table.
@@ -23,7 +23,7 @@
 # For adding additional languages, use the language abbreviations: de, fr, it, en
 devtools::load_all(".")
 
-destfile<-"temp/1_01_016_beliebteste_vornamen.px"
+destfile<-"temp/1_01_016_CH_w.px"
 
 if(!file.exists(destfile)){
   download.file(paste0("https://www.bfs.admin.ch/bfsstatic/dam/assets/",get_bfs_asset_nr("px-x-0104050000_102"),"/master"),destfile=destfile)
@@ -41,12 +41,13 @@ dimensions <- extract_value_names(df_px)
 existing_dimensions <- get_existing_dimensions()
 
 # ignore the missing languages or not
-ignore_languages <- T
+ignore_languages <- F
 
 
 # example for adding the english names, if you do not want to add additional languages, set
 # additional_languages to NA
 additional_languages <- NA
+
   # add here additional languages with the same structure as the one before,
   # dont forget to add a comma on line 41 ;)
 
@@ -55,13 +56,13 @@ additional_languages <- NA
 # is there a column that contains multiple dimensions?
 # if there is one, already think about the dimension names since you have to add them in the
 # unique dimension names
-fuzzy_column_name <- "Masseinheit"
+fuzzy_column_name <- NA
 
 # add all unique dimension names
-unique_dimension_names <- c("n", "rank")
+unique_dimension_names <- c("first_name_girl")
 
 # should any dimension be ignored? the reason could be, that it already exists
-ignore_dimensions <- NA
+ignore_dimensions <- c("Masseinheit")
 
 
 # create the dimension table
@@ -75,5 +76,23 @@ extract_meta_and_generate_dimensions(
   overwrite = F)
 
 
+destfile<-"temp/1_01_016_CH_m.px"
+
+if(!file.exists(destfile)){
+  download.file(paste0("https://www.bfs.admin.ch/bfsstatic/dam/assets/",get_bfs_asset_nr("px-x-0104050000_101"),"/master"),destfile=destfile)
+}
 
 
+df_px <- statbot_read.px(destfile)
+
+unique_dimension_names <- c("first_name_boy")
+
+# create the dimension table
+extract_meta_and_generate_dimensions(
+  input_df = df_px,
+  unique_names = unique_dimension_names,
+  ignore_language = ignore_languages,
+  additional_languages = additional_languages,
+  fuzzy_column_name = fuzzy_column_name,
+  ignore_dimensions = ignore_dimensions,
+  overwrite = F)

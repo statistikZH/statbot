@@ -37,13 +37,30 @@ create_classes <-function(){
   # 'civil_union_per_1000_residents': '1_01_013',
   # 'stillbirth': '1_01_014',
   # 'stillbirth_per_1000_residents': '1_01_015',
-  # 'favorite_firstname': '1_01_016',
-  # 'inflows': '1_01_017',
-  # 'inflows_per_1000_residents': '1_01_018',
-  # 'departures': '1_01_019',
-  # 'departures_per_1000_residents': '1_01_020',
-  # 'migration_balance': '1_01_021',
-  # 'migration_balance_per_1000_residents': '1_01_022',
+  statbot_ind_1_01_016<-data.frame(class_id="1_01_016",class_name="favorite_firstname_rank",name_de="Babynamen Rang",name_fr="Babynamen Rang",
+                                   name_it="Babynamen Rang",name_en="favorite_firstname_rank",
+                                   description_de="Babynamen Rang",description_fr="Babynamen Rang",
+                                   description_it="Babynamen Rang",description_en="Babynamen Rang",
+                                   unit_short_de="Rang",unit_short_fr="Rang",unit_short_it="Rang",unit_short_en="Rang",
+                                   unit_long_de="Rang",unit_long_fr="Rang",unit_long_it="Rang",unit_long_en="Rang",
+                                   source="BFS-BEVNAT",dim1_id=1,dim2_id=31,dim3_id=NA,dim4_id=NA,dim5_id=NA,dim6_id=NA,last_updated=NA,min_year=2000,max_year=2020)
+
+
+  statbot_ind_1_01_017<-data.frame(class_id="1_01_017",class_name="favorite_firstname_amount",name_de="Babynamen Anzahl",name_fr="Babynamen Anzahl",
+                                   name_it="Babynamen Anzahl",name_en="favorite_firstname_amount",
+                                   description_de="Babynamen Anzahl",description_fr="Babynamen Anzahl",
+                                   description_it="Babynamen Anzahl",description_en="Babynamen Anzahl",
+                                   unit_short_de="Anzahl",unit_short_fr="Anzahl",unit_short_it="Anzahl",unit_short_en="Anzahl",
+                                   unit_long_de="Anzahl",unit_long_fr="Anzahl",unit_long_it="Anzahl",unit_long_en="Anzahl",
+                                   source="BFS-BEVNAT",dim1_id=1,dim2_id=31,dim3_id=NA,dim4_id=NA,dim5_id=NA,dim6_id=NA,last_updated=NA,min_year=2000,max_year=2020)
+
+  # 'favorite_firstname_amount': '1_01_017',
+  # 'inflows': '1_01_018',
+  # 'inflows_per_1000_residents': '1_01_019',
+  # 'departures': '1_01_020',
+  # 'departures_per_1000_residents': '1_01_021',
+  # 'migration_balance': '1_01_022',
+  # 'migration_balance_per_1000_residents': '1_01_023',
 
 
 

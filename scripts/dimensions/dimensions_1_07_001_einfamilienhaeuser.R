@@ -46,7 +46,23 @@ ignore_languages <- T
 
 # example for adding the english names, if you do not want to add additional languages, set
 # additional_languages to NA
-additional_languages <- NA
+additional_languages <- list(
+
+  en = list(
+    n_rooms= c("1 room","2 rooms","3 rooms","4 rooms","5 rooms","6+ rooms"),
+    construction_period = c("Before 1919","1919-1945","1946-1960","1961-1970",
+                            "1971-1980","1981-1990","1991-2000","2001-2005","2006-2020")
+  ),
+  it = list(
+    n_rooms= c(NA,NA,NA,NA,NA,NA),
+    construction_period = c(NA,NA,NA,NA,NA,NA,NA,NA,NA)
+  )
+
+  # add here additional languages with the same structure as the one before,
+  # dont forget to add a comma on line 41 ;)
+
+)
+
   # add here additional languages with the same structure as the one before,
   # dont forget to add a comma on line 41 ;)
 
@@ -57,12 +73,12 @@ additional_languages <- NA
 fuzzy_column_name <- NA
 
 # add all unique dimension names
-unique_dimension_names <- c('gebäudekategorie', 'n_zimmer', 'bauperiode')
-#unique_dimension_names <- c('building_category', 'n_rooms', 'construction_period')
+#unique_dimension_names <- c('gebäudekategorie', 'n_zimmer', 'bauperiode')
+unique_dimension_names <- c('n_rooms', 'construction_period')
 
 
 # should any dimension be ignored? the reason could be, that it already exists
-ignore_dimensions <- NA
+ignore_dimensions <- c('Gebäudekategorie')
 
 
 # create the dimension table

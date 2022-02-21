@@ -12,7 +12,7 @@ convert_cantonal_name_to_current_id <- function(kanton,type="hard"){
     "spatialunit_ontology","spatialunit_current_id","spatialunit_name_de")]
 
   if(type=="easy"){
-    levels(kanton)<-1:16
+    levels(kanton)<-1:26
   }else{
 
       unique_cantons<-unique(kanton)

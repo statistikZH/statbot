@@ -26,7 +26,7 @@ statbot_src_1_07_001_to_1_07_010_CH <- function(flag_force_update=FALSE){
 
     df<-as.data.frame(df)
 
-    new_names <- c("jahr", "bauperiode", "n_zimmer", "gebaeudekategorie", "spatialunit_name", "value")
+    new_names <- c("jahr", "construction_period", "n_rooms", "gebaeudekategorie", "spatialunit_name", "value")
 
     # Only keep communes - other granularities will be added up again later
     #df$spatialunit_name<-df$Kanton.......Bezirk........Gemeinde.........
@@ -51,8 +51,8 @@ statbot_src_1_07_001_to_1_07_010_CH <- function(flag_force_update=FALSE){
 
     dimension_table <- get_dimensions(unique_dimension_names)
 
-    df<-join_dimension_value(df,"rooms",dimension_table, main_language)
-    df<-join_dimension_value(df,"building_period",dimension_table, main_language)
+    df<-join_dimension_value(df,"n_rooms",dimension_table, main_language)
+    df<-join_dimension_value(df,"construction_period",dimension_table, main_language)
 
 
     # df <- mutate(df, rooms = case_when(n_zimmer=="1 Zimmer"~1,
@@ -71,7 +71,7 @@ statbot_src_1_07_001_to_1_07_010_CH <- function(flag_force_update=FALSE){
     #                                    bauperiode=="2001-2005"~8,
     #                                    bauperiode=="2006-2020"~9))
     #
-    df<-df %>%  select(all_of(GLOBAL_TOTAL_LIST), gebaeudekategorie, rooms, building_period)
+    df<-df %>%  select(all_of(GLOBAL_TOTAL_LIST), gebaeudekategorie, n_rooms, construction_period)
 
 
 
@@ -79,6 +79,7 @@ statbot_src_1_07_001_to_1_07_010_CH <- function(flag_force_update=FALSE){
     indicator_name = unique(df$gebaeudekategorie),
     indicator_number = c(1,3,5,7)
   )
+
 
   pwalk(indicator_input, ~create_all_aggregations_per_indicator(
     df,
