@@ -1,5 +1,0 @@
-"dim_id","unique_name","dim_name_de","dim_name_fr","dim_name_it","dim_name_en","value_id","value_name_de","value_name_fr","value_name_it","value_name_en"
-8,"gebäudekategorie","Gebäudekategorie","Catégorie de bâtiment",NA,NA,"-1","Einfamilienhäuser","Maisons individuelles",NA,NA
-8,"gebäudekategorie","Gebäudekategorie","Catégorie de bâtiment",NA,NA,"1","Mehrfamilienhäuser","Maisons à plusieurs logements",NA,NA
-8,"gebäudekategorie","Gebäudekategorie","Catégorie de bâtiment",NA,NA,"2","Wohngebäude mit Nebennutzung","Bâtiments d'habitation avec usage annexe",NA,NA
-8,"gebäudekategorie","Gebäudekategorie","Catégorie de bâtiment",NA,NA,"3","Gebäude mit teilweiser Wohnnutzung","Bâtiments partiellement à usage d'habitation",NA,NA

@@ -1,7 +1,0 @@
-"dim_id","unique_name","dim_name_de","dim_name_fr","dim_name_it","dim_name_en","value_id","value_name_de","value_name_fr","value_name_it","value_name_en"
-9,"n_zimmer","Anzahl Zimmer","Nombre de pièces",NA,NA,"-1","1 Zimmer","1 pièce",NA,NA
-9,"n_zimmer","Anzahl Zimmer","Nombre de pièces",NA,NA,"1","2 Zimmer","2 pièces",NA,NA
-9,"n_zimmer","Anzahl Zimmer","Nombre de pièces",NA,NA,"2","3 Zimmer","3 pièces",NA,NA
-9,"n_zimmer","Anzahl Zimmer","Nombre de pièces",NA,NA,"3","4 Zimmer","4 pièces",NA,NA
-9,"n_zimmer","Anzahl Zimmer","Nombre de pièces",NA,NA,"4","5 Zimmer","5 pièces",NA,NA
-9,"n_zimmer","Anzahl Zimmer","Nombre de pièces",NA,NA,"5","6+ Zimmer","6+ pièces",NA,NA
