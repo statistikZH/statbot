@@ -1,7 +1,7 @@
-# Script to create a dimension table for the dataset:  2_03_001_arbeitsstaette
+# Script to create a dimension table for the dataset:  2_04_4_001_to_2_04_4_007_CH
 #
-# Created by: J.Steiger
-# Created at: 2022-02-17
+# Created by: Christian Ruiz
+# Created at: 2022-02-22
 #
 # This script helps to create a dimension table for a px-table.
 #
@@ -23,10 +23,10 @@
 # For adding additional languages, use the language abbreviations: de, fr, it, en
 devtools::load_all(".")
 
-destfile<-"temp/2_03_001_arbeitsstaette.px"
+destfile<-"temp/2_04_4_001_to_2_04_4_007_CH.px"
 
 if(!file.exists(destfile)){
-  download.file(paste0("https://www.bfs.admin.ch/bfsstatic/dam/assets/",get_bfs_asset_nr("px-x-0602010000_102"),"/master"),destfile=destfile)
+  download.file(paste0("https://www.bfs.admin.ch/bfsstatic/dam/assets/",get_bfs_asset_nr("px-x-1103020200_121"),"/master"),destfile=destfile)
 }
 
 
@@ -49,12 +49,15 @@ ignore_languages <- T
 additional_languages <- list(
 
   en = list(
-    economic_sector= c("Total","Primary Sector","Secondary Sector","Tertiary Sector")
-  ))
+    fuel = c("Benzine", "Diesel", "Benzine-electric: Normal-hybrid","Benzine-electric: Plug-in-hybrid",
+             "Diesel-electric: Normal-hybrid","Diesel-electric: Plug-in-hybrid",
+             "Electric","Hydrogen","Gas (mono- and bivalent)","other")
+  )
 
   # add here additional languages with the same structure as the one before,
   # dont forget to add a comma on line 41 ;)
 
+)
 
 # is there a column that contains multiple dimensions?
 # if there is one, already think about the dimension names since you have to add them in the
@@ -62,10 +65,10 @@ additional_languages <- list(
 fuzzy_column_name <- NA
 
 # add all unique dimension names
-unique_dimension_names <- c("economic_sector")
+unique_dimension_names <- c("fuel")
 
 # should any dimension be ignored? the reason could be, that it already exists
-ignore_dimensions <- c('Variable')
+ignore_dimensions <- c("Fahrzeuggruppe","Gemeinde")
 
 
 # create the dimension table

@@ -1,5 +1,7 @@
-# V3.1.1b - 06.01.22 - Now with cantons, spatial reference
+# V3.2.0 - 22.02.22 - Now with new dimensions functions
 # History
+# V3.2.0 - 22.02.22 - Now with new dimensions functions
+# V3.1.1b - 06.01.22 - Now with cantons, spatial reference
 # V3.1.0b - 21.12.2021 - Changing the totals to -1 instead of 0
 # V3.0.2 - 21.12.2021 - according to V3
 
@@ -26,8 +28,7 @@ statbot_src_2_03_001.2_03_002.1_02_001.1_02_002.1_02_003.1_02_004_CH <- function
     df<-statbot_read.px(destfile)
     #extracting first some metadata - added on 06.01.2022
     spatial_reference<-extract_spatial_reference(df$NOTE$value)
-    extract_meta_and_generate_dimensions(df,"Wirtschaftssektor",5,dim_name_en="Economic Sector",
-                                         value_name_en=c("Total","Primary Sector","Secondary Sector","Tertiary Sector"))
+
     df<-as.data.frame(df)
     df_kantone<-statbot_read.px(destfile2)
     df_kantone<-as.data.frame(df_kantone)
@@ -60,7 +61,7 @@ statbot_src_2_03_001.2_03_002.1_02_001.1_02_002.1_02_003.1_02_004_CH <- function
     df<-convert_current_to_hist_id(df,reference_point=spatial_reference)
 
     # this just cleans the ugly name that contains bfs-nr etc. Of course there are other ways to do it :-)
-    df<- df %>% rename(spatialunit_name=Gemeinde)
+    df<- df %>% rename(spatialunit_name=Gemeinde,economic_sector=Wirtschaftssektor)
     df$spatialunit_name<-translate_to_spatial_unit_name(df,"de")
 
     df$time_value<-paste0("31.12.",df$Jahr)
@@ -79,11 +80,11 @@ statbot_src_2_03_001.2_03_002.1_02_001.1_02_002.1_02_003.1_02_004_CH <- function
     sub_df<-df[!is.na(df$temp),]
     sub_df<-sub_df %>% mutate(gender = case_when(Variable=="Beschäftigte"~-1,
                                              Variable=="Beschäftigte Männer"~1,
-                                             Variable=="Beschäftigte Frauen"~2),
-                              economic_sector = case_when(Wirtschaftssektor=="Wirtschaftssektor - Total"~-1,
-                                                        Wirtschaftssektor=="Primärsektor"~1,
-                                                        Wirtschaftssektor=="Sekundärer Sektor"~2,
-                                                        Wirtschaftssektor=="Tertiärer Sektor"~3))
+                                             Variable=="Beschäftigte Frauen"~2))
+
+    dimension_table <- get_dimensions("economic_sector")
+
+    sub_df<-join_dimension_value(sub_df,"economic_sector",dimension_table, "de")
 
 
 
@@ -105,11 +106,10 @@ statbot_src_2_03_001.2_03_002.1_02_001.1_02_002.1_02_003.1_02_004_CH <- function
     sub_df<-df[!is.na(df$temp),]
     sub_df<-sub_df %>% mutate(gender = case_when(Variable=="Vollzeitäquivalente"~-1,
                                                         Variable=="Vollzeitäquivalente Männer"~1,
-                                                        Variable=="Vollzeitäquivalente Frauen"~2),
-                              economic_sector = case_when(Wirtschaftssektor=="Wirtschaftssektor - Total"~-1,
-                                                        Wirtschaftssektor=="Primärsektor"~1,
-                                                        Wirtschaftssektor=="Sekundärer Sektor"~2,
-                                                        Wirtschaftssektor=="Tertiärer Sektor"~3))
+                                                        Variable=="Vollzeitäquivalente Frauen"~2))
+
+
+    sub_df<-join_dimension_value(sub_df,"economic_sector",dimension_table, "de")
 
 
 
@@ -130,10 +130,8 @@ statbot_src_2_03_001.2_03_002.1_02_001.1_02_002.1_02_003.1_02_004_CH <- function
 
     df$temp<-stringr::str_locate(pattern ='Arbeitsstätten',df$Variable)[,1]
     sub_df<-df[!is.na(df$temp),]
-    sub_df<-sub_df %>% mutate(economic_sector = case_when(Wirtschaftssektor=="Wirtschaftssektor - Total"~-1,
-                                                        Wirtschaftssektor=="Primärsektor"~1,
-                                                        Wirtschaftssektor=="Sekundärer Sektor"~2,
-                                                        Wirtschaftssektor=="Tertiärer Sektor"~3))
+    sub_df<-join_dimension_value(sub_df,"economic_sector",dimension_table, "de")
+
 
 
 
