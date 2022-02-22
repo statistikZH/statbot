@@ -164,7 +164,14 @@ extract_dim_value <- function(input_list, typ){
 
   y_df <- lapply(y, function(x) do.call(cbind.data.frame, x))
 
-  y_renamed <- lapply(y_df, function(x) rename_all(x, ~str_replace_all(., c("VALUES\\." = paste0(typ, "_name_"), "\\." = ""))))
+  if(any(str_detect(names(y_df[[1]]), "VALUES"))){
+    y_renamed <- lapply(y_df, function(x) rename_all(x, ~str_replace_all(., c("VALUES\\." = paste0(typ, "_name_"), "\\." = ""))))
+  }else{
+    y_renamed <- lapply(y_df, function(x) rename_all(x, ~paste0(typ, "_name_", names(x))))
+  }
+
+
+  return(y_renamed)
 }
 
 #' get needed values
