@@ -137,7 +137,7 @@ extract_meta_and_generate_dimensions<-function(input_df, unique_names, ignore_la
       add_col<- function(df, col_name){
         mutate(df, !!sym(col_name) := NA_character_)
       }
-
+browser()
       dim_names_df_all_languages <- map(dim_names_df, ~reduce(paste0("dim_name_", missing_languages), add_col, .init = .x))
       value_names_df_all_languages <- map(value_names_df, ~reduce(paste0("value_name_", missing_languages), add_col, .init = .x))
     }else{
