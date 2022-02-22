@@ -38,22 +38,38 @@ create_classes <-function(){
   # 'civil_union_per_1000_residents': '1_01_013',
   # 'stillbirth': '1_01_014',
   # 'stillbirth_per_1000_residents': '1_01_015',
-  statbot_ind_1_01_016<-data.frame(class_id="1_01_016",class_name="favorite_firstname_rank",name_de="Babynamen Rang",name_fr="Babynamen Rang",
-                                   name_it="Babynamen Rang",name_en="favorite_firstname_rank",
-                                   description_de="Babynamen Rang",description_fr="Babynamen Rang",
-                                   description_it="Babynamen Rang",description_en="Babynamen Rang",
+  statbot_ind_1_01_016<-data.frame(class_id="1_01_016",class_name="favorite_firstname_rank_girl",name_de="Babynamen Rang weiblich",name_fr="Babynamen Rang weiblich",
+                                   name_it="Babynamen Rang weiblich",name_en="Favorite first name rank girl",
+                                   description_de="Babynamen Rang weiblich",description_fr="Babynamen Rang weiblich",
+                                   description_it="Babynamen Rang weiblich",description_en="Babynamen Rang weiblich",
                                    unit_short_de="Rang",unit_short_fr="Rang",unit_short_it="Rang",unit_short_en="Rang",
                                    unit_long_de="Rang",unit_long_fr="Rang",unit_long_it="Rang",unit_long_en="Rang",
-                                   source="BFS-BEVNAT",dim1_id=1,dim2_id=31,dim3_id=NA,dim4_id=NA,dim5_id=NA,dim6_id=NA,last_updated=NA,min_year=2000,max_year=2020)
+                                   source="BFS-BEVNAT",dim1_id=30,dim2_id=NA,dim3_id=NA,dim4_id=NA,dim5_id=NA,dim6_id=NA,last_updated=NA,min_year=2000,max_year=2020)
+
+  statbot_ind_1_01_017<-data.frame(class_id="1_01_017",class_name="favorite_firstname_rank_boy",name_de="Babynamen Rang männlich",name_fr="Babynamen Rang männlich",
+                                   name_it="Babynamen Rang männlich",name_en="Favorite first name rank boy",
+                                   description_de="Babynamen Rang männlich",description_fr="Babynamen Rang männlich",
+                                   description_it="Babynamen Rang männlich",description_en="Babynamen Rang männlich",
+                                   unit_short_de="Rang",unit_short_fr="Rang",unit_short_it="Rang",unit_short_en="Rang",
+                                   unit_long_de="Rang",unit_long_fr="Rang",unit_long_it="Rang",unit_long_en="Rang",
+                                   source="BFS-BEVNAT",dim1_id=31,dim2_id=NA,dim3_id=NA,dim4_id=NA,dim5_id=NA,dim6_id=NA,last_updated=NA,min_year=2000,max_year=2020)
 
 
-  statbot_ind_1_01_017<-data.frame(class_id="1_01_017",class_name="favorite_firstname_amount",name_de="Babynamen Anzahl",name_fr="Babynamen Anzahl",
-                                   name_it="Babynamen Anzahl",name_en="favorite_firstname_amount",
-                                   description_de="Babynamen Anzahl",description_fr="Babynamen Anzahl",
-                                   description_it="Babynamen Anzahl",description_en="Babynamen Anzahl",
+  statbot_ind_1_01_018<-data.frame(class_id="1_01_018",class_name="favorite_firstname_amount_girl",name_de="Babynamen Anzahl weiblich",name_fr="Babynamen Anzahl weiblich",
+                                   name_it="Babynamen Anzahl weiblich",name_en="Favorite first name amount girl",
+                                   description_de="Babynamen Anzahl weiblich",description_fr="Babynamen Anzahl weiblich",
+                                   description_it="Babynamen Anzahl weiblich",description_en="Babynamen Anzahl weiblich",
                                    unit_short_de="Anzahl",unit_short_fr="Anzahl",unit_short_it="Anzahl",unit_short_en="Anzahl",
                                    unit_long_de="Anzahl",unit_long_fr="Anzahl",unit_long_it="Anzahl",unit_long_en="Anzahl",
-                                   source="BFS-BEVNAT",dim1_id=1,dim2_id=31,dim3_id=NA,dim4_id=NA,dim5_id=NA,dim6_id=NA,last_updated=NA,min_year=2000,max_year=2020)
+                                   source="BFS-BEVNAT",dim1_id=30,dim2_id=NA,dim3_id=NA,dim4_id=NA,dim5_id=NA,dim6_id=NA,last_updated=NA,min_year=2000,max_year=2020)
+
+  statbot_ind_1_01_019<-data.frame(class_id="1_01_019",class_name="favorite_firstname_amount_boy",name_de="Babynamen Anzahl männlich",name_fr="Babynamen Anzahl männlich",
+                                   name_it="Babynamen Anzahl männlich",name_en="Favorite first name amount boy",
+                                   description_de="Babynamen Anzahl männlich",description_fr="Babynamen Anzahl männlich",
+                                   description_it="Babynamen Anzahl männlich",description_en="Babynamen Anzahl männlich",
+                                   unit_short_de="Anzahl",unit_short_fr="Anzahl",unit_short_it="Anzahl",unit_short_en="Anzahl",
+                                   unit_long_de="Anzahl",unit_long_fr="Anzahl",unit_long_it="Anzahl",unit_long_en="Anzahl",
+                                   source="BFS-BEVNAT",dim1_id=31,dim2_id=NA,dim3_id=NA,dim4_id=NA,dim5_id=NA,dim6_id=NA,last_updated=NA,min_year=2000,max_year=2020)
 
   # 'favorite_firstname_amount': '1_01_017',
   # 'inflows': '1_01_018',
