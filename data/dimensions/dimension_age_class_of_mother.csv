@@ -1,0 +1,7 @@
+"dim_id","unique_name","dim_name_de","dim_name_fr","dim_name_it","dim_name_en","value_id","value_name_de","value_name_fr","value_name_it","value_name_en"
+34,"age_class_of_mother","Altersklasse der Mutter","Classe d âge de la mère","Classe d età della madre","Age class of mother","-1","Altersklasse der Mutter - Total","Classe d'âge de la mère - total","Classe d'età della madre - totale","Age class of mother - total"
+34,"age_class_of_mother","Altersklasse der Mutter","Classe d âge de la mère","Classe d età della madre","Age class of mother","1","Unter 25 Jahren","Moins de 25 ans","Meno di 25 anni","Less than 25 years"
+34,"age_class_of_mother","Altersklasse der Mutter","Classe d âge de la mère","Classe d età della madre","Age class of mother","2","25-29 Jahre","25-29 ans","25-29 anni","25-29 years"
+34,"age_class_of_mother","Altersklasse der Mutter","Classe d âge de la mère","Classe d età della madre","Age class of mother","3","30-34 Jahre","30-34 ans","30-34 anni","30-34 years"
+34,"age_class_of_mother","Altersklasse der Mutter","Classe d âge de la mère","Classe d età della madre","Age class of mother","4","35-39 Jahre","35-39 ans","35-39 anni","35-39 years"
+34,"age_class_of_mother","Altersklasse der Mutter","Classe d âge de la mère","Classe d età della madre","Age class of mother","5","40 Jahre und mehr","40 ans ou plus","40 anni o più","40 years or older"
