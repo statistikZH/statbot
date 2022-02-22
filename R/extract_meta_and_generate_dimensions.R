@@ -151,15 +151,26 @@ extract_meta_and_generate_dimensions<-function(input_df, unique_names, ignore_la
     additional_language_values_needed <- lapply(c(1:length(additional_languages[[1]])), function(x) split_by_dimension(x, additional_languages))
 
     dim_names_additional <- extract_dim_value(additional_language_values_needed, "dim")
-    for(i in 1:length(dim_names_additional))
-      names(dim_names_additional[[i]])<-paste0("dim_name_",names(dim_names_additional[[i]]))
-
+    # for(i in 1:length(dim_names_additional))
+    #   names(dim_names_additional[[i]])<-paste0("dim_name_",names(dim_names_additional[[i]]))
+    #
     value_names_additional <- extract_dim_value(additional_language_values_needed, "value")
-    for(i in 1:length(value_names_additional))
-      names(value_names_additional[[i]])<-paste0("value_name_",names(value_names_additional[[i]]))
+    # for(i in 1:length(value_names_additional))
+    #   names(value_names_additional[[i]])<-paste0("value_name_",names(value_names_additional[[i]]))
 
     dim_names_df_all_languages <- map2(dim_names_df, dim_names_additional, ~cbind(.x, .y))
     value_names_df_all_languages <- map2(value_names_df, value_names_additional, ~cbind(.x, .y))
+
+    if(length(missing_languages) != 0){
+        add_col<- function(df, col_name){
+          mutate(df, !!sym(col_name) := NA_character_)
+        }
+
+
+        dim_names_df_all_languages <- map(dim_names_df_all_languages, ~reduce(paste0("dim_name_", missing_languages), add_col, .init = .x))
+        value_names_df_all_languages <- map(value_names_df_all_languages, ~reduce(paste0("value_name_", missing_languages), add_col, .init = .x))
+    }
+
   }
 
 
