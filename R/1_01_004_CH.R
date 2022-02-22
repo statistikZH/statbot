@@ -1,4 +1,4 @@
-#' Function do download the dataset with the id: 1_01_006_CH
+#' Function do download the dataset with the id: 1_01_004_CH
 #'
 #' Created by: Jorin Steiger
 #' Created at: 2022-02-22
@@ -68,7 +68,7 @@ statbot_src_1_01_004_CH <- function(flag_force_update=FALSE){
     write.csv(df,"data/values/1_01_004_CH.csv",row.names = F)
     update_last_updated("1_01_004")
 
-    #convert_and_write_per_unit(df,"1_01_006_CH.csv",how_many=1000)
+    #convert_and_write_per_unit(df,"1_01_004_CH.csv",how_many=1000)
 
 
     return("UPDATE OK")
