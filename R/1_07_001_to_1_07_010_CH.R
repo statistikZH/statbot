@@ -83,7 +83,7 @@ statbot_src_1_07_001_to_1_07_010_CH <- function(flag_force_update=FALSE){
 
   pwalk(indicator_input, ~create_all_aggregations_per_indicator(
     df,
-    indicator_col = "gebaeudekategorie", ..1, ..2)
+    indicator_col = "gebaeudekategorie", ..1, ..2,"1_07_")
   )
 
 

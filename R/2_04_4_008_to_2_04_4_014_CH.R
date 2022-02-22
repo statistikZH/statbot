@@ -4,11 +4,11 @@
 # Version 3.2.0 - 22.02.2022 - First version
 
 
-# vehicles stock
+# vehicles registrations
 
-statbot_src_2_04_4_001_to_2_04_4_007_CH <- function(flag_force_update=FALSE){
-  destfile<-"temp/bfs_2_04_4_001_to_2_04_4_007_CH.px"
-  download.file(paste0("https://www.bfs.admin.ch/bfsstatic/dam/assets/",get_bfs_asset_nr("px-x-1103020100_111"),"/master"),destfile=destfile)
+statbot_src_2_04_4_008_to_2_04_4_014_CH <- function(flag_force_update=FALSE){
+  destfile<-"temp/bfs_2_04_4_008_to_2_04_4_014_CH.px"
+  download.file(paste0("https://www.bfs.admin.ch/bfsstatic/dam/assets/",get_bfs_asset_nr("px-x-1103020200_121"),"/master"),destfile=destfile)
 
 
 
@@ -52,7 +52,7 @@ statbot_src_2_04_4_001_to_2_04_4_007_CH <- function(flag_force_update=FALSE){
 
   indicator_input <- tibble(
     indicator_name = unique(df$Fahrzeuggruppe),
-    indicator_number = 1:7
+    indicator_number = 8:14
   )
 
 

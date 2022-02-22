@@ -1,4 +1,4 @@
-create_all_aggregations_per_indicator <- function(df, indicator_col, indicator_name, indicator_number){
+create_all_aggregations_per_indicator <- function(df, indicator_col, indicator_name, indicator_number,prefix){
   df_indicator <- df %>%
     filter(!!sym(indicator_col)== indicator_name) %>%
     select(-!!sym(indicator_col))
@@ -9,8 +9,8 @@ create_all_aggregations_per_indicator <- function(df, indicator_col, indicator_n
 
   df_indicator_with_totals <- add_totals(df_all_granularity_levels, total_vars)
 
-  write.csv(df_indicator_with_totals,paste0("data/values/1_07_",str_pad(indicator_number,3,pad="0"),"_CH.csv"),row.names = F)
-  update_last_updated(paste0("1_07_",str_pad(indicator_number,3,pad="0")))
+  write.csv(df_indicator_with_totals,paste0("data/values/",prefix,str_pad(indicator_number,3,pad="0"),"_CH.csv"),row.names = F)
+  update_last_updated(paste0(prefix,str_pad(indicator_number,3,pad="0")))
 
 
 }

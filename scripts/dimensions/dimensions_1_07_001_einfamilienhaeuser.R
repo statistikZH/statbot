@@ -41,7 +41,7 @@ dimensions <- extract_value_names(df_px)
 existing_dimensions <- get_existing_dimensions()
 
 # ignore the missing languages or not
-ignore_languages <- T
+ignore_languages <- F
 
 
 # example for adding the english names, if you do not want to add additional languages, set

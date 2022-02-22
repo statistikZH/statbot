@@ -1,3 +1,4 @@
+#V3.2.0 - 22.02.2022 - Adding further FSO datasets of the first batch
 #V3.0.2b - 17.12.2021 - 20.12.2021 - Updating the logic
 
 create_classes <-function(){
@@ -211,6 +212,118 @@ create_classes <-function(){
                                 unit_long_de="Arbeitsstätten pro 1000 Einwohner",unit_long_fr="Arbeitsstätten pro 1000 Einwohner",unit_long_it="Arbeitsstätten pro 1000 Einwohner",unit_long_en="Arbeitsstätten pro 1000 Einwohner",
                                 source="BFS-STATENT",dim1_id=5,dim2_id=NA,dim3_id=NA,dim4_id=NA,dim5_id=NA,dim6_id=NA,last_updated=NA,min_year=2011,max_year=2018)
 
+
+  statbot_ind_2_04_4_001<-data.frame(class_id="2_04_4_001",class_name="stock_passenger_cars",name_de="Bestand Personenwagen",name_fr="Bestand Personenwagen",
+                                   name_it="Bestand Personenwagen",name_en="Stock Passenger Cars",
+                                   description_de="Bestand Personenwagen",description_fr="Bestand Personenwagen",
+                                   description_it="Bestand Personenwagen",description_en="Bestand Personenwagen",
+                                   unit_short_de="Fahrzeuge",unit_short_fr="Fahrzeuge",unit_short_it="Fahrzeuge",unit_short_en="Vehicles",
+                                   unit_long_de="Fahrzeuge",unit_long_fr="Fahrzeuge",unit_long_it="Fahrzeuge",unit_long_en="Vehicles",
+                                   source="ASTRA-IVZ",dim1_id=37,dim2_id=NA,dim3_id=NA,dim4_id=NA,dim5_id=NA,dim6_id=NA,last_updated=NA,min_year=2010,max_year=2021)
+
+  statbot_ind_2_04_4_002<-data.frame(class_id="2_04_4_002",class_name="stock_passenger_transportation_vehicles",name_de="Bestand Personentransportfahrzeuge",name_fr="Bestand Personentransportfahrzeuge",
+                                     name_it="Bestand Personentransportfahrzeuge",name_en="Stock Passenger Transportation Vehicles",
+                                     description_de="Bestand Personentransportfahrzeuge",description_fr="Bestand Personentransportfahrzeuge",
+                                     description_it="Bestand Personentransportfahrzeuge",description_en="Bestand Personentransportfahrzeuge",
+                                     unit_short_de="Fahrzeuge",unit_short_fr="Fahrzeuge",unit_short_it="Fahrzeuge",unit_short_en="Vehicles",
+                                     unit_long_de="Fahrzeuge",unit_long_fr="Fahrzeuge",unit_long_it="Fahrzeuge",unit_long_en="Vehicles",
+                                     source="ASTRA-IVZ",dim1_id=37,dim2_id=NA,dim3_id=NA,dim4_id=NA,dim5_id=NA,dim6_id=NA,last_updated=NA,min_year=2010,max_year=2021)
+
+  statbot_ind_2_04_4_003<-data.frame(class_id="2_04_4_003",class_name="stock_cargo_transportation_vehicles",name_de="Bestand Sachentransportfahrzeuge",name_fr="Bestand Sachentransportfahrzeuge",
+                                     name_it="Bestand Sachentransportfahrzeuge",name_en="Stock Cargo Transportation Cars",
+                                     description_de="Bestand Sachentransportfahrzeuge",description_fr="Bestand Sachentransportfahrzeuge",
+                                     description_it="Bestand Sachentransportfahrzeuge",description_en="Bestand Sachentransportfahrzeuge",
+                                     unit_short_de="Fahrzeuge",unit_short_fr="Fahrzeuge",unit_short_it="Fahrzeuge",unit_short_en="Vehicles",
+                                     unit_long_de="Fahrzeuge",unit_long_fr="Fahrzeuge",unit_long_it="Fahrzeuge",unit_long_en="Vehicles",
+                                     source="ASTRA-IVZ",dim1_id=37,dim2_id=NA,dim3_id=NA,dim4_id=NA,dim5_id=NA,dim6_id=NA,last_updated=NA,min_year=2010,max_year=2021)
+
+  statbot_ind_2_04_4_004<-data.frame(class_id="2_04_4_004",class_name="stock_agricultural_vehicles",name_de="Bestand Landwirtschaftsfahrzeuge",name_fr="Bestand Landwirtschaftsfahrzeuge",
+                                     name_it="Bestand Landwirtschaftsfahrzeuge",name_en="Stock Agricultural Vehicles",
+                                     description_de="Bestand Landwirtschaftsfahrzeuge",description_fr="Bestand Landwirtschaftsfahrzeuge",
+                                     description_it="Bestand Landwirtschaftsfahrzeuge",description_en="Bestand Landwirtschaftsfahrzeuge",
+                                     unit_short_de="Fahrzeuge",unit_short_fr="Fahrzeuge",unit_short_it="Fahrzeuge",unit_short_en="Vehicles",
+                                     unit_long_de="Fahrzeuge",unit_long_fr="Fahrzeuge",unit_long_it="Fahrzeuge",unit_long_en="Vehicles",
+                                     source="ASTRA-IVZ",dim1_id=37,dim2_id=NA,dim3_id=NA,dim4_id=NA,dim5_id=NA,dim6_id=NA,last_updated=NA,min_year=2010,max_year=2021)
+
+  statbot_ind_2_04_4_005<-data.frame(class_id="2_04_4_005",class_name="stock_industrial_vehicles",name_de="Bestand Industriefahrzeuge",name_fr="Bestand Industriefahrzeuge",
+                                     name_it="Bestand Industriefahrzeuge",name_en="Stock Industrial Vehicles",
+                                     description_de="Bestand Industriefahrzeuge",description_fr="Bestand Industriefahrzeuge",
+                                     description_it="Bestand Industriefahrzeuge",description_en="Bestand Industriefahrzeuge",
+                                     unit_short_de="Fahrzeuge",unit_short_fr="Fahrzeuge",unit_short_it="Fahrzeuge",unit_short_en="Vehicles",
+                                     unit_long_de="Fahrzeuge",unit_long_fr="Fahrzeuge",unit_long_it="Fahrzeuge",unit_long_en="Vehicles",
+                                     source="ASTRA-IVZ",dim1_id=37,dim2_id=NA,dim3_id=NA,dim4_id=NA,dim5_id=NA,dim6_id=NA,last_updated=NA,min_year=2010,max_year=2021)
+
+  statbot_ind_2_04_4_006<-data.frame(class_id="2_04_4_006",class_name="stock_motorcycles",name_de="Bestand Motorräder",name_fr="Bestand Motorräder",
+                                     name_it="Bestand Motorräder",name_en="Stock Motorcycles",
+                                     description_de="Bestand Motorräder",description_fr="Bestand Motorräder",
+                                     description_it="Bestand Motorräder",description_en="Bestand Motorräder",
+                                     unit_short_de="Fahrzeuge",unit_short_fr="Fahrzeuge",unit_short_it="Fahrzeuge",unit_short_en="Vehicles",
+                                     unit_long_de="Fahrzeuge",unit_long_fr="Fahrzeuge",unit_long_it="Fahrzeuge",unit_long_en="Vehicles",
+                                     source="ASTRA-IVZ",dim1_id=37,dim2_id=NA,dim3_id=NA,dim4_id=NA,dim5_id=NA,dim6_id=NA,last_updated=NA,min_year=2010,max_year=2021)
+
+  statbot_ind_2_04_4_007<-data.frame(class_id="2_04_4_007",class_name="stock_trailers",name_de="Bestand Anhänger",name_fr="Bestand Anhänger",
+                                     name_it="Bestand Anhänger",name_en="Stock Trailers",
+                                     description_de="Bestand Anhänger",description_fr="Bestand Anhänger",
+                                     description_it="Bestand Anhänger",description_en="Bestand Anhänger",
+                                     unit_short_de="Fahrzeuge",unit_short_fr="Fahrzeuge",unit_short_it="Fahrzeuge",unit_short_en="Vehicles",
+                                     unit_long_de="Fahrzeuge",unit_long_fr="Fahrzeuge",unit_long_it="Fahrzeuge",unit_long_en="Vehicles",
+                                     source="ASTRA-IVZ",dim1_id=37,dim2_id=NA,dim3_id=NA,dim4_id=NA,dim5_id=NA,dim6_id=NA,last_updated=NA,min_year=2010,max_year=2021)
+
+  statbot_ind_2_04_4_008<-data.frame(class_id="2_04_4_008",class_name="registrations_passenger_cars",name_de="Inverkehrsetzungen Personenwagen",name_fr="Inverkehrsetzungen Personenwagen",
+                                     name_it="Inverkehrsetzungen Personenwagen",name_en="Registrations Passenger Cars",
+                                     description_de="Inverkehrsetzungen Personenwagen",description_fr="Inverkehrsetzungen Personenwagen",
+                                     description_it="Inverkehrsetzungen Personenwagen",description_en="Inverkehrsetzungen Personenwagen",
+                                     unit_short_de="Fahrzeuge",unit_short_fr="Fahrzeuge",unit_short_it="Fahrzeuge",unit_short_en="Vehicles",
+                                     unit_long_de="Fahrzeuge",unit_long_fr="Fahrzeuge",unit_long_it="Fahrzeuge",unit_long_en="Vehicles",
+                                     source="ASTRA-IVZ",dim1_id=37,dim2_id=NA,dim3_id=NA,dim4_id=NA,dim5_id=NA,dim6_id=NA,last_updated=NA,min_year=2010,max_year=2021)
+
+  statbot_ind_2_04_4_009<-data.frame(class_id="2_04_4_009",class_name="registrations_passenger_transportation_vehicles",name_de="Inverkehrsetzungen Personentransportfahrzeuge",name_fr="Inverkehrsetzungen Personentransportfahrzeuge",
+                                     name_it="Inverkehrsetzungen Personentransportfahrzeuge",name_en="Registrations Passenger Transportation Vehicles",
+                                     description_de="Inverkehrsetzungen Personentransportfahrzeuge",description_fr="Inverkehrsetzungen Personentransportfahrzeuge",
+                                     description_it="Inverkehrsetzungen Personentransportfahrzeuge",description_en="Inverkehrsetzungen Personentransportfahrzeuge",
+                                     unit_short_de="Fahrzeuge",unit_short_fr="Fahrzeuge",unit_short_it="Fahrzeuge",unit_short_en="Vehicles",
+                                     unit_long_de="Fahrzeuge",unit_long_fr="Fahrzeuge",unit_long_it="Fahrzeuge",unit_long_en="Vehicles",
+                                     source="ASTRA-IVZ",dim1_id=37,dim2_id=NA,dim3_id=NA,dim4_id=NA,dim5_id=NA,dim6_id=NA,last_updated=NA,min_year=2010,max_year=2021)
+
+  statbot_ind_2_04_4_010<-data.frame(class_id="2_04_4_010",class_name="registrations_cargo_transportation_vehicles",name_de="Inverkehrsetzungen Sachentransportfahrzeuge",name_fr="Inverkehrsetzungen Sachentransportfahrzeuge",
+                                     name_it="Inverkehrsetzungen Sachentransportfahrzeuge",name_en="Registrations Cargo Transportation Cars",
+                                     description_de="Inverkehrsetzungen Sachentransportfahrzeuge",description_fr="Inverkehrsetzungen Sachentransportfahrzeuge",
+                                     description_it="Inverkehrsetzungen Sachentransportfahrzeuge",description_en="Inverkehrsetzungen Sachentransportfahrzeuge",
+                                     unit_short_de="Fahrzeuge",unit_short_fr="Fahrzeuge",unit_short_it="Fahrzeuge",unit_short_en="Vehicles",
+                                     unit_long_de="Fahrzeuge",unit_long_fr="Fahrzeuge",unit_long_it="Fahrzeuge",unit_long_en="Vehicles",
+                                     source="ASTRA-IVZ",dim1_id=37,dim2_id=NA,dim3_id=NA,dim4_id=NA,dim5_id=NA,dim6_id=NA,last_updated=NA,min_year=2010,max_year=2021)
+
+  statbot_ind_2_04_4_011<-data.frame(class_id="2_04_4_011",class_name="registrations_agricultural_vehicles",name_de="Inverkehrsetzungen Landwirtschaftsfahrzeuge",name_fr="Inverkehrsetzungen Landwirtschaftsfahrzeuge",
+                                     name_it="Inverkehrsetzungen Landwirtschaftsfahrzeuge",name_en="Registrations Agricultural Vehicles",
+                                     description_de="Inverkehrsetzungen Landwirtschaftsfahrzeuge",description_fr="Inverkehrsetzungen Landwirtschaftsfahrzeuge",
+                                     description_it="Inverkehrsetzungen Landwirtschaftsfahrzeuge",description_en="Inverkehrsetzungen Landwirtschaftsfahrzeuge",
+                                     unit_short_de="Fahrzeuge",unit_short_fr="Fahrzeuge",unit_short_it="Fahrzeuge",unit_short_en="Vehicles",
+                                     unit_long_de="Fahrzeuge",unit_long_fr="Fahrzeuge",unit_long_it="Fahrzeuge",unit_long_en="Vehicles",
+                                     source="ASTRA-IVZ",dim1_id=37,dim2_id=NA,dim3_id=NA,dim4_id=NA,dim5_id=NA,dim6_id=NA,last_updated=NA,min_year=2010,max_year=2021)
+
+  statbot_ind_2_04_4_012<-data.frame(class_id="2_04_4_012",class_name="registrations_industrial_vehicles",name_de="Inverkehrsetzungen Industriefahrzeuge",name_fr="Inverkehrsetzungen Industriefahrzeuge",
+                                     name_it="Inverkehrsetzungen Industriefahrzeuge",name_en="Registrations Industrial Vehicles",
+                                     description_de="Inverkehrsetzungen Industriefahrzeuge",description_fr="Inverkehrsetzungen Industriefahrzeuge",
+                                     description_it="Inverkehrsetzungen Industriefahrzeuge",description_en="Inverkehrsetzungen Industriefahrzeuge",
+                                     unit_short_de="Fahrzeuge",unit_short_fr="Fahrzeuge",unit_short_it="Fahrzeuge",unit_short_en="Vehicles",
+                                     unit_long_de="Fahrzeuge",unit_long_fr="Fahrzeuge",unit_long_it="Fahrzeuge",unit_long_en="Vehicles",
+                                     source="ASTRA-IVZ",dim1_id=37,dim2_id=NA,dim3_id=NA,dim4_id=NA,dim5_id=NA,dim6_id=NA,last_updated=NA,min_year=2010,max_year=2021)
+
+  statbot_ind_2_04_4_013<-data.frame(class_id="2_04_4_013",class_name="registrations_motorcycles",name_de="Inverkehrsetzungen Motorräder",name_fr="Inverkehrsetzungen Motorräder",
+                                     name_it="Inverkehrsetzungen Motorräder",name_en="Registrations Motorcycles",
+                                     description_de="Inverkehrsetzungen Motorräder",description_fr="Inverkehrsetzungen Motorräder",
+                                     description_it="Inverkehrsetzungen Motorräder",description_en="Inverkehrsetzungen Motorräder",
+                                     unit_short_de="Fahrzeuge",unit_short_fr="Fahrzeuge",unit_short_it="Fahrzeuge",unit_short_en="Vehicles",
+                                     unit_long_de="Fahrzeuge",unit_long_fr="Fahrzeuge",unit_long_it="Fahrzeuge",unit_long_en="Vehicles",
+                                     source="ASTRA-IVZ",dim1_id=37,dim2_id=NA,dim3_id=NA,dim4_id=NA,dim5_id=NA,dim6_id=NA,last_updated=NA,min_year=2010,max_year=2021)
+
+  statbot_ind_2_04_4_014<-data.frame(class_id="2_04_4_014",class_name="registrations_trailers",name_de="Inverkehrsetzungen Anhänger",name_fr="Inverkehrsetzungen Anhänger",
+                                     name_it="Inverkehrsetzungen Anhänger",name_en="Registrations Trailers",
+                                     description_de="Inverkehrsetzungen Anhänger",description_fr="Inverkehrsetzungen Anhänger",
+                                     description_it="Inverkehrsetzungen Anhänger",description_en="Inverkehrsetzungen Anhänger",
+                                     unit_short_de="Fahrzeuge",unit_short_fr="Fahrzeuge",unit_short_it="Fahrzeuge",unit_short_en="Vehicles",
+                                     unit_long_de="Fahrzeuge",unit_long_fr="Fahrzeuge",unit_long_it="Fahrzeuge",unit_long_en="Vehicles",
+                                     source="ASTRA-IVZ",dim1_id=37,dim2_id=NA,dim3_id=NA,dim4_id=NA,dim5_id=NA,dim6_id=NA,last_updated=NA,min_year=2010,max_year=2021)
 
   # 'number_of_enterprises': '2_03_003',
   # 'number_of_enterprises_per_1000_residents': '2_03_004',

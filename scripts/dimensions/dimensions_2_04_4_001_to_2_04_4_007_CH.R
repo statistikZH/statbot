@@ -23,7 +23,7 @@
 # For adding additional languages, use the language abbreviations: de, fr, it, en
 devtools::load_all(".")
 
-destfile<-"temp/2_04_4_001_to_2_04_4_007_CH.px"
+destfile<-"temp/2_04_4_008_to_2_04_4_014_CH.px"
 
 if(!file.exists(destfile)){
   download.file(paste0("https://www.bfs.admin.ch/bfsstatic/dam/assets/",get_bfs_asset_nr("px-x-1103020200_121"),"/master"),destfile=destfile)
@@ -51,7 +51,7 @@ additional_languages <- list(
   en = list(
     fuel = c("Benzine", "Diesel", "Benzine-electric: Normal-hybrid","Benzine-electric: Plug-in-hybrid",
              "Diesel-electric: Normal-hybrid","Diesel-electric: Plug-in-hybrid",
-             "Electric","Hydrogen","Gas (mono- and bivalent)","other")
+             "Electric","Hydrogen","Gas (mono- and bivalent)","other","no motor")
   )
 
   # add here additional languages with the same structure as the one before,
