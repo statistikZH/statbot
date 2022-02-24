@@ -1,0 +1,7 @@
+"dim_id","unique_name","dim_name_de","dim_name_fr","dim_name_it","dim_name_en","value_id","value_name_de","value_name_fr","value_name_it","value_name_en"
+3,"marital_status","Zivilstand","Etat civil","Stato civile","Marital status","-1","Zivilstand - Total","Etat civil - total","Stato civile - totale","Marital status - total"
+3,"marital_status","Zivilstand","Etat civil","Stato civile","Marital status","1","Ledig","Célibataire","Celibe/nubile","Single"
+3,"marital_status","Zivilstand","Etat civil","Stato civile","Marital status","2","Verheiratet","Marié/e","Coniugato/a","Married"
+3,"marital_status","Zivilstand","Etat civil","Stato civile","Marital status","3","Verwitwet","Veuf/ve","Vedovo/a","Widowed"
+3,"marital_status","Zivilstand","Etat civil","Stato civile","Marital status","4","Geschieden","Divorcé/e","Divorziato/a","Divorced"
+3,"marital_status","Zivilstand","Etat civil","Stato civile","Marital status","9","Anderer","Autre","Altro","Other"

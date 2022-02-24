@@ -1,4 +1,8 @@
-# Version 3.1.2 - 06.01.2022
+# Version 3.2.0 - 15.02.2022 - 
+
+Adapting to new extraction function
+
+# Version 3.1.2 - 06.01.2022 - 20.01.2022
 
 Metadata extraction from px-files
 

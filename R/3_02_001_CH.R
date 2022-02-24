@@ -1,3 +1,4 @@
+# 3.2.0 - 18.02.2022 - No change at all - just passed check that it runs with V3.2
 # V3.1.0b - 21.12.2021 - redone version, plus aggregate to bezirke
 
 #consists of communal (+swiss total) and of cantonal areas

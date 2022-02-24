@@ -2,10 +2,11 @@
 #'
 #' Created by: Christian Ruiz
 #' Created at: 2022-01-06
-#' Version 3.1.2 - 06.01.2022
+#' Version 3.2.0 - 17.02.2022
 #'
 #' History
 #'
+#' Version 3.2.0 - 17.02.2022 - Changes to new dimensions logic
 #' Version 3.1.2 - 06.01.2022 - First Version
 #'
 #' @param flag_force_update To force an update of the Dataset. Default: FALSE
@@ -19,16 +20,20 @@ statbot_src_1_01_006_CH <- function(flag_force_update=FALSE){
     if(flag_force_update) print("flag_force_update") else print("Changes found")
 
     df<-statbot_read.px(destfile)
+
+    main_language <- extract_main_language(df)
     #extracting first some metadata
     spatial_reference<-extract_spatial_reference(df$NOTE$value)
-    dict_gender<-extract_meta_and_generate_dimensions(df,"Geschlecht",1)
-    dict_staat<-extract_meta_and_generate_dimensions(df,"Staatsangehörigkeit..Kategorie.",11)
-    dict_civil<-extract_meta_and_generate_dimensions(df,"Zivilstand",12)
-    dict_alter<-extract_meta_and_generate_dimensions(df,"Altersklasse",13)
+
 
     df<-as.data.frame(df)
 
-    new_names <- c("age_class", "marital_status","citizenship_category","gender","spatialunit_name", "jahr", "value")
+    unique_dimension_names <- c("gender", "citizenship_category", "marital_status", "age_group_10")
+
+    dimension_table <- get_dimensions(unique_dimension_names)
+
+    ##### from here on @christian you can take over :)
+    new_names <- c("age_group_10", "marital_status","citizenship_category","gender","spatialunit_name", "jahr", "value")
 
     # Only keep communes - other granularities will be added up again later
     names(df) <- new_names
@@ -47,16 +52,17 @@ statbot_src_1_01_006_CH <- function(flag_force_update=FALSE){
     df$time_value<-paste0("31.12.",df$jahr)
     df$period_value<-NA
 
+
     #theoretically, this could be converted to a function
-    df<-merge_to_dict(df,"gender",dict_gender)
-    df<-merge_to_dict(df,"age_class",dict_alter)
-    df<-merge_to_dict(df,"marital_status",dict_civil)
-    df<-merge_to_dict(df,"citizenship_category",dict_staat)
-    df<-df %>% select(all_of(GLOBAL_TOTAL_LIST), gender,age_class,marital_status,citizenship_category)
+    df<-join_dimension_value(df,"gender",dimension_table, main_language)
+    df<-join_dimension_value(df,"age_group_10",dimension_table, main_language)
+    df<-join_dimension_value(df,"marital_status",dimension_table, main_language)
+    df<-join_dimension_value(df,"citizenship_category",dimension_table, main_language)
+    df<-df %>% select(all_of(GLOBAL_TOTAL_LIST), gender,age_group_10,marital_status,citizenship_category)
 
-    df<-add_granularity_levels_up(df,list_ontologies=c("A.ADM2","A.ADM1","CH"),list_dimensions=c("gender","age_class","marital_status","citizenship_category"))
+    df<-add_granularity_levels_up(df,list_ontologies=c("A.ADM2","A.ADM1","CH"),list_dimensions=c("gender","age_group_10","marital_status","citizenship_category"))
 
-    df<-df %>% select(all_of(GLOBAL_TOTAL_LIST), gender,age_class,marital_status,citizenship_category)
+    df<-df %>% select(all_of(GLOBAL_TOTAL_LIST), gender,age_group_10,marital_status,citizenship_category)
 
 
 

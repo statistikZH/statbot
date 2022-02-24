@@ -1,0 +1,5 @@
+"dim_id","unique_name","dim_name_de","dim_name_fr","dim_name_it","dim_name_en","value_id","value_name_de","value_name_fr","value_name_it","value_name_en"
+32,"economic_sector","Wirtschaftssektor","Secteur économique","Settore economico","economic_sector","-1","Wirtschaftssektor - Total","Secteur économique - total","Settore economico - totale","Total"
+32,"economic_sector","Wirtschaftssektor","Secteur économique","Settore economico","economic_sector","1","Primärsektor","Secteur primaire","Settore primario","Primary Sector"
+32,"economic_sector","Wirtschaftssektor","Secteur économique","Settore economico","economic_sector","2","Sekundärer Sektor","Secteur secondaire","Settore secondario","Secondary Sector"
+32,"economic_sector","Wirtschaftssektor","Secteur économique","Settore economico","economic_sector","3","Tertiärer Sektor","Secteur tertiaire","Settore terziario","Tertiary Sector"

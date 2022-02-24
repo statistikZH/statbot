@@ -1,0 +1,7 @@
+"dim_id","unique_name","dim_name_de","dim_name_fr","dim_name_it","dim_name_en","value_id","value_name_de","value_name_fr","value_name_it","value_name_en"
+35,"n_rooms","Anzahl Zimmer","Nombre de pièces","n_rooms","n_rooms","1","1 Zimmer","1 pièce",NA,"1 room"
+35,"n_rooms","Anzahl Zimmer","Nombre de pièces","n_rooms","n_rooms","2","2 Zimmer","2 pièces",NA,"2 rooms"
+35,"n_rooms","Anzahl Zimmer","Nombre de pièces","n_rooms","n_rooms","3","3 Zimmer","3 pièces",NA,"3 rooms"
+35,"n_rooms","Anzahl Zimmer","Nombre de pièces","n_rooms","n_rooms","4","4 Zimmer","4 pièces",NA,"4 rooms"
+35,"n_rooms","Anzahl Zimmer","Nombre de pièces","n_rooms","n_rooms","5","5 Zimmer","5 pièces",NA,"5 rooms"
+35,"n_rooms","Anzahl Zimmer","Nombre de pièces","n_rooms","n_rooms","6","6+ Zimmer","6+ pièces",NA,"6+ rooms"

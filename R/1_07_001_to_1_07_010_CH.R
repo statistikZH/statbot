@@ -1,6 +1,8 @@
-# V3.1.1b - 06.01.2022
+# Version 3.2.0 - 18.02.2022
 # History
 #
+# Version 3.2.0 - 18.02.2022 - New dimensions extraction
+# 3.1.1.b -06.01.2022 - First version
 
 # buildings cube for EFH, MFH, 2 other categories. Plus calculation of all residential buildings.
 
@@ -24,7 +26,7 @@ statbot_src_1_07_001_to_1_07_010_CH <- function(flag_force_update=FALSE){
 
     df<-as.data.frame(df)
 
-    new_names <- c("jahr", "bauperiode", "n_zimmer", "gebaeudekategorie", "spatialunit_name", "value")
+    new_names <- c("jahr", "construction_period", "n_rooms", "gebaeudekategorie", "spatialunit_name", "value")
 
     # Only keep communes - other granularities will be added up again later
     #df$spatialunit_name<-df$Kanton.......Bezirk........Gemeinde.........
@@ -47,23 +49,29 @@ statbot_src_1_07_001_to_1_07_010_CH <- function(flag_force_update=FALSE){
     df$time_value<-paste0("31.12.",df$jahr)
     df$period_value<-NA
 
+    dimension_table <- get_dimensions(unique_dimension_names)
 
-    df <- mutate(df, rooms = case_when(n_zimmer=="1 Zimmer"~1,
-                             n_zimmer=="2 Zimmer"~2,
-                             n_zimmer=="3 Zimmer"~3,
-                             n_zimmer=="4 Zimmer"~4,
-                             n_zimmer=="5 Zimmer"~5,
-                             n_zimmer=="6+ Zimmer"~6,),
-           building_period = case_when(bauperiode=="Vor 1919"~1,
-                                       bauperiode=="1919-1945"~2,
-                                       bauperiode=="1946-1960"~3,
-                                       bauperiode=="1961-1970"~4,
-                                       bauperiode=="1971-1980"~5,
-                                       bauperiode=="1981-1990"~6,
-                                       bauperiode=="1991-2000"~7,
-                                       bauperiode=="2001-2005"~8,
-                                       bauperiode=="2006-2020"~9)) %>%
-      select(all_of(GLOBAL_TOTAL_LIST), gebaeudekategorie, rooms, building_period)
+    df<-join_dimension_value(df,"n_rooms",dimension_table, main_language)
+    df<-join_dimension_value(df,"construction_period",dimension_table, main_language)
+
+
+    # df <- mutate(df, rooms = case_when(n_zimmer=="1 Zimmer"~1,
+    #                          n_zimmer=="2 Zimmer"~2,
+    #                          n_zimmer=="3 Zimmer"~3,
+    #                          n_zimmer=="4 Zimmer"~4,
+    #                          n_zimmer=="5 Zimmer"~5,
+    #                          n_zimmer=="6+ Zimmer"~6,),
+    #        building_period = case_when(bauperiode=="Vor 1919"~1,
+    #                                    bauperiode=="1919-1945"~2,
+    #                                    bauperiode=="1946-1960"~3,
+    #                                    bauperiode=="1961-1970"~4,
+    #                                    bauperiode=="1971-1980"~5,
+    #                                    bauperiode=="1981-1990"~6,
+    #                                    bauperiode=="1991-2000"~7,
+    #                                    bauperiode=="2001-2005"~8,
+    #                                    bauperiode=="2006-2020"~9))
+    #
+    df<-df %>%  select(all_of(GLOBAL_TOTAL_LIST), gebaeudekategorie, n_rooms, construction_period)
 
 
 
@@ -72,9 +80,10 @@ statbot_src_1_07_001_to_1_07_010_CH <- function(flag_force_update=FALSE){
     indicator_number = c(1,3,5,7)
   )
 
+
   pwalk(indicator_input, ~create_all_aggregations_per_indicator(
     df,
-    indicator_col = "gebaeudekategorie", ..1, ..2)
+    indicator_col = "gebaeudekategorie", ..1, ..2,"1_07_")
   )
 
 

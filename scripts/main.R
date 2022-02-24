@@ -1,6 +1,7 @@
 
 # Main-Script - see also readme
 
+# V3.2 -24.02.2022 - Adaptations to the V3.2 scheme - dimensions, replacement of python-files etc.
 # V3.0.2c - 21.12.2021 - adaptations to the V3 DB scheme
 
 # preparation of some global constants
@@ -38,43 +39,44 @@ create_spatial_units()
 logger("INIT: CREATE CLASSES...")
 create_classes()
 
-logger("INIT: CREATE DIMENSIONS...")
-create_dimensions()
+# Obsolete with V3.2
+#logger("INIT: CREATE DIMENSIONS...")
+#create_dimensions()
 
 logger("INIT: RUNNING BASE CLASSES SUCH AS POPULATION AND AREA...")
-# TODO: 20.12.2021 waiting for Jorins modifications
-#system("python scripts/init_scripts/population.py")
+# V3.2 now with the population script
+statbot_src_1_01_001_CH(flag_force_update)
 statbot_src_3_02_001_CH(flag_force_update)
 
 
 # R-loop: execute all sourced functions statbot_src_XXX
 logger("RUNNING R-SCRIPTS...")
 dataset_ids_to_download <- get_dataset_ids()
-dataset_ids_to_download <- dataset_ids_to_download[!dataset_ids_to_download=="3_02_001_CH"]
+dataset_ids_to_download <- dataset_ids_to_download[!dataset_ids_to_download %in% c("1_01_001_CH","3_02_001_CH")]
 
 purrr::walk(dataset_ids_to_download, ~download_dataset(., flag_force_update = flag_force_update))
 
 
-
+# Obsolete with V3.2 24.02.2022
 # python-loop: execute all sourced python files directly
-logger("RUNNING PYTHON-SCRIPTS...")
-for(i in python.sources){
-  start_time<-Sys.time()
-  print(paste0("Executing script... ",i))
-  return_value<-tryCatch(system(paste0("python ",i)),
-                         error=function(c) paste0("error loading python-script: ",c),
-                         warning=function(c) paste0("warning loading python-script: ",c),
-                         message=function(c) paste0("message loading python-script: ",c))
-
-  return_value<-ifelse(return_value==0,"UPDATE OK","ERROR")
-  end_time<-Sys.time()
-  logger(paste0(
-    substr(i,as.integer(gregexpr(pattern ='/',i)[[1]])+1,nchar(i)-3),
-    ": ",
-    return_value,
-    paste0(" FINISHED IN: ",round(as.numeric (end_time - start_time, units = "secs"),1), " SECONDS")
-  ))
-}
+# logger("RUNNING PYTHON-SCRIPTS...")
+# for(i in python.sources){
+#   start_time<-Sys.time()
+#   print(paste0("Executing script... ",i))
+#   return_value<-tryCatch(system(paste0("python ",i)),
+#                          error=function(c) paste0("error loading python-script: ",c),
+#                          warning=function(c) paste0("warning loading python-script: ",c),
+#                          message=function(c) paste0("message loading python-script: ",c))
+#
+#   return_value<-ifelse(return_value==0,"UPDATE OK","ERROR")
+#   end_time<-Sys.time()
+#   logger(paste0(
+#     substr(i,as.integer(gregexpr(pattern ='/',i)[[1]])+1,nchar(i)-3),
+#     ": ",
+#     return_value,
+#     paste0(" FINISHED IN: ",round(as.numeric (end_time - start_time, units = "secs"),1), " SECONDS")
+#   ))
+# }
 
 logger("FINISHED MAIN-SCRIPT.")
 

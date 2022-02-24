@@ -14,6 +14,8 @@ Next to the fact-table, there is a class-table that contains all the datasets (c
 
 Important Temporary-Notice: The pxR-package to read px-files within R has a bug. Use the script here in statbot_read_px.R to read large px-files until the authors fix that package (PR is there pending for a while). It is included in this R-environment and is thus loaded automatically if you run the R-project.
 
+We added some additional documentation to some functions, with which ['metadata can be extracted from px-cubes'](articles/metadata.html).
+
 
 ### Repo-structure
 

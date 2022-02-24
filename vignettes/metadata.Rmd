@@ -1,0 +1,29 @@
+---
+title: "Metadata Extraction"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Metadata-Extraction}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+
+# Functions describing the extraction of metadata
+
+### Explanation based on V3.1.2 on 20.01.2022
+
+While in an older version of statbot we created the metadata manually, this is now partially done automatized. At the moment we do this notably through the metadata that is included in the px-files. In future we hope that we can use the new metadata-API by the FSO. We are at the moment of writing also curious if the developments made under the package swissdata could help us to extract metadata also from other FSO-sources other than px-files. 
+
+## extract_spatial_reference() function
+
+FSO-data is usually (always?) based on a spatial reference, which is a day where the spatial units are defined for that statistic. It is then calculated backwards. Thus. in order to make a perfect match between the data and the historized spatial data, this exact date is important. 
+
+With the `extract_spatial_reference` function we extract the notes metadata field, look for the word "Raumbezug" and extract the date in german form, whether it is as 18.10.2019 or 18. Oktober 2019 with a lubridate function. This information is at the moment of writing written manually by the employees of the FSO so that there is not a structured metadata field. The function contains thus some wild guesses and string manipulations with many assumptions. It is thus likely that it will not always work.
+
+## extract_meta_and_generate_dimensions() function
+
+With the `extract_meta_and_generate_dimensions` function we extract metadata and generate/return a dictionary that can be used further down in the code to set the codes for the variables. At the beginnign of the function, it looks for the languages available in the metadata and checks the manually inserted languages for manual values. If langauges are missing, or languages are double, a warning is emitted. 
+
+Work in progress, that the dimensions are directly within this function generated automatically as small CSV files for every dimension separatedly. This in return can serve to add all the small CSV files together into a large dimensions-metadata-overview file. Further down the road we plan of course to replace this by inserting all the metadata directly into a DB. 
+
+
