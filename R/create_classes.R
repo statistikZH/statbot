@@ -71,6 +71,17 @@ create_classes <-function(){
                                    unit_long_de="Anzahl",unit_long_fr="Anzahl",unit_long_it="Anzahl",unit_long_en="Anzahl",
                                    source="BFS-BEVNAT",dim1_id=31,dim2_id=NA,dim3_id=NA,dim4_id=NA,dim5_id=NA,dim6_id=NA,last_updated=NA,min_year=2000,max_year=2020)
 
+
+  statbot_ind_1_01_020<-data.frame(class_id="1_01_020",class_name="migration",name_de="Wanderung der ständigen Wohnbevölkerung",name_fr="Migration de la population résidante permanente",
+                                   name_it="Migrazione della popolazione residente permanente",name_en="Migration of the permanent resident population",
+                                   description_de="Wanderung der ständigen Wohnbevölkerung",description_fr="Migration de la population résidante permanente",
+                                   description_it="Migrazione della popolazione residente permanente",description_en="Migration of the permanent resident population",
+                                   unit_short_de="Anzahl",unit_short_fr="Anzahl",unit_short_it="Anzahl",unit_short_en="Anzahl",
+                                   unit_long_de="Anzahl",unit_long_fr="Anzahl",unit_long_it="Anzahl",unit_long_en="Anzahl",
+                                   source="BFS-STATPOP",dim1_id=37,dim2_id=39,dim3_id=40,dim4_id=NA,dim5_id=NA,dim6_id=NA,last_updated=NA,min_year=2011,max_year=2020)
+
+
+
   # 'favorite_firstname_amount': '1_01_017',
   # 'inflows': '1_01_018',
   # 'inflows_per_1000_residents': '1_01_019',

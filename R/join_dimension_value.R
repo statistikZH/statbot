@@ -8,7 +8,7 @@
 #' @param dict a df with the value_ids to merge
 #'
 #' @export
-join_dimension_value<-function(df,dimension_name,dimension_table, main_language){
+join_dimension_value<-function(df,dimension_name,dimension_table, main_language){ #"citizenship_selection", "gender", "type_of_migration"
 
   dimension_value_language <- paste0("value_name_", main_language)
 
