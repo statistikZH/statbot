@@ -79,8 +79,50 @@ create_classes <-function(){
                                    unit_short_de="Anzahl",unit_short_fr="Anzahl",unit_short_it="Anzahl",unit_short_en="Anzahl",
                                    unit_long_de="Anzahl",unit_long_fr="Anzahl",unit_long_it="Anzahl",unit_long_en="Anzahl",
                                    source="BFS-STATPOP",dim1_id=37,dim2_id=39,dim3_id=NA,dim4_id=NA,dim5_id=NA,dim6_id=NA,last_updated=NA,min_year=2011,max_year=2020)
+  # ----------
+  # change class_name
+
+  statbot_ind_1_01_021<-data.frame(class_id="1_01_021",class_name="emigration",name_de="Auswanderung",name_fr="Emigration",
+                                   name_it="Emigrazione",name_en="emigration",description_de="Emigration",description_fr="Emigration",
+                                   description_it="Emigrazione",description_en="Auswanderung",
+                                   unit_short_de="Anzahl",unit_short_fr="Anzahl",unit_short_it="Anzahl",unit_short_en="Anzahl",
+                                   unit_long_de="Anzahl",unit_long_fr="Anzahl",unit_long_it="Anzahl",unit_long_en="Anzahl",
+                                   source="BFS-STATPOP",dim1_id=37,dim2_id=39,dim3_id=NA,dim4_id=NA,dim5_id=NA,dim6_id=NA,last_updated=NA,min_year=2011,max_year=2020)
 
 
+  statbot_ind_1_01_022<-data.frame(class_id="1_01_022",class_name="internal_migration_intercantonal_arrival",name_de="Interkantonaler Zuzug",name_fr="Arrivée intercantonale",
+                                   name_it="Arrivo intercantonale",name_en="Internal migration intercantonal (arrival)",
+                                   description_de="Interkantonaler Zuzug",description_fr="Arrivée intercantonale",
+                                   description_it="Arrivo intercantonale",description_en="Internal migration intercantonal (arrival)",
+                                   unit_short_de="Anzahl",unit_short_fr="Anzahl",unit_short_it="Anzahl",unit_short_en="Anzahl",
+                                   unit_long_de="Anzahl",unit_long_fr="Anzahl",unit_long_it="Anzahl",unit_long_en="Anzahl",
+                                   source="BFS-STATPOP",dim1_id=37,dim2_id=39,dim3_id=NA,dim4_id=NA,dim5_id=NA,dim6_id=NA,last_updated=NA,min_year=2011,max_year=2020)
+
+  statbot_ind_1_01_023<-data.frame(class_id="1_01_023",class_name="internal_migration_intercantonal_departure",name_de="Interkantonaler Wegzug",name_fr="Départ intercantonal",
+                                   name_it="Partenza intercantonale",name_en="Internal migration intercantonal (departure)",
+                                   description_de="Interkantonaler Wegzug",description_fr="Départ intercantonal",
+                                   description_it="Partenza intercantonale",description_en="Internal migration intercantonal (departure)",
+                                   unit_short_de="Anzahl",unit_short_fr="Anzahl",unit_short_it="Anzahl",unit_short_en="Anzahl",
+                                   unit_long_de="Anzahl",unit_long_fr="Anzahl",unit_long_it="Anzahl",unit_long_en="Anzahl",
+                                   source="BFS-STATPOP",dim1_id=37,dim2_id=39,dim3_id=NA,dim4_id=NA,dim5_id=NA,dim6_id=NA,last_updated=NA,min_year=2011,max_year=2020)
+
+  statbot_ind_1_01_024<-data.frame(class_id="1_01_024",class_name="internal_migration_intracantonal_arrival",name_de="Intrakantonaler Zuzug",name_fr="Arrivée intracantonale",
+                                   name_it="Arrivo intracantonale",name_en="Internal migration intracantonal (arrival)",
+                                   description_de="Intrakantonaler Zuzug",description_fr="Arrivée intracantonale",
+                                   description_it="Arrivo intracantonale",description_en="Internal migration intracantonal (arrival)",
+                                   unit_short_de="Anzahl",unit_short_fr="Anzahl",unit_short_it="Anzahl",unit_short_en="Anzahl",
+                                   unit_long_de="Anzahl",unit_long_fr="Anzahl",unit_long_it="Anzahl",unit_long_en="Anzahl",
+                                   source="BFS-STATPOP",dim1_id=37,dim2_id=39,dim3_id=NA,dim4_id=NA,dim5_id=NA,dim6_id=NA,last_updated=NA,min_year=2011,max_year=2020)
+
+  statbot_ind_1_01_025<-data.frame(class_id="1_01_025",class_name="internal_migration_intracantonal_departure",name_de="Intrakantonaler Wegzug",name_fr="Départ intracantonal",
+                                   name_it="Partenza intracantonale",name_en="Internal migration intracantonal (departure)",
+                                   description_de="Intrakantonaler Wegzug",description_fr="Départ intracantonal",
+                                   description_it="Partenza intracantonale",description_en="Internal migration intracantonal (departure)",
+                                   unit_short_de="Anzahl",unit_short_fr="Anzahl",unit_short_it="Anzahl",unit_short_en="Anzahl",
+                                   unit_long_de="Anzahl",unit_long_fr="Anzahl",unit_long_it="Anzahl",unit_long_en="Anzahl",
+                                   source="BFS-STATPOP",dim1_id=37,dim2_id=39,dim3_id=NA,dim4_id=NA,dim5_id=NA,dim6_id=NA,last_updated=NA,min_year=2011,max_year=2020)
+
+  #----------
 
   # 'favorite_firstname_amount': '1_01_017',
   # 'inflows': '1_01_018',
