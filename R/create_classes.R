@@ -73,7 +73,7 @@ create_classes <-function(){
 
 
   statbot_ind_1_01_020<-data.frame(class_id="1_01_020",class_name="immigration_incl._change_of_population_type",name_de="Einwanderung inkl. Änderung des Bevölkerungstyps",name_fr="Immigration, y compris les changements de type de population",
-                                   name_it="Immigrazione inclusi i cambcreatiamenti del tipo di popolazione",name_en="Immigration incl. change of population type",
+                                   name_it="Immigrazione inclusi i cambiamenti del tipo di popolazione",name_en="Immigration incl. change of population type",
                                    description_de="Einwanderung inkl. Änderung des Bevölkerungstyps",description_fr="Immigration, y compris les changements de type de population",
                                    description_it="Immigrazione inclusi i cambiamenti del tipo di popolazione",description_en="Immigration incl. change of population type",
                                    unit_short_de="Anzahl",unit_short_fr="Anzahl",unit_short_it="Anzahl",unit_short_en="Anzahl",
