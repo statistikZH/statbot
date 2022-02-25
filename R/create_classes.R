@@ -83,8 +83,8 @@ create_classes <-function(){
   # change class_name
 
   statbot_ind_1_01_021<-data.frame(class_id="1_01_021",class_name="emigration",name_de="Auswanderung",name_fr="Emigration",
-                                   name_it="Emigrazione",name_en="emigration",description_de="Emigration",description_fr="Emigration",
-                                   description_it="Emigrazione",description_en="Auswanderung",
+                                   name_it="Emigrazione",name_en="Emigration",description_de="Auswanderung",description_fr="Emigration",
+                                   description_it="Emigrazione",description_en="Emigration",
                                    unit_short_de="Anzahl",unit_short_fr="Anzahl",unit_short_it="Anzahl",unit_short_en="Anzahl",
                                    unit_long_de="Anzahl",unit_long_fr="Anzahl",unit_long_it="Anzahl",unit_long_en="Anzahl",
                                    source="BFS-STATPOP",dim1_id=37,dim2_id=39,dim3_id=NA,dim4_id=NA,dim5_id=NA,dim6_id=NA,last_updated=NA,min_year=2011,max_year=2020)
