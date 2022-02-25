@@ -28,12 +28,18 @@ statbot_src_1_01_020_CH <- function(flag_force_update=FALSE){
 
     df<-as.data.frame(df)
 
-    unique_dimension_names <- c("gender","citizenship_selection", "type_of_migration")
+    # filter for type_of_migration == Einwanderung inkl. Änderung des Bevölkerungstyps
+
+    df <- df %>% dplyr::filter(Migrationstyp=="Einwanderung inkl. Änderung des Bevölkerungstyps")
+    df <- subset(df, select = -Migrationstyp)
+
+
+    unique_dimension_names <- c("gender","citizenship_selection")
 
     dimension_table <- get_dimensions(unique_dimension_names)
 
     ##### from here on @christian you can take over :)
-    new_names <- c("type_of_migration","gender","citizenship_selection","spatialunit_name", "jahr", "value")
+    new_names <- c("gender","citizenship_selection","spatialunit_name", "jahr", "value")
 
     # Only keep communes - other granularities will be added up again later
     names(df) <- new_names
@@ -56,12 +62,11 @@ statbot_src_1_01_020_CH <- function(flag_force_update=FALSE){
     #theoretically, this could be converted to a function
     df<-join_dimension_value(df,"citizenship_selection",dimension_table, main_language)
     df<-join_dimension_value(df,"gender",dimension_table, main_language)
-    df<-join_dimension_value(df,"type_of_migration",dimension_table, main_language)
-    df<-df %>% select(all_of(GLOBAL_TOTAL_LIST), gender,citizenship_selection,type_of_migration)
+    df<-df %>% select(all_of(GLOBAL_TOTAL_LIST), gender,citizenship_selection)
 
-    df<-add_granularity_levels_up(df,list_ontologies=c("A.ADM2","A.ADM1","CH"),list_dimensions=c("gender","citizenship_selection","type_of_migration"))
+    df<-add_granularity_levels_up(df,list_ontologies=c("A.ADM2","A.ADM1","CH"),list_dimensions=c("gender","citizenship_selection"))
 
-    df<-df %>% select(all_of(GLOBAL_TOTAL_LIST), gender,citizenship_selection,type_of_migration)
+    df<-df %>% select(all_of(GLOBAL_TOTAL_LIST), gender,citizenship_selection)
 
 
 

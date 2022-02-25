@@ -1,7 +1,0 @@
-"dim_id","unique_name","dim_name_de","dim_name_fr","dim_name_it","dim_name_en","value_id","value_name_de","value_name_fr","value_name_it","value_name_en"
-40,"type_of_migration","Migrationstyp","Type de migrations","Tipo di migrazione","Type of migration","1","Einwanderung inkl. Änderung des Bevölkerungstyps","Immigration, y compris les changements de type de population","Immigrazione inclusi i cambiamenti del tipo di popolazione","Immigration incl. change of population type"
-40,"type_of_migration","Migrationstyp","Type de migrations","Tipo di migrazione","Type of migration","2","Auswanderung","Emigration","Emigrazione","Emigration"
-40,"type_of_migration","Migrationstyp","Type de migrations","Tipo di migrazione","Type of migration","3","Interkantonaler Zuzug","Arrivée intercantonale","Arrivo intercantonale","Internal migration intercantonal (arrival)"
-40,"type_of_migration","Migrationstyp","Type de migrations","Tipo di migrazione","Type of migration","4","Interkantonaler Wegzug","Départ intercantonal","Partenza intercantonale","Internal migration intercantonal (departure)"
-40,"type_of_migration","Migrationstyp","Type de migrations","Tipo di migrazione","Type of migration","5","Intrakantonaler Zuzug","Arrivée intracantonale","Arrivo intracantonale","Internal migration intracantonal (arrival)"
-40,"type_of_migration","Migrationstyp","Type de migrations","Tipo di migrazione","Type of migration","6","Intrakantonaler Wegzug","Départ intracantonal","Partenza intracantonale","Internal migration intracantonal (departure)"

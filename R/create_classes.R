@@ -72,13 +72,13 @@ create_classes <-function(){
                                    source="BFS-BEVNAT",dim1_id=31,dim2_id=NA,dim3_id=NA,dim4_id=NA,dim5_id=NA,dim6_id=NA,last_updated=NA,min_year=2000,max_year=2020)
 
 
-  statbot_ind_1_01_020<-data.frame(class_id="1_01_020",class_name="migration",name_de="Wanderung der ständigen Wohnbevölkerung",name_fr="Migration de la population résidante permanente",
-                                   name_it="Migrazione della popolazione residente permanente",name_en="Migration of the permanent resident population",
-                                   description_de="Wanderung der ständigen Wohnbevölkerung",description_fr="Migration de la population résidante permanente",
-                                   description_it="Migrazione della popolazione residente permanente",description_en="Migration of the permanent resident population",
+  statbot_ind_1_01_020<-data.frame(class_id="1_01_020",class_name="immigration_incl._change_of_population_type",name_de="Einwanderung inkl. Änderung des Bevölkerungstyps",name_fr="Immigration, y compris les changements de type de population",
+                                   name_it="Immigrazione inclusi i cambiamenti del tipo di popolazione",name_en="Immigration incl. change of population type",
+                                   description_de="Einwanderung inkl. Änderung des Bevölkerungstyps",description_fr="Immigration, y compris les changements de type de population",
+                                   description_it="Immigrazione inclusi i cambiamenti del tipo di popolazione",description_en="Immigration incl. change of population type",
                                    unit_short_de="Anzahl",unit_short_fr="Anzahl",unit_short_it="Anzahl",unit_short_en="Anzahl",
                                    unit_long_de="Anzahl",unit_long_fr="Anzahl",unit_long_it="Anzahl",unit_long_en="Anzahl",
-                                   source="BFS-STATPOP",dim1_id=37,dim2_id=39,dim3_id=40,dim4_id=NA,dim5_id=NA,dim6_id=NA,last_updated=NA,min_year=2011,max_year=2020)
+                                   source="BFS-STATPOP",dim1_id=37,dim2_id=39,dim3_id=NA,dim4_id=NA,dim5_id=NA,dim6_id=NA,last_updated=NA,min_year=2011,max_year=2020)
 
 
 
