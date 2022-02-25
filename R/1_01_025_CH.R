@@ -1,8 +1,8 @@
-#' Function do download the dataset with the id: 1_01_020_CH
+#' Function do download the dataset with the id: 1_01_025_CH
 #'
 #' Created by: Jorin Steiger
-#' Created at: 2022-02-24
-#' Version 3.2.0 - 2022-02-24
+#' Created at: 2022-02-25
+#' Version 3.2.0 - 2022-02-25
 #'
 #' History
 #'
@@ -12,8 +12,8 @@
 #' @param flag_force_update To force an update of the Dataset. Default: FALSE
 #'
 #' @export
-statbot_src_1_01_020_CH <- function(flag_force_update=FALSE){
-  destfile<-"temp/1_01_020_CH.px"
+statbot_src_1_01_025_CH <- function(flag_force_update=FALSE){
+  destfile<-"temp/1_01_025_CH.px"
   download.file(paste0("https://www.bfs.admin.ch/bfsstatic/dam/assets/",get_bfs_asset_nr("px-x-0103010200_121"),"/master"),destfile=destfile)
 
   if(check_changes_in_input_file(destfile)|flag_force_update){
@@ -30,7 +30,7 @@ statbot_src_1_01_020_CH <- function(flag_force_update=FALSE){
 
     # filter for type_of_migration == Einwanderung inkl. Änderung des Bevölkerungstyps
 
-    df <- df %>% dplyr::filter(Migrationstyp=="Intrakantonaler Zuzug")
+    df <- df %>% dplyr::filter(Migrationstyp=="Intrakantonaler Wegzug")
     df <- subset(df, select = -Migrationstyp)
 
 
@@ -70,8 +70,8 @@ statbot_src_1_01_020_CH <- function(flag_force_update=FALSE){
 
 
 
-    write.csv(df,"data/values/1_01_020_CH.csv",row.names = F)
-    update_last_updated("1_01_020")
+    write.csv(df,"data/values/1_01_025_CH.csv",row.names = F)
+    update_last_updated("1_01_025")
 
     #convert_and_write_per_unit(df,"1_01_001_CH.csv",how_many=1000)
 
