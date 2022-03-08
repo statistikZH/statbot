@@ -72,15 +72,14 @@ create_classes <-function(){
                                    source="BFS-BEVNAT",dim1_id=31,dim2_id=NA,dim3_id=NA,dim4_id=NA,dim5_id=NA,dim6_id=NA,last_updated=NA,min_year=2000,max_year=2020)
 
 
-  statbot_ind_1_01_020<-data.frame(class_id="1_01_020",class_name="immigration_incl._change_of_population_type",name_de="Einwanderung inkl. Änderung des Bevölkerungstyps",name_fr="Immigration, y compris les changements de type de population",
+  statbot_ind_1_01_020<-data.frame(class_id="1_01_020",class_name="immigration_incl_change_of_population_type",name_de="Einwanderung inkl. Änderung des Bevölkerungstyps",name_fr="Immigration, y compris les changements de type de population",
                                    name_it="Immigrazione inclusi i cambiamenti del tipo di popolazione",name_en="Immigration incl. change of population type",
                                    description_de="Einwanderung inkl. Änderung des Bevölkerungstyps",description_fr="Immigration, y compris les changements de type de population",
                                    description_it="Immigrazione inclusi i cambiamenti del tipo di popolazione",description_en="Immigration incl. change of population type",
                                    unit_short_de="Anzahl",unit_short_fr="Anzahl",unit_short_it="Anzahl",unit_short_en="Anzahl",
                                    unit_long_de="Anzahl",unit_long_fr="Anzahl",unit_long_it="Anzahl",unit_long_en="Anzahl",
                                    source="BFS-STATPOP",dim1_id=37,dim2_id=39,dim3_id=NA,dim4_id=NA,dim5_id=NA,dim6_id=NA,last_updated=NA,min_year=2011,max_year=2020)
-  # ----------
-  # change class_name
+
 
   statbot_ind_1_01_021<-data.frame(class_id="1_01_021",class_name="emigration",name_de="Auswanderung",name_fr="Emigration",
                                    name_it="Emigrazione",name_en="Emigration",description_de="Auswanderung",description_fr="Emigration",
