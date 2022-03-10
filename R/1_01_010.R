@@ -15,6 +15,8 @@
 statbot_src_1_01_010_CH <- function(flag_force_update=FALSE){
   destfile<-"temp/1_01_010_CH.px"
   download.file(paste0("https://www.bfs.admin.ch/bfsstatic/dam/assets/",get_bfs_asset_nr("px-x-0102020203_103"),"/master"),destfile=destfile)
+  destfile2<-"temp/divorces_longterm.px"
+  download.file(paste0("https://www.bfs.admin.ch/bfsstatic/dam/assets/",get_bfs_asset_nr("px-x-0102020203_110"),"/master"),destfile=destfile2)
 
   if(check_changes_in_input_file(destfile)|flag_force_update){
     if(flag_force_update) print("flag_force_update") else print("Changes found")
@@ -25,7 +27,7 @@ statbot_src_1_01_010_CH <- function(flag_force_update=FALSE){
 
     df<-as.data.frame(df)
 
-    new_names <- c("citizenship_category_of_wife", "citizenship_category_of_husband", "duration_of_marriage","spatialunit_name", "jahr", "value")
+    new_names <- c("citizenship_category_wife", "citizenship_category_husband", "duration_of_marriage","spatialunit_name", "jahr", "value")
 
     # Only keep communes - other granularities will be added up again later
     names(df) <- new_names
@@ -44,18 +46,45 @@ statbot_src_1_01_010_CH <- function(flag_force_update=FALSE){
     df$time_value<-paste0("31.12.",df$jahr)
     df$period_value<-NA
 
+    unique_dimension_names<-c("citizenship_category_wife","citizenship_category_husband","duration_of_marriage")
     dimension_table <- get_dimensions(unique_dimension_names)
 
-    df<-join_dimension_value(df,"citizenship_category_of_wife",dimension_table, main_language)
-    df<-join_dimension_value(df,"citizenship_category_of_husband",dimension_table, main_language)
+    main_language<-"de"
+    df<-join_dimension_value(df,"citizenship_category_wife",dimension_table, main_language)
+    df<-join_dimension_value(df,"citizenship_category_husband",dimension_table, main_language)
     df<-join_dimension_value(df,"duration_of_marriage",dimension_table, main_language)
 
-    df<-df %>% select(all_of(GLOBAL_TOTAL_LIST), citizenship_category_of_wife, citizenship_category_of_husband,duration_of_marriage)
+    df<-df %>% select(all_of(GLOBAL_TOTAL_LIST), citizenship_category_wife, citizenship_category_husband,duration_of_marriage)
 
-    df<-add_granularity_levels_up(df,list_ontologies=c("A.ADM2","A.ADM1","CH"),list_dimensions=c("citizenship_category_of_wife","citizenship_category_of_husband","duration_of_marriage"))
+    df<-add_granularity_levels_up(df,list_ontologies=c("A.ADM2","A.ADM1","CH"),list_dimensions=c("citizenship_category_wife","citizenship_category_husband","duration_of_marriage"))
 
-    df<-df %>% select(all_of(GLOBAL_TOTAL_LIST), citizenship_category_of_wife, citizenship_category_of_husband,duration_of_marriage)
+    df<-df %>% select(all_of(GLOBAL_TOTAL_LIST), citizenship_category_wife, citizenship_category_husband,duration_of_marriage)
 
+    # added on 09.03.2022 to include older data
+
+    df2<-statbot_read.px(destfile2)
+    df2<-as.data.frame(df2)
+
+    oldest_year_df<-1969
+
+    df2<-df2[as.numeric(as.character(df2$Jahr))<oldest_year_df&df2$Demografisches.Merkmal.und.Indikator=="Scheidungen - Total",]
+
+    df2$Demografisches.Merkmal.und.Indikator<-NULL
+    df2<-df2 %>% rename(time_value=Jahr)
+    df2$spatialunit_name<-"Schweiz"
+    df2$spatialunit_current_id<-0
+    df2$spatialunit_hist_id<-0
+    df2$spatialunit_ontology<-"CH"
+    df2$time_value<-paste0("31.12.",df2$time_value)
+    df2$period_value<-NA
+    df2$citizenship_category_wife<--1
+    df2$citizenship_category_husband<--1
+    df2$duration_of_marriage<--1
+
+    df2<-df2 %>% select(all_of(GLOBAL_TOTAL_LIST), citizenship_category_wife, citizenship_category_husband,duration_of_marriage)
+
+    df<-rbind(df,df2)
+    #end of new code from 09.03.2022
 
 
     write.csv(df,"data/values/1_01_010_CH.csv",row.names = F)
