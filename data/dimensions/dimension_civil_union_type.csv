@@ -1,0 +1,4 @@
+"dim_id","unique_name","dim_name_de","dim_name_fr","dim_name_it","dim_name_en","value_id","value_name_de","value_name_fr","value_name_it","value_name_en"
+44,"civil_union_type","Partnerschaft","Partenariat","Unione","Partnership","-1","Partnerschaft - Total","Partenariat - total","Unione - totale","Partnership - total"
+44,"civil_union_type","Partnerschaft","Partenariat","Unione","Partnership","1","Männer","Hommes","Uomini","Men"
+44,"civil_union_type","Partnerschaft","Partenariat","Unione","Partnership","2","Frauen","Femmes","Donne","Women"

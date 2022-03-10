@@ -56,7 +56,7 @@ statbot_src_1_01_012_CH <- function(flag_force_update=FALSE){
     df<-df %>% select(all_of(GLOBAL_TOTAL_LIST), age_class_wife, citizenship_selection_wife,age_class_husband,citizenship_selection_husband,duration_of_marriage)
 
 
-    write.csv(df,"data/values/1_01_012_CH.csv",row.names = F)
+    data.table::fwrite(df,"data/values/1_01_012_CH.csv",row.names = F)
     update_last_updated("1_01_012")
 
     #convert_and_write_per_unit(df,"1_01_012_CH.csv",how_many=1000)

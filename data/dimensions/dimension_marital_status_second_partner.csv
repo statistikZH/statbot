@@ -1,0 +1,7 @@
+"dim_id","unique_name","dim_name_de","dim_name_fr","dim_name_it","dim_name_en","value_id","value_name_de","value_name_fr","value_name_it","value_name_en"
+46,"marital_status_second_partner","Zivilstand Partner in 2","Etat civil partenaire 2","Stato civile partner 2","Marital status partner 2","-1","Zivilstand Partner/in 2 - Total","Etat civil partenaire 2 - total","Stato civile partner 2 - totale","Marital status partner 2 - total"
+46,"marital_status_second_partner","Zivilstand Partner in 2","Etat civil partenaire 2","Stato civile partner 2","Marital status partner 2","1","Ledig","Célibataire","Celibe/nubile","Single"
+46,"marital_status_second_partner","Zivilstand Partner in 2","Etat civil partenaire 2","Stato civile partner 2","Marital status partner 2","3","Verwitwet","Veuf/ve","Vedovo/a","Widowed"
+46,"marital_status_second_partner","Zivilstand Partner in 2","Etat civil partenaire 2","Stato civile partner 2","Marital status partner 2","4","Geschieden","Divorcé/e","Divorziato/a","Divorced"
+46,"marital_status_second_partner","Zivilstand Partner in 2","Etat civil partenaire 2","Stato civile partner 2","Marital status partner 2","7","Aufgelöste Partnerschaft","Partenariat dissous","Unione domestica sciolta","Partnership dissolved"
+46,"marital_status_second_partner","Zivilstand Partner in 2","Etat civil partenaire 2","Stato civile partner 2","Marital status partner 2","9","Anderer","Autre","Altro","Other"
