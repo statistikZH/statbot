@@ -121,6 +121,14 @@ create_classes <-function(){
                                    unit_long_de="Anzahl",unit_long_fr="Anzahl",unit_long_it="Anzahl",unit_long_en="Anzahl",
                                    source="BFS-STATPOP",dim1_id=37,dim2_id=39,dim3_id=NA,dim4_id=NA,dim5_id=NA,dim6_id=NA,last_updated=NA,min_year=2011,max_year=2020)
 
+  statbot_ind_1_01_026<-data.frame(class_id="1_01_026",class_name="citizens_abroad",name_de="Staatsangehörige im Ausland",name_fr="Ressortissants à l'étranger",
+                                   name_it="Cittadini all'estero",name_en="Citizens Abroad",
+                                   description_de="Staatsangehörige im Ausland",description_fr="Ressortissants à l'étranger",
+                                   description_it="Cittadini all'estero",description_en="Citizens Abroad",
+                                   unit_short_de="Anzahl",unit_short_fr="Anzahl",unit_short_it="Anzahl",unit_short_en="Anzahl",
+                                   unit_long_de="Anzahl",unit_long_fr="Anzahl",unit_long_it="Anzahl",unit_long_en="Anzahl",
+                                   source="BFS-STATPOP",dim1_id=37,dim2_id=39,dim3_id=40,dim4_id=41,dim5_id=NA,dim6_id=NA,last_updated=NA,min_year=2017,max_year=2020)
+
   #----------
 
   # 'favorite_firstname_amount': '1_01_017',

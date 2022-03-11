@@ -1,0 +1,4 @@
+"dim_id","unique_name","dim_name_de","dim_name_fr","dim_name_it","dim_name_en","value_id","value_name_de","value_name_fr","value_name_it","value_name_en"
+40,"citizenship_status","Bürgerrecht","Droit de cité",NA,NA,"-1","Schweiz - Total","Suisse - Total",NA,NA
+40,"citizenship_status","Bürgerrecht","Droit de cité",NA,NA,"1","Nur Schweizer Bürger","Uniquement de nationalité suisse",NA,NA
+40,"citizenship_status","Bürgerrecht","Droit de cité",NA,NA,"2","Mehrfachbürger","Possédant plusieurs nationalités",NA,NA
