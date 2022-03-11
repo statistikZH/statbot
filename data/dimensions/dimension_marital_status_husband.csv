@@ -1,0 +1,6 @@
+"dim_id","unique_name","dim_name_de","dim_name_fr","dim_name_it","dim_name_en","value_id","value_name_de","value_name_fr","value_name_it","value_name_en"
+52,"marital_status_husband","Zivilstand des Ehemannes","Etat civil de l époux","Stato civile del marito","Marital status of husband","-1","Zivilstand des Ehemannes - Total","Etat civil de l'époux - total","Stato civile del marito - totale","Marital status of husband - total"
+52,"marital_status_husband","Zivilstand des Ehemannes","Etat civil de l époux","Stato civile del marito","Marital status of husband","1","Ledig","Célibataire","Celibe","Single"
+52,"marital_status_husband","Zivilstand des Ehemannes","Etat civil de l époux","Stato civile del marito","Marital status of husband","3","Verwitwet","Veuf","Vedovo","Widowed"
+52,"marital_status_husband","Zivilstand des Ehemannes","Etat civil de l époux","Stato civile del marito","Marital status of husband","4","Geschieden","Divorcé","Divorziato","Divorced"
+52,"marital_status_husband","Zivilstand des Ehemannes","Etat civil de l époux","Stato civile del marito","Marital status of husband","9","Anderer (unverheiratet, aufgelöste Partnerschaft)","Autre (non marié, partenariat dissous)","Altro (Non coniugato, unione domestica sciolta)","Other (unmarried, partnership dissolved)"

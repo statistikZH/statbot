@@ -55,7 +55,7 @@ extract_meta_and_generate_dimensions<-function(input_df, unique_names, ignore_la
     all_ignore_dimensions_pattern<-NA
   }
 
-  browser()
+
   # extract the needed value informations
   all_language_values_needed <- lapply(all_language_values, function(x) prep_needed_values(x, ignore_dim = all_ignore_dimensions_pattern))
 
