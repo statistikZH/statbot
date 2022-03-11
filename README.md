@@ -2,7 +2,7 @@
 
 In this folder are the main data warehouse scripts that run all the different R and python scripts in order to generate the newest data for statbot. It is supposed to be built as some form of cronjob to be executed once a day. All the statistical offices can contribute here with scripts. Or they can contribute by adding additional data-values-files and we will find a way to grab those files and insert the values.
 
-For those who would like to participate, we prepared ['under this link a documentation'](articles/data_collection.html) that can be followed step by step.
+For those who would like to participate, we prepared ['under this link a documentation'](docs/articles/data_collection.html) that can be followed step by step.
 
 Important for this project is a DB-schema, in which all the data are collected. Right now the following schema is used:
 
@@ -14,7 +14,7 @@ Next to the fact-table, there is a class-table that contains all the datasets (c
 
 Important Temporary-Notice: The pxR-package to read px-files within R has a bug. Use the script here in statbot_read_px.R to read large px-files until the authors fix that package (PR is there pending for a while). It is included in this R-environment and is thus loaded automatically if you run the R-project.
 
-We added some additional documentation to some functions, with which ['metadata can be extracted from px-cubes'](articles/metadata.html).
+We added some additional documentation to some functions, with which ['metadata can be extracted from px-cubes'](docs/articles/metadata.html).
 
 
 ### Repo-structure
