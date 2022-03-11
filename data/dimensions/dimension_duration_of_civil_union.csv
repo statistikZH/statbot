@@ -1,0 +1,6 @@
+"dim_id","unique_name","dim_name_de","dim_name_fr","dim_name_it","dim_name_en","value_id","value_name_de","value_name_fr","value_name_it","value_name_en"
+50,"duration_of_civil_union","Dauer der Partnerschaft","Durée du partenariat","Durata dell unione","Duration of partnership","-1","Dauer der Partnerschaft - Total","Durée du partenariat - total","Durata dell'unione - totale","Duration of partnership - total"
+50,"duration_of_civil_union","Dauer der Partnerschaft","Durée du partenariat","Durata dell unione","Duration of partnership","1","0-4 Jahre","0-4 ans","0-4 anni","0-4 years"
+50,"duration_of_civil_union","Dauer der Partnerschaft","Durée du partenariat","Durata dell unione","Duration of partnership","2","5-9 Jahre","5-9 ans","5-9 anni","5-9 years"
+50,"duration_of_civil_union","Dauer der Partnerschaft","Durée du partenariat","Durata dell unione","Duration of partnership","3","10-14 Jahre","10-14 ans","10-14 anni","10-14 years"
+50,"duration_of_civil_union","Dauer der Partnerschaft","Durée du partenariat","Durata dell unione","Duration of partnership","4","15-19 Jahre","15-19 ans","15-19 anni","15-19 years"

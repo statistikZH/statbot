@@ -20,7 +20,3 @@ BuildType: Package
 PackageUseDevtools: Yes
 PackageInstallArgs: --no-multiarch --with-keep.source
 PackageRoxygenize: rd,collate,namespace
-
-PythonType: virtualenv
-PythonVersion: 3.9.5
-PythonPath: ~/gitrepos/statbot/statbot_env/bin/python3.9

@@ -94,7 +94,9 @@ extract_needed_names <- function(x, ignore_dim){
     ignore_dim <- NULL
   }
 
-  not_needed_dimensions <- c("Jahr", "Anné", "Anno", "Year", "Gemeinde", "Commune", "Comune", "Municipality", "Kanton", "Canton", "Cantone", "District", "cantone", "canton", ignore_dim)
+  not_needed_dimensions <- c("Jahr", "Année","Anné", "Anno", "Year", "Gemeinde", "Commune", "Comune", "Municipality", "Kanton", "Canton", "Cantone", "District", "cantone", "canton")
+  not_needed_dimensions<-paste0("^",not_needed_dimensions,"$")
+  not_needed_dimensions<-c(not_needed_dimensions, ignore_dim)
 
   x_needed <- x[!grepl(paste0(not_needed_dimensions, collapse = "|"), x)]
 
@@ -223,9 +225,11 @@ get_column_name_all_languages <- function(df_px, column_name){
 
   col_names <- lapply(df_px, function(x) names(x))
 
-  col_index <- unique(unlist(lapply(col_names, function(x) which(grepl(column_name,x)))))
+  col_index <- unique(unlist(lapply(col_names, function(x) which(grepl(paste0("^",column_name,"$"),x)))))
 
   all_col_names <- unlist(lapply(df_px, function(x) names(x[col_index])))
+
+  all_col_names <-paste0("^",all_col_names,"$")
 
   col_pattern <- paste0(all_col_names, collapse = "|")
 

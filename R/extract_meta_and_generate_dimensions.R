@@ -43,18 +43,19 @@ extract_meta_and_generate_dimensions<-function(input_df, unique_names, ignore_la
   }else{
     fuzzy_column_pattern <- "not existing"
   }
-
   # get the column patterns of the columns to be ignored
   if(!is.na(ignore_dimensions)){
+
     ignore_dimensions_pattern <- lapply(ignore_dimensions, function(x) get_column_name_all_languages(all_language_values, x))
 
-    all_ignore_dimensions_pattern <- paste0(unlist(ignore_dimensions_pattern), collapse = "|")
+    #ignore_dimensions_pattern <-paste0("^",unlist(ignore_dimensions_pattern),"$")
+    all_ignore_dimensions_pattern <- paste0(ignore_dimensions_pattern, collapse = "|")
 
   }else{
     all_ignore_dimensions_pattern<-NA
   }
 
-
+  browser()
   # extract the needed value informations
   all_language_values_needed <- lapply(all_language_values, function(x) prep_needed_values(x, ignore_dim = all_ignore_dimensions_pattern))
 
@@ -137,7 +138,7 @@ extract_meta_and_generate_dimensions<-function(input_df, unique_names, ignore_la
       add_col<- function(df, col_name){
         mutate(df, !!sym(col_name) := NA_character_)
       }
-browser()
+
       dim_names_df_all_languages <- map(dim_names_df, ~reduce(paste0("dim_name_", missing_languages), add_col, .init = .x))
       value_names_df_all_languages <- map(value_names_df, ~reduce(paste0("value_name_", missing_languages), add_col, .init = .x))
     }else{
