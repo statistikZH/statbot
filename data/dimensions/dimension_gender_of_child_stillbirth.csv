@@ -1,0 +1,4 @@
+"dim_id","unique_name","dim_name_de","dim_name_fr","dim_name_it","dim_name_en","value_id","value_name_de","value_name_fr","value_name_it","value_name_en"
+56,"gender_of_child_stillbirth","Geschlecht","Sexe","Sesso","Sex","-1","Geschlecht - Total","Sexe - total","Sesso - totale","Sex - total"
+56,"gender_of_child_stillbirth","Geschlecht","Sexe","Sesso","Sex","1","Knabe","Garçon","Bambino","Boy"
+56,"gender_of_child_stillbirth","Geschlecht","Sexe","Sesso","Sex","2","Mädchen","Fille","Bambina","Girl"

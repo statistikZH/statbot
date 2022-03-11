@@ -1,7 +1,7 @@
-# Script to create a dimension table for the dataset:  1_01_004_CH
+# Script to create a dimension table for the dataset:  1_01_015_CH
 #
-# Created by: J.Steiger
-# Created at: 2022-02-22
+# Created by: C.Ruiz
+# Created at: 2022-03-11
 #
 # This script helps to create a dimension table for a px-table.
 #
@@ -23,10 +23,10 @@
 # For adding additional languages, use the language abbreviations: de, fr, it, en
 devtools::load_all(".")
 
-destfile<-"temp/1_01_004_CH.px"
+destfile<-"temp/1_01_015_CH.px"
 
 if(!file.exists(destfile)){
-  download.file(paste0("https://www.bfs.admin.ch/bfsstatic/dam/assets/",get_bfs_asset_nr("px-x-0102020204_102"),"/master"),destfile=destfile)
+  download.file(paste0("https://www.bfs.admin.ch/bfsstatic/dam/assets/",get_bfs_asset_nr("px-x-0102020204_112"),"/master"),destfile=destfile)
 }
 
 
@@ -59,7 +59,7 @@ additional_languages <- NA
 fuzzy_column_name <- NA
 
 # add all unique dimension names
-unique_dimension_names <- c("gender_of_child", "citizenship_category_of_child", "age_class_of_mother")
+unique_dimension_names <- c("demographic_characteristic_stillbirth", "gender_of_child_stillbirth")
 
 # should any dimension be ignored? the reason could be, that it already exists
 ignore_dimensions <- NA
