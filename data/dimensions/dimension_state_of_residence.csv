@@ -1,0 +1,248 @@
+"dim_id","unique_name","dim_name_de","dim_name_fr","dim_name_it","dim_name_en","value_id","value_name_de","value_name_fr","value_name_it","value_name_en"
+39,"state_of_residence","Wohnsitzstaat","Pays de résidence",NA,NA,"-1","Wohnsitzstaat Total","Pays de résidence Total",NA,NA
+39,"state_of_residence","Wohnsitzstaat","Pays de résidence",NA,NA,"1","EU-Staaten und -gebiete","Pays et territoires de l'UE",NA,NA
+39,"state_of_residence","Wohnsitzstaat","Pays de résidence",NA,NA,"2","EFTA-Staaten und -gebiete","Pays et territoires de l'AELE",NA,NA
+39,"state_of_residence","Wohnsitzstaat","Pays de résidence",NA,NA,"3","Übriges Europa","Autres pays de l'Europe",NA,NA
+39,"state_of_residence","Wohnsitzstaat","Pays de résidence",NA,NA,"4","Aussereuropa","Pays hors Europe",NA,NA
+39,"state_of_residence","Wohnsitzstaat","Pays de résidence",NA,NA,"5","Europa","Europe",NA,NA
+39,"state_of_residence","Wohnsitzstaat","Pays de résidence",NA,NA,"6","Albanien","Albanie",NA,NA
+39,"state_of_residence","Wohnsitzstaat","Pays de résidence",NA,NA,"7","Andorra","Andorre",NA,NA
+39,"state_of_residence","Wohnsitzstaat","Pays de résidence",NA,NA,"8","Belgien","Belgique",NA,NA
+39,"state_of_residence","Wohnsitzstaat","Pays de résidence",NA,NA,"9","Bulgarien","Bulgarie",NA,NA
+39,"state_of_residence","Wohnsitzstaat","Pays de résidence",NA,NA,"10","Dänemark","Danemark",NA,NA
+39,"state_of_residence","Wohnsitzstaat","Pays de résidence",NA,NA,"11","Deutschland","Allemagne",NA,NA
+39,"state_of_residence","Wohnsitzstaat","Pays de résidence",NA,NA,"12","Färöer","Îles Féroé",NA,NA
+39,"state_of_residence","Wohnsitzstaat","Pays de résidence",NA,NA,"13","Finnland","Finlande",NA,NA
+39,"state_of_residence","Wohnsitzstaat","Pays de résidence",NA,NA,"14","Frankreich","France",NA,NA
+39,"state_of_residence","Wohnsitzstaat","Pays de résidence",NA,NA,"15","Gibraltar","Gibraltar",NA,NA
+39,"state_of_residence","Wohnsitzstaat","Pays de résidence",NA,NA,"16","Griechenland","Grèce",NA,NA
+39,"state_of_residence","Wohnsitzstaat","Pays de résidence",NA,NA,"17","Vereinigtes Königreich","Royaume-Uni",NA,NA
+39,"state_of_residence","Wohnsitzstaat","Pays de résidence",NA,NA,"18","Irland","Irlande",NA,NA
+39,"state_of_residence","Wohnsitzstaat","Pays de résidence",NA,NA,"19","Island","Islande",NA,NA
+39,"state_of_residence","Wohnsitzstaat","Pays de résidence",NA,NA,"20","Italien","Italie",NA,NA
+39,"state_of_residence","Wohnsitzstaat","Pays de résidence",NA,NA,"21","Liechtenstein","Liechtenstein",NA,NA
+39,"state_of_residence","Wohnsitzstaat","Pays de résidence",NA,NA,"22","Luxemburg","Luxembourg",NA,NA
+39,"state_of_residence","Wohnsitzstaat","Pays de résidence",NA,NA,"23","Malta","Malte",NA,NA
+39,"state_of_residence","Wohnsitzstaat","Pays de résidence",NA,NA,"24","Insel Man","Île de Man",NA,NA
+39,"state_of_residence","Wohnsitzstaat","Pays de résidence",NA,NA,"25","Monaco","Monaco",NA,NA
+39,"state_of_residence","Wohnsitzstaat","Pays de résidence",NA,NA,"26","Niederlande","Pays-Bas",NA,NA
+39,"state_of_residence","Wohnsitzstaat","Pays de résidence",NA,NA,"27","Norwegen","Norvège",NA,NA
+39,"state_of_residence","Wohnsitzstaat","Pays de résidence",NA,NA,"28","Österreich","Autriche",NA,NA
+39,"state_of_residence","Wohnsitzstaat","Pays de résidence",NA,NA,"29","Polen","Pologne",NA,NA
+39,"state_of_residence","Wohnsitzstaat","Pays de résidence",NA,NA,"30","Portugal","Portugal",NA,NA
+39,"state_of_residence","Wohnsitzstaat","Pays de résidence",NA,NA,"31","Rumänien","Roumanie",NA,NA
+39,"state_of_residence","Wohnsitzstaat","Pays de résidence",NA,NA,"32","San Marino","Saint-Marin",NA,NA
+39,"state_of_residence","Wohnsitzstaat","Pays de résidence",NA,NA,"33","Schweden","Suède",NA,NA
+39,"state_of_residence","Wohnsitzstaat","Pays de résidence",NA,NA,"34","Spanien","Espagne",NA,NA
+39,"state_of_residence","Wohnsitzstaat","Pays de résidence",NA,NA,"35","Azoren","Açores",NA,NA
+39,"state_of_residence","Wohnsitzstaat","Pays de résidence",NA,NA,"36","Türkei","Turquie",NA,NA
+39,"state_of_residence","Wohnsitzstaat","Pays de résidence",NA,NA,"37","Ungarn","Hongrie",NA,NA
+39,"state_of_residence","Wohnsitzstaat","Pays de résidence",NA,NA,"38","Vatikanstadt","Cité du Vatican",NA,NA
+39,"state_of_residence","Wohnsitzstaat","Pays de résidence",NA,NA,"39","Zypern","Chypre",NA,NA
+39,"state_of_residence","Wohnsitzstaat","Pays de résidence",NA,NA,"40","Slowakei","Slovaquie",NA,NA
+39,"state_of_residence","Wohnsitzstaat","Pays de résidence",NA,NA,"41","Tschechien","Tchéquie",NA,NA
+39,"state_of_residence","Wohnsitzstaat","Pays de résidence",NA,NA,"42","Serbien","Serbie",NA,NA
+39,"state_of_residence","Wohnsitzstaat","Pays de résidence",NA,NA,"43","Kroatien","Croatie",NA,NA
+39,"state_of_residence","Wohnsitzstaat","Pays de résidence",NA,NA,"44","Slowenien","Slovénie",NA,NA
+39,"state_of_residence","Wohnsitzstaat","Pays de résidence",NA,NA,"45","Bosnien und Herzegowina","Bosnie et Herzégovine",NA,NA
+39,"state_of_residence","Wohnsitzstaat","Pays de résidence",NA,NA,"46","Montenegro","Monténégro",NA,NA
+39,"state_of_residence","Wohnsitzstaat","Pays de résidence",NA,NA,"47","Nordmazedonien","Macédoine du Nord",NA,NA
+39,"state_of_residence","Wohnsitzstaat","Pays de résidence",NA,NA,"48","Kosovo","Kosovo",NA,NA
+39,"state_of_residence","Wohnsitzstaat","Pays de résidence",NA,NA,"49","Estland","Estonie",NA,NA
+39,"state_of_residence","Wohnsitzstaat","Pays de résidence",NA,NA,"50","Lettland","Lettonie",NA,NA
+39,"state_of_residence","Wohnsitzstaat","Pays de résidence",NA,NA,"51","Litauen","Lituanie",NA,NA
+39,"state_of_residence","Wohnsitzstaat","Pays de résidence",NA,NA,"52","Moldova","Moldova",NA,NA
+39,"state_of_residence","Wohnsitzstaat","Pays de résidence",NA,NA,"53","Russland","Russie",NA,NA
+39,"state_of_residence","Wohnsitzstaat","Pays de résidence",NA,NA,"54","Ukraine","Ukraine",NA,NA
+39,"state_of_residence","Wohnsitzstaat","Pays de résidence",NA,NA,"55","Belarus","Bélarus",NA,NA
+39,"state_of_residence","Wohnsitzstaat","Pays de résidence",NA,NA,"56","Jersey","Jersey",NA,NA
+39,"state_of_residence","Wohnsitzstaat","Pays de résidence",NA,NA,"57","Guernsey","Guernesey",NA,NA
+39,"state_of_residence","Wohnsitzstaat","Pays de résidence",NA,NA,"58","Svalbard und Jan Mayen","Svalbard et Île Jan Mayen",NA,NA
+39,"state_of_residence","Wohnsitzstaat","Pays de résidence",NA,NA,"59","Alandinseln","Îles d'Aland",NA,NA
+39,"state_of_residence","Wohnsitzstaat","Pays de résidence",NA,NA,"60","Afrika","Afrique",NA,NA
+39,"state_of_residence","Wohnsitzstaat","Pays de résidence",NA,NA,"61","Äquatorialguinea","Guinée équatoriale",NA,NA
+39,"state_of_residence","Wohnsitzstaat","Pays de résidence",NA,NA,"62","Äthiopien","Éthiopie",NA,NA
+39,"state_of_residence","Wohnsitzstaat","Pays de résidence",NA,NA,"63","Dschibuti","Djibouti",NA,NA
+39,"state_of_residence","Wohnsitzstaat","Pays de résidence",NA,NA,"64","Algerien","Algérie",NA,NA
+39,"state_of_residence","Wohnsitzstaat","Pays de résidence",NA,NA,"65","Angola","Angola",NA,NA
+39,"state_of_residence","Wohnsitzstaat","Pays de résidence",NA,NA,"66","Botsuana","Botswana",NA,NA
+39,"state_of_residence","Wohnsitzstaat","Pays de résidence",NA,NA,"67","Burundi","Burundi",NA,NA
+39,"state_of_residence","Wohnsitzstaat","Pays de résidence",NA,NA,"68","Benin","Bénin",NA,NA
+39,"state_of_residence","Wohnsitzstaat","Pays de résidence",NA,NA,"69","Côte d'Ivoire","Côte d'Ivoire",NA,NA
+39,"state_of_residence","Wohnsitzstaat","Pays de résidence",NA,NA,"70","Gabun","Gabon",NA,NA
+39,"state_of_residence","Wohnsitzstaat","Pays de résidence",NA,NA,"71","Gambia","Gambie",NA,NA
+39,"state_of_residence","Wohnsitzstaat","Pays de résidence",NA,NA,"72","Ghana","Ghana",NA,NA
+39,"state_of_residence","Wohnsitzstaat","Pays de résidence",NA,NA,"73","Guinea-Bissau","Guinée-Bissau",NA,NA
+39,"state_of_residence","Wohnsitzstaat","Pays de résidence",NA,NA,"74","Guinea","Guinée",NA,NA
+39,"state_of_residence","Wohnsitzstaat","Pays de résidence",NA,NA,"75","Kamerun","Cameroun",NA,NA
+39,"state_of_residence","Wohnsitzstaat","Pays de résidence",NA,NA,"76","Kanarische Inseln","Îles Canaries",NA,NA
+39,"state_of_residence","Wohnsitzstaat","Pays de résidence",NA,NA,"77","Cabo Verde","Cabo Verde",NA,NA
+39,"state_of_residence","Wohnsitzstaat","Pays de résidence",NA,NA,"78","Kenia","Kenya",NA,NA
+39,"state_of_residence","Wohnsitzstaat","Pays de résidence",NA,NA,"79","Komoren","Comores",NA,NA
+39,"state_of_residence","Wohnsitzstaat","Pays de résidence",NA,NA,"80","Kongo (Brazzaville)","Congo (Brazzaville)",NA,NA
+39,"state_of_residence","Wohnsitzstaat","Pays de résidence",NA,NA,"81","Kongo (Kinshasa)","Congo (Kinshasa)",NA,NA
+39,"state_of_residence","Wohnsitzstaat","Pays de résidence",NA,NA,"82","Lesotho","Lesotho",NA,NA
+39,"state_of_residence","Wohnsitzstaat","Pays de résidence",NA,NA,"83","Liberia","Libéria",NA,NA
+39,"state_of_residence","Wohnsitzstaat","Pays de résidence",NA,NA,"84","Libyen","Libye",NA,NA
+39,"state_of_residence","Wohnsitzstaat","Pays de résidence",NA,NA,"85","Madagaskar","Madagascar",NA,NA
+39,"state_of_residence","Wohnsitzstaat","Pays de résidence",NA,NA,"86","Madeira","Madère",NA,NA
+39,"state_of_residence","Wohnsitzstaat","Pays de résidence",NA,NA,"87","Malawi","Malawi",NA,NA
+39,"state_of_residence","Wohnsitzstaat","Pays de résidence",NA,NA,"88","Mali","Mali",NA,NA
+39,"state_of_residence","Wohnsitzstaat","Pays de résidence",NA,NA,"89","Marokko","Maroc",NA,NA
+39,"state_of_residence","Wohnsitzstaat","Pays de résidence",NA,NA,"90","Mauretanien","Mauritanie",NA,NA
+39,"state_of_residence","Wohnsitzstaat","Pays de résidence",NA,NA,"91","Mauritius","Maurice",NA,NA
+39,"state_of_residence","Wohnsitzstaat","Pays de résidence",NA,NA,"92","Mosambik","Mozambique",NA,NA
+39,"state_of_residence","Wohnsitzstaat","Pays de résidence",NA,NA,"93","Niger","Niger",NA,NA
+39,"state_of_residence","Wohnsitzstaat","Pays de résidence",NA,NA,"94","Nigeria","Nigéria",NA,NA
+39,"state_of_residence","Wohnsitzstaat","Pays de résidence",NA,NA,"95","Burkina Faso","Burkina Faso",NA,NA
+39,"state_of_residence","Wohnsitzstaat","Pays de résidence",NA,NA,"96","Reunion","Réunion",NA,NA
+39,"state_of_residence","Wohnsitzstaat","Pays de résidence",NA,NA,"97","Simbabwe","Zimbabwe",NA,NA
+39,"state_of_residence","Wohnsitzstaat","Pays de résidence",NA,NA,"98","Ruanda","Rwanda",NA,NA
+39,"state_of_residence","Wohnsitzstaat","Pays de résidence",NA,NA,"99","Sambia","Zambie",NA,NA
+39,"state_of_residence","Wohnsitzstaat","Pays de résidence",NA,NA,"100","São Tomé und Príncipe","Sao Tomé-et-Principe",NA,NA
+39,"state_of_residence","Wohnsitzstaat","Pays de résidence",NA,NA,"101","Senegal","Sénégal",NA,NA
+39,"state_of_residence","Wohnsitzstaat","Pays de résidence",NA,NA,"102","Seychellen","Seychelles",NA,NA
+39,"state_of_residence","Wohnsitzstaat","Pays de résidence",NA,NA,"103","Sierra Leone","Sierra Leone",NA,NA
+39,"state_of_residence","Wohnsitzstaat","Pays de résidence",NA,NA,"104","Somalia","Somalie",NA,NA
+39,"state_of_residence","Wohnsitzstaat","Pays de résidence",NA,NA,"105","Südafrika","Afrique du Sud",NA,NA
+39,"state_of_residence","Wohnsitzstaat","Pays de résidence",NA,NA,"106","Sudan","Soudan",NA,NA
+39,"state_of_residence","Wohnsitzstaat","Pays de résidence",NA,NA,"107","Namibia","Namibie",NA,NA
+39,"state_of_residence","Wohnsitzstaat","Pays de résidence",NA,NA,"108","Eswatini","Eswatini",NA,NA
+39,"state_of_residence","Wohnsitzstaat","Pays de résidence",NA,NA,"109","Tansania","Tanzanie",NA,NA
+39,"state_of_residence","Wohnsitzstaat","Pays de résidence",NA,NA,"110","Togo","Togo",NA,NA
+39,"state_of_residence","Wohnsitzstaat","Pays de résidence",NA,NA,"111","Tschad","Tchad",NA,NA
+39,"state_of_residence","Wohnsitzstaat","Pays de résidence",NA,NA,"112","Tunesien","Tunisie",NA,NA
+39,"state_of_residence","Wohnsitzstaat","Pays de résidence",NA,NA,"113","Uganda","Ouganda",NA,NA
+39,"state_of_residence","Wohnsitzstaat","Pays de résidence",NA,NA,"114","Ägypten","Égypte",NA,NA
+39,"state_of_residence","Wohnsitzstaat","Pays de résidence",NA,NA,"115","Zentralafrikanische Republik","République centrafricaine",NA,NA
+39,"state_of_residence","Wohnsitzstaat","Pays de résidence",NA,NA,"116","Mayotte","Mayotte",NA,NA
+39,"state_of_residence","Wohnsitzstaat","Pays de résidence",NA,NA,"117","Eritrea","Érythrée",NA,NA
+39,"state_of_residence","Wohnsitzstaat","Pays de résidence",NA,NA,"118","Südsudan","Soudan du Sud",NA,NA
+39,"state_of_residence","Wohnsitzstaat","Pays de résidence",NA,NA,"119","Spanisch-Nordafrika","Afrique du Nord Espagnole",NA,NA
+39,"state_of_residence","Wohnsitzstaat","Pays de résidence",NA,NA,"120","Amerika","Amérique",NA,NA
+39,"state_of_residence","Wohnsitzstaat","Pays de résidence",NA,NA,"121","Argentinien","Argentine",NA,NA
+39,"state_of_residence","Wohnsitzstaat","Pays de résidence",NA,NA,"122","Bahamas","Bahamas",NA,NA
+39,"state_of_residence","Wohnsitzstaat","Pays de résidence",NA,NA,"123","Barbados","Barbade",NA,NA
+39,"state_of_residence","Wohnsitzstaat","Pays de résidence",NA,NA,"124","Bermuda","Bermudes",NA,NA
+39,"state_of_residence","Wohnsitzstaat","Pays de résidence",NA,NA,"125","Bolivien","Bolivie",NA,NA
+39,"state_of_residence","Wohnsitzstaat","Pays de résidence",NA,NA,"126","Brasilien","Brésil",NA,NA
+39,"state_of_residence","Wohnsitzstaat","Pays de résidence",NA,NA,"127","Chile","Chili",NA,NA
+39,"state_of_residence","Wohnsitzstaat","Pays de résidence",NA,NA,"128","Costa Rica","Costa Rica",NA,NA
+39,"state_of_residence","Wohnsitzstaat","Pays de résidence",NA,NA,"129","Dominikanische Republik","République dominicaine",NA,NA
+39,"state_of_residence","Wohnsitzstaat","Pays de résidence",NA,NA,"130","Ecuador","Équateur",NA,NA
+39,"state_of_residence","Wohnsitzstaat","Pays de résidence",NA,NA,"131","El Salvador","El Salvador",NA,NA
+39,"state_of_residence","Wohnsitzstaat","Pays de résidence",NA,NA,"132","Falklandinseln","Îles Falkland",NA,NA
+39,"state_of_residence","Wohnsitzstaat","Pays de résidence",NA,NA,"133","Grönland","Groenland",NA,NA
+39,"state_of_residence","Wohnsitzstaat","Pays de résidence",NA,NA,"134","Guadeloupe","Guadeloupe",NA,NA
+39,"state_of_residence","Wohnsitzstaat","Pays de résidence",NA,NA,"135","Guatemala","Guatemala",NA,NA
+39,"state_of_residence","Wohnsitzstaat","Pays de résidence",NA,NA,"136","Französisch-Guayana","Guyane Française",NA,NA
+39,"state_of_residence","Wohnsitzstaat","Pays de résidence",NA,NA,"137","Guyana","Guyana",NA,NA
+39,"state_of_residence","Wohnsitzstaat","Pays de résidence",NA,NA,"138","Haiti","Haïti",NA,NA
+39,"state_of_residence","Wohnsitzstaat","Pays de résidence",NA,NA,"139","Belize","Belize",NA,NA
+39,"state_of_residence","Wohnsitzstaat","Pays de résidence",NA,NA,"140","Honduras","Honduras",NA,NA
+39,"state_of_residence","Wohnsitzstaat","Pays de résidence",NA,NA,"141","Jamaika","Jamaïque",NA,NA
+39,"state_of_residence","Wohnsitzstaat","Pays de résidence",NA,NA,"142","Kanada","Canada",NA,NA
+39,"state_of_residence","Wohnsitzstaat","Pays de résidence",NA,NA,"143","Kolumbien","Colombie",NA,NA
+39,"state_of_residence","Wohnsitzstaat","Pays de résidence",NA,NA,"144","Kuba","Cuba",NA,NA
+39,"state_of_residence","Wohnsitzstaat","Pays de résidence",NA,NA,"145","Martinique","Martinique",NA,NA
+39,"state_of_residence","Wohnsitzstaat","Pays de résidence",NA,NA,"146","Mexiko","Mexique",NA,NA
+39,"state_of_residence","Wohnsitzstaat","Pays de résidence",NA,NA,"147","Nicaragua","Nicaragua",NA,NA
+39,"state_of_residence","Wohnsitzstaat","Pays de résidence",NA,NA,"148","Panama","Panama",NA,NA
+39,"state_of_residence","Wohnsitzstaat","Pays de résidence",NA,NA,"149","Paraguay","Paraguay",NA,NA
+39,"state_of_residence","Wohnsitzstaat","Pays de résidence",NA,NA,"150","Peru","Pérou",NA,NA
+39,"state_of_residence","Wohnsitzstaat","Pays de résidence",NA,NA,"151","Puerto Rico","Porto Rico",NA,NA
+39,"state_of_residence","Wohnsitzstaat","Pays de résidence",NA,NA,"152","St. Pierre und Miquelon","Saint-Pierre-et-Miquelon",NA,NA
+39,"state_of_residence","Wohnsitzstaat","Pays de résidence",NA,NA,"153","Suriname","Suriname",NA,NA
+39,"state_of_residence","Wohnsitzstaat","Pays de résidence",NA,NA,"154","Trinidad und Tobago","Trinité-et-Tobago",NA,NA
+39,"state_of_residence","Wohnsitzstaat","Pays de résidence",NA,NA,"155","Uruguay","Uruguay",NA,NA
+39,"state_of_residence","Wohnsitzstaat","Pays de résidence",NA,NA,"156","Venezuela","Venezuela",NA,NA
+39,"state_of_residence","Wohnsitzstaat","Pays de résidence",NA,NA,"157","Vereinigte Staaten","États-Unis",NA,NA
+39,"state_of_residence","Wohnsitzstaat","Pays de résidence",NA,NA,"158","Dominica","Dominique",NA,NA
+39,"state_of_residence","Wohnsitzstaat","Pays de résidence",NA,NA,"159","Grenada","Grenade",NA,NA
+39,"state_of_residence","Wohnsitzstaat","Pays de résidence",NA,NA,"160","Antigua und Barbuda","Antigua-et-Barbuda",NA,NA
+39,"state_of_residence","Wohnsitzstaat","Pays de résidence",NA,NA,"161","St. Lucia","Sainte-Lucie",NA,NA
+39,"state_of_residence","Wohnsitzstaat","Pays de résidence",NA,NA,"162","St. Vincent und die Grenadinen","Saint-Vincent-et-les Grenadines",NA,NA
+39,"state_of_residence","Wohnsitzstaat","Pays de résidence",NA,NA,"163","St. Kitts und Nevis","Saint-Kitts-et-Nevis",NA,NA
+39,"state_of_residence","Wohnsitzstaat","Pays de résidence",NA,NA,"164","Anguilla","Anguilla",NA,NA
+39,"state_of_residence","Wohnsitzstaat","Pays de résidence",NA,NA,"165","Saint-Martin (Frankreich)","Saint-Martin (France)",NA,NA
+39,"state_of_residence","Wohnsitzstaat","Pays de résidence",NA,NA,"166","Saint-Barthélemy","Saint-Barthélemy",NA,NA
+39,"state_of_residence","Wohnsitzstaat","Pays de résidence",NA,NA,"167","Jungferninseln (USA)","Îles Vierges américaines",NA,NA
+39,"state_of_residence","Wohnsitzstaat","Pays de résidence",NA,NA,"168","Kaimaninseln","Îles Cayman",NA,NA
+39,"state_of_residence","Wohnsitzstaat","Pays de résidence",NA,NA,"169","Turksund Caicosinseln","Îles Turques et Caïques",NA,NA
+39,"state_of_residence","Wohnsitzstaat","Pays de résidence",NA,NA,"170","Jungferninseln (UK)","Îles Vierges britanniques",NA,NA
+39,"state_of_residence","Wohnsitzstaat","Pays de résidence",NA,NA,"171","Aruba","Aruba",NA,NA
+39,"state_of_residence","Wohnsitzstaat","Pays de résidence",NA,NA,"172","Curaçao","Curaçao",NA,NA
+39,"state_of_residence","Wohnsitzstaat","Pays de résidence",NA,NA,"173","Sint Maarten (Niederlande)","Sint Maarten (Pays-Bas)",NA,NA
+39,"state_of_residence","Wohnsitzstaat","Pays de résidence",NA,NA,"174","Bonaire, Saint Eustatius und Saba","Bonaire, Saint Eustatius et Saba",NA,NA
+39,"state_of_residence","Wohnsitzstaat","Pays de résidence",NA,NA,"175","Asien","Asie",NA,NA
+39,"state_of_residence","Wohnsitzstaat","Pays de résidence",NA,NA,"176","Afghanistan","Afghanistan",NA,NA
+39,"state_of_residence","Wohnsitzstaat","Pays de résidence",NA,NA,"177","Bahrain","Bahreïn",NA,NA
+39,"state_of_residence","Wohnsitzstaat","Pays de résidence",NA,NA,"178","Bhutan","Bhoutan",NA,NA
+39,"state_of_residence","Wohnsitzstaat","Pays de résidence",NA,NA,"179","Brunei Darussalam","Brunéi Darussalam",NA,NA
+39,"state_of_residence","Wohnsitzstaat","Pays de résidence",NA,NA,"180","Myanmar","Myanmar",NA,NA
+39,"state_of_residence","Wohnsitzstaat","Pays de résidence",NA,NA,"181","Sri Lanka","Sri Lanka",NA,NA
+39,"state_of_residence","Wohnsitzstaat","Pays de résidence",NA,NA,"182","Taiwan (Chinesisches Taipei)","Taïwan (Taipei chinois)",NA,NA
+39,"state_of_residence","Wohnsitzstaat","Pays de résidence",NA,NA,"183","China","Chine",NA,NA
+39,"state_of_residence","Wohnsitzstaat","Pays de résidence",NA,NA,"184","Hongkong","Hong Kong",NA,NA
+39,"state_of_residence","Wohnsitzstaat","Pays de résidence",NA,NA,"185","Indien","Inde",NA,NA
+39,"state_of_residence","Wohnsitzstaat","Pays de résidence",NA,NA,"186","Indonesien","Indonésie",NA,NA
+39,"state_of_residence","Wohnsitzstaat","Pays de résidence",NA,NA,"187","Irak","Irak",NA,NA
+39,"state_of_residence","Wohnsitzstaat","Pays de résidence",NA,NA,"188","Iran","Iran",NA,NA
+39,"state_of_residence","Wohnsitzstaat","Pays de résidence",NA,NA,"189","Israel","Israël",NA,NA
+39,"state_of_residence","Wohnsitzstaat","Pays de résidence",NA,NA,"190","Japan","Japon",NA,NA
+39,"state_of_residence","Wohnsitzstaat","Pays de résidence",NA,NA,"191","Jemen","Yémen",NA,NA
+39,"state_of_residence","Wohnsitzstaat","Pays de résidence",NA,NA,"192","Jordanien","Jordanie",NA,NA
+39,"state_of_residence","Wohnsitzstaat","Pays de résidence",NA,NA,"193","Kambodscha","Cambodge",NA,NA
+39,"state_of_residence","Wohnsitzstaat","Pays de résidence",NA,NA,"194","Katar","Qatar",NA,NA
+39,"state_of_residence","Wohnsitzstaat","Pays de résidence",NA,NA,"195","Kuwait","Koweït",NA,NA
+39,"state_of_residence","Wohnsitzstaat","Pays de résidence",NA,NA,"196","Laos","Laos",NA,NA
+39,"state_of_residence","Wohnsitzstaat","Pays de résidence",NA,NA,"197","Libanon","Liban",NA,NA
+39,"state_of_residence","Wohnsitzstaat","Pays de résidence",NA,NA,"198","Macao","Macao",NA,NA
+39,"state_of_residence","Wohnsitzstaat","Pays de résidence",NA,NA,"199","Malaysia","Malaisie",NA,NA
+39,"state_of_residence","Wohnsitzstaat","Pays de résidence",NA,NA,"200","Malediven","Maldives",NA,NA
+39,"state_of_residence","Wohnsitzstaat","Pays de résidence",NA,NA,"201","Oman","Oman",NA,NA
+39,"state_of_residence","Wohnsitzstaat","Pays de résidence",NA,NA,"202","Mongolei","Mongolie",NA,NA
+39,"state_of_residence","Wohnsitzstaat","Pays de résidence",NA,NA,"203","Nepal","Népal",NA,NA
+39,"state_of_residence","Wohnsitzstaat","Pays de résidence",NA,NA,"204","Korea (Nord-)","Corée (Nord)",NA,NA
+39,"state_of_residence","Wohnsitzstaat","Pays de résidence",NA,NA,"205","Vereinigte Arabische Emirate","Émirats arabes unis",NA,NA
+39,"state_of_residence","Wohnsitzstaat","Pays de résidence",NA,NA,"206","Pakistan","Pakistan",NA,NA
+39,"state_of_residence","Wohnsitzstaat","Pays de résidence",NA,NA,"207","Philippinen","Philippines",NA,NA
+39,"state_of_residence","Wohnsitzstaat","Pays de résidence",NA,NA,"208","Saudi-Arabien","Arabie saoudite",NA,NA
+39,"state_of_residence","Wohnsitzstaat","Pays de résidence",NA,NA,"209","Singapur","Singapour",NA,NA
+39,"state_of_residence","Wohnsitzstaat","Pays de résidence",NA,NA,"210","Korea (Süd-)","Corée (Sud)",NA,NA
+39,"state_of_residence","Wohnsitzstaat","Pays de résidence",NA,NA,"211","Syrien","Syrie",NA,NA
+39,"state_of_residence","Wohnsitzstaat","Pays de résidence",NA,NA,"212","Thailand","Thaïlande",NA,NA
+39,"state_of_residence","Wohnsitzstaat","Pays de résidence",NA,NA,"213","Vietnam","Vietnam",NA,NA
+39,"state_of_residence","Wohnsitzstaat","Pays de résidence",NA,NA,"214","Bangladesch","Bangladesh",NA,NA
+39,"state_of_residence","Wohnsitzstaat","Pays de résidence",NA,NA,"215","Timor-Leste","Timor-Leste",NA,NA
+39,"state_of_residence","Wohnsitzstaat","Pays de résidence",NA,NA,"216","Palästina","Palestine",NA,NA
+39,"state_of_residence","Wohnsitzstaat","Pays de résidence",NA,NA,"217","Armenien","Arménie",NA,NA
+39,"state_of_residence","Wohnsitzstaat","Pays de résidence",NA,NA,"218","Aserbaidschan","Azerbaïdjan",NA,NA
+39,"state_of_residence","Wohnsitzstaat","Pays de résidence",NA,NA,"219","Georgien","Géorgie",NA,NA
+39,"state_of_residence","Wohnsitzstaat","Pays de résidence",NA,NA,"220","Kasachstan","Kazakhstan",NA,NA
+39,"state_of_residence","Wohnsitzstaat","Pays de résidence",NA,NA,"221","Kirgisistan","Kirghizistan",NA,NA
+39,"state_of_residence","Wohnsitzstaat","Pays de résidence",NA,NA,"222","Tadschikistan","Tadjikistan",NA,NA
+39,"state_of_residence","Wohnsitzstaat","Pays de résidence",NA,NA,"223","Turkmenistan","Turkménistan",NA,NA
+39,"state_of_residence","Wohnsitzstaat","Pays de résidence",NA,NA,"224","Usbekistan","Ouzbékistan",NA,NA
+39,"state_of_residence","Wohnsitzstaat","Pays de résidence",NA,NA,"225","Ozeanien","Océanie",NA,NA
+39,"state_of_residence","Wohnsitzstaat","Pays de résidence",NA,NA,"226","Australien","Australie",NA,NA
+39,"state_of_residence","Wohnsitzstaat","Pays de résidence",NA,NA,"227","Fidschi","Fidji",NA,NA
+39,"state_of_residence","Wohnsitzstaat","Pays de résidence",NA,NA,"228","Nauru","Nauru",NA,NA
+39,"state_of_residence","Wohnsitzstaat","Pays de résidence",NA,NA,"229","Vanuatu","Vanuatu",NA,NA
+39,"state_of_residence","Wohnsitzstaat","Pays de résidence",NA,NA,"230","Neukaledonien","Nouvelle-Calédonie",NA,NA
+39,"state_of_residence","Wohnsitzstaat","Pays de résidence",NA,NA,"231","Neuseeland","Nouvelle-Zélande",NA,NA
+39,"state_of_residence","Wohnsitzstaat","Pays de résidence",NA,NA,"232","Papua-Neuguinea","Papouasie-Nouvelle-Guinée",NA,NA
+39,"state_of_residence","Wohnsitzstaat","Pays de résidence",NA,NA,"233","Tonga","Tonga",NA,NA
+39,"state_of_residence","Wohnsitzstaat","Pays de résidence",NA,NA,"234","Wallis und Futuna","Wallis-et-Futuna",NA,NA
+39,"state_of_residence","Wohnsitzstaat","Pays de résidence",NA,NA,"235","Samoa","Samoa",NA,NA
+39,"state_of_residence","Wohnsitzstaat","Pays de résidence",NA,NA,"236","Salomoninseln","Îles Salomon",NA,NA
+39,"state_of_residence","Wohnsitzstaat","Pays de résidence",NA,NA,"237","Tuvalu","Tuvalu",NA,NA
+39,"state_of_residence","Wohnsitzstaat","Pays de résidence",NA,NA,"238","Kiribati","Kiribati",NA,NA
+39,"state_of_residence","Wohnsitzstaat","Pays de résidence",NA,NA,"239","Marshallinseln","Îles Marshall",NA,NA
+39,"state_of_residence","Wohnsitzstaat","Pays de résidence",NA,NA,"240","Mikronesien","Micronésie",NA,NA
+39,"state_of_residence","Wohnsitzstaat","Pays de résidence",NA,NA,"241","Palau","Palaos",NA,NA
+39,"state_of_residence","Wohnsitzstaat","Pays de résidence",NA,NA,"242","Amerikanisch-Samoa","Samoa américaines",NA,NA
+39,"state_of_residence","Wohnsitzstaat","Pays de résidence",NA,NA,"243","Guam","Guam",NA,NA
+39,"state_of_residence","Wohnsitzstaat","Pays de résidence",NA,NA,"244","Französisch-Polynesien","Polynésie française",NA,NA
+39,"state_of_residence","Wohnsitzstaat","Pays de résidence",NA,NA,"245","Cookinseln","Îles Cook",NA,NA
+39,"state_of_residence","Wohnsitzstaat","Pays de résidence",NA,NA,"246","Niue","Nioué",NA,NA
