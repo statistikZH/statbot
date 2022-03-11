@@ -25,7 +25,7 @@ statbot_src_1_01_014_CH <- function(flag_force_update=FALSE){
     df<-as.data.frame(df)
 
     new_names <- c("age_class_second_partner", "age_class_first_partner",
-                   "citizenship_category_partners","duration_civil_union",
+                   "citizenship_category_partners","duration_of_civil_union",
                    "civil_union_type", "spatialunit_name","jahr", "value")
 
     # Only keep communes - other granularities will be added up again later
@@ -51,19 +51,18 @@ statbot_src_1_01_014_CH <- function(flag_force_update=FALSE){
     df$period_value<-NA
 
     unique_dimension_names <- c("age_class_second_partner", "age_class_first_partner",
-                                "citizenship_category_partners","marital_status_second_partner","marital_status_first_partner",
+                                "citizenship_category_partners","duration_of_civil_union",
                                 "civil_union_type")
     dimension_table <- get_dimensions(unique_dimension_names)
     main_language<-"de"
     df<-join_dimension_value(df,"age_class_second_partner",dimension_table, main_language)
     df<-join_dimension_value(df,"age_class_first_partner",dimension_table, main_language)
     df<-join_dimension_value(df,"citizenship_category_partners",dimension_table, main_language)
-    df<-join_dimension_value(df,"marital_status_second_partner",dimension_table, main_language)
-    df<-join_dimension_value(df,"marital_status_first_partner",dimension_table, main_language)
+    df<-join_dimension_value(df,"duration_of_civil_union",dimension_table, main_language)
     df<-join_dimension_value(df,"civil_union_type",dimension_table, main_language)
 
     df<-df %>% select(all_of(GLOBAL_TOTAL_LIST), age_class_second_partner, age_class_first_partner,
-                      citizenship_category_partners,marital_status_second_partner,marital_status_first_partner,
+                      citizenship_category_partners,duration_of_civil_union,
                       civil_union_type)
 
 
