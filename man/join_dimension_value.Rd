@@ -4,12 +4,20 @@
 \alias{join_dimension_value}
 \title{Function to merge the values to a dictionary}
 \usage{
-join_dimension_value(df, dimension_name, dimension_table, main_language)
+join_dimension_value(
+  df,
+  dimension_name,
+  dimension_table,
+  main_language = "de",
+  var_name = NULL
+)
 }
 \arguments{
 \item{df}{a df where the values are included}
 
-\item{var_name}{the name of the variable to be replaced}
+\item{var_name}{if divergent from the dim_name: the name of the variable to be replaced. Default would be NULL equivalent to dim_name}
+
+\item{dim_name}{the name of the dimension to be replaced}
 
 \item{dict}{a df with the value_ids to merge}
 }
