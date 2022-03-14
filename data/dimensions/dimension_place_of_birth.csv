@@ -1,0 +1,4 @@
+"dim_id","unique_name","dim_name_de","dim_name_fr","dim_name_it","dim_name_en","value_id","value_name_de","value_name_fr","value_name_it","value_name_en"
+57,"place_of_birth","Geburtsort","Lieu de naissance","Luogo di nascita","Place of birth","-1","Geburtsort - Total","Lieu de naissance - total","Luogo di nascita - totale","Place of birth - total"
+57,"place_of_birth","Geburtsort","Lieu de naissance","Luogo di nascita","Place of birth","1","Schweiz","Suisse","Svizzera","Switzerland"
+57,"place_of_birth","Geburtsort","Lieu de naissance","Luogo di nascita","Place of birth","2","Im Ausland","A l'étranger","All'estero","Abroad"
