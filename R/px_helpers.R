@@ -94,8 +94,8 @@ extract_needed_names <- function(x, ignore_dim){
     ignore_dim <- NULL
   }
 
-  not_needed_dimensions <- c("Jahr", "Année","Anné", "Anno", "Year", "Gemeinde", "Commune", "Comune", "Municipality", "Kanton", "Canton", "Cantone", "District", "cantone", "canton")
-  not_needed_dimensions<-paste0("^",not_needed_dimensions,"$")
+  not_needed_dimensions <- c("^Jahr$", "^Année$","^Anné$", "^Anno$", "^Year$", "Gemeinde", "Commune", "Comune", "Municipality", "Kanton", "Canton", "Cantone", "District", "cantone", "canton")
+  ignore_dim<-paste0("^",ignore_dim,"$")
   not_needed_dimensions<-c(not_needed_dimensions, ignore_dim)
 
   x_needed <- x[!grepl(paste0(not_needed_dimensions, collapse = "|"), x)]
