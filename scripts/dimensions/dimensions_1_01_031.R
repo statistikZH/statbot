@@ -1,4 +1,4 @@
-# Script to create a dimension table for the dataset:  1_01_029
+# Script to create a dimension table for the dataset:  1_01_031
 #
 # Created by: J. Steiger
 # Created at: 2022-03-15
@@ -23,10 +23,10 @@
 # For adding additional languages, use the language abbreviations: de, fr, it, en
 devtools::load_all(".")
 
-destfile<-"temp/1_01_029.px"
+destfile<-"temp/1_01_031.px"
 
 if(!file.exists(destfile)){
-  download.file(paste0("https://www.bfs.admin.ch/bfsstatic/dam/assets/",get_bfs_asset_nr("px-x-0103010000_201"),"/master"),destfile=destfile)
+  download.file(paste0("https://www.bfs.admin.ch/bfsstatic/dam/assets/",get_bfs_asset_nr("px-x-0103010000_399"),"/master"),destfile=destfile)
 }
 
 
@@ -47,6 +47,9 @@ ignore_languages <- T
 # example for adding the english names, if you do not want to add additional languages, set
 # additional_languages to NA
 additional_languages <- NA
+  # add here additional languages with the same structure as the one before,
+  # dont forget to add a comma on line 41 ;)
+
 
 # is there a column that contains multiple dimensions?
 # if there is one, already think about the dimension names since you have to add them in the
@@ -54,10 +57,10 @@ additional_languages <- NA
 fuzzy_column_name <- NA
 
 # add all unique dimension names
-unique_dimension_names <- c("age_group_5")
+unique_dimension_names <- c("country_of_birth")
 
 # should any dimension be ignored? the reason could be, that it already exists
-ignore_dimensions <- c("Bevölkerungstyp", "Staatsangehörigkeit..Kategorie.", "Geburtsort", "Geschlecht")
+ignore_dimensions <- c("Bevölkerungstyp", "Staatsangehörigkeit..Auswahl.", "Geschlecht", "Altersklasse")
 
 
 # create the dimension table
