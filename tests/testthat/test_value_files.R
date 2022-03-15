@@ -37,3 +37,38 @@
 
 
 #check whether values are not NA in dimensions else something went wrong
+
+library(validate)
+
+test_that("NAs: ",{
+  file_path<-paste0("data/values/","1_01_009_CH",".csv")
+  tdf<-data.table::fread(file_path,nrows=100)
+  names_tdf<-names(tdf)
+  if(length(names_tdf>6)){
+
+  }
+
+  #or is_complete
+  rules<-validator(!any(is.na(marital_status_wife)))
+  out<-confront(tdf,rules)
+  summary(out)
+  expect_true()
+
+})
+
+
+#check whether the groupings are correct - is one grouping missing?
+# careful then for the exceptions where historic data is available but without grouping.
+# I don't think it would be contains_at_least
+
+#maybe we can check whether -1 is larger than the other groups, therewith representing the total
+#(at least of counts)
+
+#hierarchy(dat$volume, dat$nace, nace_rev2[3:4])
+# hierarchy(value, region, hierarchy=ref$codelist, by=list(period, measure))
+#  part_whole_relation
+
+
+#checken on Luecken bestehen
+# is_linear_sequence(c("2020Q4","2020Q2","2020Q3","2020Q1"))
+

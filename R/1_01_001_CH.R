@@ -15,28 +15,24 @@
 statbot_src_1_01_001_CH <- function(flag_force_update=FALSE){
   destfile<-"temp/1_01_001_CH.px"
   download.file(paste0("https://www.bfs.admin.ch/bfsstatic/dam/assets/",get_bfs_asset_nr("px-x-0102010000_101"),"/master"),destfile=destfile)
-
+  options(timeout=600)
   if(check_changes_in_input_file(destfile)|flag_force_update){
     if(flag_force_update) print("flag_force_update") else print("Changes found")
 
     df<-statbot_read.px(destfile)
 
     main_language <- extract_main_language(df)
-    #extracting first some metadata
+    #extracting spatial reference from metadata
     spatial_reference<-extract_spatial_reference(df$NOTE$value)
-
 
     df<-as.data.frame(df)
 
-    unique_dimension_names <- c("population_type", "citizenship_category", "gender", "age_group_1")
+    unique_dimension_names <- c("age_group_1","population_type", "citizenship_category", "gender" )
 
     dimension_table <- get_dimensions(unique_dimension_names)
 
-    ##### from here on @christian you can take over :)
-    new_names <- c("age_group_1", "population_type","citizenship_category","gender","spatialunit_name", "jahr", "value")
-
     # Only keep communes - other granularities will be added up again later
-    names(df) <- new_names
+    names(df) <- c(unique_dimension_names,"spatialunit_name", "jahr", "value")
 
     df$temp<-stringr::str_locate(pattern ='\\.\\.\\.\\.\\.\\.',df$spatialunit_name)[,1]
     df<-df[!is.na(df$temp),]
@@ -53,20 +49,18 @@ statbot_src_1_01_001_CH <- function(flag_force_update=FALSE){
     df$period_value<-NA
 
 
-    #theoretically, this could be converted to a function
-    df<-join_dimension_value(df,"gender",dimension_table, main_language)
-    df<-join_dimension_value(df,"age_group_1",dimension_table, main_language)
-    df<-join_dimension_value(df,"population_type",dimension_table, main_language)
-    df<-join_dimension_value(df,"citizenship_category",dimension_table, main_language)
-    df<-df %>% select(all_of(GLOBAL_TOTAL_LIST), gender,age_group_1,population_type,citizenship_category)
+    for(i in unique_dimension_names) df<-join_dimension_value(df,i,dimension_table, main_language)
 
-    df<-add_granularity_levels_up(df,list_ontologies=c("A.ADM2","A.ADM1","CH"),list_dimensions=c("gender","age_group_1","population_type","citizenship_category"))
 
-    df<-df %>% select(all_of(GLOBAL_TOTAL_LIST), gender,age_group_1,population_type,citizenship_category)
+    df<-df %>% select(all_of(GLOBAL_TOTAL_LIST), all_of(unique_dimension_names))
+
+    df<-add_granularity_levels_up(df,list_ontologies=c("A.ADM2","A.ADM1","CH"),list_dimensions=unique_dimension_names)
+
+    df<-df %>% select(all_of(GLOBAL_TOTAL_LIST), all_of(unique_dimension_names))
 
 
 
-    write.csv(df,"data/values/1_01_001_CH.csv",row.names = F)
+    fwrite(df,"data/values/1_01_001_CH.csv",row.names = F)
     update_last_updated("1_01_001")
 
     #convert_and_write_per_unit(df,"1_01_001_CH.csv",how_many=1000)
