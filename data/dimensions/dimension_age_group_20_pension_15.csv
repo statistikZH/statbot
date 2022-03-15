@@ -1,0 +1,7 @@
+"dim_id","unique_name","dim_name_de","dim_name_fr","dim_name_it","dim_name_en","value_id","value_name_de","value_name_fr","value_name_it","value_name_en"
+59,"age_group_20_pension_15","Altersklasse","Classe d âge","Classe d età","Age class","-1","Altersklasse - Total","Classe d'âge - total","Classe d'età - totale","Age class - total"
+59,"age_group_20_pension_15","Altersklasse","Classe d âge","Classe d età","Age class","0","0-19 Jahre","0-19 ans","0-19 anni","0-19 years"
+59,"age_group_20_pension_15","Altersklasse","Classe d âge","Classe d età","Age class","20","20-39 Jahre","20-39 ans","20-39 anni","20-39 years"
+59,"age_group_20_pension_15","Altersklasse","Classe d âge","Classe d età","Age class","40","40-64 Jahre","40-64 ans","40-64 anni","40-64 years"
+59,"age_group_20_pension_15","Altersklasse","Classe d âge","Classe d età","Age class","65","65-79 Jahre","65-79 ans","65-79 anni","65-79 years"
+59,"age_group_20_pension_15","Altersklasse","Classe d âge","Classe d età","Age class","80","80 Jahre und mehr","80 ans ou plus","80 anni o più","80 years or older"
