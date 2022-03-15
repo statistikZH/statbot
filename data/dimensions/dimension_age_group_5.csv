@@ -1,0 +1,4 @@
+"dim_id","unique_name","dim_name_de","dim_name_fr","dim_name_it","dim_name_en","value_id","value_name_de","value_name_fr","value_name_it","value_name_en"
+59,"age_group_5","Staatsangehörigkeit Kategorie","Nationalité catégorie","Nazionalità categoria","Citizenship category","-1","Staatsangehörigkeit (Kategorie) - Total","Nationalité (catégorie) - total","Nazionalità (categoria) - totale","Citizenship (category) - total"
+59,"age_group_5","Staatsangehörigkeit Kategorie","Nationalité catégorie","Nazionalità categoria","Citizenship category","1","Schweiz","Suisse","Svizzera","Switzerland"
+59,"age_group_5","Staatsangehörigkeit Kategorie","Nationalité catégorie","Nazionalità categoria","Citizenship category","2","Ausland","Etranger","Straniera","Foreign country"
