@@ -1,5 +1,7 @@
 # PROJECT STATBOT.SWISS
 
+LATEST: THE PROJECT IS BEING CONTINUED ON RENKU UNDER THE FOLLOWING LINK: https://renkulab.io/projects/christian.ruiz/statbot-swiss
+
 In this folder are the main data warehouse scripts that run all the different R and python scripts in order to generate the newest data for statbot. It is supposed to be built as some form of cronjob to be executed once a day. All the statistical offices can contribute here with scripts. Or they can contribute by adding additional data-values-files and we will find a way to grab those files and insert the values.
 
 For those who would like to participate, we prepared ['under this link a documentation'](articles/data_collection.html) that can be followed step by step.
